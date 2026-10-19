@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../../schema/v2/ending.json
+id: over-the-wall
+title: Over the Wall
+outcome: victory
+text: |
+  The alley behind the First Church smells of wet leaves and the dumpster from the diner. You
+  lie on the cobbles for a breath, then get up and walk, not run, because a man running at
+  this hour gets noticed.
+
+  Somewhere under your feet a chair scrapes on flagstone. Somewhere behind you, a key ring
+  rattles on its chain.
+
+  You're out. In Graystone, out is a relative term.

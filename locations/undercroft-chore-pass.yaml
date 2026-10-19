@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# A reaction beat: entered only by a random move.to, it shows her reaction and returns you.
+id: undercroft-chore-pass
+name: Cell Three
+tags: [law, prison]
+description: She looks over the shine.
+arrival:
+  text: |
+    The shine runs unbroken from toe to thigh, wet under the bulb.
+
+    "That'll do," she says, and it sounds like it costs her something. She writes a line in
+    the ledger on her way out, and you'd give a lot to read it.
+  effects:
+    - boost.change: { card: ashbys-good-side, amount: +1 }
+    - move.to: undercroft-cell

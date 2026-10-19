@@ -85,7 +85,8 @@ with their own appetites.
 - **Restraint:** cuffs, chains, shackles, bondage; permission rules — nothing without asking.
 - **Impact and pain:** spanking; trampling; CBT; ballbusting; **wrestling and painful holds**.
 - **Below the knee and the uniform:** foot, shoe and **boot worship**; **uniform worship**;
-  **gloves**; the campaign hat as a mark of rank.
+  **gloves**; the campaign hat as a mark of rank. **Worship is by tongue, from the first
+  touch: never a cloth, never a brush in his hands.**
 - **Breath and weight:** **facesitting**; **gloved hand over the mouth** — smothering kept
   short and controlled.
 - **Humiliation:** being made to ask, recite, thank, display; public correction on the square.
@@ -128,10 +129,19 @@ tags. Nothing in it is shaped around one storyline.
   - **restraint** — grid, forced; things put on him: cuffs, prison chains, gags, chastity cages.
   - **favor** — grid; standing with a woman or a faction. He places dice on it to support her,
     and it pays off in a benefit.
+  - **fetish** — grid; a taste he has picked up (Boot Fetish, Uniform Fetish). Its tag
+    (`boots`, `uniform`) is what other storylines `require` to open their doors.
   - **dossier** — grid, forced; what the town keeps on him: an APB, a sentence, a gang's
     tally. It's in the grid because dice drive it (a sentence served off, an APB that fills).
 - **Tags:** added only as storylines need them. So far: **law** (the Sheriff's Department's
   ground) and **prison** (a closed place he can't simply walk out of).
+- **Words don't give the scene away.** The player sees only category and word before
+  committing, so a word names what he sets out to do (CHORE, OFFER, ASK), never what she does
+  about it. The prompt and the result come after he's committed.
+- **Her reaction can be a coin flip.** Results are fixed, so a varied reaction is a result
+  ending in `move.to: {random: [...]}` to small *beat* locations whose arrival is the
+  reaction and its effects, and which move him straight back (the validator flags these as
+  `reach.dead-end`; the engine runs arrival `move.to` fine).
 - **Storyline mechanics live in cards.** For example, the Undercroft: an arrest gives a
   *Sentence* dossier before he arrives, and his time in the cell is served against it.
 

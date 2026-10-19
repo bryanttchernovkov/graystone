@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+id: sentence
+kind: dossier
+name: Sentence
+text: Misdemeanor, Graystone County. No court date. Served in the Undercroft, at the Sergeant's discretion.
+boost: { capacity: 3, start: 0 }
+on_full: served-sentence
+slots:
+  - { match: { tag: cooperate }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
+  - { match: { tag: cooperate }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
+  - { match: { tag: cooperate }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }

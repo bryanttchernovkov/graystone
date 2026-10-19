@@ -1,8 +1,19 @@
 # yaml-language-server: $schema=../../../schema/v2/map.json
+# The Undercroft is closed: no walkable exits. You move between its locations only through
+# results (intake → cell, TURN between the cell's two views, reaction beats and back).
 id: station
 name: The First Church Station
 legend:
   UC: undercroft
   CL: undercroft-cell
+  CB: undercroft-cell-back
+  P1: undercroft-chore-pass
+  P2: undercroft-chore-fault
+  C1: undercroft-charm-cold
+  C2: undercroft-charm-warm
 grid: |
-  UC CL
+  UC .. CL .. CB
+  .. .. .. .. ..
+  P1 .. P2 .. ..
+  .. .. .. .. ..
+  C1 .. C2 .. ..

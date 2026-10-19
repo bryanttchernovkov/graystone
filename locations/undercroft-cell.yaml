@@ -2,145 +2,324 @@
 id: undercroft-cell
 name: Cell Three
 tags: [law, prison]
-description: A burial niche with bars, a steel cot, and an iron ring in the wall at ankle height.
-arrival:
-  text: |
-    Cell Three was a burial niche once: a stone recess under the arch, a cot of steel slats
-    with a gray wool blanket, a steel toilet with no seat, and an iron ring set in the back
-    wall at ankle height. Ashby runs your ankle chain through the ring and padlocks it, then
-    measures the slack by eye. Enough to reach the cot and the toilet. Not enough to reach
-    the bars.
-
-    The door rolls shut on its track. She locks it, tries it, and stays a moment with one
-    gloved hand on the bars.
-
-    "Three days," she says. "Ask nicely and they'll go faster."
+description: A burial niche with bars, a steel cot, and the Sergeant's desk in view under the first arch.
+hub: true
 actions:
+  - category: talk
+    word: CALL
+    cost: 1
+    tags: [cooperate]
+    prompt: Call out to the Sergeant. She answers, and then she wants answers back, by number, loud enough for the other cells.
+    result:
+      text: |
+        "Sergeant?"
+
+        "Sergeant what."
+
+        "Sergeant, permission to speak."
+
+        "Granted. Order one."
+
+        You give her order one. She doesn't look up from the ledger. "Order three." You give her
+        order three. "Louder. Cell Five didn't hear you."
+
+        You say it louder. Down the vault somebody in Cell Five laughs, and stops laughing when
+        her chair creaks.
+
+        She takes you through all five, out of order, and sends you back to the start when you
+        say *can* instead of *may*. At the end she has you thank her for the instruction, by rank,
+        in a full sentence.
+
+        "You're welcome," she says, and turns a page.
+      effects:
+        - skill.gain: talk
   - category: work
-    word: POLISH
-    cost: 3
-    prompt: She props a boot on your cot and hands you a tin and a cloth. Her boots, to her standard, and when the cloth won't do, your tongue.
-    result:
-      text: |
-        She comes in, sets one boot on the rail of the cot beside you, and holds out a tin of
-        black polish and a square of old cotton. The boot goes up past her knee to the middle
-        of her thigh, a long column of black leather with the azure stripe of her breeches
-        disappearing into it.
-
-        "Small circles," she says. "Toe to the top. I'll know if you skipped."
-
-        You work the polish in, toe cap first, then the vamp, then up the shaft where the
-        leather is warm from her leg. She watches with one forearm resting on her raised knee
-        and doesn't help. When you've buffed it she bends, sights along the shaft at the bulb,
-        and finds a dull patch at the ankle.
-
-        "Cloth's not getting it. Use your mouth."
-
-        You lean in and breathe on it and lick it, and she says "Again" until the patch shines
-        wet under the light. Then she changes boots, and you do the other one from the toe up,
-        without the cloth this time, because she's decided you don't need it.
-
-        At the end she stands on both, turns one heel on the flagstones to watch the shine
-        catch, and nods.
-
-        "Passable. You may say thank you."
-
-        You say it.
-      effects:
-        - skill.gain: { work: 2 }
-        - tracker.change: { nerve: -1 }
-      art:
-        loras: [KreaEbonyBabe1]
-        subject: >
-          First-person point-of-view widescreen photograph from sitting height on a steel cot
-          in a small jail cell walled with smooth dressed limestone ashlar blocks laid in straight courses with thin mortar joints, the camera tilted up along a diagonal. In the lower left
-          corner of the frame a woman's right boot is planted on the steel rail of the cot at
-          the camera's height: a stiff, structured, mirror-polished black leather thigh-high riding boot with a rigid straight shaft fitted tight to the leg,
-          its rounded toe and vamp shining wet, its long shaft rising diagonally up the frame
-          past her knee to mid-thigh, where tan riding breeches with an vivid azure blue stripe down
-          the outer seam disappear into it. A pale man's bare hands and forearms with short
-          unpolished nails enter from the bottom edge of the frame, one hand cupping the heel
-          and the other rubbing a black-smeared square of white cotton cloth in small circles
-          on the boot's shaft just below her knee. She leans in over her raised knee, her
-          black-gloved right forearm resting across her thigh, her upper body and face in the
-          upper right of the frame: a Black American woman in her early thirties, tall and
-          athletic with a full, heavy bust, broad straight shoulders and a soldier's posture,
-          smooth dark brown skin, long black dreadlocks gathered at the nape and falling
-          forward over one shoulder, a level, unimpressed stare under straight dark brows,
-          black leather duty gloves and a ring of heavy iron keys on a steel chain at her hip.
-          She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved
-          uniform shirt of heavy cotton twill with a pointed collar, a full button-front
-          placket, two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets
-          edged in vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve
-          and a polished gold six-point star badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small gold tie bar; a black leather duty belt with a polished brass
-          buckle; her head is bare. Three vivid azure blue chevrons sit on each upper sleeve beneath
-          the patch. She looks down into the lens with critical, narrow-eyed scrutiny, lips
-          pursed, and holds an open round tin of black boot polish up near her chest in her
-          gloved left hand. Behind her, black iron bars close the stone niche and a whitewashed pointed vault of dressed limestone arches overhead. A single caged incandescent bulb above the cell
-          door, behind and above her, throws a hard specular highlight down the length of
-          the boot and rims her shoulders and dreadlocks, while the ashlar walls fall into
-          warm shadow. Palette of black leather, uniform tan, vivid azure blue, limestone gray and
-          bulb amber; natural skin and leather texture, fine 35 mm film grain, sharp focus on
-          the boot shaft and her eyes.
-  - category: risk
-    word: TEST
+    word: CHORE
     cost: 2
-    prompt: Test the ankle chain against the ring while she's at her desk. She will hear it, and she will come in.
+    tags: [cooperate]
+    prompt: Ask for something useful to do. She has a chore below the knee, and the Undercroft doesn't issue polishing cloths.
     result:
       text: |
-        The chain makes more noise than you'd like. Ashby's chair scrapes before you've pulled
-        it twice.
+        She unlocks the door, comes in, and sets her right boot on the rail of the cot, the toe a
+        foot from your face. The boot goes up past her knee to the middle of her thigh, a long
+        column of black leather with the azure stripe of her breeches disappearing into it.
 
-        She comes in, takes your right hand off the chain, and folds it: wrist bent back toward
-        the forearm, her gloved thumb on the back of your hand, her other hand pinning the
-        elbow. It's a textbook hold and she does it like someone who has taught it. The pain
-        arrives all at once, white, and you go down onto the cot because there's nowhere else
-        to go.
+        "Standing order five," she says. "Tongue. Toe to top. I'll know if you skip."
 
-        "Ask," she says, close to your ear.
+        You get down and start at the toe cap. The leather tastes of polish and floor wax and the
+        cold of the stairs. You work the welt, the vamp, the crease at the ankle, then up the
+        shaft where it's warm from her leg, in long flat strokes. She watches with one gloved
+        forearm resting on her raised knee and offers nothing: not a word, not a hand.
 
-        "Sergeant —"
+        Then the left boot, the same way, from the toe up.
 
-        "For what."
-
-        "Sergeant, please let go."
-
-        "That's not a request. That's a noise." She adds a few ounces. "Again."
-
-        You get the sentence right on the third try. She lets go on the fourth word of the
-        fourth, because she's decided that's when.
-
-        "Chain stays on," she says, and goes back to her desk.
+        At the end she stands on both, turns one heel on the flagstones, and bends to sight along
+        the shaft under the bulb.
       effects:
-        - tracker.change: { body: -1, nerve: -1 }
+        - skill.gain: work
+        - move.to: { random: [undercroft-chore-pass, undercroft-chore-fault] }
       art:
         loras: [KreaEbonyBabe1]
         subject: >
-          First-person point-of-view widescreen photograph from sitting height on a steel cot
-          in a small jail cell walled with smooth dressed limestone ashlar blocks laid in straight courses with thin mortar joints, the camera level. A woman's face and shoulders fill the
-          left two-thirds of the frame only inches from the lens, her eyes in sharp focus: a
-          Black American woman in her early thirties with a full, heavy bust, broad straight
-          shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks
-          gathered at the nape with a few loose locks falling past her cheek, a level,
-          unimpressed stare under straight dark brows. Her visible shoulders and collar show
-          a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a pointed
-          collar, shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold
-          patch on her upper sleeve, a vivid, saturated azure blue necktie knotted tight at her throat, and
-          the edge of a polished gold six-point star badge over her left breast pocket. She
-          stares straight into the lens with cold displeasure, jaw tight, nostrils slightly
-          flared, lips parted as she speaks. At the bottom center of the frame a pale man's
-          bare hand and forearm with short unpolished nails rise from the bottom edge, the
-          wrist folded sharply back toward the forearm in a gooseneck compliance hold: her
-          black leather gloved right hand grips the back of the hand, her gloved thumb pressed
-          hard into the knuckles, her other gloved hand clamped around the forearm just below
-          the wrist. Behind her, out of focus, the black iron bars of the cell door, an iron
-          ring set low in the dressed limestone ashlar wall with a steel chain trailing from it across the
-          flagstones, and the curve of the whitewashed ashlar vault. A single caged incandescent bulb
-          outside the bars, behind her right shoulder, throws warm side light across her
-          cheekbone and the black gloves, leaving the far side of her face in soft shadow.
-          Palette of dark skin, black leather, uniform tan, vivid azure blue and limestone gray;
-          natural skin texture with visible pores, fine 35 mm film grain, very shallow depth
-          of field on her eyes.
+          First-person point-of-view widescreen photograph from kneeling height beside a steel
+          cot in a small jail cell walled with smooth dressed limestone ashlar blocks laid in
+          straight courses with thin mortar joints, the camera tilted up along a diagonal. In
+          the lower left corner of the frame a woman's right boot is planted on the steel rail of
+          the cot an inch from the lens: a stiff, structured, mirror-polished black leather
+          thigh-high riding boot with a rigid straight shaft fitted tight to the leg, its rounded
+          toe cap glistening with a fresh wet streak that runs up over the vamp and the laced
+          instep, its long shaft rising diagonally up the frame past her knee to mid-thigh, where
+          tan riding breeches with a vivid azure blue stripe down the outer seam disappear into
+          it. A pale man's bare hands and forearms with short unpolished nails enter from the
+          bottom edge of the frame, cradling the boot at the heel and the ankle. She leans in over
+          her raised knee, her black-gloved right forearm resting across her thigh, her upper
+          body and face in the upper right of the frame: a Black American woman in her early
+          thirties, tall and athletic with a full, heavy bust, broad straight shoulders and a
+          soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the nape
+          and falling forward over one shoulder, a level, unimpressed stare under straight dark
+          brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her
+          hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan
+          long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full
+          button-front placket, two buttoned flap chest pockets piped in vivid azure blue,
+          shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold
+          patch on each upper sleeve and a polished gold six-point star badge pinned over the left
+          pocket; a vivid, saturated azure blue necktie with a small gold tie bar; a black leather
+          duty belt with a polished brass buckle; her head is bare. Three vivid azure blue
+          chevrons sit on each upper sleeve beneath the patch. She looks down into the lens with
+          critical, narrow-eyed scrutiny, lips pursed, her gloved left hand resting flat on her
+          raised knee. Behind her, black iron bars close the stone niche and a whitewashed
+          pointed vault arches overhead. A single caged incandescent bulb above the cell door,
+          behind and above her, throws a hard specular highlight down the length of the wet boot
+          and rims her shoulders and dreadlocks, while the ashlar walls fall into warm shadow.
+          Palette of black leather, uniform tan, vivid azure blue, pale limestone and bulb amber;
+          natural skin and leather texture, fine 35 mm film grain, sharp focus on the wet toe cap
+          and her eyes.
+  - category: talk
+    word: CHARM
+    cost: 1
+    prompt: Try being pleasant through the bars. She may or may not be in the mood for it.
+    result:
+      text: |
+        You say her rank, the way the orders want it, and try a smile through the bars.
+      effects:
+        - move.to: { random: [undercroft-charm-cold, undercroft-charm-warm] }
+  - category: risk
+    word: NOISE
+    cost: 1
+    prompt: Make some noise. Rattle the door, sing, and find out what she does about it.
+    result:
+      text: |
+        You drag your knuckles along the bars and start in on the first song that comes to mind,
+        loud and badly, the vault giving it back twice.
+
+        You get through a verse and a half. Then the door rolls open and she's in the cell, and
+        her gloved hand closes over your mouth and nose and pushes your head back against the
+        stone.
+
+        "Breathe when I say," she says.
+
+        You can't, so you don't. The leather smells of polish and of her. She watches your eyes,
+        counts under her breath, and lets a sliver of air in at the corner of your mouth, then
+        takes it back. Three times. When she lets go you sit down on the cot whether you meant
+        to or not.
+
+        She takes a black rubber bit off the clip on her belt, sets it between your teeth, and
+        buckles the strap behind your head.
+
+        "Quiet hours," she says, "start now."
+      effects:
+        - card.gain: gag
+  - category: look
+    word: WATCH
+    cost: 1
+    prompt: Watch her work.
+    result:
+      text: |
+        She keeps the ledger in block capitals, one line per detainee per hour. Every twenty
+        minutes she gets up, walks the row with her keys quiet in her gloved hand, looks into each
+        cell without a word, and goes back to the desk. Once she takes a tin and a soft brush out
+        of the drawer and does her boots where she sits, heel to toe, without looking down.
+
+        She never once looks at you. You're fairly sure that's on purpose.
+      effects:
+        - skill.gain: look
+  - category: deal
+    word: PROMISE
+    cost: 1
+    requires: [trusted]
+    prompt: Make her a promise. Tonight she might believe one.
+    result:
+      text: |
+        "Sergeant, may I make you a promise?"
+
+        "You may."
+
+        "I'll behave."
+
+        She takes the key ring off her hip and looks at it, then at you. "Hands through the bars."
+
+        She unlocks the cuffs, then the belly chain, then has you sit on the cot and put your feet
+        to the bars for the irons. The steel comes off piece by piece and goes over her shoulder in
+        a clinking heap on the flagstones.
+
+        "You so much as look at that window," she says, "and I'll know before you do."
+
+        The cage stays. The key stays in her pocket.
+      effects:
+        - card.lose: prison-chains
+  - category: deal
+    word: KNEEL
+    cost: 2
+    requires: [trusted]
+    prompt: Ask, properly, for the privilege of her boots. She grants it, and takes her time about it.
+    result:
+      text: |
+        "Sergeant, permission to worship your boots."
+
+        She lets it sit in the air long enough that you start to hear how it sounded. Then she
+        unlocks the door, carries her steel chair in from the desk, and sets it down in the middle
+        of the cell. She sits, crosses one leg over the other, and lets the top boot hang in front
+        of you at the height of your mouth.
+
+        "These are made to measure," she says. "A bootmaker in Amarillo, eleven weeks, a tracing of
+        my calf on butcher paper. They cost more than your truck. You'll treat them that way."
+
+        You kneel on the flagstones and start with your lips, at the very tip of the toe, and
+        then your tongue. The polish is hard and glassy and tastes faintly of wax and turpentine.
+        You follow the welt stitch by stitch round the toe, where the leather meets the sole in a
+        tight line of thread, and the seam up the instep, and the sharp crease where her ankle
+        bends. The shaft goes up and up, stiff and close as a second skin; you take it in long
+        slow passes, feeling the warmth of her leg come through the leather the higher you go,
+        until your chin is at her knee and the azure stripe of her breeches is under your nose.
+
+        She uncrosses and recrosses so you can start on the other one. Then she sets a heel on
+        your thigh and turns the sole toward you, and you clean the edge of it, and the heel, and
+        the steel tip on the heel, while she tells you about the first pair she ever owned and
+        how she walked them in across a parade ground in Georgia until the leather knew her.
+
+        At the end she holds one boot out under the bulb and looks at the shine you put on it.
+
+        "Huh," she says. "You actually love them."
+
+        You do. You'll be seeing boots like these in your sleep.
+      effects:
+        - card.gain: boot-fetish
+      art:
+        loras: [KreaEbonyBabe1]
+        subject: >
+          Detail close-up first-person photograph from kneeling height on the flagstone floor of a
+          small jail cell walled with smooth dressed limestone ashlar blocks laid in straight
+          courses with thin mortar joints, the camera level and inches from a woman's boot. A
+          stiff, structured, mirror-polished black leather thigh-high riding boot fills the frame
+          on a diagonal from the lower left corner to the upper right: the rounded toe cap so
+          glossy it mirrors the caged bulb above as a sharp point of light, a tight line of black
+          welt stitching running round the toe where the leather meets the sole, a fine wet sheen
+          following the seam up the instep, the soft crease at the ankle, and the rigid straight
+          shaft rising out of the top right corner, fitted tight to her calf, its polished surface
+          showing long smooth highlights. The boot hangs in the air, her leg crossed over the
+          other at the knee, and a glimpse of tan riding breeches with a vivid azure blue stripe
+          down the outer seam disappears into the boot top at the upper right edge; her
+          black-gloved hand rests on her knee at the top right corner, a gold six-point star badge
+          catching the light out of focus behind it. A pale man's bare hands with short unpolished
+          nails enter from the bottom edge of the frame, fingertips cradling the heel from below,
+          the steel heel tip glinting between them. Behind the boot, out of focus, the black iron
+          bars of the cell door and warm bulb light on pale ashlar stone. A single caged
+          incandescent bulb above and to the right throws one long specular highlight down the
+          shaft and a bright point on the toe, the rest of the leather falling into deep glossy
+          black. Palette of black leather, vivid azure blue, gold, pale limestone and bulb amber;
+          natural leather texture with visible stitching and grain, fine 35 mm film grain, very
+          shallow depth of field on the toe cap.
+  - category: look
+    word: ADMIRE
+    cost: 2
+    requires: [trusted]
+    prompt: Ask, properly, to admire her uniform up close. She stands for inspection, for once on the other side of it.
+    result:
+      text: |
+        "Sergeant, permission to look at your uniform. Up close."
+
+        One eyebrow. Then she unlocks the door, steps inside, and stands at parade rest under the
+        bulb, gloved hands clasped at the small of her back, chin up, feet a shoulder apart on the
+        flagstones.
+
+        "Look, then."
+
+        You look. The shirt is tan twill pressed until the creases stand off the fabric on their
+        own, two down the back of each sleeve and one down each breast pocket, sharp enough to
+        catch the light. The pocket flaps are piped in azure and buttoned dead center. The
+        epaulets are edged in the same blue, the chevrons stitched tight below the shoulder patch,
+        the star over her heart polished until it throws the bulb back at you. The collar points
+        sit flat and even. The tie is a vivid, saturated azure, knotted in a small hard
+        four-in-hand that sits exactly in the notch of the collar, the gold tie bar level to the
+        millimeter across it.
+
+        "You may touch the tie," she says.
+
+        You take it between two fingers below the bar. Heavy silk, cool, perfectly smooth. You run
+        your thumb up it to the knot and feel how tight she ties it. You straighten nothing,
+        because there is nothing to straighten.
+
+        "Forty minutes with an iron," she says, watching you do it. "Every morning. Eight years in
+        the Army and six here, and you're the first man who ever asked."
+
+        You let go of the tie. Her uniform stays in front of your eyes long after she's locked
+        the door again.
+      effects:
+        - card.gain: uniform-fetish
+      art:
+        loras: [KreaEbonyBabe1]
+        subject: >
+          Intimate first-person photograph from standing eye height in a small jail cell walled
+          with smooth dressed limestone ashlar blocks laid in straight courses with thin mortar
+          joints, the camera level and close to a woman's chest. She stands at parade rest an arm's
+          length from the lens, framed from her lips down to her belt: her full lips closed in a
+          faint, satisfied half-smile at the top edge of the frame, a long black dreadlock falling
+          over one shoulder. The center of the frame is her uniform in crisp detail: a crisp,
+          pressed tan long-sleeved uniform shirt of heavy cotton twill with sharp pressed creases
+          standing off the fabric down each buttoned flap chest pocket, the pockets piped in vivid
+          azure blue, a pointed collar sitting flat and even, shoulder epaulets edged in vivid
+          azure blue, an embroidered vivid azure blue and gold patch on the upper sleeve with
+          three vivid azure blue chevrons beneath it, and a polished gold six-point star badge over
+          the left pocket reflecting the light; a vivid, saturated azure blue silk necktie knotted
+          in a small hard knot in the notch of the collar, a small gold tie bar set level across it,
+          the silk catching a long soft highlight. A pale man's bare hand with short unpolished
+          nails rises from the bottom edge of the frame, holding the necktie lightly between thumb
+          and forefinger just below the tie bar. Her dark brown skin shows at her throat above the
+          collar. Below, the black leather duty belt with a polished brass buckle crosses the bottom
+          of the frame. Behind her, out of focus, pale ashlar stone and the black iron bars of the
+          cell door. A single caged incandescent bulb overhead lights the starch, the silk and the
+          gold from above, leaving soft shadow under the pocket flaps and the collar points.
+          Palette of uniform tan, vivid azure blue, gold, dark skin and pale limestone; natural
+          fabric texture with visible twill weave and silk sheen, fine 35 mm film grain, shallow
+          depth of field on the necktie and the star.
+  - category: deal
+    word: SIGN
+    cost: 0
+    requires: [served]
+    prompt: Your time is up. Sign her ledger, and she'll walk you out.
+    result:
+      text: |
+        She unlocks the door and lays the ledger open on the cot rail with a pen in the gutter.
+        Your name is already in it, in her block capitals, with a column of numbers you don't
+        follow and her initials at the end of the line.
+
+        You sign. She reads your signature, turns the book round, and signs under it.
+
+        Then she takes off every piece of county steel you're still wearing, the cage last, and
+        holds out her gloved palm for it. "County property," she says.
+      effects:
+        - run.end: time-served
+  - category: look
+    word: TURN
+    cost: 0
+    always: true
+    prompt: Turn around.
+    result:
+      text: |
+        You turn your back on the bars: the cot, the iron ring, the stone, and high up near the
+        vault, a small barred window at street level.
+      effects:
+        - move.to: undercroft-cell-back
 # Approved render (retro-80s:1). This subject predates the handcuff-case fix in cast.md; it is
 # kept as rendered, so update it before regenerating with --overwrite.
 art:

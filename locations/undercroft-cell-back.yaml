@@ -1,0 +1,215 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+id: undercroft-cell-back
+name: Cell Three, the back wall
+tags: [law, prison]
+description: A steel cot, an iron ring at ankle height, and a small barred window high up at street level.
+hub: true
+actions:
+  - category: work
+    word: TIDY
+    cost: 2
+    tags: [cooperate]
+    prompt: Tidy the cell for inspection. She'll inspect the cell, and then she'll inspect you.
+    result:
+      text: |
+        You square the blanket on the cot to a crease, wipe the rim of the steel toilet, and line
+        your shoes up under the cot rail.
+
+        She comes in with a flashlight and inspects all of it: the blanket corners, the toilet,
+        the grout under the iron ring. Then she turns the flashlight on you.
+
+        "Jeans down. Shirt up. Face the wall."
+
+        You do it. She has you put your forehead to the cold stone and checks behind your ears and
+        under your jaw with a gloved finger. She checks the lock of the cage with a tug that goes
+        through you to the back of your teeth.
+
+        "Bend. Spread."
+
+        You bend. You spread. She takes her time with the flashlight.
+
+        "Clean," she says at last, and clicks it off. "Do the blanket again. You did it wrong."
+      effects:
+        - skill.gain: work
+  - category: deal
+    word: OFFER
+    cost: 1
+    tags: [please]
+    prompt: Offer to make yourself useful. She sits down to think it over, on your face.
+    result:
+      text: |
+        "Sergeant, permission to be useful."
+
+        She considers that. Then she comes in and points at the cot. "On your back. Head on the
+        rail."
+
+        You lie down. She stands over you a moment, boots planted either side of the cot,
+        unbuttons her breeches and works them down to the tops of her boots, and then she sits:
+        a slow, full weight onto your face, the starched tail of her shirt brushing your forehead,
+        one gloved hand braced on the stone above you.
+
+        "Tongue," she says. "Breathe when I lift."
+
+        You lick her and she grinds down and doesn't lift. When she does it's an inch and a
+        second, enough for one breath, and then the weight again, warm and wet and total. She
+        rides your mouth at her own pace, talking to you the whole time in the voice she uses for
+        the ledger, *left, slower, there, stay there*, and when she comes she does it in silence,
+        thighs locked hard around your ears, and stays down until the shaking stops.
+
+        She stands, buttons up, and tucks the shirt back to regulation.
+
+        "Useful," she allows.
+      effects:
+        - skill.gain: deal
+  - category: deal
+    word: ASK
+    cost: 2
+    tags: [cooperate]
+    prompt: Ask her for something. She grants it her way, with a glove, a key, and no finish.
+    result:
+      text: |
+        "Sergeant, may I ask for —"
+
+        "I know what you're asking for." She takes the key out of her breast pocket. "Stand.
+        Stand still."
+
+        She unlocks the cage and drops it on the blanket. Her gloved hand closes around you,
+        leather cool and then warm, and starts slow.
+
+        "You don't finish," she says. "You tell me when you're close. You don't tell me, you get
+        a week."
+
+        It doesn't take long. "Close." She stops dead and holds you, squeezing at the base until
+        it backs off, watching your face like a gauge. Then again. Then a third time, faster,
+        until you're shaking and saying her rank in a voice you don't recognize, and she lets go
+        and steps back and watches you twitch in the air between you.
+
+        When you've calmed enough to fit, she locks the cage back on, one-handed, and puts the
+        key away behind the star.
+
+        "Granted," she says. "Thank me."
+
+        You thank her.
+      effects:
+        - tracker.change: { nerve: -1 }
+        - skill.gain: deal
+  - category: look
+    word: STUDY
+    cost: 1
+    prompt: Study the window and the bars.
+    result:
+      text: |
+        The window is a slot at the top of the back wall, a foot and a half high at street level:
+        three iron bars set into the stone and a pane of glass gone milky with age. The mortar
+        round the bars is old and soft. You could dent it with a thumbnail, if you could reach it.
+
+        From the cot rail, with your hands free and two minutes when she wasn't looking, a man
+        could maybe get his shoulders through.
+      effects:
+        - skill.gain: look
+  - category: risk
+    word: CLIMB
+    cost: 2
+    requires: [chained]
+    prompt: Go for the window, chains and all.
+    result:
+      text: |
+        You get one foot on the cot rail and one hand on the stone, and the chain sings against
+        the steel loud enough to wake the vault. Her chair scrapes before you've found the second
+        handhold.
+
+        She comes in, takes your right hand off the wall, and folds it: wrist bent back toward
+        the forearm, her gloved thumb on the back of your hand, her other hand pinning the elbow.
+        A textbook hold, done by someone who has taught it. The pain arrives all at once, white,
+        and you go down onto the cot because there's nowhere else to go.
+
+        "Ask," she says, close to your ear.
+
+        "Sergeant —"
+
+        "For what."
+
+        "Sergeant, please let go."
+
+        "That's not a request. That's a noise." She adds a few ounces. "Again."
+
+        You get the sentence right on the third try. She lets go on the fourth word of the
+        fourth, because she's decided that's when.
+
+        "That," she says, "is another day," and writes it in the ledger on her way out.
+      effects:
+        - tracker.change: { body: -1 }
+        - boost.change: { card: sentence, amount: -1 }
+      art:
+        loras: [KreaEbonyBabe1]
+        subject: >
+          First-person point-of-view widescreen photograph from sitting height on a steel cot
+          in a small jail cell walled with smooth dressed limestone ashlar blocks laid in straight courses with thin mortar joints, the camera level. A woman's face and shoulders fill the
+          left two-thirds of the frame only inches from the lens, her eyes in sharp focus: a
+          Black American woman in her early thirties with a full, heavy bust, broad straight
+          shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks
+          gathered at the nape with a few loose locks falling past her cheek, a level,
+          unimpressed stare under straight dark brows. Her visible shoulders and collar show
+          a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a pointed
+          collar, shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold
+          patch on her upper sleeve, a vivid, saturated azure blue necktie knotted tight at her throat, and
+          the edge of a polished gold six-point star badge over her left breast pocket. She
+          stares straight into the lens with cold displeasure, jaw tight, nostrils slightly
+          flared, lips parted as she speaks. At the bottom center of the frame a pale man's
+          bare hand and forearm with short unpolished nails rise from the bottom edge, the
+          wrist folded sharply back toward the forearm in a gooseneck compliance hold: her
+          black leather gloved right hand grips the back of the hand, her gloved thumb pressed
+          hard into the knuckles, her other gloved hand clamped around the forearm just below
+          the wrist. Behind her, out of focus, the black iron bars of the cell door, an iron
+          ring set low in the dressed limestone ashlar wall with a steel chain trailing from it across the
+          flagstones, and the curve of the whitewashed ashlar vault. A single caged incandescent bulb
+          outside the bars, behind her right shoulder, throws warm side light across her
+          cheekbone and the black gloves, leaving the far side of her face in soft shadow.
+          Palette of dark skin, black leather, uniform tan, vivid azure blue and limestone gray;
+          natural skin texture with visible pores, fine 35 mm film grain, very shallow depth
+          of field on her eyes.
+  - category: risk
+    word: SLIP
+    cost: 3
+    unless: [chained]
+    prompt: Go for the window while your hands are free and her back is turned.
+    result:
+      text: |
+        You wait for the creak of her chair settling at the desk, then step up onto the cot rail
+        and reach. The mortar comes away under your fingers in damp gray crumbs. The first bar
+        wobbles, then the second, and then both come out together and you're holding them, and
+        you have to lay them on the blanket without a sound, one at a time.
+
+        The glass is old and gives in one piece. Cold air, wet leaves, the smell of the diner's
+        fryer. You get your arms through, then your head, then your shoulders, and for a long
+        second you are stuck at the ribs with your legs kicking in the Undercroft and your face in
+        the alley grass, listening for keys.
+
+        Then you're through.
+      effects:
+        - run.end: over-the-wall
+  - category: look
+    word: WAIT
+    cost: 0
+    always: true
+    prompt: Lie down on the cot and wait.
+    result:
+      text: |
+        You lie on the steel slats with the blanket over you and count the caged bulbs, then the
+        stones in the vault, then nothing. Hours go by the way they do down here, measured by the
+        scratch of her pen and the scrape of her chair. When you get up, your body has caught up
+        with you a little.
+      effects:
+        - tracker.change: { time: -2 }
+        - dice.refresh
+  - category: look
+    word: TURN
+    cost: 0
+    always: true
+    prompt: Turn around.
+    result:
+      text: |
+        You turn back to the bars, the vault beyond them, and the desk under the first arch where
+        she sits.
+      effects:
+        - move.to: undercroft-cell

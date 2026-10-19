@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+id: served-sentence
+kind: dossier
+name: Time Served
+tags: [served]
+text: A line in the Sergeant's ledger with her initials next to it. All that's missing is yours.

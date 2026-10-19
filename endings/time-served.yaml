@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../../schema/v2/ending.json
+id: time-served
+title: Time Served
+outcome: victory
+text: |
+  She walks you up the stairs and out through the nave, past the deputies' desks and the
+  stained glass nobody took down, and opens the big oak door onto the square. It's morning.
+  The courthouse clock says so, and so does the diner across the street, already full.
+
+  "Graystone's a small town," Sergeant Ashby says. "I'll see you around."
+
+  You believe her. You walk down the church steps into the light, a little lighter than you
+  went in, and a lot more careful.

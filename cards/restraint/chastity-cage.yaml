@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+id: chastity-cage
+kind: restraint
+name: Chastity Cage
+tags: [caged]
+text: Small, steel, county property. The key is in somebody's shirt pocket, and it isn't yours.
+setback_penalty:
+  tags: [prison]
+  effects:
+    - tracker.change: { nerve: -1 }

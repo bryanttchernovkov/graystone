@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+id: gag
+kind: restraint
+name: Gag
+tags: [gagged]
+text: A black rubber bit, buckled behind your head. It comes off when she decides you've earned it.
+boost: { capacity: 1, start: 1 }
+on_empty: lose
+slots:
+  - { match: { tag: cooperate }, cost: 1 }
+setback_penalty:
+  tags: [prison]
+  effects:
+    - tracker.change: { nerve: -1 }

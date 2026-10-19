@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+id: ashbys-good-side
+kind: favor
+name: Ashby's Good Side
+text: The Sergeant doesn't have one. Probably.
+boost: { capacity: 2, start: 0 }
+on_full: ashbys-trust
+slots:
+  - { match: { tag: please }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
+  - { match: { tag: please }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }

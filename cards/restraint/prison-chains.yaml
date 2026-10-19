@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+id: prison-chains
+kind: restraint
+name: Prison Chains
+tags: [chained]
+text: Cuffs, a belly chain through them, irons at the ankles. Short steps, short reach.
+setback_penalty:
+  tags: [prison]
+  effects:
+    - tracker.change: { body: -1 }

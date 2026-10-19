@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# A reaction beat: entered only by a random move.to, it shows her reaction and returns you.
+id: undercroft-chore-fault
+name: Cell Three
+tags: [law, prison]
+description: She finds fault.
+arrival:
+  text: |
+    She finds it at the back of the left heel: a dull patch the size of a thumbprint, where
+    your tongue never reached.
+
+    "Missed one." She makes you get down on the flagstones and do the heel where it stands,
+    then the edge of the sole, then the toe again for good measure. When she walks out she
+    doesn't say it'll do.
+  effects:
+    - tracker.change: { nerve: -1 }
+    - move.to: undercroft-cell

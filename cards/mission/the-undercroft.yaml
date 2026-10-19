@@ -2,5 +2,7 @@
 id: the-undercroft
 kind: mission
 name: The Undercroft
-text: Trial scene. Three days in the lockup under the old church, and a sergeant who decides when you breathe.
+text: Trial storyline. Booked into the lockup under the old church, with a sentence and a sergeant. Serve it, or find another way out.
 start: undercroft
+on_place:
+  - card.gain: sentence
