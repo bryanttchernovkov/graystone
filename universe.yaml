@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=../../schema/v2/universe.json
-# PROVISIONAL scaffold so the trial content validates and renders. The rules configuration is
-# pending a redesign (bible: "Rules configuration"); nothing here is final.
+# The universe-wide layer only. Storylines bring their own cards (a Sentence, an APB, a gang's
+# favor) and add tags as their locations need them.
 format: 2
 id: graystone
 name: Graystone
@@ -12,58 +12,71 @@ categories:
   - { id: take, name: TAKE }
   - { id: risk, name: RISK }
   - { id: look, name: LOOK }
-  - { id: obey, name: OBEY }
+  - { id: deal, name: DEAL }
 
 trackers:
   - id: nerve
     name: Nerve
     max: 6
     breaking_point:
-      text: Something in you folds. You sit with your back to the nearest wall until your hands are hands again.
+      text: |
+        Something in you folds. You find a wall to put your back against and stay there
+        until your hands are hands again. The afternoon doesn't wait for you.
       effects:
-        - tracker.change: { body: -1 }
+        - tracker.change: { time: -2 }
   - id: body
     name: Body
     max: 6
     breaking_point:
-      text: Your legs quit. You sit down where you are and wait for them to come back.
+      text: |
+        Your legs quit. You sit down where you are, on a curb or a step or a floor, and wait
+        for them to come back. Nobody in Graystone hurries you, and nobody helps.
       effects:
-        - tracker.change: { nerve: -1 }
+        - tracker.change: { time: -2 }
   - id: time
     name: Time
     max: 12
     breaking_point:
-      text: The day is gone, and you went with it.
+      text: |
+        The light goes long over the grain elevators. Whatever you came to do, the day is
+        nearly out of room for it.
       effects:
-        - run.end: run-out
+        - tracker.change: { nerve: -1 }
 
 difficulties:
-  - { id: normal, name: Normal, start: { nerve: 6, body: 6, time: 12 } }
+  - { id: easy, name: Easy Day,  start: { nerve: 6, body: 6, time: 12 } }
+  - { id: hard, name: Rough Day, start: { nerve: 4, body: 4, time: 10 } }
 
 dice:
   pool: 10
   faces:
     - { id: nerve,   type: tracker, tracker: nerve }
     - { id: body,    type: tracker, tracker: body }
-    - { id: time,    type: tracker, tracker: time }
+    - { id: time-1,  type: tracker, tracker: time }
+    - { id: time-2,  type: tracker, tracker: time }
     - { id: setback, type: setback }
-    - { id: blank-1, type: blank }
-    - { id: blank-2, type: blank }
+    - { id: blank,   type: blank }
 
 tags:
-  - { id: inside,  name: Inside }
-  - { id: lockup,  name: Lockup }
+  - { id: law,    name: Law }
+  - { id: prison, name: Prison }
 
 currencies:
-  - { id: cash, name: Cash, symbol: "$", start: 0 }
+  - { id: cash, name: Cash, symbol: "$", start: 3 }
 
 card_kinds:
-  - { id: hero,    name: Hero,    placement: center }
-  - { id: mission, name: Mission, placement: supply }
+  - { id: hero,      name: Hero,      placement: center }
+  - { id: mission,   name: Mission,   placement: supply }
+  - { id: gear,      name: Gear,      placement: grid }
+  - { id: restraint, name: Restraint, placement: grid, forced: true }
+  - { id: favor,     name: Favor,     placement: grid }
+  - { id: dossier,   name: Dossier,   placement: grid, forced: true }
 
 run: { character_kind: hero, mission_kind: mission, default_defeat: run-out }
-reserve_capacity: 2
+reserve_capacity: 3
 exits: { category: go, word: WALK, cost: 1 }
 
 character_powers:
   - { price: 1, effect: reroll }
+  - { price: 2, effect: { skill: random } }
+  - { price: 1, effect: recall }

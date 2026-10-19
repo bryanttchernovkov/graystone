@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=../../../schema/v2/location.json
 id: undercroft
 name: The Undercroft
-tags: [inside, lockup]
+tags: [law, prison]
 description: Limestone vaults under the old church, caged bulbs, and a sergeant's desk past a yellow line.
 arrival:
   text: |
@@ -73,10 +73,10 @@ actions:
           pooling amber on the desk, while the corners of the vault sink into soft shadow.
           Palette of limestone gray, uniform tan, vivid azure blue, black iron and bulb amber;
           natural skin texture, fine 35 mm film grain, shallow depth of field on her face.
-  - category: obey
-    word: PRESENT
+  - category: deal
+    word: TERMS
     cost: 2
-    prompt: Present your wrists for intake. She cuffs you, chains you, and walks you to a cell.
+    prompt: Hear the Sergeant's terms for your stay. They come with cuffs, chains and a walk to a cell.
     result:
       text: |
         "Wrists," she says. "Over the desk. Palms down."
@@ -98,7 +98,7 @@ actions:
         You walk, in the short steps the chain allows, her gloved hand closed on the back of
         your collar and the keys ringing at her hip, to the third arch on the left.
       effects:
-        - skill.gain: obey
+        - skill.gain: deal
         - move.to: undercroft-cell
       art:
         loras: [KreaEbonyBabe1, "Krea2_Metal Cuffs_V6E8:0.8"]

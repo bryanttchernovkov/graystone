@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=../../../schema/v2/location.json
 id: undercroft-cell
 name: Cell Three
-tags: [inside, lockup]
+tags: [law, prison]
 description: A burial niche with bars, a steel cot, and an iron ring in the wall at ankle height.
 arrival:
   text: |
@@ -16,7 +16,7 @@ arrival:
 
     "Three days," she says. "Ask nicely and they'll go faster."
 actions:
-  - category: obey
+  - category: work
     word: POLISH
     cost: 3
     prompt: She props a boot on your cot and hands you a tin and a cloth. Her boots, to her standard, and when the cloth won't do, your tongue.
@@ -47,7 +47,7 @@ actions:
 
         You say it.
       effects:
-        - skill.gain: { obey: 2 }
+        - skill.gain: { work: 2 }
         - tracker.change: { nerve: -1 }
       art:
         loras: [KreaEbonyBabe1]

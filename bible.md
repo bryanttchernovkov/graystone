@@ -24,7 +24,7 @@ lockup is **the Undercroft**, the vaulted crypt beneath it.
 
 **The player is always a man**, and always a newcomer to the department's attention. The first
 hero is new in town; more heroes come later, each with his own reasons and his own slots and
-dice. A run is the stretch of days in which Graystone decides what to make of him.
+dice. A run lasts as long as his time does.
 
 ## Tone
 
@@ -109,10 +109,31 @@ follow the player as companion cards.
 
 ## Rules configuration
 
-**Pending redesign** (agreed: rethink, not a copy of Precinct 69). The current `universe.yaml`
-is a provisional scaffold so the trial content validates and renders; nothing in it is final.
-Open points: a run spanning several days (the Undercroft holds a man for days), the trackers,
-currency, categories and words, and per-hero slots and dice.
+`universe.yaml` holds **only the universe-wide layer**; storylines bring their own cards and
+tags. Nothing in it is shaped around one storyline.
+
+- **Categories:** TALK, WORK, TAKE, RISK, LOOK, DEAL, plus GO for exits. There is **no spicy
+  category**: heat can come through any of them, and the word decides (WORK-POLISH,
+  DEAL-TERMS, TALK-ASK). DEAL covers terms, trades, bargains and agreements. What the terms
+  are is the surprise.
+- **Trackers:** Time (max 12), Body and Nerve (max 6). **A run is as long as its Time.**
+  Results and cards can give Time back, and a run goes on until the mission is done or the
+  day runs out.
+- **Currency:** Cash only.
+- **Card kinds:**
+  - **hero** — centre; one per playable man, each with his own slots and powers. Dice faces are
+    universe-wide, so heroes differ through slots, powers, boost and starting cash.
+  - **mission** — supply.
+  - **gear** — grid; things he can use himself.
+  - **restraint** — grid, forced; things put on him: cuffs, prison chains, gags, chastity cages.
+  - **favor** — grid; standing with a woman or a faction. He places dice on it to support her,
+    and it pays off in a benefit.
+  - **dossier** — grid, forced; what the town keeps on him: an APB, a sentence, a gang's
+    tally. It's in the grid because dice drive it (a sentence served off, an APB that fills).
+- **Tags:** added only as storylines need them. So far: **law** (the Sheriff's Department's
+  ground) and **prison** (a closed place he can't simply walk out of).
+- **Storyline mechanics live in cards.** For example, the Undercroft: an arrest gives a
+  *Sentence* dossier before he arrives, and his time in the cell is served against it.
 
 ## Art direction (canonical for `style.yaml`)
 
