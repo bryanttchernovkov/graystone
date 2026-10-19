@@ -13,3 +13,6 @@ arrival:
   effects:
 
     - move.to: undercroft-cell
+art:
+  image: locations/undercroft-cell.png
+  generate: false

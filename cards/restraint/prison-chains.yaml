@@ -8,3 +8,13 @@ setback_penalty:
   tags: [prison]
   effects:
     - tracker.change: { body: -1 }
+art:
+  loras: ["Krea2_Metal Cuffs_V6E8:0.8"]
+  subject: >
+    Still-life photograph from above of prison restraints lying on the gray wool blanket of a
+    steel slat cot: a pair of polished steel hinged police handcuffs threaded on a heavy steel
+    belly chain, and a set of steel leg irons joined by a short chain, coiled together in the
+    center of the frame. Square composition. A caged incandescent bulb above throws hard warm
+    highlights along every chain link and the cuff ratchets, the wool around them in soft
+    shadow. Palette of polished steel, gray wool and warm amber; natural metal and wool texture,
+    fine 35 mm film grain, sharp focus on the cuffs.

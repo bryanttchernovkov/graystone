@@ -31,6 +31,41 @@ actions:
         "Clean," she says at last, and clicks it off. "Do the blanket again. You did it wrong."
       effects:
         - skill.gain: work
+      art:
+        loras: ["KreaEbonyBabe1"]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height inside a
+          small jail cell walled with smooth dressed limestone ashlar blocks laid in straight
+          courses with thin mortar joints under a whitewashed pointed vault, underground and
+          windowless but for one small barred slot at street level, the camera level. A woman
+          stands inside the cell at arm's length, framed from the thighs up and filling the
+          right half of the frame: a Black American woman in her early thirties, tall and
+          athletic with a full, heavy bust, broad straight shoulders and a soldier's posture,
+          smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the
+          middle of her back, a level, unimpressed stare under straight dark brows, black
+          leather duty gloves, a black leather handcuff case on her belt and a ring of heavy
+          iron keys on a steel chain at her hip. She wears the Graystone County Sheriff's
+          uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a
+          pointed collar, a full button-front placket, two buttoned flap chest pockets piped in
+          vivid azure blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid
+          azure blue and gold patch on each upper sleeve and a polished gold six-point star
+          badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small
+          gold tie bar; tan riding breeches with a vivid azure blue stripe down the outer seam;
+          a black leather duty belt with a polished brass buckle; and stiff, structured, mirror-
+          polished black leather thigh-high riding boots with rigid straight shafts fitted tight
+          to the leg, pulled up over the breeches to mid-thigh; her head is bare. Three vivid
+          azure blue chevrons sit on each upper sleeve beneath the patch. She looks straight
+          into the lens with flat, clinical boredom, eyes narrowed, mouth a straight line, and
+          holds a black metal flashlight up at shoulder height in her gloved left hand, its beam
+          aimed into the lens in a soft white flare, while her gloved right index finger points
+          sharply to the side at the bare stone wall. The left half of the frame shows the cell:
+          a steel slat cot with a gray wool blanket squared to a knife-edge crease, a pair of
+          shoes lined up beneath it, and a seatless steel toilet wiped bright. Behind her, the
+          black iron bars of the open cell door and the warm corridor beyond. A caged
+          incandescent bulb overhead throws warm light down across her shoulders and the squared
+          blanket, with the cold flashlight beam crossing it. Palette of uniform tan, vivid
+          azure blue, gray wool, pale limestone and flashlight white; natural skin texture, fine
+          35 mm film grain, focus on her eyes.
   - category: deal
     word: OFFER
     cost: 1
@@ -61,6 +96,35 @@ actions:
         "Useful," she allows.
       effects:
         - skill.gain: deal
+      art:
+        loras: ["KreaEbonyBabe1", "Krea2_Facesitting_.1.0:0.8"]
+        subject: >
+          First-person point-of-view photograph from flat on the back on a steel cot in a small
+          jail cell walled with smooth dressed limestone ashlar blocks laid in straight courses
+          with thin mortar joints under a whitewashed pointed vault, underground and windowless
+          but for one small barred slot at street level, the camera pointing straight up. A
+          woman is lowering herself to sit on the lens, straddling it: her bare dark brown
+          thighs spread wide fill the left and right edges of the frame, her bare vulva and
+          smooth pubic mound directly above the lens at the upper center, close and in sharp
+          focus, her tan riding breeches with the vivid azure blue stripe pushed down and
+          bunched at the tops of her stiff, mirror-polished black leather thigh-high riding
+          boots on either side. Above, framed between her thighs, her upper body leans forward
+          over the lens: the starched tail of a crisp, pressed tan long-sleeved uniform shirt
+          hanging toward the camera, two buttoned flap chest pockets piped in vivid azure blue,
+          a vivid, saturated azure blue necktie with a small gold tie bar hanging straight down
+          toward the lens, and a polished gold six-point star badge over her left breast. At the
+          very top of the frame her face looks down past her chest into the lens with heavy-
+          lidded, commanding satisfaction, lips parted. She is a Black American woman in her
+          early thirties, tall and athletic with a full, heavy bust, broad straight shoulders
+          and a soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the
+          nape and falling to the middle of her back, a level, unimpressed stare under straight
+          dark brows, black leather duty gloves, a black leather handcuff case on her belt and a
+          ring of heavy iron keys on a steel chain at her hip. One black-gloved hand is braced
+          flat on the whitewashed vault above. A caged incandescent bulb behind her head rims
+          her dreadlocks and shoulders with warm light and casts her thighs in soft shadow.
+          Palette of dark skin, uniform tan, vivid azure blue, black leather and whitewashed
+          stone; natural skin texture, fine 35 mm film grain with visible pores, shallow depth
+          of field.
   - category: deal
     word: ASK
     cost: 2
@@ -93,6 +157,37 @@ actions:
       effects:
         - tracker.change: { nerve: -1 }
         - skill.gain: deal
+      art:
+        loras: ["KreaEbonyBabe1"]
+        subject: >
+          Intimate first-person point-of-view photograph from standing eye height inside a small
+          jail cell walled with smooth dressed limestone ashlar blocks laid in straight courses
+          with thin mortar joints under a whitewashed pointed vault, underground and windowless
+          but for one small barred slot at street level, the camera tilted slightly down. A
+          woman stands close at arm's length, framed from the waist up in the center of the
+          frame: a Black American woman in her early thirties, tall and athletic with a full,
+          heavy bust, broad straight shoulders and a soldier's posture, smooth dark brown skin,
+          long black dreadlocks gathered at the nape and falling to the middle of her back, a
+          level, unimpressed stare under straight dark brows, black leather duty gloves, a black
+          leather handcuff case on her belt and a ring of heavy iron keys on a steel chain at
+          her hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-
+          sleeved uniform shirt of heavy cotton twill with a pointed collar, a full button-front
+          placket, two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets
+          edged in vivid azure blue, an embroidered vivid azure blue and gold patch on each
+          upper sleeve and a polished gold six-point star badge pinned over the left pocket; a
+          vivid, saturated azure blue necktie with a small gold tie bar; a black leather duty
+          belt with a polished brass buckle; her head is bare. Three vivid azure blue chevrons
+          sit on each upper sleeve beneath the patch. She looks straight into the lens with
+          cool, amused control, a slow knowing half-smile, one eyebrow raised. In her gloved
+          left hand, held up beside her chin, she shows a small stainless steel chastity cage
+          with an open brass padlock hanging from it, a tiny brass key pinched between two
+          gloved fingers. Her gloved right arm reaches down and out of the bottom edge of the
+          frame. Behind her, out of focus, the steel slat cot with its gray wool blanket, the
+          iron ring in the wall and the black iron bars of the cell door. A caged incandescent
+          bulb above and behind her lights the polished steel cage and the brass key with sharp
+          highlights and rims her dreadlocks, her face in warm soft light. Palette of polished
+          steel, brass, black leather, uniform tan and vivid azure blue; natural skin texture,
+          fine 35 mm film grain, sharp focus on her eyes and the cage.
   - category: look
     word: STUDY
     cost: 1
@@ -107,6 +202,24 @@ actions:
         could maybe get his shoulders through.
       effects:
         - skill.gain: look
+      art:
+        subject: >
+          First-person point-of-view photograph from standing on the rail of a steel cot inside
+          a small jail cell walled with smooth dressed limestone ashlar blocks laid in straight
+          courses with thin mortar joints under a whitewashed pointed vault, underground and
+          windowless but for one small barred slot at street level, the camera tilted steeply up
+          at the top of the back wall. A small horizontal window slot at street level fills the
+          upper center of the frame: three rusted iron bars set in crumbling gray mortar, gray
+          crumbs scattered along the stone sill, and a pane of old glass gone milky with age,
+          through which blurred blades of grass and a pale gray sky show at ground level. A pale
+          man's bare hands and forearms with short unpolished nails enter from the bottom edge
+          of the frame toward the center, one fingertip pressed into the soft mortar at the base
+          of the middle bar, a fresh gray dent beneath it and grit under the fingernail. The
+          whitewashed vault curves close overhead. Cool daylight through the milky glass lights
+          the bars, the mortar and the fingertip from above, while warm bulb light from the cell
+          below glows on the lower edge of the frame. Palette of rusted iron, gray mortar, milky
+          white, pale skin and pale limestone; natural texture, fine 35 mm film grain, sharp
+          focus on the fingertip in the mortar.
   - category: risk
     word: CLIMB
     cost: 2
@@ -188,6 +301,21 @@ actions:
         Then you're through.
       effects:
         - run.end: over-the-wall
+      art:
+        subject: >
+          First-person point-of-view widescreen photograph from ground level, just outside a
+          small broken basement window low in the limestone wall of an old church, looking along
+          a narrow alley at night. Wet grass and fallen yellow maple leaves fill the foreground
+          inches from the lens, and a pale man's bare hands and forearms with short unpolished
+          nails enter from the bottom edge of the frame, fingers dug into the wet grass, pulling
+          forward. The alley's wet cobbles stretch away into the distance between the church's
+          gray ashlar wall on the left and a brick wall on the right, a green dumpster beside
+          the back door of a diner whose kitchen window glows warm yellow, a single sodium
+          streetlight at the far end of the alley. Warm incandescent light spills out of the
+          window behind the camera onto the grass and the hands, while the alley beyond lies in
+          orange sodium light and blue shadow. Palette of wet green grass, yellow leaves, gray
+          stone, sodium orange and night blue; natural texture, fine 35 mm film grain, shallow
+          depth of field on the hands and grass.
   - category: look
     word: WAIT
     cost: 0
@@ -213,3 +341,21 @@ actions:
         she sits.
       effects:
         - move.to: undercroft-cell
+art:
+  subject: >
+    Eye-level photograph from standing height inside a small jail cell walled with smooth
+    dressed limestone ashlar blocks laid in straight courses with thin mortar joints under a
+    whitewashed pointed vault, underground and windowless but for one small barred slot at
+    street level, facing the back wall. Against the left wall stands a cot of riveted steel
+    slats with a gray wool blanket folded square at its foot. Low on the back wall at ankle
+    height a heavy iron ring is set into the stone, a length of steel chain hanging from it and
+    coiled on the worn gray flagstones. In the right corner stands a seatless stainless steel
+    toilet. High at the top of the back wall, just under the vault, a small horizontal window
+    slot at street level: three rusted iron bars set in crumbling gray mortar and a pane of old
+    glass gone milky, a pale cool glow coming through it. The window sits in the upper center of
+    the frame, the cot leads in from the lower left, the ring and chain sit at lower center
+    right, and the cell is otherwise empty. A caged incandescent bulb behind the camera throws
+    warm light and the long soft shadows of the cell door's bars across the floor and the cot,
+    while the milky window lays a faint cool edge along the top of the wall. Palette of pale
+    limestone, gray wool, rusted iron, cool window white and bulb amber; natural stone texture,
+    fine 35 mm film grain, deep focus.

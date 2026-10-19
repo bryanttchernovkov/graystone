@@ -13,3 +13,6 @@ arrival:
   effects:
     - boost.change: { card: ashbys-good-side, amount: +1 }
     - move.to: undercroft-cell
+art:
+  image: locations/undercroft-cell.png
+  generate: false

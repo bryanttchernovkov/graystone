@@ -15,3 +15,6 @@ arrival:
   effects:
     - tracker.change: { nerve: -1 }
     - move.to: undercroft-cell
+art:
+  image: locations/undercroft-cell.png
+  generate: false

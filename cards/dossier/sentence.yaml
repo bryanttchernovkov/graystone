@@ -9,3 +9,13 @@ slots:
   - { match: { tag: cooperate }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
   - { match: { tag: cooperate }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
   - { match: { tag: cooperate }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
+art:
+  subject: >
+    Close still-life photograph from above of an open ruled ledger on a gray steel desk, its
+    cream pages filled with rows of small handwritten block capitals too small to read, one line
+    underlined in blue ink, a black pen lying in the gutter, and a heavy ring of old iron keys
+    on a steel chain resting across the corner of the page beside a black leather glove. Square
+    composition, the ledger filling the center. A single caged incandescent bulb above lights
+    the page warm and leaves the edges of the steel desk in shadow. Palette of cream paper, blue
+    ink, black iron and warm amber; natural paper texture, fine 35 mm film grain, shallow depth
+    of field on the underlined line.

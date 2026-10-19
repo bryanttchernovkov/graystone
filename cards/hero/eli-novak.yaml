@@ -7,3 +7,13 @@ boost: { capacity: 4, start: 2 }
 slots:
   - { match: { category: talk } }
   - { match: { category: look } }
+art:
+  subject: >
+    Photograph of the small white clapboard half of a duplex on a quiet tree-lined Midwest
+    street in autumn: a sagging front porch with two mailboxes side by side, a dented blue
+    pickup truck parked in the gravel drive, a canvas laptop bag left on the porch swing, red
+    and yellow maple leaves drifting on the wooden steps and the lawn. Square composition with
+    the porch and the truck in the center and the maple branches framing the top. Low golden
+    late-afternoon sun from the left throws long shadows across the lawn and lights the white
+    siding warm. Palette of white clapboard, maple red and gold, faded truck blue and autumn
+    grass; natural texture, fine 35 mm film grain.
