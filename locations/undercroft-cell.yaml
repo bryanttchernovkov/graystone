@@ -53,11 +53,11 @@ actions:
         loras: [KreaEbonyBabe1]
         subject: >
           First-person point-of-view widescreen photograph from sitting height on a steel cot
-          in a small stone jail cell, the camera tilted up along a diagonal. In the lower left
+          in a small jail cell walled with smooth dressed limestone ashlar blocks laid in straight courses with thin mortar joints, the camera tilted up along a diagonal. In the lower left
           corner of the frame a woman's right boot is planted on the steel rail of the cot at
-          the camera's height: a glossy, mirror-polished black leather thigh-high riding boot,
+          the camera's height: a stiff, structured, mirror-polished black leather thigh-high riding boot with a rigid straight shaft fitted tight to the leg,
           its rounded toe and vamp shining wet, its long shaft rising diagonally up the frame
-          past her knee to mid-thigh, where tan riding breeches with an azure blue stripe down
+          past her knee to mid-thigh, where tan riding breeches with an vivid azure blue stripe down
           the outer seam disappear into it. A pale man's bare hands and forearms with short
           unpolished nails enter from the bottom edge of the frame, one hand cupping the heel
           and the other rubbing a black-smeared square of white cotton cloth in small circles
@@ -70,18 +70,16 @@ actions:
           black leather duty gloves and a ring of heavy iron keys on a steel chain at her hip.
           She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved
           uniform shirt of heavy cotton twill with a pointed collar, a full button-front
-          placket, two buttoned flap chest pockets piped in azure blue, shoulder epaulets
-          edged in azure blue, an embroidered azure blue and gold patch on each upper sleeve
-          and a polished gold six-point star badge pinned over the left pocket; an azure blue
-          necktie with a small gold tie bar; a black leather duty belt with a polished brass
-          buckle; her head is bare. Three azure blue chevrons sit on each upper sleeve beneath
+          placket, two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets
+          edged in vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve
+          and a polished gold six-point star badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small gold tie bar; a black leather duty belt with a polished brass
+          buckle; her head is bare. Three vivid azure blue chevrons sit on each upper sleeve beneath
           the patch. She looks down into the lens with critical, narrow-eyed scrutiny, lips
           pursed, and holds an open round tin of black boot polish up near her chest in her
-          gloved left hand. Behind her, black iron bars close the stone niche and a rough
-          limestone vault arches overhead. A single caged incandescent bulb above the cell
+          gloved left hand. Behind her, black iron bars close the stone niche and a whitewashed pointed vault of dressed limestone arches overhead. A single caged incandescent bulb above the cell
           door, behind and above her, throws a hard specular highlight down the length of
-          the boot and rims her shoulders and dreadlocks, while the stone walls fall into
-          warm shadow. Palette of black leather, uniform tan, azure blue, limestone gray and
+          the boot and rims her shoulders and dreadlocks, while the ashlar walls fall into
+          warm shadow. Palette of black leather, uniform tan, vivid azure blue, limestone gray and
           bulb amber; natural skin and leather texture, fine 35 mm film grain, sharp focus on
           the boot shaft and her eyes.
   - category: risk
@@ -119,15 +117,15 @@ actions:
         loras: [KreaEbonyBabe1]
         subject: >
           First-person point-of-view widescreen photograph from sitting height on a steel cot
-          in a small stone jail cell, the camera level. A woman's face and shoulders fill the
+          in a small jail cell walled with smooth dressed limestone ashlar blocks laid in straight courses with thin mortar joints, the camera level. A woman's face and shoulders fill the
           left two-thirds of the frame only inches from the lens, her eyes in sharp focus: a
           Black American woman in her early thirties with a full, heavy bust, broad straight
           shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks
           gathered at the nape with a few loose locks falling past her cheek, a level,
           unimpressed stare under straight dark brows. Her visible shoulders and collar show
           a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a pointed
-          collar, shoulder epaulets edged in azure blue, an embroidered azure blue and gold
-          patch on her upper sleeve, an azure blue necktie knotted tight at her throat, and
+          collar, shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold
+          patch on her upper sleeve, a vivid, saturated azure blue necktie knotted tight at her throat, and
           the edge of a polished gold six-point star badge over her left breast pocket. She
           stares straight into the lens with cold displeasure, jaw tight, nostrils slightly
           flared, lips parted as she speaks. At the bottom center of the frame a pale man's
@@ -136,41 +134,46 @@ actions:
           black leather gloved right hand grips the back of the hand, her gloved thumb pressed
           hard into the knuckles, her other gloved hand clamped around the forearm just below
           the wrist. Behind her, out of focus, the black iron bars of the cell door, an iron
-          ring set low in the limestone wall with a steel chain trailing from it across the
-          flagstones, and the curve of the stone vault. A single caged incandescent bulb
+          ring set low in the dressed limestone ashlar wall with a steel chain trailing from it across the
+          flagstones, and the curve of the whitewashed ashlar vault. A single caged incandescent bulb
           outside the bars, behind her right shoulder, throws warm side light across her
           cheekbone and the black gloves, leaving the far side of her face in soft shadow.
-          Palette of dark skin, black leather, uniform tan, azure blue and limestone gray;
+          Palette of dark skin, black leather, uniform tan, vivid azure blue and limestone gray;
           natural skin texture with visible pores, fine 35 mm film grain, very shallow depth
           of field on her eyes.
+# Approved render (retro-80s:1). This subject predates the handcuff-case fix in cast.md; it is
+# kept as rendered, so update it before regenerating with --overwrite.
 art:
   loras: [KreaEbonyBabe1]
   subject: >
-    Eye-level photograph from inside a small stone jail cell built into a burial niche of a
-    vaulted limestone crypt, looking out through a black iron barred sliding door. In the
-    foreground on the left, a cot of steel slats bolted to the stone wall with a folded gray
-    wool blanket; on the right, a seatless steel toilet; low on the back wall beside the cot,
-    a heavy iron ring set into the limestone with a length of steel chain coiled on the
-    flagstones beneath it. Just outside the bars, filling the center of the frame from the
-    thighs up, a woman stands with one black-gloved hand resting on a bar at shoulder height:
-    a Black American woman in her early thirties, tall and athletic with a full, heavy bust,
-    broad straight shoulders and a soldier's posture, smooth dark brown skin, long black
-    dreadlocks gathered at the nape and falling to the middle of her back, a level,
-    unimpressed stare under straight dark brows, black leather duty gloves, two pairs of steel
-    handcuffs in black leather cases on her belt and a ring of heavy iron keys on a steel
-    chain at her hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan
-    long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full
-    button-front placket, two buttoned flap chest pockets piped in azure blue, shoulder
-    epaulets edged in azure blue, an embroidered azure blue and gold patch on each upper
-    sleeve and a polished gold six-point star badge pinned over the left pocket; an azure
-    blue necktie with a small gold tie bar; tan riding breeches with an azure blue stripe down
-    the outer seam; a black leather duty belt with a polished brass buckle; and glossy,
-    mirror-polished black leather thigh-high riding boots pulled up over the breeches to
-    mid-thigh; her head is bare. Three azure blue chevrons sit on each upper sleeve beneath
-    the patch. She looks straight through the bars into the lens with a level, unimpressed
-    stare, chin slightly raised, lips closed. Behind her the crypt corridor runs under pointed
-    limestone arches lit by caged bulbs. A caged incandescent bulb in the corridor behind her
-    backlights her silhouette and throws the long shadows of the bars across the cell floor
-    toward the lens, while the inside of the cell stays dim and cool. Palette of black iron,
-    limestone gray, uniform tan, azure blue and bulb amber; natural skin texture, fine 35 mm
-    film grain, focus on her face through the bars.
+    Eye-level photograph taken through the bars of a jail cell door, from inside the cell
+    looking out: thick black iron bars stand in the extreme foreground, the lens close behind
+    them, soft and out of focus, dark vertical stripes running the full height of the frame
+    with a flat iron crossbar at waist height. Beyond the bars, sharp and in focus, one pace
+    away in the corridor outside the cell, a woman stands facing the lens, seen from mid-thigh
+    up, her black-gloved right hand wrapped around one bar from the far side: a Black
+    American woman in her early thirties, tall and athletic with a full, heavy bust, broad
+    straight shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks
+    gathered at the nape and falling to the middle of her back, a level, unimpressed stare
+    under straight dark brows, black leather duty gloves, two pairs of steel handcuffs in
+    black leather cases on her belt and a ring of heavy iron keys on a steel chain at her hip.
+    She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved
+    uniform shirt of heavy cotton twill with a pointed collar, a full button-front placket,
+    two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged in
+    vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve and
+    a polished gold six-point star badge pinned over the left pocket; a vivid, saturated
+    azure blue necktie with a small gold tie bar; tan riding breeches with a vivid azure blue
+    stripe down the outer seam; a black leather duty belt with a polished brass buckle; and
+    stiff, structured, mirror-polished black leather thigh-high riding boots with rigid
+    straight shafts fitted tight to the leg, pulled up over the breeches to mid-thigh, their
+    tops at the bottom edge of the frame; her head is bare. Three vivid azure blue chevrons
+    sit on each upper sleeve beneath the patch. Her face sits in the gap between two blurred
+    bars, and she looks straight into the lens with a level, unimpressed stare, chin slightly
+    raised, lips closed. Behind her the corridor runs away under pointed arches of smooth
+    dressed limestone ashlar blocks laid in straight courses with thin mortar joints, a
+    whitewashed pointed vault overhead, caged bulbs hanging from it on black cords, a row of
+    barred cell doors along the far wall. A caged incandescent bulb in the corridor above and
+    behind her backlights her shoulders and dreadlocks and lays warm light across the
+    flagstones, while the blurred bars in the foreground stay dark. Palette of black iron,
+    pale limestone, uniform tan, vivid azure blue and bulb amber; natural skin texture, fine
+    35 mm film grain, shallow depth of field with focus on her eyes.

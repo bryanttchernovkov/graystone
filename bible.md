@@ -122,6 +122,11 @@ where one exists (cuffs, chastity, facesitting, strap-on, rope, chains…), with
 rules in `cast.md` still guarding the viewer's body. Real bodies, real light, real rooms.
 Small-town light: limestone gray, prairie gold, sodium amber, cruiser blue and red.
 
+**The look is locked: the `retro-80s` LoRA at weight 1** (`style.loras`), on the checkpoint plus
+each character's LoRA. Chosen over canon_krea2, lumen_blockbuster, cheap-realism and no style
+LoRA for its warm color and the way it makes the department's azure pop; the lessons from that
+comparison are in `cast.md` ("Prompt lessons").
+
 **Character consistency is a hard rule:** every named woman has a character LoRA, and **every
 image she appears in carries it** (`art.loras`), together with her full cast block.
 

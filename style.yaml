@@ -5,7 +5,7 @@ comfy:
 style:
   prefix: cinematic photorealistic film still, present-day small Midwest town, 35mm film grain
   negative: text, watermark, logo, cartoon, anime, illustration, painting, plastic skin, deformed hands, extra fingers
-  loras: [canon_krea2:0.8]
+  loras: [retro-80s:1]
 types:
   location: { workflow: krea2, width: 1920, height: 1080 }
   result:   { workflow: krea2, width: 1920, height: 1080 }

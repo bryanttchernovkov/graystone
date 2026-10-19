@@ -92,6 +92,32 @@ part of her and cannot also show her face and the room.
 6. **What of the viewer is in frame** — usually nothing, or the POV block at the bottom center.
 7. Background, one lighting sentence, palette, finish.
 
+## Prompt lessons (from the Graystone renders, retro-80s:1)
+
+One image takes about seven minutes; test one image per change, never a batch.
+
+- **Azure is "vivid azure blue".** The tie is "a vivid, saturated azure blue necktie"; piping,
+  epaulets, patch, stripe and chevrons are "vivid azure blue". Never "sky blue" or "light"
+  (renders a dull powder blue). Muted looks (canon, no LoRA) turn the tie navy or black; the
+  retro-80s LoRA is what makes it pop.
+- **Stone is named as masonry.** "Limestone crypt" alone renders raw cave rock under retro-80s.
+  Every subject in the church says "smooth dressed limestone ashlar blocks laid in straight
+  courses with thin mortar joints" and "a whitewashed pointed vault".
+- **The Undercroft is underground.** The model adds tall daylight windows to any arched
+  corridor; write "windowless, underground, lit only by caged bulbs". The one exception is the
+  small grated window at street level in the guard post.
+- **Through the bars.** To put her outside a cell, write "photographed through the bars": the
+  bars in the extreme foreground, her face in the gap between two of them. If the cell's props
+  (cot, wall ring) are in the near foreground, the model puts her inside the cell with them.
+- **Props in an appearance block land on her body.** "Steel handcuffs in black leather cases"
+  put a cuff on her own wrist; write "a black leather handcuff case on her belt", and put loose
+  cuffs in her hands only when the scene uses them.
+- **Boots:** "stiff, structured, mirror-polished … with rigid straight shafts fitted tight to the
+  leg" stops the slouch. A shot cropped above the knee won't show them; when they matter, frame
+  her to the knee or go to a detail shot.
+- **The character LoRA holds her face** across every look tested; the appearance block keeps
+  hair, build and kit consistent around it.
+
 ## The heroes
 
 **POV block** (per hero, verbatim when his hands are in frame).
@@ -108,13 +134,13 @@ the bottom edge of the frame.*
 
 **Indoors:**
 
-She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full button-front placket, two buttoned flap chest pockets piped in azure blue, shoulder epaulets edged in azure blue, an embroidered azure blue and gold patch on each upper sleeve and a polished gold six-point star badge pinned over the left pocket; an azure blue necktie with a small gold tie bar; tan riding breeches with an azure blue stripe down the outer seam; a black leather duty belt with a polished brass buckle; and glossy, mirror-polished black leather thigh-high riding boots pulled up over the breeches to mid-thigh; her head is bare.
+She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full button-front placket, two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve and a polished gold six-point star badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small gold tie bar; tan riding breeches with an vivid azure blue stripe down the outer seam; a black leather duty belt with a polished brass buckle; and stiff, structured, mirror-polished black leather thigh-high riding boots with rigid straight shafts fitted tight to the leg, pulled up over the breeches to mid-thigh; her head is bare.
 
 **Outdoors** (replace "her head is bare" with):
 
-a tan felt campaign hat with a wide flat brim, a pinched four-dent crown and an azure blue hatband, worn level over her eyes; and over the shirt a short dark forest-green uniform jacket with a gold star on the chest, hanging open.
+a tan felt campaign hat with a wide flat brim, a pinched four-dent crown and an vivid azure blue hatband, worn level over her eyes; and over the shirt a short dark forest-green uniform jacket with a gold star on the chest, hanging open.
 
-**Rank** goes after the uniform sentence: sergeant — three azure blue chevrons on each upper
+**Rank** goes after the uniform sentence: sergeant — three vivid azure blue chevrons on each upper
 sleeve beneath the patch. (Sheriff and other ranks: to be set with their characters.)
 
 ### The Undercroft
@@ -122,7 +148,7 @@ sleeve beneath the patch. (Sheriff and other ranks: to be set with their charact
 **Sergeant Monique "Ash" Ashby** (*name is a proposal*) — keeper of the Undercroft.
 LoRA: `KreaEbonyBabe1` (trigger `EllieKEB`, added by the loader).
 
-Appearance block: *a Black American woman in her early thirties, tall and athletic with a full, heavy bust, broad straight shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the middle of her back, a level, unimpressed stare under straight dark brows, black leather duty gloves, two pairs of steel handcuffs in black leather cases on her belt and a ring of heavy iron keys on a steel chain at her hip.*
+Appearance block: *a Black American woman in her early thirties, tall and athletic with a full, heavy bust, broad straight shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the middle of her back, a level, unimpressed stare under straight dark brows, black leather duty gloves, a black leather handcuff case on her belt and a ring of heavy iron keys on a steel chain at her hip.*
 
 Character: ex-Army military police, eight years, two of them running a detention facility.
 Controlling, clipped, borderline mean, never sadistic. Her whole method is *permission*: a man
