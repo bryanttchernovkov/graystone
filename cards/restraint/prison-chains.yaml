@@ -9,7 +9,7 @@ setback_penalty:
   effects:
     - tracker.change: { body: -1 }
 art:
-  loras: ["Krea2_Metal Cuffs_V6E8:0.8"]
+  loras: ["SA86RN444WSD83T4QX4PYS3P80:1"]
   subject: >
     Still-life photograph from above of prison restraints lying on the gray wool blanket of a
     steel slat cot: a pair of polished steel hinged police handcuffs threaded on a heavy steel

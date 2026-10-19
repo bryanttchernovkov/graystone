@@ -19,6 +19,22 @@ LoRA Manager node; don't repeat them in the subject.
 Only one character LoRA per image: two named LoRA women in one frame blend into each other.
 When a scene needs a second woman, she is an unnamed extra described in full, without a LoRA.
 
+## Kink LoRAs (hard rule: only these)
+
+The author's library holds many more; most aren't POV and pull the camera into third person.
+In Graystone, use **only** these, at weight 1, and only when the image shows that thing:
+
+| LoRA | When |
+|---|---|
+| `SA86RN444WSD83T4QX4PYS3P80:1` | detailed handcuffs (German handcuffs; trigger added by the loader) |
+| `HandgagPOV_Krea2_v1:1` | her gloved or bare hand over the viewer's mouth |
+| `chastity_000005800:1` | a chastity cage in frame |
+| `"Krea2_BDSM Latex-Leather Megapack_V2E09:1"` | optional, for heavier BDSM gear |
+| `"Krea 2 - Strapon Dildo:1"` | strap-on, POV |
+
+Not for this universe: the facesitting LoRA (not POV) and the other metal-cuffs LoRA.
+Facesitting is shot from the POV recipe alone.
+
 ## The camera is the player
 
 The player is always a man; the camera is his eyes.

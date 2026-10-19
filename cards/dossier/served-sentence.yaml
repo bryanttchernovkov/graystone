@@ -5,6 +5,7 @@ name: Time Served
 tags: [served]
 text: A line in the Sergeant's ledger with her initials next to it. All that's missing is yours.
 art:
+  loras: ["chastity_000005800:1"]
   subject: >
     Still-life photograph of a closed ledger bound in worn black cloth lying on a gray steel
     desk, a black pen laid neatly across its cover, a steel chastity cage and an open pair of

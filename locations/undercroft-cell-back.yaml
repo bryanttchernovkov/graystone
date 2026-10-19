@@ -97,7 +97,7 @@ actions:
       effects:
         - skill.gain: deal
       art:
-        loras: ["KreaEbonyBabe1", "Krea2_Facesitting_.1.0:0.8"]
+        loras: ["KreaEbonyBabe1"]
         subject: >
           First-person point-of-view photograph from flat on the back on a steel cot in a small
           jail cell walled with smooth dressed limestone ashlar blocks laid in straight courses
@@ -158,7 +158,7 @@ actions:
         - tracker.change: { nerve: -1 }
         - skill.gain: deal
       art:
-        loras: ["KreaEbonyBabe1"]
+        loras: ["KreaEbonyBabe1", "chastity_000005800:1"]
         subject: >
           Intimate first-person point-of-view photograph from standing eye height inside a small
           jail cell walled with smooth dressed limestone ashlar blocks laid in straight courses

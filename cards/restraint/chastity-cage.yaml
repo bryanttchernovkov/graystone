@@ -9,6 +9,7 @@ setback_penalty:
   effects:
     - tracker.change: { nerve: -1 }
 art:
+  loras: ["chastity_000005800:1"]
   subject: >
     Still-life close-up photograph of a small stainless steel male chastity cage with a ring and
     a tiny brass padlock, lying on a folded tan uniform shirt pocket flap piped in vivid azure

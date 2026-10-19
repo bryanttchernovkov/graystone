@@ -163,7 +163,7 @@ actions:
       effects:
         - card.gain: gag
       art:
-        loras: ["KreaEbonyBabe1", "HandgagPOV_Krea2_v1:0.8"]
+        loras: ["KreaEbonyBabe1", "HandgagPOV_Krea2_v1:1"]
         subject: >
           First-person point-of-view photograph from sitting height on a steel cot in a small
           jail cell walled with smooth dressed limestone ashlar blocks laid in straight courses
@@ -266,7 +266,7 @@ actions:
       effects:
         - card.lose: prison-chains
       art:
-        loras: ["KreaEbonyBabe1", "Krea2_Metal Cuffs_V6E8:0.8"]
+        loras: ["KreaEbonyBabe1", "SA86RN444WSD83T4QX4PYS3P80:1"]
         subject: >
           First-person point-of-view widescreen photograph from standing eye height inside a
           small jail cell walled with smooth dressed limestone ashlar blocks laid in straight
