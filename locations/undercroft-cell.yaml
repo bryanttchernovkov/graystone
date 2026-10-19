@@ -1,0 +1,176 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+id: undercroft-cell
+name: Cell Three
+tags: [inside, lockup]
+description: A burial niche with bars, a steel cot, and an iron ring in the wall at ankle height.
+arrival:
+  text: |
+    Cell Three was a burial niche once: a stone recess under the arch, a cot of steel slats
+    with a gray wool blanket, a steel toilet with no seat, and an iron ring set in the back
+    wall at ankle height. Ashby runs your ankle chain through the ring and padlocks it, then
+    measures the slack by eye. Enough to reach the cot and the toilet. Not enough to reach
+    the bars.
+
+    The door rolls shut on its track. She locks it, tries it, and stays a moment with one
+    gloved hand on the bars.
+
+    "Three days," she says. "Ask nicely and they'll go faster."
+actions:
+  - category: obey
+    word: POLISH
+    cost: 3
+    prompt: She props a boot on your cot and hands you a tin and a cloth. Her boots, to her standard, and when the cloth won't do, your tongue.
+    result:
+      text: |
+        She comes in, sets one boot on the rail of the cot beside you, and holds out a tin of
+        black polish and a square of old cotton. The boot goes up past her knee to the middle
+        of her thigh, a long column of black leather with the azure stripe of her breeches
+        disappearing into it.
+
+        "Small circles," she says. "Toe to the top. I'll know if you skipped."
+
+        You work the polish in, toe cap first, then the vamp, then up the shaft where the
+        leather is warm from her leg. She watches with one forearm resting on her raised knee
+        and doesn't help. When you've buffed it she bends, sights along the shaft at the bulb,
+        and finds a dull patch at the ankle.
+
+        "Cloth's not getting it. Use your mouth."
+
+        You lean in and breathe on it and lick it, and she says "Again" until the patch shines
+        wet under the light. Then she changes boots, and you do the other one from the toe up,
+        without the cloth this time, because she's decided you don't need it.
+
+        At the end she stands on both, turns one heel on the flagstones to watch the shine
+        catch, and nods.
+
+        "Passable. You may say thank you."
+
+        You say it.
+      effects:
+        - skill.gain: { obey: 2 }
+        - tracker.change: { nerve: -1 }
+      art:
+        loras: [KreaEbonyBabe1]
+        subject: >
+          First-person point-of-view widescreen photograph from sitting height on a steel cot
+          in a small stone jail cell, the camera tilted up along a diagonal. In the lower left
+          corner of the frame a woman's right boot is planted on the steel rail of the cot at
+          the camera's height: a glossy, mirror-polished black leather thigh-high riding boot,
+          its rounded toe and vamp shining wet, its long shaft rising diagonally up the frame
+          past her knee to mid-thigh, where tan riding breeches with an azure blue stripe down
+          the outer seam disappear into it. A pale man's bare hands and forearms with short
+          unpolished nails enter from the bottom edge of the frame, one hand cupping the heel
+          and the other rubbing a black-smeared square of white cotton cloth in small circles
+          on the boot's shaft just below her knee. She leans in over her raised knee, her
+          black-gloved right forearm resting across her thigh, her upper body and face in the
+          upper right of the frame: a Black American woman in her early thirties, tall and
+          athletic with a full, heavy bust, broad straight shoulders and a soldier's posture,
+          smooth dark brown skin, long black dreadlocks gathered at the nape and falling
+          forward over one shoulder, a level, unimpressed stare under straight dark brows,
+          black leather duty gloves and a ring of heavy iron keys on a steel chain at her hip.
+          She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved
+          uniform shirt of heavy cotton twill with a pointed collar, a full button-front
+          placket, two buttoned flap chest pockets piped in azure blue, shoulder epaulets
+          edged in azure blue, an embroidered azure blue and gold patch on each upper sleeve
+          and a polished gold six-point star badge pinned over the left pocket; an azure blue
+          necktie with a small gold tie bar; a black leather duty belt with a polished brass
+          buckle; her head is bare. Three azure blue chevrons sit on each upper sleeve beneath
+          the patch. She looks down into the lens with critical, narrow-eyed scrutiny, lips
+          pursed, and holds an open round tin of black boot polish up near her chest in her
+          gloved left hand. Behind her, black iron bars close the stone niche and a rough
+          limestone vault arches overhead. A single caged incandescent bulb above the cell
+          door, behind and above her, throws a hard specular highlight down the length of
+          the boot and rims her shoulders and dreadlocks, while the stone walls fall into
+          warm shadow. Palette of black leather, uniform tan, azure blue, limestone gray and
+          bulb amber; natural skin and leather texture, fine 35 mm film grain, sharp focus on
+          the boot shaft and her eyes.
+  - category: risk
+    word: TEST
+    cost: 2
+    prompt: Test the ankle chain against the ring while she's at her desk. She will hear it, and she will come in.
+    result:
+      text: |
+        The chain makes more noise than you'd like. Ashby's chair scrapes before you've pulled
+        it twice.
+
+        She comes in, takes your right hand off the chain, and folds it: wrist bent back toward
+        the forearm, her gloved thumb on the back of your hand, her other hand pinning the
+        elbow. It's a textbook hold and she does it like someone who has taught it. The pain
+        arrives all at once, white, and you go down onto the cot because there's nowhere else
+        to go.
+
+        "Ask," she says, close to your ear.
+
+        "Sergeant —"
+
+        "For what."
+
+        "Sergeant, please let go."
+
+        "That's not a request. That's a noise." She adds a few ounces. "Again."
+
+        You get the sentence right on the third try. She lets go on the fourth word of the
+        fourth, because she's decided that's when.
+
+        "Chain stays on," she says, and goes back to her desk.
+      effects:
+        - tracker.change: { body: -1, nerve: -1 }
+      art:
+        loras: [KreaEbonyBabe1]
+        subject: >
+          First-person point-of-view widescreen photograph from sitting height on a steel cot
+          in a small stone jail cell, the camera level. A woman's face and shoulders fill the
+          left two-thirds of the frame only inches from the lens, her eyes in sharp focus: a
+          Black American woman in her early thirties with a full, heavy bust, broad straight
+          shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks
+          gathered at the nape with a few loose locks falling past her cheek, a level,
+          unimpressed stare under straight dark brows. Her visible shoulders and collar show
+          a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a pointed
+          collar, shoulder epaulets edged in azure blue, an embroidered azure blue and gold
+          patch on her upper sleeve, an azure blue necktie knotted tight at her throat, and
+          the edge of a polished gold six-point star badge over her left breast pocket. She
+          stares straight into the lens with cold displeasure, jaw tight, nostrils slightly
+          flared, lips parted as she speaks. At the bottom center of the frame a pale man's
+          bare hand and forearm with short unpolished nails rise from the bottom edge, the
+          wrist folded sharply back toward the forearm in a gooseneck compliance hold: her
+          black leather gloved right hand grips the back of the hand, her gloved thumb pressed
+          hard into the knuckles, her other gloved hand clamped around the forearm just below
+          the wrist. Behind her, out of focus, the black iron bars of the cell door, an iron
+          ring set low in the limestone wall with a steel chain trailing from it across the
+          flagstones, and the curve of the stone vault. A single caged incandescent bulb
+          outside the bars, behind her right shoulder, throws warm side light across her
+          cheekbone and the black gloves, leaving the far side of her face in soft shadow.
+          Palette of dark skin, black leather, uniform tan, azure blue and limestone gray;
+          natural skin texture with visible pores, fine 35 mm film grain, very shallow depth
+          of field on her eyes.
+art:
+  loras: [KreaEbonyBabe1]
+  subject: >
+    Eye-level photograph from inside a small stone jail cell built into a burial niche of a
+    vaulted limestone crypt, looking out through a black iron barred sliding door. In the
+    foreground on the left, a cot of steel slats bolted to the stone wall with a folded gray
+    wool blanket; on the right, a seatless steel toilet; low on the back wall beside the cot,
+    a heavy iron ring set into the limestone with a length of steel chain coiled on the
+    flagstones beneath it. Just outside the bars, filling the center of the frame from the
+    thighs up, a woman stands with one black-gloved hand resting on a bar at shoulder height:
+    a Black American woman in her early thirties, tall and athletic with a full, heavy bust,
+    broad straight shoulders and a soldier's posture, smooth dark brown skin, long black
+    dreadlocks gathered at the nape and falling to the middle of her back, a level,
+    unimpressed stare under straight dark brows, black leather duty gloves, two pairs of steel
+    handcuffs in black leather cases on her belt and a ring of heavy iron keys on a steel
+    chain at her hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan
+    long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full
+    button-front placket, two buttoned flap chest pockets piped in azure blue, shoulder
+    epaulets edged in azure blue, an embroidered azure blue and gold patch on each upper
+    sleeve and a polished gold six-point star badge pinned over the left pocket; an azure
+    blue necktie with a small gold tie bar; tan riding breeches with an azure blue stripe down
+    the outer seam; a black leather duty belt with a polished brass buckle; and glossy,
+    mirror-polished black leather thigh-high riding boots pulled up over the breeches to
+    mid-thigh; her head is bare. Three azure blue chevrons sit on each upper sleeve beneath
+    the patch. She looks straight through the bars into the lens with a level, unimpressed
+    stare, chin slightly raised, lips closed. Behind her the crypt corridor runs under pointed
+    limestone arches lit by caged bulbs. A caged incandescent bulb in the corridor behind her
+    backlights her silhouette and throws the long shadows of the bars across the cell floor
+    toward the lens, while the inside of the cell stays dim and cool. Palette of black iron,
+    limestone gray, uniform tan, azure blue and bulb amber; natural skin texture, fine 35 mm
+    film grain, focus on her face through the bars.

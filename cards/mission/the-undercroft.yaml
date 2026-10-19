@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+id: the-undercroft
+kind: mission
+name: The Undercroft
+text: Trial scene. Three days in the lockup under the old church, and a sergeant who decides when you breathe.
+start: undercroft

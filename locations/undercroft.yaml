@@ -1,0 +1,185 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+id: undercroft
+name: The Undercroft
+tags: [inside, lockup]
+description: Limestone vaults under the old church, caged bulbs, and a sergeant's desk past a yellow line.
+arrival:
+  text: |
+    The stairs come down out of the nave into cold. Limestone vaults, whitewashed once,
+    caged bulbs strung along the ribs, the smell of floor wax and old stone. A yellow line
+    is painted across the flagstones at the bottom step.
+
+    Beyond it, at a steel desk under the first arch, Sergeant Ashby looks up from a ledger.
+    Black gloves, a tan shirt with creases you could cut paper on, boots polished to a black
+    mirror. She doesn't stand.
+
+    "That's my line," she says. "You stay behind it until I say otherwise."
+actions:
+  - category: talk
+    word: ASK
+    cost: 1
+    prompt: Ask to approach her desk. She decides how it's asked, and you'll ask until she's satisfied.
+    result:
+      text: |
+        "Can I —"
+
+        "No." She turns a page. "Try it with my rank in it."
+
+        "Sergeant, can I come to the desk?"
+
+        "You can. Whether you may is the question."
+
+        "Sergeant, may I approach the desk?"
+
+        She makes you say it twice more, louder the second time, because the vault carries and
+        she wants the cells to hear what asking sounds like. Then she points at the floor in
+        front of the desk with one gloved finger.
+
+        "Granted. Toes on the seam. Hands where I can see them."
+
+        You stand where she pointed. She goes back to the ledger, and the yellow line behind
+        you feels a long way back.
+      effects:
+        - skill.gain: talk
+        - tracker.change: { nerve: -1 }
+      art:
+        loras: [KreaEbonyBabe1]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height on the
+          flagstone floor of a vaulted limestone crypt converted into a jail block, the camera
+          tilted slightly down toward a gray steel desk two paces away. A broad stripe of
+          scuffed yellow paint runs straight across the worn gray flagstones along the bottom
+          edge of the frame. Behind the desk, filling the center of the frame from the waist
+          up, a woman sits upright in a steel chair: a Black American woman in her early
+          thirties, tall and athletic with a full, heavy bust, broad straight shoulders and a
+          soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the
+          nape and falling to the middle of her back, a level, unimpressed stare under
+          straight dark brows, black leather duty gloves, two pairs of steel handcuffs in
+          black leather cases on her belt and a ring of heavy iron keys on a steel chain at
+          her hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan
+          long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full
+          button-front placket, two buttoned flap chest pockets piped in azure blue, shoulder
+          epaulets edged in azure blue, an embroidered azure blue and gold patch on each upper
+          sleeve and a polished gold six-point star badge pinned over the left pocket; an
+          azure blue necktie with a small gold tie bar; a black leather duty belt with a
+          polished brass buckle; her head is bare. Three azure blue chevrons sit on each upper
+          sleeve beneath the patch. She looks up straight into the lens with cool, faintly
+          amused impatience, one eyebrow raised, lips pressed thin, and points down at the
+          flagstones in front of the desk with one black-gloved index finger, her other gloved
+          hand flat on an open ruled ledger. Behind her a pegboard on the limestone wall holds
+          steel handcuffs, leg irons and coiled lengths of chain on hooks, beside a cork board
+          with a single typed sheet. Beyond her the crypt corridor recedes under a row of
+          pointed limestone arches, each side arch closed by a black iron barred door. Warm
+          light from caged incandescent bulbs hanging on black cords from the vault ribs
+          falls from above and slightly behind her, rimming her shoulders and dreadlocks and
+          pooling amber on the desk, while the corners of the vault sink into soft shadow.
+          Palette of limestone gray, uniform tan, azure blue, black iron and bulb amber;
+          natural skin texture, fine 35 mm film grain, shallow depth of field on her face.
+  - category: obey
+    word: PRESENT
+    cost: 2
+    prompt: Present your wrists for intake. She cuffs you, chains you, and walks you to a cell.
+    result:
+      text: |
+        "Wrists," she says. "Over the desk. Palms down."
+
+        You hold them out. She takes the first pair of cuffs off her belt without looking at
+        it, closes one ring on your left wrist and ratchets it down until it bites, checks the
+        gap with a gloved fingertip, and takes it one click tighter. Then the right. She
+        double-locks both with the small end of the key.
+
+        "Eight years military police, so here's how it works. You don't stand, sit, speak,
+        drink or piss in my block without asking. You ask, I decide. Every time."
+
+        A belly chain goes around your waist and through the cuffs. A shorter one runs from
+        one ankle cuff to the other. She tugs the whole rig once, the way you'd test a trailer
+        hitch.
+
+        "Walk."
+
+        You walk, in the short steps the chain allows, her gloved hand closed on the back of
+        your collar and the keys ringing at her hip, to the third arch on the left.
+      effects:
+        - skill.gain: obey
+        - move.to: undercroft-cell
+      art:
+        loras: [KreaEbonyBabe1, "Krea2_Metal Cuffs_V6E8:0.8"]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height across a
+          gray steel desk in a vaulted limestone crypt jail, the camera tilted down. Two bare
+          wrists held together, palms down, extend from the bottom edge of the frame to its
+          center over the desk: a pale man's bare hands and forearms with short unpolished
+          nails. A pair of polished steel hinged police handcuffs is locked on the right wrist,
+          and the woman across the desk is closing the second ring around the left wrist with
+          both black-gloved hands, her gloved thumb pressing the steel ratchet home. She
+          leans over the desk at arm's length, filling the upper two-thirds of the frame from
+          the waist up, her face directly above the cuffs: a Black American woman in her early
+          thirties, tall and athletic with a full, heavy bust, broad straight shoulders and a
+          soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the
+          nape and falling to the middle of her back, a level, unimpressed stare under
+          straight dark brows, black leather duty gloves, a second pair of steel handcuffs in
+          a black leather case on her belt and a ring of heavy iron keys on a steel chain at
+          her hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan
+          long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full
+          button-front placket, two buttoned flap chest pockets piped in azure blue, shoulder
+          epaulets edged in azure blue, an embroidered azure blue and gold patch on each upper
+          sleeve and a polished gold six-point star badge pinned over the left pocket; an
+          azure blue necktie with a small gold tie bar hanging forward as she leans; a black
+          leather duty belt with a polished brass buckle; her head is bare. Three azure blue
+          chevrons sit on each upper sleeve beneath the patch. She looks up from the cuffs
+          straight into the lens with cold, focused control, jaw set, lips closed, eyes
+          steady. On the desk beside the wrists lie a coiled steel belly chain and an open
+          ruled ledger. Behind her, a pegboard of leg irons and chains hangs on the limestone
+          wall under a pointed arch. A caged incandescent bulb directly overhead throws hard
+          warm light down onto her gloves, the polished steel cuffs and the pale wrists,
+          leaving the vault behind her in soft amber shadow. Palette of polished steel, black
+          leather, uniform tan, azure blue and limestone gray; natural skin texture, fine
+          35 mm film grain, sharp focus on the cuffs and her eyes.
+  - category: look
+    word: READ
+    cost: 1
+    prompt: Read the typed sheet tacked to the board behind her desk.
+    result:
+      text: |
+        UNDERCROFT — STANDING ORDERS, typed, initialed M.A. at the bottom.
+
+        One: detainees request permission for all movement. Two: requests are made by rank,
+        in a full sentence. Three: requests are made once. Four: the Sergeant's decision is
+        final. Five: detainees will maintain the Sergeant's uniform on request.
+
+        Under five, in blue pen, underlined twice: *boots included.*
+
+        "Memorize it," she says, without looking up. "There's a quiz."
+      effects:
+        - skill.gain: look
+art:
+  loras: [KreaEbonyBabe1]
+  subject: >
+    Eye-level photograph from the bottom step of a stone staircase into a vaulted limestone
+    crypt converted into a jail block. A broad stripe of scuffed yellow paint runs straight
+    across the worn gray flagstones near the bottom of the frame. Beyond it, under the first
+    rib-vaulted arch, a woman sits behind a gray steel desk facing the lens: a Black American
+    woman in her early thirties, tall and athletic with a full, heavy bust, broad straight
+    shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks gathered
+    at the nape and falling to the middle of her back, a level, unimpressed stare under
+    straight dark brows, black leather duty gloves, two pairs of steel handcuffs in black
+    leather cases on her belt and a ring of heavy iron keys on a steel chain at her hip. She
+    wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform
+    shirt of heavy cotton twill with a pointed collar, a full button-front placket, two
+    buttoned flap chest pockets piped in azure blue, shoulder epaulets edged in azure blue,
+    an embroidered azure blue and gold patch on each upper sleeve and a polished gold
+    six-point star badge pinned over the left pocket; an azure blue necktie with a small gold
+    tie bar; a black leather duty belt with a polished brass buckle; her head is bare. Three
+    azure blue chevrons sit on each upper sleeve beneath the patch. She sits upright with her
+    gloved hands folded on an open ruled ledger and looks straight into the lens with a
+    level, unimpressed stare, jaw set, lips closed. On the wall behind her hangs a pegboard
+    of steel handcuffs, leg irons and coiled chains on hooks beside a cork board with one
+    typed sheet. Beyond the desk the crypt corridor recedes under a long row of pointed
+    limestone arches, each side arch closed by a black iron barred cell door set into the
+    stone, caged bulbs hanging from the vault ribs on black cords, the far end fading into
+    shadow. The desk sits in the center third of the frame with the corridor's vanishing
+    point just above her shoulder. Warm light from the caged incandescent bulbs falls from
+    above in amber pools along the vault, and a thin shaft of cold gray daylight slants down
+    from a small grated window high in the left wall across the flagstones. Palette of
+    limestone gray, uniform tan, azure blue, black iron and bulb amber; natural skin texture,
+    fine 35 mm film grain, deep focus.

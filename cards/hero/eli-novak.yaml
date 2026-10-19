@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+id: eli-novak
+kind: hero
+name: Eli Novak
+text: New in town. The county's contract IT man, a rented half-house on Elm, and a week of nobody noticing him.
+boost: { capacity: 4, start: 2 }
+slots:
+  - { match: { category: talk } }
+  - { match: { category: look } }

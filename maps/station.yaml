@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../../../schema/v2/map.json
+id: station
+name: The First Church Station
+legend:
+  UC: undercroft
+  CL: undercroft-cell
+grid: |
+  UC CL

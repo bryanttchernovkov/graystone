@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=../../schema/v2/universe.json
+# PROVISIONAL scaffold so the trial content validates and renders. The rules configuration is
+# pending a redesign (bible: "Rules configuration"); nothing here is final.
+format: 2
+id: graystone
+name: Graystone
+
+categories:
+  - { id: go,   name: GO }
+  - { id: talk, name: TALK }
+  - { id: work, name: WORK }
+  - { id: take, name: TAKE }
+  - { id: risk, name: RISK }
+  - { id: look, name: LOOK }
+  - { id: obey, name: OBEY }
+
+trackers:
+  - id: nerve
+    name: Nerve
+    max: 6
+    breaking_point:
+      text: Something in you folds. You sit with your back to the nearest wall until your hands are hands again.
+      effects:
+        - tracker.change: { body: -1 }
+  - id: body
+    name: Body
+    max: 6
+    breaking_point:
+      text: Your legs quit. You sit down where you are and wait for them to come back.
+      effects:
+        - tracker.change: { nerve: -1 }
+  - id: time
+    name: Time
+    max: 12
+    breaking_point:
+      text: The day is gone, and you went with it.
+      effects:
+        - run.end: run-out
+
+difficulties:
+  - { id: normal, name: Normal, start: { nerve: 6, body: 6, time: 12 } }
+
+dice:
+  pool: 10
+  faces:
+    - { id: nerve,   type: tracker, tracker: nerve }
+    - { id: body,    type: tracker, tracker: body }
+    - { id: time,    type: tracker, tracker: time }
+    - { id: setback, type: setback }
+    - { id: blank-1, type: blank }
+    - { id: blank-2, type: blank }
+
+tags:
+  - { id: inside,  name: Inside }
+  - { id: lockup,  name: Lockup }
+
+currencies:
+  - { id: cash, name: Cash, symbol: "$", start: 0 }
+
+card_kinds:
+  - { id: hero,    name: Hero,    placement: center }
+  - { id: mission, name: Mission, placement: supply }
+
+run: { character_kind: hero, mission_kind: mission, default_defeat: run-out }
+reserve_capacity: 2
+exits: { category: go, word: WALK, cost: 1 }
+
+character_powers:
+  - { price: 1, effect: reroll }
