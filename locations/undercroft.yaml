@@ -20,6 +20,7 @@ actions:
     word: ASK
     cost: 1
     tags: [cooperate]
+    unless: [gagged]
     prompt: Ask to approach her desk. She decides how it's asked, and you'll ask until she's satisfied.
     result:
       text: |
@@ -77,7 +78,7 @@ actions:
           natural skin texture, fine 35 mm film grain, shallow depth of field on her face.
   - category: deal
     word: TERMS
-    cost: 2
+    cost: 1
     prompt: Hear the Sergeant's terms for your stay. They come with cuffs, chains, a cage, and a walk to a cell.
     result:
       text: |

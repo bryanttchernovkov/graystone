@@ -7,7 +7,7 @@ hub: true
 actions:
   - category: work
     word: TIDY
-    cost: 2
+    cost: 1
     tags: [cooperate]
     prompt: Tidy the cell for inspection. She'll inspect the cell, and then she'll inspect you.
     result:
@@ -67,6 +67,7 @@ actions:
     word: OFFER
     cost: 1
     tags: [please]
+    unless: [gagged]
     prompt: Offer to make yourself useful. She sits down to think it over, on your face.
     result:
       text: |
@@ -126,8 +127,9 @@ actions:
           grain, shallow depth of field on the seat of the breeches and her eyes.
   - category: deal
     word: ASK
-    cost: 2
+    cost: 1
     tags: [cooperate]
+    unless: [gagged]
     prompt: Ask her for something. She grants it her way, with a glove, a key, and no finish.
     result:
       text: |
@@ -281,7 +283,7 @@ actions:
           of field on her eyes.
   - category: risk
     word: SLIP
-    cost: 3
+    cost: 2
     unless: [chained]
     prompt: Go for the window while your hands are free and her back is turned.
     result:

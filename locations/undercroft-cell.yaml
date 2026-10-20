@@ -9,6 +9,7 @@ actions:
     word: CALL
     cost: 1
     tags: [cooperate]
+    unless: [gagged]
     prompt: Call out to the Sergeant. She answers, and then she wants answers back, by number, loud enough for the other cells.
     result:
       text: |
@@ -67,7 +68,7 @@ actions:
           natural skin texture, fine 35 mm film grain, focus on her eyes between the bars.
   - category: work
     word: CHORE
-    cost: 2
+    cost: 1
     tags: [cooperate]
     prompt: Ask for something useful to do. She has a chore below the knee, and the Undercroft doesn't issue polishing cloths.
     result:
@@ -118,6 +119,7 @@ actions:
   - category: talk
     word: CHARM
     cost: 1
+    unless: [gagged]
     prompt: Try being pleasant through the bars. She may or may not be in the mood for it.
     result:
       text: |
@@ -227,6 +229,7 @@ actions:
     word: PROMISE
     cost: 1
     requires: [trusted]
+    unless: [gagged]
     prompt: Make her a promise. Tonight she might believe one.
     result:
       text: |
@@ -282,8 +285,9 @@ actions:
           mm film grain, sharp focus on the key in the lock and her eyes.
   - category: deal
     word: KNEEL
-    cost: 2
+    cost: 1
     requires: [trusted]
+    unless: [gagged]
     prompt: Ask, properly, for the privilege of her boots. She grants it, and takes her time about it.
     result:
       text: |
@@ -343,7 +347,7 @@ actions:
           shallow depth of field on the toe cap.
   - category: look
     word: ADMIRE
-    cost: 2
+    cost: 1
     requires: [trusted]
     prompt: Ask, properly, to admire her uniform up close. She stands for inspection, for once on the other side of it.
     result:
