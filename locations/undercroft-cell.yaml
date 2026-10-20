@@ -47,8 +47,7 @@ actions:
           the frame, is a Black American woman in her early thirties, tall and athletic with a
           full, heavy bust, broad straight shoulders and a soldier's posture, smooth dark brown
           skin, long black dreadlocks gathered at the nape and falling to the middle of her
-          back, a level, unimpressed stare under straight dark brows, black leather duty gloves,
-          a black leather handcuff case on her belt and a ring of heavy iron keys on a steel
+          back, a level, unimpressed stare under straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel
           chain at her hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed
           tan long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full
           button-front placket, two buttoned flap chest pockets piped in vivid azure blue,
@@ -92,41 +91,30 @@ actions:
         - skill.gain: work
         - move.to: { random: [undercroft-chore-pass, undercroft-chore-fault] }
       art:
-        loras: [KreaEbonyBabe1]
+        loras: ["KreaEbonyBabe1"]
         subject: >
-          First-person point-of-view widescreen photograph from kneeling height beside a steel
-          cot in a small jail cell walled with smooth dressed limestone ashlar blocks laid in
-          straight courses with thin mortar joints, the camera tilted up along a diagonal. In
-          the lower left corner of the frame a woman's right boot is planted on the steel rail of
-          the cot an inch from the lens: a stiff, structured, mirror-polished black leather
-          thigh-high riding boot with a rigid straight shaft fitted tight to the leg, its rounded
-          toe cap glistening with a fresh wet streak that runs up over the vamp and the laced
-          instep, its long shaft rising diagonally up the frame past her knee to mid-thigh, where
-          tan riding breeches with a vivid azure blue stripe down the outer seam disappear into
-          it. A pale man's bare hands and forearms with short unpolished nails enter from the
-          bottom edge of the frame, cradling the boot at the heel and the ankle. She leans in over
-          her raised knee, her black-gloved right forearm resting across her thigh, her upper
-          body and face in the upper right of the frame: a Black American woman in her early
-          thirties, tall and athletic with a full, heavy bust, broad straight shoulders and a
-          soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the nape
-          and falling forward over one shoulder, a level, unimpressed stare under straight dark
-          brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her
-          hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan
-          long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full
-          button-front placket, two buttoned flap chest pockets piped in vivid azure blue,
-          shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold
-          patch on each upper sleeve and a polished gold six-point star badge pinned over the left
-          pocket; a vivid, saturated azure blue necktie with a small gold tie bar; a black leather
-          duty belt with a polished brass buckle; her head is bare. Three vivid azure blue
-          chevrons sit on each upper sleeve beneath the patch. She looks down into the lens with
-          critical, narrow-eyed scrutiny, lips pursed, her gloved left hand resting flat on her
-          raised knee. Behind her, black iron bars close the stone niche and a whitewashed
-          pointed vault arches overhead. A single caged incandescent bulb above the cell door,
-          behind and above her, throws a hard specular highlight down the length of the wet boot
-          and rims her shoulders and dreadlocks, while the ashlar walls fall into warm shadow.
-          Palette of black leather, uniform tan, vivid azure blue, pale limestone and bulb amber;
-          natural skin and leather texture, fine 35 mm film grain, sharp focus on the wet toe cap
-          and her eyes.
+          Detail close-up first-person photograph inside a small jail cell walled with smooth
+          dressed limestone ashlar blocks laid in straight courses with thin mortar joints under
+          a whitewashed pointed vault, underground and windowless but for one small barred slot
+          at street level, the camera level with the steel rail of a cot and inches from a
+          woman's boot. Her right boot rests on the cot rail and fills the frame on a diagonal
+          from the lower left corner to the upper right: a stiff, structured, mirror-polished
+          black leather thigh-high riding boot with a rigid straight shaft and a low, flat
+          stacked-leather riding heel, its rounded toe cap glistening with a fresh wet streak
+          that runs up over the vamp and the instep, a tight line of black welt stitching around
+          the sole, the soft crease at the ankle, and the long polished shaft rising out of the
+          upper right corner just above her knee, where tan riding breeches with a vivid azure
+          blue stripe disappear into the boot top. Her black-gloved hand rests on her knee at
+          the top right edge. A pale man's bare hands and forearms with short unpolished nails
+          enter from the bottom edge of the frame and cradle the boot from below, one at the
+          heel and one at the ankle. The frame holds only the boot, the gloved hand and the
+          hands beneath it. Behind the boot, out of focus, a gray wool blanket on the steel
+          slats, the black iron bars of the cell door and warm bulb light on pale ashlar stone.
+          A single caged incandescent bulb above throws one long specular highlight down the wet
+          shaft and a bright point on the toe cap, the rest of the leather deep glossy black.
+          Palette of black leather, vivid azure blue, tan, gray wool and bulb amber; natural
+          leather texture with visible stitching and grain, fine 35 mm film grain, very shallow
+          depth of field on the wet toe cap.
   - category: talk
     word: CHARM
     cost: 1
@@ -173,9 +161,7 @@ actions:
           away, eyes in sharp focus: a Black American woman in her early thirties, tall and
           athletic with a full, heavy bust, broad straight shoulders and a soldier's posture,
           smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the
-          middle of her back, a level, unimpressed stare under straight dark brows, black
-          leather duty gloves, a black leather handcuff case on her belt and a ring of heavy
-          iron keys on a steel chain at her hip. Her shoulders and collar show the crisp,
+          middle of her back, a level, unimpressed stare under straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her hip. Her shoulders and collar show the crisp,
           pressed tan long-sleeved uniform shirt with shoulder epaulets edged in vivid azure
           blue, an embroidered vivid azure blue and gold patch on the upper sleeve with three
           vivid azure blue chevrons, a vivid, saturated azure blue necktie knotted tight at her
@@ -184,8 +170,7 @@ actions:
           thin. Her black leather gloved right hand comes straight at the lens from the right
           side, palm first, closing over the lower third of the frame as it covers the viewer's
           mouth and nose, the glossy leather creased at the knuckles and her fingers spread. In
-          her left gloved hand, held up beside her collarbone, a black rubber bit gag on a black
-          leather buckle strap dangles. Behind her, out of focus, the black iron bars of the
+          her left gloved hand, held up beside her collarbone, a gag dangles: a short, thick black rubber bar on a thin black leather strap. Behind her, out of focus, the black iron bars of the
           cell door and the curve of the whitewashed vault. A caged bulb behind her shoulder
           rims her dreadlocks and the edge of the glove with warm light, leaving her face in
           soft side light. Palette of black leather, dark skin, uniform tan, vivid azure blue
@@ -217,9 +202,7 @@ actions:
           joints. At the desk sits a Black American woman in her early thirties, tall and
           athletic with a full, heavy bust, broad straight shoulders and a soldier's posture,
           smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the
-          middle of her back, a level, unimpressed stare under straight dark brows, black
-          leather duty gloves, a black leather handcuff case on her belt and a ring of heavy
-          iron keys on a steel chain at her hip. She wears the Graystone County Sheriff's
+          middle of her back, a level, unimpressed stare under straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her hip. She wears the Graystone County Sheriff's
           uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a
           pointed collar, a full button-front placket, two buttoned flap chest pockets piped in
           vivid azure blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid
@@ -227,8 +210,7 @@ actions:
           badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small
           gold tie bar; tan riding breeches with a vivid azure blue stripe down the outer seam;
           a black leather duty belt with a polished brass buckle; and stiff, structured, mirror-
-          polished black leather thigh-high riding boots with rigid straight shafts fitted tight
-          to the leg, pulled up over the breeches to mid-thigh; her head is bare. Three vivid
+          polished black leather thigh-high riding boots with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight to the leg, pulled up over the breeches to mid-thigh; her head is bare. Three vivid
           azure blue chevrons sit on each upper sleeve beneath the patch. She sits sideways to
           the lens with her right leg crossed over her left knee, the thigh-high boot raised
           across her lap, and works a soft horsehair brush along the gleaming boot shaft with
@@ -281,8 +263,7 @@ actions:
           American woman in her early thirties, tall and athletic with a full, heavy bust, broad
           straight shoulders and a soldier's posture, smooth dark brown skin, long black
           dreadlocks gathered at the nape and falling to the middle of her back, a level,
-          unimpressed stare under straight dark brows, black leather duty gloves, a black
-          leather handcuff case on her belt and a ring of heavy iron keys on a steel chain at
+          unimpressed stare under straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at
           her hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-
           sleeved uniform shirt of heavy cotton twill with a pointed collar, a full button-front
           placket, two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets
@@ -353,8 +334,7 @@ actions:
           down the outer seam disappears into the boot top at the upper right edge; her
           black-gloved hand rests on her knee at the top right corner, a gold six-point star badge
           catching the light out of focus behind it. A pale man's bare hands with short unpolished
-          nails enter from the bottom edge of the frame, fingertips cradling the heel from below,
-          the steel heel tip glinting between them. Behind the boot, out of focus, the black iron
+          nails enter from the bottom edge of the frame, fingertips cradling the low, flat stacked-leather riding heel from below. Behind the boot, out of focus, the black iron
           bars of the cell door and warm bulb light on pale ashlar stone. A single caged
           incandescent bulb above and to the right throws one long specular highlight down the
           shaft and a bright point on the toe, the rest of the leather falling into deep glossy
@@ -452,8 +432,7 @@ actions:
           of the frame: a Black American woman in her early thirties, tall and athletic with a
           full, heavy bust, broad straight shoulders and a soldier's posture, smooth dark brown
           skin, long black dreadlocks gathered at the nape and falling to the middle of her
-          back, a level, unimpressed stare under straight dark brows, black leather duty gloves,
-          a black leather handcuff case on her belt and a ring of heavy iron keys on a steel
+          back, a level, unimpressed stare under straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel
           chain at her hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed
           tan long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full
           button-front placket, two buttoned flap chest pockets piped in vivid azure blue,
@@ -462,7 +441,7 @@ actions:
           left pocket; a vivid, saturated azure blue necktie with a small gold tie bar; tan
           riding breeches with a vivid azure blue stripe down the outer seam; a black leather
           duty belt with a polished brass buckle; and stiff, structured, mirror-polished black
-          leather thigh-high riding boots with rigid straight shafts fitted tight to the leg,
+          leather thigh-high riding boots with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight to the leg,
           pulled up over the breeches to mid-thigh; her head is bare. Three vivid azure blue
           chevrons sit on each upper sleeve beneath the patch. She holds a large open ruled
           ledger out toward the lens across her gloved left forearm, its pages covered in rows

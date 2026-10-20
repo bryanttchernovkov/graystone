@@ -125,9 +125,22 @@ One image takes about seven minutes; test one image per change, never a batch.
 - **Through the bars.** To put her outside a cell, write "photographed through the bars": the
   bars in the extreme foreground, her face in the gap between two of them. If the cell's props
   (cot, wall ring) are in the near foreground, the model puts her inside the cell with them.
-- **Props in an appearance block land on her body.** "Steel handcuffs in black leather cases"
-  put a cuff on her own wrist; write "a black leather handcuff case on her belt", and put loose
-  cuffs in her hands only when the scene uses them.
+- **Cuff words put cuffs on her.** Any "handcuff" or "cuffs" in a subject with her in it
+  (even "a handcuff case on her belt") renders as a cuff or a steel bangle on her own wrist, or
+  cuffs in her hand instead of the prop you asked for. Her appearance block carries no cuffs.
+  Mention cuffs **only when they're the centerpiece** (TERMS, PROMISE, the Prison Chains card),
+  with the detailed-handcuffs LoRA. In general, props in her block land on her body.
+- **Viewer leaks.** Shots from the cot or the floor with her legs spread above or across the lens
+  (boot on the cot rail with her leg raised, a woman lowering herself onto the lens) make the
+  model add the viewer's penis, or draw intercourse. So:
+  - **Facesitting** is shot from behind her, **clothed, the moment before**: her uniformed ass
+    in the breeches lowering toward the lens, boots either side, her face over her shoulder.
+  - **Boot worship** at the cot is a **detail shot**, from the toe to just above the knee, with
+    no hip or crotch in frame.
+- **Heels:** say "low, flat stacked-leather riding heels", or talk of a "heel" turns the riding
+  boot into a stiletto.
+- **One of her per frame:** in wide shots a doorway or background behind her can grow a second
+  copy of her; write "one woman, alone" and say what the space behind her holds.
 - **Boots:** "stiff, structured, mirror-polished … with rigid straight shafts fitted tight to the
   leg" stops the slouch. A shot cropped above the knee won't show them; when they matter, frame
   her to the knee or go to a detail shot.
@@ -150,7 +163,7 @@ the bottom edge of the frame.*
 
 **Indoors:**
 
-She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full button-front placket, two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve and a polished gold six-point star badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small gold tie bar; tan riding breeches with an vivid azure blue stripe down the outer seam; a black leather duty belt with a polished brass buckle; and stiff, structured, mirror-polished black leather thigh-high riding boots with rigid straight shafts fitted tight to the leg, pulled up over the breeches to mid-thigh; her head is bare.
+She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full button-front placket, two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve and a polished gold six-point star badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small gold tie bar; tan riding breeches with an vivid azure blue stripe down the outer seam; a black leather duty belt with a polished brass buckle; and stiff, structured, mirror-polished black leather thigh-high riding boots with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight to the leg, pulled up over the breeches to mid-thigh; her head is bare.
 
 **Outdoors** (replace "her head is bare" with):
 
@@ -164,7 +177,7 @@ sleeve beneath the patch. (Sheriff and other ranks: to be set with their charact
 **Sergeant Monique "Ash" Ashby** (*name is a proposal*) — keeper of the Undercroft.
 LoRA: `KreaEbonyBabe1` (trigger `EllieKEB`, added by the loader).
 
-Appearance block: *a Black American woman in her early thirties, tall and athletic with a full, heavy bust, broad straight shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the middle of her back, a level, unimpressed stare under straight dark brows, black leather duty gloves, a black leather handcuff case on her belt and a ring of heavy iron keys on a steel chain at her hip.*
+Appearance block: *a Black American woman in her early thirties, tall and athletic with a full, heavy bust, broad straight shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the middle of her back, a level, unimpressed stare under straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her hip.*
 
 Character: ex-Army military police, eight years, two of them running a detention facility.
 Controlling, clipped, borderline mean, never sadistic. Her whole method is *permission*: a man

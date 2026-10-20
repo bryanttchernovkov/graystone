@@ -42,9 +42,7 @@ actions:
           right half of the frame: a Black American woman in her early thirties, tall and
           athletic with a full, heavy bust, broad straight shoulders and a soldier's posture,
           smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the
-          middle of her back, a level, unimpressed stare under straight dark brows, black
-          leather duty gloves, a black leather handcuff case on her belt and a ring of heavy
-          iron keys on a steel chain at her hip. She wears the Graystone County Sheriff's
+          middle of her back, a level, unimpressed stare under straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her hip. She wears the Graystone County Sheriff's
           uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a
           pointed collar, a full button-front placket, two buttoned flap chest pockets piped in
           vivid azure blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid
@@ -52,8 +50,7 @@ actions:
           badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small
           gold tie bar; tan riding breeches with a vivid azure blue stripe down the outer seam;
           a black leather duty belt with a polished brass buckle; and stiff, structured, mirror-
-          polished black leather thigh-high riding boots with rigid straight shafts fitted tight
-          to the leg, pulled up over the breeches to mid-thigh; her head is bare. Three vivid
+          polished black leather thigh-high riding boots with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight to the leg, pulled up over the breeches to mid-thigh; her head is bare. Three vivid
           azure blue chevrons sit on each upper sleeve beneath the patch. She looks straight
           into the lens with flat, clinical boredom, eyes narrowed, mouth a straight line, and
           holds a black metal flashlight up at shoulder height in her gloved left hand, its beam
@@ -99,32 +96,34 @@ actions:
       art:
         loras: ["KreaEbonyBabe1"]
         subject: >
-          First-person point-of-view photograph from flat on the back on a steel cot in a small
-          jail cell walled with smooth dressed limestone ashlar blocks laid in straight courses
-          with thin mortar joints under a whitewashed pointed vault, underground and windowless
-          but for one small barred slot at street level, the camera pointing straight up. A
-          woman is lowering herself to sit on the lens, straddling it: her bare dark brown
-          thighs spread wide fill the left and right edges of the frame, her bare vulva and
-          smooth pubic mound directly above the lens at the upper center, close and in sharp
-          focus, her tan riding breeches with the vivid azure blue stripe pushed down and
-          bunched at the tops of her stiff, mirror-polished black leather thigh-high riding
-          boots on either side. Above, framed between her thighs, her upper body leans forward
-          over the lens: the starched tail of a crisp, pressed tan long-sleeved uniform shirt
-          hanging toward the camera, two buttoned flap chest pockets piped in vivid azure blue,
-          a vivid, saturated azure blue necktie with a small gold tie bar hanging straight down
-          toward the lens, and a polished gold six-point star badge over her left breast. At the
-          very top of the frame her face looks down past her chest into the lens with heavy-
-          lidded, commanding satisfaction, lips parted. She is a Black American woman in her
-          early thirties, tall and athletic with a full, heavy bust, broad straight shoulders
-          and a soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the
-          nape and falling to the middle of her back, a level, unimpressed stare under straight
-          dark brows, black leather duty gloves, a black leather handcuff case on her belt and a
-          ring of heavy iron keys on a steel chain at her hip. One black-gloved hand is braced
-          flat on the whitewashed vault above. A caged incandescent bulb behind her head rims
-          her dreadlocks and shoulders with warm light and casts her thighs in soft shadow.
-          Palette of dark skin, uniform tan, vivid azure blue, black leather and whitewashed
-          stone; natural skin texture, fine 35 mm film grain with visible pores, shallow depth
-          of field.
+          First-person point-of-view photograph from flat on the back on a steel slat cot in a
+          small jail cell walled with smooth dressed limestone ashlar blocks laid in straight
+          courses with thin mortar joints under a whitewashed pointed vault, underground and
+          windowless but for one small barred slot at street level, the camera tilted steeply
+          up. A woman stands astride the cot with her back to the lens, bending her knees to
+          lower herself toward it: her round, full backside in tight tan riding breeches with a
+          vivid azure blue stripe down each outer seam fills the upper center of the frame, the
+          twill stretched smooth across the seat and creased at the hips, the crisp tan uniform
+          shirt tucked tight into a black leather duty belt with a polished brass buckle at the
+          small of her back, her black-gloved thumbs hooked into the belt at her hips. Her
+          stiff, structured, mirror-polished black leather thigh-high riding boots with rigid
+          straight shafts and low, flat stacked-leather riding heels, fitted tight to the leg,
+          stand planted on the flagstones on either side of the cot and rise up the left and
+          right edges of the frame. Above, her broad shoulders in the tan uniform shirt with
+          shoulder epaulets edged in vivid azure blue and embroidered vivid azure blue and gold
+          sleeve patches with three vivid azure blue chevrons; she turns her head and looks down
+          over her own shoulder into the lens with heavy-lidded, commanding amusement, one
+          eyebrow raised, her long black dreadlocks falling down her back. She is a Black
+          American woman in her early thirties, tall and athletic with a full, heavy bust, broad
+          straight shoulders and a soldier's posture, smooth dark brown skin, long black
+          dreadlocks gathered at the nape and falling to the middle of her back, a level,
+          unimpressed stare under straight dark brows, black leather duty gloves and a ring of
+          heavy iron keys on a steel chain at her hip. Above her the whitewashed pointed vault
+          of the cell curves close. A caged incandescent bulb above and behind her lays warm
+          highlights along the curve of the breeches, the duty belt and the boot shafts, her
+          face in soft warm side light. Palette of uniform tan, vivid azure blue, black leather,
+          dark skin and whitewashed stone; natural fabric and skin texture, fine 35 mm film
+          grain, shallow depth of field on the seat of the breeches and her eyes.
   - category: deal
     word: ASK
     cost: 2
@@ -168,8 +167,7 @@ actions:
           frame: a Black American woman in her early thirties, tall and athletic with a full,
           heavy bust, broad straight shoulders and a soldier's posture, smooth dark brown skin,
           long black dreadlocks gathered at the nape and falling to the middle of her back, a
-          level, unimpressed stare under straight dark brows, black leather duty gloves, a black
-          leather handcuff case on her belt and a ring of heavy iron keys on a steel chain at
+          level, unimpressed stare under straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at
           her hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-
           sleeved uniform shirt of heavy cotton twill with a pointed collar, a full button-front
           placket, two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets
