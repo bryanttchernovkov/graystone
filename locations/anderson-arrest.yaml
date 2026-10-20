@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Event: Deputy Anderson arrests you. Reached by move.to from RISK-APPROACH at the Heights (any
+# APB) and from Most Wanted's setback penalty on a patrol street. The arrival is the arrest:
+# the APB (or Most Wanted) is cleared, Handcuffs go on (off again in the Undercroft) and you're
+# taken to her holding cage at the station.
+# The text fits both routes: it never says how you got in front of her.
+id: anderson-arrest
+name: Under arrest
+tags: [law]
+description: Deputy Anderson, out of her cruiser, cuffs already in her hand.
+arrival:
+  text: |
+    Deputy Anderson is out of her cruiser and in front of you before you've decided anything.
+    She is twenty-four, maybe, and immaculate: creases you could cut yourself on, no hat, long
+    blonde waves with black streaks through them loose over a green patrol jacket, dark
+    lipstick, green eyes. She holds her phone up beside your face, compares, and sighs.
+
+    "Oh my God. It's actually you." She puts the phone away. "Hands on the hood. No. Flat.
+    Fingers spread. Has nobody ever shown you how to do this?"
+
+    The hood is warm from the engine. She takes the cuffs off her belt and lets you hear them
+    open, one click at a time.
+
+    "Feet back. Further. There's an APB out on you, babe. You don't get to be comfortable."
+
+    The first cuff closes, then the second. Not tight, not kind. She checks them with one black
+    fingernail and steps back to look at her work.
+
+    "Cute," she says. "Back seat. Watch your head. Actually, don't. I want to see if you hit it."
+
+    You don't. She looks disappointed, and shuts the door on you. The ride to the First Church
+    takes four minutes, and she spends all of them on the radio, telling dispatch about you.
+  effects:
+    - card.lose: apb
+    - card.lose: most-wanted
+    - card.gain: handcuffs
+    - move.to: anderson-holding
+art:
+  loras: ["DGirlsModel14:1", "SA86RN444WSD83T4QX4PYS3P80:1"]
+  subject: >
+    First-person point-of-view widescreen photograph from standing eye height on the asphalt
+    of a quiet residential street in a small Midwest town in autumn, the camera level, with
+    a parked sheriff's patrol car behind the woman, seen side-on. One woman stands at arm's
+    length in the center of the frame, framed from mid-thigh up, the tops of her boots at
+    the bottom edge, the patrol car's open driver's door behind her left shoulder. She looks
+    directly into the camera, making eye contact with the viewer, with sharp, mocking
+    impatience: green eyes narrowed, one dark brow arched, berry lips curled in a cold
+    smirk. She is a white American woman of twenty-four, slim and toned with a full bust and
+    long legs, fair skin, long wavy platinum-blonde hair with bold jet-black streak
+    highlights falling past her shoulders, dark elegant makeup with smoky black eyeliner,
+    long dark lashes and deep berry lipstick, striking bright green eyes, arched dark brows,
+    and long almond-shaped nails painted glossy black. She wears the Graystone County
+    Sheriff's patrol uniform: a dark forest-green bomber jacket of smooth nylon twill with
+    ribbed knit cuffs, collar band and waistband, zipped up to the middle of her chest, worn
+    with both arms in its sleeves and both shoulders covered, a single polished gold
+    six-point star badge pinned on its left chest and an embroidered vivid azure blue and
+    gold patch on each upper sleeve; above the zipper, the pointed collar of a crisp,
+    pressed tan uniform shirt and the knot of a vivid, saturated azure blue necktie with a
+    small gold tie bar; a black leather duty belt with a polished brass buckle at her waist
+    below the jacket's hem; tan riding breeches with a vivid azure blue stripe down the
+    outer seam; and stiff, structured, mirror-polished black leather thigh-high riding boots
+    with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight to
+    the leg, pulled up over the breeches to mid-thigh. Her head is bare, her long hair loose
+    over the jacket's shoulders, and her hands are bare. Her bare right hand comes out of
+    the green bomber sleeve, raised to the height of her chest, a pair of chrome clejuso
+    handcuffs dangling from her grip; her bare left hand comes out of the other green bomber
+    sleeve, raised beside her face, one glossy black-nailed index finger pointed straight at
+    the lens. Behind her, parked side-on along the curb, stands a Graystone County Sheriff's
+    patrol car: a present-day Ford Police Interceptor Utility SUV painted two-tone, with a
+    white roof, hood and front doors over a tan body, a broad vivid azure blue stripe
+    running the full length of each flank below the windows, a gold six-point star decal on
+    each front door, a low black roof light bar with red and blue lenses, a black steel push
+    bumper bolted across the front grille and black steel wheels; its light bar is lit, red
+    and blue. Beyond it, out of focus, white clapboard houses and orange maples. Soft
+    overcast late-morning light from a high gray sky lights her face evenly, with red and
+    blue glints from the light bar in her blonde hair and on the chrome handcuffs.
+    Restrained palette of forest green, tan, vivid azure blue, polished steel, platinum
+    blonde and maple orange; natural skin texture, fine 35 mm film grain, focus on her eyes
+    and the dangling handcuffs.

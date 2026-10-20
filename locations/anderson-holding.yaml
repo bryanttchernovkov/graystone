@@ -1,0 +1,493 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Event: booking in Deputy Anderson's holding cage, in the nave bullpen of the First Church.
+# Reached only by move.to from anderson-arrest. The only exit, down, hands you over to the
+# Undercroft (where the Sentence starts). Being good here earns standing with her (Anderson's
+# Attention), never time off the Sentence.
+# TALK-NAME gives Anderson's Attention (tag noticed hides it after); the rest raise it. Boot
+# Fetish fast-tracks DEAL-INHALE and Sock Fetish DEAL-WORSHIP (both always); Anderson's Paypig
+# without Sock Fetish opens DEAL-BEG, which earns it. RISK-TEASE gags you (talking hidden).
+id: anderson-holding
+name: Holding cage, First Church
+tags: [law, prison]
+hub: true
+description: A chain-link cage in the side aisle of the old church, a steel bench with a rail, and Deputy Anderson's desk just outside it.
+arrival:
+  text: |
+    She walks you up the church steps and through the big oak doors with one hand on the chain
+    between your wrists, like a leash she's embarrassed to be seen holding. The nave is a
+    bullpen now: steel desks in rows under the stained glass, phones, a radio murmuring, two
+    deputies who look up and then make a point of looking down again.
+
+    In the side aisle there's a chain-link cage with a steel bench bolted inside. She sits you
+    on it, unlocks one cuff and locks it again around the bench rail.
+
+    "Stay," Deputy Anderson says, and drops into the chair at the desk outside, with your
+    paperwork and her phone. "Booking takes as long as I say it takes. Entertain me."
+actions:
+  - category: talk
+    word: NAME
+    cost: 0
+    unless: [noticed, gagged]
+    prompt: Give her your name for the booking form. She has opinions about it, and about your face.
+    result:
+      text: |
+        "Name."
+
+        You give it. She writes it, crosses it out, writes it again. "Spell it." You spell it.
+        She reads it back to you with one letter wrong, then a different letter wrong, and
+        waits each time for you to correct her, and each time says, "That's what I said."
+
+        Then she gets up, holds her phone to the chain-link and takes your booking photo
+        through it.
+
+        "Chin up. No, up. Okay, now you look like you're about to cry. Perfect. Hold that."
+        She looks at the picture and shows it to the deputy at the next desk, who snorts.
+
+        "I'm keeping this one," Anderson says, sitting back down. "I'm going to remember you,
+        babe. Bad news for you, honestly."
+      effects:
+        - card.gain: andersons-attention
+        - skill.gain: talk
+      art:
+        loras: ["DGirlsModel14:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from seated eye height on a steel
+          bench inside a chain-link holding cage, the camera level, looking out through the
+          cage's galvanized chain-link mesh, soft and out of focus in the near foreground. Just
+          beyond it, one woman stands close to the mesh, framed from the waist up, holding a
+          black smartphone up toward the lens in her bare right hand, its camera lens aimed at
+          the viewer, its glowing screen turned toward her. She looks over the top of the phone
+          directly into the camera, making eye contact with the viewer, with mocking, delighted
+          amusement: green eyes bright and narrowed, one dark brow arched, berry lips spread in
+          a teasing grin. She is a white American woman of twenty-four, slim and toned with a
+          full bust and long legs, fair skin, long wavy platinum-blonde hair with bold jet-black
+          streak highlights falling past her shoulders, dark elegant makeup with smoky black
+          eyeliner, long dark lashes and deep berry lipstick, striking bright green eyes, arched
+          dark brows, and long almond-shaped nails painted glossy black. She wears the Graystone
+          County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy
+          cotton twill with a pointed collar, a full button-front placket, two buttoned tan flap
+          chest pockets edged with thin vivid azure blue piping, shoulder epaulets edged in
+          vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve
+          and a single polished gold six-point star badge pinned over the left pocket; a vivid,
+          saturated azure blue necktie with a small gold tie bar; and a black leather duty belt
+          with a polished brass buckle. Her head is bare and her hands are bare; her bare left
+          hand holds a clipboard with a manila arrest form against her hip. Behind her, the nave
+          of an old deconsecrated limestone Gothic Revival church converted into a sheriff's
+          bullpen: gray steel desks, tall pointed stained-glass windows throwing colored light
+          and dark oak roof beams. Cool fluorescent light over the desks lights her face, with
+          colored shafts from the stained glass behind her. Restrained palette of pale
+          limestone, uniform tan, vivid azure blue, galvanized steel gray, platinum blonde and
+          stained-glass red and gold; natural skin texture, fine 35 mm film grain, focus on her
+          eyes above the phone.
+  - category: deal
+    word: INVENTORY
+    cost: 1
+    tags: [tribute]
+    prompt: Hand over your wallet for the property inventory. Some of your property becomes hers, and a man who wants a receipt gets his bank balance read out to the room.
+    result:
+      text: |
+        "Property," she says, and unlocks the cage door, and holds out her hand.
+
+        You give her your wallet with your free hand. She goes through it at the desk, card by
+        card, out loud. "Driver's license. Ew. Library card. Aww. Punch card from Café Linde,
+        two punches. Babe. Commit to something." Then the cash. She fans it, counts it, and
+        counts it again with her lips moving, slowly, to make the point.
+
+        "Item one, cash." She writes a number on the form. "Item two, a tip for the deputy who
+        processed you, because you're grateful. How grateful are you?"
+
+        She picks your phone up off the desk and turns the screen toward you: your banking app,
+        open.
+
+        "Or you can ask for a receipt," she says, "and I'll read your balance out to the whole
+        nave. Up to you."
+      effects:
+        - choose:
+            - label: Let her keep $20
+              price: { cash: 20 }
+              effects:
+                - boost.change: { card: andersons-attention, amount: +1 }
+            - label: Let her keep $40
+              price: { cash: 40 }
+              effects:
+                - boost.change: { card: andersons-attention, amount: +2 }
+            - label: Ask for a receipt, and hear your balance read to the room
+              effects:
+                - tracker.change: { nerve: -1 }
+      art:
+        loras: ["DGirlsModel14:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from seated eye height on a steel
+          bench inside a chain-link holding cage, the camera level, the cage door standing open
+          so the view across to a gray steel desk two paces away is clear. One woman sits at the
+          desk turned toward the lens, framed from the waist up, a brown leather wallet lying
+          open and empty on the desk in front of her beside a manila arrest form and a scatter of
+          plastic cards. She looks directly into the camera, making eye contact with the viewer,
+          with smug, greedy amusement: green eyes narrowed with pleasure, one dark brow arched,
+          berry lips curled in a slow smile. She is a white American woman of twenty-four, slim
+          and toned with a full bust and long legs, fair skin, long wavy platinum-blonde hair
+          with bold jet-black streak highlights falling past her shoulders, dark elegant makeup
+          with smoky black eyeliner, long dark lashes and deep berry lipstick, striking bright
+          green eyes, arched dark brows, and long almond-shaped nails painted glossy black. She
+          wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved
+          uniform shirt of heavy cotton twill with a pointed collar, a full button-front placket,
+          two buttoned tan flap chest pockets edged with thin vivid azure blue piping, shoulder
+          epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold patch on
+          each upper sleeve and a single polished gold six-point star badge pinned over the left
+          pocket; a vivid, saturated azure blue necktie with a small gold tie bar; and a black
+          leather duty belt with a polished brass buckle. Her head is bare and her hands are
+          bare. She holds a fan of green banknotes up beside her face in her bare right hand,
+          black nails spread across the bills, and with her bare left hand she tucks one folded
+          bill into her left breast pocket under the star. Behind her, the nave of an old
+          deconsecrated limestone Gothic Revival church converted into a sheriff's bullpen: rows
+          of gray steel desks, tall pointed stained-glass windows throwing colored light and
+          dark oak roof beams. Cool fluorescent light over her desk lights her face and the
+          banknotes. Restrained palette of pale limestone, uniform tan, vivid azure blue,
+          banknote green, platinum blonde and stained-glass red and gold; natural skin texture,
+          fine 35 mm film grain, focus on her eyes and the banknotes.
+  - category: talk
+    word: ANSWER
+    cost: 1
+    unless: [gagged]
+    prompt: Answer her booking questions. She writes down her own answers, and you read them back to the room.
+    result:
+      text: |
+        "Occupation."
+
+        You tell her. She writes something shorter.
+
+        "Height." She doesn't ask; she looks at you through the chain-link and writes a number
+        and rounds it down. "Distinguishing marks. None. Distinguishing features." She thinks
+        about it. "None."
+
+        "Reason for arrest." She writes for a long time.
+
+        Then she gets up, unlocks the cage, and holds the form in front of your face. "Read it.
+        Out loud. Stand up as far as the cuff lets you, so the back row can hear."
+
+        You read it. It's a paragraph about you. It has the word "sad" in it three times and
+        "pathetic" once, and a line about the way you sat in the back of her car, knees
+        together, like a man waiting to be picked last. Two deputies at the far desks stop typing to listen. One of them claps.
+
+        "Sign it." You sign it. "Now say 'that's accurate, Deputy.'"
+
+        "That's accurate, Deputy."
+
+        "It is, isn't it," she says, delighted, and files it.
+      effects:
+        - boost.change: { card: andersons-attention, amount: +1 }
+        - tracker.change: { nerve: -1 }
+        - skill.gain: talk
+      art:
+        loras: ["DGirlsModel14:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from seated eye height on a steel
+          bench inside a chain-link holding cage, the camera level, the cage door standing open.
+          One woman stands in the doorway of the cage at arm's length, framed from the thighs
+          up, holding a clipboard with a manila arrest form close to the lens in her bare left
+          hand, its blurred, unreadable lines of handwriting filling the lower left of the
+          frame. She looks over the clipboard directly into the camera, making eye contact with
+          the viewer, with gleeful, bratty contempt: green eyes wide and bright, one dark brow
+          arched, berry lips spread in a mocking grin. She is a white American woman of
+          twenty-four, slim and toned with a full bust and long legs, fair skin, long wavy
+          platinum-blonde hair with bold jet-black streak highlights falling past her shoulders,
+          dark elegant makeup with smoky black eyeliner, long dark lashes and deep berry
+          lipstick, striking bright green eyes, arched dark brows, and long almond-shaped nails
+          painted glossy black. She wears the Graystone County Sheriff's uniform: a crisp,
+          pressed tan long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a
+          full button-front placket, two buttoned tan flap chest pockets edged with thin vivid
+          azure blue piping, shoulder epaulets edged in vivid azure blue, an embroidered vivid
+          azure blue and gold patch on each upper sleeve and a single polished gold six-point
+          star badge pinned over the left pocket; a vivid, saturated azure blue necktie with a
+          small gold tie bar; tan riding breeches with a vivid azure blue stripe down the outer
+          seam; and a black leather duty belt with a polished brass buckle. Her head is bare and
+          her hands are bare; her bare right hand points a black pen at the lens. Behind her,
+          out of focus, the bullpen in the nave of an old limestone church, where two women
+          deputies in tan uniform shirts sit at gray steel desks turned toward the cage,
+          laughing. Daylight through tall stained-glass windows falls in colored shafts across
+          the desks, with cool fluorescent light on her face. Restrained palette of pale
+          limestone, uniform tan, vivid azure blue, manila, platinum blonde and stained-glass
+          red and gold; natural skin texture, fine 35 mm film grain, focus on her eyes.
+  - category: risk
+    word: TEASE
+    cost: 1
+    prompt: Give her some lip back. She has a way of shutting a mouth, and it starts with spit and ends with a gag.
+    result:
+      text: |
+        You tell her she's very brave, for someone whose prisoner is cuffed to a bench.
+
+        The bullpen goes quiet. Anderson puts her pen down, gets up, unlocks the cage and comes
+        in. She takes your jaw in one hand, black nails along your cheek, and squeezes until
+        your mouth opens.
+
+        "Brave," she says. "Say ah."
+
+        She spits into your open mouth, once, neatly, and holds your jaw shut with the heel of
+        her hand. "Swallow." You swallow. "Good. That's the most useful thing that's come out
+        of you all day, and it came out of me."
+
+        She takes a black rubber bit off the hook by the door, puts it in your mouth and
+        buckles it behind your head, one notch tighter than it needs to be.
+
+        "There. Now you're brave too." She pats your cheek. "Ask the Sergeant to take it off.
+        She loves a man who asks."
+      effects:
+        - card.gain: gag
+      art:
+        loras: ["DGirlsModel14:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from seated eye height on a steel
+          bench inside a chain-link holding cage, the camera tilted slightly up. One woman stands
+          over the lens inside the cage, very close, framed from the chest up and leaning down
+          so her face fills the upper center of the frame. She looks directly into the camera,
+          making eye contact with the viewer, with cold, amused contempt: green eyes narrowed,
+          one dark brow arched, berry lips pursed forward with a glistening drop of saliva at
+          the lower lip. She is a white American woman of twenty-four, slim and toned with a
+          full bust and long legs, fair skin, long wavy platinum-blonde hair with bold jet-black
+          streak highlights falling past her shoulders and swinging forward, dark elegant makeup
+          with smoky black eyeliner, long dark lashes and deep berry lipstick, striking bright
+          green eyes, arched dark brows, and long almond-shaped nails painted glossy black. She
+          wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved
+          uniform shirt of heavy cotton twill with a pointed collar, a full button-front placket,
+          two buttoned tan flap chest pockets edged with thin vivid azure blue piping, shoulder
+          epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold patch on
+          each upper sleeve and a single polished gold six-point star badge pinned over the left
+          pocket; and a vivid, saturated azure blue necktie with a small gold tie bar hanging
+          forward. Her head is bare. Her bare right hand reaches toward the lens from the upper
+          right, black-nailed fingers spread to grip below the frame; her bare left hand holds a
+          black rubber bit gag with a black leather buckle strap dangling beside her face.
+          Behind her, out of focus, the galvanized chain-link mesh of the cage and the bullpen in
+          the nave of an old limestone church with stained-glass windows. Cool fluorescent light
+          from above lights her face and the wet sheen on her lips. Restrained palette of uniform
+          tan, vivid azure blue, black rubber, galvanized steel gray, platinum blonde and berry;
+          natural skin texture, fine 35 mm film grain, focus on her lips and eyes.
+  - category: deal
+    word: INHALE
+    cost: 1
+    always: true
+    requires: [boots]
+    tags: [tribute]
+    prompt: Ask for her boot, at the end of her shift. She pulls it off and holds it over your face while she does her paperwork.
+    result:
+      text: |
+        "Deputy. Your boot. Please."
+
+        "Ugh. Fine. I've been in them eleven hours." She pushes back from the desk, hooks the
+        heel of one boot on the edge of the drawer and works it off, and the other foot helps,
+        and the boot comes free with a sigh of air. Her foot in its thin black knee sock goes
+        straight up onto the desk, flexing.
+
+        She unlocks the cage and comes in with the boot held upside down by the heel, and
+        lowers it over your face, open end first, until the top of the shaft sits on your
+        cheekbones and your nose is inside.
+
+        "Hold it there. Both hands. You've got one free, use the cuffed one too. Breathe."
+
+        You breathe. Eleven hours of her: hot leather, sweat gone sour-sweet in the lining,
+        foot powder, a salt you can taste. The cage door stays open. She sits back down and
+        does your paperwork with her sock up on the desk, and every so often says "louder" and
+        you breathe louder, and the deputies at the next desk don't even look anymore.
+
+        When the form is done she takes the boot off your face and looks at you.
+
+        "Look at you. All pink." She pulls it back on. "Say thank you for my boot."
+
+        You say it.
+      effects:
+        - boost.change: { card: andersons-attention, amount: +1 }
+        - tracker.change: { nerve: +1 }
+      art:
+        loras: ["DGirlsModel14:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from seated eye height on a steel
+          bench inside a chain-link holding cage, the camera tilted up, looking up through the
+          open top of a riding boot held over the lens. The rim of the boot shaft frames the
+          bottom and sides of the image in a dark oval of black leather lining, and through the
+          opening, above, one woman stands over the lens holding the stiff, mirror-polished
+          black leather thigh-high riding boot upside down by its low, flat stacked-leather heel
+          in her bare right hand, framed from the chest up. She looks down directly into the
+          camera, making eye contact with the viewer, with lazy, amused contempt: green eyes
+          half-lidded, one dark brow arched high, berry lips pressed into a lopsided smirk. She
+          is a white American woman of twenty-four, slim and toned with a full bust and long
+          legs, fair skin, long wavy platinum-blonde hair with bold jet-black streak highlights
+          falling past her shoulders, dark elegant makeup with smoky black eyeliner, long dark
+          lashes and deep berry lipstick, striking bright green eyes, arched dark brows, and long
+          almond-shaped nails painted glossy black. She wears the Graystone County Sheriff's
+          uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a
+          pointed collar, a full button-front placket, two buttoned tan flap chest pockets edged
+          with thin vivid azure blue piping, shoulder epaulets edged in vivid azure blue, an
+          embroidered vivid azure blue and gold patch on each upper sleeve and a single polished
+          gold six-point star badge pinned over the left pocket; and a vivid, saturated azure
+          blue necktie with a small gold tie bar. Her head is bare. Above her, out of focus, the
+          dark oak beams of a church roof and the top of a tall pointed stained-glass window.
+          Cool fluorescent light from above lights her face and lays a soft glow on the inside
+          rim of the boot. Restrained palette of black leather, uniform tan, vivid azure blue,
+          platinum blonde and stained-glass red and gold; natural skin and leather texture, fine
+          35 mm film grain, focus on her eyes through the boot's opening.
+  - category: deal
+    word: WORSHIP
+    cost: 1
+    always: true
+    requires: [socks]
+    tags: [tribute]
+    prompt: Ask for her socks. She peels them off after eleven hours in riding boots and gives them to your face, one at a time.
+    result:
+      text: |
+        "Deputy. Your socks. Please."
+
+        She laughs at you, and then she does it anyway, because she likes being asked. Both
+        boots come off at the desk. She peels the first sock down her calf and off her toes,
+        slowly, and it hangs from her fingers, thin black cotton gone dark and heavy at the
+        heel.
+
+        She comes into the cage and drapes it over your face, the damp heel across your nose
+        and mouth, and sits down on the bench beside you with her bare foot up on your knee.
+
+        "In through the nose. Hold it. Out."
+
+        It's warm and wet and it's all her: salt and leather and the sweetish sour of a long
+        day in boots. You hold your breath in her sock until she says out. She takes the
+        second one off with her toes, against your knee, and stuffs it into your hand, and
+        you hold that one to your face too, both of them, and breathe.
+
+        "You're shaking, babe." She sounds pleased. "Say thank you for my socks."
+
+        "Thank you for your socks, Deputy."
+
+        "Thank you for your *sweaty* socks." You say it. She takes them back and puts them on
+        again, one at a time, in front of you.
+      effects:
+        - boost.change: { card: andersons-attention, amount: +1 }
+        - tracker.change: { nerve: +1 }
+      art:
+        loras: ["DGirlsModel14:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from seated eye height on a steel
+          bench inside a chain-link holding cage, the camera level and very close to a woman's
+          hand. In the near foreground, filling the lower center of the frame, a thin black
+          cotton knee-high sock hangs from her raised bare right hand, damp and heavy at the
+          heel, held up toward the lens, her long almond-shaped glossy black nails pinching its
+          cuff. Behind it, one woman sits sideways beside the lens on the steel bench, framed
+          from the chest up, leaning in. She looks directly into the camera, making eye contact
+          with the viewer, with teasing, pleased contempt: green eyes narrowed and bright, one
+          dark brow arched, berry lips curled in a smug smile. She is a white American woman of
+          twenty-four, slim and toned with a full bust and long legs, fair skin, long wavy
+          platinum-blonde hair with bold jet-black streak highlights falling past her
+          shoulders, dark elegant makeup with smoky black eyeliner, long dark lashes and deep
+          berry lipstick, striking bright green eyes, arched dark brows, and long
+          almond-shaped nails painted glossy black. She wears the Graystone County Sheriff's
+          uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a
+          pointed collar, a full button-front placket, two buttoned tan flap chest pockets edged
+          with thin vivid azure blue piping, shoulder epaulets edged in vivid azure blue, an
+          embroidered vivid azure blue and gold patch on each upper sleeve and a single polished
+          gold six-point star badge pinned over the left pocket; and a vivid, saturated azure
+          blue necktie with a small gold tie bar. Her head is bare. Behind her, out of focus,
+          the galvanized chain-link mesh of the cage and the bullpen in the nave of an old
+          limestone church, stained-glass windows throwing colored light. Cool fluorescent light
+          from above lights her face and the damp sheen at the sock's heel. Restrained palette
+          of black cotton, uniform tan, vivid azure blue, galvanized steel gray, platinum blonde
+          and stained-glass red and gold; natural skin and fabric texture, fine 35 mm film
+          grain, focus on the sock and her eyes.
+  - category: deal
+    word: BEG
+    cost: 1
+    requires: [owned]
+    unless: [socks, gagged]
+    tags: [tribute]
+    prompt: Beg her for something of hers to keep you company. She gives you her socks, straight off her feet, and teaches you what to do with them.
+    result:
+      text: |
+        "Deputy. Please. Anything of yours."
+
+        "Anything." She considers you over the desk. "You can't afford anything. You can have
+        my socks."
+
+        She pulls her boots off at the desk, both of them, and puts her feet up, and peels
+        the first sock off slowly, toes last. Thin black cotton, damp through at the heel and
+        the ball of the foot. She brings it into the cage and holds it under your nose without
+        letting it touch.
+
+        "Smell first. Don't grab."
+
+        You smell. Leather, salt, her. She lets it touch: the damp heel against your upper lip,
+        then over your nose, then the whole sock laid across your face, and her hand over it,
+        pressing it to you.
+
+        "In. Hold. Out. In. Hold." She keeps you at it until your breathing goes where she
+        says, and then she gives you the second one warm off her other foot and has you hold
+        both to your face with your cuffed hand and your free one, and she sits on the desk
+        with her bare feet swinging and watches you.
+
+        "That's what a girl smells like after a real job, babe," she says. "You'll be thinking
+        about it in the shower. You'll be thinking about it at your desk. Say 'yes, Deputy.'"
+
+        "Yes, Deputy."
+
+        She takes them back and stuffs them into her boots, and you watch them go.
+      effects:
+        - card.gain: sock-fetish
+        - boost.change: { card: andersons-attention, amount: +1 }
+      art:
+        loras: ["DGirlsModel14:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from seated eye height on a steel
+          bench inside a chain-link holding cage, the camera level, the cage door standing open.
+          Two paces away, one woman sits on the edge of a gray steel desk facing the lens,
+          framed from her feet to her head, her legs in tan riding breeches with a vivid azure
+          blue stripe down the outer seam crossed at the knee, her bare feet with glossy black
+          painted toenails swinging just above the floor, and a pair of stiff, mirror-polished
+          black leather thigh-high riding boots standing beside the desk. She dangles a pair of
+          thin black cotton knee-high socks from the black-nailed fingers of her raised bare
+          right hand, damp and limp, beside her face. She looks directly into the camera, making
+          eye contact with the viewer, with teasing, triumphant amusement: green eyes bright and
+          narrowed, one dark brow arched, berry lips spread in a slow grin. She is a white
+          American woman of twenty-four, slim and toned with a full bust and long legs, fair
+          skin, long wavy platinum-blonde hair with bold jet-black streak highlights falling
+          past her shoulders, dark elegant makeup with smoky black eyeliner, long dark lashes
+          and deep berry lipstick, striking bright green eyes, arched dark brows, and long
+          almond-shaped nails painted glossy black. She wears the Graystone County Sheriff's
+          uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a
+          pointed collar, a full button-front placket, two buttoned tan flap chest pockets edged
+          with thin vivid azure blue piping, shoulder epaulets edged in vivid azure blue, an
+          embroidered vivid azure blue and gold patch on each upper sleeve and a single polished
+          gold six-point star badge pinned over the left pocket; a vivid, saturated azure blue
+          necktie with a small gold tie bar; and a black leather duty belt with a polished brass
+          buckle. Her head is bare. Behind her, the nave of an old deconsecrated limestone Gothic
+          Revival church converted into a sheriff's bullpen, rows of gray steel desks and tall
+          pointed stained-glass windows throwing colored light. Cool fluorescent light over her
+          desk lights her face and the dangling socks. Restrained palette of black cotton, black
+          leather, uniform tan, vivid azure blue, platinum blonde and stained-glass red and
+          gold; natural skin and fabric texture, fine 35 mm film grain, focus on the socks and
+          her eyes.
+art:
+  loras: ["DGirlsModel14:1"]
+  subject: >
+    Eye-level widescreen photograph from inside a chain-link holding cage, seated height on
+    a steel bench, the camera level, looking out through the cage's galvanized chain-link
+    mesh, which stands soft and out of focus in the near foreground across the whole frame.
+    Beyond it, sharp and in focus, two paces away, one woman sits alone sideways at a gray
+    steel desk, turned toward the lens, her bare left forearm on a manila arrest form and a
+    black pen in her bare right hand raised beside her face, framed from the waist up. She
+    looks directly into the camera, making eye contact with the viewer, with bored, amused
+    contempt: green eyes half-lidded, one dark brow arched high, berry lips pressed into a
+    lopsided smirk. She is a white American woman of twenty-four, slim and toned with a full
+    bust and long legs, fair skin, long wavy platinum-blonde hair with bold jet-black streak
+    highlights falling past her shoulders, dark elegant makeup with smoky black eyeliner,
+    long dark lashes and deep berry lipstick, striking bright green eyes, arched dark brows,
+    and long almond-shaped nails painted glossy black. She wears the Graystone County
+    Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill
+    with a pointed collar, a full button-front placket, two buttoned tan flap chest pockets
+    edged with thin vivid azure blue piping, shoulder epaulets edged in vivid azure blue, an
+    embroidered vivid azure blue and gold patch on each upper sleeve and a single polished
+    gold six-point star badge pinned over the left pocket; a vivid, saturated azure blue
+    necktie with a small gold tie bar; and a black leather duty belt with a polished brass
+    buckle. Her head is bare and her hands are bare; a dark forest-green bomber jacket hangs
+    on the back of her chair. Behind her, the nave of an old deconsecrated limestone Gothic
+    Revival church built of smooth dressed limestone ashlar blocks laid in straight courses
+    with thin mortar joints, converted into a sheriff's bullpen: rows of gray steel desks
+    with computer monitors, tall pointed stained-glass windows along the far wall throwing
+    colored light, and the dark oak beams of the roof. Daylight through the stained glass
+    falls in long colored shafts across the desks, with cool fluorescent light over her desk
+    lighting her face. Restrained palette of pale limestone, uniform tan, vivid azure blue,
+    galvanized steel gray, platinum blonde and stained-glass red and gold; natural skin
+    texture, fine 35 mm film grain, focus on her eyes.

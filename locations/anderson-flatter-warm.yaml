@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Beat: Deputy Anderson likes your compliment, against her better judgment. Reached by
+# move.to (random) from TALK-FLATTER at her cruiser; sends you straight back to her window.
+id: anderson-flatter-warm
+name: Deputy Anderson's cruiser
+tags: [law, patrol]
+description: She checks herself in the mirror.
+arrival:
+  text: |
+    "Obviously," she says. But she tilts the side mirror and checks herself in it, the tie,
+    the hair, and a corner of her mouth goes up before she can stop it.
+
+    "Say the boots part again."
+
+    You say the boots part again.
+
+    "Mm. Better. You're still a nothing, babe, but you're a nothing with taste." She swings
+    one leg up so the boot rests on the dash, where you can see it through the windshield,
+    and leaves it there. "You can look. You can't touch. You definitely can't afford it."
+  effects:
+    - boost.change: { card: andersons-attention, amount: +1 }
+    - move.to: anderson-patrol-car
+art:
+  loras: ["DGirlsModel14:1"]
+  subject: >
+    Widescreen photograph from standing eye height in front of a parked sheriff's patrol car on
+    a quiet residential street in a small Midwest town in autumn, looking through the
+    windshield at a slight angle from the driver's side, the camera level. Inside, one woman
+    sits behind the wheel leaning back in the seat with her right leg raised and resting on the
+    dashboard, its stiff, structured, mirror-polished black leather thigh-high riding boot with
+    a rigid straight shaft and low, flat stacked-leather riding heel lying along the dash right
+    behind the glass, its glossy toe pointing at the lens, over tan riding breeches with a
+    vivid azure blue stripe down the outer seam. She is framed from her raised boot to her
+    head. She looks directly into the camera through the windshield, making eye contact with
+    the viewer, with pleased, teasing smugness: green eyes bright, one dark brow arched, berry
+    lips curled in a satisfied half smile. She is a white American woman of twenty-four, slim
+    and toned with a full bust and long legs, fair skin, long wavy platinum-blonde hair with
+    bold jet-black streak highlights falling past her shoulders, dark elegant makeup with smoky
+    black eyeliner, long dark lashes and deep berry lipstick, striking bright green eyes,
+    arched dark brows, and long almond-shaped nails painted glossy black. She wears a dark
+    forest-green bomber jacket of smooth nylon twill with ribbed knit cuffs, collar band and
+    waistband, zipped up to the middle of her chest, a single polished gold six-point star
+    badge pinned on its left chest and an embroidered vivid azure blue and gold patch on each
+    upper sleeve; above the zipper, the pointed collar of a crisp, pressed tan uniform shirt
+    and the knot of a vivid, saturated azure blue necktie with a small gold tie bar. Her head
+    is bare and her hands are bare; her bare right hand, out of the green bomber sleeve, rests
+    on the top of the boot shaft, black nails spread on the leather. The white hood with its
+    black steel push bumper fills the bottom of the frame, orange maple leaves lying on it,
+    and the windshield shows a faint reflection of the maples overhead. Soft overcast
+    late-morning light from a high gray sky lights her face and lays one long highlight down
+    the boot. Restrained palette of white hood, black leather, forest green, tan, vivid azure
+    blue, platinum blonde and maple orange; natural skin and leather texture, fine 35 mm film
+    grain, focus on the boot's toe and her eyes.

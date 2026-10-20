@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../../schema/v2/map.json
+# Inside 55 Graystone Heights: the living room downstairs, the bedroom up the stairs.
+# home-laptop is an event (WORK-LAPTOP in the living room); closing it returns you there.
+id: home
+name: 55 Graystone Heights, inside
+legend:
+  LR: home-living
+  BR: home-bedroom
+  LP: home-laptop
+grid: |
+  LR .. BR
+  .. .. ..
+  LP .. ..
+portals:
+  - { from: home-front, dir: in, to: home-living, back: out }
+  - { from: home-living, dir: up, to: home-bedroom, back: down }
+  - { from: home-laptop, dir: out, to: home-living, cost: 0, prompt: You close the laptop. }

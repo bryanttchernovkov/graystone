@@ -80,16 +80,23 @@ said yes: the drama is never whether he yields, but what yielding costs him and 
 Delivered by whoever has him in hand — a deputy most of all, but the town has its own women
 with their own appetites.
 
-- **Control:** sex; chastity; edging and denial; anal and strap-on sex; imprisonment — the
+- **Control:** sex; chastity; edging and denial; **instructed masturbation** (she watches and
+  gives the orders); **ruined orgasms**; anal and strap-on sex; imprisonment — the
   Undercroft, a night kept, a few days that were always part of the sentence.
 - **Restraint:** cuffs, chains, shackles, bondage; permission rules — nothing without asking.
 - **Impact and pain:** spanking; trampling; CBT; ballbusting; **wrestling and painful holds**.
 - **Below the knee and the uniform:** foot, shoe and **boot worship**; **uniform worship**;
   **gloves**; the campaign hat as a mark of rank. **Worship is by tongue, from the first
-  touch: never a cloth, never a brush in his hands.**
+  touch: never a cloth, never a brush in his hands** — unless the woman's taste is scent.
+- **Scent:** breathing in the inside of a boot she has worn all shift; **sock worship** —
+  damp socks off her feet, held to his face. Her sweat is the point; the polish isn't.
+- **Money:** **financial domination** — she takes his cash because she can, counts it in
+  front of him, and he thanks her for it. Always a priced choice with a free way out.
+- **Spit:** in his face or his mouth, as contempt or as a reward; her call which.
 - **Breath and weight:** **facesitting**; **gloved hand over the mouth** — smothering kept
   short and controlled.
-- **Humiliation:** being made to ask, recite, thank, display; public correction on the square.
+- **Humiliation:** being made to ask, recite, thank, display; public correction on the square;
+  **humiliating remarks** — her running commentary on him, out loud, in company.
 - **Finish:** cum eating — when and how she decides.
 - **Who holds the leash:** dominant femboys and trans women belong here too.
 
@@ -107,6 +114,17 @@ Like Precinct 69, **event scenes are locations**: the shoulder of the county roa
 cruiser behind you, a cell, the back of a patrol car — entered because something moved you
 there, always with a way back into the world. **People live at their places**; a rare few may
 follow the player as companion cards.
+
+**Places and events are kept apart** (authoring convention; players never see IDs or maps):
+
+- **Places** are where you can walk. They get place IDs (`main-street-north`, `heights`) and
+  sit on walkable maps (`town`, interiors linked by portals).
+- **Events** are scenes something moved you into. They get **`<storyline>-<event>` IDs**
+  (`undercroft-charm-warm`, `undercroft-trusted-release`), sit on **their storyline's map**,
+  and are reached only by `move.to`. A header comment says what sends you there. Their display
+  `name` may be a place ("The First Church steps"): names needn't be unique, so another
+  storyline can stage its own event on the same steps.
+- Place IDs stay free for the real place, should it ever become walkable.
 
 ## Rules configuration
 

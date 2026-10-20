@@ -4,8 +4,6 @@ kind: mission
 name: The Undercroft
 text: Trial storyline. Booked into the lockup under the old church, with a sentence and a sergeant. Serve it, or find another way out.
 start: undercroft
-on_place:
-  - card.gain: sentence
 art:
   subject: >
     Photograph of an old deconsecrated limestone Gothic Revival church on the corner of a small

@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+# Francine Giardano's standing with you. Gained once, from TALK-CHAT at the Café Linde counter
+# (tag regular hides it after). Paid orders and her back-room scenes punch it; actions tagged
+# instructed fill its slots. Full, it becomes Signora's Favorite.
+id: cafe-linde-punch-card
+kind: favor
+name: Café Linde Punch Card
+tags: [regular]
+text: Four boxes, and a linden leaf stamped in each one she fills. She fills them when she feels like it.
+boost: { capacity: 4, start: 1 }
+on_full: signoras-favorite
+slots:
+  - { match: { tag: instructed }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
+  - { match: { tag: instructed }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
+art:
+  subject: >
+    Square close still-life photograph from above of a small cream card stock loyalty card
+    lying on a white marble café table beside a white porcelain espresso cup on its saucer,
+    the card printed with one row of four small square boxes, the first one stamped with a small
+    dark green leaf and the other three empty, a small brass spoon resting across the saucer and a few grains of
+    raw sugar on the marble. Square composition with the card centered and the cup at the
+    upper right. Soft morning daylight from a window on the left lights the marble with a long
+    soft highlight and catches the crema in the cup. Restrained palette of cream card, dark
+    green, white marble, porcelain white, espresso brown and brass; natural paper and stone
+    texture, fine 35 mm film grain, shallow depth of field on the stamped leaves.

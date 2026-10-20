@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+# Placeholder sandbox mission: starts the run at home so the town can be walked and validated.
+id: a-day-in-graystone
+kind: mission
+name: A Day in Graystone
+text: A day with nothing on the calendar. The town is right outside.
+start: home-bedroom

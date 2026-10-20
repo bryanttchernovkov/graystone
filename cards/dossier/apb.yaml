@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+# Gained on escape (in place of the Sentence) and on TAKE-HACK. Its boost is how hot the
+# warrant is: each new APB adds one; full, it becomes Most Wanted. Any APB (tag wanted) turns
+# RISK-APPROACH at a patrol car into an arrest; the arrest swaps it for a fresh Sentence.
+id: apb
+kind: dossier
+name: APB
+tags: [wanted]
+boost: { capacity: 3, start: 1 }
+on_full: most-wanted
+text: Every cruiser in the county has your description. The longer the list next to it, the sooner somebody pulls over.
+art:
+  subject: >
+    Square photograph at night of a Graystone County Sheriff's patrol car parked at the curb of
+    an empty small-town main street, seen head-on from a few paces away at standing eye height:
+    a present-day Ford Police Interceptor Utility SUV painted two-tone, with a white roof, hood
+    and front doors over a tan body, a broad vivid azure blue stripe running the full length of
+    each flank below the windows, a gold six-point star decal on each front door, a low black
+    roof light bar with red and blue lenses, a black steel push bumper and black steel wheels.
+    The light bar is lit and flashing, throwing hard red and vivid blue light across the wet
+    asphalt, the hood and the dark limestone storefronts behind; its headlights are on, two
+    white glares at the center of the frame, and its windshield is dark. Square composition
+    with the patrol car centered and filling the lower two thirds, the wet street reflecting
+    the red and blue in long streaks toward the bottom edge. The scene is lit only by the
+    light bar and one sodium streetlight behind the car. Palette of night black, police red,
+    vivid azure blue, sodium orange and wet asphalt; natural texture, fine 35 mm film grain,
+    slight motion blur in the flashing lights.

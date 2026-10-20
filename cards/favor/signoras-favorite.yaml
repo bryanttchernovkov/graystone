@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+# The Café Linde Punch Card, full. Tag favored swaps WORK-PERFORM (ruined) for WORK-FINISH
+# (proper) in her back room; regular keeps her opener hidden.
+id: signoras-favorite
+kind: favor
+name: Signora's Favorite
+tags: [regular, favored]
+text: She makes yours without asking now. Sometimes she even lets you finish it.
+art:
+  loras: ["DMilfModel7:1"]
+  subject: >
+    Square portrait photograph from standing eye height across a dark walnut café counter with
+    a brass rail, of one woman behind the counter leaning forward on both forearms, framed from
+    the waist up. She looks directly into the camera, making eye contact with the viewer, with
+    warm, knowing approval: green eyes soft behind her glasses, one dark brow slightly raised,
+    red lips closed in a small private smile. She is a white American woman of forty with an hourglass figure, a large, full bust and a narrow waist, fair skin, glossy shoulder-length dark brunette hair with soft waves, black rectangular thick-rimmed glasses, bright green eyes, defined dark brows, and glossy red lipstick. She wears a red silk blouse with long sleeves and a soft collar, the top two buttons open, tucked into tailored black trousers, and a crisp black bib apron tied snugly at the waist, its straps smooth over her shoulders; black patent high-heeled pumps show under the trouser hems. She holds a white porcelain
+    espresso cup on its saucer out toward the lens in both hands, a small heart drawn in the
+    crema. Behind her, out of focus, a polished chrome lever espresso machine and shelves of
+    white cups on cream walls. Warm late-afternoon light through the front windows lights her
+    face and the red silk from the side. Restrained palette of red silk, black apron, dark
+    walnut, chrome, cream and espresso brown; natural skin texture, fine 35 mm film grain,
+    shallow depth of field on her eyes and the cup.

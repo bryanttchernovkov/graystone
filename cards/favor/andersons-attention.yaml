@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+# Gained once, from Deputy Anderson's openers (TALK-INTRODUCE at her cruiser, TALK-NAME in her
+# holding cage); its tag hides them afterwards. Everything else she likes is a boost.change on
+# this card, which does nothing once it has become Anderson's Paypig. Tribute actions (paying
+# her, breathing her in) fill its slots.
+id: andersons-attention
+kind: favor
+name: Anderson's Attention
+tags: [noticed]
+text: She knows your name. She says it like a typo.
+boost: { capacity: 4, start: 1 }
+on_full: andersons-paypig
+slots:
+  - { match: { tag: tribute }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
+  - { match: { tag: tribute }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
+art:
+  loras: ["DGirlsModel14:1"]
+  subject: >
+    Square portrait photograph from standing eye height on the sidewalk of a quiet residential
+    street in a small Midwest town in autumn, of one woman leaning back against the white
+    front door of a parked sheriff's patrol car, its gold six-point star decal and broad vivid
+    azure blue stripe beside her hip, framed from the waist up. She looks sidelong into the
+    camera, making eye contact with the viewer, with bored, faintly curious contempt: green
+    eyes half-lidded, one dark brow arched high, berry lips pressed into a lopsided smirk. She
+    is a white American woman of twenty-four, slim and toned with a full bust and long legs,
+    fair skin, long wavy platinum-blonde hair with bold jet-black streak highlights falling
+    past her shoulders, dark elegant makeup with smoky black eyeliner, long dark lashes and
+    deep berry lipstick, striking bright green eyes, arched dark brows, and long
+    almond-shaped nails painted glossy black. She wears the Graystone County Sheriff's patrol
+    uniform: a dark forest-green bomber jacket of smooth nylon twill with ribbed knit cuffs,
+    collar band and waistband, zipped up to the middle of her chest, worn with both arms in
+    its sleeves and both shoulders covered, a single polished gold six-point star badge
+    pinned on its left chest and an embroidered vivid azure blue and gold patch on each upper
+    sleeve; above the zipper, the pointed collar of a crisp, pressed tan uniform shirt and the
+    knot of a vivid, saturated azure blue necktie with a small gold tie bar; a black leather
+    duty belt with a polished brass buckle at her waist below the jacket's hem. Her head is
+    bare, her long hair loose over the jacket's shoulders, and her hands are bare. Her bare
+    right hand, out of the green bomber sleeve, holds a black smartphone up beside her face,
+    its dark screen turned away from the lens; her bare left hand, out of the other green
+    bomber sleeve, rests on the car door, black nails spread on the white paint. Behind her,
+    out of focus, white clapboard houses and orange maples. Soft overcast late-morning light
+    from a high gray sky lights her face evenly. Restrained palette of white car door, forest
+    green, tan, vivid azure blue, platinum blonde and maple orange; natural skin texture, fine
+    35 mm film grain, shallow depth of field on her eyes.

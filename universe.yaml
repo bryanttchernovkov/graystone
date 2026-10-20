@@ -60,20 +60,33 @@ dice:
 tags:
   - { id: law,       name: Law }
   - { id: prison,    name: Prison }
+  - { id: patrol,    name: Patrol }    # streets the department drives
+  - { id: wanted,    name: Wanted }    # an open APB (read by future arrest triggers)
+  - { id: contractor, name: Contractor } # county work orders: a legitimate reason to be at the station
   # The Undercroft storyline
   - { id: cooperate, name: Cooperate }
   - { id: please,    name: Please }
   - { id: chained,   name: Chained }
+  - { id: cuffed,    name: Cuffed }    # arrested: road cuffs, until the Undercroft
   - { id: caged,     name: Caged }
   - { id: gagged,    name: Gagged }
   - { id: served,    name: Served }
   - { id: trusted,   name: Trusted }
+  # Deputy Anderson's storyline
+  - { id: tribute,   name: Tribute }   # action tag: paying her, in cash or in breath
+  - { id: noticed,   name: Noticed }   # she knows your name (hides her openers)
+  - { id: owned,     name: Owned }     # her paypig
+  # Café Linde: Francine Giardano
+  - { id: instructed, name: Instructed } # action tag: doing exactly as she says
+  - { id: regular,   name: Regular }   # she has your punch card (hides her opener)
+  - { id: favored,   name: Favored }   # the Signora's favorite: she lets you finish
   # Fetish cards (read by other storylines' requires)
   - { id: boots,     name: Boots }
   - { id: uniform,   name: Uniform }
+  - { id: socks,     name: Socks }
 
 currencies:
-  - { id: cash, name: Cash, symbol: "$", start: 3 }
+  - { id: cash, name: Cash, symbol: "$", start: 40 }
 
 card_kinds:
   - { id: hero,      name: Hero,      placement: center }

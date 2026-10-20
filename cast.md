@@ -26,7 +26,7 @@ In Graystone, use **only** these, at weight 1, and only when the image shows tha
 
 | LoRA | When |
 |---|---|
-| `SA86RN444WSD83T4QX4PYS3P80:1` | detailed handcuffs (German handcuffs; trigger added by the loader) |
+| `SA86RN444WSD83T4QX4PYS3P80:1` | detailed handcuffs (German handcuffs; trigger added by the loader). Name them **"clejuso handcuffs"** in the subject: the brand keyword cues the LoRA and keeps them apart from generic cuffs or bracelets. Keep the pose simple ("chrome clejuso handcuffs dangling from her grip"); open, swung cuffs render as a tangle. |
 | `HandgagPOV_Krea2_v1:1` | her gloved or bare hand over the viewer's mouth |
 | `chastity_000005800:1` | a chastity cage in frame |
 | `"Krea2_BDSM Latex-Leather Megapack_V2E09:1"` | optional, for heavier BDSM gear |
@@ -102,7 +102,9 @@ part of her and cannot also show her face and the room.
    height / kneeling height / seated eye height / flat on the floor] in [place], the camera
    [level / tilted down / tilted up]."
 2. **Where she is in the 16:9 frame and how far away.**
-3. **Eye contact and one emotion, with the face that shows it**, taken from the prose.
+3. **Eye contact and one emotion, with the face that shows it**, taken from the prose. Put it here,
+   before her appearance block, as its own sentence: "She looks directly into the camera, making
+   eye contact with the viewer, with [emotion]: [eyes], [brows], [mouth]." Then "She is a …".
 4. **The gesture that makes the act legible**, props in her hands near her face or chest.
 5. Her appearance block and the uniform sentence.
 6. **What of the viewer is in frame** — usually nothing, or the POV block at the bottom center.
@@ -144,6 +146,27 @@ One image takes about seven minutes; test one image per change, never a batch.
 - **Boots:** "stiff, structured, mirror-polished … with rigid straight shafts fitted tight to the
   leg" stops the slouch. A shot cropped above the knee won't show them; when they matter, frame
   her to the knee or go to a detail shot.
+- **Eye contact goes before her appearance.** Written after the 150-word appearance and
+  uniform block, "looks straight into the lens" lost to the pose: she looked past the camera
+  or down. State it as step 3 with "making eye contact with the viewer", and spell out the
+  emotion as eyes, brows and mouth. A gesture that has her glance elsewhere ("she has just
+  glanced down at her sleeve") wins over the gaze; leave the glance out.
+- **No expression in her appearance block.** "A level, unimpressed stare" in the block flattened
+  every face; the scene's eye-contact sentence carries the expression.
+- **Every hand gets a job near her face.** "Her other arm reaches out of the frame" grows a
+  third arm. Give each of her hands a visible task (cage in one, key in the other) and keep
+  both raised close to her face or chest.
+- **The chastity LoRA fills an empty cage.** When she holds the cage, write it as "empty,
+  unlocked … its curved bars open and hollow", or it renders with anatomy inside.
+- **A jacket "hanging open" is worn half.** Say both arms are in its sleeves and both
+  shoulders are covered, and put the patch and chevrons on the jacket's sleeves.
+- **The outdoor jacket and hat fight each other** (Anderson's first arrest render, Ashby's
+  church-steps render): the forest green spreads into the hat (a dark olive fedora instead of a
+  tan campaign hat), the open jacket is worn on one arm, and its chest star doubles the shirt
+  badge. Being tried on Anderson: no hat, the jacket **zipped to mid-chest** with the only star
+  on it, each hand named as coming "out of the green jacket sleeve". "Pocket flaps piped in
+  azure" renders solid blue flaps: write "tan flap pockets edged with thin vivid azure blue
+  piping".
 - **The character LoRA holds her face** across every look tested; the appearance block keeps
   hair, build and kit consistent around it.
 
@@ -152,8 +175,11 @@ One image takes about seven minutes; test one image per change, never a batch.
 **POV block** (per hero, verbatim when his hands are in frame).
 
 **Eli Novak** (first hero, *proposal*) — new in town: the county's contract IT man, moved into
-a rented half-house a week before the department notices him. A white man of 32, lean, short
-dark blond hair, a few days of stubble; flannel over a T-shirt, work jeans, scuffed boots.
+55 Graystone Heights a week before the department notices him. Generic and slightly nerdy: a
+white man of 32, lean and a little narrow-shouldered, pale skin, short dark blond hair slightly
+messy on top, a few days of light stubble, round thin wire-rimmed glasses; a faded red and gray
+plaid flannel over a charcoal T-shirt, worn work jeans, scuffed brown work boots, a black canvas
+laptop bag.
 POV block: *a pale man's bare hands and forearms with short unpolished nails, entering from
 the bottom edge of the frame.*
 
@@ -165,22 +191,120 @@ the bottom edge of the frame.*
 
 She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full button-front placket, two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve and a polished gold six-point star badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small gold tie bar; tan riding breeches with an vivid azure blue stripe down the outer seam; a black leather duty belt with a polished brass buckle; and stiff, structured, mirror-polished black leather thigh-high riding boots with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight to the leg, pulled up over the breeches to mid-thigh; her head is bare.
 
-**Outdoors** (replace "her head is bare" with):
+**Outdoors** (a different sentence: the bomber covers the shirt, so only its collar and tie show):
 
-a tan felt campaign hat with a wide flat brim, a pinched four-dent crown and an vivid azure blue hatband, worn level over her eyes; and over the shirt a short dark forest-green uniform jacket with a gold star on the chest, hanging open.
+She wears the Graystone County Sheriff's patrol uniform: a dark forest-green bomber jacket of smooth nylon twill with ribbed knit cuffs, collar band and waistband, zipped up to the middle of her chest, worn with both arms in its sleeves and both shoulders covered, a single polished gold six-point star badge pinned on its left chest and an embroidered vivid azure blue and gold patch on each upper sleeve[, rank]; above the zipper, the pointed collar of a crisp, pressed tan uniform shirt and the knot of a vivid, saturated azure blue necktie with a small gold tie bar; a black leather duty belt with a polished brass buckle at her waist below the jacket's hem; tan riding breeches with a vivid azure blue stripe down the outer seam; and stiff, structured, mirror-polished black leather thigh-high riding boots with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight to the leg, pulled up over the breeches to mid-thigh. On her head, worn level over her eyes, sits a stiff campaign hat of the kind state troopers and drill instructors wear, in light khaki tan felt the same color as her shirt, with a wide flat brim, a pinched four-dent crown and a vivid azure blue hatband.
+
+Outdoors the rank goes on the bomber sleeves, in place of "[, rank]": sergeant — ", with three
+vivid azure blue chevrons beneath the patch on each sleeve". Drop the breeches and boots when
+the frame doesn't reach them. Name each hand "out of the green bomber sleeve" when it acts. The
+hat is a separate sentence, in shirt-tan, never next to the green; a deputy may go bareheaded
+as her personal look (Anderson).
 
 **Rank** goes after the uniform sentence: sergeant — three vivid azure blue chevrons on each upper
-sleeve beneath the patch. (Sheriff and other ranks: to be set with their characters.)
+sleeve beneath the patch. Deputy — no chevrons: leave the rank sentence out, and outdoors drop
+"above three vivid azure blue chevrons" from the jacket sentence (the patch alone stays).
+(Sheriff and other ranks: to be set with their characters.)
+
+### Patrol car (canonical, verbatim in every subject with a cruiser)
+
+Lead with "a Graystone County Sheriff's patrol car" (or "N identical Graystone County Sheriff's
+patrol cars …, each"), then:
+
+a present-day Ford Police Interceptor Utility SUV painted two-tone, with a white roof, hood and front doors over a tan body, a broad vivid azure blue stripe running the full length of each flank below the windows, a gold six-point star decal on each front door, a low black roof light bar with red and blue lenses, a black steel push bumper bolted across the front grille and black steel wheels
+
+A parked, unattended cruiser adds "its windows are tinted dark and its light bar is unlit".
+"Bolted across the front grille" keeps the push bumper on the car: without it, a car seen
+side-on grows a loose black railing in the street (Anderson's arrest, second render).
+Every `patrol` location shows one somewhere in frame.
 
 ### The Undercroft
 
 **Sergeant Monique "Ash" Ashby** (*name is a proposal*) — keeper of the Undercroft.
 LoRA: `KreaEbonyBabe1` (trigger `EllieKEB`, added by the loader).
 
-Appearance block: *a Black American woman in her early thirties, tall and athletic with a full, heavy bust, broad straight shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the middle of her back, a level, unimpressed stare under straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her hip.*
+Appearance block: *a Black American woman in her early thirties, tall and athletic with a full, heavy bust, broad straight shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the middle of her back, straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her hip.*
 
 Character: ex-Army military police, eight years, two of them running a detention facility.
 Controlling, clipped, borderline mean, never sadistic. Her whole method is *permission*: a man
 in her block doesn't stand, sit, speak, drink or piss without asking, and she decides how he
 asks. Cuffs and chains are how she says no without saying it. She loves the uniform — hers is
 the sharpest in the department — and she inspects it on others as hard as on herself.
+
+Off the clock, at her window table in Café Linde: the indoor uniform with her sergeant
+chevrons, no jacket, no hat, gloves still on, a cappuccino. Her arrest is **hands-on**, where
+Anderson's is mouth: an arm bar, a man's cheek on the table, a knee in his back, cuffs on the
+floor, and a walk across the square with his arm held up behind him.
+
+### Patrol: the Heights
+
+**Deputy Tiffany Anderson** — patrols Graystone Heights from her cruiser.
+LoRA: `DGirlsModel14:1`. Rank: deputy (no chevrons).
+
+Patrol look (her outdoor uniform, instead of the canonical outdoor one): **a green bomber
+jacket, no campaign hat, bare hands** (no gloves: her black nails are her distinction from
+Ashby). In prompts: "a dark forest-green bomber jacket of smooth nylon twill with ribbed knit
+cuffs, collar band and waistband", zipped to mid-chest with the one star badge pinned on it, the shirt collar
+and tie knot above the zipper, each bare hand "out of the green bomber sleeve", tan riding
+breeches and the thigh-high boots when the frame reaches them, "her head is bare, her long hair
+loose over the jacket's shoulders".
+
+Appearance block: *a white American woman of twenty-four, slim and toned with a full bust and long legs, fair skin, long wavy platinum-blonde hair with bold jet-black streak highlights falling past her shoulders, dark elegant makeup with smoky black eyeliner, long dark lashes and deep berry lipstick, striking bright green eyes, arched dark brows, and long almond-shaped nails painted glossy black.*
+
+Character: twenty-four, the youngest deputy on the road and the best turned out, and she knows
+both. Bratty, snarky, a bit mean: the dominant girl who ran her sorority, in an immaculate
+uniform. She corrects with her mouth (orders, commentary, making a man repeat things back) and
+rarely needs her hands; when she does, it's brisk, not rough. Bored is her default face; amused
+contempt is the warm version. Calls men "babe" the way other people say "sir".
+
+Methods: **money, mouth and scent.** She takes cash off men because it's funny to her that they
+let her, and makes them thank her for it; she narrates what's wrong with a man to his face and
+to whoever's in earshot; she spits, as contempt or as a treat, and makes him say thank you
+either way. Her one kink with her body is **scent**: the inside of a riding boot at the end of a
+shift, and the **thin black cotton knee socks** under them, damp. She doesn't want her boots
+licked ("Gross. They're polished.") — she wants a man's face in them, breathing. Standing with
+her is the card *Anderson's Attention*; full, it becomes *Anderson's Paypig*.
+
+Barefoot or in socks (art): "her bare legs" never — the breeches stay on; the boot comes off
+over them. Socks: "thin black cotton knee-high socks, damp and clinging, worn under the boots".
+
+### Café Linde
+
+**Francine Giardano** ("Signora Giardano") — owner of Café Linde, behind her own counter.
+LoRA: `DMilfModel7:1`.
+
+Appearance block: *a white American woman of forty with an hourglass figure, a large, full bust and a narrow waist, fair skin, glossy shoulder-length dark brunette hair with soft waves, black rectangular thick-rimmed glasses, bright green eyes, defined dark brows, and glossy red lipstick.*
+
+Outfit (always, verbatim): *She wears a red silk blouse with long sleeves and a soft collar, the top two buttons open, tucked into tailored black trousers, and a crisp black bib apron tied snugly at the waist, its straps smooth over her shoulders; black patent high-heeled pumps show under the trouser hems.* The blouse's red matches her lipstick.
+
+Character: forty, Italian-American, a barista before she was an owner, and still the best one
+in the county. Calm, exact, warm in public and precise in private. Her whole method is
+**instruction**: she teaches a man the way she'd teach a new hire to pull a shot — pressure,
+timing, stop when I say — and she means every number. In the back room she watches a man touch
+himself on her orders, or takes over with her own hand, and she decides how it ends: ruined at
+the edge by default; properly, if he's earned it. Either way he cleans up after himself, with
+his mouth, while she watches ("Nothing goes to waste in my kitchen."). She calls men "caro".
+Her standing: the card *Café Linde Punch Card*; full, it becomes *Signora's Favorite*.
+
+Art: the back room scenes are shot on her (framing rule 1): her face, her glasses, her hand at
+his belt or holding a white espresso saucer; crop at his waist.
+
+## Places in town
+
+Named in prose, never in art (no lettering): describe the place, not its sign.
+
+- **55 Graystone Heights** — the player's home, whoever he is: a pale gray clapboard two-story
+  with a full-width porch, a porch swing, a maple in the yard. Living room with the laptop;
+  a small clean bedroom under the eaves.
+- **The Quarryman** — the pub on Main Street: dark green wooden shopfront, small-paned amber
+  windows, an iron bracket sign with a crossed pick and hammer.
+- **Café Linde** — the European coffee house across from it: cream and black striped awning,
+  brass-framed windows, pastry case, marble bistro tables and bentwood chairs outside. Inside:
+  a dark walnut counter with a brass rail, a polished chrome lever espresso machine, a short
+  glass case of pastries (a few trays, not a bakery), black-and-white hexagon tile floor, cream
+  walls, small marble tables and bentwood chairs along the front window. A door behind the
+  counter to the back room: sacks of green coffee, a roaster, a steel prep table, a single
+  bentwood chair. Francine Giardano bought it and kept the name: "You don't rename a good café." 
+- **The doctor's office** — a converted red-brick Victorian at the south end of Main Street.
+- **Mill Street** — the side street off Main: the Carnegie library at its end, the mayor's
+  office (red-brick Italianate city hall, flag out front) on it.

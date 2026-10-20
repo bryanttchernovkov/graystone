@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+id: home-bedroom
+name: Bedroom
+tags: []
+description: A small room under the eaves, the bed made tight, nothing on the floor.
+actions:
+  - category: look
+    word: REST
+    cost: 0
+    always: true
+    prompt: Lie down on the made bed for an hour.
+    result:
+      text: |
+        You lie on top of the duvet with your feet hanging off the end and look at the slope of
+        the ceiling. Somewhere outside a leaf blower starts and stops. An hour goes by the way an
+        hour does when you let it.
+      effects:
+        - tracker.change: { time: -1, body: +2 }
+art:
+  subject: >
+    Eye-level photograph from the doorway of a small, clean upstairs bedroom in an older
+    wood-frame house in a small Midwest town, standing height, the camera level, looking across
+    the room toward a single dormer window set into a sloped ceiling. A full-size bed with a
+    plain dark walnut headboard stands against the right wall, neatly made with a smooth white
+    duvet pulled tight, two white pillows squared against the headboard and a folded navy blue
+    wool blanket across its foot. A small wooden nightstand beside it holds a brass reading
+    lamp and a glass of water. Against the left wall a low six-drawer pine dresser stands under
+    a round mirror that catches the window light; on its top sit only a wristwatch and a small
+    ceramic dish of keys and coins. A plain wooden chair stands in the corner by the window.
+    The walls and the sloped ceiling are plain off-white plaster, the floor bare honey-colored
+    oak boards with a small gray rag rug beside the bed. The room is sparse and orderly, with
+    generous open floor. Through the dormer window, the top branches of a maple in orange
+    autumn leaf against a pale sky. Cool early-morning daylight comes through the dormer window
+    from the far wall and falls across the white duvet in a soft pale band, the corners of the
+    room in gentle gray shadow. Restrained palette of white linen, honey oak, walnut, navy, soft
+    gray and maple orange; natural texture, fine 35 mm film grain.

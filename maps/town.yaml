@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../schema/v2/map.json
+# Graystone's streets: walkable places only (events live on their storyline's map). Main Street is one spot seen two ways: MN looks north to the square,
+# MS looks south to the Heights. Turning around is free; walking on costs the usual die.
+# The grid places locations for ./sw map; the view-based links are portals (walls stop the
+# grid from also joining them by compass).
+id: town
+name: Graystone
+legend:
+  MN: main-street-north
+  MS: main-street-south
+  MI: mill-street
+  HE: heights
+  H5: home-front
+grid: |
+  .. MN ..
+  MI MS ..
+  .. HE H5
+walls: [[MN, MS], [MS, HE]]
+portals:
+  - { from: main-street-north, dir: south, to: main-street-south, back: north, cost: 0, prompt: You turn around. }
+  - { from: heights, dir: north, to: main-street-north }
+  - { from: main-street-south, dir: south, to: heights }
