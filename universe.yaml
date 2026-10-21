@@ -85,6 +85,10 @@ tags:
   - { id: instructed, name: Instructed } # action tag: doing exactly as she says
   - { id: regular,   name: Regular }   # she has your punch card (hides her opener)
   - { id: favored,   name: Favored }   # the Signora's favorite: she lets you finish
+  # The library: Juno Vance (@rootkitty)
+  - { id: subscribed, name: Subscribed } # you pay for her page (hides SUBSCRIBE)
+  - { id: simping,   name: Simping }   # action tag: paying her for another look
+  - { id: hooked,    name: Hooked }    # her simp (opens her later scenes)
   # Fetish cards (read by other storylines' requires)
   - { id: boots,     name: Boots }
   - { id: uniform,   name: Uniform }

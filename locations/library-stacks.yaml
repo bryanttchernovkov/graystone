@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# The Carnegie library, looking across the reading room. In from Mill Street; turning around
+# (free) looks at the computer corner, where Juno Vance sits. The circulation desk is kept for
+# the librarian, a later storyline: her actions will go here.
+id: library-stacks
+name: The Carnegie library
+hub: true
+description: A round reading room under a copper dome, oak shelves around the walls, green lamps on the long tables, and nobody talking.
+actions:
+  - category: look
+    word: BROWSE
+    cost: 1
+    prompt: Browse the stacks for an hour.
+    result:
+      text: |
+        The shelves go round the room the way the walls do, and the spines go from Dewey to
+        dust. Local history has three shelves of its own: the quarry, the railroad, the flood of
+        '93, a self-published book about the First Church with a photograph of the pulpit on the
+        cover, back when it had one.
+
+        Somebody has been reshelving true crime into gardening. It's been done carefully, one
+        book at a time, over what looks like months, and nobody has put any of it back.
+      effects:
+        - skill.gain: look
+  - category: look
+    word: READ
+    cost: 2
+    prompt: Sit down at a long table under a green lamp and read the county's history.
+    result:
+      text: |
+        The county history is two volumes and a supplement. The supplement is new: a spiral-bound
+        report from the Mayor's office with a chart on every other page, every line on every chart
+        going down. Misdemeanors, break-ins, bar fights, the river. A short chapter on the
+        Sheriff's Department says it was "rebuilt with a new emphasis on direct correction" and
+        then moves on to road resurfacing.
+
+        It's quiet under the dome. The lamp is warm on your hands. For an hour nobody wants
+        anything from you.
+      effects:
+        - tracker.change: { nerve: +1 }
+art:
+  subject: >
+    Eye-level widescreen photograph from standing height just inside the doors of a small
+    round Carnegie library reading room in a Midwest town, the camera level, looking across
+    the room to the far wall. The room itself is the subject: a circular room under a shallow
+    dome, its curved walls lined from floor to gallery with tall dark oak bookcases filled
+    with hardback books in faded cloth bindings of red, green, brown and navy. Halfway up the
+    walls runs a narrow gallery with a black cast-iron railing, reached by a black cast-iron
+    spiral staircase at the right. Above it, the plaster dome rises to a round skylight of
+    leaded glass at its center. In the near foreground and mid-ground stand two long dark oak
+    reading tables with heavy turned legs and matching oak chairs pushed in, each table set
+    with a row of brass reading lamps with green glass shades, all lit. The floor is worn
+    honey oak boards with a long faded red runner between the tables. At the far side of the
+    room, half in shadow, a curved dark oak circulation desk with a brass bell and a neat
+    stack of returned books stands empty, a tall arched window behind it. The room is quiet
+    and still, the chairs tucked in. Soft daylight falls in a wide pale column from the
+    skylight onto the tables, and the green lamps add small pools of warm light on the oak,
+    the shelves around the walls fading into warm brown shadow. Restrained palette of dark
+    oak, honey floorboards, faded cloth red and green, brass, green glass and pale skylight;
+    natural texture, fine 35 mm film grain, deep focus from the near table to the far
+    shelves.

@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Beat: a photo from Juno Vance, bought with SIMP on Subscribed: @rootkitty or Rootkitty's
+# Simp, from anywhere. Reached by move.to (random) from that card action; move.back returns
+# you to wherever you were, without its arrival (ADR 0043 in the engine repo).
+id: juno-dm-selfie
+name: A photo from @rootkitty
+description: Glasses pushed up, tongue out, one finger up.
+arrival:
+  text: |
+    The phone buzzes. A selfie: glasses pushed up into her bangs, tongue out, middle finger an inch
+    from the lens.
+
+    *$15 for this*
+
+    *u paid $15 for this, dude*
+
+    *ur so easy it's boring. do it again*
+
+    You laugh, out loud, on your own. It doesn't make any sense, and it helps.
+  effects:
+    - skill.gain: random
+    - move.back
+art:
+  loras: ["KreaTransBabe:1"]
+  subject: >
+    First-person point-of-view widescreen photograph from seated eye height, the camera tilted
+    down, looking at a black smartphone held upright at the center of the frame. A pale man's
+    bare hands and forearms with short unpolished nails enter from the bottom edge of the frame
+    and hold the phone between them, thumbs on its edges. The phone's bright screen fills most
+    of the center of the frame and shows, edge to edge, a photograph: a selfie of one woman from
+    the chest up, her face close to her own camera, sticking her tongue out with her eyes
+    crossed in mock disgust, thick black rectangular rimmed glasses pushed up into her bangs,
+    her right hand raised with its middle finger held up an inch from the lens. She is a trans
+    woman of twenty-three, slim and petite with narrow shoulders, a small bust and long thin
+    legs, pale skin with a light dusting of freckles across her nose, long straight hair dyed
+    half jet black and half pastel pink, split down a center part and worn in two low pigtails,
+    blunt straight-cut bangs, sharp black winged eyeliner, glossy pale pink lips, a small silver
+    ring in her septum, and short nails painted black and pastel pink in turn, with a black
+    velvet choker with a small silver O-ring at her throat, wearing an oversized black cotton
+    hoodie slipping off her left shoulder over a fitted white ribbed crop top. Behind her in the
+    photograph, out of focus, a messy bedroom wall covered in posters of pastel colors and a
+    strip of pink LED light. Around the phone, out of focus, a soft dark background of warm
+    amber light. The screen's glow lights the fingers holding it, the photograph on it crisp and
+    bright. Restrained palette of pale skin, black, white, pastel pink and amber; natural skin
+    texture, fine 35 mm film grain, focus on the phone screen.

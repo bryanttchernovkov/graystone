@@ -96,9 +96,13 @@ with their own appetites.
 - **Breath and weight:** **facesitting**; **gloved hand over the mouth** — smothering kept
   short and controlled.
 - **Humiliation:** being made to ask, recite, thank, display; public correction on the square;
-  **humiliating remarks** — her running commentary on him, out loud, in company.
+  **humiliating remarks** — her running commentary on him, out loud, in company; **name-calling**,
+  slurs included ("good little faggot"), always in her mouth, never the narration's.
 - **Finish:** cum eating — when and how she decides.
 - **Who holds the leash:** dominant femboys and trans women belong here too.
+- **Her cock:** a trans woman or femboy who gets a straight man hooked on her dick — tease,
+  photo, bulge, taste — and mocks him for wanting it the whole way down. He is the one who says
+  yes, every time; the humiliation is that he wants it.
 
 Suggestion is foreplay, never the whole scene: wherever prose sets a kink on the table, an
 action pays it off at full length. Nothing outside this menu is written without amending this
@@ -159,7 +163,9 @@ tags. Nothing in it is shaped around one storyline.
 - **Her reaction can be a coin flip.** Results are fixed, so a varied reaction is a result
   ending in `move.to: {random: [...]}` to small *beat* locations whose arrival is the
   reaction and its effects, and which move him straight back (the validator flags these as
-  `reach.dead-end`; the engine runs arrival `move.to` fine).
+  `reach.dead-end`; the engine runs arrival `move.to` fine). A beat reached from anywhere (a
+  card action, like Juno's SIMP) ends in `move.back` instead, which returns him to wherever he
+  was without replaying it.
 - **Storyline mechanics live in cards.** For example, the Undercroft: an arrest gives a
   *Sentence* dossier before he arrives, and his time in the cell is served against it.
 

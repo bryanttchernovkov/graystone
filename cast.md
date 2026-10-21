@@ -353,6 +353,46 @@ Her standing: the card *Café Linde Punch Card*; full, it becomes *Signora's Fav
 Art: the back room scenes are shot on her (framing rule 1): her face, her glasses, her hand at
 his belt or holding a white espresso saucer; crop at his waist.
 
+## The library
+
+**Juno Vance** (`@rootkitty`) — at the corner table of the Carnegie library's computer corner,
+on her own laptop. Not police, not anybody's employee.
+LoRA: `KreaTransBabe:1`.
+
+Appearance block (*proposal: check skin, hair and build against the LoRA's renders*): *a trans
+woman of twenty-three, slim and petite with narrow shoulders, a small bust and long thin legs,
+pale skin with a light dusting of freckles across her nose, long straight hair dyed half jet black
+and half pastel pink, split down a center part and worn in two low pigtails, blunt straight-cut
+bangs, thick black rectangular rimmed glasses, sharp black winged eyeliner, glossy pale pink
+lips, a small silver ring in her septum, and short nails painted black and pastel pink in turn.*
+
+Outfit (always, verbatim): *She wears an oversized black cotton hoodie slipping off her left
+shoulder, a fitted white ribbed crop top under it, a short black pleated skirt, black and pastel
+pink horizontally striped thigh-high socks, and chunky black platform boots with thick
+rubber soles and silver buckles; a black velvet choker with a small silver O-ring sits at her
+throat, and pastel pink over-ear headphones with small cat ears hang around her neck.*
+
+Her laptop (when it's in frame): *a black laptop covered in small, colorful vinyl stickers of
+cartoon cats, stars, hearts and lightning bolts, none of them with any lettering*.
+
+Character: twenty-three, Graystone born, two years of a computer science degree before she got
+bored and came home. Lives online. The library has free wifi, quiet, and a steady supply of men
+using the public computers for things they shouldn't, and she has read every one of their
+browser histories. Runs **@rootkitty**, a subscription page: chastity tasks for men who pay for
+them, and her cock, which is the point. Confident, mean and tomboyish: a gamer's trash talk, not
+a sorority girl's (that's Anderson). Calls men "dude", "loser", and, when they've earned it,
+"good little faggot", cheerfully. Texts in lowercase, with "lol".
+
+Methods: **the hook.** She doesn't take men; she lets them come to her. A photo, a price, a dare.
+She gets straight men curious about her dick and then makes them say it out loud, and every time
+they pay for another look she reminds them what that makes them. Chastity is how she keeps a man
+thinking about her between messages. Standing with her is the card *Subscribed: @rootkitty*;
+full, it becomes *Rootkitty's Simp*.
+
+Art: her photos come to the player's phone (the phone is held in his POV hands, the photo filling
+its screen) or are shot across the library table. Her bulge is shown through the skirt; when she
+shows more, the frame is on her and her hand, per the framing rules (his body never).
+
 ## Places in town
 
 Named in prose, never in art (no lettering): describe the place, not its sign.
@@ -372,3 +412,9 @@ Named in prose, never in art (no lettering): describe the place, not its sign.
 - **The doctor's office** — a converted red-brick Victorian at the south end of Main Street.
 - **Mill Street** — the side street off Main: the Carnegie library at its end, the mayor's
   office (red-brick Italianate city hall, flag out front) on it.
+- **The Carnegie library** — one round reading room under the copper dome: a skylight in the
+  dome's eye, dark oak shelves around the curved walls, long oak reading tables with
+  green-shaded brass lamps, a cast-iron spiral stair to a gallery. On one side, by a tall arched
+  window, the computer corner: four beige public computers on a long laminate table, and a
+  small round table in the corner where Juno sits. The circulation desk (a curved oak counter)
+  is kept for the librarian, a later storyline.

@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Event: at Juno Vance's corner table in the library. Reached by move.to from TALK-APPROACH in
+# the computer corner (its result carries her greeting, so nothing replays here); out goes back
+# to the computer corner. Her scenes here are still to come; a later one takes you home with her
+# (juno-apartment-*), from here only.
+id: library-juno-table
+name: Juno's table
+hub: true
+description: A small round oak table in the corner, a laptop covered in stickers, an energy drink, and Juno Vance with one boot up on the other chair.
+actions:
+  - category: talk
+    word: ASK
+    cost: 1
+    prompt: Ask what she's working on. She shows you, which is worse.
+    result:
+      text: |
+        "Homework." She turns the laptop round. It's a list: library card numbers, down the left,
+        and next to each one the last thing that card looked at on the public computers. She
+        scrolls. It goes on for a while. Some of the lines are highlighted pink.
+
+        "Pink ones are my subscribers." She turns it back. "Everybody who sits at those computers
+        ends up on my page eventually, dude. It's like gravity." She writes something on a
+        sticky note, peels it off and sticks it to the back of your hand: *@rootkitty*, and a
+        little drawing of a cat.
+
+        "Twenty bucks a month. Or don't, and keep pretending you're not curious." She puts her
+        headphones back on. "Either way you're gonna look."
+      effects:
+        - skill.gain: talk
+art:
+  loras: ["KreaTransBabe:1"]
+  subject: >
+    Eye-level widescreen photograph from seated eye height across a small round oak table in
+    the corner of a Carnegie library reading room, the camera level, one woman, alone, seated
+    on the far side of the table two feet from the lens, framed from her lap to just above her
+    head. She looks directly into the camera, making eye contact with the viewer, with bored,
+    teasing confidence: eyes half-lidded behind her glasses, one brow raised, glossy lips
+    pushed into a small smirk around the straw of a can. She is a trans woman of twenty-three,
+    slim and petite with narrow shoulders, a small bust and long thin legs, pale skin with a
+    light dusting of freckles across her nose, long straight hair dyed half jet black and half
+    pastel pink, split down a center part and worn in two low pigtails, blunt straight-cut
+    bangs, thick black rectangular rimmed glasses, sharp black winged eyeliner, glossy pale
+    pink lips, a small silver ring in her septum, and short nails painted black and pastel
+    pink in turn. She wears an oversized black cotton hoodie slipping off her left shoulder, a
+    fitted white ribbed crop top under it, a short black pleated skirt, black and pastel pink
+    horizontally striped thigh-high socks, and chunky black platform boots with thick rubber
+    soles and silver buckles; a black velvet choker with a small silver O-ring sits at her
+    throat, and pastel pink over-ear headphones with small cat ears hang around her neck. She
+    leans back in her chair, her right hand holding a slim silver energy drink can to her
+    lips, her left hand resting on the edge of an open black laptop on the table, covered in
+    small, colorful vinyl stickers of cartoon cats, stars, hearts and lightning bolts, its
+    screen turned toward her. The bottom edge of the frame is the warm oak tabletop. Behind
+    her, a tall arched window with small leaded panes and the curve of a dark oak bookcase
+    full of faded cloth-bound books. Soft afternoon daylight from the window behind her rims
+    her pigtails and shoulders, and the cool glow of the laptop screen lights her face from
+    below. Restrained palette of dark oak, black, pastel pink, white and pale daylight;
+    natural skin texture, fine 35 mm film grain, shallow depth of field on her eyes.

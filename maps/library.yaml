@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../../schema/v2/map.json
+# The Carnegie library on Mill Street: one round reading room seen two ways, like Café Linde.
+# LS looks across the stacks (the circulation desk is kept for the librarian, a later storyline),
+# LC turns to the computer corner, where Juno Vance sits. Turning is free; the doors are on both.
+id: library
+name: The Carnegie library
+legend:
+  LS: library-stacks
+  LC: library-computers
+grid: |
+  LS .. LC
+portals:
+  - { from: library-stacks, dir: east, to: library-computers, back: west, cost: 0, prompt: You turn around. }
+  - { from: library-computers, dir: out, to: mill-street }

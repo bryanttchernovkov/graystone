@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Beat: a photo from Juno Vance, bought with SIMP on Subscribed: @rootkitty or Rootkitty's
+# Simp, from anywhere. Reached by move.to (random) from that card action; move.back returns
+# you to wherever you were, without its arrival (ADR 0043 in the engine repo).
+id: juno-dm-boots
+name: A photo from @rootkitty
+description: Her platform boots, up on a library table.
+arrival:
+  text: |
+    The phone buzzes. A photo: her boots, up on the library table, crossed at the ankle, the
+    striped socks going up out of the frame. The soles are filthy. Somebody's library book is
+    under the heel of one of them.
+
+    *these cost more than your car*
+
+    *u can lick the screen if u want. i'll never know. lol jk i'll know*
+
+    *thanks for the $15 loser. that's like a third of a boot*
+  effects:
+    - tracker.change: { nerve: +1 }
+    - move.back
+art:
+  loras: ["KreaTransBabe:1"]
+  subject: >
+    First-person point-of-view widescreen photograph from seated eye height, the camera tilted
+    down, looking at a black smartphone held upright at the center of the frame. A pale man's
+    bare hands and forearms with short unpolished nails enter from the bottom edge of the frame
+    and hold the phone between them, thumbs on its edges. The phone's bright screen fills most
+    of the center of the frame and shows, edge to edge, a photograph: a close photograph down
+    the length of a small round oak library table, a pair of chunky black platform boots with
+    thick rubber soles and silver buckles resting on it crossed at the ankle, their worn gray
+    soles turned toward the lens, a hardback library book with a faded green cloth cover lying
+    flat under one heel. Above the boots, black and pastel pink horizontally striped thigh-high
+    socks run up out of the top of the photograph, the hem of a short black pleated skirt at its
+    top edge. The boots belong to a slim, petite woman with pale skin. Behind them in the
+    photograph, out of focus, dark oak bookcases and a tall arched window in daylight. Around
+    the phone, out of focus, a soft dark background of warm amber light. The screen's glow
+    lights the fingers holding it, the photograph on it crisp and bright. Restrained palette of
+    black leather, pastel pink, dark oak and amber; natural texture, fine 35 mm film grain,
+    focus on the phone screen.

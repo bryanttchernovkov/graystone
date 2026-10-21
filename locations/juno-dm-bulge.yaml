@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Beat: a photo from Juno Vance, bought with SIMP on Subscribed: @rootkitty or Rootkitty's
+# Simp, from anywhere. Reached by move.to (random) from that card action; move.back returns
+# you to wherever you were, without its arrival (ADR 0043 in the engine repo).
+id: juno-dm-bulge
+name: A photo from @rootkitty
+description: A mirror, a pleated skirt, and what it doesn't hide.
+arrival:
+  text: |
+    The phone buzzes. A mirror selfie, from her ribs to her knees: the crop top, the hoodie off one
+    shoulder, the short black skirt. The skirt doesn't sit flat at the front. It sits on top of
+    something, and the something is hard, and she's got one hand on her hip so you can't miss it.
+
+    *eyes up, faggot*
+
+    *lol no. u won't. ur still looking*
+
+    *straight guys always stare the longest. it's so cute. it's so sad*
+
+    You look at it for longer than fifteen dollars should buy.
+  effects:
+    - tracker.change: { body: +1 }
+    - move.back
+art:
+  loras: ["KreaTransBabe:1"]
+  subject: >
+    First-person point-of-view widescreen photograph from seated eye height, the camera tilted
+    down, looking at a black smartphone held upright at the center of the frame. A pale man's
+    bare hands and forearms with short unpolished nails enter from the bottom edge of the frame
+    and hold the phone between them, thumbs on its edges. The phone's bright screen fills most
+    of the center of the frame and shows, edge to edge, a photograph: a mirror selfie of one
+    woman standing in front of a tall bathroom mirror, framed from her ribs to her knees, her
+    face out of the top of the photograph. She is a trans woman of twenty-three, slim and petite
+    with narrow shoulders, a small bust and long thin legs, pale skin with a light dusting of
+    freckles across her nose, long straight hair dyed half jet black and half pastel pink, split
+    down a center part and worn in two low pigtails, blunt straight-cut bangs, thick black
+    rectangular rimmed glasses, sharp black winged eyeliner, glossy pale pink lips, a small
+    silver ring in her septum, and short nails painted black and pastel pink in turn. She wears
+    an oversized black cotton hoodie slipping off her left shoulder, a fitted white ribbed crop
+    top under it baring a pale, flat stomach, and a short black pleated skirt, its front pushed
+    out and lifted by the clear, firm outline of her erect penis beneath the thin fabric, the
+    pleats parting around it; black and pastel pink horizontally striped thigh-high socks rise
+    to just below the skirt's hem. Her left hand rests on her hip, black and pink nails against
+    the hoodie, and her right hand holds a phone in a pastel pink case up at the top of the
+    mirror. Behind her in the mirror, white subway tile and a towel on a hook. Around the phone,
+    out of focus, a soft dark background of warm amber light. The screen's glow lights the
+    fingers holding it, the photograph on it crisp and bright. Restrained palette of black,
+    white, pastel pink, pale skin and amber; natural skin texture, fine 35 mm film grain, focus
+    on the phone screen.

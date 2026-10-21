@@ -20,3 +20,4 @@ portals:
   - { from: main-street-north, dir: south, to: main-street-south, back: north, cost: 0, prompt: You turn around. }
   - { from: heights, dir: north, to: main-street-north }
   - { from: main-street-south, dir: south, to: heights }
+  - { from: mill-street, dir: in, to: library-stacks, back: out, prompt: You climb the library steps and push through the heavy doors. }

@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# The Carnegie library, turned around: the computer corner by the arched window, four public
+# computers, and Juno Vance at the corner table on her own laptop, small in the background.
+# TALK-APPROACH takes you to her table (her storyline). Out goes to Mill Street.
+id: library-computers
+name: The library, the computer corner
+hub: true
+description: Four beige public computers on a long table by an arched window, and a woman in the corner on a laptop covered in stickers.
+actions:
+  - category: talk
+    word: APPROACH
+    cost: 1
+    always: true
+    prompt: Go over to the woman at the corner table.
+    result:
+      text: |
+        She doesn't take the headphones off. She doesn't look up, either. You stand at the
+        corner of her table long enough to read the stickers on her laptop lid, a cat, a star,
+        a lightning bolt, another cat, and she types the whole time.
+
+        Then she pushes one ear cup back with a finger and looks at you over her glasses.
+
+        "Dude. You've been looking at me since you walked in." She pulls the other chair out with
+        her boot. "Sit. Don't touch the stickers."
+      effects:
+        - move.to: library-juno-table
+  - category: work
+    word: LOGIN
+    cost: 1
+    prompt: Use a public computer for an hour. Somebody left their session open.
+    result:
+      text: |
+        The last person didn't log out. The browser is open to a page with a pink banner and a
+        grid of photos, every one of them blurred, and a price under each. The profile picture
+        is a girl in thick black glasses sticking her tongue out at the camera.
+
+        You look up. The girl in the corner is looking at you over the top of her laptop, with
+        her tongue in her cheek.
+
+        "Close the tab," she says, not quietly, "or subscribe. Those are the two options."
+
+        Two retirees at the newspaper rack turn around to look at you. You close the tab, and
+        answer an hour of email, and your ears stay hot for most of it.
+      effects:
+        - skill.gain: work
+  - category: look
+    word: WATCH
+    cost: 1
+    prompt: Sit at a terminal and watch the room.
+    result:
+      text: |
+        Men come in to use the computers. They look around before they sit down, and they sit
+        with their backs to the wall, and they all look at the corner table at least once.
+
+        She notices every one of them. She doesn't look up to do it; she types something, and
+        the man's screen flickers, and he logs out fast and leaves without his library card. By
+        three o'clock she has a little stack of them by her elbow, and she's sorting them.
+      effects:
+        - skill.gain: look
+art:
+  loras: ["KreaTransBabe:1"]
+  subject: >
+    Eye-level widescreen photograph from standing height in a small round Carnegie library
+    reading room, the camera level, looking across the room toward a tall arched window in
+    its curved wall. In the near foreground and mid-ground a long pale laminate table runs
+    along the wall under the window, holding four boxy beige public desktop computers with
+    old cream keyboards and gray office chairs pushed in, their screens showing soft blue
+    login screens with blurred lines of placeholder text. Dark oak bookcases full of faded
+    cloth-bound books curve away on either side, and a black cast-iron gallery railing runs
+    above them. In the far corner by the window, five paces away and small in the frame, one
+    woman, alone, sits at a small round oak table on her own laptop, turned half toward the
+    lens, glancing up over the laptop lid toward the camera with sly amusement: eyes narrowed
+    behind her glasses, one brow lifted, the corner of her mouth curled. She is a trans woman
+    of twenty-three, slim and petite with narrow shoulders, a small bust and long thin legs,
+    pale skin with a light dusting of freckles across her nose, long straight hair dyed half
+    jet black and half pastel pink, split down a center part and worn in two low pigtails,
+    blunt straight-cut bangs, thick black rectangular rimmed glasses, sharp black winged
+    eyeliner, glossy pale pink lips, a small silver ring in her septum, and short nails
+    painted black and pastel pink in turn. She wears an oversized black cotton hoodie
+    slipping off her left shoulder, a fitted white ribbed crop top under it, a short black
+    pleated skirt, black and pastel pink horizontally striped thigh-high socks, and chunky
+    black platform boots with thick rubber soles and silver buckles; a black velvet choker
+    with a small silver O-ring sits at her throat, and pastel pink over-ear headphones with
+    small cat ears hang around her neck. Her legs are crossed, one platform boot swinging.
+    Her laptop is black and covered in small, colorful vinyl stickers of cartoon cats,
+    stars, hearts and lightning bolts. Afternoon daylight pours through the arched window
+    behind her and across the pale table, rimming her pigtails in light, the bookcases in
+    warm shadow. Restrained palette of dark oak, beige plastic, pale daylight, black and
+    pastel pink; natural texture, fine 35 mm film grain, deep focus from the near computers
+    to the corner table.

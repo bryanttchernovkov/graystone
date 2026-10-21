@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Beat: a photo from Juno Vance, bought with SIMP on Subscribed: @rootkitty or Rootkitty's
+# Simp, from anywhere. Reached by move.to (random) from that card action; move.back returns
+# you to wherever you were, without its arrival (ADR 0043 in the engine repo).
+id: juno-dm-cage
+name: A photo from @rootkitty
+description: An empty chastity cage, hooked on one finger.
+arrival:
+  text: |
+    The phone buzzes. Her, from the shoulders up, grinning at the camera, with an empty chastity
+    cage hooked on one finger next to her face. It's small. She's holding it so you can see how
+    small.
+
+    *found one ur size*
+
+    *didn't even need a ruler. i just looked at ur profile pic*
+
+    *i'm keeping it in my bag. for when u ask nicely. u will ask nicely*
+
+    You put the phone face down for a minute. It doesn't help, but it's a minute.
+  effects:
+    - tracker.change: { time: +1 }
+    - move.back
+art:
+  loras: ["KreaTransBabe:1", "chastity_000005800:1"]
+  subject: >
+    First-person point-of-view widescreen photograph from seated eye height, the camera tilted
+    down, looking at a black smartphone held upright at the center of the frame. A pale man's
+    bare hands and forearms with short unpolished nails enter from the bottom edge of the frame
+    and hold the phone between them, thumbs on its edges. The phone's bright screen fills most
+    of the center of the frame and shows, edge to edge, a photograph: a selfie of one woman from
+    the shoulders up, her face close to her own camera, grinning with her tongue pressed into
+    her cheek, eyes bright and mocking behind her glasses. She is a trans woman of twenty-three,
+    slim and petite with narrow shoulders, a small bust and long thin legs, pale skin with a
+    light dusting of freckles across her nose, long straight hair dyed half jet black and half
+    pastel pink, split down a center part and worn in two low pigtails, blunt straight-cut
+    bangs, thick black rectangular rimmed glasses, sharp black winged eyeliner, glossy pale pink
+    lips, a small silver ring in her septum, and short nails painted black and pastel pink in
+    turn, with a black velvet choker with a small silver O-ring at her throat and pastel pink
+    over-ear headphones with small cat ears around her neck, the shoulder of an oversized black
+    hoodie at the bottom of the photograph. Her right hand is raised beside her face, and hooked
+    on her index finger by its ring hangs a small, empty, unlocked clear plastic chastity cage,
+    its curved bars open and hollow, a tiny brass padlock dangling open from it. Behind her in
+    the photograph, out of focus, dark oak bookcases. Around the phone, out of focus, a soft
+    dark background of warm amber light. The screen's glow lights the fingers holding it, the
+    photograph on it crisp and bright. Restrained palette of pale skin, black, pastel pink,
+    clear plastic, brass and amber; natural skin texture, fine 35 mm film grain, focus on the
+    phone screen.

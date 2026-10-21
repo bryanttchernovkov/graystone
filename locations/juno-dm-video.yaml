@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Beat: a photo from Juno Vance, bought with SIMP on Subscribed: @rootkitty or Rootkitty's
+# Simp, from anywhere. Reached by move.to (random) from that card action; move.back returns
+# you to wherever you were, without its arrival (ADR 0043 in the engine repo).
+id: juno-dm-video
+name: A video from @rootkitty
+description: Ten seconds of her face, close, saying it.
+arrival:
+  text: |
+    The phone buzzes, and it isn't a photo. It's a video, ten seconds long. Her face, very close,
+    lit by a laptop. She isn't smiling.
+
+    "Say it," she says, low. "Say you want it. Out loud, wherever you are. I'll know if you
+    don't."
+
+    The video ends on her laughing.
+
+    You say it. Quietly, but you say it. A second later: *good boy. see? that wasn't so hard. it
+    will be tho*
+  effects:
+    - tracker.change: { nerve: +1, body: +1 }
+    - move.back
+art:
+  loras: ["KreaTransBabe:1"]
+  subject: >
+    First-person point-of-view widescreen photograph from seated eye height, the camera tilted
+    down, looking at a black smartphone held upright at the center of the frame. A pale man's
+    bare hands and forearms with short unpolished nails enter from the bottom edge of the frame
+    and hold the phone between them, thumbs on its edges. The phone's bright screen fills most
+    of the center of the frame and shows, edge to edge, a photograph: a still from a video call,
+    one woman's face very close to her own laptop camera, filling the screen from her chin to
+    her bangs, lit from below by the cool blue-white glow of a laptop screen. She looks straight
+    into her camera, making eye contact with the viewer, with intent, teasing hunger: eyes
+    steady behind her glasses, brows low, glossy lips parted as she speaks. She is a trans woman
+    of twenty-three, slim and petite with narrow shoulders, a small bust and long thin legs,
+    pale skin with a light dusting of freckles across her nose, long straight hair dyed half jet
+    black and half pastel pink, split down a center part and worn in two low pigtails, blunt
+    straight-cut bangs, thick black rectangular rimmed glasses, sharp black winged eyeliner,
+    glossy pale pink lips, a small silver ring in her septum, and short nails painted black and
+    pastel pink in turn, with a black velvet choker with a small silver O-ring at her throat.
+    Behind her in the photograph, a dark room and a strip of pink LED light. A small white play
+    triangle sits at the center of the screen. Around the phone, out of focus, a soft dark
+    background of warm amber light. The screen's glow lights the fingers holding it, the
+    photograph on it crisp and bright. Restrained palette of pale skin, cool screen blue, pastel
+    pink, black and amber; natural skin texture, fine 35 mm film grain, focus on the phone
+    screen.

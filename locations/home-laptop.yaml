@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=../../../schema/v2/location.json
 # Event: the laptop at home. Reached only by move.to from WORK-LAPTOP in home-living (always
 # offered there); the only exit, out, closes it and puts you back in the living room.
-# A hub: each program once per run.
+# A hub: each program once per run, except LOOK-SCROLL (always), which opens Juno Vance's page.
 id: home-laptop
 name: The laptop
 tags: []
@@ -61,6 +61,20 @@ actions:
         You print the badge.
       effects:
         - card.gain: contractor-badge
+  - category: look
+    word: SCROLL
+    cost: 1
+    always: true
+    prompt: Scroll your feeds. Something local keeps getting recommended to you.
+    result:
+      text: |
+        The same account keeps turning up. Between a neighbor's lost dog and an ad for the
+        quarry's open day: a girl in thick black glasses, half-pink pigtails, her tongue out at
+        the camera, and under it, *graystone's only hacker. you know you want to look.*
+
+        You tap it.
+      effects:
+        - move.to: juno-page
   - category: look
     word: NEWS
     cost: 1

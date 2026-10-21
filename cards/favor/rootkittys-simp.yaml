@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+# Subscribed: @rootkitty, full. Tag hooked opens her later scenes (her table, her apartment);
+# subscribed keeps SUBSCRIBE hidden. SIMP stays: the same random photo beats, from anywhere but
+# custody.
+id: rootkittys-simp
+kind: favor
+name: Rootkitty's Simp
+tags: [subscribed, hooked]
+text: She renamed herself in your phone. It's a pink heart and the word "owner", and you can't change it back.
+actions:
+  - category: deal
+    word: SIMP
+    cost: 1
+    tags: [simping]
+    unless: [cuffed, inmate]
+    price: { cash: 15 }
+    prompt: Tip @rootkitty fifteen dollars. She sends a picture for it, and you don't get to pick which.
+    result:
+      text: |
+        You send it. Fifteen dollars, and in the note the only thing she lets you write:
+        *for you, juno.*
+
+        Three dots. They stop. They start again.
+      effects:
+        - move.to: { random: [juno-dm-boots, juno-dm-boots, juno-dm-bulge, juno-dm-bulge, juno-dm-cage, juno-dm-cage, juno-dm-selfie, juno-dm-selfie, juno-dm-video] }
+art:
+  loras: ["KreaTransBabe:1"]
+  subject: >
+    Square portrait photograph from seated eye height across a small round oak table in the
+    corner of a Carnegie library reading room, of one woman leaning forward on her elbows,
+    framed from the waist up. She looks directly into the camera, making eye contact with the
+    viewer, with smug, delighted ownership: eyes bright behind her glasses, brows raised, her
+    glossy lips pulled into a wide teasing grin. She is a trans woman of twenty-three, slim and petite with narrow
+    shoulders, a small bust and long thin legs, pale skin with a light dusting of freckles
+    across her nose, long straight hair dyed half jet black and half pastel pink, split down
+    a center part and worn in two low pigtails, blunt straight-cut bangs, thick black
+    rectangular rimmed glasses, sharp black winged eyeliner, glossy pale pink lips, a small
+    silver ring in her septum, and short nails painted black and pastel pink in turn. She
+    wears an oversized black cotton hoodie slipping off her left shoulder, a fitted white
+    ribbed crop top under it, and a short black pleated skirt; a black velvet choker with a
+    small silver O-ring sits at her throat, and pastel pink over-ear headphones with small
+    cat ears hang around her neck. She holds a phone in a pastel pink
+    case up beside her face in her right hand, its screen turned toward herself, and her left
+    hand rests flat on the closed lid of a black laptop covered in small, colorful vinyl
+    stickers of cartoon cats, stars, hearts and lightning bolts. Behind her, out of focus, a
+    tall arched window with small leaded panes and the curve of a dark oak bookcase. Soft
+    afternoon daylight from the window rims her pigtails, and warm light from a green-shaded
+    brass lamp lights her face from the side. Restrained palette of dark oak, black, white,
+    pastel pink and lamp gold; natural skin texture, fine 35 mm film grain, shallow depth of
+    field on her eyes.
