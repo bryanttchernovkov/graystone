@@ -2,6 +2,7 @@
 id: sentence
 kind: dossier
 name: Sentence
+tags: [inmate]
 text: Misdemeanor, Graystone County. No court date. Served in the Undercroft, at the Sergeant's discretion.
 boost: { capacity: 3, start: 0 }
 on_full: served-sentence

@@ -75,6 +75,7 @@ tags:
   - { id: caged,     name: Caged }
   - { id: gagged,    name: Gagged }
   - { id: served,    name: Served }
+  - { id: inmate,    name: Inmate }    # serving time: Sentence and Time Served (hides the phone)
   - { id: trusted,   name: Trusted }
   # Deputy Anderson's storyline
   - { id: tribute,   name: Tribute }   # action tag: paying her, in cash or in breath

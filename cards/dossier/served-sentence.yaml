@@ -2,7 +2,7 @@
 id: served-sentence
 kind: dossier
 name: Time Served
-tags: [served]
+tags: [served, inmate]
 text: A line in the Sergeant's ledger with her initials next to it. All that's missing is yours.
 art:
   loras: ["chastity_000005800:1"]

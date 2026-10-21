@@ -2,7 +2,8 @@
 # Anderson's Attention, full. Its tag `owned` opens her earned fetish actions (DEAL-BEG at the
 # cruiser for Boot Fetish, DEAL-BEG in holding for Sock Fetish); `noticed` keeps her openers
 # hidden. Its action is the one place her storyline reaches you away from her: send her money,
-# from anywhere, as often as you can pay for it.
+# from anywhere, as often as you can pay for it. Not in custody, though: Handcuffs (`cuffed`) and
+# the Undercroft's Sentence (`inmate`) hide it.
 id: andersons-paypig
 kind: favor
 name: Anderson's Paypig
@@ -12,6 +13,7 @@ actions:
   - category: deal
     word: SEND
     cost: 1
+    unless: [cuffed, inmate]
     price: { cash: 20 }
     prompt: Send Deputy Anderson twenty dollars. She doesn't say thank you. You do.
     result:
