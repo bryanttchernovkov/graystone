@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../../schema/v2/map.json
+# Francine Giardano's storyline: events only, reached by move.to. Her back room: DEAL-STAY at
+# the Café Linde counter (punch card). Out goes back to the counter.
+id: giardano
+name: Signora Giardano
+legend:
+  BR: giardano-backroom
+grid: |
+  BR
+portals:
+  - { from: giardano-backroom, dir: out, to: cafe-linde-counter, cost: 0, prompt: She unlocks the door and holds it for you. }

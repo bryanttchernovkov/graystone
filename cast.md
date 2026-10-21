@@ -127,6 +127,11 @@ One image takes about seven minutes; test one image per change, never a batch.
 - **Through the bars.** To put her outside a cell, write "photographed through the bars": the
   bars in the extreme foreground, her face in the gap between two of them. If the cell's props
   (cot, wall ring) are in the near foreground, the model puts her inside the cell with them.
+- **Through the mesh** (Anderson's holding cage): the same recipe for chain-link. "Running
+  unbroken across the whole frame from edge to edge", "the lens pressed close behind it", and
+  her "four paces away … small in the center", face in one clear diamond. "Soft in the near
+  foreground" alone gave two strips of fence at the frame's edges, read as an open gate, with
+  her at the viewer's elbow (first render).
 - **Cuff words put cuffs on her.** Any "handcuff" or "cuffs" in a subject with her in it
   (even "a handcuff case on her belt") renders as a cuff or a steel bangle on her own wrist, or
   cuffs in her hand instead of the prop you asked for. Her appearance block carries no cuffs.
@@ -167,6 +172,64 @@ One image takes about seven minutes; test one image per change, never a batch.
   on it, each hand named as coming "out of the green jacket sleeve". "Pocket flaps piped in
   azure" renders solid blue flaps: write "tan flap pockets edged with thin vivid azure blue
   piping".
+- **Draw focus.** A result frame is about one thing: the act. ADMIRE (framed lips to belt, the
+  tie and star filling the frame, his hand on the tie) and KNEEL (the boot alone, toe to knee)
+  are the models. Frame on what the act touches, say where the bottom edge cuts, and describe
+  only what is in frame; leave out the rest of the uniform, the car, the room. Prompts that
+  asked for her whole kit plus the whole car came out busy and broken: Anderson clipping
+  through her door (INTRODUCE), a leg through the steering wheel (Paypig SEND), a boot on the
+  dash from the passenger seat (FLATTER-WARM). Establishing shots and portraits show her whole;
+  results mostly don't.
+- **If her waist is in frame, name the trousers.** A waist-up subject that left the breeches
+  out got green trousers under the bomber (Anderson's Attention card) and azure trousers under
+  the tie (her Paypig card): the model fills a missing garment from the nearest color. Whenever
+  the frame reaches her waist, name the duty belt and "tan riding breeches, the same khaki tan
+  as her shirt". A chest-up or face shot says where the frame stops instead.
+- **Describe what you want, never what you don't** (prompt guide §2). Whatever a prompt names, it
+  draws, negated or not. "No post, no gate, no gap" grew posts and a gate around the holding cage
+  four times; "no fences, cages or partitions" fenced her desk in; "nobody standing anywhere" kept
+  a standing second Ashby at the café window. Name the positive picture ("a single sheet of wire
+  mesh over the whole picture like a screen door", "an open bullpen", "the window beside her
+  fills the background") and leave the unwanted thing unmentioned. The same goes for "nothing of
+  the viewer is in frame": say what the bottom edge is instead.
+- **An empty room gets filled with her.** "One woman, alone" isn't enough in a room with depth
+  behind her: the café window drew two Ashbys, the counter and the back room each a second
+  Francine, STAY a second pair of heels. Keep the shot close on her, give the background a
+  concrete subject of its own (the window and the square beyond it, the stacked sacks), and leave
+  unnamed extras out unless the scene needs them.
+- **A boot that comes off must leave the frame of her legs.** Holding the boot while her legs
+  are in frame drew it back on her (cruiser INHALE), a boot on one leg and a bare foot on the
+  other (holding BEG), and boots under the socks (WORSHIP). Frame her from the waist up, write
+  "her legs are below the frame", and name the boot as "a single empty … boot, off her foot".
+  Don't stand spare boots beside her: they get put on. Boot worship on a worn boot is a detail
+  shot from the toe to just above the knee, nothing higher (SHINE drew a loose boot on the tile).
+- **"Boot top toward the lens" drew a bucket.** Keep the whole boot readable: "visible from its
+  open top to its rounded toe", dangling from her hand by the shaft.
+- **Viewer hands appear unasked** when she holds something toward the lens (ANSWER's clipboard,
+  SHOW's saucer). Keep the prop against her own body ("flat against her own chest in her bare
+  left hand") rather than pushed at the lens.
+- **Naming her breeches stands her up.** In a car-window shot the full uniform pulled Anderson
+  out of the car. Frame her chest-up inside the window opening, "like a picture frame: the roof
+  edge above, the door pillars on either side, the white door below the sill", and leave the
+  lower uniform out.
+- **Anchor her in the car with her arm.** "Sits behind the wheel" alone, with a full uniform,
+  put Anderson half out of the door three times. "Her left elbow on the window sill and her chin
+  propped on her hand" (FLATTER-COLD) kept her inside every time: the canonical cruiser pose.
+  A hand on the steering wheel next to a hand holding a prop grew a third arm (INTRODUCE).
+- **A low camera sees her legs.** From kneeling height looking up, "her legs are below the frame"
+  didn't hold and the boot went back on her foot (cruiser INHALE, three times). For a boot she's
+  holding, use standing eye height and frame her from the chest up, "the bottom edge at her tie
+  bar", and hold the whole boot up beside her face.
+- **Chain-link builds cages around her.** With the mesh in front, the model also fenced her desk
+  in. Being tried: the wire as "a screen door" over the whole picture, the room beyond described
+  as an open bullpen, and her "seen full length and small" in the middle distance.
+- **Gestures at the lens become fists.** "Fingertips under the viewer's chin" rendered a fist
+  coming at the camera twice (STAND). Keep corrective gestures near her own face.
+- **Name sleeve length when you crop the shirt.** A face close-up with only "the collar of a tan
+  uniform shirt" got short sleeves (TEASE): write "long-sleeved … buttoned at the wrists".
+- **Gags render as props badly.** With no gag LoRA, "a black rubber bit gag" came out as a
+  black bulb on a strap (Gag card). Show the moment instead: her hand over the mouth from POV
+  with `HandgagPOV_Krea2_v1:1` (NOISE, TEASE), and keep gag objects out of frame.
 - **The character LoRA holds her face** across every look tested; the appearance block keeps
   hair, build and kit consistent around it.
 
@@ -196,8 +259,9 @@ She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-slee
 She wears the Graystone County Sheriff's patrol uniform: a dark forest-green bomber jacket of smooth nylon twill with ribbed knit cuffs, collar band and waistband, zipped up to the middle of her chest, worn with both arms in its sleeves and both shoulders covered, a single polished gold six-point star badge pinned on its left chest and an embroidered vivid azure blue and gold patch on each upper sleeve[, rank]; above the zipper, the pointed collar of a crisp, pressed tan uniform shirt and the knot of a vivid, saturated azure blue necktie with a small gold tie bar; a black leather duty belt with a polished brass buckle at her waist below the jacket's hem; tan riding breeches with a vivid azure blue stripe down the outer seam; and stiff, structured, mirror-polished black leather thigh-high riding boots with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight to the leg, pulled up over the breeches to mid-thigh. On her head, worn level over her eyes, sits a stiff campaign hat of the kind state troopers and drill instructors wear, in light khaki tan felt the same color as her shirt, with a wide flat brim, a pinched four-dent crown and a vivid azure blue hatband.
 
 Outdoors the rank goes on the bomber sleeves, in place of "[, rank]": sergeant — ", with three
-vivid azure blue chevrons beneath the patch on each sleeve". Drop the breeches and boots when
-the frame doesn't reach them. Name each hand "out of the green bomber sleeve" when it acts. The
+vivid azure blue chevrons beneath the patch on each sleeve". **Never drop the breeches**, however
+tight the frame: write "tan riding breeches, the same khaki tan as her shirt, with a vivid azure
+blue stripe down the outer seam". Drop only the boots when the frame doesn't reach them. Name each hand "out of the green bomber sleeve" when it acts. The
 hat is a separate sentence, in shirt-tan, never next to the green; a deputy may go bareheaded
 as her personal look (Anderson).
 

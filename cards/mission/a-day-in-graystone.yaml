@@ -1,5 +1,6 @@
 # yaml-language-server: $schema=../../../../schema/v2/card.json
-# Placeholder sandbox mission: starts the run at home so the town can be walked and validated.
+# The only mission for now: free play from home, no goal. The run ends when the day runs out.
+# Missions get rethought later; until then nothing calls mission.complete.
 id: a-day-in-graystone
 kind: mission
 name: A Day in Graystone

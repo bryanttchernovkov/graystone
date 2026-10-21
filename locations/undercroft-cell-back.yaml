@@ -314,7 +314,6 @@ actions:
         - card.lose: sentence
         - card.gain: apb
         - move.to: main-street-south
-        - mission.complete
       art:
         subject: >
           First-person point-of-view widescreen photograph from ground level, just outside a

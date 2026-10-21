@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../../schema/v2/map.json
+# Sergeant Ashby off the clock: events only, reached by move.to. Her café table: TALK-APPROACH
+# at the Café Linde window (no APB). Her arrest: RISK-APPROACH there (any APB), which goes
+# straight down to the Undercroft.
+id: ashby
+name: Sergeant Ashby
+legend:
+  AT: ashby-cafe-table
+  AA: ashby-arrest
+grid: |
+  AT .. AA
+portals:
+  - { from: ashby-cafe-table, dir: out, to: cafe-linde-window, cost: 0, prompt: You leave her to her coffee. }

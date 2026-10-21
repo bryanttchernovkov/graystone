@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../../schema/v2/map.json
+# Café Linde, on Main Street: one room seen two ways, like Main Street itself. CC looks at the
+# counter (Francine Giardano), CW turns around to the window tables (Sergeant Ashby). Turning
+# is free; the door is on both views.
+id: linde
+name: Café Linde
+legend:
+  CC: cafe-linde-counter
+  CW: cafe-linde-window
+grid: |
+  CC .. CW
+portals:
+  - { from: main-street-north, dir: in, to: cafe-linde-counter, back: out, prompt: You push the door and a little bell rings over it. }
+  - { from: cafe-linde-counter, dir: south, to: cafe-linde-window, back: north, cost: 0, prompt: You turn around. }
+  - { from: cafe-linde-window, dir: out, to: main-street-north }

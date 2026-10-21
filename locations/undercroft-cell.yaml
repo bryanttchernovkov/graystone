@@ -443,7 +443,6 @@ actions:
         - card.lose: chastity-cage
         - card.lose: served-sentence
         - move.to: main-street-south
-        - mission.complete
       art:
         loras: ["KreaEbonyBabe1"]
         subject: >
@@ -502,7 +501,6 @@ actions:
         - card.lose: gag
         - card.lose: served-sentence
         - move.to: undercroft-trusted-release
-        - mission.complete
       art:
         loras: ["KreaEbonyBabe1"]
         subject: >

@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Event: Sergeant Ashby arrests you in Café Linde. Reached by move.to from RISK-APPROACH at the
+# café window (any APB). Hands-on where Anderson's arrest is mouth: an arm bar onto the table,
+# a knee in the back, cuffs on the floor. The APB (or Most Wanted) is cleared, Handcuffs go on,
+# and she walks you across the square and straight down to the Undercroft (which takes the
+# Handcuffs off and starts the Sentence).
+id: ashby-arrest
+name: Under arrest
+tags: [law]
+description: Sergeant Ashby, out of her chair, with your arm in her hand.
+arrival:
+  text: |
+    You're still deciding what to say when she stands, and then there's no deciding left.
+
+    She takes your right wrist in her gloved hand and turns it, and your elbow locks, and
+    the whole arm goes up behind you, and your face goes down onto the marble next to her
+    saucer. The cup rattles. Somebody at the counter says "oh" and nobody else says anything.
+
+    "APB," she says, close to your ear, not loud. "Don't."
+
+    You do. You twist, once, and she takes the arm a notch higher and it's like a hot wire
+    from your wrist to your shoulder and your knees fold. She folds with you, all the way to
+    the tile, and puts a knee in the middle of your back and leans on it until your breath
+    comes out of you in a long flat hiss.
+
+    "That's what you get. Breathe. Slow. Good."
+
+    The cuffs come off her belt. Left wrist, ratcheted down until it bites, checked with a
+    gloved finger. Right wrist. Double-locked with the small end of the key. She does it the
+    way she'd lace a boot, and only then takes her knee off you.
+
+    She lifts you off the floor by the chain and the back of your collar together, and
+    stands you up, and keeps your cuffed hands high behind you so you walk on your toes.
+
+    "Francine. The cup."
+
+    "On your tab, Sergeant."
+
+    She walks you out the door and across the square in daylight, past the cruisers and up
+    the church steps, and every deputy on the stairs stops to hold the door. Through the
+    nave without slowing. Down the stairs into the cold.
+  effects:
+    - card.lose: apb
+    - card.lose: most-wanted
+    - card.gain: handcuffs
+    - move.to: undercroft
+art:
+  loras: ["KreaEbonyBabe1", "SA86RN444WSD83T4QX4PYS3P80:1"]
+  subject: >
+    First-person point-of-view widescreen photograph from cheek height flat on the surface
+    of a small round white marble café table, the camera low, level with the tabletop and
+    pressed close to it, the cool white marble filling the bottom of the frame in sharp
+    foreground. A white porcelain cappuccino cup has tipped over on its saucer inches from
+    the lens, milk foam spilling across the marble. One woman leans down over the lens from
+    above and behind the table, framed from the chest up, her face close and hard. She looks
+    directly into the camera, making eye contact with the viewer, with cold, controlled
+    force: dark eyes fixed and hard, straight brows drawn down low, jaw clenched, nostrils
+    flared, lips pressed thin. She is a Black American woman in her early thirties, tall and
+    athletic with a full, heavy bust, broad straight shoulders and a soldier's posture,
+    smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the
+    middle of her back, straight dark brows, black leather duty gloves and a ring of heavy
+    iron keys on a steel chain at her hip. She wears the Graystone County Sheriff's uniform:
+    a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a pointed
+    collar, a full button-front placket, two buttoned tan flap chest pockets edged with thin
+    vivid azure blue piping, shoulder epaulets edged in vivid azure blue, an embroidered
+    vivid azure blue and gold patch on each upper sleeve and a polished gold six-point star
+    badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small
+    gold tie bar; a black leather duty belt with a polished brass buckle; tan riding
+    breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down the outer
+    seam; her head is bare. Three vivid azure blue chevrons sit on each upper sleeve beneath
+    the patch. Her left black-gloved hand pins a pale man's bare wrist flat to the marble
+    beside the lens, the gloved fingers clamped hard around it, the knuckles straining the
+    leather; her right black-gloved hand holds a pair of chrome clejuso handcuffs up beside
+    her face. Behind her, out of focus, a tall brass-framed front window full of daylight
+    and empty bentwood chairs; no one else is in frame. Bright daylight through the window
+    backlights her and the spilled foam, with a hard highlight along the chrome cuffs.
+    Restrained palette of white marble, uniform tan, vivid azure blue, chrome, black leather
+    and dark skin; natural skin texture, fine 35 mm film grain, sharp focus on her eyes and
+    the handcuffs.
