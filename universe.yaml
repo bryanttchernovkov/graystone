@@ -4,6 +4,10 @@
 format: 2
 id: graystone
 name: Graystone
+tagline: Crime is down in Graystone. Nobody pretends to wonder why.
+maturity: mature
+cover:
+  subject: the limestone courthouse square at dusk, the old First Church with warm light in its windows, a tan-and-azure sheriff's patrol car parked out front, autumn leaves on the street, wide establishing shot
 
 categories:
   - { id: go,   name: GO }

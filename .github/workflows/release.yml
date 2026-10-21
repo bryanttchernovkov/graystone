@@ -1,0 +1,39 @@
+# Copy to .github/workflows/release.yml in a universe repository.
+# Pushing a tag like v0.1.0 attaches <id>-v0.1.0.zip (the universe with its images) to a GitHub
+# release, which is what the Unmapped Marketplace installs (engine ADR 0038).
+# Validate with ./umt validate <id> before tagging: this workflow doesn't.
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: universe
+          lfs: true
+      - name: Read the universe id
+        id: universe
+        run: |
+          id=$(yq -r '.id' universe/universe.yaml)
+          if [ -z "$id" ] || [ "$id" = "null" ]; then echo "universe.yaml has no id" >&2; exit 1; fi
+          echo "id=$id" >> "$GITHUB_OUTPUT"
+      - name: Zip it
+        run: |
+          mkdir -p "stage/$ID"
+          rsync -a --exclude .git --exclude .github --exclude .gitattributes universe/ "stage/$ID/"
+          cd stage && zip -qr "../$ID-$GITHUB_REF_NAME.zip" "$ID"
+        env:
+          ID: ${{ steps.universe.outputs.id }}
+      - name: Release
+        run: gh release create "$GITHUB_REF_NAME" "$ID-$GITHUB_REF_NAME.zip" --repo "$GITHUB_REPOSITORY" --generate-notes
+        env:
+          ID: ${{ steps.universe.outputs.id }}
+          GH_TOKEN: ${{ github.token }}
