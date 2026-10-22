@@ -11,8 +11,8 @@ arrival:
     is painted across the flagstones at the bottom step.
 
     Beyond it, at a steel desk under the first arch, Sergeant Ashby looks up from a ledger.
-    Black gloves, a tan shirt with creases you could cut paper on, boots polished to a black
-    mirror. She doesn't stand.
+    Black gloves, a tan shirt pressed to an edge, boots polished to a black mirror. She doesn't
+    stand.
 
     "That's my line," she says. "You stay behind it until I say otherwise."
 
@@ -50,8 +50,7 @@ actions:
 
         "Granted. Toes on the seam. Hands where I can see them."
 
-        You stand where she pointed. She goes back to the ledger, and the yellow line behind
-        you feels a long way back.
+        You stand where she pointed. She goes back to the ledger.
       effects:
         - skill.gain: talk
         - tracker.change: { nerve: -1 }
@@ -106,9 +105,8 @@ actions:
         "Eight years military police, so here's how it works. You don't stand, sit, speak,
         drink or piss in my block without asking. You ask, I decide. Every time."
 
-        A belly chain goes around your waist and through the cuffs. A shorter one runs from
-        one ankle cuff to the other. She tugs the whole rig once, the way you'd test a trailer
-        hitch.
+        A belly chain goes around your waist and through the cuffs. A shorter one runs from one
+        ankle cuff to the other. She tugs the whole rig once, hard.
 
         Then she takes a small steel cage out of the desk drawer, county property, and holds
         it up so you can see it. "Standard issue. Belt."

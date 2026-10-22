@@ -29,10 +29,10 @@ actions:
     prompt: Browse the stacks for an hour.
     result:
       text: |
-        The shelves go round the room the way the walls do, and the spines go from Dewey to
-        dust. Local history has three shelves of its own: the quarry, the railroad, the flood of
-        '93, a self-published book about the First Church with a photograph of the pulpit on the
-        cover, back when it had one.
+        The shelves follow the curve of the walls, and the spines go from Dewey to dust. Local
+        history has three shelves of its own: the quarry, the railroad, the flood of '93, a
+        self-published book about the First Church with a photograph of the pulpit on the cover,
+        back when it had one.
 
         Somebody has been reshelving true crime into gardening. It's been done carefully, one
         book at a time, over what looks like months, and nobody has put any of it back.

@@ -30,7 +30,7 @@ actions:
     prompt: Ask her when the cage comes off.
     result:
       text: |
-        She considers the question for longer than it deserves.
+        She considers the question.
 
         "When I take it off," Sergeant Ashby says. "That's the whole schedule."
 

@@ -37,8 +37,8 @@ actions:
         She reads it back to you with one letter wrong, then a different letter wrong, and
         waits each time for you to correct her, and each time says, "That's what I said."
 
-        Then she gets up, holds her phone to the chain-link and takes your booking photo
-        through it.
+        She gets up, holds her phone to the chain-link and takes your booking photo through
+        it.
 
         "Chin up. No, up. Okay, now you look like you're about to cry. Perfect. Hold that."
         She looks at the picture and shows it to the deputy at the next desk, who snorts.
@@ -98,9 +98,9 @@ actions:
         "Property," she says, and unlocks the cage door, and holds out her hand.
 
         You give her your wallet with your free hand. She goes through it at the desk, card by
-        card, out loud. "Driver's license. Ew. Library card. Aww. Punch card from Café Linde,
-        two punches. Babe. Commit to something." Then the cash. She fans it, counts it, and
-        counts it again with her lips moving, slowly, to make the point.
+        card, out loud. "Driver's license. Ew. Debit card. Receipts. Babe. Why do you keep
+        receipts?" Then the cash. She fans it, counts it, and counts it again with her lips
+        moving.
 
         "Item one, cash." She writes a number on the form. "Item two, a tip for the deputy who
         processed you, because you're grateful. How grateful are you?"
@@ -122,16 +122,15 @@ actions:
             - label: Let her keep $40
               price: { cash: 40 }
               text: |
-                She holds the two twenties up to the light one at a time and folds them into her
-                breast pocket. "Very grateful," she says as she writes it, and reads it back to
-                you.
+                She snaps each twenty flat between her fingers and folds them into her breast
+                pocket. "Very grateful," she says as she writes it, and reads it back to you.
               effects:
                 - boost.change: { card: andersons-attention, amount: +2 }
             - label: Ask for a receipt, and hear your balance read to the room
               text: |
                 You ask for a receipt. She stands up and reads your balance off the phone to the
                 whole nave, slowly, with the cents. Someone at the far desk whistles. Then she
-                writes you a receipt for a library card.
+                writes you a receipt for the wallet: *one (1), brown, sad.*
               effects:
                 - tracker.change: { nerve: -1 }
       art:
@@ -193,8 +192,9 @@ actions:
         Out loud. Stand up as far as the cuff lets you, so the back row can hear."
 
         You read it. It's a paragraph about you. It has the word "sad" in it three times and
-        "pathetic" once, and a line about the way you sat in the back of her car, knees
-        together, like a man waiting to be picked last. Two deputies at the far desks stop typing to listen. One of them claps.
+        "pathetic" once, and a line about how you sat in the back of her car, knees together,
+        like a man waiting to be picked last. Two deputies at the far desks stop typing to
+        listen. One of them claps.
 
         "Sign it." You sign it. "Now say 'that's accurate, Deputy.'"
 
@@ -256,9 +256,9 @@ actions:
 
         "Brave," she says. "Say ah."
 
-        She spits into your open mouth, once, neatly, and holds your jaw shut with the heel of
-        her hand. "Swallow." You swallow. "Good. That's the most useful thing that's come out
-        of you all day, and it came out of me."
+        She spits into your open mouth and holds your jaw shut with the heel of her hand.
+        "Swallow." You swallow. "Good. That's the most useful thing that's come out of you all
+        day, and it came out of me."
 
         She takes a black rubber bit off the hook by the door, puts it in your mouth and
         buckles it behind your head, one notch tighter than it needs to be.
@@ -308,8 +308,8 @@ actions:
 
         "Ugh. Fine. I've been in them eleven hours." She pushes back from the desk, hooks the
         heel of one boot on the edge of the drawer and works it off, and the other foot helps,
-        and the boot comes free with a sigh of air. Her foot in its thin black knee sock goes
-        straight up onto the desk, flexing.
+        and the boot comes free with a sigh of air. Her socked foot goes straight up onto the
+        desk, flexing.
 
         She unlocks the cage and comes in with the boot held upside down by the heel, and
         lowers it over your face, open end first, until the top of the shaft sits on your
@@ -317,16 +317,15 @@ actions:
 
         "Hold it there. Both hands. You've got one free, use the cuffed one too. Breathe."
 
-        You breathe. Eleven hours of her: hot leather, sweat gone sour-sweet in the lining,
-        foot powder, a salt you can taste. The cage door stays open. She sits back down and
-        does your paperwork with her sock up on the desk, and every so often says "louder" and
-        you breathe louder, and the deputies at the next desk don't even look anymore.
+        You breathe. Eleven hours of her: hot leather, foot powder, a lining gone wet. The cage
+        door stays open. She sits back down and does your paperwork with her sock up on the
+        desk. Every few minutes she says "louder" without looking up. The deputies at the next
+        desk have stopped looking.
 
-        When the form is done she takes the boot off your face and looks at you.
+        When the form is done she takes the boot off your face.
 
-        "Look at you. All pink." She pulls it back on. "Say thank you for my boot."
-
-        You say it.
+        "Look at you. All pink." She takes a picture of you before it fades, and pulls the boot
+        back on.
       effects:
         - boost.change: { card: andersons-attention, amount: +1 }
         - tracker.change: { nerve: +1 }
@@ -379,22 +378,21 @@ actions:
       text: |
         "Deputy. Your socks. Please."
 
-        She laughs at you, and then she does it anyway, because she likes being asked. Both
-        boots come off at the desk. She peels the first sock down her calf and off her toes,
-        slowly, and it hangs from her fingers, thin black cotton gone dark and heavy at the
-        heel.
+        She laughs at you, and does it anyway. Both boots come off at the desk. She peels the
+        first sock down her calf and off her toes, slowly, and it hangs from her fingers, thin
+        black cotton gone dark and heavy at the heel.
 
         She comes into the cage and drapes it over your face, the damp heel across your nose
         and mouth, and sits down on the bench beside you with her bare foot up on your knee.
 
         "In through the nose. Hold it. Out."
 
-        It's warm and wet and it's all her: salt and leather and the sweetish sour of a long
-        day in boots. You hold your breath in her sock until she says out. She takes the
+        It's warm and wet through, and mostly salt. You hold your breath in her sock until she
+        says out. She takes the
         second one off with her toes, against your knee, and stuffs it into your hand, and
         you hold that one to your face too, both of them, and breathe.
 
-        "You're shaking, babe." She sounds pleased. "Say thank you for my socks."
+        "You're shaking, babe. Say thank you for my socks."
 
         "Thank you for your socks, Deputy."
 
@@ -461,14 +459,13 @@ actions:
 
         "Smell first. Don't grab."
 
-        You smell. Leather, salt, her. She lets it touch: the damp heel against your upper lip,
+        You smell. Leather first, then her. She lets it touch: the damp heel against your upper lip,
         then over your nose, then the whole sock laid across your face, and her hand over it,
         pressing it to you.
 
         "In. Hold. Out. In. Hold." She keeps you at it until your breathing goes where she
-        says, and then she gives you the second one warm off her other foot and has you hold
-        both to your face with your cuffed hand and your free one, and she sits on the desk
-        with her bare feet swinging and watches you.
+        says. The second one comes warm off her other foot, and she has you hold both to your
+        face, cuffed hand and free one, while she sits on the desk with her bare feet swinging.
 
         "That's what a girl smells like after a real job, babe," she says. "You'll be thinking
         about it in the shower. You'll be thinking about it at your desk. Say 'yes, Deputy.'"

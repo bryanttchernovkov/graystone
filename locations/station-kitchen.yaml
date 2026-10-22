@@ -24,8 +24,7 @@ actions:
 
         "Oh my God." Slow, delighted. "Babe. They let you indoors?"
 
-        She doesn't ask what you're doing here. She doesn't care what you're doing here. She
-        puts the mug down.
+        She doesn't ask what you're doing here. She puts the mug down.
       effects:
         - move.to: { random: [anderson-kitchen-sharpie, anderson-kitchen-spit, anderson-kitchen-boot] }
       art:

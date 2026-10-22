@@ -32,9 +32,9 @@ actions:
       text: |
         "Trousers down. To the knees, not off. Hands on your thighs."
 
-        You do it. She looks at your cock the way she looks at a shot coming out of the
-        machine: color, body, timing. "Mm. Take hold. Not like that. Loosely. Two fingers and
-        a thumb. Slowly. Slower than that. Up. Down. I'll count."
+        You do it. She looks at your cock like a shot coming out of the machine: color, body,
+        timing. "Mm. Take hold. Not like that. Loosely. Two fingers and a thumb. Slowly. Slower
+        than that. Up. Down. I'll count."
 
         She counts. Up on one, down on two, and she keeps the count slow and doesn't let it
         speed up when your breathing does. When you try to go faster on your own she says
@@ -61,8 +61,7 @@ actions:
         All of it. Then your stomach, with your fingers, and your fingers with your mouth.
         Nothing goes to waste in my kitchen."
 
-        You lick the saucer clean. She checks it against the light like a cup coming out of
-        the washer, and stamps your card.
+        You lick the saucer clean. She checks it against the light, and stamps your card.
       effects:
         - boost.change: { card: cafe-linde-punch-card, amount: +1 }
         - tracker.change: { nerve: -1 }
@@ -105,16 +104,15 @@ actions:
       text: |
         "Please, Signora. Your hand."
 
-        She considers it, and you, for long enough to make you hear yourself. Then she pulls
-        up a sack of coffee in front of the chair and sits on it, knees to your knees.
+        She considers it, and you. Then she pulls up a sack of coffee in front of the chair and
+        sits on it, knees to your knees.
 
         "Trousers down. Hands behind the chair. Keep them there."
 
-        Her hand is warm and dry and sure. She doesn't hurry. She works you the way she pulls a
-        shot, steady pressure, all the way down and all the way up, a twist of the wrist at the
-        top, and she watches your face the whole time, through her glasses, close. Every time
-        your hips come up off the chair she stops and waits, holding you still in her fist,
-        until they go back down.
+        Her hand is warm and dry and sure. She doesn't hurry: steady pressure, all the way down
+        and all the way up, a twist of the wrist at the top, and she watches your face the whole
+        time, through her glasses, close. Every time your hips come up off the chair she stops
+        and waits, holding you still in her fist, until they go back down.
 
         "There. You're learning." Faster now, and tighter. "You may."
 
@@ -189,8 +187,7 @@ actions:
         "Look at that. Not a drop wasted." She stands and holds the saucer under your chin.
         "Clean it. Then say thank you."
 
-        You lick the saucer clean. You say thank you. You're still locked, and still aching,
-        and she seems to like that best of all.
+        You lick the saucer clean and say thank you. You're still locked, and still aching.
       effects:
         - boost.change: { card: cafe-linde-punch-card, amount: +1 }
         - tracker.change: { nerve: -1 }

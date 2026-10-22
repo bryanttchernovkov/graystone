@@ -8,6 +8,10 @@ Ideas for graystone
 - [X] Graybloods 1 - steal / pay money (here)
 - [ ] 'caught' as suspect int he police station - some locations have a 'chance' of getting caught we are there; to be determined which officer where; We *could*, depending on the officer, end up in the sheriff's officer. Default is a spanking session. Hard. *but* if we have an active 'crime' card; meaning, we're on a crime, we're suspect. we go to an interrogation chamber, where a detective interrogates us. Basic options are Confess Or Deny. We should have some sort of minigame perhaps? 
 - [ ] Date with Ashby
+- [ ] Lore/Claude check quality check
+- [ ] Rethink wanted/arrest/Most Wanted (engine limits found in the lore check):
+  - Most Wanted's on-site arrest always sends you to Anderson, even on Seo's wharf. A card has one setback penalty (one tag set, one destination), so an arrest by whoever is on site needs either a list of penalties per card (engine change) or narrowing it to Anderson's ground.
+  - SLIP gains a Criminal Record, and while you're Most Wanted that's a second wanted card next to it (gaining a card only boosts a copy with the same id). Maybe Most Wanted should just be a full record, not its own card.
 
  ## V0.2.1:
  - Rework location/structure?

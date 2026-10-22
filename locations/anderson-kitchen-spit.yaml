@@ -13,8 +13,8 @@ arrival:
 
     "Look at me. No, at me."
 
-    You look at her. She looks at you for a long, bored moment, as if you were something on a
-    menu she'd decided against. Then she leans in and spits in your face. It lands on your
+    You look at her. She looks back, bored, as if you were something on a menu she'd decided
+    against. She leans in and spits in your face. It lands on your
     cheek, warm, and starts to run.
 
     "Thank you, Deputy," she prompts.
@@ -22,9 +22,8 @@ arrival:
     "Thank you, Deputy."
 
     She spits again. Your eyelid, this time; you flinch and her hand holds your jaw where it
-    is. Again, on your mouth. She does it slowly and neatly and without any expression, the
-    way you'd do something you've done so often you don't need to think about it, and you say
-    thank you after every one, because she waits for it.
+    is. Again, on your mouth. She does it slowly and neatly, with no expression at all, and
+    waits after each one until you say thank you.
 
     When she's done she wipes her hand on your shirt and holds it out, palm up. "Ten. For the
     spa treatment."
@@ -41,7 +40,7 @@ arrival:
             - move.to: station-kitchen
         - label: Come up short
           text: |
-            You open your wallet and she looks in it with you, and laughs, once, through her nose.
+            You open your wallet and she looks in it with you, and snorts.
 
             "Wow. No. Okay." She takes a fistful of your collar and walks you out of the
             kitchenette, down the side aisle past the cages, through the arch and past the
@@ -56,7 +55,7 @@ arrival:
             your collar on the top step. "Come back when you're worth something, babe."
           effects:
             - card.lose: contractor-badge
-            - move.to: main-street-north
+            - move.to: main-street-south
 art:
   loras: ["DGirlsModel14:1"]
   subject: >

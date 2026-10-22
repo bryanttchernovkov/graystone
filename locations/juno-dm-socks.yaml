@@ -17,7 +17,7 @@ arrival:
 
     *u wish u could smell them. u can't. that's the whole point. that's what u paid for*
 
-    You zoom in. You don't mean to. You zoom in anyway.
+    You zoom in.
   effects:
     - tracker.change: { body: +1 }
     - move.back

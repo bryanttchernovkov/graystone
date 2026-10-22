@@ -18,8 +18,8 @@ actions:
     prompt: Show her your contractor badge and sign in. She'll buzz you through to the back.
     result:
       text: |
-        She takes the badge between two red nails, holds it up next to your face, and looks
-        from one to the other for longer than she needs to.
+        She takes the badge between two red nails, holds it up next to your face, and looks from
+        one to the other, twice.
 
         "Better looking in person. That's rare." She turns the sign-in book round and holds out
         the pen on its chain. "Name, time in, who you're seeing. If you don't know who you're

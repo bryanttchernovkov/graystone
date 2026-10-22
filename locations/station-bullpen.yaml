@@ -98,12 +98,12 @@ actions:
         beside you. Niamh doesn't lean on the rail. She bends over you, one hand on the
         printer's lid, to look into the works, and stays there.
 
-        It is very close. The tan twill is pressed so hard the creases down each sleeve could
-        cut paper. Azure piping along the epaulets, an embroidered patch on each arm, every
-        button of the placket done up to the collar and every one of them lined up. The tie
-        hangs straight down out of the knot, an inch from your face, azure silk, the gold bar
-        set level across it. Below it, the shirt tucked tight into a high tan skirt, and
-        below that the dark sheen of stockings.
+        It is very close. The tan twill is pressed to hard creases down each sleeve. Azure
+        piping along the epaulets, an embroidered patch on each arm, every button of the placket
+        done up to the collar and every one of them lined up. The tie hangs straight down out of
+        the knot, an inch from your face, azure silk, the gold bar set level across it. Below
+        it, the shirt tucked tight into a high tan skirt, and below that the dark sheen of
+        stockings.
 
         You've stopped working. You've stopped some time ago.
 
@@ -118,10 +118,9 @@ actions:
         - choose:
             - label: Touch it, and tell her
               text: |
-                You lift the tie off the air with two fingers, the way you'd lift something in
-                a museum. The silk is cool and heavy. You run your thumb up it to the knot and
-                feel how hard it's been pulled, and you tell her: that it's tied like she means
-                it.
+                You lift the tie off the air with two fingers. The silk is cool and heavy. You
+                run your thumb up it to the knot and feel how hard it's been pulled, and you
+                tell her: that it's tied like she means it.
 
                 "Keep going."
 
@@ -132,8 +131,7 @@ actions:
                 all of it. The starch. The creases. That nobody else in the building looks as
                 if they've been ironed into place. That you can't stop.
 
-                She listens to all of it with her chin on her hand and her eyes half closed,
-                the way you'd listen to someone read you something good.
+                She listens to all of it with her chin on her hand and her eyes half closed.
 
                 "That," she says at last, "is the nicest thing anybody's said to me in this
                 church, and I've been proposed to in it." She straightens up and tugs her tie

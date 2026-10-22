@@ -253,7 +253,7 @@ actions:
         "That's not a request. That's a noise." She adds a few ounces. "Again."
 
         You get the sentence right on the third try. She lets go on the fourth word of the
-        fourth, because she's decided that's when.
+        fourth.
 
         "That," she says, "is another day," and writes it in the ledger on her way out.
       effects:
@@ -339,9 +339,8 @@ actions:
     result:
       text: |
         You lie on the steel slats with the blanket over you and count the caged bulbs, then the
-        stones in the vault, then nothing. Hours go by the way they do down here, measured by the
-        scratch of her pen and the scrape of her chair. When you get up, your body has caught up
-        with you a little.
+        stones in the vault, then nothing. Hours go by, measured by the scratch of her pen and
+        the scrape of her chair. When you get up, your body has caught up with you a little.
       effects:
         - tracker.change: { time: -2 }
         - dice.refresh

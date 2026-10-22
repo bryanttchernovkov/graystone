@@ -7,7 +7,7 @@ id: station-lobby
 name: The First Church, the front desk
 tags: [law]
 hub: true
-description: Cool stone, a radio murmuring, the bullpen through the arch, and a front desk with the most beautiful woman in the county behind it.
+description: Cool stone, a radio murmuring, the bullpen through the arch, and a front desk with a red-haired woman behind it who saw you come in.
 actions:
   - category: talk
     word: APPROACH

@@ -16,7 +16,7 @@ arrival:
 
     *ur so easy it's boring. do it again*
 
-    You laugh, out loud, on your own. It doesn't make any sense, and it helps.
+    You laugh, out loud, on your own.
   effects:
     - skill.gain: random
     - move.back

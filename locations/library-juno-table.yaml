@@ -11,7 +11,7 @@ actions:
   - category: talk
     word: ASK
     cost: 1
-    prompt: Ask what she's working on. She shows you, which is worse.
+    prompt: Ask what she's working on. She turns the laptop round and shows you.
     result:
       text: |
         "Homework." She turns the laptop round. It's a list: library card numbers, down the left,

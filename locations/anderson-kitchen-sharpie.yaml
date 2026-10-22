@@ -30,12 +30,12 @@ arrival:
             You give it to her. She folds the bill around the Sharpie, tucks both into her breast
             pocket and pats it.
 
-            "Don't wash it off till you get home," she says. "I'll know."
+            "Don't wash it off till you get home," she says. "Walk the long way."
           effects:
             - move.to: station-kitchen
         - label: Come up short
           text: |
-            You open your wallet and she looks in it with you, and laughs, once, through her nose.
+            You open your wallet and she looks in it with you, and snorts.
 
             "Wow. No. Okay." She takes a fistful of your collar and walks you out of the
             kitchenette, down the side aisle past the cages, through the arch and past the
@@ -50,7 +50,7 @@ arrival:
             your collar on the top step. "Come back when you're worth something, babe."
           effects:
             - card.lose: contractor-badge
-            - move.to: main-street-north
+            - move.to: main-street-south
 art:
   loras: ["DGirlsModel14:1"]
   subject: >

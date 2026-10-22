@@ -13,12 +13,11 @@ arrival:
 
     "Pull."
 
-    You pull. It fights you the whole way down her calf, and then her foot slides out in a
-    thin black knee sock, damp through, and before you can do anything with the boot she takes
-    it out of your hands by the shaft and puts it over your face.
+    You pull. It comes off in jerks, and before you can do anything with it she takes it out
+    of your hands by the shaft and puts it over your face.
 
-    The world goes dark and close and warm. Leather, salt, rubber, eight hours of her. Her
-    hand is on the back of your head, holding you in.
+    It's dark in there and hot, and the smell is eight hours of her feet. Her hand is on the
+    back of your head, holding you in.
 
     "Breathe," her voice says, from outside. "Big ones. I want to hear them."
 
@@ -44,7 +43,7 @@ arrival:
             - move.to: station-kitchen
         - label: Come up short
           text: |
-            You open your wallet and she looks in it with you, and laughs, once, through her nose.
+            You open your wallet and she looks in it with you, and snorts.
 
             "Wow. No. Okay." She takes a fistful of your collar and walks you out of the
             kitchenette, down the side aisle past the cages, through the arch and past the
@@ -59,7 +58,7 @@ arrival:
             your collar on the top step. "Come back when you're worth something, babe."
           effects:
             - card.lose: contractor-badge
-            - move.to: main-street-north
+            - move.to: main-street-south
 art:
   loras: ["DGirlsModel14:1"]
   subject: >

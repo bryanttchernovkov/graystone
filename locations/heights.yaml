@@ -8,22 +8,37 @@ actions:
     word: APPROACH
     cost: 1
     always: true
-    unless: [wanted]
+    unless: [wanted, noticed]
     prompt: Walk down the block to the cruiser parked under the maples.
     result:
       text: |
         The cruiser's engine is running. The driver's window is down, and an elbow in a green
         jacket sleeve is resting on the sill.
 
-        She lets you stand at the window long enough to feel it. Then she takes her eyes off her
-        laptop, all the way up you and back down.
+        She finishes what she's typing first. Her eyes come off the laptop and go up you and
+        back down.
 
-        Deputy Anderson is twenty-four, maybe, and immaculate: creases you could cut yourself on, no
-        hat, long blonde waves with black streaks through them loose over a green patrol jacket,
-        dark lipstick, green eyes. Her nails are black and they're tapping the door.
+        Deputy Anderson is twenty-four, maybe, and pressed sharp: no hat, long blonde waves with
+        black streaks through them loose over a green patrol jacket, dark lipstick, green eyes.
+        Her nails are black and they're tapping the door.
 
-        "Can I help you?" she says, in the voice that means she can't. "Or are you just going to
-        stand there breathing on my car?"
+        "Can I help you?" she says. "Or are you just going to stand there breathing on my car?"
+      effects:
+        - move.to: anderson-patrol-car
+  - category: talk
+    word: VISIT
+    cost: 1
+    always: true
+    requires: [noticed]
+    unless: [wanted]
+    prompt: Walk down the block to Deputy Anderson's cruiser.
+    result:
+      text: |
+        She sees you coming in the side mirror and doesn't turn her head. The window's down,
+        and her black nails are tapping the door.
+
+        "Oh. You." She looks you up and down without taking her hand off the laptop. "Again.
+        Okay. Make it quick, babe, I'm working."
       effects:
         - move.to: anderson-patrol-car
   - category: risk

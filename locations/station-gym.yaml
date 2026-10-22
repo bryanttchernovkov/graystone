@@ -20,8 +20,8 @@ actions:
 
         "Again," says the bigger one. "Slower."
 
-        They both look at you on the way down the fourth time. Neither of them stops. You learn
-        more about how it's done in ten minutes than you'd like to know.
+        They both look at you on the way down the fourth time. Neither of them stops. Ten
+        minutes of it, and you know how it's done.
       effects:
         - skill.gain: risk
 art:

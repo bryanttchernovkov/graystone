@@ -13,20 +13,20 @@ actions:
   - category: deal
     word: SEND
     cost: 1
-    unless: [cuffed, inmate]
+    unless: [cuffed, inmate, nude]
     price: { cash: 20 }
     prompt: Send Deputy Anderson twenty dollars. She doesn't say thank you. You do.
     result:
       text: |
         You send it. Twenty dollars, and in the memo line the word she makes you use.
 
-        For a minute nothing. Then three dots, and then her reply: a photo of her boots up on
-        the dash of the cruiser, crossed at the ankle, and under it, "that's it?? lol."
+        Her reply takes four minutes: a photo of her boots up on the dash of the cruiser,
+        crossed at the ankle, and under it, "that's it?? lol."
 
-        Then: "say thank you."
+        A second one: "say thank you."
 
-        You type it. She reads it and doesn't answer, and you stand there holding the phone
-        for longer than you'd like to admit, warm to the ears.
+        You type it. She reads it and doesn't answer. You stand there holding the phone, warm to
+        the ears.
       effects:
         - tracker.change: { nerve: +1 }
         - skill.gain: deal

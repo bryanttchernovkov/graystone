@@ -47,6 +47,29 @@ grimdark.
 - **The prompt promises the result.** If it turns sexual or punitive, the prompt says so.
 - **He is careful, not cringing.** He notices and says yes; the women carry the scene.
 
+### Second pass (after every batch of prose)
+
+Write first, then reread the batch for these alone. They are the tics that make the prose read
+machine-made; one is a style, a pattern of them is a tell.
+
+- **No "the way you'd…" comparisons.** Say the thing. If a comparison earns its place it is
+  concrete and in-world, and still one per paragraph.
+- **No narrator verdicts.** Cut lines that tell him how to take it: *which is worse*, *and that's
+  worse*, *it sounds like it costs her something*, *you'd give a lot to…*. Show what she does;
+  the reader decides.
+- **No kicker on every result.** Most results end on an action or her line, not on a quip or a
+  one-line moral. A closer has to add something the scene hasn't already said.
+- **No staged pauses.** *Long enough to…*, *longer than she needs to*, *for a long moment*: once a
+  storyline, at most.
+- **No "not X, not Y" and no "X. Not Y."** State what it is.
+- **Break the rhythm.** No runs of *Then…* openings, no strings of *and… and… and*, no group of
+  three where two or four is true.
+- **One voice per woman.** Each has her own words for control (Anderson's phone and "babe",
+  Ashby's ranks and orders, Seo's notebook and nicknames, the Signora's counts). "I'll know" is
+  Juno's, because she can see his screen; not every woman makes him say it again, louder.
+- **A detail is used once.** A description of a woman, a boot or a sock appears in one scene;
+  the next scene finds a different detail. Search the storyline for repeats before committing.
+
 ## The department
 
 All deputies are women. Corrections are **per deputy**: there is no single doctrine, and a

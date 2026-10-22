@@ -12,8 +12,7 @@ actions:
     result:
       text: |
         You lie on top of the duvet with your feet hanging off the end and look at the slope of
-        the ceiling. Somewhere outside a leaf blower starts and stops. An hour goes by the way an
-        hour does when you let it.
+        the ceiling. Somewhere outside a leaf blower starts and stops. An hour goes by.
       effects:
         - tracker.change: { time: -1, body: +2 }
   - category: look

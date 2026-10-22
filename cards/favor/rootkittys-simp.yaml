@@ -12,7 +12,7 @@ actions:
     word: SIMP
     cost: 1
     tags: [simping]
-    unless: [cuffed, inmate]
+    unless: [cuffed, inmate, nude]
     price: { cash: 15 }
     prompt: Tip @rootkitty fifteen dollars. She sends a picture for it, and you don't get to pick which.
     result:

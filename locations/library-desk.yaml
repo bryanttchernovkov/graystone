@@ -14,14 +14,14 @@ actions:
     prompt: Ask her to recommend a book. She chooses one for you, and she doesn't ask what you like.
     result:
       text: |
-        She looks at you for a while, the way you'd look at a shelf that's been put back wrong.
-        Then she gets up and walks into the stacks, her heels clicking on the oak boards, one
-        sharp step at a time, all the way round the room and all the way back. She doesn't look
-        at the spines. She comes back with a thin green hardback.
+        She looks you over for a while, as she would a shelf someone put back wrong. Then she
+        gets up and walks into the stacks, her heels clicking on the oak boards, one sharp step
+        at a time, all the way round the room and all the way back. She doesn't look at the
+        spines. She comes back with a thin green hardback.
 
         "Trollope. *The Warden*. A man who means well and finds it isn't enough." She stamps the
         card inside the cover, once, hard. "Fourteen days. I'll ask you about it when you bring
-        it back, and I'll know if you haven't read it."
+        it back. Have answers."
       effects:
         - skill.gain: look
   - category: work
@@ -47,9 +47,8 @@ actions:
     prompt: Ask her about the true crime somebody keeps shelving with the gardening books.
     result:
       text: |
-        "Miss Vance." She doesn't look toward the computer corner. She doesn't need to. "Since
-        March. One book a day, before lunch, always from the same shelf. She thinks I haven't
-        noticed."
+        "Miss Vance." She doesn't look toward the computer corner. "Since March. One book a day,
+        before lunch, always from the same shelf. She thinks I haven't noticed."
 
         She writes something on an index card in very small letters and files it in the drawer
         under the desk. You catch the drawer's label as it closes: a single letter, V, and the

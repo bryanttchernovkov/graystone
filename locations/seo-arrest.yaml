@@ -36,12 +36,11 @@ arrival:
 
     "Everybody looks at the car," she says, above you. "I'm never in the car."
 
-    She takes your right hand off your head, brings it down to the small of your back and
-    cuffs it, then the left. Double-locks both. Checks the gap at each wrist with her little
-    finger. Pats down your pockets, one at a time, the way she gave the orders. Then she
-    crouches where you can see her for the first time: tan knees, a duty belt, a violet braid
-    lying on the concrete beside your face like a mooring line. The aviators come down half
-    an inch.
+    She takes your right hand off your head, brings it down to the small of your back and cuffs
+    it, then the left, and checks the gap at each wrist with her little finger. Pats down your
+    pockets, one at a time, in the order she gave them. Then she crouches where you can see her
+    for the first time: tan knees, a duty belt, a violet braid lying on the concrete beside your
+    face like a mooring line. The aviators come down half an inch.
 
     "Hello, Ankles. You crossed them very nicely." A small black notebook comes out of her
     jacket. "You have a record, with open counts on it. Before you go in my car, this is the part where you
@@ -59,8 +58,8 @@ actions:
     result:
       text: |
         You tell her. She listens without writing anything, then reaches into the pocket you
-        named and takes it out with two fingers, the way you'd lift a fish by the tail. It goes
-        into a clear bag from her belt, and the bag goes into her jacket.
+        named and takes it out between two fingers, by the corner. It goes into a clear bag from
+        her belt, and the bag goes into her jacket.
 
         "Thank you," she says. "That was very useful."
 
@@ -86,8 +85,8 @@ actions:
     prompt: Talk to her. Try to reason your way out of the back seat.
     result:
       text: |
-        You talk. She writes it down, all of it, nodding along, and when you run out she reads
-        a line of it back to you in your own words, which is worse.
+        You talk. She writes it down, all of it, nodding along, and when you run out she reads a
+        line of it back to you in your own words.
 
         "Okay. My turn." She ticks your pockets off on her fingers. "No package. No cash that
         isn't yours. Nothing stolen, nothing to trade, nothing I'd want to put in a bag." She

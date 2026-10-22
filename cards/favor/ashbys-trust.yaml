@@ -3,7 +3,7 @@ id: ashbys-trust
 kind: favor
 name: Ashby's Trust
 tags: [trusted]
-text: She looks at you the way she looks at her boots after the second coat. Almost satisfied.
+text: She looks at you like her boots after the second coat. Almost satisfied.
 art:
   loras: ["KreaEbonyBabe1"]
   subject: >

@@ -16,10 +16,9 @@ actions:
     prompt: Cross the office to the Sheriff's desk.
     result:
       text: |
-        She watches you come all the way across the room with the pleasant, patient look of a
-        woman who has all day and is choosing to spend some of it on you. She doesn't get up.
-        She doesn't need to: the desk is big, the chair is bigger, and the round window behind
-        her puts all the light in the room on you.
+        She watches you come all the way across the room, pleasant and patient, and doesn't get
+        up: the desk is big, the chair is bigger, and the round window behind her puts all the
+        light in the room on you.
 
         "There he is." Her smile is warm and it reaches her eyes, which are very blue. "Laura
         Brandt. Sheriff. Sit down, hon, you're making the room look untidy." She waits until you
@@ -37,7 +36,7 @@ actions:
         every deputy's head. A deputy at the far end looks up, sees the window, and straightens
         her tie without being asked.
 
-        The window doesn't open. It was built for singing through. Now it's built for watching.
+        The window doesn't open. It was built for a choir to sing through.
       effects:
         - skill.gain: look
 art:

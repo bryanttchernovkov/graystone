@@ -21,8 +21,8 @@ actions:
         stop. Then she laughs, loud, at you, and the sound goes all the way down the row of
         warehouses and back.
 
-        "Nah. Nah, look at this." Pale blue eyes, which you weren't ready for. "You lost, lil
-        bro? You must be lost. 'Cause nobody walks over here on purpose looking like that."
+        "Nah. Nah, look at this." Her eyes are pale blue. "You lost, lil bro? You must be lost.
+        'Cause nobody walks over here on purpose looking like that."
 
         She tips her chin at the warehouse behind her. "This is GrayBlood. You know what that
         means? Means you're standing on my side of the lot." She grins. "Go on. Say something.
@@ -39,9 +39,9 @@ actions:
         men in red, a woman with a gym bag, a kid on a bike who comes out again without the
         bag he went in with.
 
-        The one against the wall doesn't go in. She doesn't need to. Everybody who goes in
-        stops to talk to her first, and she decides how long. Twice she looks across the lot at
-        you and grins, and both times you look at your phone.
+        The one against the wall doesn't go in. Everybody who goes in stops to talk to her
+        first, and she decides how long. Twice she looks across the lot at you and grins, and
+        both times you look at your phone.
       effects:
         - skill.gain: look
 art:

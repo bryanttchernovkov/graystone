@@ -79,12 +79,12 @@ actions:
         foot from your face. The boot goes up past her knee to the middle of her thigh, a long
         column of black leather with the azure stripe of her breeches disappearing into it.
 
-        "Standing order five," she says. "Tongue. Toe to top. I'll know if you skip."
+        "Standing order five," she says. "Tongue. Toe to top. Skip a stitch and you start over."
 
-        You get down and start at the toe cap. The leather tastes of polish and floor wax and the
-        cold of the stairs. You work the welt, the vamp, the crease at the ankle, then up the
-        shaft where it's warm from her leg, in long flat strokes. She watches with one gloved
-        forearm resting on her raised knee and offers nothing: not a word, not a hand.
+        You get down and start at the toe cap. The leather tastes of polish and floor wax and
+        the cold of the stairs. You work the welt, the vamp, the crease at the ankle, then up
+        the shaft where it's warm from her leg, in long flat strokes. She watches with one
+        gloved forearm resting on her raised knee, and says nothing.
 
         Then the left boot, the same way, from the toe up.
 
@@ -196,7 +196,7 @@ actions:
         cell without a word, and goes back to the desk. Once she takes a tin and a soft brush out
         of the drawer and does her boots where she sits, heel to toe, without looking down.
 
-        She never once looks at you. You're fairly sure that's on purpose.
+        She never once looks at you.
       effects:
         - skill.gain: look
       art:
@@ -252,7 +252,8 @@ actions:
         to the bars for the irons. The steel comes off piece by piece and goes over her shoulder in
         a clinking heap on the flagstones.
 
-        "You so much as look at that window," she says, "and I'll know before you do."
+        "You so much as look at that window," she says, "and you do the rest of your time on the
+        ring."
 
         The cage stays. The key stays in her pocket.
       effects:
@@ -300,10 +301,9 @@ actions:
       text: |
         "Sergeant, permission to worship your boots."
 
-        She lets it sit in the air long enough that you start to hear how it sounded. Then she
-        unlocks the door, carries her steel chair in from the desk, and sets it down in the middle
-        of the cell. She sits, crosses one leg over the other, and lets the top boot hang in front
-        of you at the height of your mouth.
+        She lets it sit in the air. Then she unlocks the door, carries her steel chair in from
+        the desk, and sets it down in the middle of the cell. She sits, crosses one leg over the
+        other, and lets the top boot hang in front of you at the height of your mouth.
 
         "These are made to measure," she says. "A bootmaker in Amarillo, eleven weeks, a tracing of
         my calf on butcher paper. They cost more than your truck. You'll treat them that way."
@@ -324,8 +324,6 @@ actions:
         At the end she holds one boot out under the bulb and looks at the shine you put on it.
 
         "Huh," she says. "You actually love them."
-
-        You do. You'll be seeing boots like these in your sleep.
       effects:
         - card.gain: boot-fetish
       art:
@@ -370,10 +368,10 @@ actions:
         You look. The shirt is tan twill pressed until the creases stand off the fabric on their
         own, two down the back of each sleeve and one down each breast pocket, sharp enough to
         catch the light. The pocket flaps are piped in azure and buttoned dead center. The
-        epaulets are edged in the same blue, the chevrons stitched tight below the shoulder patch,
-        the star over her heart polished until it throws the bulb back at you. The collar points
-        sit flat and even. The tie is a vivid, saturated azure, knotted in a small hard
-        four-in-hand that sits exactly in the notch of the collar, the gold tie bar level to the
+        epaulets are edged in the same blue, the chevrons stitched tight below the shoulder
+        patch, the star over her heart polished until it throws the bulb back at you. The collar
+        points sit flat and even. The tie is a vivid, saturated azure, knotted in a small hard
+        four-in-hand that sits dead in the notch of the collar, the gold tie bar level to the
         millimeter across it.
 
         "You may touch the tie," she says.
@@ -385,8 +383,7 @@ actions:
         "Forty minutes with an iron," she says, watching you do it. "Every morning. Eight years in
         the Army and six here, and you're the first man who ever asked."
 
-        You let go of the tie. Her uniform stays in front of your eyes long after she's locked
-        the door again.
+        You let go of the tie. She locks the door again on her way out.
       effects:
         - card.gain: uniform-fetish
       art:

@@ -9,14 +9,14 @@ arrival:
     "That uniform," you say. "The creases. The boots. It's the sharpest thing in this county."
 
     She looks up. Then, before she can stop herself, down at her own sleeve: the chevrons, the
-    crease you could cut paper on.
+    crease.
 
     "Forty minutes with an iron every morning," she says. "Twenty more with the boots. Nobody
     notices."
 
     "I noticed."
 
-    She looks at you a beat longer than she needs to. "Yes," she says. "You did."
+    She looks at you. "Yes," she says. "You did."
   effects:
     - boost.change: { card: ashbys-good-side, amount: +1 }
     - move.to: undercroft-cell

@@ -10,12 +10,11 @@ hub: true
 description: A marble table by the window, a cappuccino, a folded newspaper, and Sergeant Ashby, who hasn't asked you to sit.
 arrival:
   text: |
-    Up close she's bigger than she looks from across a room: tall even sitting down, broad
-    in the shoulders, the tan shirt pressed so hard the creases look cut. No jacket, no hat,
-    her gloves still on. The cup looks small in her hand.
+    Up close she's bigger than she looks from across a room: tall even sitting down, broad in
+    the shoulders, her tan shirt starched stiff. No jacket, no hat, her gloves still on. The cup
+    looks small in her hand. The brass bar over her pocket says ASHBY.
 
-    "Sergeant Ashby, Undercroft." She turns a page of the paper. "You're standing at my
-    table. People who stand at my table want something. Ask for it properly, or go stand at
+    She turns a page of the paper. "You're standing at my table. People who stand at my table want something. Ask for it properly, or go stand at
     somebody else's."
 actions:
   - category: talk
@@ -155,14 +154,14 @@ actions:
               price: { cash: 6 }
               text: |
                 You carry it back to the table without spilling. Ashby takes it, tastes it, and
-                says "thank you," once, the way other people give medals.
+                says "thank you." Once.
               effects:
                 - tracker.change: { nerve: +1 }
                 - skill.gain: deal
             - label: Come back empty-handed
               text: |
-                She looks at your empty hands for a long moment and goes back to her paper, and
-                doesn't say anything, and that's worse.
+                She looks at your empty hands and goes back to her paper, and doesn't say
+                anything at all.
               effects:
                 - tracker.change: { nerve: -1 }
       art:

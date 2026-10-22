@@ -8,8 +8,7 @@ arrival:
   text: |
     The shine runs unbroken from toe to thigh, wet under the bulb.
 
-    "That'll do," she says, and it sounds like it costs her something. She writes a line in
-    the ledger on her way out, and you'd give a lot to read it.
+    "That'll do." She writes a line in the ledger on her way out and turns the book face down.
   effects:
     - boost.change: { card: ashbys-good-side, amount: +1 }
     - move.to: undercroft-cell
