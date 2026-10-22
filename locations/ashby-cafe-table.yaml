@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=../../../schema/v2/location.json
 # Event: at Sergeant Ashby's window table in Café Linde, off the clock. Reached by move.to from
-# TALK-APPROACH at the café window (no APB); out goes back to the window. Her method off duty
+# TALK-APPROACH at the café window (no record); out goes back to the window. Her method off duty
 # is the same as below the church: permission. Separate from Ashby's Good Side for now; her
 # trust option here is still to come.
 id: ashby-cafe-table

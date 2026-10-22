@@ -20,4 +20,6 @@ portals:
   - { from: main-street-north, dir: south, to: main-street-south, back: north, cost: 0, prompt: You turn around. }
   - { from: heights, dir: north, to: main-street-north }
   - { from: main-street-south, dir: south, to: heights }
+  - { from: main-street-north, dir: up, to: station-lobby, back: down, prompt: You climb the church steps between the cruisers and pull open one of the big oak doors. }
+  - { from: main-street-south, dir: east, to: docks-river, back: west, prompt: You walk down Front Street past the bars to the river. }
   - { from: mill-street, dir: in, to: library-stacks, back: out, prompt: You climb the library steps and push through the heavy doors. }

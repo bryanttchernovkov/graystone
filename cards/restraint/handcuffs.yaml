@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=../../../../schema/v2/card.json
-# Road cuffs: gained in both arrests (Anderson's and Ashby's), lost on arrival in the
-# Undercroft, which uses its own restraints. Lighter than Prison Chains: a setback on the
+# Road cuffs: gained in every arrest (Anderson's, Ashby's, Seo's), lost on arrival in the
+# Undercroft (or at Seo's booking), which uses its own restraints. Lighter than Prison Chains: a setback on the
 # department's ground (law) costs Nerve, not Body.
 id: handcuffs
 kind: restraint

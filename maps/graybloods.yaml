@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../../schema/v2/map.json
+# The GrayBloods' storyline: events only, reached by move.to. Red at the warehouse wall:
+# TALK-APPROACH at the docks' warehouse view. Out goes back to the warehouse view.
+id: graybloods
+name: The GrayBloods
+legend:
+  GW: graybloods-wall
+grid: |
+  GW
+portals:
+  - { from: graybloods-wall, dir: out, to: docks-warehouse, cost: 0, prompt: You back off. She watches you do it. }

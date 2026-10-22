@@ -9,7 +9,7 @@ actions:
     word: CALL
     cost: 1
     always: true
-    tags: [cooperate]
+    tags: [doing-time]
     unless: [gagged]
     prompt: Call out to the Sergeant. She answers, and then she wants answers back, by number, loud enough for the other cells.
     result:
@@ -71,7 +71,7 @@ actions:
     word: CHORE
     cost: 1
     always: true
-    tags: [cooperate]
+    tags: [doing-time]
     prompt: Ask for something useful to do. She has a chore below the knee, and the Undercroft doesn't issue polishing cloths.
     result:
       text: |
@@ -419,7 +419,7 @@ actions:
     word: SIGN
     cost: 0
     requires: [served]
-    unless: [trusted]
+    unless: [trusted, nude]
     prompt: Your time is up. Sign her ledger, and she'll walk you out.
     result:
       text: |
@@ -442,6 +442,7 @@ actions:
         - card.lose: gag
         - card.lose: chastity-cage
         - card.lose: served-sentence
+        - card.lose: inmate
         - move.to: main-street-south
       art:
         loras: ["KreaEbonyBabe1"]
@@ -478,6 +479,30 @@ actions:
           tan, vivid azure blue, black leather, cream ledger paper and pale limestone; natural skin
           texture, fine 35 mm film grain, focus on her eyes and the pen.
   - category: deal
+    word: COLLECT
+    cost: 0
+    requires: [served, nude]
+    unless: [trusted]
+    prompt: Your time is up. Sign her ledger and go up for your clothes. Deputy Seo has them, and she'll hand them back on the church steps.
+    result:
+      text: |
+        She unlocks the door and lays the ledger open on the cot rail with a pen in the gutter.
+        Your name is already in it, in her block capitals, with a column of numbers you don't
+        follow and her initials at the end of the line.
+
+        You sign. She reads your signature, turns the book round, and signs under it.
+
+        Then she takes off every piece of county steel you're still wearing, the cage last, and
+        holds out her gloved palm for it. "County property," she says. She looks you up and
+        down, once. "The rest isn't mine to give back. Deputy Seo is waiting for you upstairs."
+      effects:
+        - card.lose: prison-chains
+        - card.lose: gag
+        - card.lose: chastity-cage
+        - card.lose: served-sentence
+        - card.lose: inmate
+        - move.to: seo-steps
+  - category: deal
     word: THANK
     cost: 0
     requires: [served, trusted]
@@ -500,6 +525,8 @@ actions:
         - card.lose: prison-chains
         - card.lose: gag
         - card.lose: served-sentence
+        - card.lose: inmate
+        - card.lose: nude
         - move.to: undercroft-trusted-release
       art:
         loras: ["KreaEbonyBabe1"]

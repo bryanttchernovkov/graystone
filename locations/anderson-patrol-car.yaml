@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=../../../schema/v2/location.json
 # Event: at Deputy Anderson's driver's window, on the Heights. Reached by move.to from
-# TALK-APPROACH at the Heights (no APB; its result carries her introduction, so the coin-flip
+# TALK-APPROACH at the Heights (no record; its result carries her introduction, so the coin-flip
 # beats can send you back here without replaying it) and from those beats. The only exit, out,
 # steps back onto the street.
 # Her favor: TALK-INTRODUCE gives Anderson's Attention (tag noticed hides it after); the rest

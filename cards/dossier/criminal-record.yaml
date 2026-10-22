@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+# The one card that carries how much trouble you're in, outside and inside. Its boost is its
+# counts: each crime gains it again (+1 count; TAKE-HACK, escape); full, it becomes Most Wanted.
+# Any open record (tag wanted) turns RISK-APPROACH at a patrol car (and anything at the docks'
+# river view) into an arrest. Arrests don't clear it: you carry it down to the Undercroft, and
+# each Doing Time die on its slots works off a count. Empty, it becomes Time Served. Seo's
+# DEAL-SURRENDER wipes it whole.
+id: criminal-record
+kind: dossier
+name: Criminal Record
+tags: [wanted]
+boost: { capacity: 3, start: 1 }
+on_full: most-wanted
+on_empty: served-sentence
+slots:
+  - { match: { tag: doing-time }, bonus: [ { boost.change: { card: self, amount: -1 } } ] }
+  - { match: { tag: doing-time }, bonus: [ { boost.change: { card: self, amount: -1 } } ] }
+  - { match: { tag: doing-time }, bonus: [ { boost.change: { card: self, amount: -1 } } ] }
+text: Open counts, Graystone County. Every cruiser has your description; the longer the list next to it, the sooner somebody pulls over. Inside, you work them off.
+art:
+  subject: >
+    Square still-life photograph from standing eye height of a gray steel police desk, the
+    camera tilted down. In the center of the desk lies a thick manila case folder, its cover
+    open, a typed arrest form clipped inside it with a column of short typed lines, three of
+    them underlined in red pen, a black-and-white booking photograph turned face down and
+    paper-clipped to the top corner. Beside the folder lies a black handheld police radio and
+    a pair of chrome handcuffs, closed. Above the desk, out of focus, the pale limestone wall
+    of an old church and the red and blue glow of a patrol car's light bar through a tall
+    window. Cool fluorescent light from above, red and blue glints across the paper and the
+    chrome. Restrained palette of manila, typewriter black, red pen, steel gray, chrome and
+    police red and blue; natural paper texture, fine 35 mm film grain, sharp focus on the
+    underlined lines.

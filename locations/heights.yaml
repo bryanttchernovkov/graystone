@@ -31,7 +31,7 @@ actions:
     cost: 1
     always: true
     requires: [wanted]
-    prompt: Walk down the block to the cruiser parked under the maples, with an APB out on you.
+    prompt: Walk down the block to the cruiser parked under the maples, with open counts on your record.
     result:
       text: |
         You get within a car length. The deputy behind the wheel looks up from the laptop on her

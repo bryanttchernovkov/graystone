@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../schema/v2/map.json
+# Deputy Seo's storyline: events only, reached by move.to. Her spot by the cruiser: TALK-APPROACH
+# at the docks' river view (no record). Out goes back to the river view. Her arrest: RISK-APPROACH
+# or RISK-LOITER there (open record); SURRENDER goes back to the river view. Taken in: the trample on
+# the wharf (SR), booking (SB, Nude), her holding cage (SH) and its trample beat (ST); down from
+# the cage is the Undercroft. Last row: the church steps (SS), where a Nude prisoner who signs
+# out (DEAL-COLLECT) gets his clothes back; down to Main Street.
+id: seo
+name: Deputy Seo
+legend:
+  SD: seo-dockside
+  SA: seo-arrest
+  SR: seo-rights
+  SB: seo-booking
+  SH: seo-holding
+  ST: seo-trample
+  SS: seo-steps
+grid: |
+  SD .. SA .. SR
+  .. .. .. .. ..
+  SB .. SH .. ST
+  .. .. .. .. ..
+  SS .. .. .. ..
+portals:
+  - { from: seo-dockside, dir: out, to: docks-river, cost: 0, prompt: You leave her to the river. }
+  - { from: seo-holding, dir: down, to: undercroft, cost: 0, prompt: She keeps the bag and walks you to the top of the crypt stairs as you are. }
+  - { from: seo-steps, dir: down, to: main-street-south, cost: 0, prompt: You go down the steps into the square. }

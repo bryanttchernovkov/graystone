@@ -1,9 +1,10 @@
 # yaml-language-server: $schema=../../../schema/v2/map.json
 # Deputy Tiffany Anderson's storyline: events only, reached by move.to.
-# Her patrol car: TALK-APPROACH at the Heights (no APB). Her arrest: RISK-APPROACH at the
-# Heights (any APB), or a setback on a patrol street while Most Wanted. The arrest takes you to
-# her holding cage at the station; down from there is the Undercroft. Bottom row: TALK-FLATTER's
-# coin-flip beats at the cruiser, which send you back to her window.
+# Her patrol car: TALK-APPROACH at the Heights (no record). Her arrest: RISK-APPROACH at the
+# Heights (open record), or a setback on a patrol street while Most Wanted. The arrest takes you to
+# her holding cage at the station; down from there is the Undercroft. Third row: TALK-FLATTER's
+# coin-flip beats at the cruiser, which send you back to her window. Bottom row: DEAL-GREET's
+# coin-flip beats in the station kitchenette (pay, back to the kitchenette; or out on Main Street).
 id: anderson
 name: Deputy Anderson
 legend:
@@ -12,10 +13,15 @@ legend:
   HC: anderson-holding
   F1: anderson-flatter-cold
   F2: anderson-flatter-warm
+  KS: anderson-kitchen-sharpie
+  KP: anderson-kitchen-spit
+  KB: anderson-kitchen-boot
 grid: |
   PC .. AR .. HC
   .. .. .. .. ..
   F1 .. F2 .. ..
+  .. .. .. .. ..
+  KS .. KP .. KB
 portals:
   - { from: anderson-patrol-car, dir: out, to: heights, cost: 0, prompt: You step back from the car. }
   - { from: anderson-holding, dir: down, to: undercroft, cost: 0, prompt: She walks you to the top of the stairs and hands you over. }

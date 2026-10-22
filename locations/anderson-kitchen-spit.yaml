@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Beat: Deputy Anderson on her coffee break, one of three coin-flip reactions to DEAL-GREET in
+# the station kitchenette (her paypig only). Her hand out for $10: pay and stay in the
+# kitchenette, or come up short and she throws you out of the station and takes your badge.
+id: anderson-kitchen-spit
+name: The kitchenette
+tags: [law]
+description: She's close, and she's in no hurry.
+arrival:
+  text: |
+    She steps in until you're against the counter, takes your jaw in one hand, black nails
+    on your cheek, and tips your face up to her.
+
+    "Look at me. No, at me."
+
+    You look at her. She looks at you for a long, bored moment, as if you were something on a
+    menu she'd decided against. Then she leans in and spits in your face. It lands on your
+    cheek, warm, and starts to run.
+
+    "Thank you, Deputy," she prompts.
+
+    "Thank you, Deputy."
+
+    She spits again. Your eyelid, this time; you flinch and her hand holds your jaw where it
+    is. Again, on your mouth. She does it slowly and neatly and without any expression, the
+    way you'd do something you've done so often you don't need to think about it, and you say
+    thank you after every one, because she waits for it.
+
+    When she's done she wipes her hand on your shirt and holds it out, palm up. "Ten. For the
+    spa treatment."
+  effects:
+    - tracker.change: { nerve: -1 }
+    - choose:
+        - label: Pay her $10
+          price: { cash: 10 }
+          text: |
+            You give it to her with your face still wet. She tucks it in her breast pocket.
+
+            "Don't wipe it," she says, picking up her mug. "Air dry. It's good for you."
+          effects:
+            - move.to: station-kitchen
+        - label: Come up short
+          text: |
+            You open your wallet and she looks in it with you, and laughs, once, through her nose.
+
+            "Wow. No. Okay." She takes a fistful of your collar and walks you out of the
+            kitchenette, down the side aisle past the cages, through the arch and past the
+            front desk, at her own pace, so that everybody gets a good look. At the desk she
+            stops long enough to unclip your badge and drop it on the counter in front of Niamh.
+
+            "He's done for the day."
+
+            Niamh looks at the badge, and at you, and says nothing at all.
+
+            Anderson pushes open one of the big oak doors with her free hand and lets go of
+            your collar on the top step. "Come back when you're worth something, babe."
+          effects:
+            - card.lose: contractor-badge
+            - move.to: main-street-north
+art:
+  loras: ["DGirlsModel14:1"]
+  subject: >
+    Intimate first-person point-of-view widescreen photograph from standing eye height in a
+    small staff kitchenette with pale limestone walls, the camera level, of one woman leaning
+    in close to the lens, her face and shoulders filling the frame. She looks directly into the
+    camera, making eye contact with the viewer, with cold, bored contempt: green eyes
+    half-lidded, dark brows drawn flat, berry lips pursed and pushed forward in the moment
+    before she spits. She is a white American woman of
+    twenty-four, slim and toned with a full bust and long legs, fair skin, long wavy
+    platinum-blonde hair with bold jet-black streak highlights falling past her shoulders, dark
+    elegant makeup with smoky black eyeliner, long dark lashes and deep berry lipstick, striking
+    bright green eyes, arched dark brows, and long almond-shaped nails painted glossy black. Her bare right hand, with its long glossy black nails, rests
+    against her own collarbone. She wears a crisp, pressed tan long-sleeved uniform shirt of heavy
+    cotton twill with a pointed collar, two buttoned flap chest pockets piped in vivid azure
+    blue, shoulder epaulets edged in vivid azure blue and a polished gold six-point star badge
+    pinned over the left pocket, and a vivid, saturated azure blue necktie with a small gold tie
+    bar; her head is bare and her hands are bare. The frame stops below her tie knot. Behind her, out
+    of focus, a wooden mug rack and a coffee machine on a laminate counter. A warm overhead light
+    lights her face from above. Restrained palette of pale limestone, uniform tan, vivid azure
+    blue, platinum blonde and berry; natural skin texture, fine 35 mm film grain, shallow depth
+    of field on her eyes and lips.

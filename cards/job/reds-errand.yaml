@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+# From TALK-ASK at the warehouse wall (Red). Its tag opens DEAL-REPORT there: hand her $100 and
+# it becomes GrayBlood Rep. Holding it and the money is the job done; how you got the money is
+# your business.
+id: reds-errand
+kind: job
+name: Red's Errand
+tags: [errand]
+text: A hundred dollars, cash, in her hand. "Cops don't hustle, lil bro. They get a paycheck. So hustle."
+art:
+  subject: >
+    Square close first-person point-of-view photograph from standing eye height in a cracked
+    asphalt lot by a corrugated steel warehouse, the camera level, of a young woman's hand held
+    out toward the lens at arm's length, filling the center of the frame: smooth dark brown
+    skin, long glossy coffin-shaped nails painted white, two thin gold rings, coming out of the
+    cuff of an oversized glossy red puffer down jacket sleeve. Her hand grips a thick fan of
+    crumpled green dollar bills spread wide between her fingers and thumb, the bills splayed out
+    toward the lens like a winning hand of cards, a black hair tie wrapped around the base of
+    the wad. The money is the subject. Behind the hand, out of focus, rust-streaked corrugated
+    steel and the dark gap of a half-open roll-up door. Low, warm late-afternoon sun from the
+    left lights the bills, her nails and the glossy red sleeve. Restrained palette of banknote
+    green, glossy red, dark brown skin, gold, rust and corrugated gray; natural texture, fine 35
+    mm film grain, sharp focus on the fanned bills.

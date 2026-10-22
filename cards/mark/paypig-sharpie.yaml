@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+# From Deputy Anderson's Sharpie in the station kitchenette (beat anderson-kitchen-sharpie).
+# Forced: it's on your face. Its action tag puts `marked` on everything you do, so every setback
+# costs Nerve. LOOK-SCRUB in your bedroom at home (requires marked) takes it off.
+id: paypig-sharpie
+kind: mark
+name: PAYPIG
+tags: [marked]
+action_tags: [marked]
+text: Across your forehead in black Sharpie, in capitals, with a little pig's curly tail on the G. It's permanent marker. She checked.
+setback_penalty:
+  tags: [marked]
+  effects:
+    - tracker.change: { nerve: -1 }
+art:
+  subject: >
+    Square close still-life photograph from above of an uncapped thick black permanent marker
+    lying across a strip of beige laminate kitchen counter, its broad felt tip glistening wet
+    with black ink, its black cap lying a little apart beside it, and beside them a crumpled
+    white paper towel smeared with black ink where something was scrubbed and did not come off.
+    A single short smear of black ink streaks the laminate beside the tip. Square composition
+    with the marker diagonal across the center. Cool overhead fluorescent light lays a hard
+    white highlight along the marker's barrel. Restrained palette of black ink, white paper,
+    beige laminate and steel gray; natural texture, fine 35 mm film grain, sharp focus on the
+    wet felt tip.

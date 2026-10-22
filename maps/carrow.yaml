@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../../schema/v2/map.json
+# Miss Carrow's storyline: events only, reached by move.to. Her desk: TALK-APPROACH in the
+# library's reading room. Out goes back to the reading room.
+id: carrow
+name: Miss Carrow
+legend:
+  LD: library-desk
+grid: |
+  LD
+portals:
+  - { from: library-desk, dir: out, to: library-stacks, cost: 0, prompt: She goes back to her card. You go back to the room. }

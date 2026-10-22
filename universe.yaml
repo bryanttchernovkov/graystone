@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=../../schema/v2/universe.json
-# The universe-wide layer only. Storylines bring their own cards (a Sentence, an APB, a gang's
+# The universe-wide layer only. Storylines bring their own cards (a Criminal Record, a gang's
 # favor) and add tags as their locations need them.
 format: 2
 id: graystone
@@ -65,17 +65,17 @@ tags:
   - { id: law,       name: Law }
   - { id: prison,    name: Prison }
   - { id: patrol,    name: Patrol }    # streets the department drives
-  - { id: wanted,    name: Wanted }    # an open APB (read by future arrest triggers)
+  - { id: wanted,    name: Wanted }    # open counts: Criminal Record or Most Wanted (arrest triggers)
   - { id: contractor, name: Contractor } # county work orders: a legitimate reason to be at the station
   # The Undercroft storyline
-  - { id: cooperate, name: Cooperate }
+  - { id: doing-time, name: Doing Time } # action tag, prison scenes only: works a count off the Record
   - { id: please,    name: Please }
   - { id: chained,   name: Chained }
   - { id: cuffed,    name: Cuffed }    # arrested: road cuffs, until the Undercroft
   - { id: caged,     name: Caged }
   - { id: gagged,    name: Gagged }
   - { id: served,    name: Served }
-  - { id: inmate,    name: Inmate }    # serving time: Sentence and Time Served (hides the phone)
+  - { id: inmate,    name: Inmate }    # locked up: Inmate and Time Served (hides the phone)
   - { id: trusted,   name: Trusted }
   # Deputy Anderson's storyline
   - { id: tribute,   name: Tribute }   # action tag: paying her, in cash or in breath
@@ -89,6 +89,18 @@ tags:
   - { id: subscribed, name: Subscribed } # you pay for her page (hides SUBSCRIBE)
   - { id: simping,   name: Simping }   # action tag: paying her for another look
   - { id: hooked,    name: Hooked }    # her simp (opens her later scenes)
+  # Deputy Anderson in the station kitchenette
+  - { id: marked,    name: Marked }    # written on: her Sharpie on your forehead
+  # Deputy Seo's holding cage
+  - { id: nude,      name: Nude }      # stripped at booking (Nude): every setback costs Nerve
+  # The GrayBloods: Red
+  - { id: errand,    name: Errand }    # Red's Errand: a hundred dollars owed to her (opens REPORT)
+  - { id: blooded,   name: Blooded }   # GrayBlood rep (opens the next crime job)
+  - { id: evidence,  name: Evidence }  # carrying the goods of a crime (opens SURRENDER in Seo's arrest)
+  # Deputy Seo's storyline
+  - { id: snitch,    name: Snitch }    # in her notebook: Seo's Snitch and Informant
+  - { id: tip,       name: Tip }       # action tag: telling Seo what you've heard (fills the Snitch)
+  - { id: informant, name: Informant } # Seo's Informant (opens her later scenes)
   # Fetish cards (read by other storylines' requires)
   - { id: boots,     name: Boots }
   - { id: uniform,   name: Uniform }
@@ -105,6 +117,8 @@ card_kinds:
   - { id: favor,     name: Favor,     placement: grid }
   - { id: dossier,   name: Dossier,   placement: grid, forced: true }
   - { id: fetish,    name: Fetish,    placement: grid }
+  - { id: mark,      name: Mark,      placement: grid, forced: true }
+  - { id: job,       name: Job,       placement: grid }
 
 run: { character_kind: hero, mission_kind: mission, default_defeat: run-out }
 reserve_capacity: 3

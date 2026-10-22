@@ -18,17 +18,18 @@ arrival:
 
     Whatever you came down the stairs wearing on your wrists comes off at the line and goes
     back up with whoever brought it. "Road cuffs," the Sergeant says. "Down here we use mine."
-  # The Sentence belongs to the Undercroft: it starts here, however you were brought down.
+  # Inmate belongs to the Undercroft: it starts here, however you were brought down. How long
+  # you stay is the Criminal Record you carried down, worked off by Doing Time.
   # An arrest's Handcuffs come off here; the Undercroft has its own restraints (TERMS).
   effects:
     - card.lose: handcuffs
-    - card.gain: sentence
+    - card.gain: inmate
 actions:
   - category: talk
     word: ASK
     cost: 1
     always: true
-    tags: [cooperate]
+    tags: [doing-time]
     unless: [gagged]
     prompt: Ask to approach her desk. She decides how it's asked, and you'll ask until she's satisfied.
     result:

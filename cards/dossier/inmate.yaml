@@ -1,15 +1,12 @@
 # yaml-language-server: $schema=../../../../schema/v2/card.json
-id: sentence
+# Locked up: gained on arrival in the Undercroft, lost when you sign out or escape. A marker
+# only: how long you stay is your Criminal Record's counts, worked off by Doing Time. Its tag
+# `inmate` hides the phone.
+id: inmate
 kind: dossier
-name: Sentence
+name: Inmate
 tags: [inmate]
-text: Misdemeanor, Graystone County. No court date. Served in the Undercroft, at the Sergeant's discretion.
-boost: { capacity: 3, start: 0 }
-on_full: served-sentence
-slots:
-  - { match: { tag: cooperate }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
-  - { match: { tag: cooperate }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
-  - { match: { tag: cooperate }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
+text: Cell Three, the Undercroft. No court date. You leave when your record is clean, at the Sergeant's discretion.
 art:
   subject: >
     Close still-life photograph from above of an open ruled ledger on a gray steel desk, its

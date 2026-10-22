@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+# From DEAL-REPORT at the warehouse wall: Red's Errand paid off. Its tag `blooded` is what the
+# GrayBloods' next crime job will require. Nothing reads it yet.
+id: graybloods-rep
+kind: favor
+name: GrayBlood Rep
+tags: [blooded]
+text: Red says you're "GrayBlood-adjacent." Then she says, "Like, way adjacent. Like, in the parking lot." It still counts.
+boost: { capacity: 3, start: 1 }
+art:
+  subject: >
+    Square close photograph of a section of rust-streaked corrugated steel warehouse wall,
+    the camera level and square to it, filling the frame. Sprayed across the ridges in the
+    center, fresh and glossy, a bold hand-painted crown symbol with three points in vivid
+    blood-red spray paint, the paint still wet, three thin red drips running down from its
+    base across the corrugations. Low, warm late-afternoon sun from the left throws the ridges
+    of the steel into hard stripes of light and shadow and makes the wet paint shine. Restrained
+    palette of blood red, rust and corrugated gray; natural texture, fine 35 mm film grain,
+    sharp focus on the wet paint.

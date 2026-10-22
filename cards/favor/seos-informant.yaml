@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+# Seo's Snitch, full. A placeholder for her informant storyline, which comes with the crime
+# jobs; tag `informant` is what it will require. Nothing reads it yet.
+id: seos-informant
+kind: favor
+name: Seo's Informant
+tags: [snitch, informant]
+text: She gave you a code name. It's the name of one of her gulls, and she won't tell you which one.
+art:
+  subject: >
+    Square photograph from standing eye height on a concrete river wharf at dawn, the camera
+    level. A single gray-and-white herring gull stands on top of a black cast-iron mooring
+    bollard in the center of the frame, a coil of rope around the bollard's base, the gull
+    turned side-on with its head toward the camera and one yellow eye on the lens. Behind it,
+    out of focus, the broad brown river and the low far bank under a pale pink sky, and at
+    the edge of the frame the white roof and azure blue stripe of a parked patrol car. Soft,
+    low dawn light from the right lights the gull's chest. Restrained palette of gull gray
+    and white, iron black, river brown, dawn pink and a touch of azure blue; natural texture,
+    fine 35 mm film grain, sharp focus on the gull's eye.

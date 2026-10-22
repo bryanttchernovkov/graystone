@@ -1,12 +1,28 @@
 # yaml-language-server: $schema=../../../schema/v2/location.json
 # The Carnegie library, looking across the reading room. In from Mill Street; turning around
-# (free) looks at the computer corner, where Juno Vance sits. The circulation desk is kept for
-# the librarian, a later storyline: her actions will go here.
+# (free) looks at the computer corner, where Juno Vance sits. Miss Carrow, the librarian, sits
+# at the circulation desk: TALK-APPROACH takes you to her desk (her storyline).
 id: library-stacks
 name: The Carnegie library
 hub: true
-description: A round reading room under a copper dome, oak shelves around the walls, green lamps on the long tables, and nobody talking.
+description: A round reading room under a copper dome, oak shelves around the walls, green lamps on the long tables, and a red-haired librarian at the desk making sure nobody talks.
 actions:
+  - category: talk
+    word: APPROACH
+    cost: 1
+    always: true
+    prompt: Go up to the circulation desk.
+    result:
+      text: |
+        Your shoes are loud on the oak boards. Every step of the way to the desk is loud, and
+        she lets you hear all of them before she looks up from the card she's writing.
+
+        "Good afternoon." Her voice carries without rising; it's English, and it's been trained.
+        "Miss Carrow. I'm the librarian. You'll have noticed the room is quiet. It is quiet
+        because I keep it that way." She caps her pen. "Now, young man. What can the library do
+        for you?"
+      effects:
+        - move.to: library-desk
   - category: look
     word: BROWSE
     cost: 1
@@ -39,23 +55,29 @@ actions:
       effects:
         - tracker.change: { nerve: +1 }
 art:
+  loras: ["DMilfModel4:1"]
   subject: >
-    Eye-level widescreen photograph from standing height just inside the doors of a small
-    round Carnegie library reading room in a Midwest town, the camera level, looking across
-    the room to the far wall. The room itself is the subject: a circular room under a shallow
-    dome, its curved walls lined from floor to gallery with tall dark oak bookcases filled
-    with hardback books in faded cloth bindings of red, green, brown and navy. Halfway up the
-    walls runs a narrow gallery with a black cast-iron railing, reached by a black cast-iron
-    spiral staircase at the right. Above it, the plaster dome rises to a round skylight of
-    leaded glass at its center. In the near foreground and mid-ground stand two long dark oak
-    reading tables with heavy turned legs and matching oak chairs pushed in, each table set
-    with a row of brass reading lamps with green glass shades, all lit. The floor is worn
-    honey oak boards with a long faded red runner between the tables. At the far side of the
-    room, half in shadow, a curved dark oak circulation desk with a brass bell and a neat
-    stack of returned books stands empty, a tall arched window behind it. The room is quiet
-    and still, the chairs tucked in. Soft daylight falls in a wide pale column from the
-    skylight onto the tables, and the green lamps add small pools of warm light on the oak,
-    the shelves around the walls fading into warm brown shadow. Restrained palette of dark
-    oak, honey floorboards, faded cloth red and green, brass, green glass and pale skylight;
-    natural texture, fine 35 mm film grain, deep focus from the near table to the far
-    shelves.
+    Eye-level widescreen photograph from standing height in a small round Carnegie library
+    reading room, the camera level. The left two-thirds of the frame look across the room: two
+    long dark oak reading tables running away from the lens with turned legs and oak chairs
+    pushed in, a row of brass reading lamps with green glass shades lit along each, a faded
+    red runner on worn honey oak floorboards, and around the curved walls tall dark oak
+    bookcases of hardback books in faded cloth bindings of red, green, brown and navy, a
+    narrow gallery with a black cast-iron railing halfway up, a black cast-iron spiral
+    staircase, and a plaster dome above rising to a round skylight of leaded glass. In the
+    right third of the frame, three paces away, stands a curved dark oak circulation desk with
+    a brass bell and a neat stack of returned books, a tall wooden card catalogue behind it,
+    and behind the desk one woman, alone, sits upright, seen from the waist up above it, a
+    fountain pen in her right hand over an index card, turned half toward the lens and looking
+    up at the camera with cool, level disapproval: green eyes steady, brows straight, her red
+    lips pressed together. She is a white British woman of thirty-eight, tall with an
+    hourglass figure and a large, full bust, fair skin with a few faint freckles, long wavy
+    ginger hair falling loose past her shoulders, dark smoky eye makeup with black eyeliner,
+    striking bright green eyes, defined auburn brows, and deep wine-red lipstick. She wears a
+    tailored charcoal-gray wool skirt suit: a fitted single-breasted jacket with sharp notched
+    lapels, buttoned once at the waist, over a cream silk blouse open at the collar to the top
+    of her cleavage. Soft daylight falls in a pale column from the skylight onto the tables,
+    the green lamps add pools of warm light on the oak, and a brass lamp on the desk lights
+    her face and her red hair. Restrained palette of dark oak, brass, lamp green, faded cloth
+    red and green, charcoal wool, cream silk and ginger; natural texture, fine 35 mm film
+    grain, deep focus from the desk to the far shelves.

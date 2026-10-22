@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+# From DEAL-SURRENDER in Seo's arrest: you gave her the evidence, she let you go. Tip actions
+# (tag `tip`: telling her what you've heard about a crime) fill its two slots; full, it becomes
+# Seo's Informant. Nothing carries `tip` yet: the tips come with the crime jobs.
+id: seos-snitch
+kind: favor
+name: Seo's Snitch
+tags: [snitch]
+text: A page in her notebook, between the barge numbers and the gulls. Your name at the top. The rest of it is blank, and she'd like it filled.
+boost: { capacity: 2, start: 0 }
+on_full: seos-informant
+slots:
+  - { match: { tag: tip }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
+  - { match: { tag: tip }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
+art:
+  subject: >
+    Square photograph from standing eye height, looking down at the white roof of a parked
+    sheriff's patrol car on a river wharf, the camera tilted down. Lying open on the white
+    roof in the center of the frame is a small black pocket notebook, its two pages filled
+    with dense columns of small handwritten pencil notes, a short yellow pencil lying across
+    the open pages. Beside the notebook lies a pair of gold-framed aviator sunglasses with
+    mirrored lenses, folded, the sky reflected in them. At the edge of the roof the rest of
+    the frame falls away to the brown river and the dark red rusting hull of a cargo ship,
+    out of focus. Bright, hazy late-morning sun from the side. Restrained palette of cruiser
+    white, notebook black, pencil yellow, gold and river brown; natural texture,
+    fine 35 mm film grain, sharp focus on the notebook.

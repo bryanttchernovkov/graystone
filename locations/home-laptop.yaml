@@ -26,7 +26,7 @@ actions:
         phone call to the First Church, and the First Church already knows where you live.
       effects:
         - currency.change: { cash: +100 }
-        - card.gain: apb
+        - card.gain: criminal-record
       art:
         subject: >
           Close photograph of an open silver laptop screen at night, the screen filling most of

@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# The First Church station, inside the doors: the narthex, Niamh Doyle's front desk, and through
+# the inner arch the nave bullpen and the holding cages. Up the steps from Main Street (down goes
+# back out). Nothing walks past her desk: TALK-APPROACH takes you to it (her storyline), where a
+# contractor badge signs you through to the back.
+id: station-lobby
+name: The First Church, the front desk
+tags: [law]
+hub: true
+description: Cool stone, a radio murmuring, the bullpen through the arch, and a front desk with the most beautiful woman in the county behind it.
+actions:
+  - category: talk
+    word: APPROACH
+    cost: 1
+    always: true
+    prompt: Go up to the front desk.
+    result:
+      text: |
+        The desk is a long counter of dark oak where the church used to sell candles, and she
+        lets you reach it before she looks up from her screen. When she does, it's worth the
+        wait, and she knows it: green eyes, red mouth, all that red hair swept over one
+        shoulder, and a smile that has done this ten thousand times and still enjoys it.
+
+        "Hiya, love." The accent is Australian with something older underneath. "Niamh. I run
+        the place. They'll tell you the Sheriff does, and she does, upstairs." She folds her
+        hands on the counter. "Down here, it's me. Are you visiting, delivering, or confessing?"
+      effects:
+        - move.to: station-desk
+  - category: look
+    word: WATCH
+    cost: 1
+    prompt: Sit on the visitors' bench by the door and watch the station work.
+    result:
+      text: |
+        The bench is an old church pew with a cushion nobody has sat on comfortably since it was
+        made. From it you can see through the arch into the nave: steel desks under the stained
+        glass, phones, deputies in tan going up and down the aisle in boots that echo.
+
+        In the side aisle, behind chain-link, two cages. One has a man in it, sitting very
+        straight on the bench, looking at nothing. A deputy walks past his cage without looking
+        at him and he sits straighter.
+
+        Nobody gets past the front desk without stopping. Not the deputies, not the Mayor's
+        assistant with a folder, not a man with a pizza. She makes every one of them smile on
+        the way through.
+      effects:
+        - skill.gain: look
+art:
+  loras: ["DGirlsModel8:1"]
+  subject: >
+    Eye-level widescreen photograph from standing height just inside the heavy oak doors of an
+    old deconsecrated Gothic Revival church converted into a sheriff's station, the camera
+    level. The left two-thirds of the frame look across the narthex, its walls smooth dressed
+    limestone ashlar blocks laid in straight courses with thin mortar joints under a whitewashed
+    pointed vault, worn flagstones underfoot and an old wooden pew with a flat cushion against
+    the wall, and through a tall pointed stone arch into the long nave beyond, now a bullpen:
+    rows of gray steel desks with phones and monitors under tall pointed stained-glass windows,
+    and along the side aisle two tall cages of galvanized chain-link with steel benches inside.
+    In the right third of the frame, three paces away, a long reception counter of dark polished
+    oak with a brass desk lamp, a computer monitor and a big open sign-in book, and behind it a
+    woman sits seen from the waist up above the counter, busy: a black desk telephone receiver
+    tucked between her ear and her raised shoulder, she leans over the open sign-in book writing
+    in it with a pen in her right hand, red nails on the pen, her left hand flat on the page,
+    and glances up from under her lashes at the camera mid-sentence with bright, flirtatious
+    amusement: green eyes sparkling, one trimmed brow raised, dark red lips parted as she talks
+    into the phone. She is a white woman of twenty-seven, Irish-Australian, drop-dead gorgeous,
+    with delicate, beautiful features, a toned build with a medium-large bust and wide hips,
+    fair skin, long wavy ginger hair swept all over to one side and falling over her left
+    shoulder, dark smoky eye makeup with long dark eyelashes, neatly trimmed brows, striking
+    bright green eyes, and glossy dark red lipstick. She wears a crisp, pressed tan long-sleeved
+    uniform shirt of heavy cotton twill with a pointed collar, buttoned at the wrists, shoulder
+    epaulets edged in vivid azure blue and an embroidered vivid azure blue and gold patch on
+    each upper sleeve, and a vivid, saturated azure blue necktie with a small gold tie bar.
+    Daylight through the stained glass throws soft colored light down the nave, and the brass
+    lamp on the counter lights her face and the page warmly from the side. Restrained palette of
+    pale limestone, dark oak, uniform tan, vivid azure blue, ginger and stained-glass red and
+    gold; natural texture, fine 35 mm film grain, deep focus from the counter to the far end of
+    the nave.

@@ -61,6 +61,21 @@ with an azure blue band and a dark green uniform jacket. Formal, distinct, autho
 and the boots are the department's signature. The uniform is a fetish object in this universe,
 not just a costume.
 
+### The Graystone advisement
+
+Every deputy carries it on a laminated card in her breast pocket, written by the Sheriff, and
+reads it to every man she arrests. How she reads it is hers: Seo reads every word off the card
+at the scene, standing on him; others skip to the end, or make him read it back.
+
+> You have the right to remain silent. You won't, but you have it.
+> Anything you say will be written down and used against you. Anything you don't say, I will
+> guess.
+> You have the right to an attorney. The county has one. She is a woman, she is very busy, and
+> she will agree with me.
+> You have the right to ask for things. Asking is not the same as getting.
+> You have the right to say please. You will use that one the most.
+> Do you understand these rights as I have read them to you? The answer is "yes, Deputy."
+
 ## The women of Graystone
 
 All adult, all human, **between twenty-one and fifty, all attractive**, and never one body
@@ -81,10 +96,12 @@ Delivered by whoever has him in hand — a deputy most of all, but the town has 
 with their own appetites.
 
 - **Control:** sex; chastity; edging and denial; **instructed masturbation** (she watches and
-  gives the orders); **ruined orgasms**; anal and strap-on sex; imprisonment — the
+  gives the orders); **ruined orgasms**; anal and strap-on sex, and **lighter anal play** — a
+  gloved finger, a cavity search, prostate milking; imprisonment — the
   Undercroft, a night kept, a few days that were always part of the sentence.
 - **Restraint:** cuffs, chains, shackles, bondage; permission rules — nothing without asking.
-- **Impact and pain:** spanking; trampling; CBT; ballbusting; **wrestling and painful holds**.
+- **Impact and pain:** spanking; **trampling** — her boots on him, her whole weight, the
+  sole over his face; CBT; ballbusting; **wrestling and painful holds**.
 - **Below the knee and the uniform:** foot, shoe and **boot worship**; **uniform worship**;
   **gloves**; the campaign hat as a mark of rank. **Worship is by tongue, from the first
   touch: never a cloth, never a brush in his hands** — unless the woman's taste is scent.
@@ -96,6 +113,8 @@ with their own appetites.
 - **Breath and weight:** **facesitting**; **gloved hand over the mouth** — smothering kept
   short and controlled.
 - **Humiliation:** being made to ask, recite, thank, display; public correction on the square;
+  **CFNM** — he is naked and she stays buttoned to the collar: stripped at booking, searched,
+  photographed, handed his clothes back one piece at a time;
   **humiliating remarks** — her running commentary on him, out loud, in company; **name-calling**,
   slurs included ("good little faggot"), always in her mouth, never the narration's.
 - **Finish:** cum eating — when and how she decides.
@@ -153,8 +172,13 @@ tags. Nothing in it is shaped around one storyline.
     and it pays off in a benefit.
   - **fetish** — grid; a taste he has picked up (Boot Fetish, Uniform Fetish). Its tag
     (`boots`, `uniform`) is what other storylines `require` to open their doors.
-  - **dossier** — grid, forced; what the town keeps on him: an APB, a sentence, a gang's
-    tally. It's in the grid because dice drive it (a sentence served off, an APB that fills).
+  - **dossier** — grid, forced; what the town keeps on him: his Criminal Record, a gang's
+    tally. It's in the grid because dice drive it (a record that fills with counts outside and
+    is worked off inside).
+  - **mark** — grid, forced; something done to him that shows: Anderson's Sharpie on his
+    forehead. It comes off by doing something about it (scrubbing it off at home).
+  - **job** — grid; work someone gave him, with a condition for handing it in (Red's Errand:
+    $100). Handing it in swaps it for what it earned.
 - **Tags:** added only as storylines need them. So far: **law** (the Sheriff's Department's
   ground) and **prison** (a closed place he can't simply walk out of).
 - **Words don't give the scene away.** The player sees only category and word before
@@ -166,8 +190,10 @@ tags. Nothing in it is shaped around one storyline.
   `reach.dead-end`; the engine runs arrival `move.to` fine). A beat reached from anywhere (a
   card action, like Juno's SIMP) ends in `move.back` instead, which returns him to wherever he
   was without replaying it.
-- **Storyline mechanics live in cards.** For example, the Undercroft: an arrest gives a
-  *Sentence* dossier before he arrives, and his time in the cell is served against it.
+- **Storyline mechanics live in cards.** For example, the Undercroft runs on the
+  *Criminal Record* dossier: each crime adds a count (three is Most Wanted), an arrest
+  carries it down to the Undercroft, and every **Doing Time** action there (a tag only prison
+  scenes carry) works one count off. Empty, it is *Time Served*, and he can sign out.
 
 ## Art direction (canonical for `style.yaml`)
 

@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../../schema/v2/map.json
+# Sheriff Brandt: events only, reached by move.to. Her desk: TALK-APPROACH in her office in the
+# choir loft. Out goes back to the office.
+id: brandt
+name: Sheriff Brandt
+legend:
+  SD: sheriff-desk
+grid: |
+  SD
+portals:
+  - { from: sheriff-desk, dir: out, to: station-sheriff-office, cost: 0, prompt: You step back from her desk. }

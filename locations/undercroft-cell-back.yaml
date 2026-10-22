@@ -9,7 +9,7 @@ actions:
     word: TIDY
     cost: 1
     always: true
-    tags: [cooperate]
+    tags: [doing-time]
     prompt: Tidy the cell for inspection. She'll inspect the cell, and then she'll inspect you.
     result:
       text: |
@@ -134,7 +134,7 @@ actions:
     word: ASK
     cost: 1
     always: true
-    tags: [cooperate]
+    tags: [doing-time]
     unless: [gagged]
     prompt: Ask her for something. She grants it her way, with a glove, a key, and no finish.
     result:
@@ -258,7 +258,8 @@ actions:
         "That," she says, "is another day," and writes it in the ledger on her way out.
       effects:
         - tracker.change: { body: -1 }
-        - boost.change: { card: sentence, amount: -1 }
+        - boost.change: { card: criminal-record, amount: +1 }
+        - boost.change: { card: most-wanted, amount: +1 }
       art:
         loras: [KreaEbonyBabe1]
         subject: >
@@ -311,8 +312,9 @@ actions:
         your feet a chair scrapes on flagstone, and somewhere behind you a key ring rattles on
         its chain.
       effects:
-        - card.lose: sentence
-        - card.gain: apb
+        - card.lose: inmate
+        - card.lose: served-sentence
+        - card.gain: criminal-record
         - move.to: main-street-south
       art:
         subject: >

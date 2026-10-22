@@ -27,7 +27,7 @@ actions:
 
         Three dots. They stop. They start again.
       effects:
-        - move.to: { random: [juno-dm-boots, juno-dm-boots, juno-dm-bulge, juno-dm-bulge, juno-dm-cage, juno-dm-cage, juno-dm-selfie, juno-dm-selfie, juno-dm-video] }
+        - move.to: { random: [juno-dm-boots, juno-dm-boots, juno-dm-tea, juno-dm-tea, juno-dm-socks, juno-dm-socks, juno-dm-selfie, juno-dm-selfie, juno-dm-video] }
 art:
   subject: >
     Square close still-life photograph from above of a black smartphone in a plain black case

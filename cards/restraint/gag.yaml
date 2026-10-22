@@ -7,7 +7,7 @@ text: A black rubber bit, buckled behind your head. It comes off when she decide
 boost: { capacity: 1, start: 1 }
 on_empty: lose
 slots:
-  - { match: { tag: cooperate }, cost: 1 }
+  - { match: { tag: doing-time }, cost: 1 }
 setback_penalty:
   tags: [prison]
   effects:

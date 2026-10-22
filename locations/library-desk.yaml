@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Event: at Miss Carrow's circulation desk in the Carnegie library. Reached by move.to from
+# TALK-APPROACH in the reading room (its result carries her greeting, so nothing replays here);
+# out goes back to the reading room. Ordinary library business for now; her methods as a
+# disciplinarian come with her storyline.
+id: library-desk
+name: The circulation desk
+hub: true
+description: A curved oak desk, a brass bell nobody rings twice, and Miss Carrow behind it, waiting for you to get to the point.
+actions:
+  - category: talk
+    word: RECOMMEND
+    cost: 1
+    prompt: Ask her to recommend a book. She chooses one for you, and she doesn't ask what you like.
+    result:
+      text: |
+        She looks at you for a while, the way you'd look at a shelf that's been put back wrong.
+        Then she gets up and walks into the stacks, her heels clicking on the oak boards, one
+        sharp step at a time, all the way round the room and all the way back. She doesn't look
+        at the spines. She comes back with a thin green hardback.
+
+        "Trollope. *The Warden*. A man who means well and finds it isn't enough." She stamps the
+        card inside the cover, once, hard. "Fourteen days. I'll ask you about it when you bring
+        it back, and I'll know if you haven't read it."
+      effects:
+        - skill.gain: look
+  - category: work
+    word: VOLUNTEER
+    cost: 2
+    prompt: Volunteer for the book sale. She has boxes of donations in the back, and standards.
+    result:
+      text: |
+        The back room is boxes to the ceiling: paperbacks, encyclopedias, a hundred copies of
+        the same diet book. She shows you the system once. Fiction by author, nonfiction by
+        number, anything with a broken spine to the left, anything with a pressed flower in it
+        to her.
+
+        She comes in every twenty minutes. The second time, she takes a book out of your hands
+        and turns it the right way up, and holds it there until you take it back. "Spine in
+        your palm, young man. You hold a book the way you'd want to be held." By the end of the
+        afternoon you're doing it without thinking, and she has stopped coming in.
+      effects:
+        - skill.gain: work
+  - category: look
+    word: INQUIRE
+    cost: 1
+    prompt: Ask her about the true crime somebody keeps shelving with the gardening books.
+    result:
+      text: |
+        "Miss Vance." She doesn't look toward the computer corner. She doesn't need to. "Since
+        March. One book a day, before lunch, always from the same shelf. She thinks I haven't
+        noticed."
+
+        She writes something on an index card in very small letters and files it in the drawer
+        under the desk. You catch the drawer's label as it closes: a single letter, V, and the
+        drawer is full.
+
+        "I notice everything in this room," she says. "It's my room. Is there anything else?"
+      effects:
+        - skill.gain: look
+art:
+  loras: ["DMilfModel4:1"]
+  subject: >
+    Eye-level widescreen photograph from standing eye height across a curved dark oak library
+    circulation desk with a polished brass bell on it, the camera level, one woman, alone,
+    sitting upright behind the desk an arm's length from the lens, framed from the desktop to
+    just above her head, the dark oak desktop running across the whole bottom of the frame and
+    crossing her at the waist. She looks directly into the camera, making eye contact with the
+    viewer, with cool, polite severity: green eyes steady and unblinking, one auburn brow
+    raised a fraction, her wine-red lips closed in a small, patient line. She is a white
+    British woman of thirty-eight, tall with an hourglass figure and a large, full bust, fair
+    skin with a few faint freckles, long wavy ginger hair falling loose past her shoulders,
+    dark smoky eye makeup with black eyeliner, striking bright green eyes, defined auburn
+    brows, and deep wine-red lipstick. She wears a tailored charcoal-gray wool skirt suit: a
+    fitted single-breasted jacket with sharp notched lapels, buttoned once at the waist, over
+    a cream silk blouse open at the collar to the top of her cleavage; a slim gold watch sits
+    on her left wrist. In her right hand she holds a capped black fountain pen upright beside
+    her chin, and her left hand rests flat on a small stack of index cards on the desk, the
+    gold watch catching the light. Behind her, a tall dark oak card catalogue of many small
+    brass-handled drawers fills the background, and beside it the curve of a bookcase of faded
+    cloth-bound books. A green-shaded brass lamp on the desk at the left lights her face, her
+    hair and the silk from the side, with soft daylight from a skylight above. Restrained
+    palette of dark oak, brass, charcoal wool, cream silk, ginger and lamp green; natural skin
+    texture, fine 35 mm film grain, shallow depth of field on her eyes.

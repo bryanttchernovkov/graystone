@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Event: at Niamh Doyle's front desk in the narthex. Reached by move.to from TALK-APPROACH in the
+# narthex (its result carries her greeting, so nothing replays here); out goes back to the
+# narthex. DEAL-SIGN, with a contractor badge (tag contractor) and no record, signs you through to
+# the bullpen: the only way into the back of the station. Her scenes are still to come.
+id: station-desk
+name: The front desk
+tags: [law]
+hub: true
+description: A long oak counter, a sign-in book with a pen on a chain, and Niamh, waiting for you to say something worth her time.
+actions:
+  - category: deal
+    word: SIGN
+    cost: 1
+    always: true
+    requires: [contractor]
+    unless: [wanted]
+    prompt: Show her your contractor badge and sign in. She'll buzz you through to the back.
+    result:
+      text: |
+        She takes the badge between two red nails, holds it up next to your face, and looks
+        from one to the other for longer than she needs to.
+
+        "Better looking in person. That's rare." She turns the sign-in book round and holds out
+        the pen on its chain. "Name, time in, who you're seeing. If you don't know who you're
+        seeing, write 'Niamh' and I'll sort it."
+
+        You sign. She presses something under the counter and the half-door beside the desk
+        clicks open.
+
+        "Through you go, love. Bullpen's straight ahead, kettle's on the left, and the Sheriff's
+        up the stairs if she wants you, which she'll let you know." She smiles. "Don't wander."
+      effects:
+        - move.to: station-bullpen
+  - category: talk
+    word: ASK
+    cost: 1
+    prompt: Ask her what it takes to get past her desk.
+    result:
+      text: |
+        "Oh, lots of ways." She counts them off on her fingers. "A badge with the county's name
+        on it. A deputy's hand on your elbow. A pair of handcuffs, which is the same thing
+        with less conversation." She lowers her voice, and leans in to do it. "Or me, liking
+        you. That's the hardest one."
+
+        She sits back. "Nobody's managed it yet, so don't feel bad."
+      effects:
+        - skill.gain: talk
+art:
+  loras: ["DGirlsModel8:1"]
+  subject: >
+    Eye-level widescreen photograph from standing eye height across a long reception counter
+    of dark polished oak in the narthex of an old deconsecrated limestone church converted
+    into a sheriff's station, the camera level, one woman, alone, sitting behind the counter
+    an arm's length from the lens and leaning forward on her forearms, framed from the
+    countertop to just above her head, the dark oak running across the whole bottom of the
+    frame and crossing her at the waist. She looks directly into the camera, making eye
+    contact with the viewer, with warm, teasing interest: green eyes bright under long dark
+    lashes, one trimmed brow raised, glossy dark red lips parted in a playful half-smile. She
+    is a white woman of twenty-seven, Irish-Australian, drop-dead gorgeous, with delicate,
+    beautiful features, a toned build with a medium-large bust and wide hips, fair skin, long
+    wavy ginger hair swept all over to one side and falling over her left shoulder, dark smoky
+    eye makeup with long dark eyelashes, neatly trimmed brows, striking bright green eyes, and
+    glossy dark red lipstick. She wears a crisp, pressed tan long-sleeved uniform shirt of
+    heavy cotton twill with a pointed collar, shoulder epaulets edged in vivid azure blue and
+    an embroidered vivid azure blue and gold patch on each upper sleeve, and a vivid,
+    saturated azure blue necktie with a small gold tie bar. Her hands are folded on the
+    counter in front of her, red-nailed fingers laced, beside an open sign-in book with a pen
+    on a small brass chain. Behind her, a wall of smooth dressed limestone ashlar blocks laid
+    in straight courses with thin mortar joints with a brass key cabinet and a corkboard of
+    pinned papers. A brass desk lamp at the left lights her face and her hair warmly from the
+    side, with cool daylight from the church doors behind the camera. Restrained palette of
+    dark oak, pale limestone, uniform tan, vivid azure blue, ginger and brass; natural skin
+    texture, fine 35 mm film grain, shallow depth of field on her eyes.

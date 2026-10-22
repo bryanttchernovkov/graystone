@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Event: across the desk from Sheriff Brandt in her office. Reached by move.to from TALK-APPROACH
+# in her office (its result carries her greeting, so nothing replays here); out goes back to the
+# office. Her scenes are still to come.
+# Art: the subject says "khaki tan" but the render came out with the dark olive-green jacket
+# that is now canon (cast.md, dress uniform). Kept as written so the image isn't regenerated;
+# if this subject is ever rewritten, use the green dress uniform sentence.
+id: sheriff-desk
+name: The Sheriff's desk
+tags: [law]
+hub: true
+description: A green leather desktop, two folded hands, and the Sheriff, waiting with a smile for you to tell her the rest.
+art:
+  loras: ["DMilfModel3:1"]
+  subject: >
+    Eye-level widescreen photograph from seated eye height across a massive dark oak desk with
+    a green leather top, the camera level, one woman, alone, sitting upright in a tall dark
+    leather chair behind the desk an arm's length from the lens, framed from the desktop to
+    just above her head, the green leather desktop running across the whole bottom of the
+    frame and crossing her at the waist. She looks directly into the camera, making eye
+    contact with the viewer, with a pleasant, inviting smile that is also an instruction: blue
+    eyes warm and steady, softly arched brows relaxed, rose lips curved in a closed, patient
+    smile. She is a white American woman of forty, slim and shapely with a full bust, fair
+    skin, long curly auburn hair styled in loose, soft waves falling past her shoulders,
+    striking bright blue eyes, softly arched brows, and natural rose lipstick. She wears the
+    Graystone County Sheriff's dress uniform: a tailored, fitted single-breasted dress jacket
+    of fine khaki tan wool, the same tan as her shirt, closed at the front with four polished
+    gold buttons from the waist to below the breastbone, its notched lapels and cuffs piped in
+    vivid azure blue, shoulder epaulets edged in vivid azure blue with three small gold six-
+    point stars on each, an embroidered vivid azure blue and gold patch on each upper sleeve
+    and a polished gold six-point star badge pinned on its left breast; in the V of the
+    lapels, only the pointed collar of a crisp, pressed tan uniform shirt and the knot of a
+    vivid, saturated azure blue necktie with a small gold tie bar. Her hands are folded
+    loosely on the green leather in front of her, beside a single closed manila folder and a
+    brass lamp. Behind her, softly out of focus, a wall of smooth dressed limestone ashlar
+    blocks laid in straight courses with thin mortar joints and the lower curve of a great
+    round stained-glass rose window glowing red, blue and gold. The brass lamp lights her face
+    warmly from the left, and the rose window rims her auburn curls with colored light.
+    Restrained palette of dark oak, green leather, khaki tan, vivid azure blue, gold, auburn
+    and stained-glass red; natural skin texture, fine 35 mm film grain, shallow depth of field
+    on her eyes.

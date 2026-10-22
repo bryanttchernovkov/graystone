@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=../../../schema/v2/location.json
 # Café Linde, turned around: the window tables, the square outside, and Sergeant Ashby at her
-# table off the clock. TALK-APPROACH (no APB) sits you down with her; RISK-APPROACH (any APB)
+# table off the clock. TALK-APPROACH (no record) sits you down with her; RISK-APPROACH (open record)
 # is her arrest, hands-on, straight to the Undercroft.
 id: cafe-linde-window
 name: Café Linde, the window
@@ -24,7 +24,7 @@ actions:
     cost: 1
     always: true
     requires: [wanted]
-    prompt: Go over to the Sergeant's table, with an APB out on you.
+    prompt: Go over to the Sergeant's table, with open counts on your record.
     result:
       text: |
         She sees you coming in the reflection in the window. She looks at the reflection, and

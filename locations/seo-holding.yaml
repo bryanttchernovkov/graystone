@@ -1,0 +1,188 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Event: Deputy Seo's holding cage, naked (Nude), in the side aisle of the First Church.
+# Reached by move.to from seo-booking, and back from the trample beat (no arrival here, so
+# nothing replays). The only exit, down, hands you over to the Undercroft (you become an Inmate;
+# Nude stays). Her scenes are flavour: trackers and skills, no standing with her.
+#   TALK-PROTEST, LOOK-STARE: both end on the cage floor under her boots (seo-trample).
+#   DEAL-SEARCH: the cavity search; gloved, and she milks you.
+#   WORK-POSE: the booking photo, naked against the height chart.
+id: seo-holding
+name: Holding cage, First Church
+tags: [law, prison]
+hub: true
+description: A chain-link cage in the side aisle of the old church, a steel bench, nothing of yours in it, and Deputy Seo at the desk outside with a stapled paper bag.
+actions:
+  - category: talk
+    word: PROTEST
+    cost: 1
+    unless: [gagged]
+    prompt: Tell her you want your clothes back. She'll answer with her boots.
+    result:
+      text: |
+        You tell her. She listens to all of it with her pencil still, then writes one word.
+
+        "Okay," she says, and gets up, and unlocks the cage. "Protocol says when a prisoner is
+        agitated I use the minimum force necessary." She points at the floor. "On your back.
+        Arms at your sides. Let's find out what the minimum is."
+      effects:
+        - skill.gain: talk
+        - move.to: seo-trample
+  - category: look
+    word: STARE
+    cost: 1
+    prompt: Watch her while she writes. She'll notice, and put you on the floor for it.
+    result:
+      text: |
+        She writes for a long time, and you watch her do it: the pencil, the braid over her
+        shoulder, the boots crossed at the ankle under the desk.
+
+        "Ankles." She doesn't look up. "Your eyes are on me. Prisoners' eyes go on the floor."
+        She closes the notebook, gets up and unlocks the cage. "You don't know where the floor
+        is. That's okay. I'll show you. On your back."
+      effects:
+        - skill.gain: look
+        - move.to: seo-trample
+  - category: deal
+    word: SEARCH
+    cost: 1
+    prompt: Bend over the bench for the cavity search. She is gloved, thorough, and she'll milk you while she's in there.
+    result:
+      text: |
+        "Cavity search," she says, as if she's reading it off a list, and unlocks the cage.
+        "Hands on the bench. Feet back. Wider. Thank you."
+
+        A drawer in the desk, a box, the snap of a purple nitrile glove at her wrist, then the
+        other. A squeeze bottle. She comes in behind you and puts one gloved hand flat on the
+        small of your back, and says, "Breathe out," and when you do, one slick finger goes in,
+        slowly, all the way.
+
+        "Nothing," she says. She turns it. "Nothing." She crooks it, and finds the place, and
+        presses, and your knees go. "Oh. Something."
+
+        She doesn't stop. She strokes that one spot with the pad of her finger, slow and even,
+        the other hand flat on your back holding you down over the bench, and talks the whole
+        time in the small soft voice: what she can feel, how fast your breathing is, how hard
+        you've gotten without anyone touching you there, which she says twice. A clear thread
+        runs from you to the floor tiles, and she leans round to look at it.
+
+        "The search is complete," she says, and takes the finger out, and peels the glove off
+        inside out. "No contraband. One very embarrassing finding." She writes it down at the
+        desk, in full, and reads it back to you.
+      effects:
+        - tracker.change: { nerve: -1 }
+        - skill.gain: deal
+      art:
+        loras: ["DGirlsModel9:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height inside a
+          chain-link holding cage in the side aisle of an old deconsecrated church, the camera
+          level. One woman stands an arm's length away in the center of the frame, framed
+          from the waist up, pulling a vivid purple nitrile examination glove tight onto her
+          right hand by its cuff with her left, already gloved in the same purple nitrile, the
+          cuff snapping at her wrist, both hands raised at the height of her chest. She looks
+          directly into the camera, making eye contact with the viewer, with bright, playful
+          mischief: dark eyes sparkling, delicate brows lifted, berry-pink lips parted in a
+          small knowing smile. She is a Korean woman of twenty-nine, a classic Korean beauty
+          with an elegant oval face, a softly tapered jaw, large almond-shaped dark brown eyes,
+          sharp black winged eyeliner, delicate straight brows, a refined small nose, softly
+          defined cheekbones, berry-pink gradient lips and luminous, smooth pale skin, her
+          extremely long, glossy, vivid neon violet-purple hair woven into one enormous high
+          French braid that rises from the crown of her head and falls over one shoulder past
+          her waist. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan
+          long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full
+          button-front placket, two buttoned flap chest pockets piped in vivid azure blue,
+          shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold
+          patch on each upper sleeve and a polished gold six-point star badge pinned over the
+          left pocket; a vivid, saturated azure blue necktie with a small gold tie bar; and a
+          black leather duty belt with a polished brass buckle. Her head is bare. A pair of
+          gold-framed aviator sunglasses with mirrored lenses hangs by one arm from her shirt's
+          placket. On a gray steel desk behind her shoulder sit a box of purple nitrile gloves
+          and a small clear squeeze bottle. Nothing of the viewer is in frame. Behind her,
+          seen through the cage's open door, the nave of an old deconsecrated limestone Gothic
+          Revival church converted into a sheriff's bullpen, gray steel desks and tall pointed
+          stained-glass windows, out of focus. Cool fluorescent light from above lights her
+          face and the purple gloves. Restrained palette of pale limestone, uniform tan, vivid
+          azure blue, vivid purple, neon violet and galvanized steel; natural skin texture,
+          fine 35 mm film grain, focus on her eyes and the glove's cuff.
+  - category: work
+    word: POSE
+    cost: 1
+    prompt: Stand against the height chart for your booking photo, naked, while she takes it.
+    result:
+      text: |
+        The height chart is painted on the limestone at the end of the side aisle, black
+        lines and numbers up to seven feet, and she stands you against it with your heels on
+        the line. The camera is on a tripod: a real one, black and heavy, older than she is.
+
+        "Hands at your sides." She looks through the viewfinder. "At your sides. Not there."
+
+        Front. The shutter is loud in the nave. "Side." You turn. "Other side." She takes
+        each one twice and the last one three times, and between shots she lifts her face out
+        from behind the camera, and she's grinning, wide, the only time you've seen her teeth.
+
+        "One for your file," she says, winding on. "One for the corkboard in the kitchen. One
+        for me." She writes the frame numbers in the notebook. "Chin up, Ankles. Everyone in
+        the department is going to see this. Give them something nice."
+      effects:
+        - tracker.change: { nerve: -1 }
+        - skill.gain: work
+      art:
+        loras: ["DGirlsModel9:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height in the side
+          aisle of an old deconsecrated limestone church, the camera level. Two paces away in
+          the center of the frame stands a black, heavy, old-fashioned film camera on a black
+          tripod, its lens aimed straight at the viewer. One woman stands behind the camera,
+          bent slightly toward it, framed from the waist up, her face lifted out from behind
+          the camera to the right of it, one hand on the camera's top and one finger on the
+          shutter button. She looks directly into the camera, making eye contact with the
+          viewer, with wide, gleeful delight: dark eyes crinkled with laughter, delicate brows
+          raised, berry-pink lips spread in a wide open grin showing her teeth. She is a Korean
+          woman of twenty-nine, a classic Korean beauty with an elegant oval face, a softly
+          tapered jaw, large almond-shaped dark brown eyes, sharp black winged eyeliner,
+          delicate straight brows, a refined small nose, softly defined cheekbones, berry-pink
+          gradient lips and luminous, smooth pale skin, her extremely long, glossy, vivid neon
+          violet-purple hair woven into one enormous high French braid that rises from the
+          crown of her head and falls over one shoulder past her waist. She wears the
+          Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt
+          of heavy cotton twill with a pointed collar, a full button-front placket, two
+          buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged in
+          vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve
+          and a polished gold six-point star badge pinned over the left pocket; a vivid,
+          saturated azure blue necktie with a small gold tie bar; and a black leather duty
+          belt with a polished brass buckle. Her head is bare. A pair of gold-framed aviator
+          sunglasses with mirrored lenses hangs by one arm from her shirt's placket, and a
+          small black notebook sticks out of her breast pocket. Nothing of the viewer is in
+          frame. Behind her, the nave of an old deconsecrated limestone Gothic Revival church
+          converted into a sheriff's bullpen, gray steel desks, tall pointed stained-glass
+          windows and dark oak roof beams, out of focus. A single bright white photo lamp on a
+          stand beside the tripod lights her face from the side, the stained glass glowing
+          behind her. Restrained palette of pale limestone, uniform tan, vivid azure blue,
+          camera black, neon violet and stained-glass red and gold; natural skin texture, fine
+          35 mm film grain, focus on her grinning face beside the camera.
+art:
+  loras: ["DGirlsModel9:1"]
+  subject: >
+    Eye-level widescreen photograph from standing eye height inside a chain-link holding cage,
+    the camera level, looking out through the cage's open door. One woman stands upright in the
+    open doorway an arm's length away, framed from her waist to just above her head, leaning one
+    shoulder against the galvanized steel door post at the right of the frame, a brown paper
+    property bag folded and stapled shut held up beside her face in her right hand, a small
+    black notebook tucked in her breast pocket. She looks directly into the camera, making eye
+    contact with the viewer, with calm, pleased patience: dark eyes steady, delicate brows
+    lifted, berry-pink lips in a small smile. She is a Korean woman of twenty-nine, a classic
+    Korean beauty with an elegant oval face, a softly tapered jaw, large almond-shaped dark
+    brown eyes, sharp black winged eyeliner, delicate straight brows, a refined small nose,
+    softly defined cheekbones, berry-pink gradient lips and luminous, smooth pale skin, her
+    extremely long, glossy, vivid neon violet-purple hair woven into one enormous high French
+    braid, falling over one shoulder. She wears a crisp, pressed tan long-sleeved uniform shirt
+    with a pointed collar, vivid azure blue epaulets, an embroidered vivid azure blue and gold
+    patch on each upper sleeve and a polished gold star badge, a vivid, saturated azure blue
+    necktie with a small gold tie bar, and a black leather duty belt with a polished brass
+    buckle at the bottom edge of the frame; her head is bare, and a pair of gold-framed aviator
+    sunglasses hangs from her shirt's placket. The chain-link wall of the cage runs along the
+    left edge of the frame. Behind her, out of focus, pale limestone and the colored glow of a
+    tall stained-glass window. Cool fluorescent light from above lights her face. Restrained
+    palette of pale limestone, galvanized steel, uniform tan, vivid azure blue, kraft brown and
+    neon violet; natural skin texture, fine 35 mm film grain, shallow depth of field on her
+    eyes.

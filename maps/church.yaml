@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../schema/v2/map.json
+# The First Church station, walkable parts. LO: the narthex and Niamh Doyle's front desk, in from
+# Main Street (up the steps). Nothing walks past her: the back is reached only through DEAL-SIGN
+# at her desk, which requires a contractor badge (tag contractor). From the back:
+# BP the nave bullpen, KI the sacristy kitchenette (east), GY the gym, a small annex behind the
+# church (south, through the covered walkway), SO the Sheriff's office in the choir loft (up).
+# Walking out of the bullpen takes you back past the desk to the narthex (one way).
+# The Undercroft below the nave is on the station map, events only.
+id: church
+name: The First Church station
+legend:
+  LO: station-lobby
+  BP: station-bullpen
+  KI: station-kitchen
+  GY: station-gym
+  SO: station-sheriff-office
+grid: |
+  LO .. BP KI
+  .. .. .. ..
+  .. .. GY ..
+  .. .. .. ..
+  .. .. SO ..
+portals:
+  - { from: station-bullpen, dir: out, to: station-lobby, prompt: You walk back out past the front desk. She waves you by without looking up. }
+  - { from: station-bullpen, dir: south, to: station-gym, back: north, prompt: You go out the side door and along the short covered walkway to the gym out back. }
+  - { from: station-bullpen, dir: up, to: station-sheriff-office, back: down, prompt: You climb the narrow stair to the old choir loft. }

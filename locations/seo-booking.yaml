@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../../schema/v2/location.json
+# Event: Deputy Seo books you into the holding cage in the side aisle of the First Church and
+# strips you. Reached only by move.to from seo-rights. The arrival takes your clothes (Nude) and
+# goes on to her holding cage (seo-holding), which has no arrival of its own, so its beats can
+# come back to it.
+id: seo-booking
+name: Holding cage, First Church
+tags: [law, prison]
+description: A chain-link cage in the side aisle of the old church, and Deputy Seo in its doorway with an empty paper bag.
+arrival:
+  text: |
+    She drives you up from the river with the radio low, humming along to the dispatcher,
+    and parks on the square. Up the church steps by the chain between your wrists, through the
+    big oak doors, down the nave between the desks. In the side aisle there's a chain-link
+    cage with a steel bench bolted inside. She walks you into it, unlocks the cuffs, hangs them
+    on her belt and steps back into the doorway.
+
+    She shakes open a brown paper bag.
+
+    "Clothes," she says. "All of them. One at a time, into the bag. Shoes first."
+
+    Shoes. Socks. Then what's left, top to bottom, and each thing goes into the bag and into
+    the notebook, in her small neat hand, before she nods for the next. When you stop, she
+    waits, pencil on the page.
+
+    "Underwear is clothes."
+
+    It goes in the bag. She folds the top over twice and staples it, twice, and writes
+    ANKLES on it in capitals.
+
+    "Hands on your head. Turn around. Slowly. Stop." She looks, all the way down and back up,
+    and writes something. "Other way." Writes something else. Two deputies at desks in the
+    nave have looked up, and neither of them has looked back down.
+
+    "You get these back when you leave," she says, and taps the bag. "Everybody leaves,
+    eventually." She locks the cage door and sits down at the desk outside it with the bag in
+    front of her, like a packed lunch.
+  effects:
+    - card.lose: handcuffs
+    - card.gain: nude
+    - move.to: seo-holding
+art:
+  loras: ["DGirlsModel9:1"]
+  subject: >
+    First-person point-of-view widescreen photograph from standing eye height inside a
+    chain-link holding cage in the side aisle of an old deconsecrated church, the camera
+    level, looking out through the cage's open door. One woman stands in the open doorway
+    an arm's length away, framed from the waist up, holding a brown paper property bag,
+    folded shut and stapled, flat against her chest with her bare right hand, and a small
+    black notebook with a pencil in her bare left hand. Her eyes are lowered, looking down
+    below the frame's bottom edge, with frank, delighted curiosity: dark eyes wide and
+    attentive, delicate brows lifted, berry-pink lips pressed together in a small, amused
+    smile, a faint blush high on her cheeks. She is a Korean woman of twenty-nine, a classic
+    Korean beauty with an elegant oval face, a softly tapered jaw, large almond-shaped dark
+    brown eyes, sharp black winged eyeliner, delicate straight brows, a refined small nose,
+    softly defined cheekbones, berry-pink gradient lips and luminous, smooth pale skin, her
+    extremely long, glossy, vivid neon violet-purple hair woven into one enormous high French
+    braid that rises from the crown of her head and falls over one shoulder past her waist.
+    She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved
+    uniform shirt of heavy cotton twill with a pointed collar, a full button-front placket,
+    two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged in
+    vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve and
+    a polished gold six-point star badge pinned over the left pocket; a vivid, saturated
+    azure blue necktie with a small gold tie bar; and a black leather duty belt with a
+    polished brass buckle. Her head is bare. A pair of gold-framed aviator sunglasses with
+    mirrored lenses hangs by one arm from her shirt's placket. Nothing of the viewer is in
+    frame. Behind her, the nave of an old deconsecrated limestone Gothic Revival church
+    built of smooth dressed limestone ashlar blocks, converted into a sheriff's bullpen: gray
+    steel desks, tall pointed stained-glass windows throwing colored light and dark oak roof
+    beams. Cool fluorescent light over the desks lights her face, with colored shafts from
+    the stained glass behind her. Restrained palette of pale limestone, uniform tan, vivid
+    azure blue, kraft brown, neon violet and stained-glass red and gold; natural skin
+    texture, fine 35 mm film grain, focus on her face.

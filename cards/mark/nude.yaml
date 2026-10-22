@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../../schema/v2/card.json
+# From Deputy Seo's booking (seo-booking): she bags your clothes and keeps them. Forced: you
+# can't put on what she's holding. Its action tag puts `nude` on everything you do, so every
+# setback costs Nerve. It stays through the Undercroft. It comes off on the way out: Seo hands
+# your clothes back on the church steps (seo-steps, from DEAL-COLLECT), Ashby's trusted release
+# (DEAL-THANK) returns them with the rest, and an escapee (RISK-SLIP) dresses at home
+# (WORK-DRESS in the bedroom).
+id: nude
+kind: mark
+name: Nude
+tags: [nude]
+action_tags: [nude]
+text: Your clothes are in a brown paper bag with your nickname on it, stapled twice, on Deputy Seo's desk.
+setback_penalty:
+  tags: [nude]
+  effects:
+    - tracker.change: { nerve: -1 }
+art:
+  subject: >
+    Square photograph from standing eye height of a gray steel police desk in the nave of an
+    old deconsecrated limestone church, the camera tilted down. In the center of the desk
+    stands a single brown paper property bag, its top folded over twice and stapled shut
+    with two staples, a manila tag tied to it with string. Beside it lie a small black pocket
+    notebook with a pencil clipped to it and a pair of gold-framed aviator sunglasses with
+    mirrored lenses, folded. Behind the desk, out of focus, pale limestone and the colored
+    light of a tall stained-glass window. Cool fluorescent light from above, a shaft of red
+    and gold light from the stained glass across the bag. Restrained palette of kraft brown,
+    steel gray, pale limestone, notebook black, gold and stained-glass red; natural texture,
+    fine 35 mm film grain, sharp focus on the stapled bag.
