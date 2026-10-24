@@ -7,11 +7,10 @@ Ideas for graystone
 - [x] Seo and her arrest sequence, kinks/storyline; 
 - [x] Graybloods 1 - steal / pay money (here)
 - [x] Try / test femdompov and facesit loras
-- [ ] 'caught' as suspect int he police station - some locations have a 'chance' of getting caught we are there; to be determined which officer where; We *could*, depending on the officer, end up in the sheriff's officer. Default is a spanking session. Hard. *but* if we have an active 'crime' card; meaning, we're on a crime, we're suspect. we go to an interrogation chamber, where a detective interrogates us. Basic options are Confess Or Deny. We should have some sort of minigame perhaps? 
+- [ ] 'caught' as suspect int he police station - some locations have a 'chance' of getting caught we are there; to be determined which officer where; We *could*, depending on the officer, end up in the sheriff's officer. Default is a spanking session. Hard. Maybe some other punishments? cornertime? writing tasks?
 - [ ] Date with Ashby
 - [x] Lore/Claude check quality check
 - [x] Rethink wanted/arrest/Most Wanted: Most Wanted is gone. Any open record makes a setback on a deputy's ground her arrest (location setback penalties, engine ADR 0044), so the wharf is Seo's and the Heights Anderson's, and SLIP just adds a count to the one Record.
-- [ ] Cards/items that soak up setbacks (setback slots matching `patrol`, rerolls) to make walking around with a record less risky.
 
  ## V0.2.1:
  - Rework location/structure?
@@ -22,11 +21,13 @@ Ideas for graystone
   - [ ] Motel. With owner, and a room; room is occupied by britt dekker, targetr of our 'smuggle' option.
   - [ ] Gas station. Robbery target
   - [ ] A shady bar/pub at the highway? Maybe a biker gang?
+- [ ] Active 'Crime' tag; if we have an active 'crime' card; meaning, we're on a crime, we're suspect. This is different from criminal records that trigger arrests *outside*. *crime* tagged cards doon't auto trigger but kind of makes us suspect in situations like this. In the policestation, during the getting caught, we go to an interrogation chamber, where a detective interrogates us. Basic options are Confess Or Deny. We should have some sort of minigame perhaps? 
 - [ ] Patrol officer
 - [ ] Independent - Britt Dekker; smuggler.
 - [ ] Graybloods 2 - smuggle package
 - [ ] Graybloods 3 - rob highway station
- - Date with Seo
+- [ ]Date with Seo
+- [ ] Cards/items that soak up setbacks (setback slots matching `patrol`, rerolls) to make walking around with a record less risky.
 
 ## V0.4:
 - [ ] Better missions, achievements, achievment icons, rewards
