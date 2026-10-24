@@ -1,16 +1,16 @@
 # yaml-language-server: $schema=../../../../schema/v2/card.json
 # The one card that carries how much trouble you're in, outside and inside. Its boost is its
-# counts: each crime gains it again (+1 count; TAKE-HACK, escape); full, it becomes Most Wanted.
-# Any open record (tag wanted) turns RISK-APPROACH at a patrol car (and anything at the docks'
-# river view) into an arrest. Arrests don't clear it: you carry it down to the Undercroft, and
-# each Doing Time die on its slots works off a count. Empty, it becomes Time Served. Seo's
-# DEAL-SURRENDER wipes it whole.
+# counts: each crime gains it again (+1 count, up to 3; TAKE-HACK, SLIP). Any open record (tag
+# wanted) turns RISK-APPROACH at a patrol car (and anything at the docks' river view) into an
+# arrest, and makes each deputy's ground a setback trap: a setback there is her arrest (the
+# locations' setback_penalty). The counts are how long you sit: arrests don't clear it, you carry
+# it down to the Undercroft, and each Doing Time die on its slots works off a count. Empty, it
+# becomes Time Served. Seo's DEAL-SURRENDER wipes it whole.
 id: criminal-record
 kind: dossier
 name: Criminal Record
 tags: [wanted]
 boost: { capacity: 3, start: 1 }
-on_full: most-wanted
 on_empty: served-sentence
 slots:
   - { match: { tag: doing-time }, bonus: [ { boost.change: { card: self, amount: -1 } } ] }

@@ -1,12 +1,11 @@
 # yaml-language-server: $schema=../../../schema/v2/location.json
-# Event: Deputy Seo arrests you on the wharf. Reached by move.to from RISK-APPROACH and
-# RISK-LOITER at the docks' river view (open record): she is never by the car when you look
-# for her. Protocol, not force: a felony prone from behind, every step said out loud, and the
-# first shot is the wharf at cheek height and her boot. The arrival puts the Handcuffs on;
-# then you choose, face down:
+# Event: Deputy Seo arrests you on the wharf. Reached by move.to from RISK-APPROACH at the docks'
+# river view (open record), and from the setback penalty on her ground (open record): she is
+# never by the car when you look for her. Protocol, not force: a felony prone from behind, every
+# step said out loud, and the first shot is the wharf at cheek height and her boot. The arrival
+# puts the Handcuffs on; then you choose, face down:
 #   DEAL-SURRENDER (evidence): hand her what you're carrying. The crime and the Criminal Record
-#     (or Most Wanted) go away,
-#     the cuffs come off, and you're Seo's Snitch, back on your feet at the river.
+#     go away, the cuffs come off, and you're Seo's Snitch, back on your feet at the river.
 #   TALK-REASON (no evidence): she mocks you for having nothing, and takes you in.
 #   TALK-COMPLY (always): say nothing, get taken in.
 # Taken in: the arrest goes on in seo-rights (she tramples you and reads the advisement), then
@@ -74,7 +73,6 @@ actions:
       effects:
         - card.lose: handcuffs
         - card.lose: criminal-record
-        - card.lose: most-wanted
         - card.gain: seos-snitch
         - move.to: docks-river
   - category: talk

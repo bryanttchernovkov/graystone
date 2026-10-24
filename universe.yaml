@@ -65,7 +65,7 @@ tags:
   - { id: law,       name: Law }
   - { id: prison,    name: Prison }
   - { id: patrol,    name: Patrol }    # streets the department drives
-  - { id: wanted,    name: Wanted }    # open counts: Criminal Record or Most Wanted (arrest triggers)
+  - { id: wanted,    name: Wanted }    # open counts: the Criminal Record (arrest triggers)
   - { id: contractor, name: Contractor } # county work orders: a legitimate reason to be at the station
   # The Undercroft storyline
   - { id: doing-time, name: Doing Time } # action tag, prison scenes only: works a count off the Record

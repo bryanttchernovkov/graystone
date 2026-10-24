@@ -257,7 +257,6 @@ actions:
       effects:
         - tracker.change: { body: -1 }
         - boost.change: { card: criminal-record, amount: +1 }
-        - boost.change: { card: most-wanted, amount: +1 }
       art:
         loras: [KreaEbonyBabe1]
         subject: >

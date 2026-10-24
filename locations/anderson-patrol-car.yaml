@@ -11,6 +11,10 @@ name: Deputy Anderson's cruiser
 tags: [law, patrol]
 hub: true
 description: A cruiser idling under the maples, window down, and a deputy behind the wheel who has already decided what she thinks of you.
+setback_penalty:   # Anderson's ground: a setback here with an open record is an arrest
+  requires: [wanted]
+  effects:
+    - move.to: anderson-arrest
 actions:
   - category: talk
     word: INTRODUCE

@@ -214,9 +214,9 @@ tags. Nothing in it is shaped around one storyline.
   card action, like Juno's SIMP) ends in `move.back` instead, which returns him to wherever he
   was without replaying it.
 - **Storyline mechanics live in cards.** For example, the Undercroft runs on the
-  *Criminal Record* dossier: each crime adds a count (three is Most Wanted), an arrest
-  carries it down to the Undercroft, and every **Doing Time** action there (a tag only prison
-  scenes carry) works one count off. Empty, it is *Time Served*, and he can sign out.
+  *Criminal Record* dossier: each crime adds a count (up to three), an open record makes a
+  setback on a deputy's ground an arrest, an arrest carries it down to the Undercroft, and every
+  **Doing Time** action there (a tag only prison scenes carry) works one count off. Empty, it is *Time Served*, and he can sign out.
 
 ## Art direction (canonical for `style.yaml`)
 

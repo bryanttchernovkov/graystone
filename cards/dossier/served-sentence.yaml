@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=../../../../schema/v2/card.json
-# Your Criminal Record (or Most Wanted), worked off to nothing in the Undercroft. Its tag
+# Your Criminal Record, worked off to nothing in the Undercroft. Its tag
 # `served` opens the sign-out actions in Cell Three (SIGN, COLLECT, THANK), which lose it.
 id: served-sentence
 kind: dossier

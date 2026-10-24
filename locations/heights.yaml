@@ -3,6 +3,10 @@ id: heights
 name: Graystone Heights
 tags: [patrol]
 description: Frame houses up a gentle hill under the maples, and a sheriff's cruiser parked down the block.
+setback_penalty:   # Anderson's ground: a setback here with an open record is an arrest
+  requires: [wanted]
+  effects:
+    - move.to: anderson-arrest
 actions:
   - category: talk
     word: APPROACH

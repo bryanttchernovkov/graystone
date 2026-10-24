@@ -7,6 +7,10 @@ name: Deputy Seo's cruiser
 tags: [law, patrol]
 hub: true
 description: The open door of a cruiser at the end of the wharf, a notebook on its roof, and Deputy Seo, watching everything at once.
+setback_penalty:   # Seo's ground: a setback here with an open record is an arrest
+  requires: [wanted]
+  effects:
+    - move.to: seo-arrest
 art:
   loras: ["DGirlsModel9:1"]
   subject: >

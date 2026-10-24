@@ -1,14 +1,19 @@
 # yaml-language-server: $schema=../../../schema/v2/location.json
 # The docks, looking out at the river: the wharf, a cargo ship tied up, and Deputy Seo's cruiser at
-# the end of it (a patrol location: Most Wanted's setback trap works here, and for now that is
-# still Anderson's arrest). In from Main Street; turning around (free) looks at the warehouses.
-# TALK-APPROACH (no record) takes you to Deputy Seo (her storyline). With an open record both actions
-# swap: RISK-APPROACH and RISK-LOITER each end face down in her arrest; she sees you first.
+# the end of it (Seo's ground: with an open record, any setback here, walking in included, ends
+# in her arrest). In from Main Street; turning around (free) looks at the warehouses.
+# TALK-APPROACH (no record) takes you to Deputy Seo (her storyline). With an open record it swaps
+# for RISK-APPROACH, which ends face down in her arrest: she sees you first. LOOK-WATCH stays open
+# with a record, as a gamble: a setback while watching is her arrest too.
 id: docks-river
 name: The docks, the river
 tags: [patrol]
 hub: true
 description: A concrete wharf, a rusting cargo ship tied up to it, the river wide and brown beyond, and a sheriff's cruiser parked at the end with a deputy standing beside it.
+setback_penalty:   # Seo's ground: a setback here with an open record is an arrest
+  requires: [wanted]
+  effects:
+    - move.to: seo-arrest
 actions:
   - category: talk
     word: APPROACH
@@ -44,24 +49,9 @@ actions:
         You're halfway down the wharf before you think to wonder where she went.
       effects:
         - move.to: seo-arrest
-  - category: risk
-    word: LOITER
-    cost: 1
-    requires: [wanted]
-    prompt: Lean on a bollard and watch the river for an hour, with open counts on your record.
-    result:
-      text: |
-        A barge goes downriver, low in the water with grain. Gulls fight over something on the
-        wharf. The cruiser at the end of it has its door open and nobody beside it.
-
-        You look for her along the ship's rail, then along the warehouses. You don't look
-        behind you.
-      effects:
-        - move.to: seo-arrest
   - category: look
     word: WATCH
     cost: 1
-    unless: [wanted]
     prompt: Lean on a bollard and watch the river for an hour.
     result:
       text: |
