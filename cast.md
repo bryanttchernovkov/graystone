@@ -41,9 +41,16 @@ In Graystone, use **only** these, at weight 1, and only when the image shows tha
 | `chastity_000005800:1` | a chastity cage in frame |
 | `"Krea2_BDSM Latex-Leather Megapack_V2E09:1"` | optional, for heavier BDSM gear |
 | `"Krea 2 - Strapon Dildo:1"` | strap-on, POV |
+| `"R2Y1DH5FQY41BT1Y6W67QWP730.nizLuQb9:1"` | facesitting, from under her looking up: she faces the lens and looks down at it |
+| `femdom_handjob_krea2_epoch_20:1` | her hand on him: a handjob or hand teasing she gives the player, POV from his eyes (the one exception to framing rule 1) |
 
-Not for this universe: the facesitting LoRA (not POV) and the other metal-cuffs LoRA.
-Facesitting is shot from the POV recipe alone.
+Not for this universe: the old facesitting LoRA (not POV) and the other metal-cuffs LoRA.
+
+**Facesitting and handjobs always use their LoRA.** Every result, card or ending image that
+shows facesitting carries `"R2Y1DH5FQY41BT1Y6W67QWP730.nizLuQb9:1"`, shot from under her
+looking up (Ashby's OFFER at Cell Three is the reference). Every image of her hand on him, a
+handjob or hand teasing, carries `femdom_handjob_krea2_epoch_20:1`, POV looking down (the
+Signora's FINISH in the back room and Ashby's ASK at Cell Three). Neither act is shot without its LoRA.
 
 ## The camera is the player
 
@@ -66,6 +73,11 @@ stranger around any garment or body part of the viewer's that the prompt names.
 
 1. **His genitals are never in frame.** When an act involves them, crop at his waist and show
    her: her face, her gloved hand at his belt, her other hand on his chest.
+   **Exception: her hand on him.** When she gives him a handjob or teases him with her hand,
+   the shot uses `femdom_handjob_krea2_epoch_20:1` and shows it: the camera tilted down, his
+   erect penis rising from the bottom center of the frame in her hand, her face beyond it
+   looking into the lens. Name it plainly ("an erect penis that rises from the bottom center
+   of the frame") and nothing else of him. Every other act still crops at his waist.
 2. **He is not in the picture.** By default nothing of his body is in frame, and the bottom
    edge is described as the place (the flagstones between her boots, the desk edge, the cot
    rail). Never mention his knees, lap, legs, jeans, belt or crotch. His hands appear only
@@ -161,8 +173,10 @@ One image takes about seven minutes; test one image per change, never a batch.
 - **Viewer leaks.** Shots from the cot or the floor with her legs spread above or across the lens
   (boot on the cot rail with her leg raised, a woman lowering herself onto the lens) make the
   model add the viewer's penis, or draw intercourse. So:
-  - **Facesitting** is shot from behind her, **clothed, the moment before**: her uniformed ass
-    in the breeches lowering toward the lens, boots either side, her face over her shoulder.
+  - **Facesitting** uses the facesitting LoRA and is shot **from under her, looking up**: she
+    sits on the lens facing it, fully in uniform, her breeches' crotch and thighs filling the
+    bottom of the frame, her bust above, looking down into the camera. (Before that LoRA it was
+    shot from behind, the moment before.)
   - **Boot worship** at the cot is a **detail shot**, from the toe to just above the knee, with
     no hip or crotch in frame.
 - **Heels:** say "low, flat stacked-leather riding heels", or talk of a "heel" turns the riding
@@ -208,6 +222,10 @@ One image takes about seven minutes; test one image per change, never a batch.
   the tie (her Paypig card): the model fills a missing garment from the nearest color. Whenever
   the frame reaches her waist, name the duty belt and "tan riding breeches, the same khaki tan
   as her shirt". A chest-up or face shot says where the frame stops instead.
+- **Thighs filling the frame turn azure.** In Ashby's facesitting shot (OFFER) "a vivid azure
+  blue stripe down each outer seam" on breeches that filled the frame rendered as broad azure
+  panels over half of each thigh, and "a thin piping line" still left azure blotches. When the
+  breeches fill the frame, leave the stripe out altogether.
 - **Describe what you want, never what you don't** (prompt guide §2). Whatever a prompt names, it
   draws, negated or not. "No post, no gate, no gap" grew posts and a gate around the holding cage
   four times; "no fences, cages or partitions" fenced her desk in; "nobody standing anywhere" kept

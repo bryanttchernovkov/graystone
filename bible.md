@@ -239,7 +239,9 @@ image she appears in carries it** (`art.loras`), together with her full cast blo
 - **Every result with the player in it is a first-person point-of-view shot.** Say where the
   camera is: kneeling on flagstone, on a cell cot, standing at a counter.
 - **The player is barely in the picture:** at most his bare hands and forearms, described with
-  the POV block in `cast.md`. Never his face, his body or his name.
+  the POV block in `cast.md`. Never his face, his body or his name. The one exception: when
+  she gives him a handjob or teases him with her hand, his penis is in frame in her hand
+  (the handjob LoRA and framing rule 1 in `cast.md`).
 - **Establishing shots never contain the player.** Eye-level photographs from a visitor's
   position; the woman who owns the place may look into the lens.
 - **The women act toward the lens.** Her gaze, her hand, her boot come at the camera.
