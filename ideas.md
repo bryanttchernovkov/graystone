@@ -5,7 +5,8 @@ Ideas for graystone
 ## V0.2:
 - [x] Sentence length; maybe, depending on the boosts we have on our apb; we get a 'lighter' or heavier sentence. I'm thinking 1-3 bips of sentence? This could be engine work too.
 - [x] Seo and her arrest sequence, kinks/storyline; 
-- [X] Graybloods 1 - steal / pay money (here)
+- [x] Graybloods 1 - steal / pay money (here)
+- [x] Try / test femdompov and facesit loras
 - [ ] 'caught' as suspect int he police station - some locations have a 'chance' of getting caught we are there; to be determined which officer where; We *could*, depending on the officer, end up in the sheriff's officer. Default is a spanking session. Hard. *but* if we have an active 'crime' card; meaning, we're on a crime, we're suspect. we go to an interrogation chamber, where a detective interrogates us. Basic options are Confess Or Deny. We should have some sort of minigame perhaps? 
 - [ ] Date with Ashby
 - [x] Lore/Claude check quality check

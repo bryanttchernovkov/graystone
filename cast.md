@@ -38,7 +38,7 @@ In Graystone, use **only** these, at weight 1, and only when the image shows tha
 |---|---|
 | `SA86RN444WSD83T4QX4PYS3P80:1` | detailed handcuffs (German handcuffs; trigger added by the loader). Name them **"clejuso handcuffs"** in the subject: the brand keyword cues the LoRA and keeps them apart from generic cuffs or bracelets. Keep the pose simple ("chrome clejuso handcuffs dangling from her grip"); open, swung cuffs render as a tangle. |
 | `HandgagPOV_Krea2_v1:1` | her gloved or bare hand over the viewer's mouth |
-| `chastity_000005800:1` | a chastity cage in frame |
+| `pnkcg_krea2_000000750:1` | a chastity cage in frame. Graystone has **one cage: a small pink plastic chastity cage**, the county's standard issue and Juno's alike, in prose and art. The LoRA was trained on a woman holding it, empty, as a threat or a tease: write "a small pink plastic chastity cage, empty and unlocked, its curved pink bars open and hollow", held up in her hand by her face or chest. Worn or lying on a table is untested. |
 | `"Krea2_BDSM Latex-Leather Megapack_V2E09:1"` | optional, for heavier BDSM gear |
 | `"Krea 2 - Strapon Dildo:1"` | strap-on, POV |
 | `"R2Y1DH5FQY41BT1Y6W67QWP730.nizLuQb9:1"` | facesitting, from under her looking up: she faces the lens and looks down at it |
@@ -196,10 +196,12 @@ One image takes about seven minutes; test one image per change, never a batch.
 - **Every hand gets a job near her face.** "Her other arm reaches out of the frame" grows a
   third arm. Give each of her hands a visible task (cage in one, key in the other) and keep
   both raised close to her face or chest.
-- **The chastity LoRA fills an empty cage.** When she holds the cage, write it as "empty,
-  unlocked … its curved bars open and hollow", or it renders with anatomy inside. Hooked on a
-  finger at chest height it still filled (Juno's cage photo): hang it up by her face, "dangling by
-  a small open padlock … the light shining straight through it", against her hair.
+- **The old chastity LoRA filled an empty cage** (`chastity_000005800:1`, retired for the pink
+  cage). When she held the cage it rendered with anatomy inside unless written as "empty,
+  unlocked … its curved bars open and hollow", and hooked on a finger at chest height it still
+  filled (Juno's cage photo); hanging it by her face, "dangling by a small open padlock … the
+  light shining straight through it", worked. Keep that wording with the pink LoRA until its
+  renders say otherwise.
 - **A jacket "hanging open" is worn half.** Say both arms are in its sleeves and both
   shoulders are covered, and put the patch and chevrons on the jacket's sleeves.
 - **The outdoor jacket and hat fight each other** (Anderson's first arrest render, Ashby's
@@ -260,10 +262,10 @@ One image takes about seven minutes; test one image per change, never a batch.
   shot from directly above, wood grain to every edge, his one hand resting beside it. Worked
   (boots, socks). The held phone leaked even a chest-up bubble-tea selfie (her body under the
   phone, her nails on his hands), so use the table for every new DM.
-- **Chastity cage LoRA under trial:** `0EK4J7JPM6F67BN8VC86C3DFG0:1` (`30QCFXF2SWVGFPBY9SE3M51VK0`
-  was rejected: it put a filled cage on the viewer, below the phone), a flat metal cage, the metal cap type ("an empty flat metal chastity cage of polished stainless steel, the metal cap
-  type: a short, flat, rounded steel cap … fixed to a smooth round steel base ring"). First on
-  the DM cage; if the author keeps it, it replaces `chastity_000005800:1` in the kink table.
+- **Chastity cage LoRAs, settled:** the pink plastic cage (`pnkcg_krea2_000000750:1`) replaced
+  every metal cage. Tried and dropped before it: `0EK4J7JPM6F67BN8VC86C3DFG0:1` (a flat metal
+  cap cage) and `30QCFXF2SWVGFPBY9SE3M51VK0` (it put a filled cage on the viewer, below the
+  phone).
 - **"Flat on the back, looking up" came out eye level.** Seo's TRAMPLE and RIGHTS renders sat her
   down on the floor beside the camera, legs out, with ordinary pews, windows or horizon behind.
   Being tried (the author's tip): open with "Extreme low-angle worm's-eye … pointing straight up

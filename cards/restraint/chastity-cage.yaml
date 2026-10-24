@@ -3,18 +3,23 @@ id: chastity-cage
 kind: restraint
 name: Chastity Cage
 tags: [caged]
-text: Small, steel, county property. The key is in somebody's shirt pocket, and it isn't yours.
+text: Pink plastic, county property. The key is in somebody's shirt pocket, and it isn't yours.
 setback_penalty:
   tags: [prison]
   effects:
     - tracker.change: { nerve: -1 }
 art:
-  loras: ["chastity_000005800:1"]
+  loras: ["pnkcg_krea2_000000750:1"]
   subject: >
-    Still-life close-up photograph of a small stainless steel male chastity cage with a ring and
-    a tiny brass padlock, lying on a folded tan uniform shirt pocket flap piped in vivid azure
-    blue beside a polished gold six-point star badge, a tiny brass key on a short chain resting
-    next to the padlock. Square composition, the cage in the center. A single warm bulb above
-    throws sharp highlights on the polished steel and brass and soft shadow into the twill.
-    Palette of polished steel, brass, tan twill, vivid azure blue and gold; natural texture,
-    fine 35 mm film grain, shallow depth of field on the padlock.
+    Square close-up photograph of a woman's chest in a crisp, pressed tan uniform shirt of heavy
+    cotton twill, framed from the knot of her necktie to her belt. In her raised
+    black-gloved right hand, held up in front of her left breast pocket, she holds a small pink
+    plastic chastity cage, empty and unlocked, its curved pink bars open and hollow, the light
+    shining straight through them, a tiny brass padlock hanging open from its ring. The left
+    breast pocket flap is piped in vivid azure blue and unbuttoned, a polished gold six-point
+    star badge pinned above it, and a tiny brass key on a short chain hangs out of the pocket
+    over the flap. A vivid, saturated azure blue necktie with a small gold tie bar runs down the
+    center of the shirt. Square composition, the cage in the center. A single warm bulb above
+    throws sharp highlights on the pink plastic, the brass and the star, and soft shadow into
+    the twill. Palette of pink plastic, black leather, brass, tan twill, vivid azure blue and
+    gold; natural texture, fine 35 mm film grain, shallow depth of field on the cage.

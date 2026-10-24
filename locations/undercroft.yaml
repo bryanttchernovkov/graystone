@@ -108,8 +108,9 @@ actions:
         A belly chain goes around your waist and through the cuffs. A shorter one runs from one
         ankle cuff to the other. She tugs the whole rig once, hard.
 
-        Then she takes a small steel cage out of the desk drawer, county property, and holds
-        it up so you can see it. "Standard issue. Belt."
+        Then she takes a small pink plastic cage out of the desk drawer, county property, and
+        holds it up between two gloved fingers so you can see it. "Standard issue. The county
+        picked the color. Belt."
 
         She opens your jeans herself, fits the ring and the cage with her gloves on, quick and
         clinical, and snaps the padlock shut. The key goes into her left breast pocket, behind
@@ -134,38 +135,39 @@ actions:
         - card.gain: ashbys-good-side
         - move.to: undercroft-cell
       art:
-        loras: [KreaEbonyBabe1, "SA86RN444WSD83T4QX4PYS3P80:1"]
+        loras: ["KreaEbonyBabe1", "pnkcg_krea2_000000750:1"]
         subject: >
-          First-person point-of-view widescreen photograph from standing eye height across a gray
-          steel desk in a crypt jail built of smooth dressed limestone ashlar blocks laid in
-          straight courses with thin mortar joints under a whitewashed pointed vault, the camera
-          tilted down. Two bare wrists held together, palms down, extend from the bottom edge of the
-          frame to its center over the desk: a pale man's bare hands and forearms with short
-          unpolished nails. A pair of polished steel hinged police handcuffs is locked on the right
-          wrist, and the woman across the desk is closing the second ring around the left wrist with
-          both black-gloved hands, her gloved thumb pressing the steel ratchet home. She leans over
-          the desk at arm's length, filling the upper two-thirds of the frame from the waist up, her
-          face directly above the cuffs. She looks up from the cuffs directly into the camera,
-          making eye contact with the viewer, with cold, focused control: eyes hard and narrowed,
-          brows lowered, jaw set, lips parted as she gives the order. She is a Black American woman
-          in her early thirties, tall and athletic with a full, heavy bust, broad straight shoulders
-          and a soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the
-          nape and falling to the middle of her back, straight dark brows, black leather duty gloves
-          and a ring of heavy iron keys on a steel chain at her hip. She wears the Graystone County
-          Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill
-          with a pointed collar, a full button-front placket, two buttoned flap chest pockets piped
-          in vivid azure blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid
-          azure blue and gold patch on each upper sleeve and a polished gold six-point star badge
-          pinned over the left pocket; a vivid, saturated azure blue necktie with a small gold tie
-          bar hanging forward as she leans; a black leather duty belt with a polished brass buckle;
-          her head is bare. Three vivid azure blue chevrons sit on each upper sleeve beneath the
-          patch. On the desk beside the wrists lie a coiled steel belly chain and an open ruled
-          ledger. Behind her, a pegboard of leg irons and chains hangs on the dressed limestone
-          ashlar wall under a pointed arch. A caged incandescent bulb directly overhead throws hard
-          warm light down onto her gloves, the polished steel cuffs and the pale wrists, leaving the
-          vault behind her in soft amber shadow. Palette of polished steel, black leather, uniform
-          tan, vivid azure blue and limestone gray; natural skin texture, fine 35 mm film grain,
-          sharp focus on the cuffs and her eyes.
+          First-person point-of-view widescreen photograph from standing eye height across a
+          gray steel desk in a crypt jail built of smooth dressed limestone ashlar blocks laid
+          in straight courses with thin mortar joints under a whitewashed pointed vault, the
+          camera level. One woman stands behind the desk at arm's length, framed from the waist
+          up in the center of the frame. Her raised black-gloved right hand is held up in front
+          of her left breast pocket, and from her fingers a small pink plastic chastity cage
+          dangles by its tiny open brass padlock, empty and unlocked, its curved pink bars open
+          and hollow, the light shining straight through them. Her gloved left hand rests flat
+          on the desk. She looks directly into the camera, making eye contact with the viewer,
+          with calm control and almost smug disdain: chin raised, eyes half-lidded, looking down
+          her nose at the lens, one corner of her mouth pulled into a faint smirk. She is a
+          Black American woman in her early thirties, tall and athletic with a full, heavy bust,
+          broad straight shoulders and a soldier's posture, smooth dark brown skin, long black
+          dreadlocks gathered at the nape and falling to the middle of her back, straight dark
+          brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her
+          hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan
+          long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full
+          button-front placket, two buttoned flap chest pockets piped in vivid azure blue,
+          shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold
+          patch on each upper sleeve and a polished gold six-point star badge pinned over the
+          left pocket; a vivid, saturated azure blue necktie with a small gold tie bar; tan
+          riding breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down
+          the outer seam; a black leather duty belt with a polished brass buckle; her head is
+          bare. Three vivid azure blue chevrons sit on each upper sleeve beneath the patch. On
+          the desk in front of her lie a coiled steel belly chain and an open ruled ledger.
+          Behind her, a pegboard of leg irons and chains hangs on the dressed limestone ashlar
+          wall under a pointed arch. A caged incandescent bulb directly overhead throws hard
+          warm light down onto her glove, the pink cage and her face, leaving the vault behind
+          her in soft amber shadow. Palette of pink plastic, black leather, uniform tan, vivid
+          azure blue and limestone gray; natural skin texture, fine 35 mm film grain, sharp
+          focus on the cage and her eyes.
   - category: look
     word: READ
     cost: 1
