@@ -12,7 +12,7 @@ Ideas for graystone
 - [x] Lore/Claude check quality check
 - [x] Rethink wanted/arrest/Most Wanted: Most Wanted is gone. Any open record makes a setback on a deputy's ground her arrest (location setback penalties, engine ADR 0044), so the wharf is Seo's and the Heights Anderson's, and SLIP just adds a count to the one Record.
 - [x] metal chastity cage lora
-- [ ] pov chastity cage teased lora
+- [x] pov chastity cage teased lora
 - [ ] holding hinged cuff lora
   
  ## V0.2.1:
