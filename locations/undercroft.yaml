@@ -108,9 +108,9 @@ actions:
         A belly chain goes around your waist and through the cuffs. A shorter one runs from one
         ankle cuff to the other. She tugs the whole rig once, hard.
 
-        Then she takes a small pink plastic cage out of the desk drawer, county property, and
-        holds it up between two gloved fingers so you can see it. "Standard issue. The county
-        picked the color. Belt."
+        Then she takes a small stainless steel cage out of the desk drawer, county property, and
+        holds it up between two gloved fingers so you can see it. "Standard issue. Surgical
+        steel, so don't get ideas. Belt."
 
         She opens your jeans herself, fits the ring and the cage with her gloves on, quick and
         clinical, and snaps the padlock shut. The key goes into her left breast pocket, behind
@@ -135,16 +135,16 @@ actions:
         - card.gain: ashbys-good-side
         - move.to: undercroft-cell
       art:
-        loras: ["KreaEbonyBabe1", "pnkcg_krea2_000000750:1"]
+        loras: ["KreaEbonyBabe1", "mtlcg7d_krea2_000001250:1"]
         subject: >
           First-person point-of-view widescreen photograph from standing eye height across a
           gray steel desk in a crypt jail built of smooth dressed limestone ashlar blocks laid
           in straight courses with thin mortar joints under a whitewashed pointed vault, the
           camera level. One woman stands behind the desk at arm's length, framed from the waist
           up in the center of the frame. Her raised black-gloved right hand is held up in front
-          of her left breast pocket, and from her fingers a small pink plastic chastity cage
-          dangles by its tiny open brass padlock, empty and unlocked, its curved pink bars open
-          and hollow, the light shining straight through them. Her gloved left hand rests flat
+          of her left breast pocket, and from her fingers an empty stainless steel mtlcg7
+          chastity cage dangles by its tiny open brass padlock, unlocked, its curved polished
+          steel bars open and hollow, the light shining straight through them. Her gloved left hand rests flat
           on the desk. She looks directly into the camera, making eye contact with the viewer,
           with calm control and almost smug disdain: chin raised, eyes half-lidded, looking down
           her nose at the lens, one corner of her mouth pulled into a faint smirk. She is a
@@ -164,8 +164,8 @@ actions:
           the desk in front of her lie a coiled steel belly chain and an open ruled ledger.
           Behind her, a pegboard of leg irons and chains hangs on the dressed limestone ashlar
           wall under a pointed arch. A caged incandescent bulb directly overhead throws hard
-          warm light down onto her glove, the pink cage and her face, leaving the vault behind
-          her in soft amber shadow. Palette of pink plastic, black leather, uniform tan, vivid
+          warm light down onto her glove, the steel cage and her face, leaving the vault behind
+          her in soft amber shadow. Palette of polished steel, black leather, uniform tan, vivid
           azure blue and limestone gray; natural skin texture, fine 35 mm film grain, sharp
           focus on the cage and her eyes.
   - category: look
