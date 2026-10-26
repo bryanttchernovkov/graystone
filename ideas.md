@@ -8,17 +8,21 @@ Ideas for graystone
 - [x] Graybloods 1 - steal / pay money (here)
 - [x] Try / test femdompov and facesit loras
 - [ ] 'caught' as suspect int he police station - some locations have a 'chance' of getting caught we are there; to be determined which officer where; We *could*, depending on the officer, end up in the sheriff's officer. Default is a spanking session. Hard. Maybe some other punishments? cornertime? writing tasks?
-- [ ] Date with Ashby
 - [x] Lore/Claude check quality check
 - [x] Rethink wanted/arrest/Most Wanted: Most Wanted is gone. Any open record makes a setback on a deputy's ground her arrest (location setback penalties, engine ADR 0044), so the wharf is Seo's and the Heights Anderson's, and SLIP just adds a count to the one Record.
 - [x] metal chastity cage lora
 - [x] pov chastity cage teased lora
 - [ ] holding hinged cuff lora
+- [ ] homemade character loras
+- [ ] no internet loras
+- [ ] rerender all images
   
  ## V0.2.1:
- - Rework location/structure?
+ - Rework location/structure of files?
 
 ## V0.3:
+- [ ] Date with Ashby
+- [ ] 'Findom' Shopping afternoon with Anderson
 - [ ] Locations:
   - [ ] Highway; at least 2 lenghts of highway locations, prompts how us driving in our car; we can go back and forht. Risk is, on both llocation, if we suffer a setback we get pulled over by a new deputy. 
   - [ ] Motel. With owner, and a room; room is occupied by britt dekker, targetr of our 'smuggle' option.
@@ -43,6 +47,7 @@ Ideas for graystone
   2. [ ] steal from blue triad club
 - [ ] More sentence options/expand the prison game. Maybe a different cell/guard to mix it up?
 - [ ] 'Blue Triad Gang ' - operates from a fancy nightclub. Meet the 'boss' upstairs, or end up in trouble in the basement
+  - [ ] Clubbing / undercover with seo min
   - [ ] Steal from blue triad gone wrong -> basement 'captive' 
   - [ ] Jobs
     1. [ ] Steal evidence from police
