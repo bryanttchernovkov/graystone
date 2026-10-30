@@ -1,7 +1,7 @@
-# yaml-language-server: $schema=../../schema/v2/universe.json
+# yaml-language-server: $schema=../../schema/v3/universe.json
 # The universe-wide layer only. Storylines bring their own cards (a Criminal Record, a gang's
 # favor) and add tags as their locations need them.
-format: 2
+format: 3
 id: graystone
 name: Graystone
 tagline: Crime is down in Graystone. Nobody pretends to wonder why.

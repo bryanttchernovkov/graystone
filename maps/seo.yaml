@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/map.json
+# yaml-language-server: $schema=../../../schema/v3/map.json
 # Deputy Seo's storyline: events only, reached by move.to. Her spot by the cruiser: TALK-APPROACH
 # at the docks' river view (no record). Out goes back to the river view. Her arrest: RISK-APPROACH
 # there, or any setback on the docks (open record); SURRENDER goes back to the river view. Taken

@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # Event: across the desk from Sheriff Brandt in her office. Reached by move.to from TALK-APPROACH
 # in her office (its result carries her greeting, so nothing replays here); out goes back to the
 # office. Her scenes are still to come.

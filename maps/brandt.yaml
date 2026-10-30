@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/map.json
+# yaml-language-server: $schema=../../../schema/v3/map.json
 # Sheriff Brandt: events only, reached by move.to. Her desk: TALK-APPROACH in her office in the
 # choir loft. Out goes back to the office.
 id: brandt

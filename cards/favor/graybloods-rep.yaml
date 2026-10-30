@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../../schema/v2/card.json
+# yaml-language-server: $schema=../../../../schema/v3/card.json
 # From DEAL-REPORT at the warehouse wall: Red's Errand paid off. Its tag `blooded` is what the
 # GrayBloods' next crime job will require. Nothing reads it yet.
 id: graybloods-rep

@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # A reaction beat: entered only by a random move.to, it shows her reaction and returns you.
 id: undercroft-chore-fault
 name: Cell Three

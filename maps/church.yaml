@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/map.json
+# yaml-language-server: $schema=../../../schema/v3/map.json
 # The First Church station, walkable parts. LO: the narthex and Niamh Doyle's front desk, in from
 # Main Street (up the steps). Nothing walks past her: the back is reached only through DEAL-SIGN
 # at her desk, which requires a contractor badge (tag contractor). From the back:

@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/map.json
+# yaml-language-server: $schema=../../../schema/v3/map.json
 # Niamh Doyle, the department's office manager: events only, reached by move.to. Her front desk:
 # TALK-APPROACH in the narthex. Out goes back to the narthex; DEAL-SIGN (contractor) sends you
 # through to the bullpen.

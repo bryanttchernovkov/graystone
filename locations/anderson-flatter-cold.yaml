@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # Beat: Deputy Anderson takes your compliment apart. Reached by move.to (random) from
 # TALK-FLATTER at her cruiser; sends you straight back to her window.
 id: anderson-flatter-cold

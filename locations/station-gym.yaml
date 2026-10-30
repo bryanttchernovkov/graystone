@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # The First Church station, the back: the gym, a small annex built onto the back of the church,
 # through the side door and a short covered walkway. North back to the bullpen.
 id: station-gym

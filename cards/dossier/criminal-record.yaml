@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../../schema/v2/card.json
+# yaml-language-server: $schema=../../../../schema/v3/card.json
 # The one card that carries how much trouble you're in, outside and inside. Its boost is its
 # counts: each crime gains it again (+1 count, up to 3; TAKE-HACK, SLIP). Any open record (tag
 # wanted) turns RISK-APPROACH at a patrol car (and anything at the docks' river view) into an

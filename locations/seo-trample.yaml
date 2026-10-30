@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # Event: Deputy Seo tramples you on the floor of her holding cage. Reached by move.to from
 # TALK-PROTEST and LOOK-STARE in seo-holding; the arrival costs Body and goes back there.
 # Art: the shot from the floor, her raised sole filling the frame, her face beyond it.

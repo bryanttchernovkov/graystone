@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # Event: Sergeant Ashby arrests you in Café Linde. Reached by move.to from RISK-APPROACH at the
 # café window (open record). Hands-on where Anderson's arrest is mouth: an arm bar onto the table,
 # a knee in the back, cuffs on the floor. Handcuffs go on, and she walks you across the square

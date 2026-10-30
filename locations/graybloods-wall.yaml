@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # Event: up close with Red, a GrayBlood, against the warehouse wall at the docks. Reached by
 # move.to from TALK-APPROACH at the docks' warehouse view (its result carries her greeting, so
 # nothing replays here); out goes back to the warehouse view. TALK-ASK gives Red's Errand;

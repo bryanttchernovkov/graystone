@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # Event: at Juno Vance's corner table in the library. Reached by move.to from TALK-APPROACH in
 # the computer corner (its result carries her greeting, so nothing replays here); out goes back
 # to the computer corner. Her scenes here are still to come; a later one takes you home with her

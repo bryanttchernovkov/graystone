@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../../schema/v2/card.json
+# yaml-language-server: $schema=../../../../schema/v3/card.json
 # Seo's Snitch, full. A placeholder for her informant storyline, which comes with the crime
 # jobs; tag `informant` is what it will require. Nothing reads it yet.
 id: seos-informant

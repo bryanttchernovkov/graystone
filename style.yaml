@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../schema/v2/style.json
+# yaml-language-server: $schema=../../schema/v3/style.json
 comfy:
   url: http://127.0.0.1:8188
   timeout_seconds: 3600

@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/map.json
+# yaml-language-server: $schema=../../../schema/v3/map.json
 # Inside 55 Graystone Heights: the living room downstairs, the bedroom up the stairs.
 # home-laptop is an event (WORK-LAPTOP in the living room); closing it returns you there.
 id: home

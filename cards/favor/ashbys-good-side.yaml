@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../../schema/v2/card.json
+# yaml-language-server: $schema=../../../../schema/v3/card.json
 id: ashbys-good-side
 kind: favor
 name: Ashby's Good Side

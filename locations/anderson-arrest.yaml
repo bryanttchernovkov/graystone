@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # Event: Deputy Anderson arrests you. Reached by move.to from RISK-APPROACH at the Heights (open
 # record) and from the setback penalty on her ground (open record). The arrival is the arrest:
 # Handcuffs go on (off again in the Undercroft) and you're taken to her holding cage at the

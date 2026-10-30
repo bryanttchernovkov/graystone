@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # The Carnegie library, looking across the reading room. In from Mill Street; turning around
 # (free) looks at the computer corner, where Juno Vance sits. Miss Carrow, the librarian, sits
 # at the circulation desk: TALK-APPROACH takes you to her desk (her storyline).

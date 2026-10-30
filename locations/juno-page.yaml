@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # Event: Juno Vance's subscription page, @rootkitty, on the laptop at home. Reached by move.to
 # from LOOK-SCROLL on the laptop (always offered there); out closes the tab, back to the laptop.
 # DEAL-SUBSCRIBE gives Subscribed: @rootkitty (tag subscribed hides it after); from then on the

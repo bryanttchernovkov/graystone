@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/map.json
+# yaml-language-server: $schema=../../../schema/v3/map.json
 # The Undercroft is closed: no walkable exits. You move between its locations only through
 # results (intake → cell, TURN between the cell's two views, reaction beats and back).
 id: station

@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../../schema/v2/card.json
+# yaml-language-server: $schema=../../../../schema/v3/card.json
 # From DEAL-SURRENDER in Seo's arrest: you gave her the evidence, she let you go. Tip actions
 # (tag `tip`: telling her what you've heard about a crime) fill its two slots; full, it becomes
 # Seo's Informant. Nothing carries `tip` yet: the tips come with the crime jobs.

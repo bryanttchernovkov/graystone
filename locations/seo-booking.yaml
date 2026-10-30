@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # Event: Deputy Seo books you into the holding cage in the side aisle of the First Church and
 # strips you. Reached only by move.to from seo-rights. The arrival takes your clothes (Nude) and
 # goes on to her holding cage (seo-holding), which has no arrival of its own, so its beats can

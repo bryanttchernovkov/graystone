@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # Event: the laptop at home. Reached only by move.to from WORK-LAPTOP in home-living (always
 # offered there); the only exit, out, closes it and puts you back in the living room.
 # A hub: each program once per run, except LOOK-SCROLL (always), which opens Juno Vance's page.

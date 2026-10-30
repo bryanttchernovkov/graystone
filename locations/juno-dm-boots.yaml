@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # Beat: a photo from Juno Vance, bought with SIMP on Subscribed: @rootkitty or Rootkitty's
 # Simp, from anywhere. Reached by move.to (random) from that card action; move.back returns
 # you to wherever you were, without its arrival (ADR 0043 in the engine repo).

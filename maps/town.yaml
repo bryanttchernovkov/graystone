@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/map.json
+# yaml-language-server: $schema=../../../schema/v3/map.json
 # Graystone's streets: walkable places only (events live on their storyline's map). Main Street is one spot seen two ways: MN looks north to the square,
 # MS looks south to the Heights. Turning around is free; walking on costs the usual die.
 # The grid places locations for ./sw map; the view-based links are portals (walls stop the

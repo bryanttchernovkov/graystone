@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/map.json
+# yaml-language-server: $schema=../../../schema/v3/map.json
 # The GrayBloods' storyline: events only, reached by move.to. Red at the warehouse wall:
 # TALK-APPROACH at the docks' warehouse view. Out goes back to the warehouse view.
 id: graybloods

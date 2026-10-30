@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # Event: at Niamh Doyle's front desk in the narthex. Reached by move.to from TALK-APPROACH in the
 # narthex (its result carries her greeting, so nothing replays here); out goes back to the
 # narthex. DEAL-SIGN, with a contractor badge (tag contractor) and no record, signs you through to

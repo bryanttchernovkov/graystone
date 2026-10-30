@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../schema/v2/location.json
+# yaml-language-server: $schema=../../../schema/v3/location.json
 # Event: Deputy Seo arrests you on the wharf. Reached by move.to from RISK-APPROACH at the docks'
 # river view (open record), and from the setback penalty on her ground (open record): she is
 # never by the car when you look for her. Protocol, not force: a felony prone from behind, every

@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../../../../schema/v2/card.json
+# yaml-language-server: $schema=../../../../schema/v3/card.json
 # From Deputy Anderson's Sharpie in the station kitchenette (beat anderson-kitchen-sharpie).
 # Forced: it's on your face. Its action tag puts `marked` on everything you do, so every setback
 # costs Nerve. LOOK-SCRUB in your bedroom at home (requires marked) takes it off.
