@@ -28,37 +28,21 @@ actions:
       effects:
         - move.to: { random: [anderson-kitchen-sharpie, anderson-kitchen-spit, anderson-kitchen-boot] }
       art:
-        loras: ["DGirlsModel14:1"]
+        loras: ["tfny7_krea2_000000800:1"]
         subject: >
-          First-person point-of-view widescreen photograph from standing eye height in a
-          small staff kitchenette that was once a church sacristy, the camera level. Two
-          paces away, one woman leans back with her hip against a short laminate counter
-          beside a large coffee machine, framed from mid-thigh to just above her head, a
-          white mug in her right hand. She looks directly into the camera, making eye
-          contact with the viewer, with slow, delighted contempt: green eyes widened in
-          mock surprise, one dark brow arched high, berry lips parted in a mocking grin.
-          She is a white American woman of twenty-four, slim and toned with a full bust
-          and long legs, fair skin, long wavy platinum-blonde hair with bold jet-black
-          streak highlights falling past her shoulders, dark elegant makeup with smoky
-          black eyeliner, long dark lashes and deep berry lipstick, striking bright green
-          eyes, arched dark brows, and long almond-shaped nails painted glossy black. She
-          wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved
-          uniform shirt of heavy cotton twill with a pointed collar, a full button-front
-          placket, two buttoned flap chest pockets piped in vivid azure blue, shoulder
-          epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold
-          patch on each upper sleeve and a polished gold six-point star badge pinned over
-          the left pocket; a vivid, saturated azure blue necktie with a small gold tie
-          bar; tan riding breeches, the same khaki tan as her shirt, with a vivid azure
-          blue stripe down the outer seam; a black leather duty belt with a polished brass
-          buckle; and the tops of stiff, mirror-polished black leather thigh-high riding
-          boots at the bottom edge of the frame; her head is bare and her hands are bare.
-          Directly behind her, close and filling the background, a white refrigerator door
-          crowded with pinned shift rotas, takeout menus, magnets and a wall calendar, and
-          beside it on the pale limestone wall a wooden rack of mismatched mugs. A warm
-          overhead light lights her face from above. Restrained palette of pale limestone,
-          white appliances, uniform tan, vivid azure blue, platinum blonde and coffee
-          brown; natural skin texture, fine 35 mm film grain, shallow depth of field on
-          her eyes.
+          First-person point-of-view widescreen photograph from standing eye height in a small
+          staff kitchenette that was once a church sacristy, the camera level. Two paces away,
+          tfny7 woman in her tfny7 uniform leans back with her hip against a short laminate
+          counter beside a large coffee machine, framed from mid-thigh to just above her head, a
+          white mug in her right hand. She looks directly into the camera, making eye contact
+          with the viewer, with slow, delighted contempt: green eyes widened in mock surprise,
+          one dark brow arched high, berry lips parted in a mocking grin. Directly behind her,
+          close and filling the background, a white refrigerator door crowded with pinned shift
+          rotas, takeout menus, magnets and a wall calendar, and beside it on the pale limestone
+          wall a wooden rack of mismatched mugs. A warm overhead light lights her face from
+          above. Restrained palette of pale limestone, white appliances, uniform tan, vivid
+          azure blue, platinum blonde and coffee brown; natural skin texture, fine 35 mm film
+          grain, shallow depth of field on her eyes.
   - category: take
     word: COFFEE
     cost: 1

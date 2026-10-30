@@ -67,31 +67,24 @@ actions:
         - tracker.change: { nerve: -1 }
         - skill.gain: work
       art:
-        loras: ["DMilfModel7:1"]
+        loras: ["ferrina_krea2_000001200:1"]
         subject: >
           First-person point-of-view widescreen photograph from seated eye height on a
-          bentwood chair in the back room of a small café, the camera level. One woman
-          stands alone a pace in front of the lens, framed from the waist up, the
-          bottom edge of the frame at her black apron. She looks directly into the
-          camera, making eye contact with the viewer, with cool, clinical interest:
-          green eyes narrowed and attentive behind her glasses, one dark brow raised,
-          red lips parted mid-word. She is a white American woman of forty with an
-          hourglass figure, a large, full bust and a narrow waist, fair skin, glossy
-          shoulder-length dark brunette hair with soft waves, black rectangular
-          thick-rimmed glasses, bright green eyes, defined dark brows, and glossy red
-          lipstick. She wears a red silk blouse with long sleeves and a soft collar,
-          the top two buttons open, tucked into tailored black trousers, and a crisp
-          black bib apron tied snugly at the waist, its straps smooth over her
-          shoulders; black patent high-heeled pumps show under the trouser hems. She
-          holds a small white porcelain espresso saucer flat at the height of her
-          chest in her left hand, and her right hand is raised beside her face, palm
-          out, red nails spread, in a signal to stop. Behind her, out of focus, burlap
-          sacks of green coffee stacked high, a small black drum coffee roaster and a
-          scrubbed steel prep table. A single bare bulb hanging above and in front of
+          bentwood chair in the back room of a small café, the camera level. ferrina woman
+          in her red work blouse and black apron, wearing her thick black rectangular
+          glasses, stands alone a pace in front of the lens, framed from the waist up, the
+          bottom edge of the frame at her black apron. She looks directly into the camera,
+          making eye contact with the viewer, with cool, clinical interest: green eyes
+          narrowed and attentive behind her glasses, one dark brow raised, red lips parted
+          mid-word. She holds a small white porcelain espresso saucer flat at the height
+          of her chest in her left hand, and her right hand is raised beside her face,
+          palm out, red nails spread, in a signal to stop. Behind her, out of focus,
+          burlap sacks of green coffee stacked high, a small black drum coffee roaster and
+          a scrubbed steel prep table. A single bare bulb hanging above and in front of
           her lights her face, her glasses and the red silk warm and hard, the sacks
-          falling into amber shadow. Restrained palette of red silk, black apron,
-          white porcelain, burlap, steel and bulb amber; natural skin texture, fine 35
-          mm film grain, focus on her eyes.
+          falling into amber shadow. Her apron is plain, with no lettering. Restrained
+          palette of red silk, black apron, white porcelain, burlap, steel and bulb amber;
+          natural skin texture, fine 35 mm film grain, focus on her eyes.
   - category: work
     word: FINISH
     cost: 2
@@ -134,30 +127,25 @@ actions:
         - tracker.change: { nerve: +2 }
         - skill.gain: work
       art:
-        loras: ["DMilfModel7:1", "femdom_handjob_krea2_epoch_20:1"]
+        loras: ["ferrina_krea2_000001200:0.9", "femdom_handjob_krea2_epoch_20:1"]
         subject: >
           First-person point-of-view widescreen photograph from seated eye height on a
-          bentwood chair in the back room of a small café, the camera tilted down. One
-          woman sits on a burlap coffee sack directly in front of the lens, knees close,
-          leaning in, framed from the head down to her lap. She looks directly into the
-          camera, making eye contact with the viewer, with warm, intent control: green
-          eyes fixed and soft behind her glasses, one dark brow raised, red lips curved
-          in a slow knowing smile. She is a white American woman of forty with an
-          hourglass figure, a large, full bust and a narrow waist, fair skin, glossy
-          shoulder-length dark brunette hair with soft waves, black rectangular
-          thick-rimmed glasses, bright green eyes, defined dark brows, and glossy red
-          lipstick. She wears a red silk blouse with long sleeves and a soft collar,
-          the top two buttons open, tucked into tailored black trousers, and a crisp
-          black bib apron tied snugly at the waist, its straps smooth over her
-          shoulders. Her right hand, red nails, is wrapped firmly around an erect penis
-          that rises from the bottom center of the frame, giving a slow handjob, her
-          wrist turned at the top of the stroke; her left hand rests flat on her own
-          knee. Nothing else of the viewer is in frame. Behind her, out of focus,
-          burlap sacks of green coffee stacked high, a small black drum coffee roaster
-          and a scrubbed steel prep table. A single bare bulb above lights her face and
-          her hand warm and close, the room falling into amber shadow. Restrained
-          palette of red silk, black apron, burlap and bulb amber; natural skin
-          texture, fine 35 mm film grain, focus on her eyes.
+          bentwood chair in the back room of a small café, the camera tilted down. ferrina
+          woman in her red work blouse and black apron, wearing her thick black
+          rectangular glasses, sits on a burlap coffee sack directly in front of the lens,
+          knees close, leaning in, framed from the head down to her lap. She looks
+          directly into the camera, making eye contact with the viewer, with warm, intent
+          control: green eyes fixed and soft behind her glasses, one dark brow raised, red
+          lips curved in a slow knowing smile. Her right hand, red nails, is wrapped
+          firmly around an erect penis that rises from the bottom center of the frame,
+          giving a slow handjob, her wrist turned at the top of the stroke; her left hand
+          rests flat on her own knee. Nothing else of the viewer is in frame. Behind her,
+          out of focus, burlap sacks of green coffee stacked high, a small black drum
+          coffee roaster and a scrubbed steel prep table. A single bare bulb above lights
+          her face and her hand warm and close, the room falling into amber shadow. Her
+          apron is plain, with no lettering. Restrained palette of red silk, black apron,
+          burlap and bulb amber; natural skin texture, fine 35 mm film grain, focus on her
+          eyes.
   - category: deal
     word: SHOW
     cost: 1
@@ -191,54 +179,43 @@ actions:
         - boost.change: { card: cafe-linde-punch-card, amount: +1 }
         - tracker.change: { nerve: -1 }
       art:
-        loras: ["DMilfModel7:1", "pvcg5_krea2_000002000:0.9"]
+        loras: ["ferrina_krea2_000001200:0.9", "pvcg5_krea2_000002000:0.9"]
         subject: >
-          A POV photograph looking down at my own body sitting back on a bentwood chair
-          in the back room of a small café, my grey trousers pushed down to my knees and
-          my bare knees spread wide, a pvcg5 chastity cage, filled, polished stainless
-          steel with a tiny brass padlock, locked on me, small next to her hand. One
-          woman crouches on the worn wooden floor between my knees, close, and taps the
+          A POV photograph looking down at my own body sitting back on a bentwood chair in
+          the back room of a small café, my grey trousers pushed down to my knees and my
+          bare knees spread wide, a pvcg5 chastity cage, filled, polished stainless steel
+          with a tiny brass padlock, locked on me, small next to her hand. ferrina woman
+          in her red work blouse and black apron, wearing her thick black rectangular
+          glasses, crouches on the worn wooden floor between my knees, close, and taps the
           little padlock with one long red-nailed fingertip of her right hand, while her
           left hand holds a small, flat, empty white porcelain espresso saucer, with no
           cup on it, level just beneath the cage. She looks up from the cage into the
           camera, making eye contact with the viewer, with delighted, curious amusement:
           green eyes bright, her glasses pushed up on her nose, dark brows raised, red
-          lips parted in a low laugh. She is a white American woman of forty with an
-          hourglass figure, a large, full bust and a narrow waist, fair skin, glossy
-          shoulder-length dark brunette hair with soft waves, black rectangular
-          thick-rimmed glasses, bright green eyes, defined dark brows, and glossy red
-          lipstick. She wears a plain red silk blouse with long sleeves and a soft
-          collar, the top two buttons open, tucked into tailored black trousers, and a
-          crisp plain black bib apron tied snugly at the waist. My bare thighs and the
-          tails of my white shirt run from the bottom edge of the frame to the cage in
-          the lower centre, her face and shoulders just above it. Behind her, out of
-          focus, burlap sacks of green coffee stacked high and the worn floorboards.
-          Steep downward viewpoint from my eyes, the cage, her fingertip and the saucer
-          sharp. A single bare bulb above lights her face, her glasses and the porcelain
-          warm and throws a hard specular glint along the steel, the room falling into
-          amber shadow. Restrained palette of red silk, black apron, white porcelain,
+          lips parted in a low laugh. My bare thighs and the tails of my white shirt run
+          from the bottom edge of the frame to the cage in the lower centre, her face and
+          shoulders just above it. Behind her, out of focus, burlap sacks of green coffee
+          stacked high and the worn floorboards. Steep downward viewpoint from my eyes,
+          the cage, her fingertip and the saucer sharp. A single bare bulb above lights
+          her face, her glasses and the porcelain warm and throws a hard specular glint
+          along the steel, the room falling into amber shadow. Her apron is plain, with no
+          lettering. Restrained palette of red silk, black apron, white porcelain,
           polished steel, burlap and bulb amber; natural skin texture, fine 35 mm film
           grain, focus on the cage and her eyes.
 art:
-  loras: ["DMilfModel7:1"]
+  loras: ["ferrina_krea2_000001200:1"]
   subject: >
-    Eye-level widescreen photograph from standing height just inside the door of the small
-    back room of a café, the camera level. Burlap sacks of green coffee beans are stacked to
-    the ceiling along the left wall, a small black drum coffee roaster stands against the
-    right wall with its cooling tray, and a scrubbed steel prep table runs along the back.
-    In the middle of the worn wooden floor stands one empty bentwood chair under a single
-    bare bulb hanging on a cord. One woman, alone, the only person in the room, leans
-    against the edge of the steel prep table behind the chair, framed from the knees up, her
-    arms folded under her bust. She looks directly into the camera, making eye contact with
-    the viewer, with calm, patient command: green eyes steady behind her glasses, chin
-    lifted, red lips closed in a faint smile. She is a white American woman of forty with an
-    hourglass figure, a large, full bust and a narrow waist, fair skin, glossy
-    shoulder-length dark brunette hair with soft waves, black rectangular thick-rimmed
-    glasses, bright green eyes, defined dark brows, and glossy red lipstick. She wears a red
-    silk blouse with long sleeves and a soft collar, the top two buttons open, tucked into
-    tailored black trousers, and a crisp black bib apron tied snugly at the waist, its
-    straps smooth over her shoulders; black patent high-heeled pumps show under the trouser
-    hems. There is no one else in the room. The bare bulb lights her and the empty chair
-    from above, warm and hard, and leaves the stacked sacks in amber shadow. Restrained
-    palette of red silk, black apron, burlap, black iron, steel and bulb amber; natural
-    texture, fine 35 mm film grain, focus on her eyes and the empty chair.
+    Eye-level widescreen photograph from standing height just inside the door of the small back
+    room of a café, the camera level. Burlap sacks of green coffee beans are stacked to the
+    ceiling along the left wall, a small black drum coffee roaster stands against the right wall
+    with its cooling tray, and a scrubbed steel prep table runs along the back. In the middle of
+    the worn wooden floor stands one empty bentwood chair under a single bare bulb hanging on a
+    cord. ferrina woman in her red work blouse and black apron, wearing her thick black
+    rectangular glasses, alone, the only person in the room, leans against the edge of the steel
+    prep table behind the chair, framed from the knees up, her arms folded under her bust. She
+    looks directly into the camera, making eye contact with the viewer, with calm, patient
+    command: green eyes steady behind her glasses, chin lifted, red lips closed in a faint
+    smile. There is no one else in the room. The bare bulb lights her and the empty chair from
+    above, warm and hard, and leaves the stacked sacks in amber shadow. Her apron is plain, with
+    no lettering. Restrained palette of red silk, black apron, burlap, black iron, steel and
+    bulb amber; natural texture, fine 35 mm film grain, focus on her eyes and the empty chair.

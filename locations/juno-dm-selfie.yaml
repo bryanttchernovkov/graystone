@@ -7,7 +7,7 @@ name: A photo from @rootkitty
 description: Glasses pushed up, tongue out, one finger up.
 arrival:
   text: |
-    The phone buzzes. A selfie: glasses pushed up into her bangs, tongue out, middle finger an inch
+    The phone buzzes. A selfie: glasses pushed up into her hair, tongue out, middle finger an inch
     from the lens.
 
     *$15 for this*
@@ -21,28 +21,21 @@ arrival:
     - skill.gain: random
     - move.back
 art:
-  loras: ["KreaTransBabe:1"]
+  loras: ["jovessa_krea2_000001200:1"]
   subject: >
-    First-person point-of-view widescreen photograph from standing eye height, the camera
-    level. A black smartphone turned sideways in landscape orientation is held level close in
-    front of the lens in a pale man's two bare hands, one at each end of the phone entering
-    from the bottom corners of the frame: broad knuckles, short, bare, unpainted nails cut
-    straight across, the thumbs resting on the phone's front edge. The phone fills most of the
-    frame; around it, only a thin margin of plain charcoal-gray wall, soft and out of focus.
-    Its wide, bright landscape screen shows, edge to edge, a horizontal photograph taken in a
-    young woman's small bedroom: a selfie of one woman from the chest up, sitting on her bed,
-    her face close to her own camera at the center of the photograph, sticking her tongue out
-    with her eyes crossed in mock disgust, her glasses pushed up into her bangs, her right
-    hand raised with its middle finger held up beside her face. She is a trans woman of
-    twenty-three, slim and petite with narrow shoulders and a small bust, pale skin with a
-    light dusting of freckles across her nose, long straight hair dyed half jet black and half
-    pastel pink, split sharply down a center part, the left half jet black and the right half
-    pastel pink, worn in two low pigtails, blunt straight-cut bangs, sharp black winged
-    eyeliner, glossy pale pink lips and a small silver ring in her septum, with a black velvet
-    choker with a small silver O-ring at her throat, wearing an oversized black cotton hoodie
-    slipping off her left shoulder over a fitted white ribbed crop top. Behind her, out of
-    focus, pastel posters on a pale wall, a strip of pink LED light along the ceiling, a bed
-    with black and pink sheets and plush toys. The screen's glow lights the thumbs at its
-    edges, the photograph on it crisp and bright. Restrained palette of pale skin, black,
-    white, pastel pink, LED pink and charcoal; natural skin texture, fine 35 mm film grain,
-    focus on the phone screen.
+    First-person point-of-view widescreen photograph from standing eye height, the camera level.
+    A black smartphone turned sideways in landscape orientation is held level close in front of
+    the lens in a pale man's two bare hands, one at each end of the phone entering from the
+    bottom corners of the frame: broad knuckles, short, bare, unpainted nails cut straight
+    across, the thumbs resting on the phone's front edge. The phone fills most of the frame;
+    around it, only a thin margin of plain charcoal-gray wall, soft and out of focus. Its wide,
+    bright landscape screen shows, edge to edge, a horizontal photograph taken in a young
+    woman's small bedroom: a selfie of jovessa woman in her usual black outfit, a woman of
+    twenty-three with a black ring choker, from the chest up, sitting on her bed, her face close
+    to her own camera at the center of the photograph, sticking her tongue out with her eyes
+    crossed in mock disgust, her black rectangular glasses pushed up into her hair, her right
+    hand raised with its middle finger held up beside her face. Behind her, out of focus, pastel
+    posters on a pale wall, a strip of teal LED light along the ceiling, a bed with black and
+    teal sheets and plush toys. The screen's glow lights the thumbs at its edges, the photograph
+    on it crisp and bright. Natural skin texture, fine 35 mm film grain, focus on the phone
+    screen.

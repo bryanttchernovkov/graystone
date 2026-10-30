@@ -34,29 +34,19 @@ arrival:
     - tracker.change: { body: -1 }
     - move.to: seo-holding
 art:
-  loras: ["DGirlsModel9:1"]
+  loras: ["sorenji_krea2_000001400:1"]
   subject: >
     Extreme low angle photograph from cheek height on the tiled floor of a chain-link holding
-    cage in an old church, the camera tilted up, looking up along Deputy Seo's leg as she stands
-    beside the camera. Her black riding boot is planted on the floor tiles right beside the
-    lens, filling the left third of the frame: a stiff, mirror-polished black leather thigh-high
-    riding boot with a low, flat stacked-leather heel, its glossy shaft rising from the tiles
-    toward the top of the frame, the floor reflected in its toe. Beyond the boot, she towers
-    over the camera, standing tall with one hand on the chain-link wall of the cage, and looks
-    down along her own body into the lens with smug, calm dominance: dark eyes steady, delicate
-    brows lifted, berry-pink lips in a small, satisfied smile. She is a Korean woman of
-    twenty-nine, a classic Korean beauty with an elegant oval face, a softly tapered jaw, large
-    almond-shaped dark brown eyes, sharp black winged eyeliner, delicate straight brows, a
-    refined small nose, softly defined cheekbones, berry-pink gradient lips and luminous, smooth
-    pale skin, her extremely long, glossy, vivid neon violet-purple hair woven into one enormous
-    high French braid, the braid hanging down over her shoulder toward the camera. She wears the
-    Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt with
-    vivid azure blue epaulets, an embroidered vivid azure blue and gold patch on each upper
-    sleeve and a polished gold six-point star badge; a vivid, saturated azure blue necktie with
-    a small gold tie bar; a black leather duty belt with a polished brass buckle; and tan riding
-    breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down the outer
-    seam, tucked into the boots. Her head is bare. Behind her, the galvanized chain-link wall of
-    the cage and, far above, the dark oak roof beams of the church. Cool fluorescent light from
-    above, a long highlight down the boot's shaft. Restrained palette of boot black, uniform
-    tan, vivid azure blue, galvanized steel, pale floor tile, dark oak and neon violet; natural
-    texture, fine 35 mm film grain, sharp focus on the boot, her face clear above it.
+    cage in an old church, the camera tilted up, looking up along the leg of sorenji woman in
+    her uniform as she stands beside the camera. Her black riding boot is planted on the floor
+    tiles right beside the lens, filling the left third of the frame: a stiff, mirror-polished
+    black leather thigh-high riding boot with a low, flat stacked-leather heel, its glossy shaft
+    rising from the tiles toward the top of the frame, the floor reflected in its toe. Beyond
+    the boot, she towers over the camera, standing tall with one hand on the chain-link wall of
+    the cage, and looks down along her own body into the lens with smug, calm dominance: dark
+    eyes steady, delicate brows lifted, berry-pink lips in a small, satisfied smile. Behind her,
+    the galvanized chain-link wall of the cage and, far above, the dark oak roof beams of the
+    church. Cool fluorescent light from above, a long highlight down the boot's shaft.
+    Restrained palette of boot black, uniform tan, vivid azure blue, galvanized steel, pale
+    floor tile, dark oak and dusty pink; natural texture, fine 35 mm film grain, sharp focus on
+    the boot, her face clear above it.

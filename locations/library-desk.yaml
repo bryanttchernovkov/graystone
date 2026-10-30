@@ -58,26 +58,17 @@ actions:
       effects:
         - skill.gain: look
 art:
-  loras: ["DMilfModel4:1"]
+  loras: ["imcrw7_krea2_000001200:1"]
   subject: >
-    Eye-level widescreen photograph from standing eye height across a curved dark oak library
-    circulation desk with a polished brass bell on it, the camera level, one woman, alone,
-    sitting upright behind the desk an arm's length from the lens, framed from the desktop to
-    just above her head, the dark oak desktop running across the whole bottom of the frame and
-    crossing her at the waist. She looks directly into the camera, making eye contact with the
-    viewer, with cool, polite severity: green eyes steady and unblinking, one auburn brow
-    raised a fraction, her wine-red lips closed in a small, patient line. She is a white
-    British woman of thirty-eight, tall with an hourglass figure and a large, full bust, fair
-    skin with a few faint freckles, long wavy ginger hair falling loose past her shoulders,
-    dark smoky eye makeup with black eyeliner, striking bright green eyes, defined auburn
-    brows, and deep wine-red lipstick. She wears a tailored charcoal-gray wool skirt suit: a
-    fitted single-breasted jacket with sharp notched lapels, buttoned once at the waist, over
-    a cream silk blouse open at the collar to the top of her cleavage; a slim gold watch sits
-    on her left wrist. In her right hand she holds a capped black fountain pen upright beside
-    her chin, and her left hand rests flat on a small stack of index cards on the desk, the
-    gold watch catching the light. Behind her, a tall dark oak card catalogue of many small
-    brass-handled drawers fills the background, and beside it the curve of a bookcase of faded
-    cloth-bound books. A green-shaded brass lamp on the desk at the left lights her face, her
-    hair and the silk from the side, with soft daylight from a skylight above. Restrained
-    palette of dark oak, brass, charcoal wool, cream silk, ginger and lamp green; natural skin
-    texture, fine 35 mm film grain, shallow depth of field on her eyes.
+    A waist-up photograph of imcrw7 woman in her gray skirt suit, the fitted charcoal jacket
+    buttoned once at the waist over a cream silk blouse open at the collar, her throat bare, no
+    tie, a slim gold watch on her left wrist, sitting upright behind a curved dark oak library
+    circulation desk with a polished brass bell on it, a capped black fountain pen held upright
+    beside her chin in her right hand, her left hand flat on a small stack of index cards. She
+    looks straight into the camera with cool, polite severity, one brow raised a fraction and
+    her lips closed in a small, patient line. The camera stands at eye height an arm's length
+    away across the desk, the dark oak desktop running across the bottom of the frame. Behind
+    her, a tall dark oak card catalogue of many small brass-handled drawers and the curve of a
+    bookcase of faded cloth-bound books. A green-shaded brass lamp on the desk at the left
+    lights her face warmly from the side, with soft daylight from a skylight above. 50 mm lens,
+    natural colour, fine film grain, shallow depth of field on her eyes.

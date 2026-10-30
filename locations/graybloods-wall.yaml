@@ -46,28 +46,24 @@ actions:
         - card.gain: reds-errand
         - tracker.change: { nerve: -1 }
       art:
-        loras: ["DGirlsModel5:1"]
+        loras: ["shndr7_krea2_000001200:1"]
         subject: >
           First-person point-of-view widescreen photograph from standing eye height in a
-          cracked asphalt lot beside the rust-streaked corrugated steel wall of a warehouse,
-          the camera level, of one woman standing at arm's length from the lens, framed from
-          her hips to just above her head. She looks directly into the camera, making eye
-          contact with the viewer, with loud, gleeful mockery: pale blue eyes squeezed half
-          shut with laughter, chin tipped up, full lips wide open in a cackling grin showing
-          her teeth. She is an African American woman of twenty-one with an oval face, smooth dark brown
-          skin, long straight glossy black hair worn loose down her back with one thin braid
-          running from her temple, striking pale blue eyes, full lips with glossy nude-brown
-          lipstick, small gold hoop earrings. She wears an oversized glossy red puffer down
-          jacket hanging open over a fitted black top, low-slung light-wash jeans and white
-          high-top sneakers. In her right hand, held up beside her face, she dangles an open
-          brown leather wallet between two fingers by its corner, a plastic driver's license
-          card showing blank in its window; her left hand rests on her hip. Beside her at the
-          right edge of the frame, the dark gap of a roll-up door rolled half open. Low, warm
-          late-afternoon sun from the left lights her face and the glossy red jacket and
-          throws the ridges of the corrugated wall into hard stripes of light and shadow.
-          Restrained palette of glossy red, black, denim blue, brown leather, rust and
-          corrugated gray; natural skin texture, fine 35 mm film grain, shallow depth of field
-          on her eyes.
+          cracked asphalt lot beside the rust-streaked corrugated steel wall of a
+          warehouse, the camera level, of shndr7 woman in her red puffer jacket, hanging
+          open over a fitted black top, with light-wash ripped jeans, standing at arm's
+          length from the lens, framed from her hips to just above her head. She looks
+          directly into the camera, making eye contact with the viewer, with loud, gleeful
+          mockery: pale blue eyes squeezed half shut with laughter, chin tipped up, full
+          lips wide open in a cackling grin showing her teeth. In her right hand, held up
+          beside her face, she dangles an open brown leather wallet between two fingers by
+          its corner, a plastic driver's license card showing blank in its window; her
+          left hand rests on her hip. Beside her at the right edge of the frame, the dark
+          gap of a roll-up door rolled half open. Low, warm late-afternoon sun from the
+          left lights her face and the glossy red jacket and throws the ridges of the
+          corrugated wall into hard stripes of light and shadow. Restrained palette of
+          glossy red, black, denim blue, brown leather, rust and corrugated gray; natural
+          skin texture, fine 35 mm film grain, shallow depth of field on her eyes.
   # Red's Errand paid off: $100 for GrayBlood Rep.
   - category: deal
     word: REPORT
@@ -118,46 +114,40 @@ actions:
                 flicks you in the middle of the forehead, hard, with one long white nail. "Go.
                 Shoo. Come back when you're rich, lil bro. Like, a hundred dollars rich."
       art:
-        loras: ["DGirlsModel5:1"]
+        loras: ["shndr7_krea2_000001200:1"]
         subject: >
           First-person point-of-view widescreen photograph from standing eye height in a
-          cracked asphalt lot, the camera level, of one woman leaning back against the
-          rust-streaked corrugated steel wall of a warehouse an arm's length from the lens,
-          framed from her hips to just above her head. She looks directly into the camera,
-          making eye contact with the viewer, with smug, greedy satisfaction: pale blue eyes
-          narrowed and amused, chin tipped up so she looks down her nose at the lens, full lips
-          in a wide, lopsided smirk. She is an African American woman of twenty-one with an oval face, smooth dark brown
-          skin, long straight glossy black hair worn loose down her back with one thin braid
-          running from her temple, striking pale blue eyes, full lips with glossy nude-brown
-          lipstick, small gold hoop earrings. She wears an oversized glossy red puffer down
-          jacket hanging open over a fitted black top, low-slung light-wash jeans and white
-          high-top sneakers. In her right hand, held up beside her face, she
-          fans out a thick spread of green banknotes, her long white nails splayed across the
-          bills, and holds the edge of the fan under her nose as if smelling it; her left arm
-          is folded across her chest. Beside her at the right edge of the frame, the dark gap
-          of a roll-up door rolled half open. Low, warm late-afternoon sun from the left lights
-          her face, the banknotes and the glossy red jacket and throws the ridges of the
-          corrugated wall into hard stripes of light and shadow. Restrained palette of glossy
-          red, banknote green, black, denim blue, rust and corrugated gray; natural skin
-          texture, fine 35 mm film grain, shallow depth of field on her eyes and the bills.
+          cracked asphalt lot, the camera level, of shndr7 woman in her red puffer jacket,
+          hanging open over a fitted black top, with light-wash ripped jeans, leaning back
+          against the rust-streaked corrugated steel wall of a warehouse an arm's length
+          from the lens, framed from her hips to just above her head. She looks directly
+          into the camera, making eye contact with the viewer, with smug, greedy
+          satisfaction: pale blue eyes narrowed and amused, chin tipped up so she looks
+          down her nose at the lens, full lips in a wide, lopsided smirk. In her right
+          hand, held up beside her face, she fans out a thick spread of green banknotes,
+          her long white nails splayed across the bills, and holds the edge of the fan
+          under her nose as if smelling it; her left arm is folded across her chest.
+          Beside her at the right edge of the frame, the dark gap of a roll-up door rolled
+          half open. Low, warm late-afternoon sun from the left lights her face, the
+          banknotes and the glossy red jacket and throws the ridges of the corrugated wall
+          into hard stripes of light and shadow. Restrained palette of glossy red,
+          banknote green, black, denim blue, rust and corrugated gray; natural skin
+          texture, fine 35 mm film grain, shallow depth of field on her eyes and the
+          bills.
 art:
-  loras: ["DGirlsModel5:1"]
+  loras: ["shndr7_krea2_000001200:1"]
   subject: >
     Eye-level widescreen photograph from standing eye height in a cracked asphalt lot, the
-    camera level, one woman, alone, leaning back against the rust-streaked corrugated steel
+    camera level, shndr7 woman in her red puffer jacket, hanging open over a fitted black top,
+    with light-wash ripped jeans, alone, leaning back against the rust-streaked corrugated steel
     wall of a warehouse an arm's length from the lens, framed from her hips to just above her
     head. She looks directly into the camera, making eye contact with the viewer, with loud,
     smug arrogance: pale blue eyes narrowed and amused, chin tipped up so she looks down her
-    nose at the lens, full lips pulled into a wide, mocking grin showing her teeth. She is an
-    African American woman of twenty-one with an oval face, smooth dark brown skin, long
-    straight glossy black hair worn loose down her back with one thin braid running from her
-    temple, striking pale blue eyes, full lips with glossy nude-brown lipstick, small gold
-    hoop earrings. She wears an oversized glossy red puffer down jacket hanging open over a
-    fitted black top, and low-slung light-wash jeans. Her arms are folded high across her
-    chest, both hands tucked against the red jacket's sleeves, and her shoulders and the back
-    of her head rest against the steel. Beside her at the right edge of the frame, the dark
-    gap of a roll-up door rolled half open. Low, warm late-afternoon sun from the left lights
-    her face and the glossy red jacket and throws the ridges of the corrugated wall into hard
-    stripes of light and shadow. Restrained palette of glossy red, black, denim blue, rust and
-    corrugated gray; natural skin texture, fine 35 mm film grain, shallow depth of field on
-    her eyes.
+    nose at the lens, full lips pulled into a wide, mocking grin showing her teeth. Her arms are
+    folded high across her chest, both hands tucked against the red jacket's sleeves, and her
+    shoulders and the back of her head rest against the steel. Beside her at the right edge of
+    the frame, the dark gap of a roll-up door rolled half open. Low, warm late-afternoon sun
+    from the left lights her face and the glossy red jacket and throws the ridges of the
+    corrugated wall into hard stripes of light and shadow. Restrained palette of glossy red,
+    black, denim blue, rust and corrugated gray; natural skin texture, fine 35 mm film grain,
+    shallow depth of field on her eyes.

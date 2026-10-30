@@ -12,13 +12,13 @@ setback_penalty:
   effects:
     - tracker.change: { nerve: -1 }
 art:
-  loras: ["SA86RN444WSD83T4QX4PYS3P80:1"]
+  loras: ["hngcf5_krea2_000001500:0.9"]
   subject: >
-    Still-life photograph from above of a single pair of chrome clejuso handcuffs lying closed
-    on the white vinyl back seat of a patrol car, their chain lying in a loose curve between
-    the two rings, a small steel handcuff key on a short ring beside them. Square composition,
-    the handcuffs centered. Soft gray daylight through a rear side window falls across the
-    seat from the left, laying sharp highlights along the chrome rings and each chain link,
-    the black steel cage partition of the patrol car out of focus behind them. Restrained
-    palette of chrome, white vinyl, black steel and soft gray daylight; natural metal texture,
-    fine 35 mm film grain, sharp focus on the cuffs.
+    Square still-life photograph from above of closed polished stainless steel hngcf5 hinged
+    handcuffs lying flat on the white vinyl back seat of a patrol car, each cuff about the size
+    of a wrist, a small steel handcuff key on a short ring beside them. The handcuffs sit in the
+    center of the frame at a slight diagonal. Soft gray daylight through a rear side window
+    falls across the seat from the left, laying sharp highlights along the curved steel, the
+    black steel cage partition of the patrol car out of focus behind them. Restrained palette of
+    polished steel, white vinyl, black steel and soft gray daylight; natural metal texture, fine
+    35 mm film grain, sharp focus on the cuffs.

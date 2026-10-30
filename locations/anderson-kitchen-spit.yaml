@@ -57,24 +57,16 @@ arrival:
             - card.lose: contractor-badge
             - move.to: main-street-south
 art:
-  loras: ["DGirlsModel14:1"]
+  loras: ["tfny7_krea2_000000800:1"]
   subject: >
     Intimate first-person point-of-view widescreen photograph from standing eye height in a
-    small staff kitchenette with pale limestone walls, the camera level, of one woman leaning
-    in close to the lens, her face and shoulders filling the frame. She looks directly into the
-    camera, making eye contact with the viewer, with cold, bored contempt: green eyes
-    half-lidded, dark brows drawn flat, berry lips pursed and pushed forward in the moment
-    before she spits. She is a white American woman of
-    twenty-four, slim and toned with a full bust and long legs, fair skin, long wavy
-    platinum-blonde hair with bold jet-black streak highlights falling past her shoulders, dark
-    elegant makeup with smoky black eyeliner, long dark lashes and deep berry lipstick, striking
-    bright green eyes, arched dark brows, and long almond-shaped nails painted glossy black. Her bare right hand, with its long glossy black nails, rests
-    against her own collarbone. She wears a crisp, pressed tan long-sleeved uniform shirt of heavy
-    cotton twill with a pointed collar, two buttoned flap chest pockets piped in vivid azure
-    blue, shoulder epaulets edged in vivid azure blue and a polished gold six-point star badge
-    pinned over the left pocket, and a vivid, saturated azure blue necktie with a small gold tie
-    bar; her head is bare and her hands are bare. The frame stops below her tie knot. Behind her, out
-    of focus, a wooden mug rack and a coffee machine on a laminate counter. A warm overhead light
-    lights her face from above. Restrained palette of pale limestone, uniform tan, vivid azure
-    blue, platinum blonde and berry; natural skin texture, fine 35 mm film grain, shallow depth
-    of field on her eyes and lips.
+    small staff kitchenette with pale limestone walls, the camera level, of tfny7 woman in her
+    tfny7 uniform leaning in close to the lens, her face and shoulders filling the frame. She
+    looks directly into the camera, making eye contact with the viewer, with cold, bored
+    contempt: green eyes half-lidded, dark brows drawn flat, berry lips pursed and pushed
+    forward in the moment before she spits. Her bare right hand, with its long glossy black
+    nails, rests against her own collarbone. The frame stops below her tie knot. Behind her, out
+    of focus, a wooden mug rack and a coffee machine on a laminate counter. A warm overhead
+    light lights her face from above. Restrained palette of pale limestone, uniform tan, vivid
+    azure blue, platinum blonde and berry; natural skin texture, fine 35 mm film grain, shallow
+    depth of field on her eyes and lips.

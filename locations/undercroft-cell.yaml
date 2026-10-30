@@ -36,37 +36,26 @@ actions:
       effects:
         - skill.gain: talk
       art:
-        loras: ["KreaEbonyBabe1"]
+        loras: ["ashby7_krea2_000001200:0.9"]
         subject: >
-          First-person point-of-view widescreen photograph from standing eye height inside a small
-          jail cell walled with smooth dressed limestone ashlar blocks laid in straight courses with
-          thin mortar joints under a whitewashed pointed vault, underground and windowless but for
-          one small barred slot at street level, looking out through the black iron bars of the cell
-          door, which cross the foreground slightly out of focus, toward a gray steel desk four
-          paces away under a pointed arch of smooth dressed limestone ashlar blocks laid in straight
-          courses with thin mortar joints. Behind the desk, sitting upright and framed between two
-          bars from the waist up in the center of the frame, is a woman who looks directly into the
-          camera, making eye contact with the viewer, with stern, expectant impatience: chin lifted,
-          eyebrows raised sharply, eyes wide and demanding, mouth open mid-word as she calls out.
-          She is a Black American woman in her early thirties, tall and athletic with a full, heavy
-          bust, broad straight shoulders and a soldier's posture, smooth dark brown skin, long black
-          dreadlocks gathered at the nape and falling to the middle of her back, straight dark
-          brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her
-          hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved
-          uniform shirt of heavy cotton twill with a pointed collar, a full button-front placket,
-          two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged in
-          vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve and
-          a polished gold six-point star badge pinned over the left pocket; a vivid, saturated azure
-          blue necktie with a small gold tie bar; a black leather duty belt with a polished brass
-          buckle; her head is bare. Three vivid azure blue chevrons sit on each upper sleeve beneath
-          the patch. Over an open ruled ledger she holds a black pen up in her gloved right hand,
-          pointed at the lens like a baton, her other gloved hand flat on the ledger. Beyond her the
-          windowless underground corridor recedes under pointed arches, caged bulbs hanging on black
-          cords and a row of barred cell doors along the wall. A caged incandescent bulb directly
-          above the desk throws warm downlight across her face, her shoulders and the ledger, and
+          First-person point-of-view widescreen photograph from standing eye height inside a
+          small jail cell walled with smooth dressed limestone ashlar blocks laid in straight
+          courses with thin mortar joints under a whitewashed pointed vault, underground and
+          windowless but for one small barred slot at street level, looking out through the
+          black iron bars of the cell door, which stand in the extreme foreground, soft and out
+          of focus. Three paces beyond the bars, standing clear of them in the vaulted corridor,
+          ashby7 woman in her sheriff's uniform, tan with an azure tie, her long black locs
+          gathered at the nape, stands framed from the waist up in the gap between two bars in
+          the center of the frame, an open ruled ledger held against her chest in both
+          black-gloved hands. She looks directly into the camera, making eye contact with the
+          viewer, with stern, expectant impatience: chin lifted, eyebrows raised sharply, eyes
+          wide and demanding, mouth open mid-word as she calls out. Behind her the windowless
+          underground corridor recedes under pointed arches of pale limestone, caged bulbs
+          hanging on black cords and a row of barred cell doors along the wall. A caged
+          incandescent bulb above her throws warm downlight across her face and the ledger, and
           lays amber highlights along the blurred bars in the foreground. Palette of black iron,
-          pale limestone, uniform tan, vivid azure blue and bulb amber; natural skin texture, fine
-          35 mm film grain, focus on her eyes between the bars.
+          pale limestone, uniform tan, vivid azure blue and bulb amber; natural skin texture,
+          fine 35 mm film grain, focus on her eyes between the bars.
   - category: work
     word: CHORE
     cost: 1
@@ -94,30 +83,29 @@ actions:
         - skill.gain: work
         - move.to: { random: [undercroft-chore-pass, undercroft-chore-fault] }
       art:
-        loras: ["KreaEbonyBabe1"]
+        loras: ["ashby7_krea2_000001200:0.9"]
         subject: >
           Detail close-up first-person photograph inside a small jail cell walled with smooth
           dressed limestone ashlar blocks laid in straight courses with thin mortar joints under
           a whitewashed pointed vault, underground and windowless but for one small barred slot
-          at street level, the camera level with the steel rail of a cot and inches from a
-          woman's boot. Her right boot rests on the cot rail and fills the frame on a diagonal
-          from the lower left corner to the upper right: a stiff, structured, mirror-polished
-          black leather thigh-high riding boot with a rigid straight shaft and a low, flat
-          stacked-leather riding heel, its rounded toe cap glistening with a fresh wet streak
-          that runs up over the vamp and the instep, a tight line of black welt stitching around
-          the sole, the soft crease at the ankle, and the long polished shaft rising out of the
-          upper right corner just above her knee, where tan riding breeches with a vivid azure
-          blue stripe disappear into the boot top. Her black-gloved hand rests on her knee at
-          the top right edge. A pale man's bare hands and forearms with short unpolished nails
-          enter from the bottom edge of the frame and cradle the boot from below, one at the
-          heel and one at the ankle. The frame holds only the boot, the gloved hand and the
-          hands beneath it. Behind the boot, out of focus, a gray wool blanket on the steel
-          slats, the black iron bars of the cell door and warm bulb light on pale ashlar stone.
-          A single caged incandescent bulb above throws one long specular highlight down the wet
-          shaft and a bright point on the toe cap, the rest of the leather deep glossy black.
-          Palette of black leather, vivid azure blue, tan, gray wool and bulb amber; natural
-          leather texture with visible stitching and grain, fine 35 mm film grain, very shallow
-          depth of field on the wet toe cap.
+          at street level, the camera level with the steel rail of a cot and inches from the
+          boot of ashby7 woman in her sheriff's uniform. Her right boot rests on the cot rail
+          and fills the frame on a diagonal from the lower left corner to the upper right: a
+          polished black leather thigh-high riding boot with a rigid straight shaft and a low,
+          flat stacked-leather riding heel, its rounded toe cap glistening with a fresh wet
+          streak that runs up over the vamp and the instep, a tight line of black welt stitching
+          around the sole, the soft crease at the ankle, and the long polished shaft rising out
+          of the upper right corner just above her knee, where tan riding breeches disappear
+          into the boot top. Her black-gloved hand rests on her knee at the top right edge, and
+          the frame ends just above it. A pale man's bare hands and forearms with short
+          unpolished nails enter from the bottom edge of the frame and cradle the boot from
+          below, one at the heel and one at the ankle. Behind the boot, out of focus, a gray
+          wool blanket on the steel slats, the black iron bars of the cell door and warm bulb
+          light on pale ashlar stone. A single caged incandescent bulb above throws one long
+          specular highlight down the wet shaft and a bright point on the toe cap, the rest of
+          the leather deep glossy black. Palette of black leather, tan, gray wool and bulb
+          amber; natural leather texture with visible stitching and grain, fine 35 mm film
+          grain, very shallow depth of field on the wet toe cap.
   - category: talk
     word: CHARM
     cost: 1
@@ -155,36 +143,29 @@ actions:
       effects:
         - card.gain: gag
       art:
-        loras: ["KreaEbonyBabe1", "HandgagPOV_Krea2_v1:1"]
+        loras: ["ashby7_krea2_000001200:0.9", "HandgagPOV_Krea2_v1:1"]
         subject: >
-          First-person point-of-view photograph from sitting height on a steel cot in a small jail
-          cell walled with smooth dressed limestone ashlar blocks laid in straight courses with thin
-          mortar joints under a whitewashed pointed vault, underground and windowless but for one
-          small barred slot at street level, the camera tilted up. A woman stands over the cot and
-          leans down into the lens, her face in the upper center of the frame a forearm's length
-          away, eyes in sharp focus. Chin raised, she looks down her nose directly into the camera,
-          making steady eye contact with the viewer, with cold, commanding dominance: eyes narrowed
-          and unblinking, brows drawn low, her mouth firmly shut, lips sealed together in a thin,
-          contemptuous smirk at one corner. Her right arm extends straight toward the camera and her
-          black leather gloved palm covers the lower third of the lens itself, seen from directly
-          behind it the way a hand over your own mouth looks from your own eyes: the inside of the
-          glossy glove, its palm and spread fingers, filling the bottom edge of the frame large,
-          close and softly out of focus, the leather creased across the palm. Her glove is the only
-          thing between her and the lens. Her gloved left hand rests flat on the limestone wall
-          beside her, bracing her weight. She is a Black American woman in her early thirties, tall
-          and athletic with a full, heavy bust, broad straight shoulders and a soldier's posture,
-          smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the
-          middle of her back, straight dark brows, black leather duty gloves and a ring of heavy
-          iron keys on a steel chain at her hip. Her shoulders and collar show the crisp, pressed
-          tan long-sleeved uniform shirt with shoulder epaulets edged in vivid azure blue, an
-          embroidered vivid azure blue and gold patch on the upper sleeve with three vivid azure
-          blue chevrons, a vivid, saturated azure blue necktie knotted tight at her throat and a
-          polished gold six-point star badge over her left breast pocket. Behind her, out of focus,
-          the black iron bars of the cell door and the curve of the whitewashed vault. A caged bulb
-          behind her shoulder rims her dreadlocks and the edge of the glove with warm light, leaving
-          her face in soft side light. Palette of black leather, dark skin, uniform tan, vivid azure
-          blue and limestone gray; natural skin texture, fine 35 mm film grain with visible pores,
-          shallow depth of field on her eyes and the glove.
+          First-person point-of-view photograph from standing height, the back of the head
+          pressed against the limestone wall of a small jail cell walled with smooth dressed
+          limestone ashlar blocks laid in straight courses with thin mortar joints under a
+          whitewashed pointed vault, underground and windowless but for one small barred slot at
+          street level, the camera level. ashby7 woman in her sheriff's uniform, tan with an
+          azure tie, her long black locs gathered at the nape, stands close in front of the lens
+          and leans in, her face in the upper center of the frame a forearm's length away, eyes
+          in sharp focus. Chin raised, she looks down her nose directly into the camera, making
+          steady eye contact with the viewer, with cold, commanding dominance: eyes narrowed and
+          unblinking, brows drawn low, her mouth firmly shut, lips sealed together in a thin,
+          contemptuous smirk at one corner. Her right arm extends straight toward the camera and
+          her black leather gloved palm covers the lower third of the lens itself, seen from
+          directly behind it the way a hand over your own mouth looks from your own eyes: the
+          inside of the glossy glove, its palm and spread fingers, filling the bottom edge of
+          the frame large, close and softly out of focus, the leather creased across the palm.
+          Her gloved left hand is braced flat on the limestone wall beside the lens. Behind her,
+          out of focus, the black iron bars of the open cell door and the curve of the
+          whitewashed vault. A caged bulb behind her shoulder rims her locs and the edge of the
+          glove with warm light, leaving her face in soft side light. Palette of black leather,
+          uniform tan, vivid azure blue and limestone gray; natural skin texture, fine 35 mm
+          film grain with visible pores, shallow depth of field on her eyes and the glove.
   - category: look
     word: WATCH
     cost: 1
@@ -200,7 +181,7 @@ actions:
       effects:
         - skill.gain: look
       art:
-        loras: ["KreaEbonyBabe1"]
+        loras: ["ashby7_krea2_000001200:0.9"]
         subject: >
           Widescreen photograph from standing eye height inside a small jail cell walled with
           smooth dressed limestone ashlar blocks laid in straight courses with thin mortar
@@ -208,30 +189,26 @@ actions:
           barred slot at street level, looking out through the black iron bars of the cell door,
           blurred in the foreground, at a gray steel desk four paces away under a pointed arch
           of smooth dressed limestone ashlar blocks laid in straight courses with thin mortar
-          joints. At the desk sits a Black American woman in her early thirties, tall and
-          athletic with a full, heavy bust, broad straight shoulders and a soldier's posture,
-          smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the
-          middle of her back, a level, unimpressed stare under straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her hip. She wears the Graystone County Sheriff's
-          uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a
-          pointed collar, a full button-front placket, two buttoned flap chest pockets piped in
-          vivid azure blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid
-          azure blue and gold patch on each upper sleeve and a polished gold six-point star
-          badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small
-          gold tie bar; tan riding breeches with a vivid azure blue stripe down the outer seam;
-          a black leather duty belt with a polished brass buckle; and stiff, structured, mirror-
-          polished black leather thigh-high riding boots with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight to the leg, pulled up over the breeches to mid-thigh; her head is bare. Three vivid
-          azure blue chevrons sit on each upper sleeve beneath the patch. She sits sideways to
-          the lens with her right leg crossed over her left knee, the thigh-high boot raised
-          across her lap, and works a soft horsehair brush along the gleaming boot shaft with
-          her gloved right hand, her gloved left hand steadying the boot at the ankle, an open
-          round tin of black polish on the desk beside a closed ledger. Her eyes stay on the
-          boot and the brush, her face composed and absorbed, lips closed. Beyond her the
-          windowless underground corridor recedes under pointed arches with caged bulbs and a
-          row of barred cell doors. A caged incandescent bulb above the desk throws warm light
-          down the length of the boot in a long specular highlight and across her hands and
-          face, while the bars in the foreground stay dark. Palette of black leather, uniform
-          tan, vivid azure blue, black iron and bulb amber; natural skin texture, fine 35 mm
-          film grain, focus on the boot and her hands.
+          joints. At the desk sits ashby7 woman in her sheriff's uniform, a sergeant in her
+          early thirties with her long black locs gathered at the nape, sideways to the lens
+          with her right leg crossed over her left knee, the thigh-high boot raised across her
+          lap. She works a soft horsehair brush along the gleaming boot shaft with her gloved
+          right hand, her gloved left hand steadying the boot at the ankle, an open round tin of
+          black polish on the desk beside a closed ledger. Her eyes stay on the boot and the
+          brush, her face composed and absorbed, lips closed. Her pressed tan uniform shirt has
+          vivid azure blue trim on the pockets and epaulets, three vivid azure blue chevrons on
+          each sleeve and a polished gold six-point star badge, with a vivid, saturated azure
+          blue tie and a small gold tie bar; she wears black leather duty gloves, a black
+          leather duty belt with a ring of heavy iron keys at the hip, tan riding breeches, the
+          same khaki tan as her shirt, with a vivid azure blue stripe down the outer seam, and
+          polished black leather thigh-high riding boots with rigid straight shafts and low,
+          flat stacked-leather riding heels. Beyond her the windowless underground corridor
+          recedes under pointed arches with caged bulbs and a row of barred cell doors. A caged
+          incandescent bulb above the desk throws warm light down the length of the boot in a
+          long specular highlight and across her hands and face, while the bars in the
+          foreground stay dark. Palette of black leather, uniform tan, vivid azure blue, black
+          iron and bulb amber; natural skin texture, fine 35 mm film grain, focus on the boot
+          and her hands.
   - category: deal
     word: PROMISE
     cost: 1
@@ -259,38 +236,33 @@ actions:
       effects:
         - card.lose: prison-chains
       art:
-        loras: ["KreaEbonyBabe1", "SA86RN444WSD83T4QX4PYS3P80:1"]
+        loras: ["ashby7_krea2_000001200:0.9", "hngcf5_krea2_000001500:0.9"]
         subject: >
-          First-person point-of-view widescreen photograph from standing eye height inside a small
-          jail cell walled with smooth dressed limestone ashlar blocks laid in straight courses with
-          thin mortar joints under a whitewashed pointed vault, underground and windowless but for
-          one small barred slot at street level, looking out through the black iron bars of the cell
-          door. Two bare wrists reach through the bars from the bottom edge of the frame to its
-          center: a pale man's bare hands and forearms with short unpolished nails, a pair of
-          polished steel hinged police handcuffs hanging open from one wrist. On the far side of the
-          bars a woman stands close, framed from the waist up, her black-gloved hands at the center
-          of the frame turning a small steel key in the cuff's lock, a heavy ring of iron keys
-          hanging from her gloved fingers. Her head is raised and she looks directly into the
-          camera, making eye contact with the viewer, with wary, measuring half-trust: one eyebrow
-          raised, eyes narrowed and searching, lips pressed in a faint, skeptical line. She is a
-          Black American woman in her early thirties, tall and athletic with a full, heavy bust,
-          broad straight shoulders and a soldier's posture, smooth dark brown skin, long black
-          dreadlocks gathered at the nape and falling to the middle of her back, straight dark
-          brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her
-          hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved
-          uniform shirt of heavy cotton twill with a pointed collar, a full button-front placket,
-          two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged in
-          vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve and
-          a polished gold six-point star badge pinned over the left pocket; a vivid, saturated azure
-          blue necktie with a small gold tie bar; a black leather duty belt with a polished brass
-          buckle; her head is bare. Three vivid azure blue chevrons sit on each upper sleeve beneath
-          the patch. Behind her the windowless underground corridor of smooth dressed limestone
-          ashlar blocks laid in straight courses with thin mortar joints recedes under pointed
-          arches lit by caged bulbs, a pile of chains and leg irons lying on the flagstones at her
-          feet. A caged incandescent bulb above and behind her lights the steel cuffs, the keys and
-          her gloves with hard warm highlights and rims her shoulders. Palette of polished steel,
-          black iron, black leather, uniform tan and vivid azure blue; natural skin texture, fine 35
-          mm film grain, sharp focus on the key in the lock and her eyes.
+          First-person point-of-view widescreen photograph from standing eye height inside a
+          small jail cell walled with smooth dressed limestone ashlar blocks laid in straight
+          courses with thin mortar joints under a whitewashed pointed vault, underground and
+          windowless but for one small barred slot at street level, looking out through the
+          black iron bars of the cell door. A pale man's bare hands and forearms with short
+          unpolished nails reach through the bars from the bottom edge of the frame to its
+          center, the bare wrists locked together in closed polished stainless steel hngcf5
+          hinged handcuffs, each cuff a little wider than the wrist. On the far side of the bars
+          ashby7 woman in her sheriff's uniform, a sergeant in her early thirties with her long
+          black locs gathered at the nape, stands close, framed from the waist up, her
+          black-gloved hands at the center of the frame turning a small steel key in the lock of
+          the cuffs, a heavy ring of iron keys hanging from her gloved fingers. Her head is
+          raised and she looks directly into the camera, making eye contact with the viewer,
+          with wary, measuring half-trust: one eyebrow raised, eyes narrowed and searching, lips
+          pressed in a faint, skeptical line. Her pressed tan uniform shirt has vivid azure blue
+          trim on the pockets and epaulets, three vivid azure blue chevrons on each sleeve and a
+          polished gold six-point star badge, with a vivid, saturated azure blue tie and a small
+          gold tie bar; the frame ends at her black leather duty belt. Behind her the windowless
+          underground corridor of smooth dressed limestone ashlar blocks laid in straight
+          courses with thin mortar joints recedes under pointed arches lit by caged bulbs, a
+          pile of chains and leg irons lying on the flagstones at her feet. A caged incandescent
+          bulb above and behind her lights the steel cuffs, the keys and her gloves with hard
+          warm highlights and rims her shoulders. Palette of polished steel, black iron, black
+          leather, uniform tan and vivid azure blue; natural skin texture, fine 35 mm film
+          grain, sharp focus on the key in the lock and her eyes.
   - category: deal
     word: KNEEL
     cost: 1
@@ -327,29 +299,29 @@ actions:
       effects:
         - card.gain: boot-fetish
       art:
-        loras: [KreaEbonyBabe1]
+        loras: ["ashby7_krea2_000001200:0.9"]
         subject: >
-          Detail close-up first-person photograph from kneeling height on the flagstone floor of a
-          small jail cell walled with smooth dressed limestone ashlar blocks laid in straight
-          courses with thin mortar joints, the camera level and inches from a woman's boot. A
-          stiff, structured, mirror-polished black leather thigh-high riding boot fills the frame
-          on a diagonal from the lower left corner to the upper right: the rounded toe cap so
-          glossy it mirrors the caged bulb above as a sharp point of light, a tight line of black
-          welt stitching running round the toe where the leather meets the sole, a fine wet sheen
-          following the seam up the instep, the soft crease at the ankle, and the rigid straight
-          shaft rising out of the top right corner, fitted tight to her calf, its polished surface
-          showing long smooth highlights. The boot hangs in the air, her leg crossed over the
-          other at the knee, and a glimpse of tan riding breeches with a vivid azure blue stripe
-          down the outer seam disappears into the boot top at the upper right edge; her
-          black-gloved hand rests on her knee at the top right corner, a gold six-point star badge
-          catching the light out of focus behind it. A pale man's bare hands with short unpolished
-          nails enter from the bottom edge of the frame, fingertips cradling the low, flat stacked-leather riding heel from below. Behind the boot, out of focus, the black iron
-          bars of the cell door and warm bulb light on pale ashlar stone. A single caged
-          incandescent bulb above and to the right throws one long specular highlight down the
-          shaft and a bright point on the toe, the rest of the leather falling into deep glossy
-          black. Palette of black leather, vivid azure blue, gold, pale limestone and bulb amber;
-          natural leather texture with visible stitching and grain, fine 35 mm film grain, very
-          shallow depth of field on the toe cap.
+          Detail close-up first-person photograph from kneeling height on the flagstone floor of
+          a small jail cell walled with smooth dressed limestone ashlar blocks laid in straight
+          courses with thin mortar joints, the camera level and inches from the boot of ashby7
+          woman in her sheriff's uniform, sitting with her legs crossed at the knee. Her
+          polished black leather thigh-high riding boot hangs in the air and fills the frame on
+          a diagonal from the lower left corner to the upper right: the rounded toe cap so
+          glossy it mirrors the caged bulb above as a sharp point of light, a tight line of
+          black welt stitching running round the toe, a fine wet sheen following the seam up the
+          instep, the soft crease at the ankle, and the rigid straight shaft rising out of the
+          top right corner, fitted tight to her calf, its polished surface showing long smooth
+          highlights. A glimpse of tan riding breeches with a vivid azure blue stripe down the
+          outer seam disappears into the boot top at the upper right edge; her black-gloved hand
+          rests on her knee at the top right corner, and the frame ends just above it. A pale
+          man's bare hands with short unpolished nails enter from the bottom edge of the frame,
+          fingertips cradling the low, flat stacked-leather riding heel from below. Behind the
+          boot, out of focus, the black iron bars of the cell door and warm bulb light on pale
+          ashlar stone. A single caged incandescent bulb above and to the right throws one long
+          specular highlight down the shaft and a bright point on the toe, the rest of the
+          leather falling into deep glossy black. Palette of black leather, vivid azure blue,
+          pale limestone and bulb amber; natural leather texture with visible stitching and
+          grain, fine 35 mm film grain, very shallow depth of field on the toe cap.
   - category: look
     word: ADMIRE
     cost: 1
@@ -387,31 +359,30 @@ actions:
       effects:
         - card.gain: uniform-fetish
       art:
-        loras: [KreaEbonyBabe1]
+        loras: ["ashby7_krea2_000001200:0.9"]
         subject: >
           Intimate first-person photograph from standing eye height in a small jail cell walled
           with smooth dressed limestone ashlar blocks laid in straight courses with thin mortar
-          joints, the camera level and close to a woman's chest. She stands at parade rest an arm's
-          length from the lens, framed from her lips down to her belt: her full lips closed in a
-          faint, satisfied half-smile at the top edge of the frame, a long black dreadlock falling
-          over one shoulder. The center of the frame is her uniform in crisp detail: a crisp,
-          pressed tan long-sleeved uniform shirt of heavy cotton twill with sharp pressed creases
-          standing off the fabric down each buttoned flap chest pocket, the pockets piped in vivid
-          azure blue, a pointed collar sitting flat and even, shoulder epaulets edged in vivid
-          azure blue, an embroidered vivid azure blue and gold patch on the upper sleeve with
-          three vivid azure blue chevrons beneath it, and a polished gold six-point star badge over
-          the left pocket reflecting the light; a vivid, saturated azure blue silk necktie knotted
-          in a small hard knot in the notch of the collar, a small gold tie bar set level across it,
-          the silk catching a long soft highlight. A pale man's bare hand with short unpolished
-          nails rises from the bottom edge of the frame, holding the necktie lightly between thumb
-          and forefinger just below the tie bar. Her dark brown skin shows at her throat above the
-          collar. Below, the black leather duty belt with a polished brass buckle crosses the bottom
-          of the frame. Behind her, out of focus, pale ashlar stone and the black iron bars of the
-          cell door. A single caged incandescent bulb overhead lights the starch, the silk and the
-          gold from above, leaving soft shadow under the pocket flaps and the collar points.
-          Palette of uniform tan, vivid azure blue, gold, dark skin and pale limestone; natural
-          fabric texture with visible twill weave and silk sheen, fine 35 mm film grain, shallow
-          depth of field on the necktie and the star.
+          joints, the camera level and close to the chest of ashby7 woman in her sheriff's
+          uniform. She stands at parade rest an arm's length from the lens, framed from her lips
+          down to her belt: her full lips closed in a faint, satisfied half-smile at the top
+          edge of the frame, one long black loc falling over her shoulder. The center of the
+          frame is her uniform in crisp detail: a pressed tan long-sleeved uniform shirt of
+          heavy cotton twill with sharp pressed creases down each buttoned flap chest pocket,
+          the pockets piped in vivid azure blue, a pointed collar sitting flat and even,
+          shoulder epaulets edged in vivid azure blue, three vivid azure blue chevrons on the
+          sleeve, and a polished gold six-point star badge over the left pocket reflecting the
+          light; a vivid, saturated azure blue silk necktie knotted in a small hard knot in the
+          notch of the collar, a small gold tie bar set level across it, the silk catching a
+          long soft highlight. A pale man's bare hand with short unpolished nails rises from the
+          bottom edge of the frame, holding the necktie lightly between thumb and forefinger
+          just below the tie bar. Below, her black leather duty belt with a polished brass
+          buckle crosses the bottom of the frame. Behind her, out of focus, pale ashlar stone
+          and the black iron bars of the cell door. A single caged incandescent bulb overhead
+          lights the starch, the silk and the gold from above, leaving soft shadow under the
+          pocket flaps and the collar points. Palette of uniform tan, vivid azure blue, gold and
+          pale limestone; natural fabric texture with visible twill weave and silk sheen, fine
+          35 mm film grain, shallow depth of field on the necktie and the star.
   - category: deal
     word: SIGN
     cost: 0
@@ -442,39 +413,32 @@ actions:
         - card.lose: inmate
         - move.to: main-street-south
       art:
-        loras: ["KreaEbonyBabe1"]
+        loras: ["ashby7_krea2_000001200:0.9"]
         subject: >
-          First-person point-of-view widescreen photograph from standing eye height inside a small
-          jail cell walled with smooth dressed limestone ashlar blocks laid in straight courses with
-          thin mortar joints under a whitewashed pointed vault, underground and windowless but for
-          one small barred slot at street level, the cell door rolled open behind the woman. She
-          stands at arm's length, framed from the thighs up in the center of the frame. She looks
-          directly into the camera, making eye contact with the viewer, with dry, satisfied
-          finality: chin up, eyes bright, a crooked, knowing smile at one corner of her mouth. She
-          is a Black American woman in her early thirties, tall and athletic with a full, heavy
-          bust, broad straight shoulders and a soldier's posture, smooth dark brown skin, long black
-          dreadlocks gathered at the nape and falling to the middle of her back, straight dark
-          brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her
-          hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved
-          uniform shirt of heavy cotton twill with a pointed collar, a full button-front placket,
-          two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged in
-          vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve and
-          a polished gold six-point star badge pinned over the left pocket; a vivid, saturated azure
-          blue necktie with a small gold tie bar; tan riding breeches with a vivid azure blue stripe
-          down the outer seam; a black leather duty belt with a polished brass buckle; and stiff,
-          structured, mirror-polished black leather thigh-high riding boots with rigid straight
-          shafts and low, flat stacked-leather riding heels, fitted tight to the leg, pulled up over
-          the breeches to mid-thigh; her head is bare. Three vivid azure blue chevrons sit on each
-          upper sleeve beneath the patch. She holds a large open ruled ledger out toward the lens
-          across her gloved left forearm, its pages covered in rows of small handwritten block
-          capitals too small to read, and offers a black pen toward the lens in her gloved right
-          hand. Behind her the open barred door and the windowless underground corridor of smooth
-          dressed limestone ashlar blocks laid in straight courses with thin mortar joints, caged
-          bulbs leading away toward a stone staircase rising out of frame with a hint of pale
-          daylight at its top. A caged incandescent bulb above lights the ledger pages and her face
-          warmly, with cool daylight from the far stairs rimming her shoulders. Palette of uniform
-          tan, vivid azure blue, black leather, cream ledger paper and pale limestone; natural skin
-          texture, fine 35 mm film grain, focus on her eyes and the pen.
+          First-person point-of-view widescreen photograph from standing eye height inside a
+          small jail cell walled with smooth dressed limestone ashlar blocks laid in straight
+          courses with thin mortar joints under a whitewashed pointed vault, underground and
+          windowless but for one small barred slot at street level, the cell door rolled open
+          behind the woman. ashby7 woman in her sheriff's uniform, a sergeant in her early
+          thirties with her long black locs gathered at the nape, stands at arm's length, framed
+          from the thighs up in the center of the frame. She looks directly into the camera,
+          making eye contact with the viewer, with dry, satisfied finality: chin up, eyes
+          bright, a crooked, knowing smile at one corner of her mouth. Her pressed tan uniform
+          shirt has vivid azure blue trim on the pockets and epaulets, three vivid azure blue
+          chevrons on each sleeve and a polished gold six-point star badge, with a vivid,
+          saturated azure blue tie and a small gold tie bar; she wears black leather duty
+          gloves, a black leather duty belt with a ring of heavy iron keys at the hip, and tan
+          riding breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down
+          the outer seam. She holds a large open ruled ledger out toward the lens across her
+          gloved left forearm, its pages covered in rows of small handwritten block capitals too
+          small to read, and offers a black pen toward the lens in her gloved right hand. Behind
+          her the open barred door and the windowless underground corridor of smooth dressed
+          limestone ashlar blocks laid in straight courses with thin mortar joints, caged bulbs
+          leading away toward a stone staircase rising out of frame with a hint of pale daylight
+          at its top. A caged incandescent bulb above lights the ledger pages and her face
+          warmly, with cool daylight from the far stairs rimming her shoulders. Palette of
+          uniform tan, vivid azure blue, black leather, cream ledger paper and pale limestone;
+          natural skin texture, fine 35 mm film grain, focus on her eyes and the pen.
   - category: deal
     word: COLLECT
     cost: 0
@@ -526,26 +490,26 @@ actions:
         - card.lose: nude
         - move.to: undercroft-trusted-release
       art:
-        loras: ["KreaEbonyBabe1", "pvcg5_krea2_000002000:0.9"]
+        loras: ["ashby7_krea2_000001200:0.9", "pvcg5_krea2_000002000:0.9"]
         subject: >
-          A POV photograph looking down at my own naked body standing in a small jail cell, a pvcg5
-          chastity cage, filled, polished stainless steel with a tiny brass padlock, locked on me,
-          small next to her hand. A woman stands close in front of me, bending slightly toward me,
-          and holds a single small polished steel key up just above the cage between her
-          black-gloved thumb and forefinger, turned toward the lens so it catches the light; her
-          other hand is lowered out of frame. She looks into the camera, making eye contact with
-          the viewer, with dry, approving possession: eyes steady and warm, one brow raised a
-          fraction, a small closed-mouth smile pulled to one side. She is a Black American woman in
-          her early thirties, athletic with a full, heavy bust and broad straight shoulders, smooth
-          dark brown skin, long black dreadlocks gathered at the nape, straight dark brows. She
-          wears a crisp plain tan uniform shirt with a polished gold star badge, a vivid azure blue
-          necktie with a small gold tie bar and black leather duty gloves. My bare chest and
-          stomach lead down from the bottom edge of the frame to the cage in the lower centre.
-          Behind her only a plain wall of pale limestone blocks, softly out of focus. Steep
-          downward viewpoint from my eyes, the cage and the key sharp. One warm bulb above lights
-          the key, the steel and her face. Simple, uncluttered composition. Palette of uniform
-          tan, vivid azure blue, black leather, polished steel and pale limestone; natural skin
-          texture, fine 35 mm film grain, focus on the cage, the key and her eyes.
+          A POV photograph looking down at my own naked body standing in a small jail cell, a
+          pvcg5 chastity cage, filled, polished stainless steel with a tiny brass padlock,
+          locked on me, small next to her hand. ashby7 woman in her sheriff's uniform, a
+          sergeant in her early thirties with her long black locs gathered at the nape, stands
+          close in front of me, bending slightly toward me, and holds a single small polished
+          steel key up just above the cage between her black-gloved thumb and forefinger, turned
+          toward the lens so it catches the light; her other hand is lowered out of frame. She
+          looks into the camera, making eye contact with the viewer, with dry, approving
+          possession: eyes steady and warm, one brow raised a fraction, a small closed-mouth
+          smile pulled to one side. She wears her pressed tan uniform shirt with a polished gold
+          star badge, a vivid azure blue necktie with a small gold tie bar and black leather
+          duty gloves. My bare chest and stomach lead down from the bottom edge of the frame to
+          the cage in the lower centre. Behind her only a plain wall of pale limestone blocks,
+          softly out of focus. Steep downward viewpoint from my eyes, the cage and the key
+          sharp. One warm bulb above lights the key, the steel and her face. Simple, uncluttered
+          composition. Palette of uniform tan, vivid azure blue, black leather, polished steel
+          and pale limestone; natural skin texture, fine 35 mm film grain, focus on the cage,
+          the key and her eyes.
   - category: look
     word: TURN
     cost: 0
@@ -557,39 +521,20 @@ actions:
         vault, a small barred window at street level.
       effects:
         - move.to: undercroft-cell-back
-# Approved render (retro-80s:1). This subject predates the handcuff-case fix in cast.md; it is
-# kept as rendered, so update it before regenerating with --overwrite.
 art:
-  loras: [KreaEbonyBabe1]
+  loras: ["ashby7_krea2_000001200:0.9"]
   subject: >
     Eye-level photograph taken through the bars of a jail cell door, from inside the cell
     looking out: thick black iron bars stand in the extreme foreground, the lens close behind
-    them, soft and out of focus, dark vertical stripes running the full height of the frame
-    with a flat iron crossbar at waist height. Beyond the bars, sharp and in focus, one pace
-    away in the corridor outside the cell, a woman stands facing the lens, seen from mid-thigh
-    up, her black-gloved right hand wrapped around one bar from the far side: a Black
-    American woman in her early thirties, tall and athletic with a full, heavy bust, broad
-    straight shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks
-    gathered at the nape and falling to the middle of her back, a level, unimpressed stare
-    under straight dark brows, black leather duty gloves, and a ring of heavy iron keys
-    clipped to her belt at the hip.
-    She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved
-    uniform shirt of heavy cotton twill with a pointed collar, a full button-front placket,
-    two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged in
-    vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve and
-    a polished gold six-point star badge pinned over the left pocket; a vivid, saturated
-    azure blue necktie with a small gold tie bar; tan riding breeches with a vivid azure blue
-    stripe down the outer seam; a black leather duty belt with a polished brass buckle; and
-    stiff, structured, mirror-polished black leather thigh-high riding boots with rigid
-    straight shafts fitted tight to the leg, pulled up over the breeches to mid-thigh, their
-    tops at the bottom edge of the frame; her head is bare. Three vivid azure blue chevrons
-    sit on each upper sleeve beneath the patch. Her face sits in the gap between two blurred
-    bars, and she looks straight into the lens with a level, unimpressed stare, chin slightly
-    raised, lips closed. Behind her the corridor runs away under pointed arches of smooth
-    dressed limestone ashlar blocks laid in straight courses with thin mortar joints, a
-    whitewashed pointed vault overhead, caged bulbs hanging from it on black cords, a row of
-    barred cell doors along the far wall. A caged incandescent bulb in the corridor above and
-    behind her backlights her shoulders and dreadlocks and lays warm light across the
-    flagstones, while the blurred bars in the foreground stay dark. Palette of black iron,
-    pale limestone, uniform tan, vivid azure blue and bulb amber; natural skin texture, fine
-    35 mm film grain, shallow depth of field with focus on her eyes.
+    them, soft and out of focus, with a flat iron crossbar at waist height. Beyond the bars,
+    sharp and in focus, one pace away in the corridor outside the cell, ashby7 woman in her
+    sheriff's uniform, tan with an azure tie, her long black locs gathered at the nape, stands
+    facing the lens, seen from mid-thigh up, her black-gloved right hand wrapped around one bar
+    from the far side. Her face sits in the gap between two blurred bars, and she looks straight
+    into the camera, making eye contact with the viewer, with a level, unimpressed stare: chin
+    slightly raised, eyes steady, lips closed. Behind her the corridor runs away under pointed
+    arches of pale limestone, caged bulbs hanging from the vault on black cords, a row of barred
+    cell doors along the far wall. A caged incandescent bulb in the corridor above and behind
+    her backlights her shoulders and locs and lays warm light across the flagstones. Palette of
+    pale limestone, uniform tan, vivid azure blue and bulb amber; natural skin texture, fine 35
+    mm film grain, shallow depth of field with focus on her eyes.

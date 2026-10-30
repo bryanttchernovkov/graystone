@@ -9,12 +9,12 @@ setback_penalty:
   effects:
     - tracker.change: { body: -1 }
 art:
-  loras: ["SA86RN444WSD83T4QX4PYS3P80:1"]
+  loras: ["hngcf5_krea2_000001500:0.9"]
   subject: >
-    Still-life photograph from above of prison restraints lying on the gray wool blanket of a
-    steel slat cot: a pair of polished steel hinged police handcuffs threaded on a heavy steel
-    belly chain, and a set of steel leg irons joined by a short chain, coiled together in the
-    center of the frame. Square composition. A caged incandescent bulb above throws hard warm
-    highlights along every chain link and the cuff ratchets, the wool around them in soft
-    shadow. Palette of polished steel, gray wool and warm amber; natural metal and wool texture,
-    fine 35 mm film grain, sharp focus on the cuffs.
+    Square still-life photograph from above of prison restraints lying on the gray wool blanket
+    of a steel slat cot: closed polished stainless steel hngcf5 hinged handcuffs threaded on a
+    heavy steel belly chain, and a set of steel leg irons joined by a short chain, coiled
+    together in the center of the frame. A caged incandescent bulb above throws hard warm
+    highlights along the curved steel of the cuffs and every link of the chains, the wool around
+    them in soft shadow. Palette of polished steel, gray wool and warm amber; natural metal and
+    wool texture, fine 35 mm film grain, sharp focus on the cuffs.

@@ -9,24 +9,21 @@ slots:
   - { match: { tag: please }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
   - { match: { tag: please }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
 art:
-  loras: ["KreaEbonyBabe1"]
+  loras: ["ashby7_krea2_000001200:0.9"]
   subject: >
-    Square portrait photograph from eye level of a Black American woman in her early thirties,
-    tall and athletic with a full, heavy bust, broad straight shoulders and a soldier's posture,
-    smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the middle
-    of her back, a level, unimpressed stare under straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel
-    chain at her hip, standing in the underground corridor of smooth dressed limestone ashlar
-    blocks laid in straight courses with thin mortar joints under a pointed arch, framed from
-    the waist up. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-
-    sleeved uniform shirt of heavy cotton twill with a pointed collar, a full button-front
-    placket, two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged
-    in vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve and
-    a polished gold six-point star badge pinned over the left pocket; a vivid, saturated azure
-    blue necktie with a small gold tie bar; a black leather duty belt with a polished brass
-    buckle; her head is bare. Three vivid azure blue chevrons sit on each upper sleeve beneath
-    the patch. She stands with her gloved arms folded across her chest, her body half-turned,
-    and looks sidelong into the lens with cool, guarded appraisal, one eyebrow slightly raised,
-    lips closed. A caged incandescent bulb above lights her face and the polished star warmly
-    from the side, the corridor behind her falling into soft shadow with a row of barred cell
-    doors. Palette of uniform tan, vivid azure blue, gold, dark skin and pale limestone; natural
-    skin texture, fine 35 mm film grain, shallow depth of field on her eyes.
+    Square waist-up portrait photograph from eye level of ashby7 woman in her sheriff's uniform,
+    a sergeant in her early thirties with her long black locs gathered at the nape, standing in
+    an underground corridor of smooth dressed limestone ashlar blocks laid in straight courses
+    with thin mortar joints under a pointed arch. She stands half-turned with her gloved arms
+    folded across her chest and looks sidelong into the lens, making eye contact with the
+    viewer, with cool, guarded appraisal: eyes steady, one eyebrow slightly raised, lips closed.
+    Her pressed tan uniform shirt has vivid azure blue trim on the pockets and epaulets, three
+    vivid azure blue chevrons on each sleeve and a polished gold six-point star badge, with a
+    vivid, saturated azure blue tie and a small gold tie bar; she wears black leather duty
+    gloves, a black leather duty belt with a ring of heavy iron keys at the hip, and tan riding
+    breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down the outer
+    seam. The frame ends at her duty belt. A caged incandescent bulb above lights her face and
+    the polished star warmly from the side, the corridor behind her falling into soft shadow
+    past a row of black iron barred cell doors. Palette of uniform tan, vivid azure blue, gold,
+    black leather and pale limestone; natural skin texture, fine 35 mm film grain, shallow depth
+    of field on her eyes.

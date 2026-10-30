@@ -31,32 +31,25 @@ actions:
         - card.gain: cafe-linde-punch-card
         - skill.gain: talk
       art:
-        loras: ["DMilfModel7:1"]
+        loras: ["ferrina_krea2_000001200:1"]
         subject: >
-          First-person point-of-view widescreen photograph from standing eye height at
-          a dark walnut café counter with a polished brass rail, the camera level. One
-          woman stands behind the counter at arm's length, framed from the waist up,
-          leaning slightly toward the lens. She looks directly into the camera, making
-          eye contact with the viewer, with cool, amused appraisal: green eyes steady
-          behind her glasses, one dark brow raised, red lips in a small closed smile.
-          She is a white American woman of forty with an hourglass figure, a large,
-          full bust and a narrow waist, fair skin, glossy shoulder-length dark
-          brunette hair with soft waves, black rectangular thick-rimmed glasses,
-          bright green eyes, defined dark brows, and glossy red lipstick. She wears a
-          red silk blouse with long sleeves and a soft collar, the top two buttons
-          open, tucked into tailored black trousers, and a crisp black bib apron tied
-          snugly at the waist, its straps smooth over her shoulders; black patent
-          high-heeled pumps show under the trouser hems. With her right hand she
-          slides a small cream loyalty card across the walnut toward the lens, one red
-          fingernail pressed on it; her left hand holds a small rubber stamp beside
-          her shoulder. Behind her, a polished chrome lever espresso machine with a
-          wisp of steam, shelves of white porcelain cups and saucers and cream walls;
-          at the right edge, a short glass case with a few trays of pastries. Soft
-          morning daylight through the front windows behind the camera lights her face
-          and the red silk evenly, with warm brass glints on the rail. Restrained
-          palette of red silk, black apron, dark walnut, chrome, brass, cream and
-          espresso brown; natural skin texture, fine 35 mm film grain, focus on her
-          eyes.
+          First-person point-of-view widescreen photograph from standing eye height at a
+          dark walnut café counter with a polished brass rail, the camera level. ferrina
+          woman in her red work blouse and black apron, wearing her thick black
+          rectangular glasses, stands behind the counter at arm's length, framed from the
+          waist up, leaning slightly toward the lens. She looks directly into the camera,
+          making eye contact with the viewer, with cool, amused appraisal: green eyes
+          steady behind her glasses, one dark brow raised, red lips in a small closed
+          smile. With her right hand she slides a small cream loyalty card across the
+          walnut toward the lens, one red fingernail pressed on it; her left hand holds a
+          small rubber stamp beside her shoulder. Behind her, a polished chrome lever
+          espresso machine with a wisp of steam, shelves of white porcelain cups and
+          saucers and cream walls; at the right edge, a short glass case with a few trays
+          of pastries. Soft morning daylight through the front windows behind the camera
+          lights her face and the red silk evenly, with warm brass glints on the rail. Her
+          apron is plain, with no lettering. Restrained palette of red silk, black apron,
+          dark walnut, chrome, brass, cream and espresso brown; natural skin texture, fine
+          35 mm film grain, focus on her eyes.
   - category: deal
     word: ORDER
     cost: 1
@@ -92,30 +85,23 @@ actions:
                 the man behind you.
               effects: []
       art:
-        loras: ["DMilfModel7:1"]
+        loras: ["ferrina_krea2_000001200:1"]
         subject: >
-          First-person point-of-view widescreen photograph from standing eye height at
-          a dark walnut café counter with a polished brass rail, the camera tilted
-          slightly down. One woman stands alone behind the counter, framed from the
-          waist up, setting a white porcelain cappuccino cup on its saucer down on the
-          walnut in front of the lens with both hands, a leaf drawn in its fine foam,
-          a warm golden cornetto on a small white plate beside it. She looks directly
-          into the camera, making eye contact with the viewer, with brisk, expectant
-          approval: green eyes bright behind her glasses, brows lifted, red lips
-          pressed in a small smile. She is a white American woman of forty with an
-          hourglass figure, a large, full bust and a narrow waist, fair skin, glossy
-          shoulder-length dark brunette hair with soft waves, black rectangular
-          thick-rimmed glasses, bright green eyes, defined dark brows, and glossy red
-          lipstick. She wears a red silk blouse with long sleeves and a soft collar,
-          the top two buttons open, tucked into tailored black trousers, and a crisp
-          black bib apron tied snugly at the waist, its straps smooth over her
-          shoulders; black patent high-heeled pumps show under the trouser hems.
-          Behind her, a polished chrome lever espresso machine with a wisp of steam
-          and shelves of white cups on cream walls. Soft morning daylight from the
-          front windows lights her face, the foam and the pastry. Restrained palette
-          of red silk, black apron, dark walnut, white porcelain, golden pastry,
-          chrome and cream; natural skin texture, fine 35 mm film grain, focus on the
-          cup and her eyes.
+          First-person point-of-view widescreen photograph from standing eye height at a
+          dark walnut café counter with a polished brass rail, the camera tilted slightly
+          down. ferrina woman in her red work blouse and black apron, wearing her thick
+          black rectangular glasses, stands alone behind the counter, framed from the waist
+          up, setting a white porcelain cappuccino cup on its saucer down on the walnut in
+          front of the lens with both hands, a leaf drawn in its fine foam, a warm golden
+          cornetto on a small white plate beside it. She looks directly into the camera,
+          making eye contact with the viewer, with brisk, expectant approval: green eyes
+          bright behind her glasses, brows lifted, red lips pressed in a small smile.
+          Behind her, a polished chrome lever espresso machine with a wisp of steam and
+          shelves of white cups on cream walls. Soft morning daylight from the front
+          windows lights her face, the foam and the pastry. Her apron is plain, with no
+          lettering. Restrained palette of red silk, black apron, dark walnut, white
+          porcelain, golden pastry, chrome and cream; natural skin texture, fine 35 mm
+          film grain, focus on the cup and her eyes.
   - category: work
     word: TASTE
     cost: 1
@@ -144,31 +130,25 @@ actions:
         - boost.change: { card: cafe-linde-punch-card, amount: +1 }
         - skill.gain: work
       art:
-        loras: ["DMilfModel7:1"]
+        loras: ["ferrina_krea2_000001200:1"]
         subject: >
-          First-person point-of-view widescreen photograph from standing eye height at
-          a dark walnut café counter with a polished brass rail, the camera level and
-          close. One woman leans across the counter toward the lens, framed from the
-          chest up, her face close. She looks directly into the camera, making eye
-          contact with the viewer, with intent, instructive focus: green eyes narrowed
-          and watchful behind her glasses, one dark brow raised, red lips parted as if
-          counting. She is a white American woman of forty with an hourglass figure, a
-          large, full bust and a narrow waist, fair skin, glossy shoulder-length dark
-          brunette hair with soft waves, black rectangular thick-rimmed glasses,
-          bright green eyes, defined dark brows, and glossy red lipstick. She wears a
-          red silk blouse with long sleeves and a soft collar, the top two buttons
-          open, tucked into tailored black trousers, and a crisp black bib apron tied
-          snugly at the waist, its straps smooth over her shoulders; black patent
-          high-heeled pumps show under the trouser hems. She holds a small thick white
-          espresso cup with dark crema up between two fingers of her right hand near
-          her own chin, and her left hand is raised with its index finger lifted, red
-          nail, telling the viewer to wait. A pale man's bare hands and forearms with
-          short unpolished nails, entering from the bottom edge of the frame, lie flat
-          on the walnut. Behind her, out of focus, a polished chrome lever espresso
-          machine and cream walls. Soft morning daylight from the front windows lights
-          her face and glasses from the side. Restrained palette of red silk, black
-          apron, dark walnut, white porcelain, espresso brown and chrome; natural skin
-          texture, fine 35 mm film grain, focus on her eyes and the cup.
+          First-person point-of-view widescreen photograph from standing eye height at a
+          dark walnut café counter with a polished brass rail, the camera level and close.
+          ferrina woman in her red work blouse and black apron, wearing her thick black
+          rectangular glasses, leans across the counter toward the lens, framed from the
+          chest up, her face close. She looks directly into the camera, making eye contact
+          with the viewer, with intent, instructive focus: green eyes narrowed and
+          watchful behind her glasses, one dark brow raised, red lips parted as if
+          counting. She holds a small thick white espresso cup with dark crema up between
+          two fingers of her right hand near her own chin, and her left hand is raised
+          with its index finger lifted, red nail, telling the viewer to wait. A pale man's
+          bare hands and forearms with short unpolished nails, entering from the bottom
+          edge of the frame, lie flat on the walnut. Behind her, out of focus, a polished
+          chrome lever espresso machine and cream walls. Soft morning daylight from the
+          front windows lights her face and glasses from the side. Her apron is plain,
+          with no lettering. Restrained palette of red silk, black apron, dark walnut,
+          white porcelain, espresso brown and chrome; natural skin texture, fine 35 mm
+          film grain, focus on her eyes and the cup.
   - category: look
     word: WATCH
     cost: 1
@@ -202,56 +182,44 @@ actions:
       effects:
         - move.to: giardano-backroom
       art:
-        loras: ["DMilfModel7:1"]
+        loras: ["ferrina_krea2_000001200:1"]
         subject: >
-          Widescreen photograph from standing eye height across a dark walnut café
-          counter with a polished brass rail, the café empty and quiet, the camera
-          level. One woman stands alone behind the counter beside an open door into a
-          dim back room, framed from the knees up, one hand on the door's edge. She
-          looks directly into the camera, making eye contact with the viewer, with
-          calm, private command: green eyes steady behind her glasses, chin slightly
-          lowered, red lips closed. She is a white American woman of forty with an
-          hourglass figure, a large, full bust and a narrow waist, fair skin, glossy
-          shoulder-length dark brunette hair with soft waves, black rectangular
-          thick-rimmed glasses, bright green eyes, defined dark brows, and glossy red
-          lipstick. She wears a red silk blouse with long sleeves and a soft collar,
-          the top two buttons open, tucked into tailored black trousers, and a crisp
-          black bib apron tied snugly at the waist, its straps smooth over her
-          shoulders; black patent high-heeled pumps show under the trouser hems. Her
-          other hand, raised at her waist, crooks one red-nailed finger toward the
-          lens. Through the open door behind her, out of focus, burlap coffee sacks, a
-          steel prep table and one empty bentwood chair under a single hanging bulb.
-          She is the only person in the café; the floor and the tables are empty, with
-          no other people anywhere. Beside her, a polished chrome lever espresso
-          machine with a folded white cloth draped over it. Warm late-afternoon light
-          slants low through the front windows across the counter, and the back room
-          glows amber. Restrained palette of red silk, black apron, dark walnut,
-          chrome, burlap and amber; natural skin texture, fine 35 mm film grain, focus
-          on her eyes.
+          Widescreen photograph from standing eye height across a dark walnut café counter
+          with a polished brass rail, the café empty and quiet, the camera level. ferrina
+          woman in her red work blouse and black apron, wearing her thick black
+          rectangular glasses, stands alone behind the counter beside an open door into a
+          dim back room, framed from the knees up, one hand on the door's edge. She looks
+          directly into the camera, making eye contact with the viewer, with calm, private
+          command: green eyes steady behind her glasses, chin slightly lowered, red lips
+          closed. Her other hand, raised at her waist, crooks one red-nailed finger toward
+          the lens. Through the open door behind her, out of focus, burlap coffee sacks, a
+          steel prep table and one empty bentwood chair under a single hanging bulb. She
+          is the only person in the café; the floor and the tables are empty, with no
+          other people anywhere. Beside her, a polished chrome lever espresso machine with
+          a folded white cloth draped over it. Warm late-afternoon light slants low
+          through the front windows across the counter, and the back room glows amber. Her
+          apron is plain, with no lettering. Restrained palette of red silk, black apron,
+          dark walnut, chrome, burlap and amber; natural skin texture, fine 35 mm film
+          grain, focus on her eyes.
 art:
-  loras: ["DMilfModel7:1"]
+  loras: ["ferrina_krea2_000001200:1"]
   subject: >
     Eye-level widescreen photograph from standing height just inside the door of a small,
     elegant European-style café in a small Midwest town, the camera level, looking across a
-    black-and-white hexagon tile floor to a long dark walnut counter with a polished brass
-    rail. Behind the counter stands one woman, alone, the only person in the café, framed
-    from the waist up at the center of the frame, wiping a white porcelain cup with a white
-    cloth, turned toward the lens. She looks directly into the camera, making eye contact
-    with the viewer, with cool, professional welcome: green eyes steady behind her glasses,
-    one dark brow faintly raised, red lips in a polite closed smile. She is a white American
-    woman of forty with an hourglass figure, a large, full bust and a narrow waist, fair
-    skin, glossy shoulder-length dark brunette hair with soft waves, black rectangular
-    thick-rimmed glasses, bright green eyes, defined dark brows, and glossy red lipstick.
-    She wears a red silk blouse with long sleeves and a soft collar, the top two buttons
-    open, tucked into tailored black trousers, and a crisp black bib apron tied snugly at
-    the waist, its straps smooth over her shoulders; black patent high-heeled pumps show
-    under the trouser hems. Beside her, a polished chrome lever espresso machine with two
-    groups and a wisp of steam; behind her, open shelves of stacked white cups and saucers
-    on cream walls and a small chalkboard with blurred, unreadable white chalk lines; at the
-    right end of the counter, a short glass case with a few trays of croissants, cornetti
-    and small tarts. A closed dark wood door stands in the back wall behind the counter. The
-    floor behind the counter and the tables are empty, with no other people anywhere in the
-    room. Soft morning daylight from the front windows behind the camera lights the room
-    evenly, with warm brass glints along the rail. Restrained palette of red silk, black
-    apron, dark walnut, chrome, brass, cream walls and black-and-white tile; natural skin
-    texture, fine 35 mm film grain, focus on her eyes.
+    black-and-white hexagon tile floor to a long dark walnut counter with a polished brass rail.
+    Behind the counter stands ferrina woman in her red work blouse and black apron, wearing her
+    thick black rectangular glasses, alone, the only person in the café, framed from the waist
+    up at the center of the frame, wiping a white porcelain cup with a white cloth, turned
+    toward the lens. She looks directly into the camera, making eye contact with the viewer,
+    with cool, professional welcome: green eyes steady behind her glasses, one dark brow faintly
+    raised, red lips in a polite closed smile. Beside her, a polished chrome lever espresso
+    machine with two groups and a wisp of steam; behind her, open shelves of stacked white cups
+    and saucers on cream walls and a small chalkboard with blurred, unreadable white chalk
+    lines; at the right end of the counter, a short glass case with a few trays of croissants,
+    cornetti and small tarts. A closed dark wood door stands in the back wall behind the
+    counter. The floor behind the counter and the tables are empty, with no other people
+    anywhere in the room. Soft morning daylight from the front windows behind the camera lights
+    the room evenly, with warm brass glints along the rail. Her apron is plain, with no
+    lettering. Restrained palette of red silk, black apron, dark walnut, chrome, brass, cream
+    walls and black-and-white tile; natural skin texture, fine 35 mm film grain, focus on her
+    eyes.

@@ -55,29 +55,22 @@ actions:
       effects:
         - tracker.change: { nerve: +1 }
 art:
-  loras: ["DMilfModel4:1"]
+  loras: ["imcrw7_krea2_000001200:1"]
   subject: >
     Eye-level widescreen photograph from standing height in a small round Carnegie library
     reading room, the camera level. The left two-thirds of the frame look across the room: two
-    long dark oak reading tables running away from the lens with turned legs and oak chairs
-    pushed in, a row of brass reading lamps with green glass shades lit along each, a faded
-    red runner on worn honey oak floorboards, and around the curved walls tall dark oak
-    bookcases of hardback books in faded cloth bindings of red, green, brown and navy, a
-    narrow gallery with a black cast-iron railing halfway up, a black cast-iron spiral
-    staircase, and a plaster dome above rising to a round skylight of leaded glass. In the
-    right third of the frame, three paces away, stands a curved dark oak circulation desk with
-    a brass bell and a neat stack of returned books, a tall wooden card catalogue behind it,
-    and behind the desk one woman, alone, sits upright, seen from the waist up above it, a
-    fountain pen in her right hand over an index card, turned half toward the lens and looking
-    up at the camera with cool, level disapproval: green eyes steady, brows straight, her red
-    lips pressed together. She is a white British woman of thirty-eight, tall with an
-    hourglass figure and a large, full bust, fair skin with a few faint freckles, long wavy
-    ginger hair falling loose past her shoulders, dark smoky eye makeup with black eyeliner,
-    striking bright green eyes, defined auburn brows, and deep wine-red lipstick. She wears a
-    tailored charcoal-gray wool skirt suit: a fitted single-breasted jacket with sharp notched
-    lapels, buttoned once at the waist, over a cream silk blouse open at the collar to the top
-    of her cleavage. Soft daylight falls in a pale column from the skylight onto the tables,
-    the green lamps add pools of warm light on the oak, and a brass lamp on the desk lights
-    her face and her red hair. Restrained palette of dark oak, brass, lamp green, faded cloth
-    red and green, charcoal wool, cream silk and ginger; natural texture, fine 35 mm film
-    grain, deep focus from the desk to the far shelves.
+    long dark oak reading tables running away from the lens with oak chairs pushed in, a row of
+    brass reading lamps with green glass shades lit along each, a faded red runner on worn honey
+    oak floorboards, tall dark oak bookcases of faded cloth-bound books around the curved walls,
+    a narrow gallery with a black cast-iron railing, a black cast-iron spiral staircase, and a
+    plaster dome rising to a round skylight of leaded glass. In the right third of the frame,
+    three paces away, behind a curved dark oak circulation desk with a brass bell and a neat
+    stack of returned books, sits imcrw7 woman in her gray skirt suit, the fitted charcoal
+    jacket buttoned once at the waist over a cream silk blouse open at the collar, her throat
+    bare, no tie, a slim gold watch on her left wrist, the only woman in the room, seen from the
+    waist up above the desk, a fountain pen over an index card, turned half toward the lens and
+    looking up at the camera with cool, level disapproval. A tall wooden card catalogue stands
+    behind her. Soft daylight falls in a pale column from the skylight onto the tables, the
+    green lamps add pools of warm light on the oak, and a brass lamp on the desk lights her
+    face. 35 mm lens, natural colour, fine film grain, deep focus from the desk to the far
+    shelves.

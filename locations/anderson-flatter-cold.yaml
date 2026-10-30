@@ -22,34 +22,19 @@ arrival:
     - tracker.change: { nerve: -1 }
     - move.to: anderson-patrol-car
 art:
-  loras: ["DGirlsModel14:1"]
+  loras: ["tfny7_krea2_000000800:1"]
   subject: >
-    First-person point-of-view widescreen photograph from standing eye height on the
-    sidewalk beside the open driver's window of a parked sheriff's patrol car on a quiet
-    residential street in a small Midwest town in autumn, the camera level and one pace from
-    the white car door with its broad vivid azure blue stripe and gold six-point star decal.
-    One woman sits behind the wheel with her left elbow on the window sill and her chin
-    propped on her bare left hand, out of the green bomber sleeve, framed from the waist up
-    in the window opening. She looks directly into the camera, making eye contact with the
-    viewer, with withering, pitying contempt: green eyes slowly looking the viewer up and
-    down, one dark brow arched high, berry lips pulled to one side in a mocking pout. She is
-    a white American woman of twenty-four, slim and toned with a full bust and long legs,
-    fair skin, long wavy platinum-blonde hair with bold jet-black streak highlights falling
-    past her shoulders, dark elegant makeup with smoky black eyeliner, long dark lashes and
-    deep berry lipstick, striking bright green eyes, arched dark brows, and long
-    almond-shaped nails painted glossy black. She wears the Graystone County Sheriff's
-    patrol uniform: a dark forest-green bomber jacket of smooth nylon twill with ribbed knit
-    cuffs, collar band and waistband, zipped up to the middle of her chest, worn with both
-    arms in its sleeves and both shoulders covered, a single polished gold six-point star
-    badge pinned on its left chest and an embroidered vivid azure blue and gold patch on
-    each upper sleeve; above the zipper, the pointed collar of a crisp, pressed tan uniform
-    shirt and the knot of a vivid, saturated azure blue necktie with a small gold tie bar; a
-    black leather duty belt with a polished brass buckle; and tan riding breeches, the same
-    khaki tan as her shirt, with a vivid azure blue stripe down the outer seam. Her head is
-    bare, her long hair loose over the jacket's shoulders, and her hands are bare. Her bare
-    right hand, out of the other green bomber sleeve, is raised beside her face, one glossy
-    black-nailed finger pointing down and up the length of the viewer. Through the far
+    Widescreen photograph from standing eye height on the sidewalk beside the open driver's
+    window of a parked sheriff's patrol car on a quiet residential street in a small Midwest
+    town in autumn, the camera level and one pace from the white car door with its broad vivid
+    azure blue stripe and gold six-point star decal. tfny7 woman in her tfny7 uniform with a
+    green bomber jacket sits behind the wheel with her left elbow on the window sill and her
+    chin propped on her bare left hand, framed from the waist up in the window opening; her bare
+    right hand rests on the top of the steering wheel. She looks directly into the camera,
+    making eye contact with the viewer, with withering, pitying contempt: green eyes slowly
+    looking the viewer up and down, one dark brow arched high, berry lips pulled to one side in
+    a mocking pout. Nothing of the viewer is in frame: no hands, no arms. Through the far
     window, blurred, white clapboard houses under orange maples. Soft overcast late-morning
     light from a high gray sky lights her face evenly. Restrained palette of white car door,
-    forest green, tan, vivid azure blue, platinum blonde and maple orange; natural skin
-    texture, fine 35 mm film grain, focus on her eyes.
+    forest green, tan, vivid azure blue, platinum blonde and maple orange; natural skin texture,
+    fine 35 mm film grain, focus on her eyes.

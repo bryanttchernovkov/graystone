@@ -13,8 +13,16 @@ below. **Every image she appears in** — her location's establishing shot, ever
 shows her, her card — lists that LoRA in `art.loras`, and its subject carries her **verbatim
 appearance block**. The LoRA carries her face and body; the block keeps hair, build, skin and
 signature props consistent with it and tells the model which woman in the frame is her. Never
-write "the same woman as before", and never use a name alone. Trigger words are added by the
-LoRA Manager node; don't repeat them in the subject.
+write "the same woman as before", and never use a name alone. For downloaded LoRAs the trigger
+words are added by the LoRA Manager node; don't repeat them in the subject. **The author's own
+LoRAs** (from `~/code/prive/loras`: `ashby7`, `hngcf5`, `mtlcg7`, `pvcg5`) have no trigger
+metadata: write the trigger into the subject, phrased as their captions taught it.
+
+**Prefer the author's own LoRAs.** Since 2026-10-26 Graystone has no style LoRA (`retro-80s`
+was dropped from `style.yaml`); the look comes from the prefix and the character and object
+LoRAs. A woman with her own trained LoRA (Ashby) gets a short block instead of the long one:
+her LoRA was trained on her face, build and kit, so the subject names only her trigger phrase,
+her hair and the kit that is in frame.
 
 **Establishing shots with her in them: to the side, like the Sergeant at the café window.** The
 room is the subject and she is recognizable in it. The left two-thirds of the frame look along the
@@ -36,18 +44,55 @@ In Graystone, use **only** these, at weight 1, and only when the image shows tha
 
 | LoRA | When |
 |---|---|
-| `SA86RN444WSD83T4QX4PYS3P80:1` | detailed handcuffs (German handcuffs; trigger added by the loader). Name them **"clejuso handcuffs"** in the subject: the brand keyword cues the LoRA and keeps them apart from generic cuffs or bracelets. Keep the pose simple ("chrome clejuso handcuffs dangling from her grip"); open, swung cuffs render as a tangle. |
+| `hngcf5_krea2_000001500:0.9` | handcuffs, any image with cuffs in it. **Graystone's cuffs are hinged** (county issue, every deputy's, the Undercroft's): two cuffs joined by a solid steel block, no chain, in prose and art. Write "closed polished stainless steel hngcf5 hinged handcuffs" plus a size phrase ("about the length of her hand and wrist", "each cuff a little wider than the wrist"); don't name their parts. Closed only: open cuffs are unreliable. Trained on cuffs held in a hand; lying flat works in the LoRA's showcase; on the viewer's wrists is untested (Cell Three PROMISE). |
+| `pvarst7_krea2_000002250:0.8` | the arrest itself: POV from the arrested man's own shoulder, looking at his arm cuffed behind his back while she grips his forearm and holds the second cuff (the three `*-arrest` images). Write it in the LoRA's caption order: `pvarst7 POV arrest photo, a first-person view from the arrested man's own shoulder, looking down past his right shoulder at his right arm…`, his plain heather gray T-shirt, blue jeans and bare forearm (fixed by the LoRA), her on the side of his cuffed arm, "no jewelry" or each accessory named, bare-handed or her gloves, "grips his forearm just above the polished steel hinged handcuff locked on his wrist and holds the empty second cuff, closed, in her other hand", then her expression, the place and the light. It draws the hinged cuffs itself: no `hngcf5` with it. Lying face down (Seo) says "looking back past his right shoulder along his back" instead of looking down. Weights: `pvarst7` at 0.8 and the character LoRA a notch down (`tfny7` 0.9, `ashby7` 0.8, `sorenji` 0.9); at 1 + 1 the renders looked over-sharpened. Keep the prompt close to the caption order: spelling out his shoulder and a twisted arm, or saying his head is out of frame, made it worse (2026-10-28). Vary the T-shirt colour, side, lens and her expression between images. |
 | `HandgagPOV_Krea2_v1:1` | her gloved or bare hand over the viewer's mouth |
-| `mtlcg7d_krea2_000001250:1` | a chastity cage in frame. Graystone has **one cage: a small stainless steel chastity cage**, the county's standard issue and Juno's alike, in prose and art. The LoRA suits a POV shot of a woman holding it, empty, as a threat or a tease: write "an empty stainless steel mtlcg7 chastity cage, unlocked, its curved polished steel bars open and hollow", held up in her hand by her face or chest. **Not for the viewer wearing one** (those come later, with their own LoRA). Lying on a table is untested. |
+| `mtlcg7d_krea2_000001250:1` | a chastity cage in frame. Graystone has **one cage: a small stainless steel chastity cage**, the county's standard issue and Juno's alike, in prose and art. The LoRA suits a POV shot of a woman holding it, empty, as a threat or a tease: write the LoRA's own phrase, "an empty stainless steel mtlcg7 chastity cage fitting in her palm", held up in her hand beside her face. Not "dangling by its padlock" (a lattice ball on a chain at the Undercroft desk), and keep chains and other steel out of the shot. **Not for the viewer wearing one** (those come later, with their own LoRA). Lying on a table is untested. |
 | `"Krea2_BDSM Latex-Leather Megapack_V2E09:1"` | optional, for heavier BDSM gear |
 | `"Krea 2 - Strapon Dildo:1"` | strap-on, POV |
-| `"R2Y1DH5FQY41BT1Y6W67QWP730.nizLuQb9:1"` | facesitting, from under her looking up: she faces the lens and looks down at it |
+| `"R2Y1DH5FQY41BT1Y6W67QWP730.nizLuQb9:0.5"` | facesitting, from under her looking up: she faces the lens and looks down at it |
 | `femdom_handjob_krea2_epoch_20:1` | her hand on him: a handjob or hand teasing she gives the player, POV from his eyes (the one exception to framing rule 1) |
 
-Not for this universe: the old facesitting LoRA (not POV) and the other metal-cuffs LoRA.
+Not for this universe: the old facesitting LoRA (not POV), both chain-cuff LoRAs
+(`SA86RN444WSD83T4QX4PYS3P80`, the "clejuso" cuffs, retired 2026-10-26 for the hinged ones, and
+`Krea2_Metal Cuffs_V6E8`).
+
+The author's LoRAs are used at their recommended 0.9 (`ashby7`, `hngcf5`, `pvcg5`); the others
+at 1.
+
+**One steel LoRA per image.** The cuffs (`hngcf5`), the held cage (`mtlcg7d`) and the worn cage
+(`pvcg5`) are all polished steel and blur into each other when combined; pick the one the image
+is about. Use each the way it was trained: the cuffs gripped closed in her fist ("one rigid
+piece of steel about the length of her hand and wrist"), not pinned, clipped on or worked, and
+not "dangling", which hung them from a chain (Ashby's arrest, 2026-10-26); the held cage up in
+her palm with her arm extended toward the lens, as in the LoRA's showcase prompts.
+
+**LoRA mix: with `ashby7`, the prop LoRA goes up, not Ashby down.** `ashby7` was trained twice
+as hard as the prop LoRAs (lr 3e-4 over 1200 steps against 1.5e-4 for `mtlcg7d` and `hngcf5`,
+all rank 32), and it knows props of its own: chain cuffs (source 33). Stacked at similar weights,
+she wins and the prop comes out wrong. Lowering her to 0.7 didn't fix the cage; the author's
+retest did: `ashby7` at 1 with `mtlcg7d` at **2** gave a hand-sized cage (DEAL TERMS, 2026-10-26).
+
+| Mix | Weights | Status |
+|---|---|---|
+| `ashby7` + `mtlcg7d` (held cage) | 1 + 2 | confirmed (DEAL TERMS) |
+| `ashby7` + `hngcf5` (cuffs) | 0.8 + 0.9 (arrest), 0.9 + 0.9 (PROMISE) | arrest drew a chain at 0.9 + 0.9; try 1 + 1.5–2 if it persists |
+| `ashby7` + `pvcg5` (worn cage) | 0.9 + 0.9 | no complaints yet |
+| `ashby7` + `HandgagPOV` / `femdom_handjob` | 0.9 + 1 | fine |
+| `ashby7` + facesitting `R2Y1…` | 0.9 + **0.5** | the act LoRA goes *down*: at 0.7 and 1 it undresses her |
+| `tfny7` (Anderson) + `hngcf5` | 1 + 1.5 | untested; same training recipe as `ashby7`, so boosted |
+| `ferrina` (Giardano) + `pvcg5` / `femdom_handjob` | 0.9 + 0.9 / 0.9 + 1 | untested with `ferrina` (it replaced `DMilfModel7`, which was fine at 1 + 0.9) |
+| prop LoRA alone (cards) | 0.9–1 | as the README says |
+
+A steel prop LoRA fights the character LoRA; an act LoRA trained on nude bodies fights her
+clothes. So a prop LoRA goes up next to `ashby7`, and an act LoRA comes down.
+
+**Hold the cage level with her face, never toward the lens**: her arm extended at the camera made
+it head-sized by perspective (DEAL TERMS). Use the caption wording "held upright beside her
+shoulder", with the camera two paces back.
 
 **Facesitting and handjobs always use their LoRA.** Every result, card or ending image that
-shows facesitting carries `"R2Y1DH5FQY41BT1Y6W67QWP730.nizLuQb9:1"`, shot from under her
+shows facesitting carries `"R2Y1DH5FQY41BT1Y6W67QWP730.nizLuQb9:0.5"`, shot from under her
 looking up (Ashby's OFFER at Cell Three is the reference). Every image of her hand on him, a
 handjob or hand teasing, carries `femdom_handjob_krea2_epoch_20:1`, POV looking down (the
 Signora's FINISH in the back room and Ashby's ASK at Cell Three). Neither act is shot without its LoRA.
@@ -134,6 +179,9 @@ part of her and cannot also show her face and the room.
 
 ## Prompt lessons (from the Graystone renders, retro-80s:1)
 
+These were learned under the retro-80s style LoRA, which is gone now; recheck each against the
+new renders before relying on it.
+
 One image takes about seven minutes; test one image per change, never a batch.
 
 - **Detailed, but phrased simply (the lesson behind the others).** Write the subject as one
@@ -149,27 +197,58 @@ One image takes about seven minutes; test one image per change, never a batch.
 
 - **Azure is "vivid azure blue".** The tie is "a vivid, saturated azure blue necktie"; piping,
   epaulets, patch, stripe and chevrons are "vivid azure blue". Never "sky blue" or "light"
-  (renders a dull powder blue). Muted looks (canon, no LoRA) turn the tie navy or black; the
-  retro-80s LoRA is what makes it pop.
+  (renders a dull powder blue). Muted looks (canon, no LoRA) turned the tie navy or black; the
+  retro-80s LoRA made it pop. Without it, watch the azure on women without their own LoRA;
+  Ashby's LoRA was trained on the vivid azure.
 - **Stone is named as masonry.** "Limestone crypt" alone renders raw cave rock under retro-80s.
   Every subject in the church says "smooth dressed limestone ashlar blocks laid in straight
   courses with thin mortar joints" and "a whitewashed pointed vault".
 - **The Undercroft is underground.** The model adds tall daylight windows to any arched
   corridor; write "windowless, underground, lit only by caged bulbs". The one exception is the
   small grated window at street level in the guard post.
+- **Ashby's desk is dark oak.** A gray steel desk on gray flagstones read as part of the floor,
+  and the yellow line painted across the floor ran over its top (2026-10-26). Write "an old
+  dark-stained oak desk on four turned legs", keep the yellow line on the floor "a few paces from
+  the camera", and leave the line out when the desk is close.
+- **A POV hand-over-mouth needs nothing under the camera.** From "sitting height on a steel cot"
+  the mattress filled the foreground and the viewer's head seemed to lie on it (NOISE). Put the
+  back of the viewer's head against the wall and her free hand on the wall beside the lens.
 - **Through the bars.** To put her outside a cell, write "photographed through the bars": the
   bars in the extreme foreground, her face in the gap between two of them. If the cell's props
   (cot, wall ring) are in the near foreground, the model puts her inside the cell with them.
-- **Through the mesh** (Anderson's holding cage): the same recipe for chain-link. "Running
-  unbroken across the whole frame from edge to edge", "the lens pressed close behind it", and
-  her "four paces away … small in the center", face in one clear diamond. "Soft in the near
-  foreground" alone gave two strips of fence at the frame's edges, read as an open gate, with
-  her at the viewer's elbow (first render).
+- **The holding cage: shoot through the open door, not the mesh** (Anderson). Through-the-mesh
+  shots failed five times (2026-10-26/27): strips of fence read as an open gate; a mesh screen
+  with no frame floated like a "magic fence"; at an angle it covered half the frame; her fingers
+  in the mesh pulled the fence beside her; and at one or four paces she split into two copies,
+  one in front of the mesh and one behind it. Chain-link isn't bars. What works (ANSWER, the
+  location image): "looking out through its open door: the door's galvanized steel pipe frame and
+  chain-link mesh stand soft and out of focus at the left and right edges of the frame", her in
+  or just beyond the doorway, one or two paces away.
+- **Folded arms hold nothing.** "Arms folded, a manila arrest form in her left hand" gave her a
+  third hand for the papers. Folded arms get "both bare hands tucked against her sides, nothing
+  in them".
+- **The hand-over-mouth in the holding cage** sits the viewer's head against the chain-link
+  wall, as at NOISE: from "on a steel bench" the bench filled the foreground under her arm.
+- **A raised hand near the lens becomes the viewer's arm.** Her pointing hand at the cruiser
+  window rendered as an arm reaching in from the bottom edge. Keep her hands on herself or the
+  car, and write "Nothing of the viewer is in frame: no hands, no arms."
+- **"Cap" means a hat.** "The black cap of a marker" put a blue baseball cap on Anderson. Say
+  "lid", and "bare-headed".
+- **Inside the boot, not the sole.** Never write "sole" or "heel" in a shot of the boot's inside:
+  "held by the heel" and even "the sole points away, out of sight" drew a big sole at the lens.
+  Name only "the open top… the dark hollow inside lined with worn tan leather", and name her
+  breeches, or the boot she took off leaves her bare-legged.
+- **Close-ups lose tfny7.** Leaning in at arm's length washed out her two-tone hair, eye color
+  and lipstick. Keep her a pace back, chest up.
+- **Name tfny7's long sleeves** when her arms are bare of the bomber: she rendered short sleeves
+  in the bullpen. Leave background staff out: women in tan shirts became copies of her, and
+  male officers don't fit Graystone. Write "the empty nave… rows of unoccupied desks".
 - **Cuff words put cuffs on her.** Any "handcuff" or "cuffs" in a subject with her in it
   (even "a handcuff case on her belt") renders as a cuff or a steel bangle on her own wrist, or
   cuffs in her hand instead of the prop you asked for. Her appearance block carries no cuffs.
-  Mention cuffs **only when they're the centerpiece** (TERMS, PROMISE, the Prison Chains card),
-  with the detailed-handcuffs LoRA. In general, props in her block land on her body.
+  Mention cuffs **only when they're the centerpiece** (her arrests, PROMISE, the Handcuffs and
+  Prison Chains cards), with the hinged-handcuffs LoRA. The Undercroft pegboard holds leg irons
+  and chains, no cuffs. In general, props in her block land on her body.
 - **Viewer leaks.** Shots from the cot or the floor with her legs spread above or across the lens
   (boot on the cot rail with her leg raised, a woman lowering herself onto the lens) make the
   model add the viewer's penis, or draw intercourse. So:
@@ -228,6 +307,14 @@ One image takes about seven minutes; test one image per change, never a batch.
   blue stripe down each outer seam" on breeches that filled the frame rendered as broad azure
   panels over half of each thigh, and "a thin piping line" still left azure blotches. When the
   breeches fill the frame, leave the stripe out altogether.
+- **The facesitting LoRA undresses her.** "The crotch … of her tight tan riding breeches" with
+  the facesitting LoRA drew bare genitals through the breeches (OFFER, 2026-10-26), and so did
+  "fully clothed … opaque twill" with the fly and seam named. With the LoRA at 0.7 and "one smooth
+  unbroken expanse of khaki cloth from her belt to her knees" (no fly or seam), a hint remained.
+  Being tried: the same wording at 0.5.
+- **Gestures through the bars clip.** A pen pointed at the lens from behind the cell door went
+  through a bar (CALL). Keep her a few paces back, "standing clear of the bars", hands on her own
+  body or a prop held against her chest.
 - **Describe what you want, never what you don't** (prompt guide §2). Whatever a prompt names, it
   draws, negated or not. "No post, no gate, no gap" grew posts and a gate around the holding cage
   four times; "no fences, cages or partitions" fenced her desk in; "nobody standing anywhere" kept
@@ -251,8 +338,8 @@ One image takes about seven minutes; test one image per change, never a batch.
 - **A copy behind her in a small room.** The kitchenette GREET drew a second Anderson at the
   counter behind her. Being tried: two paces, and a background that's flat and close (the
   refrigerator door crowded with papers), not the room's depth.
-- **Nothing in the phone's photo may run off its edge.** "Striped socks run up out of the top of
-  the photograph" (DM boots) continued the socks outside the phone, as legs in front of the
+- **Nothing in the phone's photo may run off its edge.** "Socks run up out of the top of the
+  photograph" (DM boots) continued her legs outside the phone, as legs in front of the
   viewer's lap, and the photo read as Juno holding her own phone. A mirror selfie "glasses to
   knees" put her penis outside the phone (DM bulge). Say where the photograph's edge cuts her,
   "inside the screen", keep a mirror's frame whole inside the photo, and name the bottom edge of
@@ -330,20 +417,21 @@ One image takes about seven minutes; test one image per change, never a batch.
   with `HandgagPOV_Krea2_v1:1` (NOISE, TEASE), and keep gag objects out of frame.
 - **Phone in hand: standing, landscape, filling the frame.** "Seated eye height, camera tilted
   down" with a phone in his hands put his bare lap round the phone in every SIMP photo, often his
-  cock at the bottom edge, and once her striped socks and skirt on his own legs. Standing at arm's
-  length fixed the lap, but the room behind the phone then grew a second her (or her boots, or a
+  cock at the bottom edge, and once her socks and clothes on his own legs. Standing at arm's
+  length fixed the lap, but the room behind the phone then grew a second her (or her shoes, or a
   filled cage) out of the photo's subject. What works: "standing eye height, the camera level", the
   phone **turned sideways in landscape**, held close in both hands from the bottom corners, filling
   most of the frame with "only a thin margin of plain charcoal-gray wall" around it. Her content
-  is shot **in her bedroom at home** (pastel posters, a pink LED strip, black and pink sheets, a
+  is shot **in her bedroom at home** (pastel posters, a teal LED strip, black and teal sheets, a
   gaming desk), never the library.
-- **Her nails go on his hands.** With her black and pink nails in the photo on the phone, the
-  hands holding it got long painted nails. Leave her nail color out of anything his hands are in,
+- **Her nails go on his hands.** With her painted nails in the photo on the phone, the hands
+  holding it got long painted nails. Leave her nail color out of anything his hands are in,
   and give his hand "broad knuckles, short, bare, unpainted nails cut straight across".
-- **Juno's LoRA undresses her.** Even with the hoodie and crop top written in, her own photos came
-  out topless or nude; in public places that's why her framing rule exists (see her entry). On
-  her page, a two-column layout grew a big topless cover photo: write "a single centered column",
-  a small round avatar, and the hoodie "zipped up to a black velvet choker".
+- **An explicit LoRA undresses her.** Juno's first LoRA (`KreaTransBabe`, retired for `jovessa`)
+  was trained on explicit material: even with her top written in, her own photos came out
+  topless or nude, and her page's two-column layout grew a big topless cover photo. `jovessa` was
+  trained on clothed photos only, so this is untested with it; her page still uses "a single
+  centered column" and a small round avatar.
 - **A distant woman gets a close copy.** In the reading room a second, full-size Miss Carrow stood
   in the right foreground; in the computer corner Juno came forward and a copy sat at her corner
   table; the same at the docks and the station lobby. A concrete foreground and "the only person
@@ -423,13 +511,19 @@ Every `patrol` location shows one somewhere in frame.
 
 **Sheriff Laura Brandt** (*name is a proposal*) — runs the department from her office upstairs
 in the First Church, an executive office with a window over the bullpen.
-LoRA: `DMilfModel3:1`. Rank: sheriff (the dress uniform: a dark olive-green jacket).
+LoRA: `lorbrandt_krea2_000001200:1`, the author's own (`~/code/prive/loras/char-laura-brandt`),
+step 1200 (fallback 800). Rank: sheriff (the dress uniform: a dark olive-green jacket). Her look
+with it: about fifty, long copper-auburn waves with a few silver strands at the temples, bright
+blue eyes, fair freckled skin.
 
-Appearance block: *a white American woman of forty, slim and shapely with a full bust, fair
-skin, long curly auburn hair styled in loose, soft waves falling past her shoulders, striking
-bright blue eyes, softly arched brows, and natural rose lipstick.*
+Appearance block, in her LoRA's caption words: *lorbrandt woman in her uniform* (jacket buttoned,
+the way she wears it at her desk), or *lorbrandt woman in her uniform with the jacket worn open
+over the tan shirt*. No face, hair, age or uniform sentence: the LoRA carries all of it. Keep
+prompts as short as her captions: trigger, pose, framing, expression, setting, light. The
+trigger prints "BRANDT" on signs, car doors and jackets: give every sign its own text or call it
+unlabeled. Outdoors, name the olive jacket, tan shirt and blue tie.
 
-Character: forty, Graystone born, twelve years with the state police before the Mayor asked her
+Character: fifty, Graystone born, twelve years with the state police before the Mayor asked her
 home to rebuild the department from nothing. She hired every woman in it. Warm, easy, the
 pleasant, inviting smile of someone who has never needed to raise her voice, because everyone
 in the building raises theirs for her. Remembers everybody's name, mother and middle name. The
@@ -445,21 +539,20 @@ Methods: *to be decided*.
 **Niamh Doyle** (*name is a proposal*) — the department's office manager, at the reception
 desk inside the church doors. Civilian staff: she doesn't patrol, doesn't carry, and runs the
 building. She's the one who sends the emails with the smiley faces.
-LoRA: `DGirlsModel8:1`.
+LoRA: `nivdoyle_krea2_000001200:1`, the author's own (`~/code/prive/loras/char-niamh-doyle`),
+step 1200 (at 1400 she loses the glasses). Her look with it: copper-ginger waves over her left
+shoulder, green eyes, freckles, dark red lips, and **black rectangular glasses**, now part of
+her look.
 
-Appearance block: *a white woman of twenty-seven, Irish-Australian, drop-dead gorgeous, with
-delicate, beautiful features, a toned build with a medium-large bust and wide hips, fair skin,
-long wavy ginger hair swept all over to one side and falling over her left shoulder, dark smoky
-eye makeup with long dark eyelashes, neatly trimmed brows, striking bright green eyes, and
-glossy dark red lipstick.*
-
-Outfit (always, verbatim): *She wears a crisp, pressed tan long-sleeved uniform shirt of heavy
-cotton twill with a pointed collar, shoulder epaulets edged in vivid azure blue and an embroidered
-vivid azure blue and gold patch on each upper sleeve, tucked into a tight, high-waisted tan pencil
-skirt, the same khaki tan as the shirt, ending just above the knee; a vivid, saturated azure blue
-necktie with a small gold tie bar; sheer black stockings; and glossy black patent leather pumps
-with very high, thin stiletto heels.* No badge, no duty belt: she's civilian. Formal, and more
-sexy for it.
+Appearance block, in her LoRA's caption words: *nivdoyle woman in her uniform*. No face, hair,
+glasses, makeup or uniform sentence: the LoRA carries all of it, including the civilian uniform
+(tan shirt with azure trim, azure tie with gold tie bar, tan pencil skirt, sheer black stockings,
+black patent stilettos; no badge, no duty belt). Describe only what the shot is about, the way
+her tie is the subject of the bullpen detail shot. Keep prompts as short as her captions:
+trigger, pose, framing, expression, setting, light. Her dataset is all indoors (counters,
+offices, cells, stone walls): if she ever goes outside, write "her tan uniform shirt with a blue
+tie", because outside a police building "her uniform" drifts to a blue police shirt. Like the
+others, "a woman in glasses at a police reception desk" alone draws her.
 
 Character: twenty-seven, from Melbourne by way of a Cork grandmother, and nobody in Graystone has
 worked out how she ended up here. She has an accent people drive across the county to hear and
@@ -472,16 +565,28 @@ on how good he is, to whoever's listening. Her uniform is her vanity; a man who 
 to touch it, with his hands and his words, never his mouth, and only because she said so. She
 escorts contractors in and out herself. Standing with her is the card *Niamh's Good Side*.
 
-Distinguishing her from Miss Carrow, the other ginger: Niamh's hair is swept over one shoulder,
+Distinguishing her from Miss Carrow, the other ginger: Niamh's hair is swept over one shoulder, her black glasses,
 her lipstick dark red, the uniform shirt and tie; Carrow's hair is loose on both shoulders, her
 lipstick wine, the charcoal suit.
 
 ### The Undercroft
 
 **Sergeant Monique "Ash" Ashby** (*name is a proposal*) — keeper of the Undercroft.
-LoRA: `KreaEbonyBabe1` (trigger `EllieKEB`, added by the loader).
+LoRA: `ashby7_krea2_000001200:0.9`, the author's own (`~/code/prive/loras/char-monique-ashby`),
+since 2026-10-26; it replaced `KreaEbonyBabe1`. It carries her face, build and both uniforms.
 
-Appearance block: *a Black American woman in her early thirties, tall and athletic with a full, heavy bust, broad straight shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the middle of her back, straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her hip.*
+Appearance block (short, because her LoRA carries the rest), written where she enters the
+picture: *ashby7 woman in her sheriff's uniform, tan with an azure tie, her long black locs
+gathered at the nape,* — outdoors, *ashby7 woman in her sheriff's uniform with a green bomber
+jacket and campaign hat, …*. "Locs", not "dreadlocks": the LoRA's word. **No kit sentence**: the
+LoRA draws the uniform. The long kit sentence (trim, chevrons, star, black gloves, black belt,
+breeches) turned her shirt black at the cell door, where black iron and black leather outnumbered
+the tan (2026-10-26); "tan with an azure tie" is the one color anchor. Name a piece of kit only
+when the shot is about it (the tie in ADMIRE, the boot in KNEEL, the breeches in OFFER).
+
+Detail shots (a boot, her tie) name her as "the boot of ashby7 woman in her sheriff's uniform"
+and say where the frame ends. Known leak: with her LoRA loaded, "sheriff's uniform" alone draws
+her, so keep it to one woman per frame as always.
 
 Character: ex-Army military police, eight years, two of them running a detention facility.
 Controlling, clipped, borderline mean, never sadistic. Her whole method is *permission*: a man
@@ -497,17 +602,23 @@ floor, and a walk across the square with his arm held up behind him.
 ### Patrol: the Heights
 
 **Deputy Tiffany Anderson** — patrols Graystone Heights from her cruiser.
-LoRA: `DGirlsModel14:1`. Rank: deputy (no chevrons).
+LoRA: `tfny7_krea2_000000800:1`, the author's own (`~/code/prive/loras/char-tiffany-anderson`),
+since 2026-10-26; it replaced `DGirlsModel14`. It carries her face, hair, nails, build and both
+uniforms. Rank: deputy (no chevrons).
 
 Patrol look (her outdoor uniform, instead of the canonical outdoor one): **a green bomber
 jacket, no campaign hat, bare hands** (no gloves: her black nails are her distinction from
-Ashby). In prompts: "a dark forest-green bomber jacket of smooth nylon twill with ribbed knit
-cuffs, collar band and waistband", zipped to mid-chest with the one star badge pinned on it, the shirt collar
-and tie knot above the zipper, each bare hand "out of the green bomber sleeve", tan riding
-breeches and the thigh-high boots when the frame reaches them, "her head is bare, her long hair
-loose over the jacket's shoulders".
+Ashby).
 
-Appearance block: *a white American woman of twenty-four, slim and toned with a full bust and long legs, fair skin, long wavy platinum-blonde hair with bold jet-black streak highlights falling past her shoulders, dark elegant makeup with smoky black eyeliner, long dark lashes and deep berry lipstick, striking bright green eyes, arched dark brows, and long almond-shaped nails painted glossy black.*
+Appearance block, written where she enters the picture, in her LoRA's caption words: *tfny7
+woman in her tfny7 uniform* indoors, *tfny7 woman in her tfny7 uniform with a green bomber
+jacket* on patrol. No appearance or kit sentence: the LoRA draws both. Keep "out of the green
+bomber sleeve" for each bare hand, and name boots, breeches or socks only when the shot is
+about them. Detail shots name her as "worn on the legs of tfny7 woman in her tfny7 uniform" or
+"the bare hand of tfny7 woman". Known faults from her LoRA's run: `tfny7` can print as text on
+a shirt or car (fewest at step 800, the one in use), "sheriff's uniform" alone draws her, and
+the LoRA was trained like Ashby's (lr 3e-4), so a steel prop LoRA beside it needs a boost (her
+arrest has the cuffs at 1.5, untested).
 
 Character: twenty-four, the youngest deputy on the road and the best turned out, and she knows
 both. Bratty, snarky, a bit mean: the dominant girl who ran her sorority, in an immaculate
@@ -530,23 +641,22 @@ over them. Socks: "thin black cotton knee-high socks, damp and clinging, worn un
 
 **Deputy Seo Min-ji** ("Deputy Seo"; *name is a proposal*) — patrols the river docks, mostly on
 foot beside her parked cruiser.
-LoRA: `DGirlsModel9:1`. Rank: deputy (no chevrons).
+LoRA: `sorenji_krea2_000001400:1`, the author's own (`~/code/prive/loras/char-seo-min-ji`),
+step 1400. Rank: deputy (no chevrons). Her look changed with it (approved for the LoRA): a
+**dusty-pink bob** to the collar with dark roots, no braid. Never write the braid or "violet".
 
-Patrol look (her outdoor uniform, instead of the canonical outdoor one): **the green bomber, no
-campaign hat, ever, and gold aviator sunglasses.** As Anderson's: "a dark forest-green bomber
-jacket of smooth nylon twill with ribbed knit cuffs, collar band and waistband", zipped to
-mid-chest with the one star badge pinned on it, the shirt collar and tie knot above the zipper,
-each hand "out of the green bomber sleeve", tan riding breeches and the thigh-high boots when
-the frame reaches them. Then: "her head is bare, her violet braid rising high above it" and
-"gold-framed aviator sunglasses with mirrored lenses". When the scene needs her eyes, she pulls
-the aviators down her nose and looks over them.
-
-Appearance block: *a Korean woman of twenty-nine, a classic Korean beauty with an elegant oval
-face, a softly tapered jaw, large almond-shaped dark brown eyes, sharp black winged eyeliner,
-delicate straight brows, a refined small nose, softly defined cheekbones, berry-pink gradient
-lips and luminous, smooth pale skin, her extremely long, glossy, vivid neon violet-purple hair
-woven into one enormous high French braid that rises from the crown of her head and falls down
-her back past her waist.*
+Appearance block, written where she enters the picture, in her LoRA's caption words: *sorenji
+woman in her uniform* indoors, *sorenji woman in her uniform with a green bomber jacket*
+outdoors. No face, hair, makeup or uniform sentence: the LoRA carries all of it, and describing
+uniform pieces overrides it (as with tfny7). The LoRA brings the long sleeves and her aviators
+itself (on the placket indoors, often on her nose outdoors): never name a second pair, or she
+holds one and wears another. Outdoors, when the scene needs her eyes, write "lowering her aviator
+sunglasses down her nose" (her caption words). Keep prompts as short as her captions: trigger,
+pose, framing, expression, setting, light. Long, detailed prompts drew short sleeves, a
+floating bag and her clubbing shoulder bag. If the bob comes out red or dark, add "with her
+dusty-pink bob" after the trigger. Boots only in boot shots (TRAMPLE, RIGHTS). Expressions keep "dark eyes", "berry-pink lips". The
+trigger reads as a name, not text: her run never printed it. Palette word for her hair: "dusty
+pink". Like the others, "sheriff's uniform" alone draws her.
 
 Character: twenty-nine, born in Incheon, a harbor town, and the only deputy who asked for the
 docks. Eccentric, and attractive in a way she doesn't seem to notice. She watches everything
@@ -554,9 +664,6 @@ and comments on the wrong part of it: the gulls (she has named them), the barge 
 keeps a list), the way a man stands (she'll tell him which foot he's lying on). Talks to the
 river. Hums. Polite, cheerful, impossible to read, and never once surprised. Gives men a
 nickname for whatever she noticed first, and uses it until she learns their name.
-
-Indoors (her holding cage) she wears the canonical indoor uniform, head bare, the braid, and the
-aviators hooked by one arm into her shirt's placket.
 
 Methods: **protocol, the floor and the glove.** She sees a wanted man before he sees her, puts
 him face down by the book, every instruction said once in that small soft voice, and reads him
@@ -571,11 +678,19 @@ evidence gets a page in that notebook instead: her snitch, later her informant.
 ### Café Linde
 
 **Francine Giardano** ("Signora Giardano") — owner of Café Linde, behind her own counter.
-LoRA: `DMilfModel7:1`.
+LoRA: `ferrina_krea2_000001200:1`, the author's own (`~/code/prive/loras/char-francine-giardano`),
+step 1200 (the strongest likeness; no softer checkpoint was kept). Her look with it: forty,
+glossy shoulder-length dark waves, green eyes, red lipstick and red nails, gold hoops, and thick
+black rectangular glasses.
 
-Appearance block: *a white American woman of forty with an hourglass figure, a large, full bust and a narrow waist, fair skin, glossy shoulder-length dark brunette hair with soft waves, black rectangular thick-rimmed glasses, bright green eyes, defined dark brows, and glossy red lipstick.*
-
-Outfit (always, verbatim): *She wears a red silk blouse with long sleeves and a soft collar, the top two buttons open, tucked into tailored black trousers, and a crisp black bib apron tied snugly at the waist, its straps smooth over her shoulders; black patent high-heeled pumps show under the trouser hems.* The blouse's red matches her lipstick.
+Appearance block, in her LoRA's caption words: *ferrina woman in her red work blouse and black
+apron, wearing her thick black rectangular glasses*. The outfit phrase covers the red satin
+blouse, black bib apron, black trousers and black patent stilettos; in full-length shots add
+*black trousers and black patent stiletto pumps*. Name the glasses every time: the bare trigger
+never drew them. No face, hair or outfit sentence otherwise: the LoRA carries all of it. The
+trigger prints "FERRINA" on blank clothing: say her apron is plain, with no lettering, and give
+any other blank top or sign its own text. With a concept LoRA in the same image (the handjob and
+`pvcg5` shots), take hers down a notch, to 0.9.
 
 Character: forty, Italian-American, a barista before she was an owner, and still the best one
 in the county. Calm, exact, warm in public and precise in private. Her whole method is
@@ -596,15 +711,19 @@ warehouses at the docks. Red is their color.
 
 **Red** (Shanice "Red" Dupree; *name is a proposal*) — a GrayBlood, holding up the wall of a
 dockside warehouse.
-LoRA: `DGirlsModel5:1`.
+LoRA: `shndr7_krea2_000001200:1`, the author's own (`~/code/prive/loras/char-shanice-dupree`),
+step 1200, the only step that gets her whole signature outfit right (fallback 800). Her look
+with it: twenty-one, smooth dark brown skin, long straight black hair loose down her back with
+one thin braid from her temple, pale blue-gray eyes and small gold hoops.
 
-Appearance block: *an African American woman of twenty-one with an oval face, smooth dark brown
-skin, long straight glossy black hair worn loose down her back with one thin braid running from
-her temple, striking pale blue eyes, full lips with glossy nude-brown lipstick, small gold hoop
-earrings.*
-
-Outfit (always, verbatim): *She wears an oversized glossy red puffer down jacket hanging open over a
-fitted black top, low-slung light-wash jeans and white high-top sneakers.*
+Appearance block, in her LoRA's caption words: *shndr7 woman in her red puffer jacket, hanging
+open over a fitted black top, with light-wash ripped jeans*; when her feet are in frame, add *and
+scuffed white high-top sneakers*. Spell out the jeans: earlier steps drew them black. No face or
+hair sentence: the LoRA carries all of it. Name her expression in every prompt; her dataset leans
+stern, and a smile needs saying. Her other trained looks, written out in full: a red zip track
+jacket with white side stripes, olive cargos, a black denim jacket, a cream tee and jeans, a gray
+hoodie and joggers. Keep vertical signs out of her shots or call them plain: the trigger may print
+itself as "…7" lettering on neon.
 
 Character: twenty-one (the bible's floor; the author said twenty), born on the river side of
 town, a GrayBlood since she was old enough to carry. Loud, smug, in your face: the kind of
@@ -621,22 +740,27 @@ back until they say them right. Long white nails (prose and close-ups only; not 
 
 **Miss Imogen Carrow** (*name is a proposal*) — head librarian of the Carnegie library, behind
 the circulation desk in the reading room. One of the town's disciplinarians, not police.
-LoRA: `DMilfModel4:1`.
+LoRA: `imcrw7_krea2_000001200:1`, the author's own (`~/code/prive/loras/char-imogen-carrow`),
+step 1200 (fallback 800, which keeps the gray suit right from the short phrase). Her look with
+it: thirty-eight, long loose auburn waves with a centre part, bright green eyes, a few freckles,
+deep wine-red lipstick and a slim gold watch.
 
-Appearance block: *a white British woman of thirty-eight, tall with an hourglass figure and a
-large, full bust, fair skin with a few faint freckles, long wavy ginger hair falling loose past
-her shoulders, dark smoky eye makeup with black eyeliner, striking bright green eyes, defined
-auburn brows, and deep wine-red lipstick.*
+Appearance block, in her LoRA's caption words: *imcrw7 woman in her gray skirt suit, the fitted
+charcoal jacket buttoned once at the waist over a cream silk blouse open at the collar, her
+throat bare, no tie, a slim gold watch on her left wrist*. The suit phrase covers the jacket,
+blouse and pencil skirt; in full-length shots add *sheer black stockings and black patent
+stiletto pumps*. Step 1200 mixes the neckties of her other suits into the gray one, so the
+open collar and bare throat are always written out. No face, hair or makeup sentence: the LoRA
+carries all of it. Keep prompts as short as her captions: trigger, pose, framing, expression,
+setting, light. Her hair is loose in every training image; an updo would need spelling out and
+may resist. She and Niamh are both green-eyed redheads: in a frame with both, name each one's
+trigger and place.
 
-Outfit (always, verbatim): *She wears a tailored charcoal-gray wool skirt suit: a fitted
-single-breasted jacket with sharp notched lapels, buttoned once at the waist, over a cream silk
-blouse open at the collar to the top of her cleavage; a knee-length charcoal pencil skirt; sheer
-black stockings; and glossy black patent leather pumps with thin, high stiletto heels. A slim
-gold watch sits on her left wrist.* The heels are her signature: in prose you hear her before
-you see her, a sharp click on the oak boards as she comes toward you, or as she walks round
-behind you. The cleavage is the blouse's open collar inside a closed jacket: never an
-unbuttoned jacket, a lace edge or a bare chest. Her hair stays loose and long; a bun, a cardigan,
-pearls or glasses on a chain would age her twenty years (see the top of this file).
+The heels are her signature: in prose you hear her before you see her, a sharp click on the oak
+boards as she comes toward you, or as she walks round behind you. The cleavage is the blouse's
+open collar inside a closed jacket: never an unbuttoned jacket, a lace edge or a bare chest. Her
+hair stays loose and long; a bun, a cardigan, pearls or glasses on a chain would age her twenty
+years (see the top of this file).
 
 Character: thirty-eight, from somewhere outside Bath, a governess's training and a librarian's
 degree, here eleven years. Nobody in Graystone knows why she came and nobody has asked twice.
@@ -649,42 +773,35 @@ Methods: *to be decided* (a disciplinarian; her storyline comes later).
 
 **Juno Vance** (`@rootkitty`) — at the corner table of the Carnegie library's computer corner,
 on her own laptop. Not police, not anybody's employee.
-LoRA: `KreaTransBabe:1`.
+LoRA: `jovessa_krea2_000001200:1`, the author's own (`~/code/prive/loras/char-juno-vance`),
+step 1200 (800 keeps the glasses and choker more often but leaks her crop top into other
+outfits). Her look: a trans woman of twenty-three, petite and slim, pale freckled skin,
+brown eyes, dense black and deep teal hair swept to one side, shaved short at one temple and
+falling in long thick waves over the other shoulder, black rectangular glasses, a small silver
+septum ring, a black choker with a silver O-ring and a small silver ear cuff.
 
-Appearance block (*proposal: check skin, hair and build against the LoRA's renders*): *a trans
-woman of twenty-three, slim and petite with narrow shoulders, a small bust and long thin legs,
-pale skin with a light dusting of freckles across her nose, long straight hair dyed half jet black
-and half pastel pink, split sharply down a center part, the left half jet black and the right half
-pastel pink, worn in two low pigtails, blunt straight-cut
-bangs, thick black rectangular rimmed glasses, sharp black winged eyeliner, glossy pale pink
-lips, a small silver ring in her septum, and short nails painted black and pastel pink in turn.*
-
-Outfit (always, verbatim): *She wears an oversized black cotton hoodie slipping off her left
-shoulder, a fitted white ribbed crop top under it, a short black pleated skirt, black and pastel
-pink horizontally striped thigh-high socks, and chunky black platform boots with thick
-rubber soles and silver buckles; a black velvet choker with a small silver O-ring sits at her
-throat, and pastel pink over-ear headphones with small cat ears hang around her neck.*
+Appearance block, in her LoRA's caption words: *jovessa woman in her usual black outfit* (a
+black ribbed crop tank, an open oversized black bomber jacket slipping off her shoulders, black
+drawstring joggers and worn black-and-white low-top canvas sneakers), plus *wearing her black
+rectangular glasses and a black ring choker*: the bare trigger dropped both once at step 1200.
+No face, hair or outfit sentence otherwise: the LoRA carries all of it. Keep prompts as short as
+her captions: trigger, pose, framing, expression, setting, light. Outdoors, spell the outfit out
+in colors. Her other trained looks: *in her purple cosplay suit*, *in an orange inmate jumpsuit,
+barefoot*, and three ordinary outfits written out in full (a faded black graphic T-shirt and
+olive cargo shorts; a dark green plaid flannel shirt over a black T-shirt; a sheer black mesh
+top and a dark teal pleated midi skirt). The shaved side is on one side only; don't ask for a
+mirrored or flipped shot. Her headphones are prose only (none in her dataset).
 
 Her laptop (when it's in frame): *a plain black laptop, the back of its lid covered edge to edge
 in small, colorful vinyl stickers of cartoon cats, stars, hearts and lightning bolts, none of them
 with any lettering*. "Edge to edge" matters: with a few stickers the model put an Apple logo on
-the lid.
+the lid. (Her dataset's laptop is gray; if a render follows it, that's fine.)
 
-**In public she is dressed (hard rule).** Her LoRA was trained on explicit material and undresses
-her whenever her lap, legs or skirt are in frame: the first table render had her skirt open and
-her cock out in the middle of the library. Her nudity belongs to her own photos (the SIMP beats)
-and to private scenes later. So in a public place:
-
-- Frame her **from the waist up, behind something**: a table edge or the laptop lid crossing the
-  frame at her waist ("the warm oak tabletop runs across the whole bottom of the frame and crosses
-  her at the waist").
-- Use the **top half of her outfit only**, with the hoodie **zipped halfway up**: *She wears an
-  oversized black cotton hoodie, zipped halfway up and slipping off her left shoulder, over a
-  fitted white ribbed crop top; a black velvet choker with a small silver O-ring sits at her
-  throat, and pastel pink over-ear headphones with small cat ears rest around her neck, below her
-  chin.* Leave the skirt, socks, boots and "long thin legs" out of the subject.
-- Sit her **upright or leaning forward** on the table, never leaning back, legs up or crossed in
-  view.
+**In public she is dressed.** Her nudity belongs to her own photos (the SIMP beats) and to
+private scenes later. `jovessa` was trained on 30 clothed photos, full length included, so her
+library table shot frames her from the knees up with a sneaker on the other chair. If a render
+opens her clothes, frame her from the waist up behind the table edge. Her explicit scenes are
+untested with this LoRA.
 
 Character: twenty-three, Graystone born, two years of a computer science degree before she got
 bored and came home. Lives online. The library has free wifi, quiet, and a steady supply of men
@@ -702,8 +819,8 @@ full, it becomes *Rootkitty's Simp*.
 
 Art: her photos come to the player's phone (the phone held sideways in his POV hands, the photo
 filling its landscape screen), shot in her bedroom at home; or she's shot across the library
-table. Her bulge is shown through the skirt; when she
-shows more, the frame is on her and her hand, per the framing rules (his body never).
+table. Her bulge is shown through her joggers; when she shows more, the frame is on her and
+her hand, per the framing rules (his body never).
 
 ## Places in town
 

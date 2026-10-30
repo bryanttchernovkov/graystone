@@ -33,44 +33,18 @@ arrival:
     - card.gain: handcuffs
     - move.to: anderson-holding
 art:
-  loras: ["DGirlsModel14:1", "SA86RN444WSD83T4QX4PYS3P80:1"]
+  loras: ["tfny7_krea2_000000800:0.9", "pvarst7_krea2_000002250:0.8"]
   subject: >
-    First-person point-of-view widescreen photograph from standing eye height on the asphalt
-    of a quiet residential street in a small Midwest town in autumn, the camera level, with
-    a parked sheriff's patrol car behind the woman, seen side-on. One woman stands at arm's
-    length in the center of the frame, framed from mid-thigh up, the tops of her boots at
-    the bottom edge, the patrol car's open driver's door behind her left shoulder. She looks
-    directly into the camera, making eye contact with the viewer, with sharp, mocking
-    impatience: green eyes narrowed, one dark brow arched, berry lips curled in a cold
-    smirk. She is a white American woman of twenty-four, slim and toned with a full bust and
-    long legs, fair skin, long wavy platinum-blonde hair with bold jet-black streak
-    highlights falling past her shoulders, dark elegant makeup with smoky black eyeliner,
-    long dark lashes and deep berry lipstick, striking bright green eyes, arched dark brows,
-    and long almond-shaped nails painted glossy black. She wears the Graystone County
-    Sheriff's patrol uniform: a dark forest-green bomber jacket of smooth nylon twill with
-    ribbed knit cuffs, collar band and waistband, zipped up to the middle of her chest, worn
-    with both arms in its sleeves and both shoulders covered, a single polished gold
-    six-point star badge pinned on its left chest and an embroidered vivid azure blue and
-    gold patch on each upper sleeve; above the zipper, the pointed collar of a crisp,
-    pressed tan uniform shirt and the knot of a vivid, saturated azure blue necktie with a
-    small gold tie bar; a black leather duty belt with a polished brass buckle at her waist
-    below the jacket's hem; tan riding breeches with a vivid azure blue stripe down the
-    outer seam; and stiff, structured, mirror-polished black leather thigh-high riding boots
-    with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight to
-    the leg, pulled up over the breeches to mid-thigh. Her head is bare, her long hair loose
-    over the jacket's shoulders, and her hands are bare. Her bare right hand comes out of
-    the green bomber sleeve, raised to the height of her chest, a pair of chrome clejuso
-    handcuffs dangling from her grip; her bare left hand comes out of the other green bomber
-    sleeve, raised beside her face, one glossy black-nailed index finger pointed straight at
-    the lens. Behind her, parked side-on along the curb, stands a Graystone County Sheriff's
-    patrol car: a present-day Ford Police Interceptor Utility SUV painted two-tone, with a
-    white roof, hood and front doors over a tan body, a broad vivid azure blue stripe
-    running the full length of each flank below the windows, a gold six-point star decal on
-    each front door, a low black roof light bar with red and blue lenses, a black steel push
-    bumper bolted across the front grille and black steel wheels; its light bar is lit, red
-    and blue. Beyond it, out of focus, white clapboard houses and orange maples. Soft
-    overcast late-morning light from a high gray sky lights her face evenly, with red and
-    blue glints from the light bar in her blonde hair and on the chrome handcuffs.
-    Restrained palette of forest green, tan, vivid azure blue, polished steel, platinum
-    blonde and maple orange; natural skin texture, fine 35 mm film grain, focus on her eyes
-    and the dangling handcuffs.
+    pvarst7 POV arrest photo, a first-person view from the arrested man's own shoulder, looking
+    down past his left shoulder at his left arm being handcuffed behind his back, his plain
+    charcoal T-shirt and blue jeans in the foreground, his bare hairy forearm with no watch or
+    bracelet and his palm turned outward. On the left side of the frame stands tfny7 woman in
+    her tfny7 uniform with a green bomber jacket, no jewelry. She is bare-handed, her nails
+    glossy black, and grips his forearm just above the polished steel hinged handcuff locked on
+    his wrist and holds the empty second cuff, closed, in her other hand. She glances up at the
+    viewer from the cuff with bored, disappointed contempt, a pouting sigh on her berry lips.
+    Set on a quiet residential street in a small Midwest town in autumn, beside the white hood
+    of a sheriff's patrol car with a broad azure blue stripe, fallen maple leaves on the
+    asphalt, white clapboard houses and orange maples behind her. Soft gray overcast light, a
+    faint red and blue flicker from the car's light bar on the steel cuff, gentle natural
+    contrast, soft film grain, 35 mm lens.

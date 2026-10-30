@@ -31,51 +31,37 @@ actions:
         - tracker.change: { nerve: +1 }
         - skill.gain: deal
       art:
-        loras: ["DGirlsModel14:1"]
+        loras: ["tfny7_krea2_000000800:1"]
         subject: >
-          Detail photograph from the passenger seat of a parked sheriff's patrol car,
-          the camera low and level with the dashboard, looking across it toward the
-          driver's side. Resting on the dashboard above the steering wheel, crossed at
-          the ankle and filling the frame from left to right, are a pair of stiff,
-          structured, mirror-polished black leather thigh-high riding boots with rigid
-          straight shafts and low, flat stacked-leather riding heels, worn on a
-          woman's legs, the boot tops reaching mid-thigh over tan riding breeches, the
-          same khaki tan as her shirt, with a vivid azure blue stripe down the outer
-          seam, the glossy toes pointing at the windshield. At the right edge, her
-          bare hand, with long almond-shaped nails painted glossy black, holds a black
-          smartphone up against the boots, its screen glowing toward her. Nothing
-          above her thighs is in frame. Through the windshield, out of focus, orange
-          maples and a white clapboard house. Soft overcast daylight through the
-          windshield lays long highlights down both shafts and catches the stitching
-          at the toes. Restrained palette of black leather, tan, vivid azure blue,
-          dark dashboard and maple orange; natural leather texture, fine 35 mm film
-          grain, sharp focus on the crossed ankles.
+          Detail photograph from the passenger seat of a parked sheriff's patrol car, the camera
+          low and level with the dashboard, looking across it toward the driver's side. Resting
+          on the dashboard above the steering wheel, crossed at the ankle and filling the frame
+          from left to right, are a pair of stiff, structured, mirror-polished black leather
+          thigh-high riding boots with rigid straight shafts and low, flat stacked-leather
+          riding heels, worn on the legs of tfny7 woman in her tfny7 uniform, the boot tops
+          reaching mid-thigh over tan riding breeches, the same khaki tan as her shirt, with a
+          vivid azure blue stripe down the outer seam, the glossy toes pointing at the
+          windshield. At the right edge, her bare hand, with long almond-shaped nails painted
+          glossy black, holds a black smartphone up against the boots, its screen glowing toward
+          her. Nothing above her thighs is in frame. Through the windshield, out of focus,
+          orange maples and a white clapboard house. Soft overcast daylight through the
+          windshield lays long highlights down both shafts and catches the stitching at the
+          toes. Restrained palette of black leather, tan, vivid azure blue, dark dashboard and
+          maple orange; natural leather texture, fine 35 mm film grain, sharp focus on the
+          crossed ankles.
 art:
-  loras: ["DGirlsModel14:1"]
+  loras: ["tfny7_krea2_000000800:1"]
   subject: >
-    Square portrait photograph from seated eye height across a gray steel desk in the nave
-    of an old deconsecrated limestone Gothic Revival church converted into a sheriff's
-    bullpen, of one woman sitting back in her desk chair, framed from the waist up. She
-    looks directly into the camera, making eye contact with the viewer, with smug, amused
-    contempt: green eyes narrowed with pleasure, one dark brow arched, berry lips parted in
-    a mocking smile. She is a white American woman of twenty-four, slim and toned with a
-    full bust and long legs, fair skin, long wavy platinum-blonde hair with bold jet-black
-    streak highlights falling past her shoulders, dark elegant makeup with smoky black
-    eyeliner, long dark lashes and deep berry lipstick, striking bright green eyes, arched
-    dark brows, and long almond-shaped nails painted glossy black. She wears the Graystone
-    County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy
-    cotton twill with a pointed collar, a full button-front placket, two buttoned tan flap
-    chest pockets edged with thin vivid azure blue piping, shoulder epaulets edged in vivid
-    azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve and a
-    single polished gold six-point star badge pinned over the left pocket; a vivid,
-    saturated azure blue necktie with a small gold tie bar; a black leather duty belt with a
-    polished brass buckle; and tan riding breeches, the same khaki tan as her shirt, with a
-    vivid azure blue stripe down the outer seam. Her head is bare and her hands are bare.
-    She holds a thick fan of green banknotes up beside her face in her bare right hand,
-    black nails splayed across the bills, and taps the top edge of the fan against her berry
-    lips; her bare left hand rests on an open brown leather wallet lying empty on the desk.
-    Behind her, out of focus, tall pointed stained-glass windows and rows of steel desks.
-    Daylight through the stained glass falls in colored shafts behind her, with cool
-    fluorescent light lighting her face. Restrained palette of uniform tan, vivid azure
-    blue, banknote green, platinum blonde and stained-glass red and gold; natural skin
-    texture, fine 35 mm film grain, shallow depth of field on her eyes and the banknotes.
+    Square portrait photograph from seated eye height across a gray steel desk in the nave of an
+    old deconsecrated limestone Gothic Revival church converted into a sheriff's bullpen, of
+    tfny7 woman in her tfny7 uniform sitting back in her desk chair, framed from the waist up.
+    She looks directly into the camera, making eye contact with the viewer, with smug, amused
+    contempt: green eyes narrowed with pleasure, one dark brow arched, berry lips parted in a
+    mocking smile. She holds a thick fan of green banknotes up beside her face in her bare right
+    hand, black nails splayed across the bills, and taps the top edge of the fan against her
+    berry lips; her bare left hand rests on an open brown leather wallet lying empty on the
+    desk. Behind her, out of focus, tall pointed stained-glass windows and rows of steel desks.
+    Daylight through the stained glass falls in colored shafts behind her, with cool fluorescent
+    light lighting her face. Restrained palette of uniform tan, vivid azure blue, banknote
+    green, platinum blonde and stained-glass red and gold; natural skin texture, fine 35 mm film
+    grain, shallow depth of field on her eyes and the banknotes.

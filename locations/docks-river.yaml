@@ -25,8 +25,8 @@ actions:
       text: |
         She isn't in the car. She's standing beside it with her back to the open door, in the
         green jacket and no hat, mirrored aviators on, turning her head slowly from the ship to
-        the warehouses to the river and back, like a lighthouse. Her hair is purple, one braid
-        of it that starts on top of her head and doesn't stop until past her belt.
+        the warehouses to the river and back, like a lighthouse. Her hair is pink, a soft bob
+        to the collar, gone dark at the roots.
 
         The aviators come round to you and stop.
 
@@ -65,7 +65,7 @@ actions:
       effects:
         - tracker.change: { nerve: +1 }
 art:
-  loras: ["DGirlsModel9:1"]
+  loras: ["sorenji_krea2_000001400:1"]
   subject: >
     Eye-level widescreen photograph from standing height on a wide concrete river wharf in a
     small Midwest town in autumn, the camera level. The wharf runs away from the lens across the
@@ -80,25 +80,13 @@ art:
     star decal on each front door, a low black roof light bar with red and blue lenses, a black
     steel push bumper bolted across the front grille and black steel wheels, stands parked with
     its doors shut; its windows are tinted dark and its light bar is unlit. At the right edge of
-    the frame, close to the lens, two paces away, a woman stands leaning her shoulder against a
-    black cast-iron lamp post, framed from her hips to just above her head, filling the right
-    third of the frame, her body turned toward the river and her head turned to the camera with
-    bright, curious amusement: delicate brows lifted, berry-pink lips in a small, pleased smile.
-    She is a Korean woman of twenty-nine, a classic Korean beauty with an elegant oval face, a
-    softly tapered jaw, large almond-shaped dark brown eyes, sharp black winged eyeliner,
-    delicate straight brows, a refined small nose, softly defined cheekbones, berry-pink
-    gradient lips and luminous, smooth pale skin, her extremely long, glossy, vivid neon violet-
-    purple hair woven into one enormous high French braid that rises from the crown of her head
-    and falls down her back past her waist. She wears a dark forest-green bomber jacket of
-    smooth nylon twill with ribbed knit cuffs, collar band and waistband, zipped up to the
-    middle of her chest, worn with both arms in its sleeves, a single polished gold six-point
-    star badge pinned on its left chest and an embroidered vivid azure blue and gold patch on
-    each upper sleeve; above the zipper, the pointed collar of a crisp tan uniform shirt and the
-    knot of a vivid, saturated azure blue necktie; a black leather duty belt with a polished
-    brass buckle; and tan riding breeches, the same khaki tan as her shirt, with a vivid azure
-    blue stripe down the outer seam. Her head is bare, her violet braid falling over one
-    shoulder of the green jacket, and gold-framed aviator sunglasses with mirrored lenses sit on
-    her nose. Bright, hazy late-morning sun from behind the camera lights the wharf, the ship's
-    rust and her face, the river glinting. Restrained palette of river brown, rust red, concrete
-    gray, cruiser white and tan, forest green, vivid azure blue and neon violet; natural
-    texture, fine 35 mm film grain, focus on her face with the wharf slightly soft behind.
+    the frame, close to the lens, two paces away, sorenji woman in her uniform with a green
+    bomber jacket stands leaning her shoulder against a black cast-iron lamp post, framed from
+    her hips to just above her head, filling the right third of the frame, her body turned
+    toward the river and her head turned to the camera with bright, curious amusement: delicate
+    brows lifted, berry-pink lips in a small, pleased smile, gold-framed aviator sunglasses with
+    mirrored lenses on her nose. Bright, hazy late-morning sun from behind the camera lights the
+    wharf, the ship's rust and her face, the river glinting. Restrained palette of river brown,
+    rust red, concrete gray, cruiser white and tan, forest green, vivid azure blue and dusty
+    pink; natural texture, fine 35 mm film grain, focus on her face with the wharf slightly soft
+    behind.

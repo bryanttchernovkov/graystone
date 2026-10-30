@@ -45,7 +45,7 @@ actions:
       effects:
         - skill.gain: look
 art:
-  loras: ["DGirlsModel5:1"]
+  loras: ["shndr7_krea2_000001200:1"]
   subject: >
     Eye-level widescreen photograph from standing height at the edge of a cracked asphalt lot by
     a river in a small Midwest town in autumn, the camera level. The lot itself is the subject.
@@ -56,15 +56,11 @@ art:
     bright sky, weeds standing in the cracks around it. In the right third of the frame, three
     paces away, the nearest warehouse wall with its wide roll-up door rolled half open onto
     darkness, and beside the door a low stack of three gray wooden pallets against the steel. On
-    the pallets a woman sits with her back against the corrugated wall, her elbows on her knees
-    and her white sneakers planted wide on the asphalt, turned half toward the lens, her chin
-    tipped up at the camera with a lazy, arrogant grin. She is an African American woman of
-    twenty-one with an oval face, smooth dark brown skin, long straight glossy black hair worn
-    loose down her back with one thin braid running from her temple, striking pale blue eyes,
-    full lips with glossy nude-brown lipstick, small gold hoop earrings. She wears an oversized
-    glossy red puffer down jacket hanging open over a fitted black top, low-slung light-wash
-    jeans and white high-top sneakers. The low sun sits behind the warehouses at the far end of
-    the row, outlining the steel wall and the pallets in a bright rim of gold light, with enough
-    soft light on her face and the glossy red jacket to show them. Restrained palette of rust,
-    corrugated gray, wet asphalt, glossy red and backlit gold; natural texture, fine 35 mm film
-    grain, deep focus.
+    the pallets shndr7 woman in her red puffer jacket, hanging open over a fitted black top,
+    with light-wash ripped jeans and scuffed white high-top sneakers, sits with her back against
+    the corrugated wall, her elbows on her knees and her sneakers planted wide on the asphalt,
+    turned half toward the lens, her chin tipped up at the camera with a lazy, arrogant grin.
+    The low sun sits behind the warehouses at the far end of the row, outlining the steel wall
+    and the pallets in a bright rim of gold light, with enough soft light on her face and the
+    glossy red jacket to show them. Restrained palette of rust, corrugated gray, wet asphalt,
+    glossy red and backlit gold; natural texture, fine 35 mm film grain, deep focus.

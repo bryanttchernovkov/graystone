@@ -33,8 +33,8 @@ actions:
     prompt: Watch her while she writes. She'll notice, and put you on the floor for it.
     result:
       text: |
-        She writes for a long time, and you watch her do it: the pencil, the braid over her
-        shoulder, the boots crossed at the ankle under the desk.
+        She writes for a long time, and you watch her do it: the pencil, the pink hair swinging
+        forward over her cheek, the boots crossed at the ankle under the desk.
 
         "Ankles." She doesn't look up. "Your eyes are on me. Prisoners' eyes go on the floor."
         She closes the notebook, gets up and unlocks the cage. "You don't know where the floor
@@ -72,38 +72,16 @@ actions:
         - tracker.change: { nerve: -1 }
         - skill.gain: deal
       art:
-        loras: ["DGirlsModel9:1"]
+        loras: ["sorenji_krea2_000001400:1"]
         subject: >
-          First-person point-of-view widescreen photograph from standing eye height inside a
-          chain-link holding cage in the side aisle of an old deconsecrated church, the camera
-          level. One woman stands an arm's length away in the center of the frame, framed
-          from the waist up, pulling a vivid purple nitrile examination glove tight onto her
-          right hand by its cuff with her left, already gloved in the same purple nitrile, the
-          cuff snapping at her wrist, both hands raised at the height of her chest. She looks
-          directly into the camera, making eye contact with the viewer, with bright, playful
-          mischief: dark eyes sparkling, delicate brows lifted, berry-pink lips parted in a
-          small knowing smile. She is a Korean woman of twenty-nine, a classic Korean beauty
-          with an elegant oval face, a softly tapered jaw, large almond-shaped dark brown eyes,
-          sharp black winged eyeliner, delicate straight brows, a refined small nose, softly
-          defined cheekbones, berry-pink gradient lips and luminous, smooth pale skin, her
-          extremely long, glossy, vivid neon violet-purple hair woven into one enormous high
-          French braid that rises from the crown of her head and falls over one shoulder past
-          her waist. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan
-          long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full
-          button-front placket, two buttoned flap chest pockets piped in vivid azure blue,
-          shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold
-          patch on each upper sleeve and a polished gold six-point star badge pinned over the
-          left pocket; a vivid, saturated azure blue necktie with a small gold tie bar; and a
-          black leather duty belt with a polished brass buckle. Her head is bare. A pair of
-          gold-framed aviator sunglasses with mirrored lenses hangs by one arm from her shirt's
-          placket. On a gray steel desk behind her shoulder sit a box of purple nitrile gloves
-          and a small clear squeeze bottle. Nothing of the viewer is in frame. Behind her,
-          seen through the cage's open door, the nave of an old deconsecrated limestone Gothic
-          Revival church converted into a sheriff's bullpen, gray steel desks and tall pointed
-          stained-glass windows, out of focus. Cool fluorescent light from above lights her
-          face and the purple gloves. Restrained palette of pale limestone, uniform tan, vivid
-          azure blue, vivid purple, neon violet and galvanized steel; natural skin texture,
-          fine 35 mm film grain, focus on her eyes and the glove's cuff.
+          A waist-up photograph of sorenji woman in her uniform, a deputy in her late twenties,
+          the long sleeves of her shirt buttoned at the wrists, standing in the open door of a
+          chain-link holding cage and pulling a purple nitrile examination glove tight onto her
+          right hand, her left hand already gloved, looking straight into the camera with
+          playful mischief and a small knowing smile. Behind her, out of focus, the empty nave
+          of an old limestone church with gray steel desks and a tall stained-glass window. Cool
+          fluorescent light from above. 35 mm lens at eye level, natural colour, fine film
+          grain, focus on her eyes.
   - category: work
     word: POSE
     cost: 1
@@ -127,62 +105,33 @@ actions:
         - tracker.change: { nerve: -1 }
         - skill.gain: work
       art:
-        loras: ["DGirlsModel9:1"]
+        loras: ["sorenji_krea2_000001400:1"]
         subject: >
           First-person point-of-view widescreen photograph from standing eye height in the side
           aisle of an old deconsecrated limestone church, the camera level. Two paces away in
           the center of the frame stands a black, heavy, old-fashioned film camera on a black
-          tripod, its lens aimed straight at the viewer. One woman stands behind the camera,
-          bent slightly toward it, framed from the waist up, her face lifted out from behind
-          the camera to the right of it, one hand on the camera's top and one finger on the
-          shutter button. She looks directly into the camera, making eye contact with the
-          viewer, with wide, gleeful delight: dark eyes crinkled with laughter, delicate brows
-          raised, berry-pink lips spread in a wide open grin showing her teeth. She is a Korean
-          woman of twenty-nine, a classic Korean beauty with an elegant oval face, a softly
-          tapered jaw, large almond-shaped dark brown eyes, sharp black winged eyeliner,
-          delicate straight brows, a refined small nose, softly defined cheekbones, berry-pink
-          gradient lips and luminous, smooth pale skin, her extremely long, glossy, vivid neon
-          violet-purple hair woven into one enormous high French braid that rises from the
-          crown of her head and falls over one shoulder past her waist. She wears the
-          Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt
-          of heavy cotton twill with a pointed collar, a full button-front placket, two
-          buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged in
-          vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve
-          and a polished gold six-point star badge pinned over the left pocket; a vivid,
-          saturated azure blue necktie with a small gold tie bar; and a black leather duty
-          belt with a polished brass buckle. Her head is bare. A pair of gold-framed aviator
-          sunglasses with mirrored lenses hangs by one arm from her shirt's placket, and a
-          small black notebook sticks out of her breast pocket. Nothing of the viewer is in
-          frame. Behind her, the nave of an old deconsecrated limestone Gothic Revival church
-          converted into a sheriff's bullpen, gray steel desks, tall pointed stained-glass
-          windows and dark oak roof beams, out of focus. A single bright white photo lamp on a
-          stand beside the tripod lights her face from the side, the stained glass glowing
-          behind her. Restrained palette of pale limestone, uniform tan, vivid azure blue,
-          camera black, neon violet and stained-glass red and gold; natural skin texture, fine
-          35 mm film grain, focus on her grinning face beside the camera.
+          tripod, its lens aimed straight at the viewer. sorenji woman in her uniform, alone,
+          stands behind the camera, bent slightly toward it, framed from the waist up, her face
+          lifted out from behind the camera to the right of it, one hand on the camera's top and
+          one finger on the shutter button. She looks directly into the camera, making eye
+          contact with the viewer, with wide, gleeful delight: dark eyes crinkled with laughter,
+          delicate brows raised, berry-pink lips spread in a wide open grin showing her teeth.
+          Nothing of the viewer is in frame. Behind her, the nave of an old deconsecrated
+          limestone Gothic Revival church converted into a sheriff's bullpen, empty gray steel
+          desks, tall pointed stained-glass windows and dark oak roof beams, out of focus. A
+          single bright white photo lamp on a stand beside the tripod lights her face from the
+          side, the stained glass glowing behind her. Restrained palette of pale limestone,
+          uniform tan, vivid azure blue, camera black, dusty pink and stained-glass red and
+          gold; natural skin texture, fine 35 mm film grain, focus on her grinning face beside
+          the camera.
 art:
-  loras: ["DGirlsModel9:1"]
+  loras: ["sorenji_krea2_000001400:1"]
   subject: >
-    Eye-level widescreen photograph from standing eye height inside a chain-link holding cage,
-    the camera level, looking out through the cage's open door. One woman stands upright in the
-    open doorway an arm's length away, framed from her waist to just above her head, leaning one
-    shoulder against the galvanized steel door post at the right of the frame, a brown paper
-    property bag folded and stapled shut held up beside her face in her right hand, a small
-    black notebook tucked in her breast pocket. She looks directly into the camera, making eye
-    contact with the viewer, with calm, pleased patience: dark eyes steady, delicate brows
-    lifted, berry-pink lips in a small smile. She is a Korean woman of twenty-nine, a classic
-    Korean beauty with an elegant oval face, a softly tapered jaw, large almond-shaped dark
-    brown eyes, sharp black winged eyeliner, delicate straight brows, a refined small nose,
-    softly defined cheekbones, berry-pink gradient lips and luminous, smooth pale skin, her
-    extremely long, glossy, vivid neon violet-purple hair woven into one enormous high French
-    braid, falling over one shoulder. She wears a crisp, pressed tan long-sleeved uniform shirt
-    with a pointed collar, vivid azure blue epaulets, an embroidered vivid azure blue and gold
-    patch on each upper sleeve and a polished gold star badge, a vivid, saturated azure blue
-    necktie with a small gold tie bar, and a black leather duty belt with a polished brass
-    buckle at the bottom edge of the frame; her head is bare, and a pair of gold-framed aviator
-    sunglasses hangs from her shirt's placket. The chain-link wall of the cage runs along the
-    left edge of the frame. Behind her, out of focus, pale limestone and the colored glow of a
-    tall stained-glass window. Cool fluorescent light from above lights her face. Restrained
-    palette of pale limestone, galvanized steel, uniform tan, vivid azure blue, kraft brown and
-    neon violet; natural skin texture, fine 35 mm film grain, shallow depth of field on her
-    eyes.
+    A thigh-up photograph of sorenji woman in her uniform with her dusty-pink bob, a deputy in
+    her late twenties, leaning with one shoulder against the steel frame of the open door of a
+    chain-link holding cage, her hands resting on her duty belt, looking straight into the
+    camera with calm, pleased patience and a small smile. The camera stands just inside the
+    cage, the chain-link door frame soft at the edges of the frame. Behind her, out of focus,
+    the empty nave of an old limestone church with rows of unoccupied gray steel desks and a
+    tall stained-glass window. Cool, even daylight from the tall windows lights her face. 35 mm
+    lens at eye level, natural colour, fine film grain, focus on her eyes.

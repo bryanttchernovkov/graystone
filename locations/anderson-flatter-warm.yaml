@@ -21,28 +21,20 @@ arrival:
     - boost.change: { card: andersons-attention, amount: +1 }
     - move.to: anderson-patrol-car
 art:
-  loras: ["DGirlsModel14:1"]
+  loras: ["tfny7_krea2_000000800:1"]
   subject: >
-    Close photograph from standing eye height at the open driver's window of a parked
-    sheriff's patrol car, the camera level, looking in across the driver's seat, framed from
-    her face down to her raised knee. One woman, alone, leans back in the driver's seat
-    against the headrest, her face at the upper right of the frame. Her right leg is raised,
-    its knee close to the lens at the lower right, the boot shaft running away from the lens
-    to its heel resting on the dashboard above the steering wheel: a stiff, structured,
-    mirror-polished black leather thigh-high riding boot with a rigid straight shaft and a
-    low, flat stacked-leather riding heel, the boot top at mid-thigh over tan riding
-    breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down the outer
-    seam. Her bare right hand, with long almond-shaped glossy black nails, rests on the top
-    of the boot shaft. She looks at the lens over her knee, making eye contact with the
-    viewer, with pleased, teasing smugness: green eyes bright, one dark brow arched, berry
-    lips curled in a satisfied half smile. She is a white American woman of twenty-four,
-    slim and toned with a full bust and long legs, fair skin, long wavy platinum-blonde hair
-    with bold jet-black streak highlights falling past her shoulders, dark elegant makeup
-    with smoky black eyeliner, long dark lashes and deep berry lipstick, striking bright
-    green eyes, arched dark brows, and long almond-shaped nails painted glossy black, in a
-    dark forest-green bomber jacket zipped to mid-chest over a tan uniform shirt and a vivid
-    azure blue necktie. Beyond the boot, out of focus, the windshield and orange maples.
-    Soft overcast daylight through the windshield lays one long highlight down the boot
-    shaft. Restrained palette of black leather, tan, vivid azure blue, forest green,
-    platinum blonde and maple orange; natural leather and skin texture, fine 35 mm film
-    grain, focus on the boot top and her eyes.
+    Widescreen photograph from standing eye height at the open driver's window of a parked
+    sheriff's patrol car, the camera level and one pace away, looking in at the driver's seat
+    from the side. tfny7 woman in her tfny7 uniform with a green bomber jacket, alone, leans
+    back in the driver's seat against the headrest at the right of the frame, her head turned
+    toward the lens. Her right leg is stretched forward and up toward the left of the frame,
+    seen side on from hip to toe, the low flat heel of her boot resting on top of the dashboard
+    in front of the windshield: a stiff, mirror-polished black leather thigh-high riding boot
+    with a rounded toe, its top at mid-thigh over tan riding breeches with a vivid azure blue
+    stripe down the outer seam. Her bare left hand rests on her raised thigh just above the boot
+    top. She looks at the lens, making eye contact with the viewer, with pleased, teasing
+    smugness: green eyes bright, one dark brow arched, berry lips curled in a satisfied half
+    smile. Through the windshield, out of focus, orange maples along a quiet street. Soft
+    overcast daylight lays one long highlight down the boot shaft. Restrained palette of black
+    leather, tan, vivid azure blue, forest green, platinum blonde and maple orange; natural
+    leather and skin texture, fine 35 mm film grain, focus on the boot and her eyes.

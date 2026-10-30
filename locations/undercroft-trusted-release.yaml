@@ -58,38 +58,28 @@ actions:
       effects:
         - tracker.change: { nerve: +1 }
 art:
-  loras: ["KreaEbonyBabe1"]
+  loras: ["ashby7_krea2_000001200:0.9"]
   subject: >
-    Eye-level widescreen photograph from the sidewalk of a small Midwest town square on a
-    bright autumn morning, looking up a flight of wide stone steps to the open oak double
-    doors of an old limestone Gothic Revival church built of smooth dressed limestone ashlar
-    blocks laid in straight courses with thin mortar joints. In the open doorway at the top
-    of the steps stands one woman, alone and whole and small in the frame, the dim nave
-    behind her, her black-gloved right hand resting on the edge of the door and her
-    black-gloved left hand at her duty belt. She looks down the steps directly into the
-    camera, making eye contact with the viewer, with dry, knowing satisfaction: eyes steady
-    under the hat brim, one brow raised a fraction, a small closed-mouth smile at one
-    corner. She is a Black American woman in her early thirties, tall and athletic with a
-    full, heavy bust, broad straight shoulders and a soldier's posture, smooth dark brown
-    skin, long black dreadlocks gathered at the nape and falling to the middle of her back,
-    straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel
-    chain at her hip. She wears the Graystone County Sheriff's patrol uniform: a dark
-    forest-green bomber jacket of smooth nylon twill with ribbed knit cuffs, collar band and
-    waistband, zipped up to the middle of her chest, worn with both arms in its sleeves and
-    both shoulders covered, a single polished gold six-point star badge pinned on its left
-    chest and an embroidered vivid azure blue and gold patch on each upper sleeve, with
-    three vivid azure blue chevrons beneath the patch on each sleeve; above the zipper, the
-    pointed collar of a crisp, pressed tan uniform shirt and the knot of a vivid, saturated
-    azure blue necktie with a small gold tie bar; a black leather duty belt with a polished
-    brass buckle at her waist below the jacket's hem; tan riding breeches with a vivid azure
-    blue stripe down the outer seam; and stiff, structured, mirror-polished black leather
-    thigh-high riding boots with rigid straight shafts and low, flat stacked-leather riding
-    heels, fitted tight to the leg, pulled up over the breeches to mid-thigh. On her head,
-    worn level over her eyes, sits a stiff campaign hat of the kind state troopers and drill
-    instructors wear, in light khaki tan felt the same color as her shirt, with a wide flat
-    brim, a pinched four-dent crown and a vivid azure blue hatband. Maple trees with red and
-    gold leaves line the square, and the stained-glass windows of the church catch the sun.
-    Low clear morning sunlight from the left lights the church facade gold and throws her
-    long shadow across the steps. Palette of pale limestone, maple red and gold, khaki tan,
-    forest green and vivid azure blue; natural skin texture, fine 35 mm film grain, deep
-    focus.
+    Eye-level widescreen photograph from the sidewalk of a small Midwest town square on a bright
+    autumn morning, looking up a flight of wide stone steps to the open oak double doors of an
+    old limestone Gothic Revival church built of smooth dressed limestone ashlar blocks laid in
+    straight courses with thin mortar joints. In the open doorway at the top of the steps stands
+    ashby7 woman in her sheriff's uniform with a green bomber jacket and campaign hat, a
+    sergeant in her early thirties with her long black locs gathered at the nape, alone and
+    whole and small in the frame, the dim nave behind her, her black-gloved right hand resting
+    on the edge of the door and her black-gloved left hand at her duty belt. She looks down the
+    steps directly into the camera, making eye contact with the viewer, with dry, knowing
+    satisfaction: eyes steady under the hat brim, one brow raised a fraction, a small
+    closed-mouth smile at one corner. Her dark forest-green bomber jacket is zipped to
+    mid-chest, both arms in its sleeves, a single polished gold six-point star badge on its left
+    chest and three vivid azure blue chevrons on each sleeve; above the zipper show the collar
+    of her tan uniform shirt and the knot of a vivid, saturated azure blue tie. Below the
+    jacket's hem she wears a black leather duty belt, tan riding breeches, the same khaki tan as
+    her shirt, with a vivid azure blue stripe down the outer seam, and polished black leather
+    thigh-high riding boots with low, flat stacked-leather riding heels. On her head, worn level
+    over her eyes, sits a stiff tan campaign hat the same khaki tan as her shirt, with a wide
+    flat brim, a pinched four-dent crown and a vivid azure blue hatband. Maple trees with red
+    and gold leaves line the square, and the stained-glass windows of the church catch the sun.
+    Low clear morning sunlight from the left lights the church facade gold and throws her long
+    shadow across the steps. Palette of pale limestone, maple red and gold, khaki tan, forest
+    green and vivid azure blue; natural skin texture, fine 35 mm film grain, deep focus.

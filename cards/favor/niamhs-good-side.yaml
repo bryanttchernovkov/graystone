@@ -10,26 +10,13 @@ boost: { capacity: 3, start: 1 }
 slots:
   - { match: { category: work }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
 art:
-  loras: ["DGirlsModel8:1"]
+  loras: ["nivdoyle_krea2_000001200:1"]
   subject: >
-    Square portrait photograph from standing eye height across a long reception counter of
-    dark polished oak in the narthex of an old deconsecrated limestone church converted into a
-    sheriff's station, the camera level, of one woman sitting behind the counter and leaning
-    forward on her forearms, framed from the countertop to just above her head. She looks
-    directly into the camera, making eye contact with the viewer, with warm, conspiratorial
-    fondness: green eyes crinkled with amusement under long dark lashes, one trimmed brow
-    raised, glossy dark red lips curved in a closed, pleased smile. She is a white woman of
-    twenty-seven, Irish-Australian, drop-dead gorgeous, with delicate, beautiful features, a
-    toned build with a medium-large bust and wide hips, fair skin, long wavy ginger hair swept
-    all over to one side and falling over her left shoulder, dark smoky eye makeup with long
-    dark eyelashes, neatly trimmed brows, striking bright green eyes, and glossy dark red
-    lipstick. She wears a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill
-    with a pointed collar, buttoned at the wrists, shoulder epaulets edged in vivid azure blue
-    and an embroidered vivid azure blue and gold patch on each upper sleeve, and a vivid,
-    saturated azure blue necktie with a small gold tie bar. In her right hand, red-nailed, she
-    holds a pen over an open sign-in book lying on the counter, its tip resting beside a small
-    hand-drawn heart in red ink. Behind her, a wall of smooth dressed limestone ashlar blocks
-    with a brass key cabinet, out of focus. A brass desk lamp at the left lights her face and
-    hair warmly from the side. Restrained palette of dark oak, pale limestone, uniform tan,
-    vivid azure blue, ginger and brass; natural skin texture, fine 35 mm film grain, shallow
-    depth of field on her eyes.
+    A chest-up portrait photograph of nivdoyle woman in her uniform and her black rectangular
+    glasses, a woman of twenty-seven, seated behind a long reception counter of dark polished
+    oak, leaning forward on her forearms, a pen in her right hand resting on an open sign-in
+    book beside a small hand-drawn heart in red ink, looking straight into the camera through
+    her glasses with warm, conspiratorial fondness, a closed, pleased smile, her eyes crinkled
+    with amusement. Behind her, out of focus, a wall of pale limestone blocks and a brass key
+    cabinet. A brass desk lamp at the left lights her face warmly from the side. 50 mm lens at
+    eye level, natural colour, fine film grain, shallow depth of field on her eyes.

@@ -28,7 +28,7 @@ arrival:
     The cuffs come off her belt. Left wrist, right wrist, ratcheted down until they bite. Only
     then does her knee come off your back.
 
-    She lifts you off the floor by the chain and the back of your collar together, and
+    She lifts you off the floor by the cuffs and the back of your collar together, and
     stands you up, and keeps your cuffed hands high behind you so you walk on your toes.
 
     "Francine. The cup."
@@ -42,35 +42,19 @@ arrival:
     - card.gain: handcuffs
     - move.to: undercroft
 art:
-  loras: ["KreaEbonyBabe1", "SA86RN444WSD83T4QX4PYS3P80:1"]
+  loras: ["ashby7_krea2_000001200:0.8", "pvarst7_krea2_000002250:0.8"]
   subject: >
-    First-person point-of-view widescreen photograph from cheek height flat on the surface
-    of a small round white marble café table, the camera low, level with the tabletop and
-    pressed close to it, the cool white marble filling the bottom of the frame in sharp
-    foreground. A white porcelain cappuccino cup has tipped over on its saucer inches from
-    the lens, milk foam spilling across the marble. One woman leans down over the lens from
-    above and behind the table, framed from the chest up, her face close and hard. She looks
-    directly into the camera, making eye contact with the viewer, with cold, controlled
-    force: dark eyes fixed and hard, straight brows drawn down low, jaw clenched, nostrils
-    flared, lips pressed thin. She is a Black American woman in her early thirties, tall and
-    athletic with a full, heavy bust, broad straight shoulders and a soldier's posture,
-    smooth dark brown skin, long black dreadlocks gathered at the nape and falling to the
-    middle of her back, straight dark brows, black leather duty gloves and a ring of heavy
-    iron keys on a steel chain at her hip. She wears the Graystone County Sheriff's uniform:
-    a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a pointed
-    collar, a full button-front placket, two buttoned tan flap chest pockets edged with thin
-    vivid azure blue piping, shoulder epaulets edged in vivid azure blue, an embroidered
-    vivid azure blue and gold patch on each upper sleeve and a polished gold six-point star
-    badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small
-    gold tie bar; a black leather duty belt with a polished brass buckle; tan riding
-    breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down the outer
-    seam; her head is bare. Three vivid azure blue chevrons sit on each upper sleeve beneath
-    the patch. Her left black-gloved hand pins a pale man's bare wrist flat to the marble
-    beside the lens, the gloved fingers clamped hard around it, the knuckles straining the
-    leather; her right black-gloved hand holds a pair of chrome clejuso handcuffs up beside
-    her face. Behind her, out of focus, a tall brass-framed front window full of daylight
-    and empty bentwood chairs; no one else is in frame. Bright daylight through the window
-    backlights her and the spilled foam, with a hard highlight along the chrome cuffs.
-    Restrained palette of white marble, uniform tan, vivid azure blue, chrome, black leather
-    and dark skin; natural skin texture, fine 35 mm film grain, sharp focus on her eyes and
-    the handcuffs.
+    pvarst7 POV arrest photo, a first-person view from the arrested man's own shoulder as he is
+    bent forward over a small round white marble café table, looking down past his right
+    shoulder at his right arm being handcuffed behind his back, his plain heather gray T-shirt
+    and blue jeans in the foreground, his bare hairy forearm with no watch or bracelet and his
+    palm turned outward; on the marble beside his shoulder a white porcelain cappuccino cup has
+    tipped over on its saucer, milk foam spilling across the table. On the right side of the
+    frame stands ashby7 woman in her sheriff's uniform, tan with an azure tie, her long black
+    locs gathered at the nape, no jacket, no hat, no jewelry. She is wearing black gloves and
+    grips his forearm just above the polished steel hinged handcuff locked on his wrist and
+    holds the empty second cuff, closed, in her other hand. She looks down at the viewer with
+    cold, controlled force, dark eyes hard, brows drawn low, lips pressed thin. Set in a small
+    old-fashioned café, empty bentwood chairs and a tall brass-framed front window full of
+    daylight behind her. Bright daylight through the window backlights her, a hard highlight
+    along the steel cuff, natural skin texture, fine film grain, 35 mm lens.

@@ -2,7 +2,7 @@
 # Event: Deputy Seo arrests you on the wharf. Reached by move.to from RISK-APPROACH at the docks'
 # river view (open record), and from the setback penalty on her ground (open record): she is
 # never by the car when you look for her. Protocol, not force: a felony prone from behind, every
-# step said out loud, and the first shot is the wharf at cheek height and her boot. The arrival
+# step said out loud. The image is the cuffing, from his shoulder as he lies on the wharf. The arrival
 # puts the Handcuffs on; then you choose, face down:
 #   DEAL-SURRENDER (evidence): hand her what you're carrying. The crime and the Criminal Record
 #     go away, the cuffs come off, and you're Seo's Snitch, back on your feet at the river.
@@ -38,8 +38,8 @@ arrival:
     She takes your right hand off your head, brings it down to the small of your back and cuffs
     it, then the left, and checks the gap at each wrist with her little finger. Pats down your
     pockets, one at a time, in the order she gave them. Then she crouches where you can see her
-    for the first time: tan knees, a duty belt, a violet braid lying on the concrete beside your
-    face like a mooring line. The aviators come down half an inch.
+    for the first time: tan knees, a duty belt, the ends of a pink bob swinging
+    forward against her cheek. The aviators come down half an inch.
 
     "Hello, Ankles. You crossed them very nicely." A small black notebook comes out of her
     jacket. "You have a record, with open counts on it. Before you go in my car, this is the part where you
@@ -113,21 +113,21 @@ actions:
       effects:
         - move.to: seo-rights
 art:
+  loras: ["sorenji_krea2_000001400:0.9", "pvarst7_krea2_000002250:0.8"]
   subject: >
-    First-person point-of-view widescreen photograph from cheek height flat on the concrete of
-    a river wharf, the camera lying on the ground, level, looking along the concrete. The
-    rough gray concrete fills the bottom third of the frame in sharp foreground, wet in
-    patches, with a flattened cigarette butt and a gull feather on it. A hand's width from the
-    lens, in the right half of the frame, a single woman's leg stands planted on the
-    concrete, seen from the toe to just above the knee and nothing higher: a stiff,
-    structured, mirror-polished black leather thigh-high riding boot with a rigid straight
-    shaft and a low, flat stacked-leather riding heel, fitted tight to the leg, pulled up over
-    tan riding breeches with a vivid azure blue stripe down the outer seam; the gray sky and
-    the river are reflected in the boot's polish. The frame cuts the leg just above the knee
-    at the top edge; nothing else of the woman is in frame. Beyond the boot, out of focus, the wharf runs away to a black iron
-    bollard with a coil of mooring rope, the long dark red rusting hull of a river cargo ship,
-    and the broad brown river under a pale sky. No one else is in frame. Flat, bright, hazy
-    late-morning light from a high pale sky, a hard white highlight running down the boot's
-    shaft. Restrained palette of concrete gray, mirror black, uniform tan, vivid azure blue,
-    rust red and river brown; natural texture, fine 35 mm film grain, sharp focus
-    on the boot's toe, shallow depth of field.
+    pvarst7 POV arrest photo, a first-person view from the arrested man's own shoulder as he
+    lies face down on the concrete of a river wharf, the camera low beside his head, looking
+    back past his right shoulder along his back at his right arm being handcuffed behind him,
+    the forearm laid across the small of his back, his plain heather gray T-shirt and blue jeans
+    lying flat on the rough gray concrete in the foreground, his bare hairy forearm with no
+    watch or bracelet and his palm turned up. On the right side of the frame stands sorenji
+    woman in her uniform with a green bomber jacket, the jacket open over her tan shirt and her
+    vivid azure blue necktie, no jewelry, her black riding boots planted on the concrete beside
+    his hip, bending forward from the waist over him, her face above him at the top of the
+    frame. She is bare-handed, reaches down and grips his forearm just above the polished steel
+    hinged handcuff locked on his wrist and holds the empty second cuff, closed, in her other
+    hand. She looks down at the cuff with calm, careful attention and a small, soft smile.
+    Behind her, out of focus, the wharf runs away to a black iron bollard and the long dark red
+    rusting hull of a river cargo ship under a pale sky. Flat, bright, hazy late-morning light
+    from the high pale sky, a white glint on the steel cuff, natural skin texture, fine film
+    grain, 28 mm lens.

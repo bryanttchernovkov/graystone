@@ -4,23 +4,23 @@
 # you to wherever you were, without its arrival (ADR 0043 in the engine repo).
 id: juno-dm-boots
 name: A photo from @rootkitty
-description: Her platform boots, up on her desk.
+description: Her sneakers, up on her desk.
 arrival:
   text: |
-    The phone buzzes. A photo: her boots, up on her desk at home, crossed at the ankle between
-    the keyboard and an energy drink, the striped socks going up out of the frame. The soles are
-    filthy. There's a library book under the heel of one of them. It's overdue.
+    The phone buzzes. A photo: her sneakers, up on her desk at home, crossed at the ankle between
+    the keyboard and an energy drink, the cuffs of her joggers going up out of the frame. The
+    soles are filthy. There's a library book under the heel of one of them. It's overdue.
 
-    *these cost more than your car*
+    *had these since junior year. they've been places u never will*
 
     *u can lick the screen if u want. i'll never know. lol jk i'll know*
 
-    *thanks for the $15 loser. that's like a third of a boot*
+    *thanks for the $15 loser. that's like one shoelace*
   effects:
     - tracker.change: { nerve: +1 }
     - move.back
 art:
-  loras: ["KreaTransBabe:1"]
+  loras: ["jovessa_krea2_000001200:1"]
   subject: >
     Overhead photograph looking straight down at a scuffed dark walnut tabletop, the camera
     directly above it. The wood grain fills the whole frame from edge to edge around a black
@@ -30,13 +30,13 @@ art:
     and short, bare, unpainted nails cut straight across rests on the wood at the bottom right
     corner of the frame, one fingertip touching the phone's edge. Its wide, bright landscape
     screen shows, edge to edge, a horizontal photograph taken in a young woman's small bedroom,
-    the whole photograph contained inside the phone's black bezel: a pair of chunky black
-    platform boots with thick rubber soles and silver buckles resting crossed at the ankle on
-    the edge of a cluttered black gaming desk in the middle of the photograph, their worn gray
-    soles turned toward her camera, a library hardback with a faded green cloth cover lying flat
-    under one heel beside a keyboard with pink keycaps and a slim silver energy drink can, black
-    and pastel pink striped socks showing above the boots. Behind the desk, out of focus, pastel
-    posters on a pale wall, a strip of pink LED light along the ceiling, a bed with black and
-    pink sheets and plush toys. The screen glows bright against the dark wood, the photograph on
-    it crisp. Restrained palette of dark walnut, black leather, black and pastel pink stripes
-    and LED pink; natural texture, fine 35 mm film grain, focus on the phone screen.
+    the whole photograph contained inside the phone's black bezel: a pair of worn black low-top
+    canvas sneakers with scuffed, dirty off-white rubber toe caps and soles and white laces,
+    resting crossed at the ankle on the edge of a cluttered black gaming desk in the middle of
+    the photograph, their gray-grimed soles turned toward her camera, the cuffs of black
+    drawstring joggers above them, a library hardback with a faded green cloth cover lying flat
+    under one heel beside a keyboard with teal keycaps and a slim silver energy drink can.
+    Behind the desk, out of focus, pastel posters on a pale wall, a strip of teal LED light
+    along the ceiling, a bed with black and teal sheets and plush toys. The screen glows bright
+    against the dark wood, the photograph on it crisp. Natural texture, fine 35 mm film grain,
+    focus on the phone screen.

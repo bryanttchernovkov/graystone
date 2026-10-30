@@ -54,34 +54,20 @@ actions:
         - card.lose: contractor-badge
         - move.to: station-lobby
       art:
-        loras: ["DGirlsModel8:1"]
+        loras: ["nivdoyle_krea2_000001200:1"]
         subject: >
-          First-person point-of-view widescreen photograph from kneeling height on the worn
-          flagstone floor of an old limestone church nave converted into a sheriff's bullpen,
-          the camera tilted up. In the left half of the frame stands a large gray office
-          printer with its side panel off, a crumpled sheet of paper caught in its rollers.
-          In the right half, one woman leans down into the frame from the right with one
-          forearm on the printer's lid, framed from her waist to just above her head, the
-          frame cutting diagonally across her skirt. She looks directly into the camera,
-          making eye contact with the viewer, with bright, teasing approval: green eyes
-          sparkling under long dark lashes, one trimmed brow raised, glossy dark red lips in a
-          wide, delighted smile. She is a white woman of twenty-seven, Irish-Australian,
-          drop-dead gorgeous, with delicate, beautiful features, a toned build with a
-          medium-large bust and wide hips, fair skin, long wavy ginger hair swept all over to
-          one side and falling over her left shoulder, dark smoky eye makeup with long dark
-          eyelashes, neatly trimmed brows, striking bright green eyes, and glossy dark red
-          lipstick. She wears a crisp, pressed tan long-sleeved uniform shirt of heavy cotton
-          twill with a pointed collar, buttoned at the wrists, shoulder epaulets edged in vivid
-          azure blue and an embroidered vivid azure blue and gold patch on each upper sleeve,
-          tucked into a tight, high-waisted tan pencil skirt, the same khaki tan as the shirt;
-          and a vivid, saturated azure blue necktie with a small gold tie bar. In her other
-          hand, red-nailed, she holds a white mug with the word "visitor" written on it in red
-          marker out toward the lens. Behind her, out of focus, the stone steps of an old
-          pulpit and tall stained-glass windows. Daylight through the stained glass lays soft
-          red and gold patches across the printer and the flagstones, with warm desk-lamp light
-          on her face. Restrained palette of pale limestone, printer gray, uniform tan, vivid
-          azure blue, ginger and stained-glass red and gold; natural skin texture, fine 35 mm
-          film grain, shallow depth of field on her eyes.
+          A first-person photograph from kneeling height on the worn flagstone floor of the nave
+          of an old deconsecrated limestone church converted into a sheriff's bullpen, the
+          camera tilted up. In the left half of the frame a large gray office printer stands on
+          a sturdy gray steel desk at waist height, its side panel off, a crumpled sheet of
+          paper caught in its rollers. In the right half, nivdoyle woman in her uniform, a woman
+          of twenty-seven, stands beside the desk and leans down toward the camera with one
+          forearm on the printer's lid, waist-up, holding a white mug with the word "visitor"
+          written on it in red marker out toward the camera, and looks straight into the lens
+          with bright, teasing approval and a wide, delighted smile. Behind her, out of focus,
+          the stone steps of an old pulpit and tall stained-glass windows. Daylight through the
+          stained glass lays soft red and gold patches across the desk and the flagstones. 35 mm
+          lens, natural colour, fine film grain, shallow depth of field on her eyes.
   - category: work
     word: SERVICE
     cost: 2
@@ -165,32 +151,21 @@ actions:
                 - card.lose: contractor-badge
                 - move.to: station-lobby
       art:
-        loras: ["DGirlsModel8:1"]
+        loras: ["nivdoyle_krea2_000001200:1"]
         subject: >
-          Intimate first-person photograph, the camera level and close to a woman's chest
-          as she bends forward over the lens, one hand on the gray lid of an office
-          printer at the left edge of the frame. She is framed from her lips down to the
-          waistband of her skirt: her glossy dark red lips curved in a small, indulgent
-          smile at the top edge of the frame, the point of her chin and a fall of long
-          wavy ginger hair over her left shoulder, fair skin at her throat above the
-          collar. The center of the frame is her uniform in crisp detail: a crisp, pressed
-          tan long-sleeved uniform shirt of heavy cotton twill with sharp pressed creases
-          standing off the fabric down the sleeves, every button of the full placket done
-          up and lined up, a pointed collar sitting flat and even, shoulder epaulets edged
-          in vivid azure blue and an embroidered vivid azure blue and gold patch on the
-          upper sleeve; a vivid, saturated azure blue silk necktie knotted in a small hard
-          knot in the notch of the collar, a small gold tie bar set level across it,
-          hanging straight down out of the knot at its full length toward the lens, the
-          silk catching a long soft highlight. A pale man's bare hand with short
-          unpolished nails rises from the bottom edge of the frame, the tip of the necktie
-          lying across his fingertips. Below, the high waistband of her tight tan pencil
-          skirt, the same khaki tan as the shirt, crosses the bottom of the frame, the
-          shirt tucked tight into it. Behind her, out of focus, a whitewashed pointed
-          vault and the glow of a stained-glass window. Warm desk-lamp light from the side
-          lights the starch, the silk and the gold, leaving soft shadow under the collar
-          points. Palette of uniform tan, vivid azure blue, gold, ginger and pale
-          limestone; natural fabric texture with visible twill weave and silk sheen, fine
-          35 mm film grain, shallow depth of field on the necktie and the placket.
+          A close first-person photograph from below, the camera looking up at nivdoyle woman in
+          her uniform as she bends forward from the waist over the lens, her upper body tipped
+          far forward, one hand on the gray lid of an office printer at the left edge of the
+          frame. She is framed from her lips down to her chest: her dark red lips in a small,
+          indulgent smile at the top edge of the frame and her copper hair falling over her left
+          shoulder. Her long azure blue silk necktie has swung free of her crisp tan shirt and
+          hangs straight down from the knot at her collar toward the lens, a long full-length
+          tie, the gold tie bar near the knot, the wide end dangling well below her chest into
+          the bottom of the frame. A man's bare hand rises from the bottom edge of the frame,
+          the wide tip of the hanging necktie lying across his fingertips. Behind her, out of
+          focus, a whitewashed pointed vault and the glow of a stained-glass window. Warm
+          desk-lamp light from the side lights the starch, the silk and the gold. 50 mm lens,
+          natural fabric texture, fine film grain, shallow depth of field on the necktie.
   - category: look
     word: WATCH
     cost: 1

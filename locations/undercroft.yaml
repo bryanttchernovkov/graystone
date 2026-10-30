@@ -10,7 +10,7 @@ arrival:
     caged bulbs strung along the ribs, the smell of floor wax and old stone. A yellow line
     is painted across the flagstones at the bottom step.
 
-    Beyond it, at a steel desk under the first arch, Sergeant Ashby looks up from a ledger.
+    Beyond it, at an old oak desk under the first arch, Sergeant Ashby looks up from a ledger.
     Black gloves, a tan shirt pressed to an edge, boots polished to a black mirror. She doesn't
     stand.
 
@@ -55,39 +55,28 @@ actions:
         - skill.gain: talk
         - tracker.change: { nerve: -1 }
       art:
-        loras: [KreaEbonyBabe1]
+        loras: ["ashby7_krea2_000001200:0.9"]
         subject: >
-          First-person point-of-view widescreen photograph from standing eye height on the flagstone
-          floor of a crypt built of smooth dressed limestone ashlar blocks laid in straight courses
-          with thin mortar joints under a whitewashed pointed vault, converted into a jail block,
-          the camera tilted slightly down toward a gray steel desk two paces away. A broad stripe of
-          scuffed yellow paint runs straight across the worn gray flagstones along the bottom edge
-          of the frame. Behind the desk, filling the center of the frame from the waist up, a woman
-          sits upright in a steel chair. She looks up from her ledger directly into the camera,
-          making eye contact with the viewer, with cool, amused impatience: one eyebrow arched high,
-          head tilted, lips pressed in a thin, sardonic smirk. She is a Black American woman in her
-          early thirties, tall and athletic with a full, heavy bust, broad straight shoulders and a
-          soldier's posture, smooth dark brown skin, long black dreadlocks gathered at the nape and
-          falling to the middle of her back, straight dark brows, black leather duty gloves and a
-          ring of heavy iron keys on a steel chain at her hip. She wears the Graystone County
-          Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill
-          with a pointed collar, a full button-front placket, two buttoned flap chest pockets piped
-          in vivid azure blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid
-          azure blue and gold patch on each upper sleeve and a polished gold six-point star badge
-          pinned over the left pocket; a vivid, saturated azure blue necktie with a small gold tie
-          bar; a black leather duty belt with a polished brass buckle; her head is bare. Three vivid
-          azure blue chevrons sit on each upper sleeve beneath the patch. She points down at the
-          flagstones in front of the desk with one black-gloved index finger, her other gloved hand
-          flat on an open ruled ledger. Behind her a pegboard on the dressed limestone ashlar wall
-          holds steel handcuffs, leg irons and coiled lengths of chain on hooks, beside a cork board
-          with a single typed sheet. Beyond her the windowless underground corridor, lit only by
-          caged bulbs, recedes under a row of pointed arches of smooth dressed limestone ashlar
-          blocks laid in straight courses with thin mortar joints, each side arch closed by a black
-          iron barred door. Warm light from caged incandescent bulbs hanging on black cords from the
-          vault ribs falls from above and slightly behind her, rimming her shoulders and dreadlocks
-          and pooling amber on the desk, while the corners of the vault sink into soft shadow.
-          Palette of limestone gray, uniform tan, vivid azure blue, black iron and bulb amber;
-          natural skin texture, fine 35 mm film grain, shallow depth of field on her face.
+          First-person point-of-view widescreen photograph from standing eye height in a crypt
+          built of smooth dressed limestone ashlar blocks laid in straight courses with thin
+          mortar joints under a whitewashed pointed vault, converted into a jail block, the
+          camera tilted slightly down toward an old dark-stained oak desk on four turned legs,
+          its warm brown wood and brass drawer pulls standing out against the gray stone, two
+          paces away on the flagstones. Behind the desk, filling the center of the frame from
+          the waist up, ashby7 woman in her sheriff's uniform, tan with an azure tie, her long
+          black locs gathered at the nape, sits upright in a wooden chair. She looks up from her
+          ledger directly into the camera, making eye contact with the viewer, with cool, amused
+          impatience: one eyebrow arched high, head tilted, lips pressed in a thin, sardonic
+          smirk. She points down at the flagstones in front of the desk with one black-gloved
+          index finger, her other gloved hand flat on an open ruled ledger on the oak desktop.
+          Behind her a pegboard on the ashlar wall holds leg irons and coiled lengths of chain
+          on hooks, beside a cork board with a single typed sheet. Beyond her the windowless
+          underground corridor recedes under a row of pointed arches, each side arch closed by a
+          black iron barred door. Warm light from caged incandescent bulbs hanging on black
+          cords from the vault ribs falls from above and slightly behind her, rimming her
+          shoulders and locs and pooling amber on the dark wood. Palette of limestone gray, dark
+          oak, uniform tan, vivid azure blue and bulb amber; natural skin texture, fine 35 mm
+          film grain, shallow depth of field on her face.
   - category: deal
     word: TERMS
     cost: 1
@@ -135,39 +124,22 @@ actions:
         - card.gain: ashbys-good-side
         - move.to: undercroft-cell
       art:
-        loras: ["KreaEbonyBabe1", "mtlcg7d_krea2_000001250:1"]
+        loras: ["ashby7_krea2_000001200:1", "mtlcg7d_krea2_000001250:2"]
         subject: >
-          First-person point-of-view widescreen photograph from standing eye height across a
-          gray steel desk in a crypt jail built of smooth dressed limestone ashlar blocks laid
-          in straight courses with thin mortar joints under a whitewashed pointed vault, the
-          camera level. One woman stands behind the desk at arm's length, framed from the waist
-          up in the center of the frame. Her raised black-gloved right hand is held up in front
-          of her left breast pocket, and from her fingers an empty stainless steel mtlcg7
-          chastity cage dangles by its tiny open brass padlock, unlocked, its curved polished
-          steel bars open and hollow, the light shining straight through them. Her gloved left hand rests flat
-          on the desk. She looks directly into the camera, making eye contact with the viewer,
-          with calm control and almost smug disdain: chin raised, eyes half-lidded, looking down
-          her nose at the lens, one corner of her mouth pulled into a faint smirk. She is a
-          Black American woman in her early thirties, tall and athletic with a full, heavy bust,
-          broad straight shoulders and a soldier's posture, smooth dark brown skin, long black
-          dreadlocks gathered at the nape and falling to the middle of her back, straight dark
-          brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her
-          hip. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan
-          long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full
-          button-front placket, two buttoned flap chest pockets piped in vivid azure blue,
-          shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold
-          patch on each upper sleeve and a polished gold six-point star badge pinned over the
-          left pocket; a vivid, saturated azure blue necktie with a small gold tie bar; tan
-          riding breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down
-          the outer seam; a black leather duty belt with a polished brass buckle; her head is
-          bare. Three vivid azure blue chevrons sit on each upper sleeve beneath the patch. On
-          the desk in front of her lie a coiled steel belly chain and an open ruled ledger.
-          Behind her, a pegboard of leg irons and chains hangs on the dressed limestone ashlar
-          wall under a pointed arch. A caged incandescent bulb directly overhead throws hard
-          warm light down onto her glove, the steel cage and her face, leaving the vault behind
-          her in soft amber shadow. Palette of polished steel, black leather, uniform tan, vivid
-          azure blue and limestone gray; natural skin texture, fine 35 mm film grain, sharp
-          focus on the cage and her eyes.
+          A waist-up photograph from standing eye height, the camera two paces back, in a crypt
+          jail of pale limestone ashlar under a whitewashed pointed vault. ashby7 woman in her
+          sheriff's uniform, tan with an azure tie, her long black locs gathered at the nape,
+          stands squarely facing the lens in front of a plain ashlar wall, her right elbow bent
+          and her black-gloved right hand raised beside her shoulder, level with her face,
+          holding an empty stainless steel mtlcg7 chastity cage fitting in her palm, held
+          upright beside her shoulder, small against her gloved fingers and smaller than her
+          face. Her gloved left hand rests on her hip. She looks directly into the camera,
+          making eye contact with the viewer, with calm control and almost smug disdain: chin
+          raised, eyes half-lidded, one corner of her mouth pulled into a faint smirk. Behind
+          her, softly out of focus, the pale ashlar wall rises to a pointed arch. A caged
+          incandescent bulb overhead lights her face warmly and puts a small bright glint on the
+          polished steel. Palette of polished steel, uniform tan, vivid azure blue and limestone
+          gray; natural skin texture, 50 mm lens.
   - category: look
     word: READ
     cost: 1
@@ -186,30 +158,23 @@ actions:
       effects:
         - skill.gain: look
 art:
-  loras: [KreaEbonyBabe1]
+  loras: ["ashby7_krea2_000001200:0.9"]
   subject: >
-    Eye-level photograph from the bottom step of a stone staircase into a crypt built of smooth dressed limestone ashlar blocks laid in straight courses with thin mortar joints under a whitewashed pointed vault, converted into a jail block. A broad stripe of scuffed yellow paint runs straight
-    across the worn gray flagstones near the bottom of the frame. Beyond it, under the first
-    rib-vaulted arch, a woman sits behind a gray steel desk facing the lens: a Black American
-    woman in her early thirties, tall and athletic with a full, heavy bust, broad straight
-    shoulders and a soldier's posture, smooth dark brown skin, long black dreadlocks gathered
-    at the nape and falling to the middle of her back, a level, unimpressed stare under
-    straight dark brows, black leather duty gloves and a ring of heavy iron keys on a steel chain at her hip. She
-    wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform
-    shirt of heavy cotton twill with a pointed collar, a full button-front placket, two
-    buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged in vivid azure blue,
-    an embroidered vivid azure blue and gold patch on each upper sleeve and a polished gold
-    six-point star badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small gold
-    tie bar; a black leather duty belt with a polished brass buckle; her head is bare. Three
-    vivid azure blue chevrons sit on each upper sleeve beneath the patch. She sits upright with her
-    gloved hands folded on an open ruled ledger and looks straight into the lens with a
-    level, unimpressed stare, jaw set, lips closed. On the wall behind her hangs a pegboard
-    of steel handcuffs, leg irons and coiled chains on hooks beside a cork board with one
-    typed sheet. Beyond the desk the windowless underground corridor recedes under a long row of pointed arches of smooth dressed limestone ashlar blocks laid in straight courses with thin mortar joints, each side arch closed by a black iron barred cell door set into the
-    stone, caged bulbs hanging from the vault ribs on black cords, the far end fading into
-    shadow. The desk sits in the center third of the frame with the corridor's vanishing
-    point just above her shoulder. Warm light from the caged incandescent bulbs falls from
-    above in amber pools along the vault, and a thin shaft of cold gray daylight slants down
-    from a small grated window high in the left wall across the flagstones. Palette of
-    limestone gray, uniform tan, vivid azure blue, black iron and bulb amber; natural skin texture,
-    fine 35 mm film grain, deep focus.
+    Eye-level photograph from the bottom step of a stone staircase into a crypt built of smooth
+    dressed limestone ashlar blocks laid in straight courses with thin mortar joints under a
+    whitewashed pointed vault, converted into a jail block. A broad stripe of scuffed yellow
+    paint runs across the worn gray flagstones a few paces from the camera. Beyond it, under the
+    first rib-vaulted arch, stands an old dark-stained oak desk on four turned legs, its warm
+    brown wood and brass drawer pulls standing out against the gray stone. Behind the desk sits
+    ashby7 woman in her sheriff's uniform, tan with an azure tie, her long black locs gathered
+    at the nape, upright, her black-gloved hands folded on an open ruled ledger. She looks
+    straight into the camera, making eye contact with the viewer, with a level, unimpressed
+    stare: eyes steady, jaw set, lips closed. On the wall behind her hangs a pegboard of leg
+    irons and coiled steel chains on hooks beside a cork board with one typed sheet. Beyond the
+    desk the windowless underground corridor recedes under a long row of pointed arches, each
+    side arch closed by a black iron barred cell door set into the stone, caged bulbs hanging
+    from the vault ribs on black cords, the far end fading into shadow. The desk sits in the
+    center third of the frame with the corridor's vanishing point just above her shoulder. Warm
+    light from the caged incandescent bulbs falls from above in amber pools along the vault.
+    Palette of limestone gray, dark oak, uniform tan, vivid azure blue, black iron and bulb
+    amber; natural skin texture, fine 35 mm film grain, deep focus.

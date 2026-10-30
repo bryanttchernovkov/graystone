@@ -226,13 +226,13 @@ where one exists (cuffs, chastity, facesitting, strap-on, rope, chains…), with
 rules in `cast.md` still guarding the viewer's body. Real bodies, real light, real rooms.
 Small-town light: limestone gray, prairie gold, sodium amber, cruiser blue and red.
 
-**The look is locked: the `retro-80s` LoRA at weight 1** (`style.loras`), on the checkpoint plus
-each character's LoRA. Chosen over canon_krea2, lumen_blockbuster, cheap-realism and no style
-LoRA for its warm color and the way it makes the department's azure pop; the lessons from that
-comparison are in `cast.md` ("Prompt lessons").
+**No style LoRA** (since 2026-10-26; `retro-80s` at weight 1 was the locked look before). The
+look comes from the checkpoint, the `style.yaml` prefix and the LoRAs of what is in frame,
+**the author's own LoRAs first** (Ashby's `ashby7`, the hinged handcuffs `hngcf5`, the cages);
+see `cast.md`.
 
 **Character consistency is a hard rule:** every named woman has a character LoRA, and **every
-image she appears in carries it** (`art.loras`), together with her full cast block.
+image she appears in carries it** (`art.loras`), together with her cast block.
 
 ### The camera is the player (hard rule)
 

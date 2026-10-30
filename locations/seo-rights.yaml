@@ -6,7 +6,7 @@
 id: seo-rights
 name: On your back on the wharf
 tags: [law]
-description: The sky, a violet braid hanging down out of it, and Deputy Seo standing on your chest.
+description: The sky, a pair of mirrored aviators looking down out of it, and Deputy Seo standing on your chest.
 arrival:
   text: |
     She takes you by the shoulder and the hip and rolls you onto your back, your cuffed hands
@@ -29,7 +29,8 @@ arrival:
     right to say please. You will use that one the most."
 
     She walks up you, stomach to chest, and puts the last sole flat on your collarbone, the
-    edge of it against your throat. The braid swings down past her knee. She lowers the
+    edge of it against your throat. Her pink hair swings forward
+    against her cheek. She lowers the
     aviators and looks at you over them, and over the boot.
 
     "Do you understand these rights as I have read them to you? The answer is 'yes, Deputy.'"
@@ -40,29 +41,21 @@ arrival:
     - tracker.change: { body: -1 }
     - move.to: seo-booking
 art:
-  loras: ["DGirlsModel9:1"]
+  loras: ["sorenji_krea2_000001400:1"]
   subject: >
     Extreme low angle shot photograph, taken outdoors on a concrete river wharf in broad
-    daylight, from the ground looking straight up at the open sky and at Deputy Seo standing
-    over the camera. Her right boot is extended down toward the camera, its sole held flat just
-    above the lens, and the photograph focuses on that sole: the smooth black leather sole of a
-    mirror-polished black leather thigh-high riding boot, worn and scuffed, with a low, flat
-    black stacked-leather heel studded with small nail heads, grit ground into the leather.
-    Beyond the boot, she towers over the camera, standing on her other leg, her body rising up
-    the frame against the sky, and she looks down past her boot into the lens with smug, calm
-    dominance: dark eyes over gold-framed aviator sunglasses lowered halfway down her nose,
-    delicate brows lifted, berry-pink lips in a small, satisfied smile. She is a Korean woman of twenty-nine, a classic Korean
-    beauty with an elegant oval face, a softly tapered jaw, large almond-shaped dark brown eyes,
-    sharp black winged eyeliner, delicate straight brows, a refined small nose, softly defined
-    cheekbones, berry-pink gradient lips and luminous, smooth pale skin, her extremely long,
-    glossy, vivid neon violet-purple hair woven into one enormous high French braid that hangs
-    down toward the camera. She wears the Graystone County Sheriff's patrol uniform: a dark
-    forest-green bomber jacket zipped up to the middle of her chest with a polished gold six-point
-     star badge on its left chest and an embroidered vivid azure blue and gold patch on
-    each sleeve; above the zipper, the pointed collar of a crisp tan uniform shirt and the knot
-    of a vivid, saturated azure blue necktie; tan riding breeches, the same khaki tan as her
-    shirt, with a vivid azure blue stripe down the outer seam. Her head is bare, and she holds a small white laminated card against her chest. Behind her,
-    only the wide pale blue sky, two gulls high above. Bright daylight from the sky behind her,
-    a rim of light along the braid and the jacket's shoulders. Restrained palette of boot black,
-    forest green, uniform tan, vivid azure blue, pale sky and neon violet; natural texture, fine
-    35 mm film grain, sharp focus on the sole, her face slightly soft beyond it.
+    daylight, from the ground looking straight up at the open sky and at sorenji woman in her
+    uniform with a green bomber jacket standing over the camera. Her right boot is extended down
+    toward the camera, its sole held flat just above the lens, and the photograph focuses on
+    that sole: the smooth black leather sole of a mirror-polished black leather thigh-high
+    riding boot, worn and scuffed, with a low, flat black stacked-leather heel studded with
+    small nail heads, grit ground into the leather. Beyond the boot, she towers over the camera,
+    standing on her other leg, her body rising up the frame against the sky, and she looks down
+    past her boot into the lens with smug, calm dominance: dark eyes over gold-framed aviator
+    sunglasses with mirrored lenses lowered halfway down her nose, delicate brows lifted,
+    berry-pink lips in a small, satisfied smile. She holds a small white laminated card against
+    her chest. Behind her, only the wide pale blue sky, two gulls high above. Bright daylight
+    from the sky behind her, a rim of light along her hair and the jacket's shoulders.
+    Restrained palette of boot black, forest green, uniform tan, vivid azure blue, pale sky and
+    dusty pink; natural texture, fine 35 mm film grain, sharp focus on the sole, her face
+    slightly soft beyond it.

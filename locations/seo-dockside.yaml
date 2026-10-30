@@ -12,38 +12,13 @@ setback_penalty:   # Seo's ground: a setback here with an open record is an arre
   effects:
     - move.to: seo-arrest
 art:
-  loras: ["DGirlsModel9:1"]
+  loras: ["sorenji_krea2_000001400:1"]
   subject: >
-    Eye-level widescreen photograph from standing eye height on a concrete river wharf, the
-    camera level, one woman, alone, standing an arm's length from the lens beside the open
-    driver's door of a parked sheriff's patrol car, framed from her duty belt to just above
-    the top of her braid. She has just turned her head from the river to the camera and looks
-    directly into it over the top of her sunglasses, making eye contact with the viewer, with
-    bright, curious amusement: dark eyes wide and attentive above the lowered lenses, delicate
-    brows lifted, berry-pink lips in a small, pleased smile. She is a Korean woman of twenty-
-    nine, a classic Korean beauty with an elegant oval face, a softly tapered jaw, large
-    almond-shaped dark brown eyes, sharp black winged eyeliner, delicate straight brows, a
-    refined small nose, softly defined cheekbones, berry-pink gradient lips and luminous,
-    smooth pale skin, her extremely long, glossy, vivid neon violet-purple hair woven into one
-    enormous high French braid that rises from the crown of her head and falls down her back
-    past her waist. She wears the Graystone County Sheriff's patrol uniform: a dark forest-
-    green bomber jacket of smooth nylon twill with ribbed knit cuffs, collar band and
-    waistband, zipped up to the middle of her chest, worn with both arms in its sleeves and
-    both shoulders covered, a single polished gold six-point star badge pinned on its left
-    chest and an embroidered vivid azure blue and gold patch on each upper sleeve; above the
-    zipper, the pointed collar of a crisp, pressed tan uniform shirt and the knot of a vivid,
-    saturated azure blue necktie with a small gold tie bar; a black leather duty belt with a
-    polished brass buckle at her waist below the jacket's hem; tan riding breeches, the same
-    khaki tan as her shirt, with a vivid azure blue stripe down the outer seam. Her head is
-    bare, her violet braid rising high above it. Her right hand, out of the green bomber
-    sleeve, holds a pair of gold-framed aviator sunglasses with mirrored lenses lowered
-    halfway down her nose by one bridge, close to her face; her left hand, out of the other
-    green bomber sleeve, holds a small black notebook with a pencil clipped to it against her
-    chest. Behind her, out of focus, a Graystone County Sheriff's patrol car, a present-day
-    Ford Police Interceptor Utility SUV painted two-tone, with a white roof, hood and front
-    doors over a tan body, a broad vivid azure blue stripe running the full length of each
-    flank below the windows and a gold six-point star decal on the open front door, and beyond
-    it the brown river and the rusting red hull of a cargo ship. Bright, hazy late-morning sun
-    from the side lights her face and sets the violet braid glowing. Restrained palette of
-    forest green, tan, vivid azure blue, neon violet, cruiser white and river brown; natural
-    skin texture, fine 35 mm film grain, shallow depth of field on her eyes.
+    A waist-up photograph of sorenji woman in her uniform with a green bomber jacket, a deputy
+    in her late twenties, standing beside the open driver's door of a white and tan sheriff's
+    patrol car on a concrete river wharf, lowering her aviator sunglasses down her nose with one
+    finger and looking over them straight into the camera with bright, curious amusement, a
+    small black notebook held against her chest in her other hand. Behind her, out of focus, the
+    brown river and the rusting red hull of a cargo ship. Bright, hazy late-morning sun from the
+    side lights her face. 50 mm lens at eye level, shallow depth of field on her eyes, natural
+    colour, fine film grain.

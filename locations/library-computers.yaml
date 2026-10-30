@@ -21,7 +21,7 @@ actions:
         Then she pushes one ear cup back with a finger and looks at you over her glasses.
 
         "Dude. You've been looking at me since you walked in." She pulls the other chair out with
-        her boot. "Sit. Don't touch the stickers."
+        her foot. "Sit. Don't touch the stickers."
       effects:
         - move.to: library-juno-table
   - category: work
@@ -30,7 +30,7 @@ actions:
     prompt: Use a public computer for an hour. Somebody left their session open.
     result:
       text: |
-        The last person didn't log out. The browser is open to a page with a pink banner and a
+        The last person didn't log out. The browser is open to a page with a teal banner and a
         grid of photos, every one of them blurred, and a price under each. The profile picture
         is a girl in thick black glasses sticking her tongue out at the camera.
 
@@ -58,33 +58,21 @@ actions:
       effects:
         - skill.gain: look
 art:
-  loras: ["KreaTransBabe:1"]
+  loras: ["jovessa_krea2_000001200:1"]
   subject: >
-    Eye-level widescreen photograph from standing height in the computer corner of a small
-    round Carnegie library reading room, the camera level. The left two-thirds of the frame
-    look along a long pale laminate table that runs away from the lens toward a tall arched
-    window with small clear leaded panes, four boxy beige public desktop computers with old
-    cream keyboards standing in a row on it, their screens showing soft blue login screens
-    with blurred placeholder text, gray office chairs pushed in beneath, and dark oak
-    bookcases of faded cloth-bound books curving away beyond them under a black cast-iron
-    gallery railing. In the right third of the frame, three paces away, one woman, alone, sits
-    close behind a small round oak table, turned half toward the lens, the open lid of her
-    laptop and the tabletop covering her from the waist down, glancing up from the screen
-    toward the camera with sly amusement: eyes narrowed behind her glasses, one brow lifted,
-    the corner of her mouth curled. She is a trans woman of twenty-three, slim and petite with
-    narrow shoulders and a small bust, pale skin with a light dusting of freckles across her
-    nose, long straight hair dyed half jet black and half pastel pink, split sharply down a
-    center part, the left half jet black and the right half pastel pink, worn in two low
-    pigtails, blunt straight-cut bangs, thick black rectangular rimmed glasses, sharp black
-    winged eyeliner, glossy pale pink lips, a small silver ring in her septum, and short nails
-    painted black and pastel pink in turn. She wears an oversized black cotton hoodie, zipped
-    halfway up and slipping off her left shoulder, over a fitted white ribbed crop top; a
-    black velvet choker with a small silver O-ring sits at her throat, and pastel pink over-
-    ear headphones with small cat ears rest around her neck, below her chin. Both her hands
-    rest on the laptop's keyboard. The laptop is a plain black laptop, the back of its lid
-    covered edge to edge in small, colorful vinyl stickers of cartoon cats, stars, hearts and
-    lightning bolts, none of them with any lettering. Behind her, the curve of a dark oak
-    bookcase. Afternoon daylight pours through the arched window at the end of the table and
-    lies along it, rimming her pigtails in light. Restrained palette of dark oak, beige
-    plastic, pale daylight, black and pastel pink; natural texture, fine 35 mm film grain,
+    Eye-level widescreen photograph from standing height in the computer corner of a small round
+    Carnegie library reading room, the camera level. The left two-thirds of the frame look along
+    a long pale laminate table that runs away from the lens toward a tall arched window with
+    small clear leaded panes, four boxy beige public desktop computers with old cream keyboards
+    standing in a row on it, their screens showing soft blue login screens with blurred
+    placeholder text, gray office chairs pushed in beneath, and dark oak bookcases of faded
+    cloth-bound books curving away beyond them under a black cast-iron gallery railing. In the
+    right third of the frame, three paces away, jovessa woman in her usual black outfit, wearing
+    her black rectangular glasses and a black ring choker, the only woman in the room, sits at a
+    small round oak table, turned half toward the lens, both hands on the keyboard of a plain
+    black laptop, the back of its lid covered edge to edge in small, colorful vinyl stickers of
+    cartoon cats, stars, hearts and lightning bolts, none of them with any lettering, glancing
+    up from the screen toward the camera with sly amusement, eyes narrowed behind her glasses,
+    one brow lifted. Afternoon daylight pours through the arched window at the end of the table
+    and lies along it, rimming her hair in light. 35 mm lens, natural colour, fine film grain,
     deep focus from her table to the far window.

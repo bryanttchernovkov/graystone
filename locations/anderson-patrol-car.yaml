@@ -37,35 +37,23 @@ actions:
         - card.gain: andersons-attention
         - skill.gain: talk
       art:
-        loras: ["DGirlsModel14:1"]
+        loras: ["tfny7_krea2_000000800:1"]
         subject: >
-          Close first-person photograph from standing eye height at the open driver's
-          window of a parked sheriff's patrol car, the camera level and close, the
-          white window sill of the door crossing the bottom of the frame. One woman,
-          alone, sits inside behind the wheel, framed from the chest up in the window
-          opening, the bottom edge of the frame at the sill. She holds a black
-          smartphone up toward the lens in her bare right hand, its camera aimed at
-          the viewer, and looks over the top of it directly into the camera, making
-          eye contact with the viewer, with gleeful, mocking amusement: green eyes
-          bright and narrowed, one dark brow arched, berry lips spread in a wide
-          teasing grin. She is a white American woman of twenty-four, slim and toned
-          with a full bust and long legs, fair skin, long wavy platinum-blonde hair
-          with bold jet-black streak highlights falling past her shoulders, dark
-          elegant makeup with smoky black eyeliner, long dark lashes and deep berry
-          lipstick, striking bright green eyes, arched dark brows, and long
-          almond-shaped nails painted glossy black. Above the sill she wears a dark
-          forest-green bomber jacket zipped up to the middle of her chest, both arms
-          in its sleeves, a single polished gold six-point star badge on its left
-          chest, and above the zipper the pointed collar of a crisp tan uniform shirt
-          and the knot of a vivid, saturated azure blue necktie. Her head is bare. Her
-          left elbow rests on the window sill, the green bomber sleeve along the white
-          paint, its bare hand hanging relaxed over the outside of the door; the phone
-          is in her right hand only. Behind her, the dark interior of the car and,
-          through the far window, out of focus, orange maples. Soft overcast daylight
-          from the open window lights her face. Restrained palette of forest green,
-          tan, vivid azure blue, platinum blonde, white car door and maple orange;
-          natural skin texture, fine 35 mm film grain, focus on her eyes above the
-          phone.
+          Close first-person photograph from standing eye height at the open driver's window of
+          a parked sheriff's patrol car, the camera level and close, the white window sill of
+          the door crossing the bottom of the frame. tfny7 woman in her tfny7 uniform with a
+          green bomber jacket, alone, sits inside behind the wheel, framed from the chest up in
+          the window opening, the bottom edge of the frame at the sill. She holds a black
+          smartphone up toward the lens in her bare right hand, its camera aimed at the viewer,
+          and looks over the top of it directly into the camera, making eye contact with the
+          viewer, with gleeful, mocking amusement: green eyes bright and narrowed, one dark brow
+          arched, berry lips spread in a wide teasing grin. Her left elbow rests on the window
+          sill, the green bomber sleeve along the white paint, its bare hand hanging relaxed
+          over the outside of the door; the phone is in her right hand only. Behind her, the
+          dark interior of the car and, through the far window, out of focus, orange maples.
+          Soft overcast daylight from the open window lights her face. Restrained palette of
+          forest green, tan, vivid azure blue, platinum blonde, white car door and maple orange;
+          natural skin texture, fine 35 mm film grain, focus on her eyes above the phone.
   - category: talk
     word: FLATTER
     cost: 1
@@ -118,43 +106,25 @@ actions:
               effects:
                 - tracker.change: { nerve: -1 }
       art:
-        loras: ["DGirlsModel14:1"]
+        loras: ["tfny7_krea2_000000800:1"]
         subject: >
-          First-person point-of-view widescreen photograph from standing eye height on
-          the sidewalk beside the open driver's window of a parked sheriff's patrol
-          car on a quiet residential street in a small Midwest town in autumn, the
-          camera tilted slightly down toward the window. One woman sits behind the
-          wheel turned toward the lens, framed from the waist up in the window
-          opening. She looks directly into the camera, making eye contact with the
-          viewer, with bored, greedy contempt: green eyes half-lidded, one dark brow
-          arched high, berry lips pursed. She is a white American woman of
-          twenty-four, slim and toned with a full bust and long legs, fair skin, long
-          wavy platinum-blonde hair with bold jet-black streak highlights falling past
-          her shoulders, dark elegant makeup with smoky black eyeliner, long dark
-          lashes and deep berry lipstick, striking bright green eyes, arched dark
-          brows, and long almond-shaped nails painted glossy black. She wears the
-          Graystone County Sheriff's patrol uniform: a dark forest-green bomber jacket
-          of smooth nylon twill with ribbed knit cuffs, collar band and waistband,
-          zipped up to the middle of her chest, worn with both arms in its sleeves and
-          both shoulders covered, a single polished gold six-point star badge pinned
-          on its left chest and an embroidered vivid azure blue and gold patch on each
-          upper sleeve; above the zipper, the pointed collar of a crisp, pressed tan
-          uniform shirt and the knot of a vivid, saturated azure blue necktie with a
-          small gold tie bar; a black leather duty belt with a polished brass buckle;
-          and tan riding breeches, the same khaki tan as her shirt, with a vivid azure
-          blue stripe down the outer seam. Her head is bare, her long hair loose over
-          the jacket's shoulders, and her hands are bare. Her bare left hand, out of
-          the green bomber sleeve, reaches out of the window toward the lens palm up,
-          glossy black nails curled, waiting; her bare right hand, out of the other
-          green bomber sleeve, holds two folded green banknotes up beside her face
-          between two fingers, flicking them. The white car door with its broad vivid
-          azure blue stripe and gold six-point star decal fills the bottom of the
-          frame. Through the far window, blurred, white clapboard houses under orange
-          maples. Soft overcast late-morning light from a high gray sky lights her
-          face and her open palm. Restrained palette of white car door, forest green,
-          tan, vivid azure blue, banknote green, platinum blonde and maple orange;
-          natural skin texture, fine 35 mm film grain, focus on her eyes and her open
-          hand.
+          First-person point-of-view widescreen photograph from standing eye height on the
+          sidewalk beside the open driver's window of a parked sheriff's patrol car on a quiet
+          residential street in a small Midwest town in autumn, the camera tilted slightly down
+          toward the window. tfny7 woman in her tfny7 uniform with a green bomber jacket sits
+          behind the wheel turned toward the lens, framed from the waist up in the window
+          opening. She looks directly into the camera, making eye contact with the viewer, with
+          bored, greedy contempt: green eyes half-lidded, one dark brow arched high, berry lips
+          pursed. Her bare left hand, out of the green bomber sleeve, reaches out of the window
+          toward the lens palm up, glossy black nails curled, waiting; her bare right hand, out
+          of the other green bomber sleeve, holds two folded green banknotes up beside her face
+          between two fingers, flicking them. The white car door with its broad vivid azure blue
+          stripe and gold six-point star decal fills the bottom of the frame. Through the far
+          window, blurred, white clapboard houses under orange maples. Soft overcast
+          late-morning light from a high gray sky lights her face and her open palm. Restrained
+          palette of white car door, forest green, tan, vivid azure blue, banknote green,
+          platinum blonde and maple orange; natural skin texture, fine 35 mm film grain, focus
+          on her eyes and her open hand.
   - category: talk
     word: THANK
     cost: 1
@@ -187,41 +157,23 @@ actions:
         - boost.change: { card: andersons-attention, amount: +1 }
         - skill.gain: talk
       art:
-        loras: ["DGirlsModel14:1"]
+        loras: ["tfny7_krea2_000000800:1"]
         subject: >
-          First-person point-of-view widescreen photograph from inside the open
-          driver's window of a parked sheriff's patrol car, the camera bent down level
-          with her face and close, an arm's length from her. One woman sits behind the
-          wheel leaning toward the lens, framed from the chest up, her face filling
-          the center of the frame. She looks directly into the camera, making eye
-          contact with the viewer, with cool, satisfied contempt: green eyes narrowed,
-          one dark brow arched, berry lips pursed forward, a glistening string of
-          saliva at her lower lip. She is a white American woman of twenty-four, slim
-          and toned with a full bust and long legs, fair skin, long wavy
-          platinum-blonde hair with bold jet-black streak highlights falling past her
-          shoulders, dark elegant makeup with smoky black eyeliner, long dark lashes
-          and deep berry lipstick, striking bright green eyes, arched dark brows, and
-          long almond-shaped nails painted glossy black. She wears the Graystone
-          County Sheriff's patrol uniform: a dark forest-green bomber jacket of smooth
-          nylon twill with ribbed knit cuffs, collar band and waistband, zipped up to
-          the middle of her chest, worn with both arms in its sleeves and both
-          shoulders covered, a single polished gold six-point star badge pinned on its
-          left chest and an embroidered vivid azure blue and gold patch on each upper
-          sleeve; above the zipper, the pointed collar of a crisp, pressed tan uniform
-          shirt and the knot of a vivid, saturated azure blue necktie with a small
-          gold tie bar; a black leather duty belt with a polished brass buckle; and
-          tan riding breeches, the same khaki tan as her shirt, with a vivid azure
-          blue stripe down the outer seam. Her head is bare, her long hair loose over
-          the jacket's shoulders, and her hands are bare. Her bare right hand, out of
-          the green bomber sleeve, is raised toward the lens with one glossy
-          black-nailed finger pointing at it; her bare left hand, out of the other
-          green bomber sleeve, grips the top of the steering wheel. Behind her, softly
-          out of focus, the dark car interior, a dash-mounted laptop glowing
-          blue-white and the passenger window with orange maples beyond it. Soft
-          overcast daylight from the open window lights her face, with the dark
-          interior behind her. Restrained palette of forest green, tan, vivid azure
-          blue, platinum blonde, berry and maple orange; natural skin texture, fine 35
-          mm film grain, focus on her lips and eyes.
+          First-person point-of-view widescreen photograph from inside the open driver's window
+          of a parked sheriff's patrol car, the camera bent down level with her face and close,
+          an arm's length from her. tfny7 woman in her tfny7 uniform with a green bomber jacket
+          sits behind the wheel leaning toward the lens, framed from the chest up, her face
+          filling the center of the frame. She looks directly into the camera, making eye
+          contact with the viewer, with cool, satisfied contempt: green eyes narrowed, one dark
+          brow arched, berry lips pursed forward, a glistening string of saliva at her lower
+          lip. Her bare right hand, out of the green bomber sleeve, is raised toward the lens
+          with one glossy black-nailed finger pointing at it; her bare left hand, out of the
+          other green bomber sleeve, grips the top of the steering wheel. Behind her, softly out
+          of focus, the dark car interior, a dash-mounted laptop glowing blue-white and the
+          passenger window with orange maples beyond it. Soft overcast daylight from the open
+          window lights her face, with the dark interior behind her. Restrained palette of
+          forest green, tan, vivid azure blue, platinum blonde, berry and maple orange; natural
+          skin texture, fine 35 mm film grain, focus on her lips and eyes.
   - category: deal
     word: INHALE
     cost: 1
@@ -264,38 +216,26 @@ actions:
         - boost.change: { card: andersons-attention, amount: +1 }
         - tracker.change: { nerve: +1 }
       art:
-        loras: ["DGirlsModel14:1"]
+        loras: ["tfny7_krea2_000000800:1"]
         subject: >
-          Close first-person photograph from standing eye height beside the open
-          driver's door of a parked sheriff's patrol car on a quiet residential street
-          in autumn, the camera level. One woman, alone, sits sideways on the driver's
-          seat facing out of the open door, framed from the chest up, the bottom edge
-          of the frame at her tie bar; nothing below her chest is in frame. In her
-          bare right hand, out of the green bomber sleeve, she holds a single empty,
-          stiff, structured, mirror-polished black leather thigh-high riding boot up
-          beside her face by the back of its shaft, the whole boot upright and
-          readable from its low, flat stacked-leather riding heel at the bottom to its
-          open top above her shoulder, the open top tipped toward the lens. She looks
-          directly into the camera beside the boot, making eye contact with the
-          viewer, with bored, amused contempt: green eyes half-lidded, one dark brow
-          arched high, berry lips pressed into a lopsided smirk. She is a white
-          American woman of twenty-four, slim and toned with a full bust and long
-          legs, fair skin, long wavy platinum-blonde hair with bold jet-black streak
-          highlights falling past her shoulders, dark elegant makeup with smoky black
-          eyeliner, long dark lashes and deep berry lipstick, striking bright green
-          eyes, arched dark brows, and long almond-shaped nails painted glossy black.
-          Above the frame's bottom edge she wears a dark forest-green bomber jacket
-          zipped up to the middle of her chest, both arms in its sleeves, a single
-          polished gold six-point star badge on its left chest, and above the zipper
-          the pointed collar of a crisp tan uniform shirt and the knot of a vivid,
-          saturated azure blue necktie. Her head is bare. Her bare left hand, out of
-          the other green bomber sleeve, rests on the top of the open door. Behind
-          her, the dark car interior; above the car roof, out of focus, orange maples.
-          Nothing of the viewer is in frame. Soft overcast daylight lays one long
-          highlight down the polished shaft. Restrained palette of black leather,
-          forest green, tan, vivid azure blue, platinum blonde and maple orange;
-          natural skin and leather texture, fine 35 mm film grain, focus on her eyes
-          and the boot.
+          Close first-person photograph from standing eye height beside the open driver's door
+          of a parked sheriff's patrol car on a quiet residential street in autumn, the camera
+          level. tfny7 woman in her tfny7 uniform with a green bomber jacket, alone, sits
+          sideways on the driver's seat facing out of the open door, framed from the chest up,
+          the bottom edge of the frame at her tie bar; nothing below her chest is in frame. In
+          her bare right hand, out of the green bomber sleeve, she holds a single empty, stiff,
+          structured, mirror-polished black leather thigh-high riding boot up beside her face by
+          the back of its shaft, the whole boot upright and readable from its low, flat
+          stacked-leather riding heel at the bottom to its open top above her shoulder, the open
+          top tipped toward the lens. She looks directly into the camera beside the boot, making
+          eye contact with the viewer, with bored, amused contempt: green eyes half-lidded, one
+          dark brow arched high, berry lips pressed into a lopsided smirk. Her bare left hand,
+          out of the other green bomber sleeve, rests on the top of the open door. Behind her,
+          the dark car interior; above the car roof, out of focus, orange maples. Nothing of the
+          viewer is in frame. Soft overcast daylight lays one long highlight down the polished
+          shaft. Restrained palette of black leather, forest green, tan, vivid azure blue,
+          platinum blonde and maple orange; natural skin and leather texture, fine 35 mm film
+          grain, focus on her eyes and the boot.
   - category: deal
     word: BEG
     cost: 1
@@ -337,45 +277,28 @@ actions:
         - card.gain: boot-fetish
         - boost.change: { card: andersons-attention, amount: +1 }
       art:
-        loras: ["DGirlsModel14:1"]
+        loras: ["tfny7_krea2_000000800:1"]
         subject: >
-          First-person point-of-view widescreen photograph from kneeling height on the
-          curb beside the open driver's door of a parked sheriff's patrol car on a
-          quiet residential street in a small Midwest town in autumn, the camera
-          tilted up. One woman, alone, sits sideways on the driver's seat leaning out
-          of the open door toward the lens, framed from the waist up, the bottom edge
-          of the frame at her duty belt; her legs are below the frame. In her raised
-          bare right hand, out of the green bomber sleeve, she dangles a single empty,
-          stiff, structured, mirror-polished black leather thigh-high riding boot with
-          a rigid straight shaft and a low, flat stacked-leather riding heel, off her
-          foot, by the top of its shaft beside her face, the whole boot hanging
-          straight down from her grip and visible from its open top to its rounded
-          toe. She looks down directly into the camera, making eye contact with the
-          viewer, with delighted, mocking glee: green eyes bright, one dark brow
-          arched, berry lips open in a laugh. She is a white American woman of
-          twenty-four, slim and toned with a full bust and long legs, fair skin, long
-          wavy platinum-blonde hair with bold jet-black streak highlights falling past
-          her shoulders, dark elegant makeup with smoky black eyeliner, long dark
-          lashes and deep berry lipstick, striking bright green eyes, arched dark
-          brows, and long almond-shaped nails painted glossy black. She wears the
-          Graystone County Sheriff's patrol uniform: a dark forest-green bomber jacket
-          of smooth nylon twill with ribbed knit cuffs, collar band and waistband,
-          zipped up to the middle of her chest, worn with both arms in its sleeves and
-          both shoulders covered, a single polished gold six-point star badge pinned
-          on its left chest and an embroidered vivid azure blue and gold patch on each
-          upper sleeve; above the zipper, the pointed collar of a crisp, pressed tan
-          uniform shirt and the knot of a vivid, saturated azure blue necktie with a
-          small gold tie bar; a black leather duty belt with a polished brass buckle;
-          and tan riding breeches, the same khaki tan as her shirt, with a vivid azure
-          blue stripe down the outer seam. Her head is bare. Her bare left hand, out
-          of the other green bomber sleeve, holds a black smartphone up at her chest,
-          its camera lens aimed at the viewer. Behind her, the dark car interior;
-          above the car roof, out of focus, orange maples and white clapboard houses.
-          Nothing of the viewer is in frame. Soft overcast late-morning light from a
-          high gray sky lights her face and the glossy boot. Restrained palette of
-          black leather, forest green, tan, vivid azure blue, platinum blonde and
-          maple orange; natural skin and leather texture, fine 35 mm film grain, focus
-          on her eyes and the boot.
+          First-person point-of-view widescreen photograph from kneeling height on the curb
+          beside the open driver's door of a parked sheriff's patrol car on a quiet residential
+          street in a small Midwest town in autumn, the camera tilted up. tfny7 woman in her
+          tfny7 uniform with a green bomber jacket, alone, sits sideways on the driver's seat
+          leaning out of the open door toward the lens, framed from the waist up, the bottom
+          edge of the frame at her duty belt; her legs are below the frame. In her raised bare
+          right hand, out of the green bomber sleeve, she dangles a single empty, stiff,
+          structured, mirror-polished black leather thigh-high riding boot with a rigid straight
+          shaft and a low, flat stacked-leather riding heel, off her foot, by the top of its
+          shaft beside her face, the whole boot hanging straight down from her grip and visible
+          from its open top to its rounded toe. She looks down directly into the camera, making
+          eye contact with the viewer, with delighted, mocking glee: green eyes bright, one dark
+          brow arched, berry lips open in a laugh. Her bare left hand, out of the other green
+          bomber sleeve, holds a black smartphone up at her chest, its camera lens aimed at the
+          viewer. Behind her, the dark car interior; above the car roof, out of focus, orange
+          maples and white clapboard houses. Nothing of the viewer is in frame. Soft overcast
+          late-morning light from a high gray sky lights her face and the glossy boot.
+          Restrained palette of black leather, forest green, tan, vivid azure blue, platinum
+          blonde and maple orange; natural skin and leather texture, fine 35 mm film grain,
+          focus on her eyes and the boot.
   - category: look
     word: WATCH
     cost: 1
@@ -395,32 +318,22 @@ actions:
       effects:
         - skill.gain: look
 art:
-  loras: ["DGirlsModel14:1"]
+  loras: ["tfny7_krea2_000000800:1"]
   subject: >
-    First-person point-of-view widescreen photograph from standing eye height on the
-    sidewalk, one pace from the open driver's window of a parked sheriff's patrol car on a
-    quiet residential street in a small Midwest town in autumn, the camera level with the
-    window. The window opening fills the center of the frame like a picture frame: the white
-    roof edge above, the black door pillars on either side, and below the sill the white
-    door with its broad vivid azure blue stripe and gold six-point star decal. Inside the
-    opening, one woman sits behind the wheel, seen from the chest up, her left elbow resting
-    on the window sill and her chin propped on her bare left hand, out of the green bomber
-    sleeve. She looks directly into the camera, making eye contact with the viewer, with
-    bored, amused contempt: green eyes half-lidded, one dark brow arched high, berry lips
-    pressed into a lopsided smirk. She is a white American woman of twenty-four, slim and
-    toned with a full bust and long legs, fair skin, long wavy platinum-blonde hair with
-    bold jet-black streak highlights falling past her shoulders, dark elegant makeup with
-    smoky black eyeliner, long dark lashes and deep berry lipstick, striking bright green
-    eyes, arched dark brows, and long almond-shaped nails painted glossy black. She wears a
-    dark forest-green bomber jacket of smooth nylon twill zipped up to the middle of her
-    chest, both arms in its sleeves, a single polished gold six-point star badge on its left
-    chest and an embroidered vivid azure blue and gold patch on each upper sleeve; above the
-    zipper, the pointed collar of a crisp tan uniform shirt and the knot of a vivid,
-    saturated azure blue necktie. Her head is bare, her long hair loose over her shoulders.
-    Her bare right hand, out of the other green bomber sleeve, rests on the sill beside her
-    elbow, glossy black nails tapping the white paint. Behind her, the dark car interior
-    with a dash-mounted laptop glowing blue-white, and through the far window, blurred,
-    white clapboard houses under orange maples. Soft overcast late-morning light from a high
-    gray sky lights her face evenly. Restrained palette of white car door, forest green,
-    tan, vivid azure blue, platinum blonde and maple orange; natural skin texture, fine 35
-    mm film grain, focus on her eyes.
+    First-person point-of-view widescreen photograph from standing eye height on the sidewalk,
+    one pace from the open driver's window of a parked sheriff's patrol car on a quiet
+    residential street in a small Midwest town in autumn, the camera level with the window. The
+    window opening fills the center of the frame like a picture frame: the white roof edge
+    above, the black door pillars on either side, and below the sill the white door with its
+    broad vivid azure blue stripe and gold six-point star decal. Inside the opening, tfny7 woman
+    in her tfny7 uniform with a green bomber jacket sits behind the wheel, seen from the chest
+    up, her left elbow resting on the window sill and her chin propped on her bare left hand,
+    out of the green bomber sleeve. She looks directly into the camera, making eye contact with
+    the viewer, with bored, amused contempt: green eyes half-lidded, one dark brow arched high,
+    berry lips pressed into a lopsided smirk. Her bare right hand, out of the other green bomber
+    sleeve, rests on the sill beside her elbow, glossy black nails tapping the white paint.
+    Behind her, the dark car interior with a dash-mounted laptop glowing blue-white, and through
+    the far window, blurred, white clapboard houses under orange maples. Soft overcast
+    late-morning light from a high gray sky lights her face evenly. Restrained palette of white
+    car door, forest green, tan, vivid azure blue, platinum blonde and maple orange; natural
+    skin texture, fine 35 mm film grain, focus on her eyes.

@@ -40,34 +40,18 @@ actions:
       effects:
         - skill.gain: look
 art:
-  loras: ["DMilfModel3:1"]
+  loras: ["lorbrandt_krea2_000001200:1"]
   subject: >
-    Eye-level widescreen photograph from standing height just inside the door of an elegant,
-    expensive executive office, the camera level. The left two-thirds of the frame look across
-    the room: walls paneled in rich dark walnut with a warm satin sheen, a white ceiling with
-    a slim brass chandelier, a thick deep-green and cream patterned rug on a polished
-    herringbone oak floor, a dark green leather Chesterfield sofa with a cream cashmere throw
-    before a low walnut coffee table with a crystal decanter and two glasses, a tall built-in
-    walnut bookcase of law books in matching leather bindings and framed commendations, and in
-    the far wall a wide interior window of clear glass looking out over a bright open room
-    below. In the right third of the frame, three paces away, a large polished walnut
-    executive desk with a green leather top, a brass banker's lamp with a green glass shade
-    and a neat stack of folders, a single round window of softly colored stained glass in the
-    wall behind it, and behind the desk in a tall dark leather chair one woman, alone, sits
-    seen from the waist up above the desk, her hands folded on the leather, turned half toward
-    the lens and smiling at the camera with a pleasant, inviting smile: blue eyes warm and
-    steady, brows relaxed, rose lips curved. She is a white American woman of forty, slim and
-    shapely with a full bust, fair skin, long curly auburn hair styled in loose, soft waves
-    falling past her shoulders, striking bright blue eyes, softly arched brows, and natural
-    rose lipstick. She wears the Graystone County Sheriff's dress uniform: a tailored, fitted
-    single-breasted dress jacket of fine dark olive-green wool, closed at the front with four
-    polished gold buttons from the waist to below the breastbone, its notched lapels piped and
-    its cuffs banded in vivid azure blue, shoulder epaulets edged in vivid azure blue with
-    three small gold six-point stars on each, an embroidered vivid azure blue and gold patch
-    on each upper sleeve and a polished gold six-point star badge pinned on its left breast;
-    in the V of the lapels, only the pointed collar of a crisp, pressed tan uniform shirt and
-    the knot of a vivid, saturated azure blue necktie with a small gold tie bar. Warm
-    afternoon light from the round window falls behind her, and the brass lamp and chandelier
-    fill the room with a soft, golden glow. Restrained palette of dark walnut, green leather,
-    cream, brass, dark olive green, vivid azure blue and gold; natural texture, fine 35 mm
-    film grain, deep focus.
+    A wide eye-level photograph from just inside the door of an elegant, expensive executive
+    office. The left two-thirds of the frame look across the room: walls paneled in rich dark
+    walnut, a white ceiling with a slim brass chandelier, a deep-green and cream patterned rug
+    on a polished herringbone oak floor, a dark green leather Chesterfield sofa with a cream
+    cashmere throw before a low walnut coffee table with a crystal decanter and two glasses, a
+    tall built-in walnut bookcase of leather-bound law books, and in the far wall a wide
+    interior window of clear glass looking out over a bright open room below. In the right third
+    of the frame, three paces away, behind a large polished walnut desk with a green leather top
+    and a brass banker's lamp, sits lorbrandt woman in her uniform in a tall dark leather chair,
+    waist-up above the desk, her hands folded on the leather, turned half toward the camera with
+    a pleasant, inviting smile. A single round stained-glass window glows in the wall behind
+    her. Warm afternoon light from the round window, the brass lamp and the chandelier fill the
+    room with a soft golden glow. 35 mm lens, natural colour, fine film grain, deep focus.
