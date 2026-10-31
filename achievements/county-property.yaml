@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+id: county-property
+title: County Property
+text: Stainless steel, and locked. The key is in somebody's pocket, and it isn't yours.
+hint: The Undercroft locks more than doors.
+when: { card: chastity-cage }
+art:
+  loras: ["ashby7_krea2_000001200:1", "mtlcg7d_krea2_000001250:2"]
+  subject: >
+    a waist-height photograph inside a small underground jail cell walled with smooth dressed
+    limestone ashlar blocks laid in straight courses with thin mortar joints under a whitewashed
+    pointed vault, seen from inside the cell, the camera level and two paces back, both figures in
+    the right two-thirds of the frame. ashby7 woman in her sheriff's uniform, tan with an azure tie,
+    a Black sergeant in her early thirties with dark brown skin, a broad-shouldered athletic build
+    and her long black locs gathered at the nape, stands tall over a kneeling man. She wears the
+    Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt with two
+    flap chest pockets piped in vivid azure blue, vivid azure blue epaulets, a vivid azure blue and
+    gold patch on each upper sleeve with three vivid azure blue chevrons beneath it, a polished gold
+    six-point star badge over the left pocket, a vivid, saturated azure blue necktie with a small
+    gold tie bar, a black leather duty belt with a polished brass buckle, tan riding breeches with a
+    vivid azure blue stripe down the outer seam, mirror-polished black leather thigh-high riding
+    boots, and black leather duty gloves on both hands; her head is bare. Her right elbow is bent
+    and her black-gloved right hand is raised beside her shoulder, level with her face, holding an
+    empty stainless steel mtlcg7 chastity cage fitting in her palm, held upright beside her
+    shoulder, small against her gloved fingers and smaller than her face. Her gloved left hand rests
+    on her hip. She looks down at the man, making eye contact with him, with calm control and smug,
+    amused disdain: chin raised, eyes half-lidded, one corner of her mouth pulled into a slow smirk.
+    The man kneels on the gray flagstone floor at her boots, facing her, his hands clasped behind
+    his back: he is a lean, slightly narrow-shouldered white man of thirty-two with a flat, bony
+    male chest under his clothes, pale skin, short neat dark blond hair slightly messy on top, a few
+    days of light blond stubble and round thin gold wire-rimmed glasses, in a loose, long-sleeved,
+    bright orange county inmate jumpsuit zipped up to the collar, barefoot. He stares up at the
+    little steel cage in her hand with wide, pleading eyes and his mouth half open, his cheeks
+    burning red. Behind them, out of focus, a steel cot against the pale ashlar wall. The left third
+    of the frame is the plain whitewashed vault and the dim stone wall falling into soft shadow. A
+    single caged incandescent bulb overhead lights her face and his upturned face warmly and puts a
+    small bright glint on the polished steel. Palette of polished steel, uniform tan, vivid azure
+    blue, inmate orange and limestone gray; natural skin texture, fine 35 mm film grain, 50 mm lens,
+    sharp focus on the cage and both faces

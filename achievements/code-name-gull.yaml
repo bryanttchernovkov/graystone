@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+id: code-name-gull
+title: "Code Name: Gull"
+text: She gave you one of her gulls' names. She won't tell you which.
+hint: Deputy Seo keeps a notebook. Fill your page.
+when: { card: seos-informant }
+art:
+  loras: ["sorenji_krea2_000001400:1"]
+  subject: >
+    a close medium shot of a secret moment on a river wharf on an overcast afternoon, weathered
+    timber pilings and a rusted iron mooring bollard, seen from along the dock at chest height, both
+    figures from the waist up in the right two-thirds of the frame. sorenji woman in her uniform
+    with a green bomber jacket, with her dusty-pink bob, dark eyes and berry-pink lips, has pulled
+    the man close by the collar of his flannel with one bare hand and leans up to whisper into his
+    ear, her lips almost touching it, her aviator sunglasses lowered down her nose so her dark eyes
+    show, sparkling with mischief, a small conspiratorial smile. Her other bare hand holds a small
+    black notebook open against his chest, a pencil tucked behind her ear. She wears the Graystone
+    County Sheriff's patrol uniform: a dark forest-green bomber jacket of smooth nylon twill with
+    ribbed knit cuffs, collar band and waistband, zipped up to the middle of her chest, a single
+    polished gold six-point star badge pinned on its left chest and an embroidered vivid azure blue
+    and gold patch on each upper sleeve; above the zipper show only the pointed collar of a crisp,
+    pressed tan uniform shirt and the small knot of a vivid, saturated azure blue necktie; a black
+    leather duty belt with a polished brass buckle; tan riding breeches with a vivid azure blue
+    stripe down the outer seam. Her hands are bare and her head is bare. The man is a lean, slightly
+    narrow-shouldered white man of thirty-two with pale skin, short neat dark blond hair slightly
+    messy on top and the same length all round, a few days of light blond stubble and round thin
+    gold wire-rimmed glasses, in an unbuttoned faded red and gray plaid flannel shirt over a plain
+    charcoal T-shirt, worn blue work jeans and scuffed brown leather work boots, bent down toward
+    her with his ear to her lips, eyes wide, glancing sideways down the empty dock, nervous and
+    thrilled. On the bollard right beside them a herring gull stands with its head cocked, watching
+    them. The left third of the frame is the wide gray river, a moored rust-red barge and the far
+    wooded bank, soft and out of focus, more gulls on the pilings. Soft even overcast light; palette
+    of river gray, forest green, dusty pink, flannel red and khaki tan; natural skin texture, fine
+    35 mm film grain, sharp focus on her eyes and his ear

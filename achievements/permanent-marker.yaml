@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+id: permanent-marker
+title: Permanent Marker
+text: Capitals, across your forehead, with a curly tail on the G. She checked.
+hint: Deputy Anderson has a Sharpie, and opinions.
+when: { card: paypig-sharpie }
+art:
+  loras: ["tfny7_krea2_000000800:1"]
+  subject: >
+    a small police station kitchenette under fluorescent light, a coffee machine, a microwave and a
+    corkboard of flyers, seen from the doorway at standing height. In the right two-thirds tfny7
+    woman in her tfny7 uniform leans her hip against the laminate counter, capping a fat black
+    marker and laughing at him, head tipped back, one hand over her mouth. She wears the Graystone
+    County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill
+    with a pointed collar, two buttoned flap chest pockets piped in vivid azure blue, shoulder
+    epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold patch on each upper
+    sleeve and a polished gold six-point star badge pinned over the left pocket; a vivid, saturated
+    azure blue necktie with a small gold tie bar; a black leather duty belt with a polished brass
+    buckle; tan riding breeches, the same khaki tan as her shirt, with a vivid azure blue stripe
+    down the outer seam; and stiff, structured, mirror-polished black leather thigh-high riding
+    boots with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight to the
+    leg, pulled up over the breeches to mid-thigh. Her hands are bare, her nails painted glossy
+    black, her loose platinum hair falls past her shoulders, and her head is bare. The man stands in
+    front of her, a lean, slightly narrow-shouldered white man of thirty-two with pale skin, short
+    dark blond hair slightly messy on top, a few days of light stubble and round thin wire-rimmed
+    glasses, in an unbuttoned faded red and gray plaid flannel shirt over a plain charcoal T-shirt,
+    worn blue work jeans and scuffed brown leather work boots, his glasses pushed up into his hair,
+    the word PAYPIG written in thick black marker capitals across his forehead with a little curly
+    pig's tail on the G, staring at his own reflection in the dark microwave door, mouth open in
+    mortified disbelief. The left of the frame is the empty doorway and a bare wall. Cool
+    fluorescent light, warm afternoon sun through the blinds. Palette of uniform tan, vivid azure
+    blue, polished black, flannel red and marker black; natural skin texture, fine 35 mm film grain.

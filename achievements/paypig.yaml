@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+id: paypig
+title: Paypig
+text: Her number's in your phone under a name she picked. You thanked her for it.
+hint: Deputy Anderson likes it when you pay attention. In cash.
+when: { card: andersons-paypig }
+art:
+  loras: ["tfny7_krea2_000000800:1"]
+  subject: >
+    a quiet tree-lined street of pale clapboard houses in the Heights at dusk, seen from across the
+    road at kneeling height. In the right third a Graystone County Sheriff's patrol car, a
+    present-day Ford Police Interceptor Utility SUV painted two-tone, with a white roof, hood and
+    front doors over a tan body, a broad vivid azure blue stripe running the full length of each
+    flank below the windows, a gold six-point star decal on each front door, a low black roof light
+    bar with red and blue lenses, a black steel push bumper bolted across the front grille and black
+    steel wheels is parked at the curb, its light bar unlit. tfny7 woman in her tfny7 uniform with a
+    green bomber jacket leans back against its front fender with her ankles crossed. She wears the
+    Graystone County Sheriff's patrol uniform: a dark forest-green bomber jacket of smooth nylon
+    twill with ribbed knit cuffs, collar band and waistband, zipped up to the middle of her chest, a
+    single polished gold six-point star badge pinned on its left chest and an embroidered vivid
+    azure blue and gold patch on each upper sleeve; above the zipper, the pointed collar of a crisp,
+    pressed tan uniform shirt and the knot of a vivid, saturated azure blue necktie with a small
+    gold tie bar; a black leather duty belt with a polished brass buckle at her waist below the
+    jacket's hem; tan riding breeches, the same khaki tan as her shirt, with a vivid azure blue
+    stripe down the outer seam; and stiff, structured, mirror-polished black leather thigh-high
+    riding boots with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight
+    to the leg, pulled up over the breeches to mid-thigh. Her hands are bare, her nails painted
+    glossy black, her loose platinum hair falls past her shoulders, and her head is bare. She plucks
+    a fan of twenty-dollar bills from the man's raised hands between two black-nailed fingers, head
+    thrown back in a mocking laugh, her phone in her other hand filming him. The man kneels on the
+    sidewalk at her boots, a lean, slightly narrow-shouldered white man of thirty-two with pale
+    skin, short dark blond hair slightly messy on top, a few days of light stubble and round thin
+    wire-rimmed glasses, in an unbuttoned faded red and gray plaid flannel shirt over a plain
+    charcoal T-shirt, worn blue work jeans and scuffed brown leather work boots, holding up the last
+    of his cash in both cupped hands like an offering, his empty brown leather wallet open on the
+    concrete beside his knee, his face red to the ears, looking up at her with helpless, grateful
+    humiliation. The left of the frame is the empty street, porch lights coming on, maple leaves in
+    the gutter. Warm streetlight on the two of them, dusk violet sky above the roofs. Palette of
+    forest green, money green, flannel red, polished black and dusk violet; natural skin texture,
+    fine 35 mm film grain.

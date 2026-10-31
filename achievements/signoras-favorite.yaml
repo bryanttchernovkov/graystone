@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+id: signoras-favorite
+title: Signora's Favorite
+text: She makes yours without asking now, caro.
+hint: Café Linde rewards a regular who listens.
+when: { card: signoras-favorite }
+art:
+  loras: ["ferrina_krea2_000001200:1"]
+  subject: >
+    a full-length view of two people in the small back room of a family espresso café, burlap sacks
+    of green coffee stacked high, a small black drum coffee roaster, a scrubbed steel prep table and
+    steel shelves of stacked white cups, seen from the doorway at waist height so both figures and
+    the tiled floor are in frame. In the center right of the frame a man kneels on both knees on the
+    black and white tiled floor: he is a lean, slightly narrow-shouldered white man of thirty-two
+    with pale skin, short neat dark blond hair slightly messy on top and the same length all round,
+    a few days of light blond stubble and round thin gold wire-rimmed glasses, in an unbuttoned
+    faded red and gray plaid flannel shirt over a plain charcoal T-shirt, worn blue work jeans and
+    scuffed brown leather work boots. His knees are on the tiles, his hands rest folded on his
+    thighs, his head is at the height of her waist, and he looks up at her with flushed, devoted
+    gratitude, lips parted. Standing over him, close in front of him, ferrina woman in her red work
+    blouse and a plain black apron with no lettering, wearing her thick black rectangular glasses,
+    with black trousers and black patent stiletto pumps, looks down at him and smiles sweetly, red
+    lips curved, eyes warm and amused behind her glasses. Her left hand holds a small white espresso
+    cup on its saucer, and her right hand, red nails spread, rests on top of his head, fingers in
+    his hair, as if petting a good dog. The left third of the frame is the dim shelving and burlap
+    sacks in soft focus. A single bare bulb hanging above lights her face, her glasses, the red
+    satin and the white cup warm and hard, and catches his upturned face, the sacks falling into
+    amber shadow. Palette of red satin, black apron, white porcelain, burlap, steel and bulb amber;
+    natural skin and fabric texture, fine 35 mm film grain, sharp focus on her smile and his face

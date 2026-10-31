@@ -12,6 +12,7 @@ legend:
   C1: undercroft-charm-cold
   C2: undercroft-charm-warm
   TR: undercroft-trusted-release
+  AL: undercroft-alley
 grid: |
   UC .. CL .. CB
   .. .. .. .. ..
@@ -19,7 +20,7 @@ grid: |
   .. .. .. .. ..
   C1 .. C2 .. ..
   .. .. .. .. ..
-  TR .. .. .. ..
+  TR .. AL .. ..
 portals:
   # The trusted release is a one-way scene on the church steps: down them to Main Street.
   - { from: undercroft-trusted-release, dir: down, to: main-street-south, cost: 0 }

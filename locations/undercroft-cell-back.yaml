@@ -271,16 +271,11 @@ actions:
         the alley grass, listening for keys.
 
         Then you're through.
-
-        You lie in the wet grass for a breath, then get up and walk, not run, because a man
-        running in Graystone gets noticed. The alley lets out onto Main Street. Somewhere under
-        your feet a chair scrapes on flagstone, and somewhere behind you a key ring rattles on
-        its chain.
       effects:
         - card.lose: inmate
         - card.lose: served-sentence
         - card.gain: criminal-record
-        - move.to: main-street-south
+        - move.to: undercroft-alley
       art:
         subject: >
           First-person point-of-view widescreen photograph from ground level, just outside a

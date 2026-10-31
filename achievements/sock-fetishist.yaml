@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+id: sock-fetishist
+title: Sock Fetishist
+text: Thin black cotton at five o'clock. You know exactly what it smells like now.
+hint: Every boot comes off at the end of a shift.
+when: { card: sock-fetish }
+art:
+  loras: ["tfny7_krea2_000000800:1"]
+  subject: >
+    a close medium shot inside a chain-link holding cage in the side aisle of an old deconsecrated
+    church, seen from beside them at kneeling height, both faces in frame in the right two-thirds.
+    tfny7 woman in her tfny7 uniform sits on a steel bench bolted to the cage wall, leaning forward
+    with her elbows on her knees. She wears the Graystone County Sheriff's uniform: a crisp, pressed
+    tan long-sleeved uniform shirt of heavy cotton twill with a pointed collar, two buttoned flap
+    chest pockets piped in vivid azure blue, shoulder epaulets edged in vivid azure blue, an
+    embroidered vivid azure blue and gold patch on each upper sleeve and a polished gold six-point
+    star badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small gold
+    tie bar; a black leather duty belt with a polished brass buckle; tan riding breeches, the same
+    khaki tan as her shirt, with a vivid azure blue stripe down the outer seam. Her hands are bare,
+    her nails painted glossy black, her loose platinum hair falls past her shoulders, and her head
+    is bare. One mirror-polished black leather thigh-high riding boot is still on her left leg; her
+    right boot stands empty on the floor and her right foot is in a thin black cotton knee-high
+    sock, damp and clinging, worn under the boot. She has pulled the matching sock off her other
+    hand and presses it flat over the face of the man kneeling in front of her with her bare palm,
+    black nails spread across his cheek, laughing at him with amused contempt, mouth open mid-taunt.
+    The man is a lean, slightly narrow-shouldered white man of thirty-two with pale skin, short dark
+    blond hair slightly messy on top, a few days of light stubble and round thin wire-rimmed
+    glasses, in an unbuttoned faded red and gray plaid flannel shirt over a plain charcoal T-shirt,
+    worn blue work jeans and scuffed brown leather work boots, kneeling on the floor with his hands
+    on his thighs, his glasses pushed askew by the sock, eyes closed, breathing it in, face flushed.
+    The left of the frame is soft-focus chain-link and a stained glass window glowing in the dim
+    nave. Cool fluorescent light from above with warm stained-glass color on her cheek. Palette of
+    black cotton, polished black leather, uniform tan, vivid azure blue and flannel red; natural
+    fabric and skin texture, fine 35 mm film grain, sharp focus on the sock and his face.

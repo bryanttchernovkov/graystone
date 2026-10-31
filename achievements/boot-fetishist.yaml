@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+id: boot-fetishist
+title: Boot Fetishist
+text: Polished leather, a welt stitched tight. Some men look at faces first.
+hint: Deputies wear their boots to mid-thigh. Look down.
+when: { card: boot-fetish }
+art:
+  loras: ["ashby7_krea2_000001200:0.9"]
+  subject: >
+    a low photograph from the flagstone floor inside a small underground jail cell walled with
+    smooth dressed limestone ashlar blocks laid in straight courses with thin mortar joints under a
+    whitewashed pointed vault, black iron bars across its front, the camera at kneeling height a few
+    paces away, both figures in the right two-thirds of the frame. ashby7 woman in her sheriff's
+    uniform, tan with an azure tie, a Black sergeant in her early thirties with dark brown skin, a
+    broad-shouldered athletic build and her long black locs gathered at the nape, stands tall with
+    her feet apart and her gloved hands folded behind her back. She wears the Graystone County
+    Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt with two flap chest pockets
+    piped in vivid azure blue, vivid azure blue epaulets, a vivid azure blue and gold patch on each
+    upper sleeve with three vivid azure blue chevrons beneath it, a polished gold six-point star
+    badge over the left pocket, a vivid, saturated azure blue necktie with a small gold tie bar, a
+    black leather duty belt with a polished brass buckle and a ring of heavy iron keys at her hip,
+    tan riding breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down the
+    outer seam, stiff, structured, mirror-polished black leather thigh-high riding boots with rigid
+    straight shafts and low, flat stacked-leather riding heels pulled up over the breeches to
+    mid-thigh, and black leather duty gloves on both hands; her head is bare. At her feet the man
+    lies prostrate on the gray flagstones: he is a lean, slightly narrow-shouldered white man of
+    thirty-two with pale skin, short neat dark blond hair slightly messy on top and the same length
+    all round, a few days of light blond stubble and round thin gold wire-rimmed glasses, in a
+    loose, bright orange county inmate jumpsuit, barefoot. He is on his knees with his chest lowered
+    to the floor, both palms flat on the flagstones on either side of her right boot, and his lips
+    are pressed against the glossy black toe cap of her right boot in a kiss, his eyes closed behind
+    his glasses, his face soft with devotion. She looks straight down at him over her chin with a
+    crooked, satisfied smirk, eyes half-lidded. The left third of the frame is the pale ashlar wall
+    and the whitewashed vault in soft shadow. A single caged incandescent bulb above lays one long
+    specular highlight down the shaft of each boot and lights his face and the toe cap, the rest of
+    the leather deep glossy black. Palette of polished black leather, uniform tan, vivid azure blue,
+    inmate orange and gray stone; natural leather texture with visible welt stitching, fine 35 mm
+    film grain, sharp focus on his lips and the toe cap

@@ -10,6 +10,8 @@ types:
   result:   { workflow: krea2, width: 1920, height: 1080 }
   card:     { workflow: krea2, width: 1024, height: 1024 }
   ending:   { workflow: krea2, width: 1920, height: 1080 }
+  # The one place the hero is in frame (achievements are third person, never POV): Eli is written out in every subject.
+  achievement: { workflow: krea2, width: 1920, height: 1080, prefix: "wide third-person photograph, the scene in the right two-thirds of the frame and the left third quiet" }
 workflows:
   krea2: workflows/krea2.json
 ui:

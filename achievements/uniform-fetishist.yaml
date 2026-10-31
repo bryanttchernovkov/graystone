@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+id: uniform-fetishist
+title: Uniform Fetishist
+text: Starch, a hard knot, a star polished to throw the light back. You can't not look now.
+hint: Graystone's deputies are very well turned out. Notice.
+when: { card: uniform-fetish }
+art:
+  loras: ["ashby7_krea2_000001200:0.9"]
+  subject: >
+    inside a small underground jail cell walled with smooth dressed limestone ashlar blocks laid in
+    straight courses with thin mortar joints under a whitewashed pointed vault, black iron bars
+    across its front, the barred door standing open, seen from the corner of the cell at chest
+    height. In the right two-thirds, close together under a single caged bulb, ashby7 woman in her
+    sheriff's uniform, tan with an azure tie, a Black sergeant in her early thirties with dark brown
+    skin, a broad-shouldered athletic build and her long black locs gathered at the nape stands at
+    parade rest for inspection, for once on the other side of it. She wears the Graystone County
+    Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a
+    pointed collar, two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets
+    edged in vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve,
+    with three vivid azure blue chevrons beneath the patch on each sleeve and a polished gold
+    six-point star badge pinned over the left pocket; a vivid, saturated azure blue necktie with a
+    small gold tie bar; a black leather duty belt with a polished brass buckle; tan riding breeches,
+    the same khaki tan as her shirt, with a vivid azure blue stripe down the outer seam; and stiff,
+    structured, mirror-polished black leather thigh-high riding boots with rigid straight shafts and
+    low, flat stacked-leather riding heels, fitted tight to the leg, pulled up over the breeches to
+    mid-thigh, with black leather duty gloves on both hands and a ring of heavy iron keys at her
+    hip; her head is bare. The man stands an inch in front of her, a lean, slightly
+    narrow-shouldered white man of thirty-two with pale skin, short dark blond hair slightly messy
+    on top, a few days of light stubble and round thin wire-rimmed glasses, in a loose, bright
+    orange county inmate jumpsuit with the sleeves pushed up, barefoot. With reverent, careful
+    fingertips he traces the vivid azure blue piping along her chest pocket and straightens the knot
+    of her azure tie, his face tilted up to hers, lips parted, eyes soft and adoring behind his
+    glasses. She looks down at him over her nose with cool, faintly amused permission, one eyebrow
+    raised. The left of the frame is the plain whitewashed vault and a steel cot in shadow. The
+    caged bulb above lights the starch, the silk, the polished star and his face from above, soft
+    shadow under her pocket flaps. Palette of uniform tan, vivid azure blue, gold, inmate orange and
+    pale limestone; natural skin and fabric texture with visible twill weave and silk sheen, fine 35
+    mm film grain.

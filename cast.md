@@ -109,6 +109,18 @@ The player is always a man; the camera is his eyes.
 - **Establishing shots (location art) never contain him.** Eye-level photographs from a
   visitor's position; whoever lives there may look into the lens.
 - The woman in the scene looks at, speaks to, reaches toward or acts on **the camera**.
+- **The one exception: achievement art** (`achievements/*.yaml`) is third person, as the engine
+  requires. Eli is in frame, seen from a distance, with the scene in the right two-thirds and
+  the left third quiet. Every subject writes him out in full where he enters (a lean,
+  slightly narrow-shouldered white man of thirty-two, pale skin, short dark blond hair slightly
+  messy on top, light stubble, round thin wire-rimmed glasses) plus his outfit: the flannel
+  look, or "a loose, bright orange county inmate jumpsuit with the sleeves pushed up, barefoot"
+  in the Undercroft. Without that, the woman's LoRA bleeds into him. Make each image a reward:
+  the peak of the storyline, with expression and humiliation, not a polite two-shot.
+- **In those two-person shots the woman's kit is written out too**: the canonical uniform
+  sentence (indoor or patrol), her hands, nails, hair and hat. A second person in frame, or a
+  second LoRA, dilutes what the trigger alone would draw, so don't rely on the LoRA's default
+  uniform there.
 
 ### Framing rules (inherited from Precinct 69's renders; revise as Graystone's renders teach us)
 

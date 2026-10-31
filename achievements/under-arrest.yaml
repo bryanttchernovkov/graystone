@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+id: under-arrest
+title: Under Arrest
+text: County steel, double-locked, wrists behind you. Somebody else decides when.
+hint: Graystone's deputies don't like open counts.
+when: { card: handcuffs }
+art:
+  loras: ["tfny7_krea2_000000800:1", "hcstand2_krea2_000003000:0.8"]
+  subject: >
+    a close, action-packed medium shot of an arrest at dusk, a three-quarter view from beside the
+    man's shoulder at waist height, the cuffing hands in the center of the frame, both figures from
+    the thighs up filling the right two-thirds. A woman sheriff's deputy, tfny7 woman in her tfny7
+    uniform with a green bomber jacket, handcuffs a man in a faded plaid flannel shirt, standing
+    close behind him and bending him forward at the waist over the hood of a patrol car, closing
+    hinged steel handcuffs around his wrists behind his back. The man is a lean, slightly
+    narrow-shouldered white man of thirty-two with pale skin, short neat dark blond hair slightly
+    messy on top, a few days of light blond stubble and round thin gold wire-rimmed glasses, in an
+    unbuttoned faded red and gray plaid flannel shirt over a plain charcoal T-shirt and worn blue
+    jeans. He is bent forward with his chest and his left cheek pressed flat on the white hood, his
+    glasses knocked crooked, his eyes squeezed shut and his mouth open in a protesting gasp; both
+    his arms are pulled up behind his back, one hinged steel handcuff already locked on his left
+    wrist, the solid hinge between the cuffs clearly visible. She has her left hand fisted in the
+    collar of his flannel, pinning him down to the hood, and with her right hand she grips his right
+    wrist and snaps the open second cuff shut around it. She leans down over his back, her mouth
+    beside his ear, her loose platinum hair swinging forward across her face, smirking with bored,
+    contemptuous amusement as she talks to him. She wears the Graystone County Sheriff's patrol
+    uniform: a dark forest-green bomber jacket of smooth nylon twill with ribbed knit cuffs, collar
+    band and waistband, zipped up to the middle of her chest, worn with both arms in its sleeves and
+    both shoulders covered, a single polished gold six-point star badge pinned on its left chest and
+    an embroidered vivid azure blue and gold patch on each upper sleeve; above the zipper show only
+    the pointed collar of a crisp, pressed tan uniform shirt and the small knot of a vivid,
+    saturated azure blue necktie, the tie itself hidden inside the zipped jacket; a black leather
+    duty belt with a polished brass buckle at her waist below the jacket's hem; and tan riding
+    breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down the outer seam.
+    Her hands are bare, her nails painted glossy black, and her head is bare. The patrol car is a
+    Graystone County Sheriff's patrol car, its hood and front doors white over a tan body with a
+    broad vivid azure blue stripe down the flank, its low black roof light bar flashing red and blue
+    just above them. The left third of the frame is the dark residential street out of focus, porch
+    lights and parked pickups in red and blue bokeh. Red and blue emergency light strobes across
+    both of them from the light bar, mixed with warm sodium streetlight from behind, glinting on the
+    hood, her star and the hinged steel. Palette of police red and blue, forest green, khaki tan,
+    flannel red and polished steel; natural skin texture, fine 35 mm film grain, slight motion blur
+    on her swinging hair, sharp focus on the cuffing hands and his face
