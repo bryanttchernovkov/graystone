@@ -21,9 +21,9 @@ Ideas for graystone
  - [x] rework location/structure of files?
 
 ## V0.3:
-- [ ] 'Arrested' if wanted and entering the station. Stupid move, and you went and did it.
+- [x] 'Arrested' if wanted and entering the station. Stupid move, and you went and did it.
   - Achievement; 'Not Raymond Reddington'
-- [ ] Update undercroft with prison life lora
+- [x] Update undercroft with prison life lora
 - [ ] Graybloods 2 - smuggle package
   - [ ] Locations:
     - [ ] Highway; at least 2 lenghts of highway locations, prompts how us driving in our car; we can go back and forht. Risk is, on both llocation, if we suffer a setback we get pulled over by a new deputy. 

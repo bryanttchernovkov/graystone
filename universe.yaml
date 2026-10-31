@@ -74,6 +74,7 @@ tags:
   - { id: cuffed,    name: Cuffed }    # arrested: road cuffs, until the Undercroft
   - { id: caged,     name: Caged }
   - { id: gagged,    name: Gagged }
+  - { id: mitted,    name: Mitted }    # padlocked mitts (CLIMB): hides what needs fingers
   - { id: served,    name: Served }
   - { id: inmate,    name: Inmate }    # locked up: Inmate and Time Served (hides the phone)
   - { id: trusted,   name: Trusted }

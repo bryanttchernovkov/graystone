@@ -1,20 +1,25 @@
 # yaml-language-server: $schema=../../../../schema/v3/card.json
+# Ashby's own kit, not the county's hinged road cuffs: chain cuffs padlocked to a leather waist
+# belt, and leg irons. It is the pvprsn7 LoRA's kit, so the art is his own POV in county orange.
 id: prison-chains
 kind: restraint
 name: Prison Chains
 tags: [chained]
-text: Cuffs, a belly chain through them, irons at the ankles. Short steps, short reach.
+text: Chain cuffs padlocked to a leather belt at your waist, irons on your bare ankles. Short steps, short reach.
 setback_penalty:
   tags: [prison]
   effects:
     - tracker.change: { body: -1 }
 art:
-  loras: ["hngcf5_krea2_000001500:0.9"]
+  loras: ["pvprsn7v3_krea2_000001250:1"]
   subject: >
-    Square still-life photograph from above of prison restraints lying on the gray wool blanket
-    of a steel slat cot: closed polished stainless steel hngcf5 hinged handcuffs threaded on a
-    heavy steel belly chain, and a set of steel leg irons joined by a short chain, coiled
-    together in the center of the frame. A caged incandescent bulb above throws hard warm
-    highlights along the curved steel of the cuffs and every link of the chains, the wool around
-    them in soft shadow. Palette of polished steel, gray wool and warm amber; natural metal and
-    wool texture, fine 35 mm film grain, sharp focus on the cuffs.
+    pvprsn7 POV prisoner photo, a first-person view looking down at his own body, seated on the
+    edge of a steel slat cot with a gray wool blanket, his knees bent over its front edge and his
+    bare feet flat on worn gray limestone flagstones in front of it, his bare pale hairy forearms
+    in the foreground. His wrists locked in polished steel chain handcuffs, the chain padlocked
+    to a worn brown leather waist belt with a brass padlock, his bare ankles locked in steel leg
+    irons joined by a short chain lying slack on the stone. The flagstones spread around his feet
+    to the base of a pale limestone wall, empty and quiet. A single caged incandescent bulb above
+    throws hard warm highlights along the chain, the cuffs and the padlock. Square composition.
+    Palette of inmate orange, worn brown leather, polished steel, brass and limestone gray;
+    natural skin and metal texture, fine 35 mm film grain.

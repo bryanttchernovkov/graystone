@@ -7,12 +7,11 @@ name: Time Served
 tags: [served, inmate]
 text: A line in the Sergeant's ledger with her initials next to it. All that's missing is yours.
 art:
-  loras: ["hngcf5_krea2_000001500:0.9"]
   subject: >
     Square still-life photograph of a closed ledger bound in worn black cloth lying on a
-    dark-stained oak desk, a black pen laid neatly across its cover. Beside it lie closed
-    polished stainless steel hngcf5 hinged handcuffs, lying flat, each cuff about the width of a
-    wrist. A ring of iron keys hangs from a hook on the wall of smooth dressed limestone ashlar
+    dark-stained oak desk, a black pen laid neatly across its cover. Beside it lie a pair of open
+    polished steel chain handcuffs, a worn brown leather belt coiled loose with an open brass
+    padlock hanging from its ring, and a neatly folded bright orange jumpsuit. A ring of iron keys hangs from a hook on the wall of smooth dressed limestone ashlar
     blocks laid in straight courses with thin mortar joints above. Pale morning daylight falls
     from a stairwell out of frame across the desk, mixing with the warm glow of a caged bulb.
     Palette of black cloth, dark oak, polished steel, iron, pale limestone and soft morning

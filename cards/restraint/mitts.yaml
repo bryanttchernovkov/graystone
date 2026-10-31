@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# Ashby's answer to RISK-CLIMB in Cell Three: padlocked leather mitts over his fists. Its tag
+# `mitted` hides what needs fingers (TIDY, SLIP, ADMIRE). Like the Gag, it comes off after one
+# Doing Time die; the sign-out actions take it with the rest of the county property.
+id: mitts
+kind: restraint
+name: Mitts
+tags: [mitted]
+text: Black leather over each fist, buckled at the wrist and padlocked in brass. Your hands stay fists until she decides otherwise.
+boost: { capacity: 1, start: 1 }
+on_empty: lose
+slots:
+  - { match: { tag: doing-time }, cost: 1 }
+setback_penalty:
+  tags: [prison]
+  effects:
+    - tracker.change: { nerve: -1 }
+art:
+  loras: ["pvprsn7v3_krea2_000001250:1"]
+  subject: >
+    pvprsn7 POV prisoner photo, a first-person view looking down at his own body, seated on the
+    edge of a steel slat cot with a gray wool blanket, his knees bent over its front edge and his
+    bare feet flat on worn gray limestone flagstones, his bare pale hairy forearms in the
+    foreground. Both hands closed into fists inside black leather mitts, a steel cuff and a brass
+    padlock locked over each mitt at the wrist, the chain padlocked to a worn brown leather waist
+    belt. The mitts rest together in the center of the frame above his lap, the flagstones and
+    his bare toes below them. A single caged incandescent bulb above lays a soft sheen on the
+    black leather and bright points on the brass padlocks. Square composition. Palette of inmate
+    orange, black leather, polished steel, brass and limestone gray; natural skin and leather
+    texture, fine 35 mm film grain, sharp focus on the mitts.

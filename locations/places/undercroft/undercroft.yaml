@@ -81,34 +81,40 @@ actions:
     word: TERMS
     cost: 1
     always: true
-    prompt: Hear the Sergeant's terms for your stay. They come with cuffs, chains, a cage, and a walk to a cell.
+    prompt: Hear the Sergeant's terms for your stay. They come with county orange, a cage, cuffs, a padlocked belt, leg irons, and a walk to a cell, barefoot.
     result:
       text: |
-        "Wrists," she says. "Over the desk. Palms down."
+        "Strip," she says. "On the line. Shoes and socks too."
 
-        You hold them out. She takes the first pair of cuffs off her belt without looking at
-        it, closes one ring on your left wrist and ratchets it down until it bites, checks the
-        gap with a gloved fingertip, and takes it one click tighter. Then the right. She
-        double-locks both with the small end of the key.
+        Anything you came down in goes into a wire basket by the desk leg, and she pushes it
+        under the desk with the side of her boot. The flagstones are cold enough to ache.
+
+        She takes a small stainless steel cage out of the desk drawer, county property, and
+        holds it up between two gloved fingers so you can see it. "Standard issue. Surgical
+        steel, so don't get ideas."
+
+        She fits the ring and the cage with her gloves on, quick and clinical, and snaps the
+        padlock shut. The key goes into her left breast pocket, behind the star. She buttons the
+        flap. Then she drops a folded orange jumpsuit on the desk. "County orange. Zip it to the
+        throat. Sleeves up, I want to see your wrists."
+
+        You dress. She comes round the desk with her kit off the pegboard.
 
         "Eight years military police, so here's how it works. You don't stand, sit, speak,
         drink or piss in my block without asking. You ask, I decide. Every time."
 
-        A belly chain goes around your waist and through the cuffs. A shorter one runs from one
-        ankle cuff to the other. She tugs the whole rig once, hard.
-
-        Then she takes a small stainless steel cage out of the desk drawer, county property, and
-        holds it up between two gloved fingers so you can see it. "Standard issue. Surgical
-        steel, so don't get ideas. Belt."
-
-        She opens your jeans herself, fits the ring and the cage with her gloves on, quick and
-        clinical, and snaps the padlock shut. The key goes into her left breast pocket, behind
-        the star. She buttons the flap.
+        Steel chain cuffs, hers, not the county's, a hand's width of chain between them. She
+        ratchets each one down until it bites, checks the gap with a gloved fingertip and takes
+        it one click tighter. A worn brown leather belt goes round your waist over the orange,
+        buckled at the back, and she runs a brass padlock through the cuff chain and the ring at
+        the front and snaps it shut. Then she crouches, and steel leg irons close on your bare
+        ankles, a short chain between them. She stands and tugs the whole rig once, hard.
 
         "Walk."
 
-        You walk, in the short steps the chain allows, her gloved hand closed on the back of
-        your collar and the keys ringing at her hip, to the third arch on the left.
+        You walk, in the short steps the chain allows, barefoot on the flagstones, her gloved
+        hand closed on the back of your collar and the keys ringing at her hip, to the third arch
+        on the left.
 
         Cell Three was a burial niche once: a stone recess under the arch, a cot of steel slats
         with a gray wool blanket, a steel toilet with no seat, an iron ring in the back wall at
@@ -124,22 +130,25 @@ actions:
         - card.gain: ashbys-good-side
         - move.to: undercroft-cell
       art:
-        loras: ["ashby7_krea2_000001200:1", "mtlcg7d_krea2_000001250:2"]
+        # pvprsn7, standing pose: the LoRA's own training sample (officer padlocking the belt).
+        loras: ["pvprsn7v3_krea2_000001250:1", "ashby7_krea2_000001200:0.8"]
         subject: >
-          A waist-up photograph from standing eye height, the camera two paces back, in a crypt
-          jail of pale limestone ashlar under a whitewashed pointed vault. ashby7 woman in her
-          sheriff's uniform, tan with an azure tie, her long black locs gathered at the nape,
-          stands squarely facing the lens in front of a plain ashlar wall, her right elbow bent
-          and her black-gloved right hand raised beside her shoulder, level with her face,
-          holding an empty stainless steel mtlcg7 chastity cage fitting in her palm, held
-          upright beside her shoulder, small against her gloved fingers and smaller than her
-          face. Her gloved left hand rests on her hip. She looks directly into the camera,
-          making eye contact with the viewer, with calm control and almost smug disdain: chin
-          raised, eyes half-lidded, one corner of her mouth pulled into a faint smirk. Behind
-          her, softly out of focus, the pale ashlar wall rises to a pointed arch. A caged
-          incandescent bulb overhead lights her face warmly and puts a small bright glint on the
-          polished steel. Palette of polished steel, uniform tan, vivid azure blue and limestone
-          gray; natural skin texture, 50 mm lens.
+          pvprsn7 POV prisoner photo, a first-person view looking down at his own body, standing
+          upright facing her, his bare feet on worn gray limestone flagstones, his bare pale hairy
+          forearms in the foreground. His wrists locked in polished steel chain handcuffs, his
+          bare ankles locked in steel leg irons joined by a short chain. Standing close in front
+          of him is ashby7 woman in her sheriff's uniform, tan with an azure tie: her pressed tan
+          uniform shirt with a polished gold six-point star badge and a vivid azure blue necktie
+          fills the top of the frame, the ends of her long black locs fall over one shoulder, a
+          black leather duty belt with a polished brass buckle and a ring of heavy iron keys
+          crosses her waist, and her black leather gloved hands padlock the handcuff chain to a
+          worn brown leather waist belt with a brass padlock. Her polished black leather riding
+          boots stand on the flagstones just in front of his bare toes. The worn flagstones spread
+          around their feet to the turned leg of an old dark oak desk and a scuffed stripe of
+          yellow paint across the stone, warm light from a caged incandescent bulb overhead and a
+          soft shadow of her arms falling across his forearms. Palette of inmate orange, uniform
+          tan, vivid azure blue, black leather, brass and limestone gray; natural skin texture,
+          fine 35 mm film grain.
   - category: look
     word: READ
     cost: 1

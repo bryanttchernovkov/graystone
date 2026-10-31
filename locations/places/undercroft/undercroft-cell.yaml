@@ -223,11 +223,13 @@ actions:
 
         "I'll behave."
 
-        She takes the key ring off her hip and looks at it, then at you. "Hands through the bars."
+        She takes the key ring off her hip and looks at it, then at you. Then she unlocks the
+        door. "Sit. Feet out."
 
-        She unlocks the cuffs, then the belly chain, then has you sit on the cot and put your feet
-        to the bars for the irons. The steel comes off piece by piece and goes over her shoulder in
-        a clinking heap on the flagstones.
+        You sit on the edge of the cot with your bare feet on the flagstones. She kneels and
+        opens the irons one ankle at a time, then the brass padlock at your waist, then the belt,
+        then the cuffs. The steel comes off piece by piece and goes over her shoulder in a
+        clinking heap on the flagstones.
 
         "You so much as look at that window," she says, "and you do the rest of your time on the
         ring."
@@ -236,33 +238,25 @@ actions:
       effects:
         - card.lose: prison-chains
       art:
-        loras: ["ashby7_krea2_000001200:0.9", "hngcf5_krea2_000001500:0.9"]
+        # pvprsn7, bench pose with her kneeling at his ankles (its best v3 sample at step 1250).
+        loras: ["pvprsn7v3_krea2_000001250:1", "ashby7_krea2_000001200:0.8"]
         subject: >
-          First-person point-of-view widescreen photograph from standing eye height inside a
-          small jail cell walled with smooth dressed limestone ashlar blocks laid in straight
-          courses with thin mortar joints under a whitewashed pointed vault, underground and
-          windowless but for one small barred slot at street level, looking out through the
-          black iron bars of the cell door. A pale man's bare hands and forearms with short
-          unpolished nails reach through the bars from the bottom edge of the frame to its
-          center, the bare wrists locked together in closed polished stainless steel hngcf5
-          hinged handcuffs, each cuff a little wider than the wrist. On the far side of the bars
-          ashby7 woman in her sheriff's uniform, a sergeant in her early thirties with her long
-          black locs gathered at the nape, stands close, framed from the waist up, her
-          black-gloved hands at the center of the frame turning a small steel key in the lock of
-          the cuffs, a heavy ring of iron keys hanging from her gloved fingers. Her head is
-          raised and she looks directly into the camera, making eye contact with the viewer,
-          with wary, measuring half-trust: one eyebrow raised, eyes narrowed and searching, lips
-          pressed in a faint, skeptical line. Her pressed tan uniform shirt has vivid azure blue
-          trim on the pockets and epaulets, three vivid azure blue chevrons on each sleeve and a
-          polished gold six-point star badge, with a vivid, saturated azure blue tie and a small
-          gold tie bar; the frame ends at her black leather duty belt. Behind her the windowless
-          underground corridor of smooth dressed limestone ashlar blocks laid in straight
-          courses with thin mortar joints recedes under pointed arches lit by caged bulbs, a
-          pile of chains and leg irons lying on the flagstones at her feet. A caged incandescent
-          bulb above and behind her lights the steel cuffs, the keys and her gloves with hard
-          warm highlights and rims her shoulders. Palette of polished steel, black iron, black
-          leather, uniform tan and vivid azure blue; natural skin texture, fine 35 mm film
-          grain, sharp focus on the key in the lock and her eyes.
+          pvprsn7 POV prisoner photo, a first-person view looking down at his own body, seated on
+          the edge of a steel slat cot with a gray wool blanket, his knees bent over its front edge
+          and his bare feet flat on the flagstones in front of it, his bare pale hairy forearms in
+          the foreground. His wrists locked in polished steel chain handcuffs, the chain padlocked
+          to a worn brown leather waist belt, his bare ankles locked in steel leg irons joined by
+          a short chain. ashby7 woman in her sheriff's uniform, tan with an azure tie, kneels on
+          the flagstones at his feet: the top of her head with her long black locs gathered at
+          the nape, the shoulders of her pressed tan uniform shirt, and her black-gloved hands
+          turning a small steel key in the leg iron on his left ankle, a heavy ring of iron keys
+          lying on the stone beside her knee. She glances up into the lens with wary, measuring
+          half-trust: one eyebrow raised, lips pressed in a faint, skeptical line. The worn gray
+          flagstones spread around them to the black iron bars of the open cell door and the
+          pale limestone ashlar wall, a single caged incandescent bulb above throwing warm light
+          across her shoulders, the steel and his forearms. Palette of inmate orange, uniform tan,
+          vivid azure blue, polished steel and limestone gray; natural skin texture, fine 35 mm
+          film grain.
   - category: deal
     word: KNEEL
     cost: 1
@@ -322,10 +316,59 @@ actions:
           leather falling into deep glossy black. Palette of black leather, vivid azure blue,
           pale limestone and bulb amber; natural leather texture with visible stitching and
           grain, fine 35 mm film grain, very shallow depth of field on the toe cap.
+  - category: deal
+    word: APPEAL
+    cost: 1
+    tags: [doing-time]
+    unless: [gagged]
+    prompt: Ask for a hearing. Down here the Sergeant is the whole court, and she's heard every appeal there is.
+    result:
+      text: |
+        "Sergeant, permission to appeal."
+
+        She unlocks the door and walks you out by the collar to the oak desk, and sits you on
+        the steel stool in front of it. "Hands on the desk. Where I can see them." She sits down
+        across from you, opens the ledger to your line and turns it round to face you.
+
+        "Court's in session," she says. "Go."
+
+        You make your case. She listens to all of it with her gloved hands folded on the
+        ledger and doesn't interrupt once.
+
+        When you finish she uncaps her pen, writes one word in the margin beside your name in
+        block capitals, and turns the book so you can read it.
+
+        DENIED.
+
+        "Appeals are heard on Tuesdays," she says. "Today isn't Tuesday." She walks you back to
+        Cell Three and locks the door.
+      effects:
+        - tracker.change: { nerve: -1 }
+        - skill.gain: deal
+      art:
+        # pvprsn7, seated-at-a-desk pose (the LoRA's most-trained pose); her face is in frame.
+        loras: ["pvprsn7v3_krea2_000001250:1", "ashby7_krea2_000001200:0.8"]
+        subject: >
+          pvprsn7 POV prisoner photo, a first-person view looking down at his own body, seated on
+          a steel stool at an old dark-stained oak desk with his hands resting on it, his bare pale
+          hairy forearms in the foreground. His wrists locked in polished steel chain handcuffs,
+          the chain padlocked to a worn brown leather waist belt. Across the desk sits ashby7
+          woman in her sheriff's uniform, tan with an azure tie, her long black locs gathered at
+          the nape, upright in a wooden chair, her black-gloved hands folded on an open ruled
+          ledger turned to face him, an uncapped black pen lying across its pages. She looks
+          straight into the lens with cool, judicial patience: one eyebrow raised, lips closed in
+          a thin, unmoved line. Behind her a pegboard of leg irons and coiled chains on hooks hangs
+          on a wall of smooth dressed limestone ashlar blocks beside a cork board with one typed
+          sheet, and past her shoulder the underground corridor recedes under whitewashed pointed
+          arches, black iron barred cell doors set into the stone. A caged incandescent bulb on a
+          black cord above the desk pools warm amber light on the dark wood, the ledger and the
+          steel. Palette of inmate orange, dark oak, uniform tan, vivid azure blue and limestone
+          gray; natural skin texture, fine 35 mm film grain, shallow depth of field on her face.
   - category: look
     word: ADMIRE
     cost: 1
     requires: [trusted]
+    unless: [mitted]
     prompt: Ask, properly, to admire her uniform up close. She stands for inspection, for once on the other side of it.
     result:
       text: |
@@ -397,8 +440,9 @@ actions:
 
         You sign. She reads your signature, turns the book round, and signs under it.
 
-        Then she takes off every piece of county property you're still wearing, the cage last, and
-        holds out her gloved palm for it. "County property," she says.
+        Then she takes off every piece of county property you're still wearing, the orange and
+        then the cage last, and holds out her gloved palm for it. "County property," she says.
+        She hooks the wire basket out from under the desk with her boot, and you dress.
 
         She walks you up the stairs and out through the nave, past the deputies' desks and the
         stained glass nobody took down, and opens the big oak door. Main Street runs away from
@@ -407,6 +451,7 @@ actions:
         "Graystone's a small town," Sergeant Ashby says. "I'll see you around."
       effects:
         - card.lose: prison-chains
+        - card.lose: mitts
         - card.lose: gag
         - card.lose: chastity-cage
         - card.lose: served-sentence
@@ -453,11 +498,13 @@ actions:
 
         You sign. She reads your signature, turns the book round, and signs under it.
 
-        Then she takes off every piece of county property you're still wearing, the cage last, and
-        holds out her gloved palm for it. "County property," she says. She looks you up and
-        down, once. "The rest isn't mine to give back. Deputy Seo is waiting for you upstairs."
+        Then she takes off every piece of county property you're still wearing, the orange and
+        then the cage last, and holds out her gloved palm for it. "County property," she says.
+        She looks you up and down, once. "The rest isn't mine to give back. Deputy Seo is
+        waiting for you upstairs."
       effects:
         - card.lose: prison-chains
+        - card.lose: mitts
         - card.lose: gag
         - card.lose: chastity-cage
         - card.lose: served-sentence
@@ -480,10 +527,12 @@ actions:
         "That stays." She holds up the little steel key, drops it into her shirt pocket and
         buttons the flap over it. "You've earned it."
 
-        She walks you up the stairs and out through the nave, past the deputies' desks and the
-        stained glass nobody took down, and opens the big oak door onto daylight.
+        Your own clothes are waiting on her desk, folded square. You dress, and she walks you up
+        the stairs and out through the nave, past the deputies' desks and the stained glass
+        nobody took down, and opens the big oak door onto daylight.
       effects:
         - card.lose: prison-chains
+        - card.lose: mitts
         - card.lose: gag
         - card.lose: served-sentence
         - card.lose: inmate

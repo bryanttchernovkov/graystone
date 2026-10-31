@@ -10,16 +10,17 @@ actions:
     cost: 1
     always: true
     tags: [doing-time]
+    unless: [mitted]
     prompt: Tidy the cell for inspection. She'll inspect the cell, and then she'll inspect you.
     result:
       text: |
-        You square the blanket on the cot to a crease, wipe the rim of the steel toilet, and line
-        your shoes up under the cot rail.
+        You square the blanket on the cot to a crease, wipe the rim of the steel toilet, and
+        sweep the grit out from under the cot rail with the side of your hand.
 
         She comes in with a flashlight and inspects all of it: the blanket corners, the toilet,
         the grout under the iron ring. Then she turns the flashlight on you.
 
-        "Jeans down. Shirt up. Face the wall."
+        "Unzip. Down to the knees. Face the wall."
 
         You do it. She has you put your forehead to the cold stone and checks behind your ears and
         under your jaw with a gloved finger. She checks the lock of the cage with a tug that goes
@@ -35,8 +36,8 @@ actions:
       art:
         loras: ["ashby7_krea2_000001200:0.9", "pvcg5_krea2_000002000:0.9"]
         subject: >
-          A POV photograph looking down at my own body standing in a small jail cell, my blue
-          jeans pushed down to my thighs, a pvcg5 chastity cage, filled, polished stainless
+          A POV photograph looking down at my own body standing in a small jail cell, my bright
+          orange county jumpsuit unzipped and pushed down to my thighs, a pvcg5 chastity cage, filled, polished stainless
           steel with a tiny brass padlock, locked on me, no bigger than her hand. ashby7 woman
           in her sheriff's uniform, a sergeant in her early thirties with her long black locs
           gathered at the nape, crouches close in front of me and tugs the cage down by its
@@ -198,7 +199,7 @@ actions:
     word: CLIMB
     cost: 2
     requires: [chained]
-    prompt: Go for the window, chains and all.
+    prompt: Go for the window, chains and all. She'll hear the chain, and she has an answer for hands that climb.
     result:
       text: |
         You get one foot on the cot rail and one hand on the stone, and the chain sings against
@@ -223,40 +224,44 @@ actions:
         You get the sentence right on the third try. She lets go on the fourth word of the
         fourth.
 
-        "That," she says, "is another day," and writes it in the ledger on her way out.
+        "That," she says, "is another day."
+
+        Then she takes two black leather mitts off her belt. She opens one cuff, works your
+        fist into the first mitt and buckles the strap, and locks the cuff back on over the
+        leather with a brass padlock through it. Then the other hand, the same way.
+
+        "Hands that go up walls," she says, "stay fists." She writes the day in the ledger on
+        her way out.
       effects:
         - tracker.change: { body: -1 }
         - boost.change: { card: criminal-record, amount: +1 }
+        - card.gain: mitts
       art:
-        loras: ["ashby7_krea2_000001200:0.9"]
+        # pvprsn7, seated on the cot edge, her standing close: the LoRA's mitt-fitting phrase.
+        loras: ["pvprsn7v3_krea2_000001250:1", "ashby7_krea2_000001200:0.8"]
         subject: >
-          First-person point-of-view widescreen photograph from sitting height on a steel cot in
-          a small jail cell walled with smooth dressed limestone ashlar blocks laid in straight
-          courses with thin mortar joints, the camera level. The face and shoulders of ashby7
-          woman in her sheriff's uniform, a sergeant in her early thirties with her long black
-          locs gathered at the nape, a few loose locs falling past her cheek, fill the left
-          two-thirds of the frame only inches from the lens, her eyes in sharp focus. She stares
-          straight into the camera, making eye contact with the viewer, with cold displeasure:
-          jaw tight, nostrils slightly flared, lips parted as she speaks. Her pressed tan
-          uniform shirt has vivid azure blue trim on the pockets and epaulets, three vivid azure
-          blue chevrons on each sleeve and a polished gold six-point star badge, with a vivid,
-          saturated azure blue tie and a small gold tie bar; her hands are in black leather duty
-          gloves. At the bottom center of the frame a pale man's bare hand and forearm with
-          short unpolished nails rise from the bottom edge, the wrist folded sharply back toward
-          the forearm in a gooseneck compliance hold: her black leather gloved right hand grips
-          the back of the hand, her gloved thumb pressed hard into the knuckles, her other
-          gloved hand clamped around the forearm just below the wrist. Behind her, out of focus,
-          the black iron bars of the cell door, an iron ring set low in the ashlar wall with a
-          steel chain trailing from it across the flagstones, and the curve of the whitewashed
-          vault. A single caged incandescent bulb outside the bars, behind her right shoulder,
-          throws warm side light across her cheekbone and the black gloves, leaving the far side
-          of her face in soft shadow. Palette of black leather, uniform tan, vivid azure blue
-          and limestone gray; natural skin texture, fine 35 mm film grain with visible pores,
-          very shallow depth of field on her eyes.
+          pvprsn7 POV prisoner photo, a first-person view looking down at his own body, seated on
+          the edge of a steel slat cot with a gray wool blanket, his knees bent over its front edge
+          and his bare feet flat on the flagstones in front of it, his bare pale hairy forearms in
+          the foreground. His right hand closed inside a black leather mitt with a steel cuff and a
+          brass padlock locked over it at the wrist, the chain padlocked to a worn brown leather
+          waist belt, his bare ankles locked in steel leg irons joined by a short chain. Standing
+          close in front of him is ashby7 woman in her sheriff's uniform, tan with an azure tie:
+          her pressed tan uniform shirt with a polished gold six-point star badge and a vivid azure
+          blue necktie fills the top of the frame, the ends of her long black locs fall over one
+          shoulder, a black leather duty belt with a polished brass buckle crosses her waist, and
+          her black leather gloved hands pull a second black leather mitt over his left fist and
+          tug the strap tight. Her polished black leather riding boots stand on the flagstones
+          just in front of his bare toes. The worn gray flagstones spread around their feet to an
+          iron ring set low in the pale limestone wall with a steel chain coiled beneath it, hard
+          warm light from a single caged incandescent bulb overhead and a soft shadow of her arms
+          falling across his forearms. Palette of inmate orange, uniform tan, vivid azure blue,
+          black leather, brass and limestone gray; natural skin and leather texture, fine 35 mm
+          film grain.
   - category: risk
     word: SLIP
     cost: 2
-    unless: [chained]
+    unless: [chained, mitted]
     prompt: Go for the window while your hands are free and her back is turned.
     result:
       text: |
@@ -298,12 +303,28 @@ actions:
     prompt: Lie down on the cot and wait.
     result:
       text: |
-        You lie on the steel slats with the blanket over you and count the caged bulbs, then the
+        You lie back on the blanket with your feet at the end of the cot and count the caged bulbs, then the
         stones in the vault, then nothing. Hours go by, measured by the scratch of her pen and
         the scrape of her chair. When you get up, your body has caught up with you a little.
       effects:
         - tracker.change: { time: -2 }
         - dice.refresh
+      art:
+        # pvprsn7, lying back on a bunk: the pose of the LoRA's cover. No one else in frame.
+        loras: ["pvprsn7v3_krea2_000001250:1"]
+        subject: >
+          pvprsn7 POV prisoner photo, a first-person view looking down at his own body, lying back
+          on a narrow cot of riveted steel slats with his legs stretched out on a gray wool blanket
+          and his bare feet at the end of the cot, his bare pale hairy forearms in the foreground.
+          His wrists locked in polished steel chain handcuffs, the chain padlocked to a worn brown
+          leather waist belt, his bare ankles locked in steel leg irons joined by a short chain.
+          Past his feet the small cell is empty and still: walls of smooth dressed limestone ashlar
+          blocks under a whitewashed pointed vault, a seatless stainless steel toilet in the
+          corner, a heavy iron ring set low in the back wall, and high under the vault a small
+          barred window slot with a pane of milky old glass. A caged incandescent bulb behind him
+          lays warm light along his legs and the blanket, and a faint cool glow from the window
+          edges the top of the wall. Palette of inmate orange, gray wool, polished steel, pale
+          limestone and bulb amber; natural skin texture, fine 35 mm film grain, deep focus.
   - category: look
     word: TURN
     cost: 0
