@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: Deputy Seo arrests you in the narthex of the First Church. Reached only by the random
+# move.to in station-arrest (open record, walked into the station). Protocol, as on the wharf:
+# face down on the flagstones, every step said out loud. Handcuffs go on and she takes you
+# straight to booking (seo-booking: stripped, Nude) and her holding cage.
+id: seo-station-arrest
+name: Face down in the narthex
+tags: [law]
+description: Cold flagstones under your cheek, the bottom of the oak front desk, and one black boot a hand's width from your face.
+arrival:
+  text: |
+    "Sheriff's department. Don't turn around."
+
+    The voice is behind you, between you and the doors, so soft you almost ask her to say it
+    again. You didn't hear the doors.
+
+    "Hands up. Open your fingers. Thank you. Down on your knees. On your stomach. Face to the
+    desk. Hands on your head. Lace your fingers. Cross your ankles." A pause. "Right over left.
+    Thank you."
+
+    The flagstones are cold and smell of floor wax. A black boot comes down a hand's width from
+    your face, mirror-polished, a low riding heel, and the other settles behind your knees. She
+    cuffs your right hand at the small of your back, then the left, and checks the gap at each
+    wrist with her little finger.
+
+    "Everybody watches the door," Deputy Seo says above you. "I'm never at the door."
+
+    "He walked right up to me," Niamh says, over the top of the counter.
+
+    "I know. I saw." The notebook comes out; you hear the pencil. "I'm writing that down. I'm
+    writing it down twice." She lifts you to your feet by the steel between your wrists. "You crossed
+    them very nicely, Ankles. Now we do this properly."
+  effects:
+    - card.gain: handcuffs
+    - move.to: seo-booking
+art:
+  loras: ["sorenji_krea2_000001400:0.9", "pvarst7_krea2_000002250:0.8"]
+  subject: >
+    pvarst7 POV arrest photo, a first-person view from the arrested man's own shoulder as he
+    lies face down on a stone floor, the camera low beside his head, looking back past his right
+    shoulder along his back at his right arm being handcuffed behind him, the forearm laid across
+    the small of his back, his plain dark red T-shirt and blue jeans lying flat on the worn pale
+    flagstones in the foreground, his bare hairy forearm and bare wrist with nothing on it, and his
+    palm turned up. On the right side of the frame stands sorenji woman in her uniform with her
+    dusty-pink bob, no jacket, no jewelry, her black riding boots planted on the flagstones beside
+    his hip, bending forward from the waist over him, her face above him at the top of the frame.
+    She is bare-handed, reaches down and grips his forearm just above the polished steel hinged
+    handcuff locked on his wrist and holds the empty second cuff, closed, in her other hand. She
+    looks down at the cuff with calm, careful attention and a small, pleased smile. Behind her,
+    out of focus, pale limestone walls and a tall pointed stone arch. Soft daylight through
+    stained glass, colored light on the flagstones, a white glint on the steel cuff, natural skin
+    texture, fine film grain, 28 mm lens.

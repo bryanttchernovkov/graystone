@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=../../../../../schema/v3/location.json
 # Event: booking in Deputy Anderson's holding cage, in the nave bullpen of the First Church.
-# Reached only by move.to from anderson-arrest. The only exit, down, hands you over to the
+# Reached only by move.to from anderson-arrest and anderson-station-arrest (the arrival starts
+# inside the doors). The only exit, down, hands you over to the
 # Undercroft (where you become an Inmate). Being good here earns standing with her (Anderson's
 # Attention), never a count off the Record.
 # TALK-NAME gives Anderson's Attention (tag noticed hides it after); the rest raise it. Boot
@@ -13,10 +14,10 @@ hub: true
 description: A chain-link cage in the side aisle of the old church, a steel bench with a rail, and Deputy Anderson's desk just outside it.
 arrival:
   text: |
-    She walks you up the church steps and through the big oak doors with one hand on the chain
-    between your wrists, like a leash she's embarrassed to be seen holding. The nave is a
-    bullpen now: steel desks in rows under the stained glass, phones, a radio murmuring, two
-    deputies who look up and then make a point of looking down again.
+    She walks you down the nave with one finger hooked through the steel between your wrists,
+    like a leash she's embarrassed to be seen holding: steel desks in rows under the stained
+    glass, phones, a radio murmuring, two deputies who look up and then make a point of looking
+    down again.
 
     In the side aisle there's a chain-link cage with a steel bench bolted inside. She sits you
     on it, unlocks one cuff and locks it again around the bench rail.

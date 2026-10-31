@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=../../../../../schema/v3/location.json
 # Event: Deputy Seo books you into the holding cage in the side aisle of the First Church and
-# strips you. Reached only by move.to from seo-rights. The arrival takes your clothes (Nude) and
+# strips you. Reached only by move.to from seo-rights and seo-station-arrest (the arrival starts
+# inside the doors). The arrival takes your clothes (Nude) and
 # goes on to her holding cage (seo-holding), which has no arrival of its own, so its beats can
 # come back to it.
 id: seo-booking
@@ -9,9 +10,8 @@ tags: [law, prison]
 description: A chain-link cage in the side aisle of the old church, and Deputy Seo in its doorway with an empty paper bag.
 arrival:
   text: |
-    She drives you up from the river with the radio low, humming along to the dispatcher,
-    and parks on the square. Up the church steps by the steel between your wrists, through the
-    big oak doors, down the nave between the desks. In the side aisle there's a chain-link
+    She walks you down the nave between the desks by the steel between your wrists. In the side
+    aisle there's a chain-link
     cage with a steel bench bolted inside. She walks you into it, unlocks the cuffs, hangs them
     on her belt and steps back into the doorway.
 

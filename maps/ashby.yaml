@@ -7,7 +7,8 @@ name: Sergeant Ashby
 legend:
   AT: ashby-cafe-table
   AA: ashby-arrest
+  AS: ashby-station-arrest
 grid: |
-  AT .. AA
+  AT .. AA .. AS
 portals:
   - { from: ashby-cafe-table, dir: out, to: cafe-linde-window, cost: 0, prompt: You leave her to her coffee. }

@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: Sergeant Ashby arrests you in the narthex of the First Church. Reached only by the
+# random move.to in station-arrest (open record, walked into the station). She comes up from the
+# Undercroft, puts you over the front desk with an arm bar, cuffs you and walks you straight
+# back down (the Undercroft takes the Handcuffs off and makes you an Inmate).
+id: ashby-station-arrest
+name: Under arrest
+tags: [law]
+description: Sergeant Ashby, up from the Undercroft, pulling on her second glove.
+arrival:
+  text: |
+    She comes up the crypt stairs and through the arch without hurrying, pulling on her second
+    black glove, and she doesn't look at you until she's close enough to touch you. Then she
+    does.
+
+    "You walked in," Sergeant Ashby says. It isn't a question, so you don't answer it.
+
+    She takes your right wrist and turns it, and the elbow locks, and the arm goes up behind
+    you, and your chest goes down flat onto Niamh's counter beside the sign-in book. The pen on
+    its chain swings and taps the wood.
+
+    "Mind the book," Niamh says.
+
+    "I am minding it." The cuffs come off her belt: left wrist, right wrist, down until they
+    bite. She leans on the arm a moment longer than she needs to, until your breath goes out of
+    you against the oak. "That's for making me come upstairs."
+
+    She lifts you off the counter by the cuffs and walks you through the nave on your toes,
+    between the desks, and down the stairs into the cold.
+  effects:
+    - card.gain: handcuffs
+    - move.to: undercroft
+art:
+  loras: ["ashby7_krea2_000001200:0.8", "pvarst7_krea2_000002250:0.8"]
+  subject: >
+    pvarst7 POV arrest photo, a first-person view from the arrested man's own shoulder, looking
+    down past his left shoulder at his left arm being handcuffed behind his back, his plain
+    heather gray T-shirt and blue jeans in the foreground, his bare hairy forearm with no watch
+    or bracelet and his palm turned outward. On the left side of the frame stands ashby7 woman
+    in her sheriff's uniform, tan with an azure tie, her long black locs gathered at the nape,
+    no jacket, no hat, no jewelry. She is wearing black gloves, grips his forearm just above the
+    polished steel hinged handcuff locked on his wrist and holds the empty second cuff, closed,
+    in her other hand. She looks up at the viewer with cold, controlled force, dark eyes hard,
+    lips pressed thin. Set in a sheriff's station reception inside an old limestone church, a
+    dark oak counter and a tall stained-glass window behind her, soft window daylight and warm
+    interior fill.

@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: you walked into the station with an open record. Reached by move.to from RISK-APPROACH
+# in the narthex and from the narthex's setback penalty (open record), so a setback on the walk in
+# lands you here before you reach the desk. Niamh sees you, and whoever is nearest comes for you:
+# the arrival sends you on to one of the station arrests at random (Anderson, Ashby or Seo),
+# each of which takes you to that officer's cage. The Not Raymond Reddington achievement.
+# The text fits both routes: it never says how far you got.
+id: station-arrest
+name: The front desk
+tags: [law]
+description: The front desk, a red-haired woman behind it looking from her screen to your face, and back.
+arrival:
+  text: |
+    Niamh looks up from her screen with the smile already on, the one everybody gets. Then she
+    looks down at the screen again, and back up at you, and the smile changes into a different
+    one. She reaches under the counter without looking.
+
+    Somewhere in the nave a buzzer goes, short, twice.
+
+    "Oh, love," she says, very kindly. "You walked in. Through the front door. Of a police
+    station." She props her chin on her hand. "Stay right there. Somebody's coming, and honestly
+    I can't wait to see who."
+  effects:
+    - move.to: { random: [anderson-station-arrest, ashby-station-arrest, seo-station-arrest] }
+art:
+  loras: ["nivdoyle_krea2_000001200:1"]
+  subject: >
+    A waist-up photograph of nivdoyle woman in her uniform, wearing her black rectangular glasses,
+    seated behind a long reception counter of dark polished oak in the narthex of an old
+    deconsecrated limestone church converted into a sheriff's station, her chin propped on one
+    hand, looking straight into the camera over her glasses with delighted, pitying amusement, her
+    dark red lips pressed together on a smile she is trying to hold in, one brow raised high. The
+    camera stands at eye level an arm's length away across the counter. An open sign-in book and a
+    pen on a small brass chain lie on the counter, and nothing else: no nameplate, no sign; the glow of a computer screen lights one side of
+    her face cool blue. Behind her, a wall of pale limestone blocks with a brass key cabinet and a
+    corkboard of pinned papers. A brass desk lamp at the left lights her face warmly from the side.
+    50 mm lens, natural colour, fine film grain, shallow depth of field with focus on her eyes.

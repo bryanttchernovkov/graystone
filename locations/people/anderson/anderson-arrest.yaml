@@ -28,7 +28,7 @@ arrival:
     "Cute," she says. "Back seat. Watch your head. Actually, don't. I want to see if you hit it."
 
     You don't. She looks disappointed, and shuts the door on you. The ride to the First Church
-    takes four minutes, and she spends all of them on the radio, telling dispatch about you.
+    takes four minutes, and she spends all of them on the radio, telling dispatch about you. Then up the church steps, and through the big oak doors.
   effects:
     - card.gain: handcuffs
     - move.to: anderson-holding

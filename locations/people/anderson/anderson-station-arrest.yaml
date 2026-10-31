@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: Deputy Anderson arrests you in the narthex of the First Church. Reached only by the
+# random move.to in station-arrest (open record, walked into the station). Handcuffs go on and
+# she walks you down the nave to her holding cage, whose arrival is the walk.
+id: anderson-station-arrest
+name: Under arrest
+tags: [law]
+description: Deputy Anderson, coffee in one hand, cuffs in the other, and the face of a woman whose day just got better.
+arrival:
+  text: |
+    Deputy Anderson comes through the arch from the nave with a coffee in one hand, sees you,
+    and stops. She looks at Niamh. Niamh nods. She looks back at you, and laughs, once, out
+    loud, the way people laugh at a video of somebody walking into a glass door.
+
+    "No. Babe. No." She puts the coffee down on the front desk. "You came here? You came to us?
+    Do you know how many hours I sit in that car looking for you?" The cuffs come off her belt.
+    "Turn around. Hands on the counter. Fingers spread."
+
+    The oak is cool and smells of polish. She takes your left wrist, then your right, and you
+    hear each cuff go one click past comfortable.
+
+    "Niamh, write down the time. I want it on the form that he delivered himself." She picks
+    her coffee back up, takes a sip, and hooks one finger through the steel between your wrists.
+    "Come on. I'll even give you a tour."
+  effects:
+    - card.gain: handcuffs
+    - move.to: anderson-holding
+art:
+  loras: ["tfny7_krea2_000000800:0.9", "pvarst7_krea2_000002250:0.8"]
+  subject: >
+    pvarst7 POV arrest photo, a first-person view from the arrested man's own shoulder, looking
+    down past his right shoulder at his right arm being handcuffed behind his back, his plain
+    navy blue T-shirt and blue jeans in the foreground, his bare hairy forearm and bare wrist with
+    nothing on it, and his palm turned outward. On the right side of the frame stands tfny7 woman in
+    her tfny7 uniform, the long sleeves of her tan shirt buttoned at the wrists, no jacket, no
+    jewelry. She is bare-handed, her nails glossy black, and grips his forearm just above the
+    polished steel hinged handcuff locked on his wrist and holds the empty second cuff, closed,
+    in her other hand. She looks up at the viewer with gleeful, disbelieving amusement, laughing
+    open-mouthed, her berry lips parted. Set in the narthex of an old deconsecrated limestone
+    church converted into a sheriff's station: behind her, a long reception counter of dark
+    polished oak with a brass desk lamp and a white paper coffee cup standing on it, pale
+    limestone walls and a tall pointed stone arch. Soft daylight through stained glass, colored
+    light on the limestone, a warm glint on the steel cuff, natural skin texture, fine film
+    grain, 35 mm lens.

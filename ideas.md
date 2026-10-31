@@ -17,26 +17,33 @@ Ideas for graystone
 - [x] rerender all images
   
  ## V0.2.1:
- - [ ] upgrade to engine spec v3
- - [ ] rework location/structure of files?
+ - [x] upgrade to engine spec v3
+ - [x] rework location/structure of files?
 
 ## V0.3:
-- [ ] 'caught' as suspect int he police station - some locations have a 'chance' of getting caught we are there; to be determined which officer where; We *could*, depending on the officer, end up in the sheriff's officer. Default is a spanking session. Hard. Maybe some other punishments? cornertime? writing tasks?
-- [ ] Date with Ashby
-- [ ] 'Findom' Shopping afternoon with Anderson
-- [ ] Locations:
-  - [ ] Highway; at least 2 lenghts of highway locations, prompts how us driving in our car; we can go back and forht. Risk is, on both llocation, if we suffer a setback we get pulled over by a new deputy. 
-  - [ ] Motel. With owner, and a room; room is occupied by britt dekker, targetr of our 'smuggle' option.
-  - [ ] Gas station. Robbery target
-  - [ ] A shady bar/pub at the highway? Maybe a biker gang?
+- [ ] 'Arrested' if wanted and entering the station. Stupid move, and you went and did it.
+  - Achievement; 'Not Raymond Reddington'
+- [ ] Update undercroft with prison life lora
+- [ ] Graybloods 2 - smuggle package
+  - [ ] Locations:
+    - [ ] Highway; at least 2 lenghts of highway locations, prompts how us driving in our car; we can go back and forht. Risk is, on both llocation, if we suffer a setback we get pulled over by a new deputy. 
+    - [ ] Motel. With owner, and a room; room is occupied by britt dekker, targetr of our 'smuggle' option.- [ ] New Patrol officer
+  - [ ] Independent - Britt Dekker; smuggler.
 - [ ] Active 'Crime' tag; if we have an active 'crime' card; meaning, we're on a crime, we're suspect. This is different from criminal records that trigger arrests *outside*. *crime* tagged cards doon't auto trigger but kind of makes us suspect in situations like this. In the policestation, during the getting caught, we go to an interrogation chamber, where a detective interrogates us. Basic options are Confess Or Deny. We should have some sort of minigame perhaps? 
   - [ ] Introduce detective
-- [ ] New Patrol officer
-- [ ] Independent - Britt Dekker; smuggler.
-- [ ] Graybloods 2 - smuggle package
+
+- [ ] 'caught' in the police station - some locations have a 'chance' of getting caught we are there; to be determined which officer where; We *could*, depending on the officer, end up in the sheriff's officer. Default is a spanking session. Hard. Maybe some other punishments? cornertime? writing tasks?
+
+- [ ] Badge bunny mission
+  - [ ] Date with Ashby
+  - [ ] 'Findom' Shopping afternoon with Anderson
+    - [ ] Gas station. Robbery target
+    - [ ] A shady bar/pub at the highway? Maybe a biker gang?
+  - [ ] Date with Seo
+
 - [ ] Graybloods 3 - rob highway station
-- [ ] Date with Seo
-- [ ] Cards/items that soak up setbacks (setback slots matching `patrol`, rerolls) to make walking around with a record less risky.
+- [ ] Rebalance; make 'movement' cheaper
+  - [ ] consider: Cards/items that soak up setbacks (setback slots matching `patrol`, rerolls) to make walking around with a record less risky.
 
 ## V0.4:
 - [ ] Better missions, achievements, achievment icons, rewards

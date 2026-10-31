@@ -37,6 +37,10 @@ arrival:
 
     She waits for it. Then she steps off you, writes the time in the notebook, and lifts you
     to your feet by the chain.
+
+    She drives you up from the river with the radio low, humming along to the dispatcher,
+    and parks on the square. Up the church steps by the steel between your wrists, and through
+    the big oak doors.
   effects:
     - tracker.change: { body: -1 }
     - move.to: seo-booking

@@ -15,12 +15,13 @@ legend:
   SH: seo-holding
   ST: seo-trample
   SS: seo-steps
+  SX: seo-station-arrest
 grid: |
   SD .. SA .. SR
   .. .. .. .. ..
   SB .. SH .. ST
   .. .. .. .. ..
-  SS .. .. .. ..
+  SS .. SX .. ..
 portals:
   - { from: seo-dockside, dir: out, to: docks-river, cost: 0, prompt: You leave her to the river. }
   - { from: seo-holding, dir: down, to: undercroft, cost: 0, prompt: She keeps the bag and walks you to the top of the crypt stairs as you are. }

@@ -3,16 +3,24 @@
 # the inner arch the nave bullpen and the holding cages. Up the steps from Main Street (down goes
 # back out). Nothing walks past her desk: TALK-APPROACH takes you to it (her storyline), where a
 # contractor badge signs you through to the back.
+# With an open record (tag wanted) the desk is the only thing on offer, and it's an arrest:
+# RISK-APPROACH, or any setback here (the walk in included), goes to station-arrest, which picks
+# Anderson, Ashby or Seo at random to take you to her cage.
 id: station-lobby
 name: The First Church, the front desk
 tags: [law]
 hub: true
+setback_penalty:   # the station: a setback here with an open record is an arrest
+  requires: [wanted]
+  effects:
+    - move.to: station-arrest
 description: Cool stone, a radio murmuring, the bullpen through the arch, and a front desk with a red-haired woman behind it who saw you come in.
 actions:
   - category: talk
     word: APPROACH
     cost: 1
     always: true
+    unless: [wanted]
     prompt: Go up to the front desk.
     result:
       text: |
@@ -30,6 +38,7 @@ actions:
   - category: look
     word: WATCH
     cost: 1
+    unless: [wanted]
     prompt: Sit on the visitors' bench by the door and watch the station work.
     result:
       text: |
@@ -46,6 +55,18 @@ actions:
         the way through.
       effects:
         - skill.gain: look
+  - category: risk
+    word: APPROACH
+    cost: 1
+    always: true
+    requires: [wanted]
+    prompt: Go up to the front desk, with open counts on your record.
+    result:
+      text: |
+        You get as far as the counter. The red-haired woman behind it looks up, and her smile
+        stops halfway.
+      effects:
+        - move.to: station-arrest
 art:
   loras: ["nivdoyle_krea2_000001200:1"]
   subject: >

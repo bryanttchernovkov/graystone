@@ -11,17 +11,18 @@ legend:
   PC: anderson-patrol-car
   AR: anderson-arrest
   HC: anderson-holding
+  SX: anderson-station-arrest
   F1: anderson-flatter-cold
   F2: anderson-flatter-warm
   KS: anderson-kitchen-sharpie
   KP: anderson-kitchen-spit
   KB: anderson-kitchen-boot
 grid: |
-  PC .. AR .. HC
-  .. .. .. .. ..
-  F1 .. F2 .. ..
-  .. .. .. .. ..
-  KS .. KP .. KB
+  PC .. AR .. HC .. SX
+  .. .. .. .. .. .. ..
+  F1 .. F2 .. .. .. ..
+  .. .. .. .. .. .. ..
+  KS .. KP .. KB .. ..
 portals:
   - { from: anderson-patrol-car, dir: out, to: heights, cost: 0, prompt: You step back from the car. }
   - { from: anderson-holding, dir: down, to: undercroft, cost: 0, prompt: She walks you to the top of the stairs and hands you over. }
