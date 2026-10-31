@@ -1,0 +1,339 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: at Deputy Anderson's driver's window, on the Heights. Reached by move.to from
+# TALK-APPROACH at the Heights (no record; its result carries her introduction, so the coin-flip
+# beats can send you back here without replaying it) and from those beats. The only exit, out,
+# steps back onto the street.
+# Her favor: TALK-INTRODUCE gives Anderson's Attention (tag noticed hides it after); the rest
+# raise it. Boot Fetish fast-tracks DEAL-INHALE (always); Anderson's Paypig without it opens
+# DEAL-BEG, which earns Boot Fetish.
+id: anderson-patrol-car
+name: Deputy Anderson's cruiser
+tags: [law, patrol]
+hub: true
+description: A cruiser idling under the maples, window down, and a deputy behind the wheel who has already decided what she thinks of you.
+setback_penalty:   # Anderson's ground: a setback here with an open record is an arrest
+  requires: [wanted]
+  effects:
+    - move.to: anderson-arrest
+actions:
+  - category: talk
+    word: INTRODUCE
+    cost: 0
+    unless: [noticed]
+    prompt: Tell her who you are. She takes your picture, and she'll remember you, which isn't the same as liking you.
+    result:
+      text: |
+        You tell her your name, and that you're new, and that you live just up the hill.
+
+        "Cool story." She doesn't write it down. "Say your name again. Slower."
+
+        You say it again. She repeats it back to you one flat syllable at a time, and snorts.
+        She holds her phone up at the window and takes your picture, looks at it, takes another
+        one and looks at that one longer.
+
+        "Oh, that's a good one. That's going in the group chat." She types for a while. "Okay.
+        I know who you are now, babe. Good luck with that."
+      effects:
+        - card.gain: andersons-attention
+        - skill.gain: talk
+      art:
+        loras: ["tfny7_krea2_000000800:1"]
+        subject: >
+          Close first-person photograph from standing eye height at the open driver's window of
+          a parked sheriff's patrol car, the camera level and close, the white window sill of
+          the door crossing the bottom of the frame. tfny7 woman in her tfny7 uniform with a
+          green bomber jacket, alone, sits inside behind the wheel, framed from the chest up in
+          the window opening, the bottom edge of the frame at the sill. She holds a black
+          smartphone up toward the lens in her bare right hand, its camera aimed at the viewer,
+          and looks over the top of it directly into the camera, making eye contact with the
+          viewer, with gleeful, mocking amusement: green eyes bright and narrowed, one dark brow
+          arched, berry lips spread in a wide teasing grin. Her left elbow rests on the window
+          sill, the green bomber sleeve along the white paint, its bare hand hanging relaxed
+          over the outside of the door; the phone is in her right hand only. Behind her, the
+          dark interior of the car and, through the far window, out of focus, orange maples.
+          Soft overcast daylight from the open window lights her face. Restrained palette of
+          forest green, tan, vivid azure blue, platinum blonde, white car door and maple orange;
+          natural skin texture, fine 35 mm film grain, focus on her eyes above the phone.
+  - category: talk
+    word: FLATTER
+    cost: 1
+    prompt: Pay her a compliment. She may want one from you, or she may tell you everything that's wrong with you.
+    result:
+      text: |
+        You tell her the uniform looks good on her. That she wears it better than anyone you've
+        seen. You mention the boots.
+      effects:
+        - move.to:
+            random: [anderson-flatter-cold, anderson-flatter-warm]
+  - category: deal
+    word: COFFEE
+    cost: 1
+    tags: [tribute]
+    prompt: Offer to buy her a coffee. She'd rather have the money, and she has an opinion about men who keep their wallets shut.
+    result:
+      text: |
+        "Can I buy you a coffee, Deputy?"
+
+        She holds her hand out of the window, palm up, black nails, and doesn't look away from
+        her laptop. "I don't drink diner coffee. I'll take what it would've cost. Plus the tip.
+        Plus something for having to listen to you ask."
+
+        You get your wallet out. She snaps her fingers at it, twice.
+
+        "Or put it away," she says, "and I spit on your shoes, and you walk home in them. Your
+        call, babe. I honestly don't care which."
+      effects:
+        - choose:
+            - label: Give her $10
+              price: { cash: 10 }
+              text: |
+                She holds the ten up to the light, front and back, as if you might have printed
+                it yourself, and folds it into her breast pocket. "That's a diner coffee," she
+                says. "Barely."
+              effects:
+                - boost.change: { card: andersons-attention, amount: +1 }
+            - label: Give her $25
+              price: { cash: 25 }
+              text: |
+                She counts it out on the steering wheel, a twenty and a five, and folds it into
+                her breast pocket. "Now that's a coffee." She still hasn't looked at you.
+              effects:
+                - boost.change: { card: andersons-attention, amount: +2 }
+            - label: Keep your wallet, and take the spit on your shoes
+              text: |
+                You put the wallet away. She leans out of the window, looks down, and spits on
+                your left shoe, then your right, neatly, one each. "Walk home in them, babe."
+              effects:
+                - tracker.change: { nerve: -1 }
+      art:
+        loras: ["tfny7_krea2_000000800:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height on the
+          sidewalk beside the open driver's window of a parked sheriff's patrol car on a quiet
+          residential street in a small Midwest town in autumn, the camera tilted slightly down
+          toward the window. tfny7 woman in her tfny7 uniform with a green bomber jacket sits
+          behind the wheel turned toward the lens, framed from the waist up in the window
+          opening. She looks directly into the camera, making eye contact with the viewer, with
+          bored, greedy contempt: green eyes half-lidded, one dark brow arched high, berry lips
+          pursed. Her bare left hand, out of the green bomber sleeve, reaches out of the window
+          toward the lens palm up, glossy black nails curled, waiting; her bare right hand, out
+          of the other green bomber sleeve, holds two folded green banknotes up beside her face
+          between two fingers, flicking them. The white car door with its broad vivid azure blue
+          stripe and gold six-point star decal fills the bottom of the frame. Through the far
+          window, blurred, white clapboard houses under orange maples. Soft overcast
+          late-morning light from a high gray sky lights her face and her open palm. Restrained
+          palette of white car door, forest green, tan, vivid azure blue, banknote green,
+          platinum blonde and maple orange; natural skin texture, fine 35 mm film grain, focus
+          on her eyes and her open hand.
+  - category: talk
+    word: THANK
+    cost: 1
+    tags: [tribute]
+    prompt: Thank her for keeping the Heights safe. She makes you lean in and say it properly, and then she spits in your face.
+    result:
+      text: |
+        "Thank you for your service, Deputy."
+
+        She stops typing. "Lean in."
+
+        You put one hand on the roof and lean into the window. The car smells of vanilla air
+        freshener, gun oil and her perfume.
+
+        "Again. Like you mean it."
+
+        "Thank you for your service, Deputy."
+
+        She leans across the passenger seat, gathers, and spits in your face: warm, across your
+        cheek and the corner of your mouth.
+
+        "You're welcome. Don't wipe it. Say thank you for that, too."
+
+        You say thank you for that, too. She keeps you bent in her window with it running down
+        your face while a pickup goes by slowly enough for the driver to get a look.
+
+        "Okay, you can go," she says. "Leave it on till you get home. I'm going to drive past and
+        check."
+      effects:
+        - boost.change: { card: andersons-attention, amount: +1 }
+        - skill.gain: talk
+      art:
+        loras: ["tfny7_krea2_000000800:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from inside the open driver's window
+          of a parked sheriff's patrol car, the camera bent down level with her face and close,
+          an arm's length from her. tfny7 woman in her tfny7 uniform with a green bomber jacket
+          sits behind the wheel leaning toward the lens, framed from the chest up, her face
+          filling the center of the frame. She looks directly into the camera, making eye
+          contact with the viewer, with cool, satisfied contempt: green eyes narrowed, one dark
+          brow arched, berry lips pursed forward, a glistening string of saliva at her lower
+          lip. Her bare right hand, out of the green bomber sleeve, is raised toward the lens
+          with one glossy black-nailed finger pointing at it; her bare left hand, out of the
+          other green bomber sleeve, grips the top of the steering wheel. Behind her, softly out
+          of focus, the dark car interior, a dash-mounted laptop glowing blue-white and the
+          passenger window with orange maples beyond it. Soft overcast daylight from the open
+          window lights her face, with the dark interior behind her. Restrained palette of
+          forest green, tan, vivid azure blue, platinum blonde, berry and maple orange; natural
+          skin texture, fine 35 mm film grain, focus on her lips and eyes.
+  - category: deal
+    word: INHALE
+    cost: 1
+    always: true
+    requires: [boots]
+    tags: [tribute]
+    prompt: Ask for one of her boots. You take it off her yourself, kneeling at the curb, and breathe in the inside of it with the street watching.
+    result:
+      text: |
+        "Deputy. Could I — your boot."
+
+        She looks at you over the laptop. She opens the door, swings her right leg out and sets
+        the heel on the doorsill.
+
+        "I've been in these since six. Take it off. Kneel, you're not tall enough to do it
+        standing."
+
+        You kneel on the curb, take the heel in one hand and the back of the shaft in the other,
+        and pull. The leather fights you the length of her calf. Her foot comes out in a thin
+        black knee sock, damp at the heel.
+
+        "Face in. All the way. Breathe."
+
+        You put your face into the top of the shaft. It's still warm from her leg, and it smells
+        of rubber and polish and a day of her feet.
+
+        "Count them. Out loud."
+
+        You count your breaths into her boot. Across the street a man pushing a mower lets it
+        idle and stands there.
+
+        "Louder, babe. Mr. Haskell can't hear you."
+
+        At thirty she takes the boot back, steps into it and works her foot down with a stamp
+        on the doorsill.
+
+        "And don't lick it. Gross. It's polished." She pulls the door shut. "Same time
+        tomorrow, if you're good."
+      effects:
+        - boost.change: { card: andersons-attention, amount: +1 }
+        - tracker.change: { nerve: +1 }
+      art:
+        loras: ["tfny7_krea2_000000800:1"]
+        subject: >
+          Close first-person photograph from standing eye height beside the open driver's door
+          of a parked sheriff's patrol car on a quiet residential street in autumn, the camera
+          level. tfny7 woman in her tfny7 uniform with a green bomber jacket, alone, sits
+          sideways on the driver's seat facing out of the open door, framed from the chest up,
+          the bottom edge of the frame at her tie bar; nothing below her chest is in frame. In
+          her bare right hand, out of the green bomber sleeve, she holds a single empty, stiff,
+          structured, mirror-polished black leather thigh-high riding boot up beside her face by
+          the back of its shaft, the whole boot upright and readable from its low, flat
+          stacked-leather riding heel at the bottom to its open top above her shoulder, the open
+          top tipped toward the lens. She looks directly into the camera beside the boot, making
+          eye contact with the viewer, with bored, amused contempt: green eyes half-lidded, one
+          dark brow arched high, berry lips pressed into a lopsided smirk. Her bare left hand,
+          out of the other green bomber sleeve, rests on the top of the open door. Behind her,
+          the dark car interior; above the car roof, out of focus, orange maples. Nothing of the
+          viewer is in frame. Soft overcast daylight lays one long highlight down the polished
+          shaft. Restrained palette of black leather, forest green, tan, vivid azure blue,
+          platinum blonde and maple orange; natural skin and leather texture, fine 35 mm film
+          grain, focus on her eyes and the boot.
+  - category: deal
+    word: BEG
+    cost: 1
+    requires: [owned]
+    unless: [boots]
+    tags: [tribute]
+    prompt: Beg her for a boot. She shows you what one is for, the inside, at the curb, and you won't look at boots the same way again.
+    result:
+      text: |
+        "Deputy, please. Your boot."
+
+        "My boot." She tries it out. "He wants my boot. What are you going to do, polish it?
+        Kneel down."
+
+        You kneel on the curb. She opens the door, swings her right leg out, and makes you pull
+        the boot off her yourself, heel and shaft, while she films it. Her sock has gone dark at
+        the toe.
+
+        You turn the boot to the light to look at the shine. She slaps the back of your head.
+
+        "Not the outside, dummy. The outside's for everyone. The inside's where I am. Face in."
+
+        You put your face into the top of the shaft. It's close and warm in there, and the first
+        breath goes all the way down. She pushes the boot onto you with her socked foot on the
+        heel, so it sits over your nose and mouth.
+
+        "Slow. In through the nose. Out through the mouth. Again. Again."
+
+        By the twentieth breath you've stopped hearing the street. By the fortieth you're
+        breathing in time with her counting. When she takes it back you follow it with your
+        face, a few inches, before you catch yourself, and she laughs so hard she has to put
+        her forehead on the steering wheel.
+
+        "Oh my God. Oh, you're done. You're going to be sniffing every boot in this county now."
+        She steps back into it, stamps it down. "Only mine, though. Say it."
+
+        You say it.
+      effects:
+        - card.gain: boot-fetish
+        - boost.change: { card: andersons-attention, amount: +1 }
+      art:
+        loras: ["tfny7_krea2_000000800:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from kneeling height on the curb
+          beside the open driver's door of a parked sheriff's patrol car on a quiet residential
+          street in a small Midwest town in autumn, the camera tilted up. tfny7 woman in her
+          tfny7 uniform with a green bomber jacket, alone, sits sideways on the driver's seat
+          leaning out of the open door toward the lens, framed from the waist up, the bottom
+          edge of the frame at her duty belt; her legs are below the frame. In her raised bare
+          right hand, out of the green bomber sleeve, she dangles a single empty, stiff,
+          structured, mirror-polished black leather thigh-high riding boot with a rigid straight
+          shaft and a low, flat stacked-leather riding heel, off her foot, by the top of its
+          shaft beside her face, the whole boot hanging straight down from her grip and visible
+          from its open top to its rounded toe. She looks down directly into the camera, making
+          eye contact with the viewer, with delighted, mocking glee: green eyes bright, one dark
+          brow arched, berry lips open in a laugh. Her bare left hand, out of the other green
+          bomber sleeve, holds a black smartphone up at her chest, its camera lens aimed at the
+          viewer. Behind her, the dark car interior; above the car roof, out of focus, orange
+          maples and white clapboard houses. Nothing of the viewer is in frame. Soft overcast
+          late-morning light from a high gray sky lights her face and the glossy boot.
+          Restrained palette of black leather, forest green, tan, vivid azure blue, platinum
+          blonde and maple orange; natural skin and leather texture, fine 35 mm film grain,
+          focus on her eyes and the boot.
+  - category: look
+    word: WATCH
+    cost: 1
+    prompt: Stand by her car a while and watch her work the street.
+    result:
+      text: |
+        She works the Heights from the driver's seat. A man in a Buick rolls the stop sign at
+        the end of the block and she has him pulled over before he's past the next driveway;
+        she doesn't get out, just backs up beside him and talks through both windows until he
+        says "yes, ma'am" twice and drives off at fifteen miles an hour.
+
+        A woman with a stroller waves. Anderson waves back, sweet as pie. A teenager on a
+        skateboard doesn't wave and she follows him at walking pace for a block with the
+        spotlight on him, in daylight.
+
+        She knows every truck on the hill. She knows your house.
+      effects:
+        - skill.gain: look
+art:
+  loras: ["tfny7_krea2_000000800:1"]
+  subject: >
+    First-person point-of-view widescreen photograph from standing eye height on the sidewalk,
+    one pace from the open driver's window of a parked sheriff's patrol car on a quiet
+    residential street in a small Midwest town in autumn, the camera level with the window. The
+    window opening fills the center of the frame like a picture frame: the white roof edge
+    above, the black door pillars on either side, and below the sill the white door with its
+    broad vivid azure blue stripe and gold six-point star decal. Inside the opening, tfny7 woman
+    in her tfny7 uniform with a green bomber jacket sits behind the wheel, seen from the chest
+    up, her left elbow resting on the window sill and her chin propped on her bare left hand,
+    out of the green bomber sleeve. She looks directly into the camera, making eye contact with
+    the viewer, with bored, amused contempt: green eyes half-lidded, one dark brow arched high,
+    berry lips pressed into a lopsided smirk. Her bare right hand, out of the other green bomber
+    sleeve, rests on the sill beside her elbow, glossy black nails tapping the white paint.
+    Behind her, the dark car interior with a dash-mounted laptop glowing blue-white, and through
+    the far window, blurred, white clapboard houses under orange maples. Soft overcast
+    late-morning light from a high gray sky lights her face evenly. Restrained palette of white
+    car door, forest green, tan, vivid azure blue, platinum blonde and maple orange; natural
+    skin texture, fine 35 mm film grain, focus on her eyes.

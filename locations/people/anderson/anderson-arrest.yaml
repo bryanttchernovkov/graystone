@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: Deputy Anderson arrests you. Reached by move.to from RISK-APPROACH at the Heights (open
+# record) and from the setback penalty on her ground (open record). The arrival is the arrest:
+# Handcuffs go on (off again in the Undercroft) and you're taken to her holding cage at the
+# station. The Criminal Record comes with you, to be worked off below.
+# The text fits both routes: it never says how you got in front of her.
+id: anderson-arrest
+name: Under arrest
+tags: [law]
+description: Deputy Anderson, out of her cruiser, cuffs already in her hand.
+arrival:
+  text: |
+    Deputy Anderson is out of her cruiser and in front of you before you've decided anything:
+    blonde waves with black streaks through them, dark lipstick, the green patrol jacket open
+    over a pressed tan shirt. She holds her phone up beside your face, compares, and sighs.
+
+    "Oh my God. It's actually you." She puts the phone away. "Hands on the hood. No. Flat.
+    Fingers spread. Has nobody ever shown you how to do this?"
+
+    The hood is warm from the engine. She takes the cuffs off her belt and lets you hear them
+    open, one click at a time.
+
+    "Feet back. Further. You've got a record, babe. You don't get to be comfortable."
+
+    The first cuff closes, then the second, one click past comfortable. She checks them with one
+    black fingernail and steps back to look at her work.
+
+    "Cute," she says. "Back seat. Watch your head. Actually, don't. I want to see if you hit it."
+
+    You don't. She looks disappointed, and shuts the door on you. The ride to the First Church
+    takes four minutes, and she spends all of them on the radio, telling dispatch about you.
+  effects:
+    - card.gain: handcuffs
+    - move.to: anderson-holding
+art:
+  loras: ["tfny7_krea2_000000800:0.9", "pvarst7_krea2_000002250:0.8"]
+  subject: >
+    pvarst7 POV arrest photo, a first-person view from the arrested man's own shoulder, looking
+    down past his left shoulder at his left arm being handcuffed behind his back, his plain
+    charcoal T-shirt and blue jeans in the foreground, his bare hairy forearm with no watch or
+    bracelet and his palm turned outward. On the left side of the frame stands tfny7 woman in
+    her tfny7 uniform with a green bomber jacket, no jewelry. She is bare-handed, her nails
+    glossy black, and grips his forearm just above the polished steel hinged handcuff locked on
+    his wrist and holds the empty second cuff, closed, in her other hand. She glances up at the
+    viewer from the cuff with bored, disappointed contempt, a pouting sigh on her berry lips.
+    Set on a quiet residential street in a small Midwest town in autumn, beside the white hood
+    of a sheriff's patrol car with a broad azure blue stripe, fallen maple leaves on the
+    asphalt, white clapboard houses and orange maples behind her. Soft gray overcast light, a
+    faint red and blue flicker from the car's light bar on the steel cuff, gentle natural
+    contrast, soft film grain, 35 mm lens.

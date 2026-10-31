@@ -1,0 +1,221 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: the back room of Café Linde after the rush. Reached by move.to from DEAL-STAY at the
+# counter (needs the punch card); out goes back to the counter.
+# WORK-PERFORM: instructed, ruined at the edge, and eaten. Signora's Favorite (favored) swaps it
+# for WORK-FINISH: her hand, a proper finish, and eaten. With the chastity cage on (caged),
+# neither is offered; DEAL-SHOW is what she does with a caged man. All three never used up.
+id: giardano-backroom
+name: Café Linde, the back room
+hub: true
+description: Burlap sacks of green coffee, a little roaster ticking as it cools, a steel prep table, one bentwood chair under a bare bulb, and the Signora with the door locked behind her.
+arrival:
+  text: |
+    It smells of roasting and burlap. There are sacks of green coffee stacked to the ceiling,
+    a little drum roaster ticking as it cools, a steel prep table scrubbed to a shine, and in
+    the middle of the floor, one bentwood chair under a bare bulb.
+
+    You sit in it. She comes in behind you and locks the door, and takes off her glasses,
+    polishes them on the hem of her apron, and puts them back on to look at you.
+
+    "Good. You can sit still. Most men can't." She leans against the prep table with her
+    arms folded. "Back here we do things my way, caro, the same as out front. I tell you
+    how. I tell you when. And I tell you when to stop."
+actions:
+  - category: work
+    word: PERFORM
+    cost: 2
+    always: true
+    unless: [caged, favored]
+    tags: [instructed]
+    prompt: Do as she says, with your own hand, while she watches. She decides when you stop, and she stops you at the edge, and you clean up after yourself with your mouth.
+    result:
+      text: |
+        "Trousers down. To the knees, not off. Hands on your thighs."
+
+        You do it. She looks at your cock like a shot coming out of the machine: color, body,
+        timing. "Mm. Take hold. Not like that. Loosely. Two fingers and a thumb. Slowly. Slower
+        than that. Up. Down. I'll count."
+
+        She counts. Up on one, down on two, and she keeps the count slow and doesn't let it
+        speed up when your breathing does. When you try to go faster on your own she says
+        "no" without raising her voice and makes you take your hand away and put it on your
+        knee and wait, hard and twitching in the air, while she counts to twenty. Then you
+        start again from slow.
+
+        She takes you to the edge three times that way. The fourth time she says "now faster,"
+        and you go faster, and she comes off the table and stands over you, close enough that
+        you can smell the coffee on her, and watches your face.
+
+        "Tell me when."
+
+        "Now — Signora, now —"
+
+        "Hands off."
+
+        You take your hands off. Nothing touches you. It comes anyway, in thin weak pulses
+        that don't feel like anything, onto your stomach and onto the white espresso saucer
+        she's holding under you, and she watches all of it with interest and no pity
+        whatsoever.
+
+        "That's what you get for rushing." She holds the saucer up under your chin. "Clean.
+        All of it. Then your stomach, with your fingers, and your fingers with your mouth.
+        Nothing goes to waste in my kitchen."
+
+        You lick the saucer clean. She checks it against the light, and stamps your card.
+      effects:
+        - boost.change: { card: cafe-linde-punch-card, amount: +1 }
+        - tracker.change: { nerve: -1 }
+        - skill.gain: work
+      art:
+        loras: ["ferrina_krea2_000001200:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from seated eye height on a
+          bentwood chair in the back room of a small café, the camera level. ferrina woman
+          in her red work blouse and black apron, wearing her thick black rectangular
+          glasses, stands alone a pace in front of the lens, framed from the waist up, the
+          bottom edge of the frame at her black apron. She looks directly into the camera,
+          making eye contact with the viewer, with cool, clinical interest: green eyes
+          narrowed and attentive behind her glasses, one dark brow raised, red lips parted
+          mid-word. She holds a small white porcelain espresso saucer flat at the height
+          of her chest in her left hand, and her right hand is raised beside her face,
+          palm out, red nails spread, in a signal to stop. Behind her, out of focus,
+          burlap sacks of green coffee stacked high, a small black drum coffee roaster and
+          a scrubbed steel prep table. A single bare bulb hanging above and in front of
+          her lights her face, her glasses and the red silk warm and hard, the sacks
+          falling into amber shadow. Her apron is plain, with no lettering. Restrained
+          palette of red silk, black apron, white porcelain, burlap, steel and bulb amber;
+          natural skin texture, fine 35 mm film grain, focus on her eyes.
+  - category: work
+    word: FINISH
+    cost: 2
+    always: true
+    requires: [favored]
+    unless: [caged]
+    tags: [instructed]
+    prompt: Ask the Signora to finish you herself. Her favorite gets her hand, and a proper ending, and he still cleans up after himself.
+    result:
+      text: |
+        "Please, Signora. Your hand."
+
+        She considers it, and you. Then she pulls up a sack of coffee in front of the chair and
+        sits on it, knees to your knees.
+
+        "Trousers down. Hands behind the chair. Keep them there."
+
+        Her hand is warm and dry and sure. She doesn't hurry: steady pressure, all the way down
+        and all the way up, a twist of the wrist at the top, and she watches your face the whole
+        time, through her glasses, close. Every time your hips come up off the chair she stops
+        and waits, holding you still in her fist, until they go back down.
+
+        "There. You're learning." Faster now, and tighter. "You may."
+
+        You come in her hand, properly, hard, all of it, with her hand still moving and her
+        voice saying "good, good, all of it, caro," until there's nothing left and you're
+        shaking on the chair.
+
+        She lifts her hand between you, white across her palm and dripping between her red
+        nails, and holds it under your mouth.
+
+        "Clean."
+
+        You lick her palm clean, and between each finger, and the back of her wrist where it
+        ran. She wipes the hand dry on a white cloth afterwards anyway, and pats your cheek
+        with it.
+
+        "Good boy. Same time tomorrow."
+      effects:
+        - tracker.change: { nerve: +2 }
+        - skill.gain: work
+      art:
+        loras: ["ferrina_krea2_000001200:0.9", "femdom_handjob_krea2_epoch_20:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from seated eye height on a
+          bentwood chair in the back room of a small café, the camera tilted down. ferrina
+          woman in her red work blouse and black apron, wearing her thick black
+          rectangular glasses, sits on a burlap coffee sack directly in front of the lens,
+          knees close, leaning in, framed from the head down to her lap. She looks
+          directly into the camera, making eye contact with the viewer, with warm, intent
+          control: green eyes fixed and soft behind her glasses, one dark brow raised, red
+          lips curved in a slow knowing smile. Her right hand, red nails, is wrapped
+          firmly around an erect penis that rises from the bottom center of the frame,
+          giving a slow handjob, her wrist turned at the top of the stroke; her left hand
+          rests flat on her own knee. Nothing else of the viewer is in frame. Behind her,
+          out of focus, burlap sacks of green coffee stacked high, a small black drum
+          coffee roaster and a scrubbed steel prep table. A single bare bulb above lights
+          her face and her hand warm and close, the room falling into amber shadow. Her
+          apron is plain, with no lettering. Restrained palette of red silk, black apron,
+          burlap and bulb amber; natural skin texture, fine 35 mm film grain, focus on her
+          eyes.
+  - category: deal
+    word: SHOW
+    cost: 1
+    always: true
+    requires: [caged]
+    tags: [instructed]
+    prompt: Show her the cage. She finds a caged man interesting, and she knows how to empty one without opening it, onto a saucer, for you to lick clean.
+    result:
+      text: |
+        "Trousers down."
+
+        She sees the cage and stops. Then she laughs, low, delighted, and crouches in front of
+        the chair to look at it properly, glasses pushed up on her nose.
+
+        "Oh, caro. The Sergeant?" She taps the little padlock with a red nail. "She always did
+        do things properly. Well. We don't need a key."
+
+        She has you spread your knees and lean back. One fingertip, slow, under your balls and
+        back, pressing, in small circles, and she counts for you in the voice she uses to teach.
+        You strain against the steel and it doesn't give. She doesn't let you move.
+
+        It takes a long time. When it comes it comes in a slow, thin drip through the bars of
+        the cage, no release in it at all, only a hollow ache, onto the white saucer she's
+        holding underneath. She keeps the fingertip going until it stops.
+
+        "Look at that. Not a drop wasted." She stands and holds the saucer under your chin.
+        "Clean it. Then say thank you."
+
+        You lick the saucer clean and say thank you. You're still locked, and still aching.
+      effects:
+        - boost.change: { card: cafe-linde-punch-card, amount: +1 }
+        - tracker.change: { nerve: -1 }
+      art:
+        loras: ["ferrina_krea2_000001200:0.9", "pvcg5_krea2_000002000:0.9"]
+        subject: >
+          A POV photograph looking down at my own body sitting back on a bentwood chair in
+          the back room of a small café, my grey trousers pushed down to my knees and my
+          bare knees spread wide, a pvcg5 chastity cage, filled, polished stainless steel
+          with a tiny brass padlock, locked on me, small next to her hand. ferrina woman
+          in her red work blouse and black apron, wearing her thick black rectangular
+          glasses, crouches on the worn wooden floor between my knees, close, and taps the
+          little padlock with one long red-nailed fingertip of her right hand, while her
+          left hand holds a small, flat, empty white porcelain espresso saucer, with no
+          cup on it, level just beneath the cage. She looks up from the cage into the
+          camera, making eye contact with the viewer, with delighted, curious amusement:
+          green eyes bright, her glasses pushed up on her nose, dark brows raised, red
+          lips parted in a low laugh. My bare thighs and the tails of my white shirt run
+          from the bottom edge of the frame to the cage in the lower centre, her face and
+          shoulders just above it. Behind her, out of focus, burlap sacks of green coffee
+          stacked high and the worn floorboards. Steep downward viewpoint from my eyes,
+          the cage, her fingertip and the saucer sharp. A single bare bulb above lights
+          her face, her glasses and the porcelain warm and throws a hard specular glint
+          along the steel, the room falling into amber shadow. Her apron is plain, with no
+          lettering. Restrained palette of red silk, black apron, white porcelain,
+          polished steel, burlap and bulb amber; natural skin texture, fine 35 mm film
+          grain, focus on the cage and her eyes.
+art:
+  loras: ["ferrina_krea2_000001200:1"]
+  subject: >
+    Eye-level widescreen photograph from standing height just inside the door of the small back
+    room of a café, the camera level. Burlap sacks of green coffee beans are stacked to the
+    ceiling along the left wall, a small black drum coffee roaster stands against the right wall
+    with its cooling tray, and a scrubbed steel prep table runs along the back. In the middle of
+    the worn wooden floor stands one empty bentwood chair under a single bare bulb hanging on a
+    cord. ferrina woman in her red work blouse and black apron, wearing her thick black
+    rectangular glasses, alone, the only person in the room, leans against the edge of the steel
+    prep table behind the chair, framed from the knees up, her arms folded under her bust. She
+    looks directly into the camera, making eye contact with the viewer, with calm, patient
+    command: green eyes steady behind her glasses, chin lifted, red lips closed in a faint
+    smile. There is no one else in the room. The bare bulb lights her and the empty chair from
+    above, warm and hard, and leaves the stacked sacks in amber shadow. Her apron is plain, with
+    no lettering. Restrained palette of red silk, black apron, burlap, black iron, steel and
+    bulb amber; natural texture, fine 35 mm film grain, focus on her eyes and the empty chair.

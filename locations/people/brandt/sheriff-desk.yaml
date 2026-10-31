@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: across the desk from Sheriff Brandt in her office. Reached by move.to from TALK-APPROACH
+# in her office (its result carries her greeting, so nothing replays here); out goes back to the
+# office. Her scenes are still to come.
+id: sheriff-desk
+name: The Sheriff's desk
+tags: [law]
+hub: true
+description: A green leather desktop, two folded hands, and the Sheriff, waiting with a smile for you to tell her the rest.
+art:
+  loras: ["lorbrandt_krea2_000001200:1"]
+  subject: >
+    A waist-up photograph of lorbrandt woman in her uniform, seated upright in a tall dark
+    leather chair behind a massive dark oak desk with a green leather top, her hands folded
+    loosely on the leather beside a single closed manila folder and a brass lamp, looking
+    straight into the camera with a pleasant, inviting smile that is also an instruction, her
+    eyes warm and steady. The camera sits at seated eye height across the desk an arm's length
+    away, the green leather desktop running across the bottom of the frame. Behind her, softly
+    out of focus, a wall of pale limestone blocks and the lower curve of a great round
+    stained-glass rose window glowing red, blue and gold. The brass lamp lights her face warmly
+    from the left, and the rose window rims her hair with colored light. 50 mm lens, natural
+    colour, fine film grain, shallow depth of field on her eyes.

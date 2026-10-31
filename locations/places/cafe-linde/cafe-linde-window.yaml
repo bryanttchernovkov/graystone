@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Café Linde, turned around: the window tables, the square outside, and Sergeant Ashby at her
+# table off the clock. TALK-APPROACH (no record) sits you down with her; RISK-APPROACH (open record)
+# is her arrest, hands-on, straight to the Undercroft.
+id: cafe-linde-window
+name: Café Linde, the window
+hub: true
+description: Marble tables and bentwood chairs along the front window, the square beyond the glass, and Sergeant Ashby at the corner table with a cappuccino.
+actions:
+  - category: talk
+    word: APPROACH
+    cost: 1
+    always: true
+    unless: [wanted]
+    prompt: Go over to the Sergeant's table.
+    result:
+      text: |
+        She sees you coming in the reflection in the window before you're halfway across the
+        floor. She doesn't turn around.
+      effects:
+        - move.to: ashby-cafe-table
+  - category: risk
+    word: APPROACH
+    cost: 1
+    always: true
+    requires: [wanted]
+    prompt: Go over to the Sergeant's table, with open counts on your record.
+    result:
+      text: |
+        She sees you coming in the reflection in the window. She looks at the reflection, and
+        then at the phone face-down by her saucer, and turns it over, and looks at that.
+
+        She sets the cup down very carefully.
+      effects:
+        - move.to: ashby-arrest
+  - category: look
+    word: WATCH
+    cost: 1
+    prompt: Take a table by the window and watch the square.
+    result:
+      text: |
+        The church takes up the whole far side of the square, pale and tall, with cruisers
+        nosed in at its steps. Deputies come and go up the stairs all morning, in twos, and
+        every one of them looks across at the café window on the way past, and nods to the
+        corner table, and gets a nod back.
+
+        Twice a man comes down the church steps blinking at the daylight, with a deputy's hand
+        on his elbow. Neither of them looks back.
+      effects:
+        - skill.gain: look
+art:
+  loras: ["ashby7_krea2_000001200:0.9"]
+  subject: >
+    Eye-level widescreen photograph from standing height at the end of a dark walnut counter,
+    looking down the length of a small, elegant European-style café toward its tall brass-framed
+    front windows, the camera level. The room itself is the subject: a black-and-white hexagon
+    tile floor running away from the lens, cream walls with brass sconces and a long gilt-framed
+    mirror, and a row of small round white marble tables with dark bentwood chairs tucked in
+    along the windows, each table set with a small glass sugar jar and a folded cream card. In
+    the near foreground at the left, the polished brass rail of the counter and a white
+    porcelain cup on its saucer catch the light. Far down the room, six paces away, at the last
+    table in the corner of the window, sits ashby7 woman in her sheriff's uniform, a sergeant in
+    her early thirties with her long black locs gathered at the nape, small in the frame, turned
+    half toward the lens, a white cappuccino cup raised in her black-gloved hand and a folded
+    newspaper on the marble beside her, her legs crossed at the knee in polished black
+    thigh-high riding boots, looking down the room toward the camera with cool, level calm. Her
+    pressed tan uniform shirt has vivid azure blue epaulets, three vivid azure blue chevrons on
+    each sleeve and a gold star badge, with a vivid, saturated azure blue tie, a black duty belt
+    and tan riding breeches. Through the tall windows, softly out of focus, the town square in
+    morning light, a pale limestone Gothic Revival church across it and a white and tan
+    sheriff's patrol car at the curb. Bright morning daylight pours through the windows across
+    the tables and the tile floor, with warm glints on the brass. Restrained palette of white
+    marble, dark bentwood, black-and-white tile, cream, brass, uniform tan and vivid azure blue;
+    natural texture, fine 35 mm film grain, deep focus from the counter rail to the far window.

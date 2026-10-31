@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Beat: a photo from Juno Vance, bought with SIMP on Subscribed: @rootkitty or Rootkitty's
+# Simp, from anywhere. Reached by move.to (random) from that card action; move.back returns
+# you to wherever you were, without its arrival (ADR 0043 in the engine repo).
+id: juno-dm-selfie
+name: A photo from @rootkitty
+description: Glasses pushed up, tongue out, one finger up.
+arrival:
+  text: |
+    The phone buzzes. A selfie: glasses pushed up into her hair, tongue out, middle finger an inch
+    from the lens.
+
+    *$15 for this*
+
+    *u paid $15 for this, dude*
+
+    *ur so easy it's boring. do it again*
+
+    You laugh, out loud, on your own.
+  effects:
+    - skill.gain: random
+    - move.back
+art:
+  loras: ["jovessa_krea2_000001200:1"]
+  subject: >
+    First-person point-of-view widescreen photograph from standing eye height, the camera level.
+    A black smartphone turned sideways in landscape orientation is held level close in front of
+    the lens in a pale man's two bare hands, one at each end of the phone entering from the
+    bottom corners of the frame: broad knuckles, short, bare, unpainted nails cut straight
+    across, the thumbs resting on the phone's front edge. The phone fills most of the frame;
+    around it, only a thin margin of plain charcoal-gray wall, soft and out of focus. Its wide,
+    bright landscape screen shows, edge to edge, a horizontal photograph taken in a young
+    woman's small bedroom: a selfie of jovessa woman in her usual black outfit, a woman of
+    twenty-three with a black ring choker, from the chest up, sitting on her bed, her face close
+    to her own camera at the center of the photograph, sticking her tongue out with her eyes
+    crossed in mock disgust, her black rectangular glasses pushed up into her hair, her right
+    hand raised with its middle finger held up beside her face. Behind her, out of focus, pastel
+    posters on a pale wall, a strip of teal LED light along the ceiling, a bed with black and
+    teal sheets and plush toys. The screen's glow lights the thumbs at its edges, the photograph
+    on it crisp and bright. Natural skin texture, fine 35 mm film grain, focus on the phone
+    screen.

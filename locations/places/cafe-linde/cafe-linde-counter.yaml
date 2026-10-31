@@ -1,0 +1,225 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Café Linde, looking at the counter: Francine Giardano behind her espresso machine. In from
+# Main Street; turning around (free) looks out at the window tables.
+# Her standing: TALK-CHAT gives the Café Linde Punch Card (tag regular hides it after); the
+# bigger order and WORK-TASTE punch it. DEAL-STAY (regular) takes you to her back room.
+id: cafe-linde-counter
+name: Café Linde, the counter
+hub: true
+description: A walnut counter with a brass rail, a chrome lever machine hissing, a short case of pastries, and the Signora behind it all.
+actions:
+  - category: talk
+    word: CHAT
+    cost: 0
+    unless: [regular]
+    prompt: Say hello to the woman behind the counter. She tells you how coffee is done here, and decides whether you're coming back.
+    result:
+      text: |
+        "Good morning, caro." She doesn't stop working: a portafilter knocked out, wiped,
+        filled, tamped, locked in, all in the time it takes you to say hello back. "You're new.
+        I know everyone's order in this town, and I don't know yours."
+
+        You tell her what you usually drink. She makes a small face, the kind a nurse makes at
+        a bad cut.
+
+        "No. Not here. Here you'll have an espresso, and you'll drink it standing at my counter
+        in three sips, and you'll tell me what you taste." She slides a cream card across the
+        walnut, stamps the first box with a little rubber leaf, and holds it down with one
+        red fingernail until you take it. "Francine Giardano. Signora, if you like. Come back
+        tomorrow, and I'll see if you listened."
+      effects:
+        - card.gain: cafe-linde-punch-card
+        - skill.gain: talk
+      art:
+        loras: ["ferrina_krea2_000001200:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height at a
+          dark walnut café counter with a polished brass rail, the camera level. ferrina
+          woman in her red work blouse and black apron, wearing her thick black
+          rectangular glasses, stands behind the counter at arm's length, framed from the
+          waist up, leaning slightly toward the lens. She looks directly into the camera,
+          making eye contact with the viewer, with cool, amused appraisal: green eyes
+          steady behind her glasses, one dark brow raised, red lips in a small closed
+          smile. With her right hand she slides a small cream loyalty card across the
+          walnut toward the lens, one red fingernail pressed on it; her left hand holds a
+          small rubber stamp beside her shoulder. Behind her, a polished chrome lever
+          espresso machine with a wisp of steam, shelves of white porcelain cups and
+          saucers and cream walls; at the right edge, a short glass case with a few trays
+          of pastries. Soft morning daylight through the front windows behind the camera
+          lights her face and the red silk evenly, with warm brass glints on the rail. Her
+          apron is plain, with no lettering. Restrained palette of red silk, black apron,
+          dark walnut, chrome, brass, cream and espresso brown; natural skin texture, fine
+          35 mm film grain, focus on her eyes.
+  - category: deal
+    word: ORDER
+    cost: 1
+    always: true
+    prompt: Order something. She has opinions about what you should have, and she punches the card when she approves.
+    result:
+      text: |
+        "What will it be."
+
+        It isn't a question. She's already reaching for a cup, and which cup she reaches for
+        depends on what you say next, and she'll tell you if you say it wrong.
+      effects:
+        - choose:
+            - label: An espresso, at the counter ($4)
+              price: { cash: 4 }
+              text: |
+                An espresso comes in a thick white cup with a brass spoon and a glass of water,
+                and she watches you drink it.
+              effects:
+                - tracker.change: { nerve: +1 }
+            - label: A cappuccino and a cornetto ($9)
+              price: { cash: 9 }
+              text: |
+                A cappuccino comes with a cornetto warm from the case, the foam so fine it holds
+                the shape of a leaf until the last sip, and she punches the card for it:
+                "Breakfast. Finally, a grown man."
+              effects:
+                - tracker.change: { nerve: +1, body: +1 }
+                - boost.change: { card: cafe-linde-punch-card, amount: +1 }
+            - label: Just look at the pastry case
+              text: |
+                You look at the pastry case for a while. "Looking is free," she says, and serves
+                the man behind you.
+              effects: []
+      art:
+        loras: ["ferrina_krea2_000001200:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height at a
+          dark walnut café counter with a polished brass rail, the camera tilted slightly
+          down. ferrina woman in her red work blouse and black apron, wearing her thick
+          black rectangular glasses, stands alone behind the counter, framed from the waist
+          up, setting a white porcelain cappuccino cup on its saucer down on the walnut in
+          front of the lens with both hands, a leaf drawn in its fine foam, a warm golden
+          cornetto on a small white plate beside it. She looks directly into the camera,
+          making eye contact with the viewer, with brisk, expectant approval: green eyes
+          bright behind her glasses, brows lifted, red lips pressed in a small smile.
+          Behind her, a polished chrome lever espresso machine with a wisp of steam and
+          shelves of white cups on cream walls. Soft morning daylight from the front
+          windows lights her face, the foam and the pastry. Her apron is plain, with no
+          lettering. Restrained palette of red silk, black apron, dark walnut, white
+          porcelain, golden pastry, chrome and cream; natural skin texture, fine 35 mm
+          film grain, focus on the cup and her eyes.
+  - category: work
+    word: TASTE
+    cost: 1
+    tags: [instructed]
+    prompt: Let her teach you to taste an espresso properly. Her instructions are exact, and she expects them followed to the letter.
+    result:
+      text: |
+        She pulls the shot herself and sets it in front of you, and puts her hand flat over
+        the cup before you can lift it.
+
+        "Wait. Smell first. Eyes closed." You close your eyes. "Now. Small sip. Don't swallow.
+        Hold it on your tongue. Breathe in through your nose. Tell me."
+
+        You tell her: chocolate, something like cherries, something bitter at the back.
+
+        "Swallow." You swallow. "Good. Again. Slower. You're rushing. You rush everything,
+        caro, I can see it in your hands." She takes your wrist and sets it down on the
+        counter, palm flat. "There. Keep that hand still. Sip."
+
+        By the third sip you're doing it at her count, breathing when she says, holding when
+        she says, swallowing only when she nods. She watches your throat do it.
+
+        "Better," she says, and stamps the card. "You do what you're told. That's rare in a
+        man. I may have a use for it."
+      effects:
+        - boost.change: { card: cafe-linde-punch-card, amount: +1 }
+        - skill.gain: work
+      art:
+        loras: ["ferrina_krea2_000001200:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height at a
+          dark walnut café counter with a polished brass rail, the camera level and close.
+          ferrina woman in her red work blouse and black apron, wearing her thick black
+          rectangular glasses, leans across the counter toward the lens, framed from the
+          chest up, her face close. She looks directly into the camera, making eye contact
+          with the viewer, with intent, instructive focus: green eyes narrowed and
+          watchful behind her glasses, one dark brow raised, red lips parted as if
+          counting. She holds a small thick white espresso cup with dark crema up between
+          two fingers of her right hand near her own chin, and her left hand is raised
+          with its index finger lifted, red nail, telling the viewer to wait. A pale man's
+          bare hands and forearms with short unpolished nails, entering from the bottom
+          edge of the frame, lie flat on the walnut. Behind her, out of focus, a polished
+          chrome lever espresso machine and cream walls. Soft morning daylight from the
+          front windows lights her face and glasses from the side. Her apron is plain,
+          with no lettering. Restrained palette of red silk, black apron, dark walnut,
+          white porcelain, espresso brown and chrome; natural skin texture, fine 35 mm
+          film grain, focus on her eyes and the cup.
+  - category: look
+    word: WATCH
+    cost: 1
+    prompt: Stand at the counter and watch her run the morning.
+    result:
+      text: |
+        She runs it alone. Two cups at a time, the milk jug spinning in her hand, the steam
+        wand wiped after every use, every use. She calls everyone by name and by order: a
+        lineman from the power company, the woman from the library, a girl from the bank.
+
+        A man in a suit says "large" and she looks at him over her glasses until he says
+        "a double, please," and she gives him one.
+
+        When it's empty she wipes the counter end to end and looks at you, the last one there,
+        as if you're the next thing on the list.
+      effects:
+        - skill.gain: look
+  - category: deal
+    word: STAY
+    cost: 1
+    always: true
+    requires: [regular]
+    prompt: Stay after the rush when she nods at the back. She has a room back there, a chair, and instructions for you, and she watches you follow them.
+    result:
+      text: |
+        The last customer goes. She turns the sign on the door, wipes her hands on a white
+        cloth, folds it, and lays it over the machine.
+
+        "Caro." She nods at the door behind the counter. "In the back. Sit in the chair. Don't
+        touch anything until I tell you, including yourself."
+      effects:
+        - move.to: giardano-backroom
+      art:
+        loras: ["ferrina_krea2_000001200:1"]
+        subject: >
+          Widescreen photograph from standing eye height across a dark walnut café counter
+          with a polished brass rail, the café empty and quiet, the camera level. ferrina
+          woman in her red work blouse and black apron, wearing her thick black
+          rectangular glasses, stands alone behind the counter beside an open door into a
+          dim back room, framed from the knees up, one hand on the door's edge. She looks
+          directly into the camera, making eye contact with the viewer, with calm, private
+          command: green eyes steady behind her glasses, chin slightly lowered, red lips
+          closed. Her other hand, raised at her waist, crooks one red-nailed finger toward
+          the lens. Through the open door behind her, out of focus, burlap coffee sacks, a
+          steel prep table and one empty bentwood chair under a single hanging bulb. She
+          is the only person in the café; the floor and the tables are empty, with no
+          other people anywhere. Beside her, a polished chrome lever espresso machine with
+          a folded white cloth draped over it. Warm late-afternoon light slants low
+          through the front windows across the counter, and the back room glows amber. Her
+          apron is plain, with no lettering. Restrained palette of red silk, black apron,
+          dark walnut, chrome, burlap and amber; natural skin texture, fine 35 mm film
+          grain, focus on her eyes.
+art:
+  loras: ["ferrina_krea2_000001200:1"]
+  subject: >
+    Eye-level widescreen photograph from standing height just inside the door of a small,
+    elegant European-style café in a small Midwest town, the camera level, looking across a
+    black-and-white hexagon tile floor to a long dark walnut counter with a polished brass rail.
+    Behind the counter stands ferrina woman in her red work blouse and black apron, wearing her
+    thick black rectangular glasses, alone, the only person in the café, framed from the waist
+    up at the center of the frame, wiping a white porcelain cup with a white cloth, turned
+    toward the lens. She looks directly into the camera, making eye contact with the viewer,
+    with cool, professional welcome: green eyes steady behind her glasses, one dark brow faintly
+    raised, red lips in a polite closed smile. Beside her, a polished chrome lever espresso
+    machine with two groups and a wisp of steam; behind her, open shelves of stacked white cups
+    and saucers on cream walls and a small chalkboard with blurred, unreadable white chalk
+    lines; at the right end of the counter, a short glass case with a few trays of croissants,
+    cornetti and small tarts. A closed dark wood door stands in the back wall behind the
+    counter. The floor behind the counter and the tables are empty, with no other people
+    anywhere in the room. Soft morning daylight from the front windows behind the camera lights
+    the room evenly, with warm brass glints along the rail. Her apron is plain, with no
+    lettering. Restrained palette of red silk, black apron, dark walnut, chrome, brass, cream
+    walls and black-and-white tile; natural skin texture, fine 35 mm film grain, focus on her
+    eyes.

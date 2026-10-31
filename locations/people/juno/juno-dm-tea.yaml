@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Beat: a photo from Juno Vance, bought with SIMP on Subscribed: @rootkitty or Rootkitty's
+# Simp, from anywhere. Reached by move.to (random) from that card action; move.back returns
+# you to wherever you were, without its arrival (ADR 0043 in the engine repo).
+id: juno-dm-tea
+name: A photo from @rootkitty
+description: A bubble tea the size of a paint can, and her teeth on the straw.
+arrival:
+  text: |
+    The phone buzzes. A selfie: her on her bed with a bubble tea the size of a paint can, the fat
+    straw between her teeth, grinning around it. Brown sugar, extra pearls, the works.
+
+    *spent ur $15 on this*
+
+    *it was better than u*
+
+    *like the pearls are literally more interesting. they have texture*
+
+    *say thank u for my drink*
+
+    You type it. She leaves you on read.
+  effects:
+    - tracker.change: { time: +1 }
+    - move.back
+art:
+  loras: ["jovessa_krea2_000001200:1"]
+  subject: >
+    Overhead photograph looking straight down at a scuffed dark walnut tabletop, the camera
+    directly above it. The wood grain fills the whole frame from edge to edge around a black
+    smartphone lying flat on the table in landscape orientation, the phone filling the middle
+    two-thirds of the frame, with the rim of a white coffee cup at the top left corner of the
+    frame and a set of house keys at the top right. A pale man's bare hand with broad knuckles
+    and short, bare, unpainted nails cut straight across rests on the wood at the bottom right
+    corner of the frame, one fingertip touching the phone's edge. Its wide, bright landscape
+    screen shows, edge to edge, a horizontal photograph taken in a young woman's small bedroom,
+    the whole photograph contained inside the phone's black bezel: a selfie of jovessa woman in
+    her usual black outfit, wearing her black rectangular glasses and a black ring choker, from
+    the shoulders up, sitting on her bed, her face close to her own camera at the right of the
+    photograph, looking straight into it with smug, gleeful satisfaction, eyes narrowed with
+    amusement behind her glasses, a fat teal straw clamped between her grinning teeth.
+    Filling the left half of the photograph, held up in both her hands beside her face, is an
+    absurdly oversized clear plastic cup of brown sugar milk tea, a giant novelty cup as tall as
+    her whole head and twice as wide as her face, tiger-striped with dark caramel syrup down the
+    inside, a deep layer of glossy black tapioca pearls in the bottom, the fat teal straw
+    running from its sealed lid to her teeth. Behind her, out of focus, pastel posters on a pale
+    wall and a strip of teal LED light along the ceiling. The screen glows bright against the
+    dark wood, the photograph on it crisp. Natural skin texture, fine 35 mm film grain, focus on
+    the phone screen.

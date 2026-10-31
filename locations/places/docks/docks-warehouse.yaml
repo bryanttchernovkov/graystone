@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# The docks, turned around: the lot and the corrugated warehouses, GrayBlood ground, and Red
+# against the wall of the one with the half-open door. Turning around (free) looks back at the
+# river; west walks back up Front Street to Main. TALK-APPROACH takes you to Red (the GrayBloods'
+# storyline).
+id: docks-warehouse
+name: The docks, the warehouses
+hub: true
+description: A cracked lot of puddles and weeds, a row of corrugated warehouses, and somebody in a red jacket leaning on the wall of the one with its door half open.
+actions:
+  - category: talk
+    word: APPROACH
+    cost: 1
+    always: true
+    prompt: Cross the lot to the woman in the red jacket.
+    result:
+      text: |
+        She watches you come the whole way across the lot and doesn't move. She's leaning back
+        against the warehouse wall with one sneaker flat on the steel behind her, arms folded,
+        red jacket open, and she lets you get close enough that you have to decide where to
+        stop. Then she laughs, loud, at you, and the sound goes all the way down the row of
+        warehouses and back.
+
+        "Nah. Nah, look at this." Her eyes are pale blue. "You lost, lil bro? You must be lost.
+        'Cause nobody walks over here on purpose looking like that."
+
+        She tips her chin at the warehouse behind her. "This is GrayBlood. You know what that
+        means? Means you're standing on my side of the lot." She grins. "Go on. Say something.
+        I been bored all day."
+      effects:
+        - move.to: graybloods-wall
+  - category: look
+    word: WATCH
+    cost: 1
+    prompt: Keep to the edge of the lot and watch the warehouses.
+    result:
+      text: |
+        The half-open door stays half open. People go in under it without bending much: young
+        men in red, a woman with a gym bag, a kid on a bike who comes out again without the
+        bag he went in with.
+
+        The one against the wall doesn't go in. Everybody who goes in stops to talk to her
+        first, and she decides how long. Twice she looks across the lot at you and grins, and
+        both times you look at your phone.
+      effects:
+        - skill.gain: look
+art:
+  loras: ["shndr7_krea2_000001200:1"]
+  subject: >
+    Eye-level widescreen photograph from standing height at the edge of a cracked asphalt lot by
+    a river in a small Midwest town in autumn, the camera level. The lot itself is the subject.
+    The left two-thirds of the frame look along a row of three large corrugated steel warehouses
+    running away from the lens, their gray siding streaked with rust and their roll-up doors
+    shut; in the near left foreground a rusty steel chain-link fence post with a loop of torn
+    wire, and in the middle of the frame a wide puddle on the cracked asphalt reflecting the
+    bright sky, weeds standing in the cracks around it. In the right third of the frame, three
+    paces away, the nearest warehouse wall with its wide roll-up door rolled half open onto
+    darkness, and beside the door a low stack of three gray wooden pallets against the steel. On
+    the pallets shndr7 woman in her red puffer jacket, hanging open over a fitted black top,
+    with light-wash ripped jeans and scuffed white high-top sneakers, sits with her back against
+    the corrugated wall, her elbows on her knees and her sneakers planted wide on the asphalt,
+    turned half toward the lens, her chin tipped up at the camera with a lazy, arrogant grin.
+    The low sun sits behind the warehouses at the far end of the row, outlining the steel wall
+    and the pallets in a bright rim of gold light, with enough soft light on her face and the
+    glossy red jacket to show them. Restrained palette of rust, corrugated gray, wet asphalt,
+    glossy red and backlit gold; natural texture, fine 35 mm film grain, deep focus.

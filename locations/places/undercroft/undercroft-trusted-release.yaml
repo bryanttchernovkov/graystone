@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: the Undercroft's trusted release, on the First Church steps.
+# Reached only by move.to from DEAL-THANK in undercroft-cell (released with Ashby's Trust).
+# Her parting words are the arrival; the only way on is down the steps to Main Street.
+# Art: Ashby in the outdoor bomber and campaign hat (rewritten from the former Time Served
+# ending; regenerate with --overwrite).
+id: undercroft-trusted-release
+name: The First Church steps
+tags: [law]
+hub: true
+description: Wide limestone steps, the big oak doors open behind you, Sergeant Ashby on the top step in her campaign hat.
+arrival:
+  text: |
+    She stops you on the top step with two fingers flat on your chest. Daylight, maples, the
+    square, the cruisers nosed in at the curb. She takes her campaign hat from under her arm
+    and settles it level.
+
+    Then she taps her shirt pocket, once. Something small and hard clicks against the star.
+
+    "In case you were wondering where it lives," Sergeant Ashby says. "It lives here."
+
+    She looks out over the square. "Sundays I take my coffee at Café Linde. Window table. If
+    you're ever in there, you can come and ask me nicely."
+
+    She stays on the top step, gloves folded behind her back, to watch you go.
+actions:
+  - category: talk
+    word: ASK
+    cost: 1
+    prompt: Ask her when the cage comes off.
+    result:
+      text: |
+        She considers the question.
+
+        "When I take it off," Sergeant Ashby says. "That's the whole schedule."
+
+        She lets you stand there with that, then gives an inch. "A man who asks me on a Sunday,
+        with a coffee he didn't make me wait for, sometimes gets a better answer. Sometimes."
+      effects:
+        - skill.gain: deal
+  - category: look
+    word: WATCH
+    cost: 1
+    prompt: Stand on the steps a minute and watch the square with her.
+    result:
+      text: |
+        A cruiser swings in to the curb below the steps and a deputy gets out, a tall redhead
+        with her campaign hat already on and a paper sack from the diner in one hand. She looks
+        you over on her way up, boots to collar, then looks at Ashby.
+
+        "Released," Ashby says.
+
+        "Huh," says the redhead, and goes inside.
+
+        The square goes on without either of you: a pickup idling at the light, the courthouse
+        flag snapping, a woman with a stroller stopping to let a deputy's cruiser back out. You
+        stand in the sun with the oak doors at your back until your eyes stop squinting.
+      effects:
+        - tracker.change: { nerve: +1 }
+art:
+  loras: ["ashby7_krea2_000001200:0.9"]
+  subject: >
+    Eye-level widescreen photograph from the sidewalk of a small Midwest town square on a bright
+    autumn morning, looking up a flight of wide stone steps to the open oak double doors of an
+    old limestone Gothic Revival church built of smooth dressed limestone ashlar blocks laid in
+    straight courses with thin mortar joints. In the open doorway at the top of the steps stands
+    ashby7 woman in her sheriff's uniform with a green bomber jacket and campaign hat, a
+    sergeant in her early thirties with her long black locs gathered at the nape, alone and
+    whole and small in the frame, the dim nave behind her, her black-gloved right hand resting
+    on the edge of the door and her black-gloved left hand at her duty belt. She looks down the
+    steps directly into the camera, making eye contact with the viewer, with dry, knowing
+    satisfaction: eyes steady under the hat brim, one brow raised a fraction, a small
+    closed-mouth smile at one corner. Her dark forest-green bomber jacket is zipped to
+    mid-chest, both arms in its sleeves, a single polished gold six-point star badge on its left
+    chest and three vivid azure blue chevrons on each sleeve; above the zipper show the collar
+    of her tan uniform shirt and the knot of a vivid, saturated azure blue tie. Below the
+    jacket's hem she wears a black leather duty belt, tan riding breeches, the same khaki tan as
+    her shirt, with a vivid azure blue stripe down the outer seam, and polished black leather
+    thigh-high riding boots with low, flat stacked-leather riding heels. On her head, worn level
+    over her eyes, sits a stiff tan campaign hat the same khaki tan as her shirt, with a wide
+    flat brim, a pinched four-dent crown and a vivid azure blue hatband. Maple trees with red
+    and gold leaves line the square, and the stained-glass windows of the church catch the sun.
+    Low clear morning sunlight from the left lights the church facade gold and throws her long
+    shadow across the steps. Palette of pale limestone, maple red and gold, khaki tan, forest
+    green and vivid azure blue; natural skin texture, fine 35 mm film grain, deep focus.

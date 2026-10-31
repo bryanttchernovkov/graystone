@@ -1,0 +1,131 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: the laptop at home. Reached only by move.to from WORK-LAPTOP in home-living (always
+# offered there); the only exit, out, closes it and puts you back in the living room.
+# A hub: each program once per run, except LOOK-SCROLL (always), which opens Juno Vance's page.
+id: home-laptop
+name: The laptop
+tags: []
+hub: true
+description: A clean desktop, a dock of rounded icons along the bottom, and a coffee ring on the wood beside the trackpad.
+actions:
+  - category: take
+    word: HACK
+    cost: 3
+    prompt: Get into a bank's customer portal and move money that isn't yours. It will be noticed, and it will be traced.
+    result:
+      text: |
+        It takes four browser tabs, a password reset that shouldn't have worked, and a
+        transfer page that asks you twice if you're sure. You're sure. A hundred dollars goes out
+        in three small amounts to an account that opened itself this morning, and from there to
+        yours.
+
+        The confirmation screen thanks you for banking with them.
+
+        Nothing happens for a minute. Then a gray bar slides down from the top of the screen:
+        your session has been flagged for review. You close the tab. In Graystone a review is a
+        phone call to the First Church, and the First Church already knows where you live.
+      effects:
+        - currency.change: { cash: +100 }
+        - card.gain: criminal-record
+      art:
+        subject: >
+          Close photograph of an open silver laptop screen at night, the screen filling most of
+          the frame, its thin black bezel and the top row of the dark keyboard at the bottom
+          edge. On the screen an abstract, clean banking web page in white and navy: a column of
+          rounded white cards with blurred, unreadable lines of gray placeholder text, a large
+          green confirmation tick in a circle at the center, and a thin red warning bar sliding
+          down across the top of the page. A minimal desktop dock of small rounded colorful icons
+          runs along the bottom of the screen. Beyond the laptop, out of focus, a dark living
+          room with honey oak floorboards and a leather sofa arm. The screen's cool blue-white
+          glow is the only light, falling on the keys and the wood of the coffee table, the room
+          around it in deep shadow. Restrained palette of screen white, navy, signal green,
+          warning red and dark oak; natural texture, fine 35 mm film grain, shallow depth of
+          field on the screen.
+  - category: work
+    word: EMAIL
+    cost: 1
+    prompt: Check your work email. The county pays you to.
+    result:
+      text: |
+        Forty unread, thirty-eight of them county newsletters. The other two are from the
+        Sheriff's Department, sent eleven minutes apart.
+
+        The first says the printer in the bullpen is down again and asks when you can come by.
+        The second says never mind asking: come by today, check in at the front desk, and wear
+        the badge attached, which you are to print, laminate and clip on where a deputy can see
+        it. "Escorted access only," it ends. "Somebody will be keeping an eye on you."
+
+        It's signed by the department's office manager, with a smiley face that does a lot of
+        work.
+
+        You print the badge.
+      effects:
+        - card.gain: contractor-badge
+  - category: look
+    word: SCROLL
+    cost: 1
+    always: true
+    prompt: Scroll your feeds. Something local keeps getting recommended to you.
+    result:
+      text: |
+        The same account keeps turning up. Between a neighbor's lost dog and an ad for the
+        quarry's open day: a girl in thick black glasses, teal and black hair shaved up one side,
+        her tongue out at the camera, and under it, *graystone's only hacker. you know you want
+        to look.*
+
+        You tap it.
+      effects:
+        - move.to: juno-page
+  - category: look
+    word: NEWS
+    cost: 1
+    prompt: Read the Graystone Gazette over your coffee.
+    result:
+      text: |
+        The Gazette's front page is the Mayor at a ribbon-cutting, scissors in one hand, the
+        other on the shoulder of a deputy in a campaign hat. Misdemeanors in the county are down
+        again, the third quarter in a row. The Sheriff's Department declines to comment on its
+        methods, and the Mayor's office says the numbers speak for themselves.
+
+        Below the fold: the quarry road is closed for resurfacing, the Carnegie library wants
+        volunteers for its book sale, and Café Linde has a new pastry chef from Vienna. The
+        police blotter is two lines long. Both lines end with "corrected on scene".
+
+        The comments are mostly about the pastry.
+      effects:
+        - skill.gain: { look: 1 }
+        - skill.gain: { talk: 1 }
+        - boost.change: { card: character, amount: +1 }
+      art:
+        subject: >
+          Close photograph of an open silver laptop screen in daylight, the screen filling most
+          of the frame, its thin black bezel and the top row of the keyboard at the bottom edge.
+          On the screen an abstract small-town newspaper web page: a cream background, a bold
+          black masthead bar across the top rendered as a blurred, unreadable dark band, a large
+          front-page photograph of a woman in a dark suit cutting a red ribbon with oversized
+          scissors beside a woman sheriff's deputy in a tan uniform shirt with a vivid azure blue
+          necktie and a tan campaign hat, both on the steps of a pale limestone building, and
+          beneath it columns of blurred, unreadable gray text with two small thumbnail photos of a
+          pastry display case and a road closure barrier. A minimal desktop dock of small rounded
+          colorful icons runs along the bottom of the screen. Beside the laptop, out of focus, a
+          white ceramic coffee mug on the honey oak coffee table. Soft late-morning daylight from
+          a window to the left falls across the keyboard and the mug, the screen bright and
+          slightly washed by the daylight. Restrained palette of newsprint cream, black, tan,
+          vivid azure blue and honey oak; natural texture, fine 35 mm film grain, shallow depth of
+          field on the screen.
+art:
+  subject: >
+    Close photograph of an open silver laptop on a low honey oak coffee table, seen from the
+    sofa at seated eye height, the screen filling most of the frame, its thin black bezel and
+    the dark keyboard and trackpad at the bottom edge, a faint pale coffee ring on the wood
+    beside the trackpad. On the screen an abstract, clean desktop in the style of a modern
+    minimalist operating system: a soft blurred wallpaper of autumn maple leaves in orange and
+    gold, a slim translucent menu bar across the top, two small rounded translucent windows
+    floating on the desktop showing a bank's white and navy page and a cream newspaper page,
+    each with blurred, unreadable placeholder lines, and a
+    translucent dock of small rounded colorful app icons along the bottom. Beyond the laptop,
+    out of focus, a deep brown leather sofa arm and a living room window with yellow leaves
+    outside. Soft late-morning daylight from the window on the left lights the keyboard and the
+    wood, the screen glowing cool and bright. Restrained palette of maple orange and gold,
+    screen white, navy, cream, silver and honey oak; natural texture, fine 35 mm film grain,
+    shallow depth of field on the screen.

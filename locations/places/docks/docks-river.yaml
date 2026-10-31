@@ -1,0 +1,92 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# The docks, looking out at the river: the wharf, a cargo ship tied up, and Deputy Seo's cruiser at
+# the end of it (Seo's ground: with an open record, any setback here, walking in included, ends
+# in her arrest). In from Main Street; turning around (free) looks at the warehouses.
+# TALK-APPROACH (no record) takes you to Deputy Seo (her storyline). With an open record it swaps
+# for RISK-APPROACH, which ends face down in her arrest: she sees you first. LOOK-WATCH stays open
+# with a record, as a gamble: a setback while watching is her arrest too.
+id: docks-river
+name: The docks, the river
+tags: [patrol]
+hub: true
+description: A concrete wharf, a rusting cargo ship tied up to it, the river wide and brown beyond, and a sheriff's cruiser parked at the end with a deputy standing beside it.
+setback_penalty:   # Seo's ground: a setback here with an open record is an arrest
+  requires: [wanted]
+  effects:
+    - move.to: seo-arrest
+actions:
+  - category: talk
+    word: APPROACH
+    cost: 1
+    always: true
+    unless: [wanted]
+    prompt: Walk down the wharf to the deputy by the cruiser.
+    result:
+      text: |
+        She isn't in the car. She's standing beside it with her back to the open door, in the
+        green jacket and no hat, mirrored aviators on, turning her head slowly from the ship to
+        the warehouses to the river and back, like a lighthouse. Her hair is pink, a soft bob
+        to the collar, gone dark at the roots.
+
+        The aviators come round to you and stop.
+
+        "Hello, Left Side," she says, pleasantly. "You walked the whole wharf on the left side.
+        Nobody walks on the left side." She lowers the aviators a half inch and looks at you over
+        them, at your face, your hands, your feet. "Deputy Seo. Why the left side?"
+      effects:
+        - move.to: seo-dockside
+  - category: risk
+    word: APPROACH
+    cost: 1
+    always: true
+    requires: [wanted]
+    prompt: Walk down the wharf to the cruiser, with open counts on your record.
+    result:
+      text: |
+        The cruiser is where it was at the end of the wharf, its driver's door standing open.
+        Nobody is beside it. A notebook sits on the roof.
+
+        You're halfway down the wharf before you think to wonder where she went.
+      effects:
+        - move.to: seo-arrest
+  - category: look
+    word: WATCH
+    cost: 1
+    prompt: Lean on a bollard and watch the river for an hour.
+    result:
+      text: |
+        The ship is called something you can't read under the rust, and nobody comes or goes on
+        it the whole hour. A barge goes downriver, low in the water with grain. Gulls fight over
+        something on the wharf.
+
+        The deputy by the cruiser watches the gulls too. Twice she writes something in a little
+        notebook. Once she says something to the river, and you're almost sure the river
+        answers.
+      effects:
+        - tracker.change: { nerve: +1 }
+art:
+  loras: ["sorenji_krea2_000001400:1"]
+  subject: >
+    Eye-level widescreen photograph from standing height on a wide concrete river wharf in a
+    small Midwest town in autumn, the camera level. The wharf runs away from the lens across the
+    left two-thirds of the frame: a black iron bollard with a coil of mooring rope and two gulls
+    on it in the near left foreground, the long dark red hull of a rusting river cargo ship
+    streaked orange with rust tied up along the wharf with its white wheelhouse at the stern,
+    and beyond it a broad brown river running to a low far bank of yellow cottonwoods and a
+    distant steel truss bridge. Farther down the wharf in the middle distance, small, a
+    Graystone County Sheriff's patrol car, a present-day Ford Police Interceptor Utility SUV
+    painted two-tone, with a white roof, hood and front doors over a tan body, a broad vivid
+    azure blue stripe running the full length of each flank below the windows, a gold six-point
+    star decal on each front door, a low black roof light bar with red and blue lenses, a black
+    steel push bumper bolted across the front grille and black steel wheels, stands parked with
+    its doors shut; its windows are tinted dark and its light bar is unlit. At the right edge of
+    the frame, close to the lens, two paces away, sorenji woman in her uniform with a green
+    bomber jacket stands leaning her shoulder against a black cast-iron lamp post, framed from
+    her hips to just above her head, filling the right third of the frame, her body turned
+    toward the river and her head turned to the camera with bright, curious amusement: delicate
+    brows lifted, berry-pink lips in a small, pleased smile, gold-framed aviator sunglasses with
+    mirrored lenses on her nose. Bright, hazy late-morning sun from behind the camera lights the
+    wharf, the ship's rust and her face, the river glinting. Restrained palette of river brown,
+    rust red, concrete gray, cruiser white and tan, forest green, vivid azure blue and dusty
+    pink; natural texture, fine 35 mm film grain, focus on her face with the wharf slightly soft
+    behind.

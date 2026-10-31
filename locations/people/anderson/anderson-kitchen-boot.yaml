@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Beat: Deputy Anderson on her coffee break, one of three coin-flip reactions to DEAL-GREET in
+# the station kitchenette (her paypig only). Her hand out for $10: pay and stay in the
+# kitchenette, or come up short and she throws you out of the station and takes your badge.
+id: anderson-kitchen-boot
+name: The kitchenette
+tags: [law]
+description: Black leather, close enough to touch, and nothing else at all.
+arrival:
+  text: |
+    She doesn't say hello. She pulls out one of the chairs from the little table with her
+    foot, sits, and lifts her right boot onto your thigh.
+
+    "Pull."
+
+    You pull. It comes off in jerks, and before you can do anything with it she takes it out
+    of your hands by the shaft and puts it over your face.
+
+    It's dark in there and hot, and the smell is eight hours of her feet. Her hand is on the
+    back of your head, holding you in.
+
+    "Breathe," her voice says, from outside. "Big ones. I want to hear them."
+
+    You breathe. It's thick enough to taste. Somewhere in the room the coffee machine
+    finishes, and you hear her pour a cup one-handed and sip it, and the hand on your head
+    doesn't move.
+
+    "That's my afternoon," she says. "In your lungs. You're welcome."
+
+    When she takes the boot away the kitchen is very bright. She steps back into it, stamps
+    her heel down, and holds out her hand. "Ten bucks. Rental."
+  effects:
+    - tracker.change: { nerve: -1 }
+    - choose:
+        - label: Pay her $10
+          price: { cash: 10 }
+          text: |
+            You give it to her. She takes it without looking, tucks it into the top of the boot you
+            just had your face in, and picks her coffee back up.
+
+            "Keep it in there," she says. "So it smells like me."
+          effects:
+            - move.to: station-kitchen
+        - label: Come up short
+          text: |
+            You open your wallet and she looks in it with you, and snorts.
+
+            "Wow. No. Okay." She takes a fistful of your collar and walks you out of the
+            kitchenette, down the side aisle past the cages, through the arch and past the
+            front desk, at her own pace, so that everybody gets a good look. At the desk she
+            stops long enough to unclip your badge and drop it on the counter in front of Niamh.
+
+            "He's done for the day."
+
+            Niamh looks at the badge, and at you, and says nothing at all.
+
+            Anderson pushes open one of the big oak doors with her free hand and lets go of
+            your collar on the top step. "Come back when you're worth something, babe."
+          effects:
+            - card.lose: contractor-badge
+            - move.to: main-street-south
+art:
+  loras: ["tfny7_krea2_000000800:1"]
+  subject: >
+    Detail first-person point-of-view widescreen photograph, the camera level, looking straight
+    into the open top of an empty, stiff, structured, mirror-polished black leather thigh-high
+    riding boot held an inch from the lens, so that the dark round opening of its shaft fills
+    almost the whole frame: the creased black inner lining, a worn pale leather heel counter
+    deep at the bottom of the dark, and the thick polished rim of the shaft curving around the
+    edges of the picture. At the top right edge, the bare hand of tfny7 woman, its long
+    almond-shaped nails painted glossy black, grips the outside of the shaft, pressing the boot
+    toward the lens. Nothing else is in frame. A warm overhead light glints along the polished
+    rim, the inside falling away into deep shadow. Restrained palette of black leather, shadow
+    and a glint of warm light; natural leather texture, fine 35 mm film grain, sharp focus on
+    the inner lining.

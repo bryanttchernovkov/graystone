@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# An escape beat: entered only through SLIP in Cell Three, it puts you on Main Street. It exists so
+# the Escape Artist achievement has somewhere to arrive.
+id: undercroft-alley
+name: The alley behind the First Church
+tags: []
+description: Wet grass under a broken basement window.
+arrival:
+  text: |
+    You lie in the wet grass for a breath, then get up and walk, not run, because a man
+    running in Graystone gets noticed. The alley lets out onto Main Street. Somewhere under
+    your feet a chair scrapes on flagstone, and somewhere behind you a key ring rattles on
+    its chain.
+  effects:
+    - move.to: main-street-south
+art:
+  image: results/undercroft-cell-back.risk.slip.png
+  generate: false

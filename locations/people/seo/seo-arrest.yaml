@@ -1,0 +1,133 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: Deputy Seo arrests you on the wharf. Reached by move.to from RISK-APPROACH at the docks'
+# river view (open record), and from the setback penalty on her ground (open record): she is
+# never by the car when you look for her. Protocol, not force: a felony prone from behind, every
+# step said out loud. The image is the cuffing, from his shoulder as he lies on the wharf. The arrival
+# puts the Handcuffs on; then you choose, face down:
+#   DEAL-SURRENDER (evidence): hand her what you're carrying. The crime and the Criminal Record
+#     go away, the cuffs come off, and you're Seo's Snitch, back on your feet at the river.
+#   TALK-REASON (no evidence): she mocks you for having nothing, and takes you in.
+#   TALK-COMPLY (always): say nothing, get taken in.
+# Taken in: the arrest goes on in seo-rights (she tramples you and reads the advisement), then
+# seo-booking (stripped: Nude) and her holding cage. The Record comes with you, to be worked off.
+# Evidence cards (crime jobs: smuggling, theft…) carry tag `evidence`; each one adds its own
+# card.lose line to SURRENDER, since a location can only lose cards by ID.
+id: seo-arrest
+name: Face down on the wharf
+tags: [law]
+description: Cold concrete under your cheek, the river at eye level, and one black boot a hand's width from your face.
+arrival:
+  text: |
+    "Sheriff's department. Don't turn around."
+
+    The voice is behind you, close, and so soft you almost ask her to say it again. You
+    don't. She does anyway, in the same voice, and then keeps going, one instruction at a
+    time, waiting until each one is done.
+
+    "Hands up. Open your fingers. Thank you. Down on your knees. Now lie down on your stomach.
+    Face to the river. Hands on your head. Lace your fingers. Cross your ankles. Right over
+    left." A pause. "Other right."
+
+    The concrete is cold and smells of diesel and gulls. From down here the wharf is a gray
+    plain running off to the ship, and then a boot comes down into it a hand's width from your
+    face: black, mirror-polished, a low riding heel, the shaft going up out of sight. The other
+    one settles somewhere behind your knees.
+
+    "Everybody looks at the car," she says, above you. "I'm never in the car."
+
+    She takes your right hand off your head, brings it down to the small of your back and cuffs
+    it, then the left, and checks the gap at each wrist with her little finger. Pats down your
+    pockets, one at a time, in the order she gave them. Then she crouches where you can see her
+    for the first time: tan knees, a duty belt, the ends of a pink bob swinging
+    forward against her cheek. The aviators come down half an inch.
+
+    "Hello, Ankles. You crossed them very nicely." A small black notebook comes out of her
+    jacket. "You have a record, with open counts on it. Before you go in my car, this is the part where you
+    talk. Most people say something stupid. Some people say something useful. I write both
+    down."
+  effects:
+    - card.gain: handcuffs
+actions:
+  - category: deal
+    word: SURRENDER
+    cost: 1
+    always: true
+    requires: [evidence]
+    prompt: Tell her what you're carrying and give it up to her.
+    result:
+      text: |
+        You tell her. She listens without writing anything, then reaches into the pocket you
+        named and takes it out between two fingers, by the corner. It goes into a clear bag from
+        her belt, and the bag goes into her jacket.
+
+        "Thank you," she says. "That was very useful."
+
+        The cuffs come off, left, then right. She stands up, and you hear the notebook open.
+
+        "This is how it works now. That never happened. Your record never happened. I had a quiet
+        morning with my gulls." The pencil scratches. "And you have a page. Your name at the
+        top, and under it, everything you're going to tell me. People think the river doesn't
+        hear things. The river hears everything. Then it tells me." She taps the notebook
+        against your shoulder. "So now you're the river. Get up. Walk slow. Nobody watches a
+        man walking slow."
+      effects:
+        - card.lose: handcuffs
+        - card.lose: criminal-record
+        - card.gain: seos-snitch
+        - move.to: docks-river
+  - category: talk
+    word: REASON
+    cost: 1
+    always: true
+    unless: [evidence]
+    prompt: Talk to her. Try to reason your way out of the back seat.
+    result:
+      text: |
+        You talk. She writes it down, all of it, nodding along, and when you run out she reads a
+        line of it back to you in your own words.
+
+        "Okay. My turn." She ticks your pockets off on her fingers. "No package. No cash that
+        isn't yours. Nothing stolen, nothing to trade, nothing I'd want to put in a bag." She
+        laughs, softly, close to your ear. "You have a record and nothing to show for it. Do you
+        know what that makes you? Not a criminal. A criminal has something. You're a man who
+        got caught without doing the fun part." The pencil goes on scratching. "That's very
+        sad, Ankles. I'm writing that down too."
+
+        She closes the notebook. "Okay. Now the part I like."
+      effects:
+        - move.to: seo-rights
+  - category: talk
+    word: COMPLY
+    cost: 0
+    always: true
+    prompt: Say "yes, ma'am" and nothing else, and let her take you in.
+    result:
+      text: |
+        "Yes, ma'am."
+
+        She waits for more, and when nothing comes she closes the notebook with a small,
+        approving click. "Good. Quiet is smart. Nobody ever gets in trouble for the words they
+        didn't say."
+
+        She puts the notebook away. "Now we do this properly."
+      effects:
+        - move.to: seo-rights
+art:
+  loras: ["sorenji_krea2_000001400:0.9", "pvarst7_krea2_000002250:0.8"]
+  subject: >
+    pvarst7 POV arrest photo, a first-person view from the arrested man's own shoulder as he
+    lies face down on the concrete of a river wharf, the camera low beside his head, looking
+    back past his right shoulder along his back at his right arm being handcuffed behind him,
+    the forearm laid across the small of his back, his plain heather gray T-shirt and blue jeans
+    lying flat on the rough gray concrete in the foreground, his bare hairy forearm with no
+    watch or bracelet and his palm turned up. On the right side of the frame stands sorenji
+    woman in her uniform with a green bomber jacket, the jacket open over her tan shirt and her
+    vivid azure blue necktie, no jewelry, her black riding boots planted on the concrete beside
+    his hip, bending forward from the waist over him, her face above him at the top of the
+    frame. She is bare-handed, reaches down and grips his forearm just above the polished steel
+    hinged handcuff locked on his wrist and holds the empty second cuff, closed, in her other
+    hand. She looks down at the cuff with calm, careful attention and a small, soft smile.
+    Behind her, out of focus, the wharf runs away to a black iron bollard and the long dark red
+    rusting hull of a river cargo ship under a pale sky. Flat, bright, hazy late-morning light
+    from the high pale sky, a white glint on the steel cuff, natural skin texture, fine film
+    grain, 28 mm lens.

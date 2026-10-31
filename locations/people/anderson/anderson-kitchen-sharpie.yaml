@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Beat: Deputy Anderson on her coffee break, one of three coin-flip reactions to DEAL-GREET in
+# the station kitchenette (her paypig only). Her hand out for $10: pay and stay in the
+# kitchenette, or come up short and she throws you out of the station and takes your badge.
+id: anderson-kitchen-sharpie
+name: The kitchenette
+tags: [law]
+description: She has a Sharpie, and you have a forehead.
+arrival:
+  text: |
+    She takes a black Sharpie out of her breast pocket, pulls the cap off with her teeth and
+    backs you up against the fridge with two fingers on your chest. Magnets go everywhere.
+
+    "Hold still. Chin up. If you make me smudge it I'm doing it again bigger."
+
+    She leans in, close enough that you can smell her coffee and her gum, and writes on your
+    forehead in capitals. The felt tip is wet and cold and she presses hard, and she takes her
+    time over each letter, saying it as she goes. P. A. Y. P. I. G. Then, with her tongue
+    between her teeth, a little curly tail on the G.
+
+    She leans back to look at it, and snorts. "Perfect. Honestly, it's the most honest thing
+    about you." She caps the pen against her palm and holds out the same hand. "Ten bucks.
+    Lettering's extra, but I'm feeling generous."
+  effects:
+    - card.gain: paypig-sharpie
+    - choose:
+        - label: Pay her $10
+          price: { cash: 10 }
+          text: |
+            You give it to her. She folds the bill around the Sharpie, tucks both into her breast
+            pocket and pats it.
+
+            "Don't wash it off till you get home," she says. "Walk the long way."
+          effects:
+            - move.to: station-kitchen
+        - label: Come up short
+          text: |
+            You open your wallet and she looks in it with you, and snorts.
+
+            "Wow. No. Okay." She takes a fistful of your collar and walks you out of the
+            kitchenette, down the side aisle past the cages, through the arch and past the
+            front desk, at her own pace, so that everybody gets a good look. At the desk she
+            stops long enough to unclip your badge and drop it on the counter in front of Niamh.
+
+            "He's done for the day."
+
+            Niamh looks at the badge, and at you, and says nothing at all.
+
+            Anderson pushes open one of the big oak doors with her free hand and lets go of
+            your collar on the top step. "Come back when you're worth something, babe."
+          effects:
+            - card.lose: contractor-badge
+            - move.to: main-street-south
+art:
+  loras: ["tfny7_krea2_000000800:1"]
+  subject: >
+    First-person point-of-view widescreen photograph from standing eye height in a small staff
+    kitchenette with pale limestone walls, the camera level, of tfny7 woman in her tfny7
+    uniform, bare-headed, standing one pace from the lens, framed from the chest up. She looks
+    directly into the camera, making eye contact with the viewer, with gleeful, concentrated
+    contempt: green eyes narrowed with amusement, one dark brow arched high, the small black
+    plastic lid of the marker clamped between her grinning teeth. In her bare right hand, held
+    up beside her face, a thick black permanent marker, open, its wet felt tip pointing toward
+    the ceiling. Behind her, out of focus, a low whitewashed vault and the corner of a white
+    refrigerator covered in pinned papers. A warm overhead light lights her face from above.
+    Restrained palette of pale limestone, uniform tan, vivid azure blue, platinum blonde and
+    black ink; natural skin texture, fine 35 mm film grain, focus on her eyes and the marker.

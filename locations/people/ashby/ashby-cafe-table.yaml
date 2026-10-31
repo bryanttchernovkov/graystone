@@ -1,0 +1,254 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: at Sergeant Ashby's window table in Café Linde, off the clock. Reached by move.to from
+# TALK-APPROACH at the café window (no record); out goes back to the window. Her method off duty
+# is the same as below the church: permission. Separate from Ashby's Good Side for now; her
+# trust option here is still to come.
+id: ashby-cafe-table
+name: The Sergeant's table
+tags: [law]
+hub: true
+description: A marble table by the window, a cappuccino, a folded newspaper, and Sergeant Ashby, who hasn't asked you to sit.
+arrival:
+  text: |
+    Up close she's bigger than she looks from across a room: tall even sitting down, broad in
+    the shoulders, her tan shirt starched stiff. No jacket, no hat, her gloves still on. The cup
+    looks small in her hand. The brass bar over her pocket says ASHBY.
+
+    She turns a page of the paper. "You're standing at my table. People who stand at my table want something. Ask for it properly, or go stand at
+    somebody else's."
+actions:
+  - category: talk
+    word: ASK
+    cost: 1
+    unless: [gagged]
+    prompt: Ask if you can sit. She decides how it's asked, and whether a chair is what you get.
+    result:
+      text: |
+        "Can I sit?"
+
+        "You can. Your legs work." She doesn't look up. "Try again."
+
+        "May I sit?"
+
+        "May I sit, what."
+
+        "May I sit, Sergeant."
+
+        "Better. Full sentence. With the reason in it."
+
+        You try again, and again, and the woman at the next table puts her fork down to listen.
+        On the fifth try it comes out right: rank, request, reason, please.
+
+        Ashby lays the paper down and looks at you for the first time.
+
+        "No," she says. "You may stand. There." She points at the floor beside her chair with
+        one gloved finger. "Heels together. And you'll thank me for the answer, since you
+        worked so hard for it."
+
+        "Thank you, Sergeant."
+      effects:
+        - tracker.change: { nerve: -1 }
+        - skill.gain: talk
+      art:
+        loras: ["ashby7_krea2_000001200:0.9"]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height beside a
+          small round white marble café table by a tall brass-framed front window, the camera
+          tilted down. ashby7 woman in her sheriff's uniform, a sergeant in her early thirties
+          with her long black locs gathered at the nape, sits at the table turned toward the
+          lens, framed from the waist up, a white porcelain cappuccino cup on its saucer and a
+          folded newspaper on the marble in front of her. She looks up directly into the camera,
+          making eye contact with the viewer, with cool, level judgment: dark eyes steady,
+          straight brows flat, lips pressed in a firm line. Her pressed tan uniform shirt has
+          vivid azure blue trim on the pockets and epaulets, three vivid azure blue chevrons on
+          each sleeve and a polished gold six-point star badge, with a vivid, saturated azure
+          blue tie and a small gold tie bar; she wears black leather duty gloves, a black
+          leather duty belt with a ring of heavy iron keys at the hip, and tan riding breeches,
+          the same khaki tan as her shirt, with a vivid azure blue stripe down the outer seam.
+          Her gloved right hand is raised beside her chest, one black-gloved index finger
+          pointing down at the floor beside her chair; her gloved left hand holds the cappuccino
+          cup on its saucer at her chest. Through the window behind her, softly out of focus, a
+          small town square with a pale limestone church and a parked white and tan patrol car.
+          Bright morning daylight through the window lights her from the side and behind, with
+          soft fill from the cream walls on her face. Restrained palette of uniform tan, vivid
+          azure blue, white marble, black leather and pale limestone; natural skin texture, fine
+          35 mm film grain, focus on her eyes.
+  - category: work
+    word: STAND
+    cost: 1
+    prompt: Stand at parade rest by her table while she finishes her cappuccino. She inspects how you stand, and corrects it, with the whole café watching.
+    result:
+      text: |
+        "Parade rest. Feet shoulder width. Hands behind you, right in left. Eyes front."
+
+        You stand. She drinks her cappuccino and reads the paper, one page at a time, and
+        every so often, without looking up, she corrects you. "Chin." You lift your chin.
+        "Shoulders." She reaches out and presses two gloved fingers into the small of your
+        back until you straighten. "Thumbs." You fix your thumbs.
+
+        Francine comes by with a cloth and wipes the next table and says, "He's not bad,
+        Sergeant," and Ashby says, "He's not good," and Francine laughs.
+
+        Twenty minutes. Your calves burn. When the cup is empty she folds the paper, stands,
+        and walks once all the way around you, looking.
+
+        "Fall out." She tucks the paper under her arm. "Do it every morning and in a month
+        you'll stand like a man."
+      effects:
+        - tracker.change: { time: -1 }
+        - skill.gain: work
+      art:
+        loras: ["ashby7_krea2_000001200:0.9"]
+        subject: >
+          Intimate first-person photograph from standing eye height inside a small café, the
+          camera level and close. ashby7 woman in her sheriff's uniform, a sergeant in her early
+          thirties with her long black locs gathered at the nape, stands an arm's length in
+          front of the lens, framed from the chest up, her face in the upper center of the
+          frame. Her black-gloved right hand is raised beside her face, palm up, its index
+          finger lifted and pointing straight up in a sharp chin-up signal. She looks directly
+          into the camera, making eye contact with the viewer, with stern, exacting scrutiny:
+          dark eyes narrowed and searching, straight brows drawn together, lips pressed thin.
+          Her pressed tan uniform shirt has vivid azure blue trim on the pockets and epaulets,
+          three vivid azure blue chevrons on each sleeve and a polished gold six-point star
+          badge, with a vivid, saturated azure blue tie and a small gold tie bar; her hands are
+          in black leather duty gloves. Behind her, out of focus, empty white marble tables and
+          bentwood chairs and a tall brass-framed window full of daylight. Bright daylight from
+          the window lights her face from the side. Restrained palette of uniform tan, vivid
+          azure blue, black leather and white marble; natural skin texture, fine 35 mm film
+          grain, focus on her eyes.
+  - category: deal
+    word: FETCH
+    cost: 1
+    prompt: Offer to fetch her a second cappuccino, and pay for it. She tells you how she takes it, once, and a man who comes back empty-handed hears about it.
+    result:
+      text: |
+        "Sergeant, may I get you another?"
+
+        "You may." She tells you how she takes it, once: medium cup, dry foam, no chocolate,
+        no sugar, not too hot, and the change goes in the jar.
+
+        At the counter Francine is already making it before you open your mouth. She knows
+        the order. She lets you say it all anyway, and nods along, and names the price.
+
+        "And the jar," she says.
+      effects:
+        - choose:
+            - label: Pay for her cappuccino and the jar ($6)
+              price: { cash: 6 }
+              text: |
+                You carry it back to the table without spilling. Ashby takes it, tastes it, and
+                says "thank you." Once.
+              effects:
+                - tracker.change: { nerve: +1 }
+                - skill.gain: deal
+            - label: Come back empty-handed
+              text: |
+                She looks at your empty hands and goes back to her paper, and doesn't say
+                anything at all.
+              effects:
+                - tracker.change: { nerve: -1 }
+      art:
+        loras: ["ashby7_krea2_000001200:0.9"]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height beside a
+          small round white marble café table by a tall brass-framed window, the camera tilted
+          slightly down. A pale man's bare hands and forearms with short unpolished nails enter
+          from the bottom edge of the frame, setting a white porcelain cappuccino cup on its
+          saucer down on the marble, dry white foam domed above the rim. ashby7 woman in her
+          sheriff's uniform, a sergeant in her early thirties with her long black locs gathered
+          at the nape, sits at the table just beyond it, framed from the waist up, her right
+          gloved hand reaching for the saucer and her left gloved hand holding a folded
+          newspaper against her chest. She looks up directly into the camera, making eye contact
+          with the viewer, with reserved, grudging approval: dark eyes steady, one straight brow
+          slightly raised, lips closed with the corners barely lifted. Her pressed tan uniform
+          shirt has vivid azure blue trim on the pockets and epaulets, three vivid azure blue
+          chevrons on each sleeve and a polished gold six-point star badge, with a vivid,
+          saturated azure blue tie and a small gold tie bar; she wears black leather duty
+          gloves, a black leather duty belt with a ring of heavy iron keys at the hip, and tan
+          riding breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down
+          the outer seam. Through the window behind her, out of focus, a town square with a pale
+          limestone church. Bright morning daylight through the window lights her from the side,
+          catching the foam and the polished gold star. Restrained palette of uniform tan, vivid
+          azure blue, white marble, porcelain white and black leather; natural skin texture,
+          fine 35 mm film grain, focus on the cup and her eyes.
+  - category: work
+    word: SHINE
+    cost: 1
+    always: true
+    requires: [boots]
+    prompt: Ask permission to see to the scuff on her boot, under the table, with your tongue, in the middle of the morning rush.
+    result:
+      text: |
+        You've seen it from where you're standing: a gray scuff on the toe of her right boot,
+        where the curb caught it on the walk over.
+
+        "Sergeant, permission to see to your boot."
+
+        She looks down at the toe, and the scuff, and back at you. "You noticed that."
+
+        "Yes, Sergeant."
+
+        "Granted. Under the table. Tongue only. Nobody here needs to see your hands."
+
+        You kneel on the tile and duck under the marble. It's quieter under there, the café
+        going on over your head, cups and the machine and a woman laughing at the counter. She
+        sets the boot forward on the tile for you, not an inch more than she has to.
+
+        You start at the scuff and work it in small circles with the flat of your tongue until
+        the gray lifts and the polish under it comes back, and then you don't stop at the
+        scuff. The whole toe, the welt, the crease at the ankle. The leather is cool from
+        outside and tastes of wax and the street. Above you she turns a page.
+
+        When she's satisfied she taps the boot twice on the tile, and you come out, and stand,
+        and wipe nothing.
+
+        "Adequate," she says, and holds out her cup for you to take back to the counter.
+      effects:
+        - tracker.change: { nerve: +1 }
+        - skill.gain: work
+      art:
+        loras: ["ashby7_krea2_000001200:0.9"]
+        subject: >
+          Detail close-up first-person photograph from kneeling height on a black-and-white
+          hexagon tile floor under a small round white marble café table, the camera level and
+          inches from the boot of ashby7 woman in her sheriff's uniform, seated on a bentwood
+          chair. Her right boot is stretched forward and fills the frame on a diagonal from the
+          lower left corner to the upper right: a polished black leather thigh-high riding boot
+          with a rigid straight shaft fitted tight to the leg, its rounded toe cap resting
+          forward on the tile, wet and glossy, catching the window light as a sharp highlight, a
+          tight line of black welt stitching round the toe, the low, flat stacked-leather riding
+          heel planted on the tile, the soft crease at the ankle, and the shaft rising out of
+          the top right corner to just above her knee, where tan riding breeches, the same khaki
+          tan as her shirt, disappear into the boot top. Her black-gloved hand rests on her knee
+          at the top right corner, and the frame ends just above it. Behind the boot, out of
+          focus, the black iron pedestal of the table, the legs of empty bentwood chairs and the
+          bright front window. Bright daylight from the window lights the boot from the side,
+          the underside of the table in soft shadow. Restrained palette of black leather,
+          uniform tan, black-and-white tile and white marble; natural leather texture with
+          visible stitching and grain, fine 35 mm film grain, very shallow depth of field on the
+          toe cap.
+art:
+  loras: ["ashby7_krea2_000001200:0.9"]
+  subject: >
+    Eye-level widescreen photograph from standing height a pace from a small round white marble
+    café table on a black cast-iron pedestal base, set against dark walnut wainscot paneling
+    below a tall brass-framed front window, on a black-and-white hexagon mosaic tile floor, the
+    camera level. A small glass sugar jar and a folded cream card stand on the marble. ashby7
+    woman in her sheriff's uniform, a sergeant in her early thirties with her long black locs
+    gathered at the nape, sits alone at the table on a dark bentwood café chair, turned toward
+    the lens, framed from the knees up, legs crossed at the knee, a folded newspaper on the
+    marble beside her and a white porcelain cappuccino cup held at her chest in one gloved hand,
+    its saucer in the other. She looks directly into the camera, making eye contact with the
+    viewer, with cool, unimpressed patience: dark eyes steady, straight brows level, lips
+    closed. Her pressed tan uniform shirt has vivid azure blue trim on the pockets and epaulets,
+    three vivid azure blue chevrons on each sleeve and a polished gold six-point star badge,
+    with a vivid, saturated azure blue tie and a small gold tie bar; she wears black leather
+    duty gloves, a black leather duty belt with a ring of heavy iron keys at the hip, tan riding
+    breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down the outer
+    seam, and polished black leather thigh-high riding boots with rigid straight shafts and low,
+    flat stacked-leather riding heels. Through the window behind her, softly out of focus, a
+    small town square with a pale limestone Gothic Revival church and white and tan patrol cars
+    at its steps. Bright morning daylight through the window lights her from the side and
+    behind, with soft fill from the cream walls on her face. Restrained palette of uniform tan,
+    vivid azure blue, white marble, dark bentwood, walnut, black leather and pale limestone;
+    natural skin texture, fine 35 mm film grain, focus on her eyes.

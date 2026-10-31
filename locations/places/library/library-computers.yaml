@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# The Carnegie library, turned around: the computer corner by the arched window, four public
+# computers, and Juno Vance at the corner table on her own laptop, small in the background.
+# TALK-APPROACH takes you to her table (her storyline). Out goes to Mill Street.
+id: library-computers
+name: The library, the computer corner
+hub: true
+description: Four beige public computers on a long table by an arched window, and a woman in the corner on a laptop covered in stickers.
+actions:
+  - category: talk
+    word: APPROACH
+    cost: 1
+    always: true
+    prompt: Go over to the woman at the corner table.
+    result:
+      text: |
+        She doesn't take the headphones off. She doesn't look up, either. You stand at the
+        corner of her table long enough to read the stickers on her laptop lid, a cat, a star,
+        a lightning bolt, another cat, and she types the whole time.
+
+        Then she pushes one ear cup back with a finger and looks at you over her glasses.
+
+        "Dude. You've been looking at me since you walked in." She pulls the other chair out with
+        her foot. "Sit. Don't touch the stickers."
+      effects:
+        - move.to: library-juno-table
+  - category: work
+    word: LOGIN
+    cost: 1
+    prompt: Use a public computer for an hour. Somebody left their session open.
+    result:
+      text: |
+        The last person didn't log out. The browser is open to a page with a teal banner and a
+        grid of photos, every one of them blurred, and a price under each. The profile picture
+        is a girl in thick black glasses sticking her tongue out at the camera.
+
+        You look up. The girl in the corner is looking at you over the top of her laptop, with
+        her tongue in her cheek.
+
+        "Close the tab," she says, not quietly, "or subscribe. Those are the two options."
+
+        Two retirees at the newspaper rack turn around to look at you. You close the tab, and
+        answer an hour of email, and your ears stay hot for most of it.
+      effects:
+        - skill.gain: work
+  - category: look
+    word: WATCH
+    cost: 1
+    prompt: Sit at a terminal and watch the room.
+    result:
+      text: |
+        Men come in to use the computers. They look around before they sit down, and they sit
+        with their backs to the wall, and they all look at the corner table at least once.
+
+        She notices every one of them. She doesn't look up to do it; she types something, and
+        the man's screen flickers, and he logs out fast and leaves without his library card. By
+        three o'clock she has a little stack of them by her elbow, and she's sorting them.
+      effects:
+        - skill.gain: look
+art:
+  loras: ["jovessa_krea2_000001200:1"]
+  subject: >
+    Eye-level widescreen photograph from standing height in the computer corner of a small round
+    Carnegie library reading room, the camera level. The left two-thirds of the frame look along
+    a long pale laminate table that runs away from the lens toward a tall arched window with
+    small clear leaded panes, four boxy beige public desktop computers with old cream keyboards
+    standing in a row on it, their screens showing soft blue login screens with blurred
+    placeholder text, gray office chairs pushed in beneath, and dark oak bookcases of faded
+    cloth-bound books curving away beyond them under a black cast-iron gallery railing. In the
+    right third of the frame, three paces away, jovessa woman in her usual black outfit, wearing
+    her black rectangular glasses and a black ring choker, the only woman in the room, sits at a
+    small round oak table, turned half toward the lens, both hands on the keyboard of a plain
+    black laptop, the back of its lid covered edge to edge in small, colorful vinyl stickers of
+    cartoon cats, stars, hearts and lightning bolts, none of them with any lettering, glancing
+    up from the screen toward the camera with sly amusement, eyes narrowed behind her glasses,
+    one brow lifted. Afternoon daylight pours through the arched window at the end of the table
+    and lies along it, rimming her hair in light. 35 mm lens, natural colour, fine film grain,
+    deep focus from her table to the far window.

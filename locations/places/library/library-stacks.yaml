@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# The Carnegie library, looking across the reading room. In from Mill Street; turning around
+# (free) looks at the computer corner, where Juno Vance sits. Miss Carrow, the librarian, sits
+# at the circulation desk: TALK-APPROACH takes you to her desk (her storyline).
+id: library-stacks
+name: The Carnegie library
+hub: true
+description: A round reading room under a copper dome, oak shelves around the walls, green lamps on the long tables, and a red-haired librarian at the desk making sure nobody talks.
+actions:
+  - category: talk
+    word: APPROACH
+    cost: 1
+    always: true
+    prompt: Go up to the circulation desk.
+    result:
+      text: |
+        Your shoes are loud on the oak boards. Every step of the way to the desk is loud, and
+        she lets you hear all of them before she looks up from the card she's writing.
+
+        "Good afternoon." Her voice carries without rising; it's English, and it's been trained.
+        "Miss Carrow. I'm the librarian. You'll have noticed the room is quiet. It is quiet
+        because I keep it that way." She caps her pen. "Now, young man. What can the library do
+        for you?"
+      effects:
+        - move.to: library-desk
+  - category: look
+    word: BROWSE
+    cost: 1
+    prompt: Browse the stacks for an hour.
+    result:
+      text: |
+        The shelves follow the curve of the walls, and the spines go from Dewey to dust. Local
+        history has three shelves of its own: the quarry, the railroad, the flood of '93, a
+        self-published book about the First Church with a photograph of the pulpit on the cover,
+        back when it had one.
+
+        Somebody has been reshelving true crime into gardening. It's been done carefully, one
+        book at a time, over what looks like months, and nobody has put any of it back.
+      effects:
+        - skill.gain: look
+  - category: look
+    word: READ
+    cost: 2
+    prompt: Sit down at a long table under a green lamp and read the county's history.
+    result:
+      text: |
+        The county history is two volumes and a supplement. The supplement is new: a spiral-bound
+        report from the Mayor's office with a chart on every other page, every line on every chart
+        going down. Misdemeanors, break-ins, bar fights, the river. A short chapter on the
+        Sheriff's Department says it was "rebuilt with a new emphasis on direct correction" and
+        then moves on to road resurfacing.
+
+        It's quiet under the dome. The lamp is warm on your hands. For an hour nobody wants
+        anything from you.
+      effects:
+        - tracker.change: { nerve: +1 }
+art:
+  loras: ["imcrw7_krea2_000001200:1"]
+  subject: >
+    Eye-level widescreen photograph from standing height in a small round Carnegie library
+    reading room, the camera level. The left two-thirds of the frame look across the room: two
+    long dark oak reading tables running away from the lens with oak chairs pushed in, a row of
+    brass reading lamps with green glass shades lit along each, a faded red runner on worn honey
+    oak floorboards, tall dark oak bookcases of faded cloth-bound books around the curved walls,
+    a narrow gallery with a black cast-iron railing, a black cast-iron spiral staircase, and a
+    plaster dome rising to a round skylight of leaded glass. In the right third of the frame,
+    three paces away, behind a curved dark oak circulation desk with a brass bell and a neat
+    stack of returned books, sits imcrw7 woman in her gray skirt suit, the fitted charcoal
+    jacket buttoned once at the waist over a cream silk blouse open at the collar, her throat
+    bare, no tie, a slim gold watch on her left wrist, the only woman in the room, seen from the
+    waist up above the desk, a fountain pen over an index card, turned half toward the lens and
+    looking up at the camera with cool, level disapproval. A tall wooden card catalogue stands
+    behind her. Soft daylight falls in a pale column from the skylight onto the tables, the
+    green lamps add pools of warm light on the oak, and a brass lamp on the desk lights her
+    face. 35 mm lens, natural colour, fine film grain, deep focus from the desk to the far
+    shelves.

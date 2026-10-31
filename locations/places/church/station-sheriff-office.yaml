@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# The First Church station, the back: the Sheriff's office upstairs, built into the old choir
+# loft but fitted out as a proper office (art: no church left in it but the round window behind
+# her desk, which her desk shot shows). Up the stair from the bullpen (down goes back).
+# TALK-APPROACH takes you to her desk (her storyline).
+id: station-sheriff-office
+name: The Sheriff's office
+tags: [law]
+hub: true
+description: "A proper office upstairs: walnut paneling, a big desk, a leather couch, shelves of law books, a window over the bullpen, and the Sheriff behind the desk, smiling."
+actions:
+  - category: talk
+    word: APPROACH
+    cost: 1
+    always: true
+    prompt: Cross the office to the Sheriff's desk.
+    result:
+      text: |
+        She watches you come all the way across the room, pleasant and patient, and doesn't get
+        up: the desk is big, the chair is bigger, and the round window behind her puts all the
+        light in the room on you.
+
+        "There he is." Her smile is warm and it reaches her eyes, which are very blue. "Laura
+        Brandt. Sheriff. Sit down, hon, you're making the room look untidy." She waits until you
+        do. "Now. Niamh tells me everything that comes through those doors, and she's told me a
+        little about you. I'd like to hear the rest from you. Take your time."
+      effects:
+        - move.to: sheriff-desk
+  - category: look
+    word: WINDOW
+    cost: 1
+    prompt: Look down at the bullpen through the loft window.
+    result:
+      text: |
+        From up here the nave is a map of desks. You can see every screen, every cage, the top of
+        every deputy's head. A deputy at the far end looks up, sees the window, and straightens
+        her tie without being asked.
+
+        The window doesn't open. It was built for a choir to sing through.
+      effects:
+        - skill.gain: look
+art:
+  loras: ["lorbrandt_krea2_000001200:1"]
+  subject: >
+    A wide eye-level photograph from just inside the door of an elegant, expensive executive
+    office. The left two-thirds of the frame look across the room: walls paneled in rich dark
+    walnut, a white ceiling with a slim brass chandelier, a deep-green and cream patterned rug
+    on a polished herringbone oak floor, a dark green leather Chesterfield sofa with a cream
+    cashmere throw before a low walnut coffee table with a crystal decanter and two glasses, a
+    tall built-in walnut bookcase of leather-bound law books, and in the far wall a wide
+    interior window of clear glass looking out over a bright open room below. In the right third
+    of the frame, three paces away, behind a large polished walnut desk with a green leather top
+    and a brass banker's lamp, sits lorbrandt woman in her uniform in a tall dark leather chair,
+    waist-up above the desk, her hands folded on the leather, turned half toward the camera with
+    a pleasant, inviting smile. A single round stained-glass window glows in the wall behind
+    her. Warm afternoon light from the round window, the brass lamp and the chandelier fill the
+    room with a soft golden glow. 35 mm lens, natural colour, fine film grain, deep focus.

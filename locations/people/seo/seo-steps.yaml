@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: Deputy Seo gives you your clothes back on the First Church steps, in front of the
+# square. Reached only by move.to from DEAL-COLLECT in undercroft-cell (time served, not
+# trusted, still Nude: the swapped twin of DEAL-SIGN). The arrival removes Nude; the only way
+# on is down the steps to Main Street.
+id: seo-steps
+name: The First Church steps
+tags: [law]
+hub: true
+description: Wide limestone steps above the square, the big oak doors open behind you, and Deputy Seo on the top step with a paper bag.
+arrival:
+  text: |
+    Up the crypt stairs, through the nave, past every desk, and nobody hands you anything.
+    The big oak doors are open onto daylight. Deputy Seo is on the top step in her green
+    jacket, with the aviators on and the brown paper bag under her arm.
+
+    "Hello, Ankles. Stop there. One step down." She waits until you're on it, below her,
+    with the whole square at your back. "Hands at your sides."
+
+    She tears the staples out, one, two, and takes out a sock, and holds it up to the light,
+    and hands it to you. Then waits while you put it on, standing on one foot on the church
+    steps. Then the other sock.
+
+    "Graystone," she says, not loud, but the square is quiet. "This is Ankles. Say hello,
+    Ankles." Across the street someone at Café Linde's window lifts a coffee cup. A cruiser
+    going by slows down to a crawl and doesn't speed up again until it's past.
+
+    Shoes next, then everything else, one piece at a time, and before each one she reads
+    the matching line out of the notebook. She saves the underwear for last.
+
+    "You made me wait for these at booking," she says, and holds them out at arm's length,
+    and lets you reach. "Now we're even."
+
+    When you're dressed she folds the empty bag flat, puts it in her jacket and pats it.
+
+    "Bye, Ankles. I'll see you before you see me."
+  effects:
+    - card.lose: nude
+art:
+  loras: ["sorenji_krea2_000001400:1"]
+  subject: >
+    First-person point-of-view widescreen photograph from standing eye height one step down on
+    the wide limestone front steps of an old deconsecrated Gothic Revival church in a small
+    Midwest town in autumn, the camera tilted slightly up. sorenji woman in her uniform with a
+    green bomber jacket, alone, stands on the top step an arm's length away, framed from the
+    waist up, the tall open oak doors of the church behind her. She looks down directly into the
+    camera, making eye contact with the viewer, with wide, teasing glee: dark eyes bright over a
+    pair of gold-framed aviator sunglasses with mirrored lenses lowered halfway down her nose,
+    delicate brows raised, berry-pink lips in a broad grin. Her bare right hand holds a brown
+    paper property bag open at her side, its torn top hanging loose; her bare left hand holds up
+    a small black notebook open at her chest. Nothing of the viewer is in frame. Behind her, the
+    church's pale limestone front, the tall pointed arch of the doorway and the dark open oak
+    doors. Bright, hazy late-morning sun from the side lights her face and the limestone.
+    Restrained palette of pale limestone, forest green, uniform tan, vivid azure blue, kraft
+    brown, dusty pink and dark oak; natural skin texture, fine 35 mm film grain, focus on her
+    eyes over the aviators.

@@ -1,0 +1,180 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+id: undercroft
+name: The Undercroft
+tags: [law, prison]
+description: Limestone vaults under the old church, caged bulbs, and a sergeant's desk past a yellow line.
+hub: true
+arrival:
+  text: |
+    The stairs come down out of the nave into cold. Limestone vaults, whitewashed once,
+    caged bulbs strung along the ribs, the smell of floor wax and old stone. A yellow line
+    is painted across the flagstones at the bottom step.
+
+    Beyond it, at an old oak desk under the first arch, Sergeant Ashby looks up from a ledger.
+    Black gloves, a tan shirt pressed to an edge, boots polished to a black mirror. She doesn't
+    stand.
+
+    "That's my line," she says. "You stay behind it until I say otherwise."
+
+    Whatever you came down the stairs wearing on your wrists comes off at the line and goes
+    back up with whoever brought it. "Road cuffs," the Sergeant says. "Down here we use mine."
+  # Inmate belongs to the Undercroft: it starts here, however you were brought down. How long
+  # you stay is the Criminal Record you carried down, worked off by Doing Time.
+  # An arrest's Handcuffs come off here; the Undercroft has its own restraints (TERMS).
+  effects:
+    - card.lose: handcuffs
+    - card.gain: inmate
+actions:
+  - category: talk
+    word: ASK
+    cost: 1
+    always: true
+    tags: [doing-time]
+    unless: [gagged]
+    prompt: Ask to approach her desk. She decides how it's asked, and you'll ask until she's satisfied.
+    result:
+      text: |
+        "Can I —"
+
+        "No." She turns a page. "Try it with my rank in it."
+
+        "Sergeant, can I come to the desk?"
+
+        "You can. Whether you may is the question."
+
+        "Sergeant, may I approach the desk?"
+
+        She makes you say it twice more, louder the second time, because the vault carries and
+        she wants the cells to hear what asking sounds like. Then she points at the floor in
+        front of the desk with one gloved finger.
+
+        "Granted. Toes on the seam. Hands where I can see them."
+
+        You stand where she pointed. She goes back to the ledger.
+      effects:
+        - skill.gain: talk
+        - tracker.change: { nerve: -1 }
+      art:
+        loras: ["ashby7_krea2_000001200:0.9"]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height in a crypt
+          built of smooth dressed limestone ashlar blocks laid in straight courses with thin
+          mortar joints under a whitewashed pointed vault, converted into a jail block, the
+          camera tilted slightly down toward an old dark-stained oak desk on four turned legs,
+          its warm brown wood and brass drawer pulls standing out against the gray stone, two
+          paces away on the flagstones. Behind the desk, filling the center of the frame from
+          the waist up, ashby7 woman in her sheriff's uniform, tan with an azure tie, her long
+          black locs gathered at the nape, sits upright in a wooden chair. She looks up from her
+          ledger directly into the camera, making eye contact with the viewer, with cool, amused
+          impatience: one eyebrow arched high, head tilted, lips pressed in a thin, sardonic
+          smirk. She points down at the flagstones in front of the desk with one black-gloved
+          index finger, her other gloved hand flat on an open ruled ledger on the oak desktop.
+          Behind her a pegboard on the ashlar wall holds leg irons and coiled lengths of chain
+          on hooks, beside a cork board with a single typed sheet. Beyond her the windowless
+          underground corridor recedes under a row of pointed arches, each side arch closed by a
+          black iron barred door. Warm light from caged incandescent bulbs hanging on black
+          cords from the vault ribs falls from above and slightly behind her, rimming her
+          shoulders and locs and pooling amber on the dark wood. Palette of limestone gray, dark
+          oak, uniform tan, vivid azure blue and bulb amber; natural skin texture, fine 35 mm
+          film grain, shallow depth of field on her face.
+  - category: deal
+    word: TERMS
+    cost: 1
+    always: true
+    prompt: Hear the Sergeant's terms for your stay. They come with cuffs, chains, a cage, and a walk to a cell.
+    result:
+      text: |
+        "Wrists," she says. "Over the desk. Palms down."
+
+        You hold them out. She takes the first pair of cuffs off her belt without looking at
+        it, closes one ring on your left wrist and ratchets it down until it bites, checks the
+        gap with a gloved fingertip, and takes it one click tighter. Then the right. She
+        double-locks both with the small end of the key.
+
+        "Eight years military police, so here's how it works. You don't stand, sit, speak,
+        drink or piss in my block without asking. You ask, I decide. Every time."
+
+        A belly chain goes around your waist and through the cuffs. A shorter one runs from one
+        ankle cuff to the other. She tugs the whole rig once, hard.
+
+        Then she takes a small stainless steel cage out of the desk drawer, county property, and
+        holds it up between two gloved fingers so you can see it. "Standard issue. Surgical
+        steel, so don't get ideas. Belt."
+
+        She opens your jeans herself, fits the ring and the cage with her gloves on, quick and
+        clinical, and snaps the padlock shut. The key goes into her left breast pocket, behind
+        the star. She buttons the flap.
+
+        "Walk."
+
+        You walk, in the short steps the chain allows, her gloved hand closed on the back of
+        your collar and the keys ringing at her hip, to the third arch on the left.
+
+        Cell Three was a burial niche once: a stone recess under the arch, a cot of steel slats
+        with a gray wool blanket, a steel toilet with no seat, an iron ring in the back wall at
+        ankle height, and high up near the vault, a small barred window at street level. The
+        door rolls shut on its track. She locks it, tries it, and stays a moment with one
+        gloved hand on the bars.
+
+        "Ask nicely," she says, "and the time goes faster."
+      effects:
+        - skill.gain: deal
+        - card.gain: prison-chains
+        - card.gain: chastity-cage
+        - card.gain: ashbys-good-side
+        - move.to: undercroft-cell
+      art:
+        loras: ["ashby7_krea2_000001200:1", "mtlcg7d_krea2_000001250:2"]
+        subject: >
+          A waist-up photograph from standing eye height, the camera two paces back, in a crypt
+          jail of pale limestone ashlar under a whitewashed pointed vault. ashby7 woman in her
+          sheriff's uniform, tan with an azure tie, her long black locs gathered at the nape,
+          stands squarely facing the lens in front of a plain ashlar wall, her right elbow bent
+          and her black-gloved right hand raised beside her shoulder, level with her face,
+          holding an empty stainless steel mtlcg7 chastity cage fitting in her palm, held
+          upright beside her shoulder, small against her gloved fingers and smaller than her
+          face. Her gloved left hand rests on her hip. She looks directly into the camera,
+          making eye contact with the viewer, with calm control and almost smug disdain: chin
+          raised, eyes half-lidded, one corner of her mouth pulled into a faint smirk. Behind
+          her, softly out of focus, the pale ashlar wall rises to a pointed arch. A caged
+          incandescent bulb overhead lights her face warmly and puts a small bright glint on the
+          polished steel. Palette of polished steel, uniform tan, vivid azure blue and limestone
+          gray; natural skin texture, 50 mm lens.
+  - category: look
+    word: READ
+    cost: 1
+    prompt: Read the typed sheet tacked to the board behind her desk.
+    result:
+      text: |
+        UNDERCROFT — STANDING ORDERS, typed, initialed M.A. at the bottom.
+
+        One: detainees request permission for all movement. Two: requests are made by rank,
+        in a full sentence. Three: requests are made once. Four: the Sergeant's decision is
+        final. Five: detainees will maintain the Sergeant's uniform on request.
+
+        Under five, in blue pen, underlined twice: *boots included. Tongue, not cloth.*
+
+        "Memorize it," she says, without looking up. "There's a quiz."
+      effects:
+        - skill.gain: look
+art:
+  loras: ["ashby7_krea2_000001200:0.9"]
+  subject: >
+    Eye-level photograph from the bottom step of a stone staircase into a crypt built of smooth
+    dressed limestone ashlar blocks laid in straight courses with thin mortar joints under a
+    whitewashed pointed vault, converted into a jail block. A broad stripe of scuffed yellow
+    paint runs across the worn gray flagstones a few paces from the camera. Beyond it, under the
+    first rib-vaulted arch, stands an old dark-stained oak desk on four turned legs, its warm
+    brown wood and brass drawer pulls standing out against the gray stone. Behind the desk sits
+    ashby7 woman in her sheriff's uniform, tan with an azure tie, her long black locs gathered
+    at the nape, upright, her black-gloved hands folded on an open ruled ledger. She looks
+    straight into the camera, making eye contact with the viewer, with a level, unimpressed
+    stare: eyes steady, jaw set, lips closed. On the wall behind her hangs a pegboard of leg
+    irons and coiled steel chains on hooks beside a cork board with one typed sheet. Beyond the
+    desk the windowless underground corridor recedes under a long row of pointed arches, each
+    side arch closed by a black iron barred cell door set into the stone, caged bulbs hanging
+    from the vault ribs on black cords, the far end fading into shadow. The desk sits in the
+    center third of the frame with the corridor's vanishing point just above her shoulder. Warm
+    light from the caged incandescent bulbs falls from above in amber pools along the vault.
+    Palette of limestone gray, dark oak, uniform tan, vivid azure blue, black iron and bulb
+    amber; natural skin texture, fine 35 mm film grain, deep focus.

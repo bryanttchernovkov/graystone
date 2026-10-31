@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+id: home-living
+name: Living room
+tags: []
+description: Oak floorboards, a leather sofa, and a laptop open on the coffee table, its screen still lit.
+actions:
+  - category: work
+    word: LAPTOP
+    cost: 0
+    always: true
+    prompt: Sit down at the laptop.
+    result:
+      text: You drop onto the sofa, pull the coffee table closer and wake the screen.
+      effects:
+        - move.to: home-laptop
+art:
+  subject: >
+    Eye-level photograph from the doorway of the small living room of an older wood-frame house
+    in a small Midwest town, standing height, the camera level, looking across the room toward
+    a pair of tall double-hung windows in the far wall. The room has worn honey-colored oak
+    floorboards, plain off-white plaster walls, white painted baseboards and window trim, and a
+    low ceiling with a single frosted glass light fixture. Against the left wall stands a deep
+    brown leather sofa with a folded gray wool blanket over one arm. In the center of the room
+    a low rectangular wooden coffee table holds an open silver laptop, its screen glowing a pale
+    blue-white, beside a white ceramic coffee mug and a loosely coiled white charging cable. A
+    faded red and cream woven rug lies under the table. Beneath the windows a narrow pine desk
+    holds a black gooseneck lamp and a neat stack of manila folders, a wooden kitchen chair
+    pushed in under it. Against the right wall a small flat television sits on a low cabinet
+    beside a tall bookcase half filled with paperbacks, a potted pothos trailing over its top
+    shelf. Through the windows, softly out of focus, the white rail of a porch and the yellow
+    leaves of a maple. The room is tidy, quiet and empty. Soft late-morning daylight comes
+    through the windows in the far wall and lays two pale rectangles across the floorboards and
+    the rug, the laptop screen the one cool bright point in the warm room. Restrained palette of
+    honey oak, off-white plaster, leather brown, faded red and the cool blue-white of the screen;
+    natural texture, fine 35 mm film grain.

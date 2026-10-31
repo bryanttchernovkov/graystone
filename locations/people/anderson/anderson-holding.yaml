@@ -1,0 +1,427 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: booking in Deputy Anderson's holding cage, in the nave bullpen of the First Church.
+# Reached only by move.to from anderson-arrest. The only exit, down, hands you over to the
+# Undercroft (where you become an Inmate). Being good here earns standing with her (Anderson's
+# Attention), never a count off the Record.
+# TALK-NAME gives Anderson's Attention (tag noticed hides it after); the rest raise it. Boot
+# Fetish fast-tracks DEAL-INHALE and Sock Fetish DEAL-WORSHIP (both always); Anderson's Paypig
+# without Sock Fetish opens DEAL-BEG, which earns it. RISK-TEASE gags you (talking hidden).
+id: anderson-holding
+name: Holding cage, First Church
+tags: [law, prison]
+hub: true
+description: A chain-link cage in the side aisle of the old church, a steel bench with a rail, and Deputy Anderson's desk just outside it.
+arrival:
+  text: |
+    She walks you up the church steps and through the big oak doors with one hand on the chain
+    between your wrists, like a leash she's embarrassed to be seen holding. The nave is a
+    bullpen now: steel desks in rows under the stained glass, phones, a radio murmuring, two
+    deputies who look up and then make a point of looking down again.
+
+    In the side aisle there's a chain-link cage with a steel bench bolted inside. She sits you
+    on it, unlocks one cuff and locks it again around the bench rail.
+
+    "Stay," Deputy Anderson says, and drops into the chair at the desk outside, with your
+    paperwork and her phone. "Booking takes as long as I say it takes. Entertain me."
+actions:
+  - category: talk
+    word: NAME
+    cost: 0
+    unless: [noticed, gagged]
+    prompt: Give her your name for the booking form. She has opinions about it, and about your face.
+    result:
+      text: |
+        "Name."
+
+        You give it. She writes it, crosses it out, writes it again. "Spell it." You spell it.
+        She reads it back to you with one letter wrong, then a different letter wrong, and
+        waits each time for you to correct her, and each time says, "That's what I said."
+
+        She gets up, holds her phone to the chain-link and takes your booking photo through
+        it.
+
+        "Chin up. No, up. Okay, now you look like you're about to cry. Perfect. Hold that."
+        She looks at the picture and shows it to the deputy at the next desk, who snorts.
+
+        "I'm keeping this one," Anderson says, sitting back down. "I'm going to remember you,
+        babe. Bad news for you, honestly."
+      effects:
+        - card.gain: andersons-attention
+        - skill.gain: talk
+      art:
+        loras: ["tfny7_krea2_000000800:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from seated eye height on a steel
+          bench inside a chain-link holding cage, the camera level, looking out through the
+          cage's galvanized chain-link mesh, which stands in the extreme foreground with the
+          lens pressed close behind it, soft and out of focus, its diamond pattern running
+          unbroken across the whole frame from edge to edge. Half a pace beyond the mesh, on the
+          far side of it, tfny7 woman in her tfny7 uniform stands alone, framed from the waist
+          up, holding a black smartphone up toward the lens in her bare right hand, its camera
+          lens aimed at the viewer, its glowing screen turned toward her. She looks over the top
+          of the phone directly into the camera, making eye contact with the viewer, with
+          mocking, delighted amusement: green eyes bright and narrowed, one dark brow arched,
+          berry lips spread in a teasing grin. Her bare left hand holds a clipboard with a
+          manila arrest form flat against her chest. Behind her, the nave of an old
+          deconsecrated limestone Gothic Revival church built of smooth dressed limestone ashlar
+          blocks laid in straight courses with thin mortar joints, converted into a sheriff's
+          bullpen: gray steel desks, tall pointed stained-glass windows throwing colored light
+          and dark oak roof beams. Cool fluorescent light over the desks lights her face, with
+          colored shafts from the stained glass behind her. Restrained palette of pale
+          limestone, uniform tan, vivid azure blue, galvanized steel gray, platinum blonde and
+          stained-glass red and gold; natural skin texture, fine 35 mm film grain, focus on her
+          eyes above the phone.
+  - category: deal
+    word: INVENTORY
+    cost: 1
+    tags: [tribute]
+    prompt: Hand over your wallet for the property inventory. Some of your property becomes hers, and a man who wants a receipt gets his bank balance read out to the room.
+    result:
+      text: |
+        "Property," she says, and unlocks the cage door, and holds out her hand.
+
+        You give her your wallet with your free hand. She goes through it at the desk, card by
+        card, out loud. "Driver's license. Ew. Debit card. Receipts. Babe. Why do you keep
+        receipts?" Then the cash. She fans it, counts it, and counts it again with her lips
+        moving.
+
+        "Item one, cash." She writes a number on the form. "Item two, a tip for the deputy who
+        processed you, because you're grateful. How grateful are you?"
+
+        She picks your phone up off the desk and turns the screen toward you: your banking app,
+        open.
+
+        "Or you can ask for a receipt," she says, "and I'll read your balance out to the whole
+        nave. Up to you."
+      effects:
+        - choose:
+            - label: Let her keep $20
+              price: { cash: 20 }
+              text: |
+                She folds a twenty into her breast pocket, writes "tip" on the form and underlines
+                it twice. "Grateful. I like that in a prisoner."
+              effects:
+                - boost.change: { card: andersons-attention, amount: +1 }
+            - label: Let her keep $40
+              price: { cash: 40 }
+              text: |
+                She snaps each twenty flat between her fingers and folds them into her breast
+                pocket. "Very grateful," she says as she writes it, and reads it back to you.
+              effects:
+                - boost.change: { card: andersons-attention, amount: +2 }
+            - label: Ask for a receipt, and hear your balance read to the room
+              text: |
+                You ask for a receipt. She stands up and reads your balance off the phone to the
+                whole nave, slowly, with the cents. Someone at the far desk whistles. Then she
+                writes you a receipt for the wallet: *one (1), brown, sad.*
+              effects:
+                - tracker.change: { nerve: -1 }
+      art:
+        loras: ["tfny7_krea2_000000800:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from seated eye height on a steel
+          bench inside a chain-link holding cage, the camera level, the cage door standing open
+          so the view across to a gray steel desk two paces away is clear. tfny7 woman in her
+          tfny7 uniform sits at the desk turned toward the lens, framed from the waist up, a
+          brown leather wallet lying open and empty on the desk in front of her beside a manila
+          arrest form and a scatter of plastic cards. She looks directly into the camera, making
+          eye contact with the viewer, with smug, greedy amusement: green eyes narrowed with
+          pleasure, one dark brow arched, berry lips curled in a slow smile. She holds a fan of
+          green banknotes up beside her face in her bare right hand, black nails spread across
+          the bills, and with her bare left hand she tucks one folded bill into her left breast
+          pocket under the star. Behind her, the nave of an old deconsecrated limestone Gothic
+          Revival church built of smooth dressed limestone ashlar blocks laid in straight
+          courses with thin mortar joints, converted into a sheriff's bullpen: rows of gray
+          steel desks, tall pointed stained-glass windows throwing colored light and dark oak
+          roof beams. Cool fluorescent light over her desk lights her face and the banknotes.
+          Restrained palette of pale limestone, uniform tan, vivid azure blue, banknote green,
+          platinum blonde and stained-glass red and gold; natural skin texture, fine 35 mm film
+          grain, focus on her eyes and the banknotes.
+  - category: talk
+    word: ANSWER
+    cost: 1
+    unless: [gagged]
+    prompt: Answer her booking questions. She writes down her own answers, and you read them back to the room.
+    result:
+      text: |
+        "Occupation."
+
+        You tell her. She writes something shorter.
+
+        "Height." She doesn't ask; she looks at you through the chain-link and writes a number
+        and rounds it down. "Distinguishing marks. None. Distinguishing features." She thinks
+        about it. "None."
+
+        "Reason for arrest." She writes for a long time.
+
+        Then she gets up, unlocks the cage, and holds the form in front of your face. "Read it.
+        Out loud. Stand up as far as the cuff lets you, so the back row can hear."
+
+        You read it. It's a paragraph about you. It has the word "sad" in it three times and
+        "pathetic" once, and a line about how you sat in the back of her car, knees together,
+        like a man waiting to be picked last. Two deputies at the far desks stop typing to
+        listen. One of them claps.
+
+        "Sign it." You sign it. "Now say 'that's accurate, Deputy.'"
+
+        "That's accurate, Deputy."
+
+        "It is, isn't it," she says, delighted, and files it.
+      effects:
+        - boost.change: { card: andersons-attention, amount: +1 }
+        - tracker.change: { nerve: -1 }
+        - skill.gain: talk
+      art:
+        loras: ["tfny7_krea2_000000800:1"]
+        subject: >
+          Eye-level photograph from inside a chain-link holding cage, looking out through its
+          open door: the door's galvanized steel pipe frame and chain-link mesh stand soft and
+          out of focus at the left and right edges of the frame, the lens just inside the
+          doorway. One pace beyond the doorway, sharp and in focus, tfny7 woman in her tfny7
+          uniform, alone, the long sleeves of her tan shirt buttoned at the wrists, stands
+          facing the lens, seen from mid-thigh up, holding a clipboard with a manila arrest form
+          against her chest in her bare left hand, angled so its blurred, unreadable lines of
+          handwriting show. She looks over the clipboard directly into the camera, making eye
+          contact with the viewer, with gleeful, bratty contempt: green eyes wide and bright,
+          one dark brow arched, berry lips spread in a mocking grin. Her bare right hand taps
+          the form with a black pen. Nothing of the viewer is in frame: no hands, no arms.
+          Behind her, out of focus, the empty nave of an old deconsecrated limestone Gothic
+          Revival church built of smooth dressed limestone ashlar blocks laid in straight
+          courses with thin mortar joints, converted into a bullpen: rows of unoccupied gray
+          steel desks and tall pointed stained-glass windows. Daylight through the stained glass
+          falls in colored shafts across the desks, with cool fluorescent light on her face.
+          Restrained palette of pale limestone, uniform tan, vivid azure blue, manila, platinum
+          blonde and stained-glass red and gold; natural skin texture, fine 35 mm film grain,
+          focus on her eyes.
+  - category: risk
+    word: TEASE
+    cost: 1
+    prompt: Give her some lip back. She has a way of shutting a mouth, and it starts with spit and ends with a gag.
+    result:
+      text: |
+        You tell her she's very brave, for someone whose prisoner is cuffed to a bench.
+
+        The bullpen goes quiet. Anderson puts her pen down, gets up, unlocks the cage and comes
+        in. She takes your jaw in one hand, black nails along your cheek, and squeezes until
+        your mouth opens.
+
+        "Brave," she says. "Say ah."
+
+        She spits into your open mouth and holds your jaw shut with the heel of her hand.
+        "Swallow." You swallow. "Good. That's the most useful thing that's come out of you all
+        day, and it came out of me."
+
+        She takes a black rubber bit off the hook by the door, puts it in your mouth and
+        buckles it behind your head, one notch tighter than it needs to be.
+
+        "There. Now you're brave too." She pats your cheek. "Ask the Sergeant to take it off.
+        She loves a man who asks."
+      effects:
+        - card.gain: gag
+      art:
+        loras: ["tfny7_krea2_000000800:1", "HandgagPOV_Krea2_v1:1"]
+        subject: >
+          First-person point-of-view photograph from seated eye height, the back of the head
+          pressed against the galvanized chain-link wall of a holding cage, the camera level.
+          tfny7 woman in her tfny7 uniform stands close in front of the lens and leans in, her
+          face in the upper center of the frame a forearm's length away, eyes in sharp focus.
+          She looks down directly into the camera, making eye contact with the viewer, with
+          cold, amused contempt: green eyes narrowed, one dark brow arched, her mouth shut,
+          berry lips pressed together and glossy wet, curled at one corner. Her right arm
+          extends straight toward the camera and her bare right palm covers the lower third of
+          the lens itself, seen from directly behind it the way a hand over your own mouth looks
+          from your own eyes: the inside of her pale bare hand and spread fingers with long
+          almond-shaped glossy black nails, filling the bottom edge of the frame large, close
+          and softly out of focus, the long tan sleeve of her uniform shirt buttoned at her
+          wrist. Her bare left hand grips the chain-link beside the lens. Nothing below the
+          camera is in frame: no bench, no lap. Behind her head, out of focus, the open cage
+          door and a fluorescent tube. Cool fluorescent light from above lights her face and the
+          wet sheen on her lips. Restrained palette of pale skin, platinum blonde, berry,
+          uniform tan, vivid azure blue and steel gray; natural skin texture with visible pores,
+          fine 35 mm film grain, shallow depth of field on her eyes.
+  - category: deal
+    word: INHALE
+    cost: 1
+    always: true
+    requires: [boots]
+    tags: [tribute]
+    prompt: Ask for her boot, at the end of her shift. She pulls it off and holds it over your face while she does her paperwork.
+    result:
+      text: |
+        "Deputy. Your boot. Please."
+
+        "Ugh. Fine. I've been in them eleven hours." She pushes back from the desk, hooks the
+        heel of one boot on the edge of the drawer and works it off, and the other foot helps,
+        and the boot comes free with a sigh of air. Her socked foot goes straight up onto the
+        desk, flexing.
+
+        She unlocks the cage and comes in with the boot held upside down by the heel, and
+        lowers it over your face, open end first, until the top of the shaft sits on your
+        cheekbones and your nose is inside.
+
+        "Hold it there. Both hands. You've got one free, use the cuffed one too. Breathe."
+
+        You breathe. Eleven hours of her: hot leather, foot powder, a lining gone wet. The cage
+        door stays open. She sits back down and does your paperwork with her sock up on the
+        desk. Every few minutes she says "louder" without looking up. The deputies at the next
+        desk have stopped looking.
+
+        When the form is done she takes the boot off your face.
+
+        "Look at you. All pink." She takes a picture of you before it fades, and pulls the boot
+        back on.
+      effects:
+        - boost.change: { card: andersons-attention, amount: +1 }
+        - tracker.change: { nerve: +1 }
+      art:
+        loras: ["tfny7_krea2_000000800:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from low eye height inside a
+          chain-link holding cage, the camera tilted slightly up. One pace in front of the lens,
+          tfny7 woman in her tfny7 uniform, alone, stands upright on the stone floor, framed
+          from the thighs up, the long sleeves of her tan shirt buttoned at the wrists and her
+          vivid azure blue necktie straight down her chest. In her raised bare right hand,
+          beside her shoulder, she holds a tall black leather riding boot upside down by its
+          toe, the toe pointing at the ceiling and the long rigid shaft hanging straight down in
+          front of her, seen side on, its open top at the bottom tilted toward the lens so the
+          camera looks a little way into the dark black-lined opening. She looks directly into
+          the camera, making eye contact with the viewer, with lazy, amused contempt: green eyes
+          half-lidded, one dark brow arched high, berry lips pressed into a lopsided smirk; her
+          face is clear and unhidden. Her bare left hand rests on her hip. Behind her, out of
+          focus, the galvanized chain-link mesh of the cage, the open cage door and the dark oak
+          beams of the church roof. Cool fluorescent light from above lays one long highlight
+          down the polished shaft. Restrained palette of black leather, uniform tan, vivid azure
+          blue, platinum blonde and steel gray; natural skin and leather texture, fine 35 mm
+          film grain, focus on her eyes and the boot.
+  - category: deal
+    word: WORSHIP
+    cost: 1
+    always: true
+    requires: [socks]
+    tags: [tribute]
+    prompt: Ask for her socks. She peels them off after eleven hours in riding boots and gives them to your face, one at a time.
+    result:
+      text: |
+        "Deputy. Your socks. Please."
+
+        She laughs at you, and does it anyway. Both boots come off at the desk. She peels the
+        first sock down her calf and off her toes, slowly, and it hangs from her fingers, thin
+        black cotton gone dark and heavy at the heel.
+
+        She comes into the cage and drapes it over your face, the damp heel across your nose
+        and mouth, and sits down on the bench beside you with her bare foot up on your knee.
+
+        "In through the nose. Hold it. Out."
+
+        It's warm and wet through, and mostly salt. You hold your breath in her sock until she
+        says out. She takes the
+        second one off with her toes, against your knee, and stuffs it into your hand, and
+        you hold that one to your face too, both of them, and breathe.
+
+        "You're shaking, babe. Say thank you for my socks."
+
+        "Thank you for your socks, Deputy."
+
+        "Thank you for your *sweaty* socks." You say it. She takes them back and puts them on
+        again, one at a time, in front of you.
+      effects:
+        - boost.change: { card: andersons-attention, amount: +1 }
+        - tracker.change: { nerve: +1 }
+      art:
+        loras: ["tfny7_krea2_000000800:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from seated eye height on a steel
+          bench inside a chain-link holding cage, the camera level. tfny7 woman in her tfny7
+          uniform, alone, sits sideways on the bench beside the lens, leaning in, framed from
+          the waist up, the bottom edge of the frame at her duty belt; her legs are below the
+          frame. In her raised bare right hand she holds a thin black cotton knee-high sock up
+          toward the lens, long and limp, damp and heavy at the heel, her long almond-shaped
+          glossy black nails pinching its cuff; her bare left hand holds the second black sock
+          balled against her chest. She looks directly into the camera, making eye contact with
+          the viewer, with teasing, pleased contempt: green eyes narrowed and bright, one dark
+          brow arched, berry lips curled in a smug smile. Behind her, out of focus, the
+          galvanized chain-link mesh of the cage and the bullpen in the nave of an old limestone
+          church built of smooth dressed limestone ashlar blocks laid in straight courses with
+          thin mortar joints, stained-glass windows throwing colored light. Nothing of the
+          viewer is in frame. Cool fluorescent light from above lights her face and the damp
+          sheen at the sock's heel. Restrained palette of black cotton, uniform tan, vivid azure
+          blue, galvanized steel gray, platinum blonde and stained-glass red and gold; natural
+          skin and fabric texture, fine 35 mm film grain, focus on the sock and her eyes.
+  - category: deal
+    word: BEG
+    cost: 1
+    requires: [owned]
+    unless: [socks, gagged]
+    tags: [tribute]
+    prompt: Beg her for something of hers to keep you company. She gives you her socks, straight off her feet, and teaches you what to do with them.
+    result:
+      text: |
+        "Deputy. Please. Anything of yours."
+
+        "Anything." She considers you over the desk. "You can't afford anything. You can have
+        my socks."
+
+        She pulls her boots off at the desk, both of them, and puts her feet up, and peels
+        the first sock off slowly, toes last. Thin black cotton, damp through at the heel and
+        the ball of the foot. She brings it into the cage and holds it under your nose without
+        letting it touch.
+
+        "Smell first. Don't grab."
+
+        You smell. Leather first, then her. She lets it touch: the damp heel against your upper lip,
+        then over your nose, then the whole sock laid across your face, and her hand over it,
+        pressing it to you.
+
+        "In. Hold. Out. In. Hold." She keeps you at it until your breathing goes where she
+        says. The second one comes warm off her other foot, and she has you hold both to your
+        face, cuffed hand and free one, while she sits on the desk with her bare feet swinging.
+
+        "That's what a girl smells like after a real job, babe," she says. "You'll be thinking
+        about it in the shower. You'll be thinking about it at your desk. Say 'yes, Deputy.'"
+
+        "Yes, Deputy."
+
+        She takes them back and stuffs them into her boots, and you watch them go.
+      effects:
+        - card.gain: sock-fetish
+        - boost.change: { card: andersons-attention, amount: +1 }
+      art:
+        loras: ["tfny7_krea2_000000800:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from seated eye height on a steel
+          bench inside a chain-link holding cage, the camera level, the cage door standing open.
+          Two paces away, tfny7 woman in her tfny7 uniform, alone, sits on the edge of a gray
+          steel desk facing the lens, framed from the chest up, the bottom edge of the frame at
+          her tie bar; nothing below her chest is in frame. She dangles a pair of thin black
+          cotton knee-high socks, long, damp and limp, from the black-nailed fingers of her
+          raised bare right hand beside her face, and her bare left hand rests flat on her
+          chest. She looks directly into the camera, making eye contact with the viewer, with
+          teasing, triumphant amusement: green eyes bright and narrowed, one dark brow arched,
+          berry lips spread in a slow grin. Behind her, out of focus, the nave of an old
+          deconsecrated limestone Gothic Revival church built of smooth dressed limestone ashlar
+          blocks laid in straight courses with thin mortar joints, converted into a sheriff's
+          bullpen, rows of empty gray steel desks and tall pointed stained-glass windows
+          throwing colored light; no one else is in the room. Cool fluorescent light over her
+          desk lights her face and the dangling socks. Restrained palette of black cotton,
+          uniform tan, vivid azure blue, platinum blonde and stained-glass red and gold; natural
+          skin and fabric texture, fine 35 mm film grain, focus on the socks and her eyes.
+art:
+  loras: ["tfny7_krea2_000000800:1"]
+  subject: >
+    Eye-level photograph from seated height inside a chain-link holding cage, looking out
+    through its open door: the door's galvanized steel pipe frame and chain-link mesh stand soft
+    and out of focus at the left and right edges of the frame. In the open doorway, two paces
+    from the lens, sharp and in focus, tfny7 woman in her tfny7 uniform, alone, the long sleeves
+    of her tan shirt buttoned at the wrists, leans with one shoulder against the steel door
+    frame, seen from the knees up, her arms folded across her chest, both bare hands tucked
+    against her sides, nothing in them. She looks straight into the camera, making eye contact
+    with the viewer, with bored, amused contempt: green eyes half-lidded, one dark brow arched
+    high, berry lips in a lopsided smirk. Nothing of the viewer is in frame. Behind her, out of
+    focus, the empty nave of an old deconsecrated limestone Gothic Revival church built of
+    smooth dressed limestone ashlar blocks laid in straight courses with thin mortar joints,
+    converted into a sheriff's bullpen: rows of unoccupied gray steel desks with computer
+    monitors, tall pointed stained-glass windows and the dark oak beams of the roof. Daylight
+    through the stained glass falls in long colored shafts across the desks and backlights her
+    hair. Restrained palette of pale limestone, uniform tan, vivid azure blue, platinum blonde,
+    steel gray and stained-glass red and gold; natural skin texture, fine 35 mm film grain,
+    shallow depth of field with focus on her eyes.
