@@ -24,10 +24,11 @@ Ideas for graystone
 - [x] 'Arrested' if wanted and entering the station. Stupid move, and you went and did it.
   - Achievement; 'Not Raymond Reddington'
 - [x] Update undercroft with prison life lora
+- [ ] Try multi-character-lora attention workflow
 - [ ] Graybloods 2 - smuggle package
   - [ ] Locations:
     - [ ] Highway; at least 2 lenghts of highway locations, prompts how us driving in our car; we can go back and forht. Risk is, on both llocation, if we suffer a setback we get pulled over by a new deputy. 
-    - [ ] Motel. With owner, and a room; room is occupied by britt dekker, targetr of our 'smuggle' option.- [ ] New Patrol officer
+    - [ ] Motel. With owner, and a room; room is occupied by britt dekker, targetr of our 'smuggle' option.- [ ] New Patrol officer - Mara Voss
   - [ ] Independent - Britt Dekker; smuggler.
 - [ ] Active 'Crime' tag; if we have an active 'crime' card; meaning, we're on a crime, we're suspect. This is different from criminal records that trigger arrests *outside*. *crime* tagged cards doon't auto trigger but kind of makes us suspect in situations like this. In the policestation, during the getting caught, we go to an interrogation chamber, where a detective interrogates us. Basic options are Confess Or Deny. We should have some sort of minigame perhaps? 
   - [ ] Introduce detective

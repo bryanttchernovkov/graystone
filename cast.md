@@ -483,7 +483,7 @@ She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-slee
 
 **Outdoors** (a different sentence: the bomber covers the shirt, so only its collar and tie show):
 
-She wears the Graystone County Sheriff's patrol uniform: a dark forest-green bomber jacket of smooth nylon twill with ribbed knit cuffs, collar band and waistband, zipped up to the middle of her chest, worn with both arms in its sleeves and both shoulders covered, a single polished gold six-point star badge pinned on its left chest and an embroidered vivid azure blue and gold patch on each upper sleeve[, rank]; above the zipper, the pointed collar of a crisp, pressed tan uniform shirt and the knot of a vivid, saturated azure blue necktie with a small gold tie bar; a black leather duty belt with a polished brass buckle at her waist below the jacket's hem; tan riding breeches with a vivid azure blue stripe down the outer seam; and stiff, structured, mirror-polished black leather thigh-high riding boots with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight to the leg, pulled up over the breeches to mid-thigh. On her head, worn level over her eyes, sits a stiff campaign hat of the kind state troopers and drill instructors wear, in light khaki tan felt the same color as her shirt, with a wide flat brim, a pinched four-dent crown and a vivid azure blue hatband.
+She wears the Graystone County Sheriff's patrol uniform: a dark forest-green bomber jacket of smooth nylon twill with ribbed knit sleeve bands, collar band and waistband, zipped up to the middle of her chest, worn with both arms in its sleeves and both shoulders covered, a single polished gold six-point star badge pinned on its left chest and an embroidered vivid azure blue and gold patch on each upper sleeve[, rank]; above the zipper, the pointed collar of a crisp, pressed tan uniform shirt and the knot of a vivid, saturated azure blue necktie with a small gold tie bar; a black leather duty belt with a polished brass buckle at her waist below the jacket's hem; tan riding breeches with a vivid azure blue stripe down the outer seam; and stiff, structured, mirror-polished black leather thigh-high riding boots with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight to the leg, pulled up over the breeches to mid-thigh. On her head, worn level over her eyes, sits a stiff campaign hat of the kind state troopers and drill instructors wear, in light khaki tan felt the same color as her shirt, with a wide flat brim, a pinched four-dent crown and a vivid azure blue hatband.
 
 Outdoors the rank goes on the bomber sleeves, in place of "[, rank]": sergeant — ", with three
 vivid azure blue chevrons beneath the patch on each sleeve". **Never drop the breeches**, however
@@ -491,6 +491,11 @@ tight the frame: write "tan riding breeches, the same khaki tan as her shirt, wi
 blue stripe down the outer seam". Drop only the boots when the frame doesn't reach them. Name each hand "out of the green bomber sleeve" when it acts. The
 hat is a separate sentence, in shirt-tan, never next to the green; a deputy may go bareheaded
 as her personal look (Anderson).
+
+**"Cuffs" means handcuffs only.** The bomber's sleeve ends are "ribbed knit sleeve bands": "ribbed
+knit cuffs" put a steel cuff on the deputy's own wrist in a handcuffing shot (Mara's arrest of
+Britt, 2026-11-01). In any cuffing prompt, name whose wrist each cuff is on ("locked on the blonde
+woman's wrist"), never "her" for either woman.
 
 **Rank** goes after the uniform sentence: sergeant — three vivid azure blue chevrons on each upper
 sleeve beneath the patch. Deputy — no chevrons: leave the rank sentence out, and outdoors drop

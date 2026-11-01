@@ -1,0 +1,1332 @@
+{
+  "56": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+      "type": "krea2",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "57": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    },
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "71": {
+    "class_type": "UnetLoaderGGUF",
+    "inputs": {
+      "unet_name": "realismByStableYogi_v25GGUF.gguf"
+    },
+    "_meta": {
+      "title": "Unet Loader (GGUF)"
+    }
+  },
+  "101": {
+    "class_type": "LoRA Text Loader (LoraManager)",
+    "inputs": {
+      "model": [
+        "71",
+        0
+      ],
+      "clip": [
+        "56",
+        0
+      ],
+      "lora_syntax": "<lora:pvprsn7v3_krea2_000001250:1>"
+    },
+    "_meta": {
+      "title": "Pass 1 LoRAs: base"
+    }
+  },
+  "102": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "cinematic photorealistic film still, present-day small Midwest town, 35mm film grain, pvprsn7 POV prisoner photo, a first-person view looking down at his own body, lying back on a steel slat cot with a gray wool blanket, his legs stretched out on the blanket and his bare feet at the foot of the cot, his bare pale hairy forearms in the foreground resting on his stomach. His wrists locked in polished steel chain handcuffs, the chain padlocked to a worn brown leather waist belt, his bare ankles locked in steel leg irons joined by a short chain. Standing beside the foot of the cot, to the right of his feet, is a Black woman sergeant in her early thirties with dark brown skin and a tall, broad-shouldered athletic build, her long black locs gathered at the nape. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a pointed collar, a full button-front placket, two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve with three vivid azure blue chevrons beneath it and a polished gold six-point star badge pinned over the left pocket; a vivid, saturated azure blue necktie with a small gold tie bar; tan riding breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down the outer seam; a black leather duty belt with a polished brass buckle; black leather duty gloves; and mirror-polished black leather thigh-high riding boots pulled up over the breeches to mid-thigh; her head is bare. She holds her right arm out toward the lens, an empty small stainless steel chastity cage fitting in her black-gloved palm, raised beside her face, and looks down at him with cool, controlled amusement: one eyebrow raised, her lips pressed in a thin line. Past his feet and around her, the worn gray flagstones of Cell Three, the black iron bars of the cell door and a wall of pale limestone ashlar blocks. A single caged incandescent bulb above throws warm light across her shoulders, the polished steel in her hand and his forearms. Palette of inmate orange, uniform tan, vivid azure blue, polished steel and limestone gray; natural skin texture, 35 mm lens.",
+      "clip": [
+        "101",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 1 prompt: everyone in words"
+    }
+  },
+  "103": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "102",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 1 negative"
+    }
+  },
+  "104": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 1440,
+      "height": 816,
+      "batch_size": 1
+    },
+    "_meta": {
+      "title": "Empty Latent Image (1440x816)"
+    }
+  },
+  "105": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 6619027450,
+      "steps": 8,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "beta",
+      "denoise": 1,
+      "model": [
+        "101",
+        0
+      ],
+      "positive": [
+        "102",
+        0
+      ],
+      "negative": [
+        "103",
+        0
+      ],
+      "latent_image": [
+        "104",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 1 sampler"
+    }
+  },
+  "106": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "105",
+        0
+      ],
+      "vae": [
+        "57",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 1 decode"
+    }
+  },
+  "107": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "106",
+        0
+      ],
+      "filename_prefix": "proto/cell-pov-ashby-cage-1-base"
+    },
+    "_meta": {
+      "title": "Pass 1 save"
+    }
+  },
+  "201": {
+    "class_type": "TextGenerate",
+    "inputs": {
+      "clip": [
+        "56",
+        0
+      ],
+      "prompt": "Locate the woman in the tan uniform standing beside the foot of the cot, from the top of her head down to the bottom of the image, including her raised hand. Output only the bounding box as JSON: {\"bbox_2d\": [x1, y1, x2, y2]}.",
+      "image": [
+        "106",
+        0
+      ],
+      "max_length": 256,
+      "sampling_mode": "off",
+      "thinking": false,
+      "use_default_template": true
+    },
+    "_meta": {
+      "title": "Pass 2 ask Qwen3-VL: Ashby"
+    }
+  },
+  "202": {
+    "class_type": "SaveText",
+    "inputs": {
+      "text": [
+        "201",
+        0
+      ],
+      "filename_prefix": "proto/cell-pov-ashby-cage-2-ashby-box",
+      "format": "txt"
+    },
+    "_meta": {
+      "title": "Pass 2 save Qwen's answer"
+    }
+  },
+  "203": {
+    "class_type": "GetImageSize",
+    "inputs": {
+      "image": [
+        "106",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 image size"
+    }
+  },
+  "204": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "201",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 1
+    },
+    "_meta": {
+      "title": "Pass 2 box x1 (text)"
+    }
+  },
+  "208": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "204",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 box x1"
+    }
+  },
+  "205": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "201",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 2
+    },
+    "_meta": {
+      "title": "Pass 2 box y1 (text)"
+    }
+  },
+  "209": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "205",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 box y1"
+    }
+  },
+  "206": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "201",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 3
+    },
+    "_meta": {
+      "title": "Pass 2 box x2 (text)"
+    }
+  },
+  "210": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "206",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 box x2"
+    }
+  },
+  "207": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "201",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 4
+    },
+    "_meta": {
+      "title": "Pass 2 box y2 (text)"
+    }
+  },
+  "211": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "207",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 box y2"
+    }
+  },
+  "212": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(0, round(a * w / 1000) - 64)",
+      "values.a": [
+        "208",
+        0
+      ],
+      "values.b": [
+        "209",
+        0
+      ],
+      "values.c": [
+        "210",
+        0
+      ],
+      "values.d": [
+        "211",
+        0
+      ],
+      "values.w": [
+        "203",
+        0
+      ],
+      "values.h": [
+        "203",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 box x"
+    }
+  },
+  "213": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(0, round(b * h / 1000) - 64)",
+      "values.a": [
+        "208",
+        0
+      ],
+      "values.b": [
+        "209",
+        0
+      ],
+      "values.c": [
+        "210",
+        0
+      ],
+      "values.d": [
+        "211",
+        0
+      ],
+      "values.w": [
+        "203",
+        0
+      ],
+      "values.h": [
+        "203",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 box y"
+    }
+  },
+  "214": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(16, min(w, round(c * w / 1000) + 64) - max(0, round(a * w / 1000) - 64))",
+      "values.a": [
+        "208",
+        0
+      ],
+      "values.b": [
+        "209",
+        0
+      ],
+      "values.c": [
+        "210",
+        0
+      ],
+      "values.d": [
+        "211",
+        0
+      ],
+      "values.w": [
+        "203",
+        0
+      ],
+      "values.h": [
+        "203",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 box width"
+    }
+  },
+  "215": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(16, min(h, round(d * h / 1000) + 64) - max(0, round(b * h / 1000) - 64))",
+      "values.a": [
+        "208",
+        0
+      ],
+      "values.b": [
+        "209",
+        0
+      ],
+      "values.c": [
+        "210",
+        0
+      ],
+      "values.d": [
+        "211",
+        0
+      ],
+      "values.w": [
+        "203",
+        0
+      ],
+      "values.h": [
+        "203",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 box height"
+    }
+  },
+  "216": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 0.0,
+      "width": [
+        "203",
+        0
+      ],
+      "height": [
+        "203",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 empty full-frame mask"
+    }
+  },
+  "217": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 1.0,
+      "width": [
+        "214",
+        1
+      ],
+      "height": [
+        "215",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 box"
+    }
+  },
+  "218": {
+    "class_type": "FeatherMask",
+    "inputs": {
+      "mask": [
+        "217",
+        0
+      ],
+      "left": 24,
+      "top": 24,
+      "right": 24,
+      "bottom": 24
+    },
+    "_meta": {
+      "title": "Pass 2 feather the box"
+    }
+  },
+  "219": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "216",
+        0
+      ],
+      "source": [
+        "218",
+        0
+      ],
+      "x": [
+        "212",
+        1
+      ],
+      "y": [
+        "213",
+        1
+      ],
+      "operation": "add"
+    },
+    "_meta": {
+      "title": "Pass 2 box mask, full frame"
+    }
+  },
+  "220": {
+    "class_type": "SAM2Segment",
+    "inputs": {
+      "image": [
+        "106",
+        0
+      ],
+      "prompt": "woman in a tan uniform",
+      "sam2_model": "sam2.1_hiera_large",
+      "dino_model": "GroundingDINO_SwinT_OGC (694MB)",
+      "device": "Auto",
+      "threshold": 0.35,
+      "mask_blur": 8,
+      "mask_offset": 12,
+      "invert_output": false,
+      "background": "Alpha",
+      "background_color": "#222222"
+    },
+    "_meta": {
+      "title": "Pass 2 SAM2 mask: woman in a tan uniform"
+    }
+  },
+  "221": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "220",
+        1
+      ],
+      "source": [
+        "219",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "multiply"
+    },
+    "_meta": {
+      "title": "Pass 2 SAM2 mask inside the box"
+    }
+  },
+  "222": {
+    "class_type": "LoRA Text Loader (LoraManager)",
+    "inputs": {
+      "model": [
+        "71",
+        0
+      ],
+      "clip": [
+        "56",
+        0
+      ],
+      "lora_syntax": "<lora:ashby7_krea2_000001200:0.9>"
+    },
+    "_meta": {
+      "title": "Pass 2 LoRAs: Ashby"
+    }
+  },
+  "223": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "cinematic photorealistic film still, present-day small Midwest town, 35mm film grain, POV prisoner photo, a first-person view looking down at his own body, lying back on a steel slat cot with a gray wool blanket, his legs stretched out on the blanket and his bare feet at the foot of the cot, his bare pale hairy forearms in the foreground resting on his stomach. His wrists locked in polished steel chain handcuffs, the chain padlocked to a worn brown leather waist belt, his bare ankles locked in steel leg irons joined by a short chain. Standing beside the foot of the cot, to the right of his feet, is ashby7 woman in her sheriff's uniform, tan with an azure tie, her long black locs gathered at the nape, in black leather duty gloves. She holds her right arm out toward the lens, an empty small stainless steel chastity cage fitting in her black-gloved palm, raised beside her face, and looks down at him with cool, controlled amusement: one eyebrow raised, her lips pressed in a thin line. Past his feet and around her, the worn gray flagstones of Cell Three, the black iron bars of the cell door and a wall of pale limestone ashlar blocks. A single caged incandescent bulb above throws warm light across her shoulders, the polished steel in her hand and his forearms. Palette of inmate orange, uniform tan, vivid azure blue, polished steel and limestone gray; natural skin texture, 35 mm lens.",
+      "clip": [
+        "222",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 prompt: Ashby"
+    }
+  },
+  "224": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "223",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 negative"
+    }
+  },
+  "225": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "106",
+        0
+      ],
+      "vae": [
+        "57",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 encode"
+    }
+  },
+  "226": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "225",
+        0
+      ],
+      "mask": [
+        "221",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 latent mask"
+    }
+  },
+  "227": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 6619027452,
+      "steps": 8,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "beta",
+      "denoise": 0.45,
+      "model": [
+        "222",
+        0
+      ],
+      "positive": [
+        "223",
+        0
+      ],
+      "negative": [
+        "224",
+        0
+      ],
+      "latent_image": [
+        "226",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 sampler (denoise 0.45)"
+    }
+  },
+  "228": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "227",
+        0
+      ],
+      "vae": [
+        "57",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 decode"
+    }
+  },
+  "229": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "106",
+        0
+      ],
+      "source": [
+        "228",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "221",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 paste Ashby back"
+    }
+  },
+  "230": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "229",
+        0
+      ],
+      "filename_prefix": "proto/cell-pov-ashby-cage-2-ashby"
+    },
+    "_meta": {
+      "title": "Pass 2 save the result"
+    }
+  },
+  "231": {
+    "class_type": "MaskToImage",
+    "inputs": {
+      "mask": [
+        "221",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 mask as image"
+    }
+  },
+  "232": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "231",
+        0
+      ],
+      "filename_prefix": "proto/cell-pov-ashby-cage-2-ashby-mask"
+    },
+    "_meta": {
+      "title": "Pass 2 save the mask"
+    }
+  },
+  "301": {
+    "class_type": "TextGenerate",
+    "inputs": {
+      "clip": [
+        "56",
+        0
+      ],
+      "prompt": "Locate the small steel chastity cage the woman holds up in her black-gloved hand, together with that hand. Output only the bounding box as JSON: {\"bbox_2d\": [x1, y1, x2, y2]}.",
+      "image": [
+        "229",
+        0
+      ],
+      "max_length": 256,
+      "sampling_mode": "off",
+      "thinking": false,
+      "use_default_template": true
+    },
+    "_meta": {
+      "title": "Pass 3 ask Qwen3-VL: Cage"
+    }
+  },
+  "302": {
+    "class_type": "SaveText",
+    "inputs": {
+      "text": [
+        "301",
+        0
+      ],
+      "filename_prefix": "proto/cell-pov-ashby-cage-3-cage-box",
+      "format": "txt"
+    },
+    "_meta": {
+      "title": "Pass 3 save Qwen's answer"
+    }
+  },
+  "303": {
+    "class_type": "GetImageSize",
+    "inputs": {
+      "image": [
+        "229",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 image size"
+    }
+  },
+  "304": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "301",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 1
+    },
+    "_meta": {
+      "title": "Pass 3 box x1 (text)"
+    }
+  },
+  "308": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "304",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 box x1"
+    }
+  },
+  "305": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "301",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 2
+    },
+    "_meta": {
+      "title": "Pass 3 box y1 (text)"
+    }
+  },
+  "309": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "305",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 box y1"
+    }
+  },
+  "306": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "301",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 3
+    },
+    "_meta": {
+      "title": "Pass 3 box x2 (text)"
+    }
+  },
+  "310": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "306",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 box x2"
+    }
+  },
+  "307": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "301",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 4
+    },
+    "_meta": {
+      "title": "Pass 3 box y2 (text)"
+    }
+  },
+  "311": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "307",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 box y2"
+    }
+  },
+  "312": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(0, round(a * w / 1000) - 48)",
+      "values.a": [
+        "308",
+        0
+      ],
+      "values.b": [
+        "309",
+        0
+      ],
+      "values.c": [
+        "310",
+        0
+      ],
+      "values.d": [
+        "311",
+        0
+      ],
+      "values.w": [
+        "303",
+        0
+      ],
+      "values.h": [
+        "303",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 box x"
+    }
+  },
+  "313": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(0, round(b * h / 1000) - 48)",
+      "values.a": [
+        "308",
+        0
+      ],
+      "values.b": [
+        "309",
+        0
+      ],
+      "values.c": [
+        "310",
+        0
+      ],
+      "values.d": [
+        "311",
+        0
+      ],
+      "values.w": [
+        "303",
+        0
+      ],
+      "values.h": [
+        "303",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 box y"
+    }
+  },
+  "314": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(16, min(w, round(c * w / 1000) + 48) - max(0, round(a * w / 1000) - 48))",
+      "values.a": [
+        "308",
+        0
+      ],
+      "values.b": [
+        "309",
+        0
+      ],
+      "values.c": [
+        "310",
+        0
+      ],
+      "values.d": [
+        "311",
+        0
+      ],
+      "values.w": [
+        "303",
+        0
+      ],
+      "values.h": [
+        "303",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 box width"
+    }
+  },
+  "315": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(16, min(h, round(d * h / 1000) + 48) - max(0, round(b * h / 1000) - 48))",
+      "values.a": [
+        "308",
+        0
+      ],
+      "values.b": [
+        "309",
+        0
+      ],
+      "values.c": [
+        "310",
+        0
+      ],
+      "values.d": [
+        "311",
+        0
+      ],
+      "values.w": [
+        "303",
+        0
+      ],
+      "values.h": [
+        "303",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 box height"
+    }
+  },
+  "316": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 0.0,
+      "width": [
+        "303",
+        0
+      ],
+      "height": [
+        "303",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 empty full-frame mask"
+    }
+  },
+  "317": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 1.0,
+      "width": [
+        "314",
+        1
+      ],
+      "height": [
+        "315",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 box"
+    }
+  },
+  "318": {
+    "class_type": "FeatherMask",
+    "inputs": {
+      "mask": [
+        "317",
+        0
+      ],
+      "left": 24,
+      "top": 24,
+      "right": 24,
+      "bottom": 24
+    },
+    "_meta": {
+      "title": "Pass 3 feather the box"
+    }
+  },
+  "319": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "316",
+        0
+      ],
+      "source": [
+        "318",
+        0
+      ],
+      "x": [
+        "312",
+        1
+      ],
+      "y": [
+        "313",
+        1
+      ],
+      "operation": "add"
+    },
+    "_meta": {
+      "title": "Pass 3 box mask, full frame"
+    }
+  },
+  "322": {
+    "class_type": "LoRA Text Loader (LoraManager)",
+    "inputs": {
+      "model": [
+        "71",
+        0
+      ],
+      "clip": [
+        "56",
+        0
+      ],
+      "lora_syntax": "<lora:mtlcg7d_krea2_000001250:1>"
+    },
+    "_meta": {
+      "title": "Pass 3 LoRAs: Cage"
+    }
+  },
+  "323": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "cinematic photorealistic film still, present-day small Midwest town, 35mm film grain, POV prisoner photo, a first-person view looking down at his own body, lying back on a steel slat cot with a gray wool blanket, his legs stretched out on the blanket and his bare feet at the foot of the cot, his bare pale hairy forearms in the foreground resting on his stomach. His wrists locked in polished steel chain handcuffs, the chain padlocked to a worn brown leather waist belt, his bare ankles locked in steel leg irons joined by a short chain. Standing beside the foot of the cot, to the right of his feet, is a Black woman sergeant with her long black locs gathered at the nape, in a tan sheriff's uniform shirt with an azure tie and black leather duty gloves. She holds her right arm out toward the lens, an empty stainless steel mtlcg7 chastity cage fitting in her black-gloved palm, raised beside her face, and looks down at him with cool, controlled amusement: one eyebrow raised, her lips pressed in a thin line. Past his feet and around her, the worn gray flagstones of Cell Three, the black iron bars of the cell door and a wall of pale limestone ashlar blocks. A single caged incandescent bulb above throws warm light across her shoulders, the polished steel in her hand and his forearms. Palette of inmate orange, uniform tan, vivid azure blue, polished steel and limestone gray; natural skin texture, 35 mm lens.",
+      "clip": [
+        "322",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 prompt: Cage"
+    }
+  },
+  "324": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "323",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 negative"
+    }
+  },
+  "325": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "229",
+        0
+      ],
+      "vae": [
+        "57",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 encode"
+    }
+  },
+  "326": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "325",
+        0
+      ],
+      "mask": [
+        "319",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 latent mask"
+    }
+  },
+  "327": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 6619027453,
+      "steps": 8,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "beta",
+      "denoise": 0.5,
+      "model": [
+        "322",
+        0
+      ],
+      "positive": [
+        "323",
+        0
+      ],
+      "negative": [
+        "324",
+        0
+      ],
+      "latent_image": [
+        "326",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 sampler (denoise 0.5)"
+    }
+  },
+  "328": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "327",
+        0
+      ],
+      "vae": [
+        "57",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 decode"
+    }
+  },
+  "329": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "229",
+        0
+      ],
+      "source": [
+        "328",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "319",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 paste Cage back"
+    }
+  },
+  "330": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "329",
+        0
+      ],
+      "filename_prefix": "proto/cell-pov-ashby-cage-3-cage"
+    },
+    "_meta": {
+      "title": "Pass 3 save the result"
+    }
+  },
+  "331": {
+    "class_type": "MaskToImage",
+    "inputs": {
+      "mask": [
+        "319",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 mask as image"
+    }
+  },
+  "332": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "331",
+        0
+      ],
+      "filename_prefix": "proto/cell-pov-ashby-cage-3-cage-mask"
+    },
+    "_meta": {
+      "title": "Pass 3 save the mask"
+    }
+  },
+  "901": {
+    "class_type": "UpscaleModelLoader",
+    "inputs": {
+      "model_name": "4x-UltraSharp.pth"
+    },
+    "_meta": {
+      "title": "Load the upscaler"
+    }
+  },
+  "902": {
+    "class_type": "ImageUpscaleWithModel",
+    "inputs": {
+      "upscale_model": [
+        "901",
+        0
+      ],
+      "image": [
+        "329",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Upscale the final image"
+    }
+  },
+  "903": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "902",
+        0
+      ],
+      "filename_prefix": "proto/cell-pov-ashby-cage-final-4x"
+    },
+    "_meta": {
+      "title": "Save the final image, upscaled"
+    }
+  }
+}

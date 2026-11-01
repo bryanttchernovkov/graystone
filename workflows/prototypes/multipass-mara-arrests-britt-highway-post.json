@@ -1,0 +1,1115 @@
+{
+  "56": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+      "type": "krea2",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "57": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    },
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "71": {
+    "class_type": "UnetLoaderGGUF",
+    "inputs": {
+      "unet_name": "realismByStableYogi_v25GGUF.gguf"
+    },
+    "_meta": {
+      "title": "Unet Loader (GGUF)"
+    }
+  },
+  "101": {
+    "class_type": "LoRA Text Loader (LoraManager)",
+    "inputs": {
+      "model": [
+        "71",
+        0
+      ],
+      "clip": [
+        "56",
+        0
+      ],
+      "lora_syntax": "<lora:hcstand2_krea2_000003000:0.9>"
+    },
+    "_meta": {
+      "title": "Pass 1 LoRAs: handcuffing only"
+    }
+  },
+  "102": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "cinematic photorealistic film still, present-day small Midwest town, 35mm film grain, a knees-up documentary photograph of two women standing in the forecourt of a small county highway patrol post beside a two-lane highway, seen from the side at eye level. A woman in a forest-green highway patrol bomber jacket handcuffs a woman in a dusty pink hoodie, standing close behind her and closing polished steel hinged handcuffs around her wrists behind her back: the first cuff is already locked on her right wrist and the second clicks shut on her left wrist under the deputy's thumb, at the small of her back. The deputy, on the left of the frame, is a twenty-two-year-old woman with her dark espresso brown hair styled in glossy rockabilly victory-roll bangs and a high curled ponytail, a bold cherry-red dyed section running through the rolled bangs and down the curls of the ponytail, large polished gold hoop earrings, bright blue eyes, sharp black winged eyeliner and glossy red lipstick. She wears the Graystone County Sheriff's patrol uniform: a dark forest-green bomber jacket of smooth nylon twill with ribbed knit cuffs and waistband, zipped to the middle of her chest, a polished gold six-point star badge on its left chest and an embroidered vivid azure blue and gold patch on each upper sleeve; above the zipper, the pointed collar of a crisp tan uniform shirt and a vivid, saturated azure blue necktie with a small gold tie bar; a black leather duty belt with a polished brass buckle; tan riding breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down the outer seam; and mirror-polished black leather thigh-high riding boots pulled up over the breeches to mid-thigh; her head is bare. She looks down at the cuffs with a cocky, satisfied little smirk, her bare hands on the steel. The woman being cuffed, on the right of the frame, is a twenty-three-year-old woman with long loose wavy honey-blonde hair and subtle natural makeup, in a soft dusty pink pullover hoodie with drawstrings and lightly torn blue jeans. She stands in profile facing right, her arms pulled behind her back, and looks back over her shoulder toward the camera with a tight-lipped, annoyed glare. Behind them stands a single-storey tan brick highway patrol post with a flat roof, a glass front door and a flagpole, a white patrol SUV with an azure blue stripe parked at the curb, and beyond it the empty two-lane highway running into flat green farmland and a distant grain elevator. Both women from the knees up, the cuffs at the center of the frame and in sharp focus. Low late-afternoon sun from the left rims both women's hair and puts a bright glint on the polished steel cuffs. Forest green, tan, azure blue, dusty pink and denim palette, natural skin texture, 35 mm lens.",
+      "clip": [
+        "101",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 1 prompt: both women in words"
+    }
+  },
+  "103": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "102",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 1 negative"
+    }
+  },
+  "104": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 1920,
+      "height": 1080,
+      "batch_size": 1
+    },
+    "_meta": {
+      "title": "Empty Latent Image"
+    }
+  },
+  "105": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 7310442919,
+      "steps": 8,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "beta",
+      "denoise": 1,
+      "model": [
+        "101",
+        0
+      ],
+      "positive": [
+        "102",
+        0
+      ],
+      "negative": [
+        "103",
+        0
+      ],
+      "latent_image": [
+        "104",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 1 sampler"
+    }
+  },
+  "106": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "105",
+        0
+      ],
+      "vae": [
+        "57",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 1 decode"
+    }
+  },
+  "107": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "106",
+        0
+      ],
+      "filename_prefix": "proto/mara-britt-1-scene"
+    },
+    "_meta": {
+      "title": "Save pass 1"
+    }
+  },
+  "201": {
+    "class_type": "SAM2Segment",
+    "inputs": {
+      "image": [
+        "106",
+        0
+      ],
+      "prompt": "woman in a green bomber jacket",
+      "sam2_model": "sam2.1_hiera_large",
+      "dino_model": "GroundingDINO_SwinT_OGC (694MB)",
+      "device": "Auto",
+      "threshold": 0.35,
+      "mask_blur": 8,
+      "mask_offset": 12,
+      "invert_output": false,
+      "background": "Alpha",
+      "background_color": "#222222"
+    },
+    "_meta": {
+      "title": "Pass 2 target: Mara (SAM2 text mask)"
+    }
+  },
+  "202": {
+    "class_type": "LoRA Text Loader (LoraManager)",
+    "inputs": {
+      "model": [
+        "71",
+        0
+      ],
+      "clip": [
+        "56",
+        0
+      ],
+      "lora_syntax": "<lora:mrvx7_krea2_000001200:0.9>"
+    },
+    "_meta": {
+      "title": "Pass 2 LoRAs: Mara only"
+    }
+  },
+  "203": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "cinematic photorealistic film still, present-day small Midwest town, 35mm film grain, a knees-up documentary photograph of two women standing in the forecourt of a small county highway patrol post beside a two-lane highway, seen from the side at eye level. A woman in a forest-green highway patrol bomber jacket handcuffs a woman in a dusty pink hoodie, standing close behind her and closing polished steel hinged handcuffs around her wrists behind her back: the first cuff is already locked on her right wrist and the second clicks shut on her left wrist under the deputy's thumb, at the small of her back. The deputy, on the left of the frame, is mrvx7 woman in her patrol jacket uniform, a twenty-two-year-old highway patrol deputy, her dark espresso brown hair styled in glossy rockabilly victory-roll bangs and a high curled ponytail, a bold cherry-red dyed section running through the rolled bangs and down the curls of the ponytail, large polished gold hoop earrings, bright blue eyes, sharp black winged eyeliner and glossy red lipstick. She wears the Graystone County Sheriff's patrol uniform: a dark forest-green bomber jacket of smooth nylon twill with ribbed knit cuffs and waistband, zipped to the middle of her chest, a polished gold six-point star badge on its left chest and an embroidered vivid azure blue and gold patch on each upper sleeve; above the zipper, the pointed collar of a crisp tan uniform shirt and a vivid, saturated azure blue necktie with a small gold tie bar; a black leather duty belt with a polished brass buckle; tan riding breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down the outer seam; and mirror-polished black leather thigh-high riding boots pulled up over the breeches to mid-thigh; her head is bare. She looks down at the cuffs with a cocky, satisfied little smirk, her bare hands on the steel. The woman being cuffed, on the right of the frame, is a twenty-three-year-old woman with long loose wavy honey-blonde hair and subtle natural makeup, in a soft dusty pink pullover hoodie with drawstrings and lightly torn blue jeans. She stands in profile facing right, her arms pulled behind her back, and looks back over her shoulder toward the camera with a tight-lipped, annoyed glare. Behind them stands a single-storey tan brick highway patrol post with a flat roof, a glass front door and a flagpole, a white patrol SUV with an azure blue stripe parked at the curb, and beyond it the empty two-lane highway running into flat green farmland and a distant grain elevator. Both women from the knees up, the cuffs at the center of the frame and in sharp focus. Low late-afternoon sun from the left rims both women's hair and puts a bright glint on the polished steel cuffs. Forest green, tan, azure blue, dusty pink and denim palette, natural skin texture, 35 mm lens.",
+      "clip": [
+        "202",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 prompt: Mara by trigger, the other woman in words"
+    }
+  },
+  "204": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "203",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 negative"
+    }
+  },
+  "205": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "106",
+        0
+      ],
+      "vae": [
+        "57",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 encode"
+    }
+  },
+  "206": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "205",
+        0
+      ],
+      "mask": [
+        "201",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 mask"
+    }
+  },
+  "207": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 7310442920,
+      "steps": 8,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "beta",
+      "denoise": 0.45,
+      "model": [
+        "202",
+        0
+      ],
+      "positive": [
+        "203",
+        0
+      ],
+      "negative": [
+        "204",
+        0
+      ],
+      "latent_image": [
+        "206",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 sampler (tune denoise 0.35-0.6)"
+    }
+  },
+  "208": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "207",
+        0
+      ],
+      "vae": [
+        "57",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 decode"
+    }
+  },
+  "209": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "106",
+        0
+      ],
+      "source": [
+        "208",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "201",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 2 paste Mara back"
+    }
+  },
+  "210": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "209",
+        0
+      ],
+      "filename_prefix": "proto/mara-britt-2-mara"
+    },
+    "_meta": {
+      "title": "Save pass 2"
+    }
+  },
+  "211": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "201",
+        2
+      ],
+      "filename_prefix": "proto/mara-britt-2-mara-mask"
+    },
+    "_meta": {
+      "title": "Save pass 2 mask"
+    }
+  },
+  "301": {
+    "class_type": "SAM2Segment",
+    "inputs": {
+      "image": [
+        "209",
+        0
+      ],
+      "prompt": "woman in a pink hoodie",
+      "sam2_model": "sam2.1_hiera_large",
+      "dino_model": "GroundingDINO_SwinT_OGC (694MB)",
+      "device": "Auto",
+      "threshold": 0.35,
+      "mask_blur": 8,
+      "mask_offset": 12,
+      "invert_output": false,
+      "background": "Alpha",
+      "background_color": "#222222"
+    },
+    "_meta": {
+      "title": "Pass 3 target: Britt (SAM2 text mask)"
+    }
+  },
+  "302": {
+    "class_type": "LoRA Text Loader (LoraManager)",
+    "inputs": {
+      "model": [
+        "71",
+        0
+      ],
+      "clip": [
+        "56",
+        0
+      ],
+      "lora_syntax": "<lora:zbltk7_krea2_000001400:0.9>"
+    },
+    "_meta": {
+      "title": "Pass 3 LoRAs: Britt only"
+    }
+  },
+  "303": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "cinematic photorealistic film still, present-day small Midwest town, 35mm film grain, a knees-up documentary photograph of two women standing in the forecourt of a small county highway patrol post beside a two-lane highway, seen from the side at eye level. A woman in a forest-green highway patrol bomber jacket handcuffs a woman in a dusty pink hoodie, standing close behind her and closing polished steel hinged handcuffs around her wrists behind her back: the first cuff is already locked on her right wrist and the second clicks shut on her left wrist under the deputy's thumb, at the small of her back. The deputy, on the left of the frame, is a twenty-two-year-old woman with her dark espresso brown hair styled in glossy rockabilly victory-roll bangs and a high curled ponytail, a bold cherry-red dyed section running through the rolled bangs and down the curls of the ponytail, large polished gold hoop earrings, bright blue eyes, sharp black winged eyeliner and glossy red lipstick. She wears the Graystone County Sheriff's patrol uniform: a dark forest-green bomber jacket of smooth nylon twill with ribbed knit cuffs and waistband, zipped to the middle of her chest, a polished gold six-point star badge on its left chest and an embroidered vivid azure blue and gold patch on each upper sleeve; above the zipper, the pointed collar of a crisp tan uniform shirt and a vivid, saturated azure blue necktie with a small gold tie bar; a black leather duty belt with a polished brass buckle; tan riding breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down the outer seam; and mirror-polished black leather thigh-high riding boots pulled up over the breeches to mid-thigh; her head is bare. She looks down at the cuffs with a cocky, satisfied little smirk, her bare hands on the steel. The woman being cuffed, on the right of the frame, is zbltk7 woman in her pink hoodie, a twenty-three-year-old streetracer, with long loose wavy honey-blonde hair and subtle natural makeup, in a soft dusty pink pullover hoodie with drawstrings and lightly torn blue jeans. She stands in profile facing right, her arms pulled behind her back, and looks back over her shoulder toward the camera with a tight-lipped, annoyed glare. Behind them stands a single-storey tan brick highway patrol post with a flat roof, a glass front door and a flagpole, a white patrol SUV with an azure blue stripe parked at the curb, and beyond it the empty two-lane highway running into flat green farmland and a distant grain elevator. Both women from the knees up, the cuffs at the center of the frame and in sharp focus. Low late-afternoon sun from the left rims both women's hair and puts a bright glint on the polished steel cuffs. Forest green, tan, azure blue, dusty pink and denim palette, natural skin texture, 35 mm lens.",
+      "clip": [
+        "302",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 prompt: Britt by trigger, the other woman in words"
+    }
+  },
+  "304": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "303",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 negative"
+    }
+  },
+  "305": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "209",
+        0
+      ],
+      "vae": [
+        "57",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 encode"
+    }
+  },
+  "306": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "305",
+        0
+      ],
+      "mask": [
+        "301",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 mask"
+    }
+  },
+  "307": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 7310442921,
+      "steps": 8,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "beta",
+      "denoise": 0.45,
+      "model": [
+        "302",
+        0
+      ],
+      "positive": [
+        "303",
+        0
+      ],
+      "negative": [
+        "304",
+        0
+      ],
+      "latent_image": [
+        "306",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 sampler (tune denoise 0.35-0.6)"
+    }
+  },
+  "308": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "307",
+        0
+      ],
+      "vae": [
+        "57",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 decode"
+    }
+  },
+  "309": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "209",
+        0
+      ],
+      "source": [
+        "308",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "301",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 3 paste Britt back"
+    }
+  },
+  "310": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "309",
+        0
+      ],
+      "filename_prefix": "proto/mara-britt-3-britt"
+    },
+    "_meta": {
+      "title": "Save pass 3"
+    }
+  },
+  "311": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "301",
+        2
+      ],
+      "filename_prefix": "proto/mara-britt-3-britt-mask"
+    },
+    "_meta": {
+      "title": "Save pass 3 mask"
+    }
+  },
+  "401": {
+    "class_type": "TextGenerate",
+    "inputs": {
+      "clip": [
+        "56",
+        0
+      ],
+      "prompt": "Locate the handcuffs locked on the blonde woman's wrists behind her back, together with the two hands holding them. Output only the bounding box as JSON: {\"bbox_2d\": [x1, y1, x2, y2]}.",
+      "image": [
+        "309",
+        0
+      ],
+      "max_length": 256,
+      "sampling_mode": "off",
+      "thinking": false,
+      "use_default_template": true
+    },
+    "_meta": {
+      "title": "Pass 4 ask Qwen3-VL for the cuffs' box"
+    }
+  },
+  "402": {
+    "class_type": "SaveText",
+    "inputs": {
+      "text": [
+        "401",
+        0
+      ],
+      "filename_prefix": "proto/mara-britt-4-cuffs-box",
+      "format": "txt"
+    },
+    "_meta": {
+      "title": "Pass 4 save Qwen's answer"
+    }
+  },
+  "403": {
+    "class_type": "GetImageSize",
+    "inputs": {
+      "image": [
+        "309",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 image size"
+    }
+  },
+  "404": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "401",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 1
+    },
+    "_meta": {
+      "title": "Pass 4 box x1 (text)"
+    }
+  },
+  "408": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "404",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 box x1"
+    }
+  },
+  "405": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "401",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 2
+    },
+    "_meta": {
+      "title": "Pass 4 box y1 (text)"
+    }
+  },
+  "409": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "405",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 box y1"
+    }
+  },
+  "406": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "401",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 3
+    },
+    "_meta": {
+      "title": "Pass 4 box x2 (text)"
+    }
+  },
+  "410": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "406",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 box x2"
+    }
+  },
+  "407": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "401",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 4
+    },
+    "_meta": {
+      "title": "Pass 4 box y2 (text)"
+    }
+  },
+  "411": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "407",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 box y2"
+    }
+  },
+  "412": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(0, round(a * w / 1000) - 48)",
+      "values.a": [
+        "408",
+        0
+      ],
+      "values.b": [
+        "409",
+        0
+      ],
+      "values.c": [
+        "410",
+        0
+      ],
+      "values.d": [
+        "411",
+        0
+      ],
+      "values.w": [
+        "403",
+        0
+      ],
+      "values.h": [
+        "403",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 crop x"
+    }
+  },
+  "413": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(0, round(b * h / 1000) - 48)",
+      "values.a": [
+        "408",
+        0
+      ],
+      "values.b": [
+        "409",
+        0
+      ],
+      "values.c": [
+        "410",
+        0
+      ],
+      "values.d": [
+        "411",
+        0
+      ],
+      "values.w": [
+        "403",
+        0
+      ],
+      "values.h": [
+        "403",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 crop y"
+    }
+  },
+  "414": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(1, min(w, round(c * w / 1000) + 48) - max(0, round(a * w / 1000) - 48))",
+      "values.a": [
+        "408",
+        0
+      ],
+      "values.b": [
+        "409",
+        0
+      ],
+      "values.c": [
+        "410",
+        0
+      ],
+      "values.d": [
+        "411",
+        0
+      ],
+      "values.w": [
+        "403",
+        0
+      ],
+      "values.h": [
+        "403",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 crop width"
+    }
+  },
+  "415": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(1, min(h, round(d * h / 1000) + 48) - max(0, round(b * h / 1000) - 48))",
+      "values.a": [
+        "408",
+        0
+      ],
+      "values.b": [
+        "409",
+        0
+      ],
+      "values.c": [
+        "410",
+        0
+      ],
+      "values.d": [
+        "411",
+        0
+      ],
+      "values.w": [
+        "403",
+        0
+      ],
+      "values.h": [
+        "403",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 crop height"
+    }
+  },
+  "416": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "309",
+        0
+      ],
+      "width": [
+        "414",
+        1
+      ],
+      "height": [
+        "415",
+        1
+      ],
+      "x": [
+        "412",
+        1
+      ],
+      "y": [
+        "413",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 crop the cuffs"
+    }
+  },
+  "417": {
+    "class_type": "ImageResize+",
+    "inputs": {
+      "image": [
+        "416",
+        0
+      ],
+      "width": 1024,
+      "height": 1024,
+      "interpolation": "lanczos",
+      "method": "keep proportion",
+      "condition": "always",
+      "multiple_of": 16
+    },
+    "_meta": {
+      "title": "Pass 4 upscale the crop"
+    }
+  },
+  "418": {
+    "class_type": "LoRA Text Loader (LoraManager)",
+    "inputs": {
+      "model": [
+        "71",
+        0
+      ],
+      "clip": [
+        "56",
+        0
+      ],
+      "lora_syntax": "<lora:hcstand2_krea2_000003000:1>"
+    },
+    "_meta": {
+      "title": "Pass 4 LoRAs: handcuffing only"
+    }
+  },
+  "419": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "cinematic photorealistic film still, present-day small Midwest town, 35mm film grain, Close-up from the side of a woman's hands behind her back, her dusty pink hoodie and lightly torn blue jeans behind: a polished steel hinged handcuff is locked on her right wrist, while the bare hands of a woman in a forest-green bomber jacket, her black leather duty belt behind, press the second polished steel hinged cuff closed around her left wrist, her fingers firm on the steel. Low late-afternoon sunlight from the left puts a bright glint on the polished steel and warms the skin of their hands, natural skin texture, fine film grain.",
+      "clip": [
+        "418",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 prompt: close-up of the cuffs"
+    }
+  },
+  "420": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "419",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 negative"
+    }
+  },
+  "421": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        "417",
+        0
+      ],
+      "vae": [
+        "57",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 encode crop"
+    }
+  },
+  "422": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 1.0,
+      "width": [
+        "414",
+        1
+      ],
+      "height": [
+        "415",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 crop mask"
+    }
+  },
+  "423": {
+    "class_type": "FeatherMask",
+    "inputs": {
+      "mask": [
+        "422",
+        0
+      ],
+      "left": 24,
+      "top": 24,
+      "right": 24,
+      "bottom": 24
+    },
+    "_meta": {
+      "title": "Pass 4 feather the crop's edges"
+    }
+  },
+  "424": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "421",
+        0
+      ],
+      "mask": [
+        "423",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 mask"
+    }
+  },
+  "425": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 7310442922,
+      "steps": 8,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "beta",
+      "denoise": 0.45,
+      "model": [
+        "418",
+        0
+      ],
+      "positive": [
+        "419",
+        0
+      ],
+      "negative": [
+        "420",
+        0
+      ],
+      "latent_image": [
+        "424",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 sampler (tune denoise 0.35-0.55)"
+    }
+  },
+  "426": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "425",
+        0
+      ],
+      "vae": [
+        "57",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 decode"
+    }
+  },
+  "427": {
+    "class_type": "ImageResize+",
+    "inputs": {
+      "image": [
+        "426",
+        0
+      ],
+      "width": [
+        "414",
+        1
+      ],
+      "height": [
+        "415",
+        1
+      ],
+      "interpolation": "lanczos",
+      "method": "stretch",
+      "condition": "always",
+      "multiple_of": 0
+    },
+    "_meta": {
+      "title": "Pass 4 scale the crop back"
+    }
+  },
+  "428": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "309",
+        0
+      ],
+      "source": [
+        "427",
+        0
+      ],
+      "x": [
+        "412",
+        1
+      ],
+      "y": [
+        "413",
+        1
+      ],
+      "resize_source": false,
+      "mask": [
+        "423",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass 4 paste the cuffs back"
+    }
+  },
+  "429": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "428",
+        0
+      ],
+      "filename_prefix": "proto/mara-britt-4-final"
+    },
+    "_meta": {
+      "title": "Save pass 4 (final)"
+    }
+  },
+  "430": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "416",
+        0
+      ],
+      "filename_prefix": "proto/mara-britt-4-cuffs-before"
+    },
+    "_meta": {
+      "title": "Save pass 4 crop before"
+    }
+  },
+  "431": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "426",
+        0
+      ],
+      "filename_prefix": "proto/mara-britt-4-cuffs-after"
+    },
+    "_meta": {
+      "title": "Save pass 4 crop after (upscaled)"
+    }
+  }
+}

@@ -1,0 +1,535 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "mara-britt-1-scene.png"
+    },
+    "_meta": {
+      "title": "Pass 1 scene"
+    }
+  },
+  "2": {
+    "class_type": "GetImageSize",
+    "inputs": {
+      "image": [
+        "1",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Scene size"
+    }
+  },
+  "56": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+      "type": "krea2",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "10": {
+    "class_type": "TextGenerate",
+    "inputs": {
+      "clip": [
+        "56",
+        0
+      ],
+      "prompt": "Locate the handcuffs locked on the blonde woman's wrists behind her back, together with the two hands holding them. Output only the bounding box as JSON: {\"bbox_2d\": [x1, y1, x2, y2]}.",
+      "image": [
+        "1",
+        0
+      ],
+      "max_length": 256,
+      "sampling_mode": "off",
+      "thinking": false,
+      "use_default_template": true
+    },
+    "_meta": {
+      "title": "Ask Qwen3-VL for the cuffs' box"
+    }
+  },
+  "11": {
+    "class_type": "SaveText",
+    "inputs": {
+      "text": [
+        "10",
+        0
+      ],
+      "filename_prefix": "proto/qwen-detect-answer",
+      "format": "txt"
+    },
+    "_meta": {
+      "title": "Save the raw answer"
+    }
+  },
+  "21": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "10",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 1
+    },
+    "_meta": {
+      "title": "Box x1 (text)"
+    }
+  },
+  "31": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "21",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Box x1"
+    }
+  },
+  "22": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "10",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 2
+    },
+    "_meta": {
+      "title": "Box y1 (text)"
+    }
+  },
+  "32": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "22",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Box y1"
+    }
+  },
+  "23": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "10",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 3
+    },
+    "_meta": {
+      "title": "Box x2 (text)"
+    }
+  },
+  "33": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "23",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Box x2"
+    }
+  },
+  "24": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "10",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 4
+    },
+    "_meta": {
+      "title": "Box y2 (text)"
+    }
+  },
+  "34": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "24",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Box y2"
+    }
+  },
+  "41": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(0, round(a * w / 1000) - 48)",
+      "values.a": [
+        "31",
+        0
+      ],
+      "values.b": [
+        "32",
+        0
+      ],
+      "values.c": [
+        "33",
+        0
+      ],
+      "values.d": [
+        "34",
+        0
+      ],
+      "values.w": [
+        "2",
+        0
+      ],
+      "values.h": [
+        "2",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "0to1000: crop x"
+    }
+  },
+  "42": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(0, round(b * h / 1000) - 48)",
+      "values.a": [
+        "31",
+        0
+      ],
+      "values.b": [
+        "32",
+        0
+      ],
+      "values.c": [
+        "33",
+        0
+      ],
+      "values.d": [
+        "34",
+        0
+      ],
+      "values.w": [
+        "2",
+        0
+      ],
+      "values.h": [
+        "2",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "0to1000: crop y"
+    }
+  },
+  "43": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(1, min(w, round(c * w / 1000) + 48) - max(0, round(a * w / 1000) - 48))",
+      "values.a": [
+        "31",
+        0
+      ],
+      "values.b": [
+        "32",
+        0
+      ],
+      "values.c": [
+        "33",
+        0
+      ],
+      "values.d": [
+        "34",
+        0
+      ],
+      "values.w": [
+        "2",
+        0
+      ],
+      "values.h": [
+        "2",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "0to1000: crop width"
+    }
+  },
+  "44": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(1, min(h, round(d * h / 1000) + 48) - max(0, round(b * h / 1000) - 48))",
+      "values.a": [
+        "31",
+        0
+      ],
+      "values.b": [
+        "32",
+        0
+      ],
+      "values.c": [
+        "33",
+        0
+      ],
+      "values.d": [
+        "34",
+        0
+      ],
+      "values.w": [
+        "2",
+        0
+      ],
+      "values.h": [
+        "2",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "0to1000: crop height"
+    }
+  },
+  "45": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "1",
+        0
+      ],
+      "width": [
+        "43",
+        1
+      ],
+      "height": [
+        "44",
+        1
+      ],
+      "x": [
+        "41",
+        1
+      ],
+      "y": [
+        "42",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "0to1000: crop"
+    }
+  },
+  "46": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "45",
+        0
+      ],
+      "filename_prefix": "proto/qwen-detect-crop-0to1000"
+    },
+    "_meta": {
+      "title": "0to1000: save crop"
+    }
+  },
+  "61": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(0, round(a * 1) - 48)",
+      "values.a": [
+        "31",
+        0
+      ],
+      "values.b": [
+        "32",
+        0
+      ],
+      "values.c": [
+        "33",
+        0
+      ],
+      "values.d": [
+        "34",
+        0
+      ],
+      "values.w": [
+        "2",
+        0
+      ],
+      "values.h": [
+        "2",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "pixels: crop x"
+    }
+  },
+  "62": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(0, round(b * 1) - 48)",
+      "values.a": [
+        "31",
+        0
+      ],
+      "values.b": [
+        "32",
+        0
+      ],
+      "values.c": [
+        "33",
+        0
+      ],
+      "values.d": [
+        "34",
+        0
+      ],
+      "values.w": [
+        "2",
+        0
+      ],
+      "values.h": [
+        "2",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "pixels: crop y"
+    }
+  },
+  "63": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(1, min(w, round(c * 1) + 48) - max(0, round(a * 1) - 48))",
+      "values.a": [
+        "31",
+        0
+      ],
+      "values.b": [
+        "32",
+        0
+      ],
+      "values.c": [
+        "33",
+        0
+      ],
+      "values.d": [
+        "34",
+        0
+      ],
+      "values.w": [
+        "2",
+        0
+      ],
+      "values.h": [
+        "2",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "pixels: crop width"
+    }
+  },
+  "64": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(1, min(h, round(d * 1) + 48) - max(0, round(b * 1) - 48))",
+      "values.a": [
+        "31",
+        0
+      ],
+      "values.b": [
+        "32",
+        0
+      ],
+      "values.c": [
+        "33",
+        0
+      ],
+      "values.d": [
+        "34",
+        0
+      ],
+      "values.w": [
+        "2",
+        0
+      ],
+      "values.h": [
+        "2",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "pixels: crop height"
+    }
+  },
+  "65": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "1",
+        0
+      ],
+      "width": [
+        "63",
+        1
+      ],
+      "height": [
+        "64",
+        1
+      ],
+      "x": [
+        "61",
+        1
+      ],
+      "y": [
+        "62",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "pixels: crop"
+    }
+  },
+  "66": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "65",
+        0
+      ],
+      "filename_prefix": "proto/qwen-detect-crop-pixels"
+    },
+    "_meta": {
+      "title": "pixels: save crop"
+    }
+  }
+}
