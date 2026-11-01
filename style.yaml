@@ -14,6 +14,12 @@ types:
   achievement: { workflow: krea2, width: 1920, height: 1080, prefix: "wide third-person photograph, the scene in the right two-thirds of the frame and the left third quiet" }
 workflows:
   krea2: workflows/krea2.json
+  krea2-pass-box: workflows/krea2-pass-box.json
+  krea2-pass-segment: workflows/krea2-pass-segment.json
+# Art passes (ADR 0052): a box pass redraws Qwen's padded box; a segment pass redraws SAM2's outline inside it.
+passes:
+  box: krea2-pass-box
+  segment: krea2-pass-segment
 ui:
   colors: { background: "#121417", accent: "#3a8fd6", danger: "#d9483b" }
   fonts: { body: "system-ui", display: "Georgia, 'Times New Roman', serif" }

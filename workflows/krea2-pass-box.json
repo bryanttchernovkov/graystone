@@ -1,0 +1,675 @@
+{
+  "1": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+      "type": "krea2",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "2": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    },
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "3": {
+    "class_type": "UnetLoaderGGUF",
+    "inputs": {
+      "unet_name": "realismByStableYogi_v25GGUF.gguf"
+    },
+    "_meta": {
+      "title": "Unet Loader (GGUF)"
+    }
+  },
+  "10": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "{{find}}"
+    },
+    "_meta": {
+      "title": "What to find"
+    }
+  },
+  "11": {
+    "class_type": "StringConcatenate",
+    "inputs": {
+      "string_a": [
+        "10",
+        0
+      ],
+      "string_b": " Output only the bounding box as JSON: {\"bbox_2d\": [x1, y1, x2, y2]}.",
+      "delimiter": ""
+    },
+    "_meta": {
+      "title": "Ask for the box as JSON"
+    }
+  },
+  "12": {
+    "class_type": "TextGenerate",
+    "inputs": {
+      "clip": [
+        "1",
+        0
+      ],
+      "prompt": [
+        "11",
+        0
+      ],
+      "image": "{{image}}",
+      "max_length": 256,
+      "sampling_mode": "off",
+      "thinking": false,
+      "use_default_template": true
+    },
+    "_meta": {
+      "title": "Ask Qwen3-VL for the box"
+    }
+  },
+  "13": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "12",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Qwen's answer"
+    }
+  },
+  "14": {
+    "class_type": "GetImageSize",
+    "inputs": {
+      "image": "{{image}}"
+    },
+    "_meta": {
+      "title": "Image size"
+    }
+  },
+  "15": {
+    "class_type": "PrimitiveInt",
+    "inputs": {
+      "value": "{{pad}}"
+    },
+    "_meta": {
+      "title": "Pad (px)"
+    }
+  },
+  "20": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "12",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 1
+    },
+    "_meta": {
+      "title": "Box x1 (text)"
+    }
+  },
+  "24": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "20",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Box x1"
+    }
+  },
+  "21": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "12",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 2
+    },
+    "_meta": {
+      "title": "Box y1 (text)"
+    }
+  },
+  "25": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "21",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Box y1"
+    }
+  },
+  "22": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "12",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 3
+    },
+    "_meta": {
+      "title": "Box x2 (text)"
+    }
+  },
+  "26": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "22",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Box x2"
+    }
+  },
+  "23": {
+    "class_type": "RegexExtract",
+    "inputs": {
+      "string": [
+        "12",
+        0
+      ],
+      "regex_pattern": "\\[\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*,\\s*(\\d+(?:\\.\\d+)?)\\s*\\]",
+      "mode": "First Group",
+      "case_insensitive": true,
+      "multiline": false,
+      "dotall": true,
+      "group_index": 4
+    },
+    "_meta": {
+      "title": "Box y2 (text)"
+    }
+  },
+  "27": {
+    "class_type": "ComfyNumberConvert",
+    "inputs": {
+      "value": [
+        "23",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Box y2"
+    }
+  },
+  "30": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(0, round(a * w / 1000) - p)",
+      "values.a": [
+        "24",
+        0
+      ],
+      "values.b": [
+        "25",
+        0
+      ],
+      "values.c": [
+        "26",
+        0
+      ],
+      "values.d": [
+        "27",
+        0
+      ],
+      "values.w": [
+        "14",
+        0
+      ],
+      "values.h": [
+        "14",
+        1
+      ],
+      "values.p": [
+        "15",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Box x"
+    }
+  },
+  "31": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(0, round(b * h / 1000) - p)",
+      "values.a": [
+        "24",
+        0
+      ],
+      "values.b": [
+        "25",
+        0
+      ],
+      "values.c": [
+        "26",
+        0
+      ],
+      "values.d": [
+        "27",
+        0
+      ],
+      "values.w": [
+        "14",
+        0
+      ],
+      "values.h": [
+        "14",
+        1
+      ],
+      "values.p": [
+        "15",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Box y"
+    }
+  },
+  "32": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(16, min(w, round(c * w / 1000) + p) - max(0, round(a * w / 1000) - p))",
+      "values.a": [
+        "24",
+        0
+      ],
+      "values.b": [
+        "25",
+        0
+      ],
+      "values.c": [
+        "26",
+        0
+      ],
+      "values.d": [
+        "27",
+        0
+      ],
+      "values.w": [
+        "14",
+        0
+      ],
+      "values.h": [
+        "14",
+        1
+      ],
+      "values.p": [
+        "15",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Box width"
+    }
+  },
+  "33": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(16, min(h, round(d * h / 1000) + p) - max(0, round(b * h / 1000) - p))",
+      "values.a": [
+        "24",
+        0
+      ],
+      "values.b": [
+        "25",
+        0
+      ],
+      "values.c": [
+        "26",
+        0
+      ],
+      "values.d": [
+        "27",
+        0
+      ],
+      "values.w": [
+        "14",
+        0
+      ],
+      "values.h": [
+        "14",
+        1
+      ],
+      "values.p": [
+        "15",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Box height"
+    }
+  },
+  "34": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 0.0,
+      "width": [
+        "14",
+        0
+      ],
+      "height": [
+        "14",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Empty full-frame mask"
+    }
+  },
+  "35": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 1.0,
+      "width": [
+        "32",
+        1
+      ],
+      "height": [
+        "33",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Box"
+    }
+  },
+  "36": {
+    "class_type": "FeatherMask",
+    "inputs": {
+      "mask": [
+        "35",
+        0
+      ],
+      "left": 24,
+      "top": 24,
+      "right": 24,
+      "bottom": 24
+    },
+    "_meta": {
+      "title": "Feather the box"
+    }
+  },
+  "37": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "34",
+        0
+      ],
+      "source": [
+        "36",
+        0
+      ],
+      "x": [
+        "30",
+        1
+      ],
+      "y": [
+        "31",
+        1
+      ],
+      "operation": "add"
+    },
+    "_meta": {
+      "title": "Box mask, full frame"
+    }
+  },
+  "40": {
+    "class_type": "LoRA Text Loader (LoraManager)",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "clip": [
+        "1",
+        0
+      ],
+      "lora_syntax": [
+        "41",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass LoRAs"
+    }
+  },
+  "41": {
+    "class_type": "PrimitiveString",
+    "inputs": {
+      "value": "{{loras}}"
+    },
+    "_meta": {
+      "title": "LoRAs"
+    }
+  },
+  "42": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "{{prompt}}"
+    },
+    "_meta": {
+      "title": "Prompt"
+    }
+  },
+  "43": {
+    "class_type": "StringConcatenate",
+    "inputs": {
+      "string_a": [
+        "40",
+        2
+      ],
+      "string_b": [
+        "42",
+        0
+      ],
+      "delimiter": ", "
+    },
+    "_meta": {
+      "title": "Trigger words and prompt"
+    }
+  },
+  "44": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": [
+        "43",
+        0
+      ],
+      "clip": [
+        "40",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Pass prompt"
+    }
+  },
+  "45": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "44",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Negative"
+    }
+  },
+  "46": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": "{{image}}",
+      "vae": [
+        "2",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Encode the image"
+    }
+  },
+  "47": {
+    "class_type": "SetLatentNoiseMask",
+    "inputs": {
+      "samples": [
+        "46",
+        0
+      ],
+      "mask": [
+        "37",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Latent mask"
+    }
+  },
+  "48": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": "{{seed}}",
+      "steps": 8,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "beta",
+      "denoise": "{{denoise}}",
+      "model": [
+        "40",
+        0
+      ],
+      "positive": [
+        "44",
+        0
+      ],
+      "negative": [
+        "45",
+        0
+      ],
+      "latent_image": [
+        "47",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Pass sampler"
+    }
+  },
+  "49": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "48",
+        0
+      ],
+      "vae": [
+        "2",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Decode"
+    }
+  },
+  "50": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": "{{image}}",
+      "source": [
+        "49",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "37",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Paste the redraw back"
+    }
+  },
+  "51": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "50",
+        0
+      ],
+      "filename_prefix": [
+        "52",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Save"
+    }
+  },
+  "52": {
+    "class_type": "PrimitiveString",
+    "inputs": {
+      "value": "{{filename_prefix}}"
+    },
+    "_meta": {
+      "title": "Filename prefix"
+    }
+  },
+  "53": {
+    "class_type": "MaskToImage",
+    "inputs": {
+      "mask": [
+        "37",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Mask as image"
+    }
+  },
+  "54": {
+    "class_type": "PreviewImage",
+    "inputs": {
+      "images": [
+        "53",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "The mask"
+    }
+  }
+}
