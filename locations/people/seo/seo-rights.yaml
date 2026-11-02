@@ -45,21 +45,40 @@ arrival:
     - tracker.change: { body: -1 }
     - move.to: seo-booking
 art:
-  loras: ["sorenji_krea2_000001400:1"]
+  loras: ["undrft_krea2_000001500:1"]
   subject: >
-    Extreme low angle shot photograph, taken outdoors on a concrete river wharf in broad
-    daylight, from the ground looking straight up at the open sky and at sorenji woman in her
-    uniform with a green bomber jacket standing over the camera. Her right boot is extended down
-    toward the camera, its sole held flat just above the lens, and the photograph focuses on
-    that sole: the smooth black leather sole of a mirror-polished black leather thigh-high
-    riding boot, worn and scuffed, with a low, flat black stacked-leather heel studded with
-    small nail heads, grit ground into the leather. Beyond the boot, she towers over the camera,
-    standing on her other leg, her body rising up the frame against the sky, and she looks down
-    past her boot into the lens with smug, calm dominance: dark eyes over gold-framed aviator
-    sunglasses with mirrored lenses lowered halfway down her nose, delicate brows lifted,
-    berry-pink lips in a small, satisfied smile. She holds a small white laminated card against
-    her chest. Behind her, only the wide pale blue sky, two gulls high above. Bright daylight
-    from the sky behind her, a rim of light along her hair and the jacket's shoulders.
-    Restrained palette of boot black, forest green, uniform tan, vivid azure blue, pale sky and
-    dusty pink; natural texture, fine 35 mm film grain, sharp focus on the sole, her face
-    slightly soft beyond it.
+    An undrft underfoot POV photo taken lying flat on the concrete of a river wharf with the camera
+    pointing straight up at the sky, as the smooth black leather sole of a mirror-polished black
+    leather thigh-high riding boot stomps straight down toward the camera, worn and scuffed, grit
+    ground into the leather, its low, flat stacked-leather heel studded with small nail heads, large
+    in the upper half of the frame. A Korean woman deputy of twenty-nine with a dusty-pink bob to
+    the collar with dark roots, dark eyes and berry-pink lips stands directly over the camera,
+    wearing a dark forest-green bomber jacket of smooth nylon twill hanging open over a crisp tan
+    long-sleeved uniform shirt with chest pockets piped in vivid azure blue, a vivid azure blue
+    necktie, a polished gold six-point star badge on the jacket, a black leather duty belt with a
+    polished brass buckle and tan riding breeches with a vivid azure blue stripe down the outer
+    seam. Her planted leg rises from the bottom edge of the frame like a tall glossy column, her
+    body strongly foreshortened and towering, her other knee lifted high and bent so her boot comes
+    straight down. Her face is small and high up beside the raised boot, a small white laminated
+    card held against her chest in one bare hand, looking down past her boot into the lens with
+    calm, patient satisfaction over gold-framed aviator sunglasses lowered halfway down her nose, a
+    small smile. Directly overhead, a wide pale blue sky with two gulls high above. Bright daylight
+    from the sky behind her, a rim of light along her hair and the jacket's shoulders, natural
+    texture, fine 35 mm film grain, 24 mm lens.
+  # Passes (ADR 0052): only her top half, so her LoRA leaves the sole to the underfoot LoRA; a short
+  # prompt, as her captions are; a little stronger, because her face is small in this frame.
+  passes:
+    - find: >-
+        the woman's head, shoulders and chest, from the top of her hair down to her duty belt,
+        including the hand holding the card
+      segment: woman in a green bomber jacket
+      loras: ["sorenji_krea2_000001400:1"]
+      denoise: 0.5
+      subject: >
+        An underfoot photo taken lying flat with the camera pointing straight up at the sky. sorenji
+        woman in her uniform with a green bomber jacket, with her dusty-pink bob, stands directly
+        over the camera, her body foreshortened, her face small and high up beside her raised boot,
+        a small white laminated card held against her chest in one bare hand, lowering her aviator
+        sunglasses down her nose, looking down over them into the lens with calm, patient
+        satisfaction, her berry-pink lips in a small smile. Above her, a wide pale blue sky with two
+        gulls high above. Bright daylight from the sky behind her, fine film grain.

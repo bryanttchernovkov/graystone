@@ -28,7 +28,9 @@ block is rewritten and validated.
    drops the other's, so it can't bleed into the mask.
 8. **Seo may go in the base.** As a pass in a long prompt her face and hair came out wrong (Code Name:
    Gull). If so, load `sorenji` in a base as short as her captions and give only the man a pass.
-   Untested until that image is rendered again.
+   Worked (2026-11-02).
+9. **Keep what already works.** A woman alone in frame with only her own LoRA has nothing to separate:
+   look at the render before rewriting it, and leave it if it's right.
 
 Throughout: name whose hand and wrist (never "her" for two women), "ribbed knit sleeve bands"
 for the bomber, a trigger only in the pass that loads its LoRA. Character passes keep their weight, at most
@@ -318,38 +320,36 @@ instead of a prop pass. `escape-artist` (below, under keep) got Eli's pass too.
 
 ### locations/people/seo (10)
 
-- [ ] `locations/seo-arrest` (locations/people/seo/seo-arrest.yaml)
+- [x] `locations/seo-arrest` (locations/people/seo/seo-arrest.yaml)
   now: `sorenji` 0.9, `pvarst7` 0.8; 252 words
-  plan: base: `pvarst7` 0.8 → sorenji 0.9 (segment)
-  ⚑ cuffs with two people: name whose wrist each cuff is on
-- [ ] `locations/seo-booking` (locations/people/seo/seo-booking.yaml)
+  keep: tried base `pvarst7` 0.8 → sorenji 1, denoise 0.5 (segment, top half); not worth it (2026-11-02)
+- [x] `locations/seo-booking` (locations/people/seo/seo-booking.yaml)
   now: `sorenji` 1; 219 words
-  plan: base: no LoRA → sorenji 0.9 (segment)
-- [ ] `locations/seo-dockside` (locations/people/seo/seo-dockside.yaml)
+  keep: she is the only LoRA, and the render is right
+- [x] `locations/seo-dockside` (locations/people/seo/seo-dockside.yaml)
   now: `sorenji` 1; 118 words
-  plan: base: no LoRA → sorenji 0.9 (segment)
-- [ ] `locations/seo-holding` (locations/people/seo/seo-holding.yaml)
+  keep: she is the only LoRA, and the render is right
+- [x] `locations/seo-holding` (locations/people/seo/seo-holding.yaml)
   now: `sorenji` 1; 124 words
-  plan: base: no LoRA → sorenji 0.9 (segment)
-- [ ] `results/seo-holding.deal.search` (locations/people/seo/seo-holding.yaml, DEAL SEARCH)
+  keep: she is the only LoRA, and the render is right
+- [x] `results/seo-holding.deal.search` (locations/people/seo/seo-holding.yaml, DEAL SEARCH)
   now: `sorenji` 1; 107 words
-  plan: base: no LoRA → sorenji 0.9 (segment)
-- [ ] `results/seo-holding.work.pose` (locations/people/seo/seo-holding.yaml, WORK POSE)
+  keep: she is the only LoRA, and the render is right
+- [x] `results/seo-holding.work.pose` (locations/people/seo/seo-holding.yaml, WORK POSE)
   now: `sorenji` 1; 227 words
-  plan: base: no LoRA → sorenji 0.9 (segment)
-- [ ] `locations/seo-rights` (locations/people/seo/seo-rights.yaml)
+  keep: she is the only LoRA, and the render is right
+- [x] `locations/seo-rights` (locations/people/seo/seo-rights.yaml)
   now: `sorenji` 1; 233 words
-  plan: base: no LoRA → sorenji 0.9 (segment)
-- [ ] `locations/seo-station-arrest` (locations/people/seo/seo-station-arrest.yaml)
+  done: base `undrft` 1 → sorenji 1 (segment, top half)
+- [x] `locations/seo-station-arrest` (locations/people/seo/seo-station-arrest.yaml)
   now: `sorenji` 0.9, `pvarst7` 0.8; 223 words
-  plan: base: `pvarst7` 0.8 → sorenji 0.9 (segment)
-  ⚑ cuffs with two people: name whose wrist each cuff is on
-- [ ] `locations/seo-steps` (locations/people/seo/seo-steps.yaml)
+  keep: tried base `pvarst7` 0.8 → sorenji 1, denoise 0.5 (segment, top half); not worth it (2026-11-02)
+- [x] `locations/seo-steps` (locations/people/seo/seo-steps.yaml)
   now: `sorenji` 1; 222 words
-  plan: base: no LoRA → sorenji 0.9 (segment)
-- [ ] `locations/seo-trample` (locations/people/seo/seo-trample.yaml)
+  keep: she is the only LoRA, and the render is right
+- [x] `locations/seo-trample` (locations/people/seo/seo-trample.yaml)
   now: `sorenji` 1; 211 words
-  plan: base: no LoRA → sorenji 0.9 (segment)
+  done: base `undrft` 1 → sorenji 1 (segment, top half)
 
 ### locations/places/cafe-linde (6)
 
@@ -392,9 +392,9 @@ instead of a prop pass. `escape-artist` (below, under keep) got Eli's pass too.
 
 ### locations/places/docks (2)
 
-- [ ] `locations/docks-river` (locations/places/docks/docks-river.yaml)
+- [x] `locations/docks-river` (locations/places/docks/docks-river.yaml)
   now: `sorenji` 1; 352 words
-  plan: base: no LoRA → sorenji 0.9 (segment)
+  keep: she is the only LoRA, and the render is right
 - [ ] `locations/docks-warehouse` (locations/places/docks/docks-warehouse.yaml)
   now: `shndr7` 1; 275 words
   plan: base: no LoRA → shndr7 0.9 (segment)

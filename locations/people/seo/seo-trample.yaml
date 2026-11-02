@@ -34,19 +34,36 @@ arrival:
     - tracker.change: { body: -1 }
     - move.to: seo-holding
 art:
-  loras: ["sorenji_krea2_000001400:1"]
+  loras: ["undrft_krea2_000001500:1"]
   subject: >
-    Extreme low angle photograph from cheek height on the tiled floor of a chain-link holding
-    cage in an old church, the camera tilted up, looking up along the leg of sorenji woman in
-    her uniform as she stands beside the camera. Her black riding boot is planted on the floor
-    tiles right beside the lens, filling the left third of the frame: a stiff, mirror-polished
-    black leather thigh-high riding boot with a low, flat stacked-leather heel, its glossy shaft
-    rising from the tiles toward the top of the frame, the floor reflected in its toe. Beyond
-    the boot, she towers over the camera, standing tall with one hand on the chain-link wall of
-    the cage, and looks down along her own body into the lens with smug, calm dominance: dark
-    eyes steady, delicate brows lifted, berry-pink lips in a small, satisfied smile. Behind her,
-    the galvanized chain-link wall of the cage and, far above, the dark oak roof beams of the
-    church. Cool fluorescent light from above, a long highlight down the boot's shaft.
-    Restrained palette of boot black, uniform tan, vivid azure blue, galvanized steel, pale
-    floor tile, dark oak and dusty pink; natural texture, fine 35 mm film grain, sharp focus on
-    the boot, her face clear above it.
+    An undrft underfoot POV photo taken lying flat on the pale tiled floor of a holding cage with
+    the camera pointing straight up at the ceiling, as the smooth black leather sole of a
+    mirror-polished black leather thigh-high riding boot stomps straight down toward the camera,
+    worn and scuffed, grit ground into the leather, its low, flat stacked-leather heel studded with
+    small nail heads, large in the upper half of the frame. A Korean woman deputy of twenty-nine
+    with a dusty-pink bob to the collar with dark roots, dark eyes and berry-pink lips stands
+    directly over the camera, wearing a crisp tan long-sleeved uniform shirt with chest pockets
+    piped in vivid azure blue, a vivid azure blue necktie, a polished gold six-point star badge, a
+    black leather duty belt with a polished brass buckle and tan riding breeches with a vivid azure
+    blue stripe down the outer seam. Her planted leg rises from the bottom edge of the frame like a
+    tall glossy column, her body strongly foreshortened and towering, her other knee lifted high and
+    bent so her boot comes straight down. Her face is small and high up beside the raised boot, her
+    bare hands resting on her duty belt, looking straight down into the lens with calm, pleased
+    curiosity and a small smile. Directly overhead, the dark oak roof beams of an old church
+    crossing far above in the shadows. Cool fluorescent light from one side, a long highlight down
+    the boot's shaft, natural texture, fine 35 mm film grain, 24 mm lens.
+  # Passes (ADR 0052): only her top half, so her LoRA leaves the sole to the underfoot LoRA; a short
+  # prompt, as her captions are; a little stronger, because her face is small in this frame.
+  passes:
+    - find: >-
+        the woman's head, shoulders and chest, from the top of her hair down to her duty belt
+      segment: woman in a tan uniform
+      loras: ["sorenji_krea2_000001400:1"]
+      denoise: 0.5
+      subject: >
+        An underfoot photo taken lying flat with the camera pointing straight up at the ceiling.
+        sorenji woman in her uniform, with her dusty-pink bob, stands directly over the camera, her
+        body foreshortened, her face small and high up beside her raised boot, her bare hands
+        resting on her duty belt, looking straight down into the lens with calm, pleased curiosity,
+        her berry-pink lips in a small smile. Above her, the dark oak roof beams of an old church
+        far above. Cool fluorescent light, fine film grain.
