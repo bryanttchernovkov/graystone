@@ -5,21 +5,68 @@ text: He walked into the building on purpose, with a plan. You walked into the F
 hint: Some doors you don't walk through with a record.
 when: { location: station-arrest }
 art:
-  loras: ["nivdoyle_krea2_000001200:1"]
   subject: >
     A wide eye-level photograph across the narthex of an old deconsecrated limestone church
     converted into a sheriff's station, the scene in the right two-thirds of the frame, the left
     third quiet: pale limestone wall, worn flagstones and an empty wooden pew. In the middle of the
     frame, three paces from the lens, a man kneels on the flagstones with his back to the camera,
-    upright on both knees, his fingers laced on top of his head, his elbows out, surrendering to
-    the front desk in front of him. The man is a lean, slightly narrow-shouldered white man of
-    thirty-two with pale skin and short neat dark blond hair slightly messy on top, the thin gold
-    arms of round wire-rimmed glasses over his ears, in a faded red and gray plaid flannel shirt
-    and worn blue jeans, the soles of his sneakers toward the camera. Two paces beyond him, behind
-    a long reception counter of dark polished oak, sits nivdoyle woman in her uniform, wearing her
-    black rectangular glasses, leaning back in her chair with her arms folded, looking down at him
-    over the counter, very unimpressed: one brow raised, eyes half-lidded, her dark red lips
-    pressed flat. A brass desk lamp on the counter lights her face warmly from the side. Behind
-    her, a tall pointed stone arch into a nave of gray steel desks under stained-glass windows,
-    out of focus. Natural colour, warm lamplight against cool daylight through stained glass,
-    fine 35 mm film grain, sharp focus on her face and his laced hands.
+    upright on both knees, his fingers laced on top of his head, his elbows out, surrendering to the
+    front desk in front of him. The man is a broad-shouldered, athletic white man of thirty-two with
+    lightly tanned skin and tousled wavy brown hair, the thin gold arms of round wire-rimmed glasses
+    over his ears, in a faded red and gray plaid flannel shirt and worn blue jeans, the soles of his
+    sneakers toward the camera. Two paces beyond him, behind a long reception counter of dark
+    polished oak, sits a woman of twenty-seven with copper-ginger waves swept over her left
+    shoulder, green eyes, freckles, dark red lipstick and black rectangular glasses, in a tan
+    uniform shirt with azure trim and an azure tie with a small gold tie bar, leaning back in her
+    chair with her arms folded, looking down at him over the counter, very unimpressed: one brow
+    raised, eyes half-lidded, her dark red lips pressed flat. A brass desk lamp on the counter
+    lights her face warmly from the side. Behind her, a tall pointed stone arch into a nave of gray
+    steel desks under stained-glass windows, out of focus. Natural colour, warm lamplight against
+    cool daylight through stained glass, fine 35 mm film grain, sharp focus on her face and his
+    laced hands.
+  # Passes (ADR 0052): Eli with his LoRA, then her with hers, each under its own mask.
+  passes:
+    - find: >-
+        the man in the plaid flannel shirt, from the top of his head down to his feet or the bottom
+        of the image, including his hands
+      segment: man in plaid shirt
+      loras: ["jack:1"]
+      subject: >
+        A wide eye-level photograph across the narthex of an old deconsecrated limestone church
+        converted into a sheriff's station, the scene in the right two-thirds of the frame, the left
+        third quiet: pale limestone wall, worn flagstones and an empty wooden pew. In the middle of
+        the frame, three paces from the lens, a man kneels on the flagstones with his back to the
+        camera, upright on both knees, his fingers laced on top of his head, his elbows out,
+        surrendering to the front desk in front of him. The man is a broad-shouldered, athletic
+        white man of thirty-two with lightly tanned skin and tousled wavy brown hair, the thin gold
+        arms of round wire-rimmed glasses over his ears, in a faded red and gray plaid flannel shirt
+        and worn blue jeans, the soles of his sneakers toward the camera. Two paces beyond him,
+        behind a long reception counter of dark polished oak, sits a woman of twenty-seven with
+        copper-ginger waves swept over her left shoulder, green eyes, freckles, dark red lipstick
+        and black rectangular glasses, in a tan uniform shirt with azure trim and an azure tie with
+        a small gold tie bar, leaning back in her chair with her arms folded, looking down at him
+        over the counter. A brass desk lamp on the counter lights her face warmly from the side.
+        Behind her, a tall pointed stone arch into a nave of gray steel desks under stained-glass
+        windows, out of focus. Natural colour, warm lamplight against cool daylight through stained
+        glass, fine 35 mm film grain, sharp focus on her face and his laced hands.
+    - find: >-
+        the woman seated behind the reception counter, her head, shoulders and folded arms
+      segment: woman with red hair
+      loras: ["nivdoyle_krea2_000001200:1"]
+      subject: >
+        A wide eye-level photograph across the narthex of an old deconsecrated limestone church
+        converted into a sheriff's station, the scene in the right two-thirds of the frame, the left
+        third quiet: pale limestone wall, worn flagstones and an empty wooden pew. In the middle of
+        the frame, three paces from the lens, a man kneels on the flagstones with his back to the
+        camera, upright on both knees, his fingers laced on top of his head, his elbows out,
+        surrendering to the front desk in front of him. The man is a broad-shouldered, athletic
+        white man of thirty-two with lightly tanned skin and tousled wavy brown hair, the thin gold
+        arms of round wire-rimmed glasses over his ears, in a faded red and gray plaid flannel shirt
+        and worn blue jeans, the soles of his sneakers toward the camera. Two paces beyond him,
+        behind a long reception counter of dark polished oak, sits nivdoyle woman in her uniform,
+        wearing her black rectangular glasses, leaning back in her chair with her arms folded,
+        looking down at him over the counter, very unimpressed: one brow raised, eyes half-lidded,
+        her dark red lips pressed flat. A brass desk lamp on the counter lights her face warmly from
+        the side. Behind her, a tall pointed stone arch into a nave of gray steel desks under
+        stained-glass windows, out of focus. Natural colour, warm lamplight against cool daylight
+        through stained glass, fine 35 mm film grain, sharp focus on her face and his laced hands.

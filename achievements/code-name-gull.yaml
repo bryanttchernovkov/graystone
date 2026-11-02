@@ -6,29 +6,42 @@ hint: Deputy Seo keeps a notebook. Fill your page.
 when: { card: seos-informant }
 art:
   loras: ["sorenji_krea2_000001400:1"]
+  # Seo is in the base, in a prompt as short as her captions: her LoRA drew her badly as a pass.
   subject: >
-    a close medium shot of a secret moment on a river wharf on an overcast afternoon, weathered
-    timber pilings and a rusted iron mooring bollard, seen from along the dock at chest height, both
-    figures from the waist up in the right two-thirds of the frame. sorenji woman in her uniform
-    with a green bomber jacket, with her dusty-pink bob, dark eyes and berry-pink lips, has pulled
-    the man close by the collar of his flannel with one bare hand and leans up to whisper into his
-    ear, her lips almost touching it, her aviator sunglasses lowered down her nose so her dark eyes
-    show, sparkling with mischief, a small conspiratorial smile. Her other bare hand holds a small
-    black notebook open against his chest, a pencil tucked behind her ear. She wears the Graystone
-    County Sheriff's patrol uniform: a dark forest-green bomber jacket of smooth nylon twill with
-    ribbed knit cuffs, collar band and waistband, zipped up to the middle of her chest, a single
-    polished gold six-point star badge pinned on its left chest and an embroidered vivid azure blue
-    and gold patch on each upper sleeve; above the zipper show only the pointed collar of a crisp,
-    pressed tan uniform shirt and the small knot of a vivid, saturated azure blue necktie; a black
-    leather duty belt with a polished brass buckle; tan riding breeches with a vivid azure blue
-    stripe down the outer seam. Her hands are bare and her head is bare. The man is a lean, slightly
-    narrow-shouldered white man of thirty-two with pale skin, short neat dark blond hair slightly
-    messy on top and the same length all round, a few days of light blond stubble and round thin
-    gold wire-rimmed glasses, in an unbuttoned faded red and gray plaid flannel shirt over a plain
-    charcoal T-shirt, worn blue work jeans and scuffed brown leather work boots, bent down toward
-    her with his ear to her lips, eyes wide, glancing sideways down the empty dock, nervous and
-    thrilled. On the bollard right beside them a herring gull stands with its head cocked, watching
-    them. The left third of the frame is the wide gray river, a moored rust-red barge and the far
-    wooded bank, soft and out of focus, more gulls on the pilings. Soft even overcast light; palette
-    of river gray, forest green, dusty pink, flannel red and khaki tan; natural skin texture, fine
-    35 mm film grain, sharp focus on her eyes and his ear
+    a close medium shot of two people standing on a river wharf on an overcast afternoon, seen from
+    along the dock at chest height, both from the waist up in the right two-thirds of the frame.
+    sorenji woman in her uniform with a green bomber jacket, with her dusty-pink bob, stands beside
+    a man, one bare hand holding his flannel collar, and leans toward his ear to whisper, a hand's
+    width of air between her face and his, her small black notebook open in her other hand, lowering
+    her aviator sunglasses down her nose, her dark eyes sparkling with mischief, her berry-pink lips
+    curved in a small closed-mouth smile. The man is a broad-shouldered, athletic white man of
+    thirty-two with lightly tanned skin, tousled wavy brown hair, a strong square jaw, light stubble
+    and round thin gold wire-rimmed glasses, in an unbuttoned faded red and gray plaid flannel shirt
+    over a plain charcoal T-shirt, bending his head down toward her, eyes wide behind his glasses,
+    brows shot up, glancing sideways down the empty dock, his lips pressed tight in a nervous line.
+    On a rusted iron mooring bollard right beside them a herring gull stands with its head cocked,
+    watching them. The left third of the frame is the wide gray river and a moored rust-red barge,
+    soft and out of focus. Soft even overcast light; natural skin texture, fine 35 mm film grain
+  # Passes (ADR 0052): only Eli, a little stronger, to pull him away from what her LoRA drew.
+  passes:
+    - find: >-
+        the man in the plaid flannel shirt, from the top of his head down to the bottom of the
+        image, including his hands
+      segment: man in plaid shirt
+      loras: ["jack:1"]
+      denoise: 0.55
+      subject: >
+        a close medium shot of two people standing on a river wharf on an overcast afternoon, seen
+        from along the dock at chest height, both from the waist up in the right two-thirds of the
+        frame. A Korean woman deputy with a dusty-pink bob, in a forest-green bomber jacket over a
+        tan uniform shirt, stands beside a man, one bare hand holding his flannel collar, and leans
+        toward his ear to whisper, a hand's width of air between her face and his, her small black
+        notebook open in her other hand. The man is a broad-shouldered, athletic white man of
+        thirty-two with lightly tanned skin, tousled wavy brown hair, a strong square jaw, light
+        stubble and round thin gold wire-rimmed glasses, in an unbuttoned faded red and gray plaid
+        flannel shirt over a plain charcoal T-shirt, bending his head down toward her, eyes wide
+        behind his glasses, brows shot up, glancing sideways down the empty dock, his lips pressed
+        tight in a nervous line. On a rusted iron mooring bollard right beside them a herring gull
+        stands with its head cocked, watching them. The left third of the frame is the wide gray
+        river and a moored rust-red barge, soft and out of focus. Soft even overcast light; natural
+        skin texture, fine 35 mm film grain

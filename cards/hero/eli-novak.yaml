@@ -8,23 +8,24 @@ slots:
   - { match: { category: talk } }
   - { match: { category: look } }
 art:
+  # The player: his LoRA in the base, where he is alone (ADR 0052; cast.md).
+  loras: ["jack:1"]
   subject: >
-    Square eye-level portrait photograph of an ordinary, slightly nerdy man standing on the
-    front porch steps of a pale gray clapboard house in a small Midwest town in autumn, seen
-    from the front walk at standing height, framed from the knees up and centered. He is a white
-    man of thirty-two, lean and a little narrow-shouldered, with pale skin, short dark blond
-    hair that is slightly messy on top, a few days of light stubble and round thin wire-rimmed
-    glasses. He looks toward the camera with a mild, slightly awkward expression: eyes friendly
-    behind the glasses, brows raised a touch, a small lopsided closed-mouth half smile. He wears
-    an unbuttoned faded red and gray plaid flannel shirt over a plain charcoal T-shirt, worn
-    blue work jeans and scuffed brown leather work boots. A black canvas laptop bag hangs on a
-    strap across his chest, his left hand resting on its flap and his right hand holding a white
-    paper coffee cup at his side. Behind him the covered porch runs across the frame: square
-    white posts, a white wooden railing, a wooden porch swing on chains to the left and a dark
-    forest-green front door with a small square window over his right shoulder, the gray
-    clapboard siding with crisp white trim filling the background. Fallen red and yellow maple
-    leaves lie on the gray concrete steps at the bottom of the frame, and the orange branches of
-    a maple cross the top right corner. Mid-morning sun from the upper left lights his face and
-    the porch posts warm and lays the porch roof's shadow in a soft band across the door.
-    Restrained palette of pale gray siding, white trim, flannel red, charcoal, denim blue and
-    maple orange; natural skin texture, fine 35 mm film grain, shallow depth of field.
+    Square eye-level portrait photograph of an ordinary, slightly nerdy man standing on the front
+    porch steps of a pale gray clapboard house in a small Midwest town in autumn, seen from the
+    front walk at standing height, framed from the knees up and centered. He is a white man of
+    thirty-two, broad-shouldered and athletic, with lightly tanned skin, tousled wavy brown hair, a
+    strong square jaw, light stubble and round thin wire-rimmed glasses. He looks toward the camera
+    with a mild, slightly awkward expression: eyes friendly behind the glasses, brows raised a
+    touch, a small lopsided closed-mouth half smile. He wears an unbuttoned faded red and gray plaid
+    flannel shirt over a plain charcoal T-shirt, worn blue work jeans and scuffed brown leather work
+    boots. A black canvas laptop bag hangs on a strap across his chest, his left hand resting on its
+    flap and his right hand holding a white paper coffee cup at his side. Behind him the covered
+    porch runs across the frame: square white posts, a white wooden railing, a wooden porch swing on
+    chains to the left and a dark forest-green front door with a small square window over his right
+    shoulder, the gray clapboard siding with crisp white trim filling the background. Fallen red and
+    yellow maple leaves lie on the gray concrete steps at the bottom of the frame, and the orange
+    branches of a maple cross the top right corner. Mid-morning sun from the upper left lights his
+    face and the porch posts warm and lays the porch roof's shadow in a soft band across the door.
+    Restrained palette of pale gray siding, white trim, flannel red, charcoal, denim blue and maple
+    orange; natural skin texture, fine 35 mm film grain, shallow depth of field.

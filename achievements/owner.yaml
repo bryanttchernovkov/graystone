@@ -5,27 +5,93 @@ text: "A teal heart and the word \"owner\". You can't change it back, and you've
 hint: "@rootkitty's page is only the start."
 when: { card: rootkittys-simp }
 art:
-  loras: ["jovessa_krea2_000001200:0.65"]
   subject: >
     a photograph from behind and slightly above a kneeling man, over his shoulder, in the computer
     corner of an old Carnegie library on a quiet afternoon, long oak reading tables and green-shaded
     brass reading lamps, the two of them in the right two-thirds of the frame. In the foreground,
     seen from behind, a man kneels on both knees on the polished oak floorboards with his back to
-    the camera: only the back of his head, his shoulders and his raised arms show, short sandy-blond
-    hair cut short and even all round, the gold temple arms of his glasses over his ears, the faded
-    red and gray plaid flannel shirt across his shoulders, the soles of his scuffed brown work boots
-    behind him on the floor. Both of his arms are raised in front of him, holding a fan of
-    twenty-dollar bills up toward her in both hands like an offering, his head bowed. His own phone
-    lies face-up on the floorboards beside his knee, its screen a big teal heart. Facing the camera
-    beyond him, jovessa woman in her usual black outfit, wearing her black rectangular glasses and a
-    black ring choker, sits on a wooden library chair at a corner table with her legs crossed, the
-    sole of one worn black-and-white canvas sneaker resting on his shoulder, pressing down. She
-    leans forward and plucks the bills out of his raised hands with two fingers, holding her own
-    phone up in the other hand to film him, looking down at him and grinning wide with delighted,
-    teasing mockery, her tongue poking between her teeth. On the table beside her sits a plain black
-    laptop, the back of its lid covered edge to edge in small, colorful vinyl stickers of cartoon
-    cats, stars, hearts and lightning bolts, none of them with any lettering. The left third of the
-    frame is the long empty aisle of tall oak bookshelves receding into soft focus. Warm afternoon
-    light through tall windows on the right lights her face, a green reading lamp glowing on the
-    table. Palette of black, deep teal, warm oak, flannel red, money green and lamp green; natural
-    skin texture, fine 35 mm film grain, sharp focus on her face, the cash and his raised hands
+    the camera: only the back of his head, his shoulders and his raised arms show, tousled wavy
+    brown hair, the gold temple arms of his glasses over his ears, the faded red and gray plaid
+    flannel shirt across his shoulders, the soles of his scuffed brown work boots behind him on the
+    floor. Both of his arms are raised in front of him, holding a fan of twenty-dollar bills up
+    toward her in both hands like an offering, his head bowed. His own phone lies face-up on the
+    floorboards beside his knee, its screen a big teal heart. Facing the camera beyond him, a
+    petite, slim young woman of twenty-three with pale freckled skin, dense black and deep teal hair
+    swept to one side, shaved short at one temple and falling in long thick waves over the other
+    shoulder, black rectangular glasses, a small silver septum ring and a black choker with a silver
+    O-ring, in a black ribbed crop tank, an open oversized black bomber jacket slipping off her
+    shoulders, black drawstring joggers and worn black-and-white low-top canvas sneakers, sits on a
+    wooden library chair at a corner table with her legs crossed, the sole of one worn
+    black-and-white canvas sneaker resting on his shoulder, pressing down. She leans forward and
+    plucks the bills out of his raised hands with two fingers, holding her own phone up in the other
+    hand to film him, looking down at him and grinning wide with delighted, teasing mockery, her
+    tongue poking between her teeth. On the table beside her sits a plain black laptop, the back of
+    its lid covered edge to edge in small, colorful vinyl stickers of cartoon cats, stars, hearts
+    and lightning bolts, none of them with any lettering. The left third of the frame is the long
+    empty aisle of tall oak bookshelves receding into soft focus. Warm afternoon light through tall
+    windows on the right lights her face, a green reading lamp glowing on the table. Palette of
+    black, deep teal, warm oak, flannel red, money green and lamp green; natural skin texture, fine
+    35 mm film grain, sharp focus on her face, the cash and his raised hands
+  # Passes (ADR 0052): Eli with his LoRA, then her with hers, each under its own mask.
+  passes:
+    - find: >-
+        the man in the plaid flannel shirt, from the top of his head down to his feet or the bottom
+        of the image, including his hands
+      segment: man in plaid shirt
+      loras: ["jack:1"]
+      subject: >
+        a photograph from behind and slightly above a kneeling man, over his shoulder, in the
+        computer corner of an old Carnegie library on a quiet afternoon, long oak reading tables and
+        green-shaded brass reading lamps, the two of them in the right two-thirds of the frame. In
+        the foreground, seen from behind, a man kneels on both knees on the polished oak floorboards
+        with his back to the camera: only the back of his head, his shoulders and his raised arms
+        show, tousled wavy brown hair, the gold temple arms of his glasses over his ears, the faded
+        red and gray plaid flannel shirt across his shoulders, the soles of his scuffed brown work
+        boots behind him on the floor. Both of his arms are raised in front of him, holding a fan of
+        twenty-dollar bills up toward her in both hands like an offering, his head bowed. His own
+        phone lies face-up on the floorboards beside his knee, its screen a big teal heart. Facing
+        the camera beyond him, a petite, slim young woman of twenty-three with pale freckled skin,
+        dense black and deep teal hair swept to one side, shaved short at one temple and falling in
+        long thick waves over the other shoulder, black rectangular glasses, a small silver septum
+        ring and a black choker with a silver O-ring, in a black ribbed crop tank, an open oversized
+        black bomber jacket slipping off her shoulders, black drawstring joggers and worn
+        black-and-white low-top canvas sneakers, sits on a wooden library chair at a corner table
+        with her legs crossed, the sole of one worn black-and-white canvas sneaker resting on his
+        shoulder, pressing down. She leans forward and plucks the bills out of his raised hands with
+        two fingers, holding her own phone up in the other hand to film him, looking down at him. On
+        the table beside her sits a plain black laptop, the back of its lid covered edge to edge in
+        small, colorful vinyl stickers of cartoon cats, stars, hearts and lightning bolts, none of
+        them with any lettering. The left third of the frame is the long empty aisle of tall oak
+        bookshelves receding into soft focus. Warm afternoon light through tall windows on the right
+        lights her face, a green reading lamp glowing on the table. Palette of black, deep teal,
+        warm oak, flannel red, money green and lamp green; natural skin texture, fine 35 mm film
+        grain, sharp focus on her face, the cash and his raised hands
+    - find: >-
+        the young woman with black and teal hair sitting on the library chair, from the top of her
+        hair down to her sneakers, including both of her hands
+      segment: woman with teal hair
+      loras: ["jovessa_krea2_000001200:0.65"]
+      subject: >
+        a photograph from behind and slightly above a kneeling man, over his shoulder, in the
+        computer corner of an old Carnegie library on a quiet afternoon, long oak reading tables and
+        green-shaded brass reading lamps, the two of them in the right two-thirds of the frame. In
+        the foreground, seen from behind, a man kneels on both knees on the polished oak floorboards
+        with his back to the camera: only the back of his head, his shoulders and his raised arms
+        show, tousled wavy brown hair, the gold temple arms of his glasses over his ears, the faded
+        red and gray plaid flannel shirt across his shoulders, the soles of his scuffed brown work
+        boots behind him on the floor. Both of his arms are raised in front of him, holding a fan of
+        twenty-dollar bills up toward her in both hands like an offering, his head bowed. His own
+        phone lies face-up on the floorboards beside his knee, its screen a big teal heart. Facing
+        the camera beyond him, jovessa woman in her usual black outfit, wearing her black
+        rectangular glasses and a black ring choker, sits on a wooden library chair at a corner
+        table with her legs crossed, the sole of one worn black-and-white canvas sneaker resting on
+        his shoulder, pressing down. She leans forward and plucks the bills out of his raised hands
+        with two fingers, holding her own phone up in the other hand to film him, looking down at
+        him and grinning wide with delighted, teasing mockery, her tongue poking between her teeth.
+        On the table beside her sits a plain black laptop, the back of its lid covered edge to edge
+        in small, colorful vinyl stickers of cartoon cats, stars, hearts and lightning bolts, none
+        of them with any lettering. The left third of the frame is the long empty aisle of tall oak
+        bookshelves receding into soft focus. Warm afternoon light through tall windows on the right
+        lights her face, a green reading lamp glowing on the table. Palette of black, deep teal,
+        warm oak, flannel red, money green and lamp green; natural skin texture, fine 35 mm film
+        grain, sharp focus on her face, the cash and his raised hands

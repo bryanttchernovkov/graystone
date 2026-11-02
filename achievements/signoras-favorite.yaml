@@ -5,25 +5,82 @@ text: She makes yours without asking now, caro.
 hint: Café Linde rewards a regular who listens.
 when: { card: signoras-favorite }
 art:
-  loras: ["ferrina_krea2_000001200:1"]
   subject: >
     a full-length view of two people in the small back room of a family espresso café, burlap sacks
     of green coffee stacked high, a small black drum coffee roaster, a scrubbed steel prep table and
     steel shelves of stacked white cups, seen from the doorway at waist height so both figures and
     the tiled floor are in frame. In the center right of the frame a man kneels on both knees on the
-    black and white tiled floor: he is a lean, slightly narrow-shouldered white man of thirty-two
-    with pale skin, short neat dark blond hair slightly messy on top and the same length all round,
-    a few days of light blond stubble and round thin gold wire-rimmed glasses, in an unbuttoned
-    faded red and gray plaid flannel shirt over a plain charcoal T-shirt, worn blue work jeans and
-    scuffed brown leather work boots. His knees are on the tiles, his hands rest folded on his
-    thighs, his head is at the height of her waist, and he looks up at her with flushed, devoted
-    gratitude, lips parted. Standing over him, close in front of him, ferrina woman in her red work
-    blouse and a plain black apron with no lettering, wearing her thick black rectangular glasses,
-    with black trousers and black patent stiletto pumps, looks down at him and smiles sweetly, red
-    lips curved, eyes warm and amused behind her glasses. Her left hand holds a small white espresso
-    cup on its saucer, and her right hand, red nails spread, rests on top of his head, fingers in
-    his hair, as if petting a good dog. The left third of the frame is the dim shelving and burlap
-    sacks in soft focus. A single bare bulb hanging above lights her face, her glasses, the red
-    satin and the white cup warm and hard, and catches his upturned face, the sacks falling into
-    amber shadow. Palette of red satin, black apron, white porcelain, burlap, steel and bulb amber;
-    natural skin and fabric texture, fine 35 mm film grain, sharp focus on her smile and his face
+    black and white tiled floor: he is a broad-shouldered, athletic white man of thirty-two with
+    lightly tanned skin, tousled wavy brown hair, a strong square jaw, light stubble and round thin
+    gold wire-rimmed glasses, in an unbuttoned faded red and gray plaid flannel shirt over a plain
+    charcoal T-shirt, worn blue work jeans and scuffed brown leather work boots. His knees are on
+    the tiles, his hands rest folded on his thighs, his head is at the height of her waist, and he
+    looks up at her with flushed, devoted gratitude: brows raised and soft, eyes wide and shining,
+    lips parted. Standing over him, close in front of him, a woman of forty with glossy
+    shoulder-length dark waves, green eyes, red lipstick, gold hoop earrings and thick black
+    rectangular glasses, in a red satin work blouse and a plain black bib apron, with black trousers
+    and black patent stiletto pumps, looks down at him and smiles sweetly, a closed-lipped, knowing
+    smile, red lips curved, chin tipped down, eyes warm, amused and a little condescending behind
+    her glasses. Her left hand holds a small white espresso cup on its saucer, and her right hand,
+    red nails spread, rests on top of his head, fingers in his hair, as if petting a good dog. The
+    left third of the frame is the dim shelving and burlap sacks in soft focus. A single bare bulb
+    hanging above lights her face, her glasses, the red satin and the white cup warm and hard, and
+    catches his upturned face, the sacks falling into amber shadow. Palette of red satin, black
+    apron, white porcelain, burlap, steel and bulb amber; natural skin and fabric texture, fine 35
+    mm film grain, sharp focus on her smile and his face
+  # Passes (ADR 0052): Eli with his LoRA, then her with hers, each under its own mask.
+  passes:
+    - find: >-
+        the man in the plaid flannel shirt, from the top of his head down to his feet or the bottom
+        of the image, including his hands
+      segment: man in plaid shirt
+      loras: ["jack:1"]
+      subject: >
+        a full-length view of two people in the small back room of a family espresso café, burlap
+        sacks of green coffee stacked high, a small black drum coffee roaster, a scrubbed steel prep
+        table and steel shelves of stacked white cups, seen from the doorway at waist height so both
+        figures and the tiled floor are in frame. In the center right of the frame a man kneels on
+        both knees on the black and white tiled floor: he is a broad-shouldered, athletic white man
+        of thirty-two with lightly tanned skin, tousled wavy brown hair, a strong square jaw, light
+        stubble and round thin gold wire-rimmed glasses, in an unbuttoned faded red and gray plaid
+        flannel shirt over a plain charcoal T-shirt, worn blue work jeans and scuffed brown leather
+        work boots. His knees are on the tiles, his hands rest folded on his thighs, his head is at
+        the height of her waist, and he looks up at her with flushed, devoted gratitude: brows
+        raised and soft, eyes wide and shining, lips parted. Standing over him, close in front of
+        him, a woman of forty with glossy shoulder-length dark waves, green eyes, red lipstick, gold
+        hoop earrings and thick black rectangular glasses, in a red satin work blouse and a plain
+        black bib apron, with black trousers and black patent stiletto pumps, looks down at him. Her
+        left hand holds a small white espresso cup on its saucer, and her right hand, red nails
+        spread, rests on top of his head, fingers in his hair, as if petting a good dog. The left
+        third of the frame is the dim shelving and burlap sacks in soft focus. A single bare bulb
+        hanging above lights her face, her glasses, the red satin and the white cup warm and hard,
+        and catches his upturned face, the sacks falling into amber shadow. Palette of red satin,
+        black apron, white porcelain, burlap, steel and bulb amber; natural skin and fabric texture,
+        fine 35 mm film grain, sharp focus on her smile and his face
+    - find: >-
+        the woman in the red blouse and black apron standing over him, from the top of her hair down
+        to her shoes, including both of her hands
+      segment: woman in a red blouse
+      loras: ["ferrina_krea2_000001200:1"]
+      subject: >
+        a full-length view of two people in the small back room of a family espresso café, burlap
+        sacks of green coffee stacked high, a small black drum coffee roaster, a scrubbed steel prep
+        table and steel shelves of stacked white cups, seen from the doorway at waist height so both
+        figures and the tiled floor are in frame. In the center right of the frame a man kneels on
+        both knees on the black and white tiled floor: he is a broad-shouldered, athletic white man
+        of thirty-two with lightly tanned skin, tousled wavy brown hair, a strong square jaw, light
+        stubble and round thin gold wire-rimmed glasses, in an unbuttoned faded red and gray plaid
+        flannel shirt over a plain charcoal T-shirt, worn blue work jeans and scuffed brown leather
+        work boots. His knees are on the tiles, his hands rest folded on his thighs, his head is at
+        the height of her waist, and he looks up at her. Standing over him, close in front of him,
+        ferrina woman in her red work blouse and a plain black apron with no lettering, wearing her
+        thick black rectangular glasses, with black trousers and black patent stiletto pumps, looks
+        down at him and smiles sweetly, a closed-lipped, knowing smile, red lips curved, chin tipped
+        down, eyes warm, amused and a little condescending behind her glasses. Her left hand holds a
+        small white espresso cup on its saucer, and her right hand, red nails spread, rests on top
+        of his head, fingers in his hair, as if petting a good dog. The left third of the frame is
+        the dim shelving and burlap sacks in soft focus. A single bare bulb hanging above lights her
+        face, her glasses, the red satin and the white cup warm and hard, and catches his upturned
+        face, the sacks falling into amber shadow. Palette of red satin, black apron, white
+        porcelain, burlap, steel and bulb amber; natural skin and fabric texture, fine 35 mm film
+        grain, sharp focus on her smile and his face

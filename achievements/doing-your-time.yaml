@@ -5,34 +5,107 @@ text: A line in the Sergeant's ledger, her initials, then yours. Every count wor
 hint: The Undercroft keeps a ledger. Get your line in it signed.
 when: { card: served-sentence }
 art:
-  loras: ["ashby7_krea2_000001200:0.9", "hngcf5_krea2_000001500:0.9"]
+  loras: ["hngcf5_krea2_000001500:0.9"]
   subject: >
     a long, windowless underground corridor of smooth dressed limestone ashlar blocks laid in
     straight courses with thin mortar joints, caged incandescent bulbs in a row along a whitewashed
     pointed vault, a row of black iron cell doors on the right, seen from low in the corridor
     looking along it. In the right third of the frame, walking toward the open door of the last
-    cell, ashby7 woman in her sheriff's uniform, tan with an azure tie, a Black sergeant in her
-    early thirties with dark brown skin, a broad-shouldered athletic build and her long black locs
-    gathered at the nape marches a man along by the upper arm. She wears the Graystone County
-    Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a
-    pointed collar, two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets
-    edged in vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve,
-    with three vivid azure blue chevrons beneath the patch on each sleeve and a polished gold
-    six-point star badge pinned over the left pocket; a vivid, saturated azure blue necktie with a
-    small gold tie bar; a black leather duty belt with a polished brass buckle; tan riding breeches,
-    the same khaki tan as her shirt, with a vivid azure blue stripe down the outer seam; and stiff,
-    structured, mirror-polished black leather thigh-high riding boots with rigid straight shafts and
-    low, flat stacked-leather riding heels, fitted tight to the leg, pulled up over the breeches to
-    mid-thigh, with black leather duty gloves on both hands and a ring of heavy iron keys at her
-    hip; her head is bare. Her gloved right hand grips his arm just above the elbow, her chin up,
-    her face set in cool, satisfied command, her eyes on the cell door. The man is a lean, slightly
-    narrow-shouldered white man of thirty-two with pale skin, short dark blond hair slightly messy
-    on top, a few days of light stubble and round thin wire-rimmed glasses, in a loose, bright
-    orange county inmate jumpsuit with the sleeves pushed up, barefoot, his wrists locked in front
-    of him in closed polished stainless steel hngcf5 hinged handcuffs, each cuff a little wider than
-    the wrist; he walks half a step ahead of her with his head down and his shoulders hunched,
-    glancing sideways at her through his glasses, cheeks flushed. The left of the frame is the empty
-    stone corridor running back into warm darkness. The bulbs throw pools of warm amber light on the
-    flagstones and on the two of them, deep shadow between the pools. Palette of pale limestone,
-    uniform tan, vivid azure blue, inmate orange and black iron; natural skin and fabric texture,
-    fine 35 mm film grain.
+    cell, a Black sergeant in her early thirties with dark brown skin, a broad-shouldered athletic
+    build and her long black locs gathered at the nape marches a man along by the upper arm. She
+    wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of
+    heavy cotton twill with a pointed collar, two buttoned flap chest pockets piped in vivid azure
+    blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold
+    patch on each upper sleeve, with three vivid azure blue chevrons beneath the patch on each
+    sleeve and a polished gold six-point star badge pinned over the left pocket; a vivid, saturated
+    azure blue necktie with a small gold tie bar; a black leather duty belt with a polished brass
+    buckle; tan riding breeches, the same khaki tan as her shirt, with a vivid azure blue stripe
+    down the outer seam; and stiff, structured, mirror-polished black leather thigh-high riding
+    boots with rigid straight shafts and low, flat stacked-leather riding heels, fitted tight to the
+    leg, pulled up over the breeches to mid-thigh, with black leather duty gloves on both hands and
+    a ring of heavy iron keys at her hip; her head is bare. Her gloved right hand grips his arm just
+    above the elbow, her chin up, her eyes on the cell door, her face set in cool, satisfied
+    command, her lips closed and level. The man is a broad-shouldered, athletic white man of
+    thirty-two with lightly tanned skin, tousled wavy brown hair, a strong square jaw, light stubble
+    and round thin gold wire-rimmed glasses, in a loose, bright orange county inmate jumpsuit with
+    the sleeves pushed up, barefoot, his wrists locked in front of him in closed polished stainless
+    steel hngcf5 hinged handcuffs, each cuff a little wider than the wrist; he walks half a step
+    ahead of her with his head down and his shoulders hunched, glancing sideways at her through his
+    glasses with wide, anxious eyes, brows raised, his cheeks flushed, biting his lower lip. The
+    left of the frame is the empty stone corridor running back into warm darkness. The bulbs throw
+    pools of warm amber light on the flagstones and on the two of them, deep shadow between the
+    pools. Palette of pale limestone, uniform tan, vivid azure blue, inmate orange and black iron;
+    natural skin and fabric texture, fine 35 mm film grain.
+  # Passes (ADR 0052): Eli with his LoRA, then her with hers, each under its own mask.
+  passes:
+    - find: >-
+        the man in the orange jumpsuit, from the top of his head down to his feet or the bottom of
+        the image, including his hands
+      segment: man in orange jumpsuit
+      loras: ["jack:1"]
+      subject: >
+        a long, windowless underground corridor of smooth dressed limestone ashlar blocks laid in
+        straight courses with thin mortar joints, caged incandescent bulbs in a row along a
+        whitewashed pointed vault, a row of black iron cell doors on the right, seen from low in the
+        corridor looking along it. In the right third of the frame, walking toward the open door of
+        the last cell, a Black sergeant in her early thirties with dark brown skin, a
+        broad-shouldered athletic build and her long black locs gathered at the nape marches a man
+        along by the upper arm. She wears the Graystone County Sheriff's uniform: a crisp, pressed
+        tan long-sleeved uniform shirt of heavy cotton twill with a pointed collar, two buttoned
+        flap chest pockets piped in vivid azure blue, shoulder epaulets edged in vivid azure blue,
+        an embroidered vivid azure blue and gold patch on each upper sleeve, with three vivid azure
+        blue chevrons beneath the patch on each sleeve and a polished gold six-point star badge
+        pinned over the left pocket; a vivid, saturated azure blue necktie with a small gold tie
+        bar; a black leather duty belt with a polished brass buckle; tan riding breeches, the same
+        khaki tan as her shirt, with a vivid azure blue stripe down the outer seam; and stiff,
+        structured, mirror-polished black leather thigh-high riding boots with rigid straight shafts
+        and low, flat stacked-leather riding heels, fitted tight to the leg, pulled up over the
+        breeches to mid-thigh, with black leather duty gloves on both hands and a ring of heavy iron
+        keys at her hip; her head is bare. Her gloved right hand grips his arm just above the elbow,
+        her eyes on the cell door. The man is a broad-shouldered, athletic white man of thirty-two
+        with lightly tanned skin, tousled wavy brown hair, a strong square jaw, light stubble and
+        round thin gold wire-rimmed glasses, in a loose, bright orange county inmate jumpsuit with
+        the sleeves pushed up, barefoot, his wrists locked in front of him in closed polished
+        stainless steel hinged handcuffs, each cuff a little wider than the wrist; he walks half a
+        step ahead of her with his head down and his shoulders hunched, glancing sideways at her
+        through his glasses with wide, anxious eyes, brows raised, his cheeks flushed, biting his
+        lower lip. The left of the frame is the empty stone corridor running back into warm
+        darkness. The bulbs throw pools of warm amber light on the flagstones and on the two of
+        them, deep shadow between the pools. Palette of pale limestone, uniform tan, vivid azure
+        blue, inmate orange and black iron; natural skin and fabric texture, fine 35 mm film grain.
+    - find: >-
+        the woman in the tan uniform marching the man along, from the top of her hair down to her
+        boots
+      segment: woman in a tan uniform
+      loras: ["ashby7_krea2_000001200:0.9"]
+      subject: >
+        a long, windowless underground corridor of smooth dressed limestone ashlar blocks laid in
+        straight courses with thin mortar joints, caged incandescent bulbs in a row along a
+        whitewashed pointed vault, a row of black iron cell doors on the right, seen from low in the
+        corridor looking along it. In the right third of the frame, walking toward the open door of
+        the last cell, ashby7 woman in her sheriff's uniform, tan with an azure tie, a Black
+        sergeant in her early thirties with dark brown skin, a broad-shouldered athletic build and
+        her long black locs gathered at the nape marches a man along by the upper arm. She wears the
+        Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy
+        cotton twill with a pointed collar, two buttoned flap chest pockets piped in vivid azure
+        blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold
+        patch on each upper sleeve, with three vivid azure blue chevrons beneath the patch on each
+        sleeve and a polished gold six-point star badge pinned over the left pocket; a vivid,
+        saturated azure blue necktie with a small gold tie bar; a black leather duty belt with a
+        polished brass buckle; tan riding breeches, the same khaki tan as her shirt, with a vivid
+        azure blue stripe down the outer seam; and stiff, structured, mirror-polished black leather
+        thigh-high riding boots with rigid straight shafts and low, flat stacked-leather riding
+        heels, fitted tight to the leg, pulled up over the breeches to mid-thigh, with black leather
+        duty gloves on both hands and a ring of heavy iron keys at her hip; her head is bare. Her
+        gloved right hand grips his arm just above the elbow, her chin up, her eyes on the cell
+        door, her face set in cool, satisfied command, her lips closed and level. The man is a
+        broad-shouldered, athletic white man of thirty-two with lightly tanned skin, tousled wavy
+        brown hair, a strong square jaw, light stubble and round thin gold wire-rimmed glasses, in a
+        loose, bright orange county inmate jumpsuit with the sleeves pushed up, barefoot, his wrists
+        locked in front of him in closed polished stainless steel hinged handcuffs, each cuff a
+        little wider than the wrist; he walks half a step ahead of her with his head down and his
+        shoulders hunched, glancing sideways at her through his glasses. The left of the frame is
+        the empty stone corridor running back into warm darkness. The bulbs throw pools of warm
+        amber light on the flagstones and on the two of them, deep shadow between the pools. Palette
+        of pale limestone, uniform tan, vivid azure blue, inmate orange and black iron; natural skin
+        and fabric texture, fine 35 mm film grain.

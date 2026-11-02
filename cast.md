@@ -113,11 +113,12 @@ The player is always a man; the camera is his eyes.
 - The woman in the scene looks at, speaks to, reaches toward or acts on **the camera**.
 - **The one exception: achievement art** (`achievements/*.yaml`) is third person, as the engine
   requires. Eli is in frame, seen from a distance, with the scene in the right two-thirds and
-  the left third quiet. Every subject writes him out in full where he enters (a lean,
-  slightly narrow-shouldered white man of thirty-two, pale skin, short dark blond hair slightly
-  messy on top, light stubble, round thin wire-rimmed glasses) plus his outfit: the flannel
+  the left third quiet. Every subject writes him out in full where he enters (a broad-shouldered,
+  athletic white man of thirty-two with lightly tanned skin, tousled wavy brown hair, a strong
+  square jaw, light stubble and round thin wire-rimmed glasses) plus his outfit: the flannel
   look, or "a loose, bright orange county inmate jumpsuit with the sleeves pushed up, barefoot"
-  in the Undercroft. Without that, the woman's LoRA bleeds into him. Make each image a reward:
+  in the Undercroft. He then gets his own pass with `jack:1` before the woman's (ADR 0052), so
+  her LoRA never touches him. Make each image a reward:
   the peak of the storyline, with expression and humiliation, not a polite two-shot.
 - **In those two-person shots the woman's kit is written out too**: the canonical uniform
   sentence (indoor or patrol), her hands, nails, hair and hat. A second person in frame, or a
@@ -465,13 +466,16 @@ One image takes about seven minutes; test one image per change, never a batch.
 **POV block** (per hero, verbatim when his hands are in frame).
 
 **Eli Novak** (first hero, *proposal*) — new in town: the county's contract IT man, moved into
-55 Graystone Heights a week before the department notices him. Generic and slightly nerdy: a
-white man of 32, lean and a little narrow-shouldered, pale skin, short dark blond hair slightly
-messy on top, a few days of light stubble, round thin wire-rimmed glasses; a faded red and gray
-plaid flannel over a charcoal T-shirt, worn work jeans, scuffed brown work boots, a black canvas
-laptop bag.
-POV block: *a pale man's bare hands and forearms with short unpolished nails, entering from
-the bottom edge of the frame.*
+55 Graystone Heights a week before the department notices him. A white man of 32,
+broad-shouldered and athletic, lightly tanned skin, tousled wavy brown hair, a strong square
+jaw, light stubble, round thin wire-rimmed glasses; a faded red and gray plaid flannel over a
+charcoal T-shirt, worn work jeans, scuffed brown work boots, a black canvas laptop bag.
+LoRA: `jack:1` ("Jack" from the Civitai collection *Original Characters*, no trigger word), since
+2026-11-01: his face, hair and build come from it; his outfits and glasses stay his. Wherever he
+is in frame in third person he gets his own pass with it, before the woman's; alone in frame
+(his hero card), it goes in the base. Write his look out in the base as above all the same.
+POV block: *a man's bare hands and forearms with short unpolished nails, entering from the
+bottom edge of the frame.*
 
 ## Graystone County Sheriff's Department
 

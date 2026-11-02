@@ -9,15 +9,37 @@ art:
     a narrow cobbled alley at night behind an old limestone church, seen from low against the far
     brick wall of the alley. In the right third of the frame a man is wriggling out of a small
     broken basement window set low in the church's wall of smooth dressed limestone ashlar blocks:
-    he is a lean, slightly narrow-shouldered white man of thirty-two with pale skin, short dark
-    blond hair slightly messy on top, a few days of light stubble and round thin wire-rimmed
-    glasses, in a loose, bright orange county inmate jumpsuit with the sleeves pushed up, barefoot,
-    his glasses crooked, his face streaked with gray mortar dust and set in a wild, breathless grin.
-    His head, shoulders and both arms are through the window and his hands are dug into the wet
-    grass and fallen yellow maple leaves in front of it, his hips still stuck in the frame, two
-    loose iron bars and a pane of old glass lying in the grass beside him. Warm incandescent light
-    spills out of the window around his body. The left of the frame is wet, empty cobbles and a
-    green dumpster beside a diner's back door in deep blue shadow, a single orange sodium
-    streetlight far down the alley. Palette of inmate orange, wet grass green, gray stone, sodium
-    orange and night blue; natural texture, fine 35 mm film grain, slight motion blur on his kicking
-    foot.
+    he is a broad-shouldered, athletic white man of thirty-two with lightly tanned skin, tousled
+    wavy brown hair, a strong square jaw, light stubble and round thin gold wire-rimmed glasses, in
+    a loose, bright orange county inmate jumpsuit with the sleeves pushed up, barefoot, his glasses
+    crooked, his face streaked with gray mortar dust and set in a wild, breathless grin. His head,
+    shoulders and both arms are through the window and his hands are dug into the wet grass and
+    fallen yellow maple leaves in front of it, his hips still stuck in the frame, two loose iron
+    bars and a pane of old glass lying in the grass beside him. Warm incandescent light spills out
+    of the window around his body. The left of the frame is wet, empty cobbles and a green dumpster
+    beside a diner's back door in deep blue shadow, a single orange sodium streetlight far down the
+    alley. Palette of inmate orange, wet grass green, gray stone, sodium orange and night blue;
+    natural texture, fine 35 mm film grain, slight motion blur on his kicking foot.
+  # Passes (ADR 0052): Eli with his LoRA, then her with hers, each under its own mask.
+  passes:
+    - find: >-
+        the man in the orange jumpsuit, from the top of his head down to his feet or the bottom of
+        the image, including his hands
+      segment: man in orange jumpsuit
+      loras: ["jack:1"]
+      subject: >
+        a narrow cobbled alley at night behind an old limestone church, seen from low against the
+        far brick wall of the alley. In the right third of the frame a man is wriggling out of a
+        small broken basement window set low in the church's wall of smooth dressed limestone ashlar
+        blocks: he is a broad-shouldered, athletic white man of thirty-two with lightly tanned skin,
+        tousled wavy brown hair, a strong square jaw, light stubble and round thin gold wire-rimmed
+        glasses, in a loose, bright orange county inmate jumpsuit with the sleeves pushed up,
+        barefoot, his glasses crooked, his face streaked with gray mortar dust and set in a wild,
+        breathless grin. His head, shoulders and both arms are through the window and his hands are
+        dug into the wet grass and fallen yellow maple leaves in front of it, his hips still stuck
+        in the frame, two loose iron bars and a pane of old glass lying in the grass beside him.
+        Warm incandescent light spills out of the window around his body. The left of the frame is
+        wet, empty cobbles and a green dumpster beside a diner's back door in deep blue shadow, a
+        single orange sodium streetlight far down the alley. Palette of inmate orange, wet grass
+        green, gray stone, sodium orange and night blue; natural texture, fine 35 mm film grain,
+        slight motion blur on his kicking foot.

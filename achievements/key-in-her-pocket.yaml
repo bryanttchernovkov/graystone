@@ -5,38 +5,116 @@ text: Released, all but one piece of county property. She keeps the key where yo
 secret: true
 when: { location: undercroft-trusted-release }
 art:
-  loras: ["ashby7_krea2_000001200:0.9"]
   subject: >
     a close medium shot of two people face to face on the wide limestone steps of an old Gothic
     Revival church on a bright autumn morning, the tall oak double doors open behind them, seen from
     the side at their waist height so both are in profile from the thighs up in the right two-thirds
-    of the frame. ashby7 woman in her sheriff's uniform with a green bomber jacket and campaign hat,
-    a Black sergeant in her early thirties with dark brown skin and her long black locs gathered at
-    the nape, stands one step above the man, close against him, looking down into his face. Her dark
-    forest-green bomber jacket is zipped to mid-chest, both arms in its sleeves, a single polished
-    gold six-point star badge on its left chest and three vivid azure blue chevrons on each sleeve;
-    above the zipper show only the pointed collar of her tan uniform shirt and the small knot of a
-    vivid, saturated azure blue tie, the tie itself hidden inside the zipped jacket. Below the
-    jacket's hem she wears a black leather duty belt, tan riding breeches, the same khaki tan as her
-    shirt, with a vivid azure blue stripe down the outer seam, and polished black leather thigh-high
-    riding boots with low, flat stacked-leather riding heels. On her head, worn level over her eyes,
-    sits a stiff tan campaign hat the same khaki tan as her shirt, with a wide flat brim, a pinched
-    four-dent crown and a vivid azure blue hatband. Black leather duty gloves on both hands. Her
-    black-gloved right hand reaches down between them and grabs the man's crotch from the front, her
-    gloved fingers gripping the fly of his blue jeans between his legs, squeezing, a firm possessive
-    hold. Her left elbow is bent and her black-gloved left hand is raised beside her own face,
-    holding a single tiny polished brass key pinched upright between her gloved thumb and
-    forefinger, the key small against her fingers, showing it to him. Her expression is cool,
-    proprietary satisfaction, one corner of her mouth curled. The man stands one step below her,
-    facing her: he is a lean, slightly narrow-shouldered white man of thirty-two with pale skin,
-    short neat dark blond hair slightly messy on top and the same length all round, a few days of
-    light blond stubble and round thin gold wire-rimmed glasses, in an unbuttoned faded red and gray
-    plaid flannel shirt over a plain charcoal T-shirt, worn blue work jeans and scuffed brown
-    leather work boots. He is up on his toes from her grip, his hips pushed forward, his hands
-    hovering helplessly at his sides, staring at the little key in her raised hand, his face crimson
-    behind his glasses, his mouth open. The left third of the frame is the bright town square with
-    maple trees in red and gold, softly out of focus. Low clear morning sunlight from the left
-    lights the church facade gold and catches the brass key. Palette of pale limestone, maple red
-    and gold, khaki tan, forest green, vivid azure blue, denim blue and brass; natural skin texture,
-    fine 35 mm film grain, sharp focus on her gloved hand at his jeans, the key in her fingers and
-    his face
+    of the frame. A Black sergeant in her early thirties with dark brown skin and her long black
+    locs gathered at the nape, stands one step above the man, close against him, looking down into
+    his face. Her dark forest-green bomber jacket is zipped to mid-chest, both arms in its sleeves,
+    a single polished gold six-point star badge on its left chest and three vivid azure blue
+    chevrons on each sleeve; above the zipper show only the pointed collar of her tan uniform shirt
+    and the small knot of a vivid, saturated azure blue tie, the tie itself hidden inside the zipped
+    jacket. Below the jacket's hem she wears a black leather duty belt, tan riding breeches, the
+    same khaki tan as her shirt, with a vivid azure blue stripe down the outer seam, and polished
+    black leather thigh-high riding boots with low, flat stacked-leather riding heels. On her head,
+    worn level over her eyes, sits a stiff tan campaign hat the same khaki tan as her shirt, with a
+    wide flat brim, a pinched four-dent crown and a vivid azure blue hatband. Black leather duty
+    gloves on both hands. Her black-gloved right hand reaches down between them and grabs the man's
+    crotch from the front, her gloved fingers gripping the fly of his blue jeans between his legs,
+    squeezing, a firm possessive hold. Her left elbow is bent and her black-gloved left hand is
+    raised beside her own face, holding a single tiny polished brass key pinched upright between her
+    gloved thumb and forefinger, the key small against her fingers, showing it to him. Her
+    expression is cool, proprietary satisfaction: chin raised, eyes half-lidded under the brim, lips
+    closed, one corner of her mouth curled. The man stands one step below her, facing her: he is a
+    broad-shouldered, athletic white man of thirty-two with lightly tanned skin, tousled wavy brown
+    hair, a strong square jaw, light stubble and round thin gold wire-rimmed glasses, in an
+    unbuttoned faded red and gray plaid flannel shirt over a plain charcoal T-shirt, worn blue work
+    jeans and scuffed brown leather work boots. He is up on his toes from her grip, his hips pushed
+    forward, his hands hovering helplessly at his sides, staring at the little key in her raised
+    hand, his face crimson behind his glasses, his brows shot up, his eyes wide and his mouth
+    hanging open. The left third of the frame is the bright town square with maple trees in red and
+    gold, softly out of focus. Low clear morning sunlight from the left lights the church facade
+    gold and catches the brass key. Palette of pale limestone, maple red and gold, khaki tan, forest
+    green, vivid azure blue, denim blue and brass; natural skin texture, fine 35 mm film grain,
+    sharp focus on her gloved hand at his jeans, the key in her fingers and his face
+  # Passes (ADR 0052): Eli with his LoRA, then her with hers, each under its own mask.
+  passes:
+    - find: >-
+        the man in the plaid flannel shirt, from the top of his head down to his feet or the bottom
+        of the image, including his hands
+      segment: man in plaid shirt
+      loras: ["jack:1"]
+      subject: >
+        a close medium shot of two people face to face on the wide limestone steps of an old Gothic
+        Revival church on a bright autumn morning, the tall oak double doors open behind them, seen
+        from the side at their waist height so both are in profile from the thighs up in the right
+        two-thirds of the frame. A Black sergeant in her early thirties with dark brown skin and her
+        long black locs gathered at the nape, stands one step above the man, close against him,
+        looking down into his face. Her dark forest-green bomber jacket is zipped to mid-chest, both
+        arms in its sleeves, a single polished gold six-point star badge on its left chest and three
+        vivid azure blue chevrons on each sleeve; above the zipper show only the pointed collar of
+        her tan uniform shirt and the small knot of a vivid, saturated azure blue tie, the tie
+        itself hidden inside the zipped jacket. Below the jacket's hem she wears a black leather
+        duty belt, tan riding breeches, the same khaki tan as her shirt, with a vivid azure blue
+        stripe down the outer seam, and polished black leather thigh-high riding boots with low,
+        flat stacked-leather riding heels. On her head, worn level over her eyes, sits a stiff tan
+        campaign hat the same khaki tan as her shirt, with a wide flat brim, a pinched four-dent
+        crown and a vivid azure blue hatband. Black leather duty gloves on both hands. Her
+        black-gloved right hand reaches down between them and grabs the man's crotch from the front,
+        her gloved fingers gripping the fly of his blue jeans between his legs, squeezing, a firm
+        possessive hold. Her left elbow is bent and her black-gloved left hand is raised beside her
+        own face, holding a single tiny polished brass key pinched upright between her gloved thumb
+        and forefinger, the key small against her fingers, showing it to him.  The man stands one
+        step below her, facing her: he is a broad-shouldered, athletic white man of thirty-two with
+        lightly tanned skin, tousled wavy brown hair, a strong square jaw, light stubble and round
+        thin gold wire-rimmed glasses, in an unbuttoned faded red and gray plaid flannel shirt over
+        a plain charcoal T-shirt, worn blue work jeans and scuffed brown leather work boots. He is
+        up on his toes from her grip, his hips pushed forward, his hands hovering helplessly at his
+        sides, staring at the little key in her raised hand, his face crimson behind his glasses,
+        his brows shot up, his eyes wide and his mouth hanging open. The left third of the frame is
+        the bright town square with maple trees in red and gold, softly out of focus. Low clear
+        morning sunlight from the left lights the church facade gold and catches the brass key.
+        Palette of pale limestone, maple red and gold, khaki tan, forest green, vivid azure blue,
+        denim blue and brass; natural skin texture, fine 35 mm film grain, sharp focus on her gloved
+        hand at his jeans, the key in her fingers and his face
+    - find: >-
+        the woman in the green bomber jacket and campaign hat on the step above him, from the top of
+        her hat down to the bottom of the image, including both of her hands
+      segment: woman in a campaign hat
+      loras: ["ashby7_krea2_000001200:0.9"]
+      subject: >
+        a close medium shot of two people face to face on the wide limestone steps of an old Gothic
+        Revival church on a bright autumn morning, the tall oak double doors open behind them, seen
+        from the side at their waist height so both are in profile from the thighs up in the right
+        two-thirds of the frame. ashby7 woman in her sheriff's uniform with a green bomber jacket
+        and campaign hat, a Black sergeant in her early thirties with dark brown skin and her long
+        black locs gathered at the nape, stands one step above the man, close against him, looking
+        down into his face. Her dark forest-green bomber jacket is zipped to mid-chest, both arms in
+        its sleeves, a single polished gold six-point star badge on its left chest and three vivid
+        azure blue chevrons on each sleeve; above the zipper show only the pointed collar of her tan
+        uniform shirt and the small knot of a vivid, saturated azure blue tie, the tie itself hidden
+        inside the zipped jacket. Below the jacket's hem she wears a black leather duty belt, tan
+        riding breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down the
+        outer seam, and polished black leather thigh-high riding boots with low, flat
+        stacked-leather riding heels. On her head, worn level over her eyes, sits a stiff tan
+        campaign hat the same khaki tan as her shirt, with a wide flat brim, a pinched four-dent
+        crown and a vivid azure blue hatband. Black leather duty gloves on both hands. Her
+        black-gloved right hand reaches down between them and grabs the man's crotch from the front,
+        her gloved fingers gripping the fly of his blue jeans between his legs, squeezing, a firm
+        possessive hold. Her left elbow is bent and her black-gloved left hand is raised beside her
+        own face, holding a single tiny polished brass key pinched upright between her gloved thumb
+        and forefinger, the key small against her fingers, showing it to him. Her expression is
+        cool, proprietary satisfaction: chin raised, eyes half-lidded under the brim, lips closed,
+        one corner of her mouth curled. The man stands one step below her, facing her: he is a
+        broad-shouldered, athletic white man of thirty-two with lightly tanned skin, tousled wavy
+        brown hair, a strong square jaw, light stubble and round thin gold wire-rimmed glasses, in
+        an unbuttoned faded red and gray plaid flannel shirt over a plain charcoal T-shirt, worn
+        blue work jeans and scuffed brown leather work boots. He is up on his toes from her grip,
+        his hips pushed forward, his hands hovering helplessly at his sides, staring at the little
+        key in her raised hand. The left third of the frame is the bright town square with maple
+        trees in red and gold, softly out of focus. Low clear morning sunlight from the left lights
+        the church facade gold and catches the brass key. Palette of pale limestone, maple red and
+        gold, khaki tan, forest green, vivid azure blue, denim blue and brass; natural skin texture,
+        fine 35 mm film grain, sharp focus on her gloved hand at his jeans, the key in her fingers
+        and his face

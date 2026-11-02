@@ -5,7 +5,6 @@ text: Your clothes, stapled twice, with your nickname on the label. You aren't.
 hint: Deputy Seo books everything. Everything.
 when: { card: nude }
 art:
-  loras: ["sorenji_krea2_000001400:1"]
   subject: >
     the booking area of a busy small-county sheriff's station at night, seen from inside a
     chain-link holding cage, behind the man, at standing height. The station fills the background:
@@ -18,28 +17,119 @@ art:
     behind a locked steel door. The station is built into an old limestone building, and only high
     above the desks do tall pointed arched windows of old stained glass show, dim and out of focus
     under the fluorescent tubes. Nobody else is in the station. In the middle of the frame the man
-    stands naked, seen from behind, facing her: he is a lean, slightly narrow-shouldered white man
-    of thirty-two with pale skin, short neat dark blond hair slightly messy on top and the same
-    length all round, a few days of light blond stubble and round thin gold wire-rimmed glasses. His
-    bare pale back, shoulders and buttocks are toward the camera, his fingers laced on top of his
-    head with his elbows out in a classic surrender pose, and his head is turned toward her so his
-    face shows in profile, flushed red to the ears, his glasses on. His jeans, charcoal T-shirt and
-    scuffed brown work boots lie in a heap on the cage floor at his bare feet. In the right third,
-    just outside the open cage door, sorenji woman in her uniform, with her dusty-pink bob, dark
-    eyes and berry-pink lips, stands at the steel booking counter. She wears the Graystone County
-    Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a
-    pointed collar, two buttoned flap chest pockets piped in vivid azure blue, shoulder epaulets
-    edged in vivid azure blue, an embroidered vivid azure blue and gold patch on each upper sleeve
-    and a polished gold six-point star badge pinned over the left pocket; a vivid, saturated azure
-    blue necktie with a small gold tie bar; a black leather duty belt with a polished brass buckle,
-    a holstered pistol and a ring of keys; tan riding breeches, the same khaki tan as her shirt,
-    with a vivid azure blue stripe down the outer seam; and stiff, structured, mirror-polished black
-    leather thigh-high riding boots with rigid straight shafts and low, flat stacked-leather riding
-    heels, pulled up over the breeches to mid-thigh. Her hands are bare, her aviator sunglasses hang
-    from her shirt placket, and her head is bare. She holds a brown paper property bag open with one
-    bare hand and with the other drops his folded red and gray plaid flannel shirt into it, looking
-    him up and down with a mischievous, delighted smile, eyebrows raised, biting her berry-pink
-    lower lip. Cool white fluorescent light from the ceiling tubes over the desks, the monitors
-    glowing blue, faint colored light from the high windows. Palette of pale skin, kraft brown,
-    uniform tan, vivid azure blue, steel gray, monitor blue and dusty pink; natural skin texture,
-    fine 35 mm film grain, sharp focus on the two of them
+    stands naked, seen from behind, facing her: he is a broad-shouldered, athletic white man of
+    thirty-two with lightly tanned skin, tousled wavy brown hair, a strong square jaw, light stubble
+    and round thin gold wire-rimmed glasses. His bare, lightly tanned back, shoulders and buttocks
+    are toward the camera, his fingers laced on top of his head with his elbows out in a classic
+    surrender pose, and his head is turned toward her so his face shows in profile, flushed red to
+    the ears, his brows knotted up in embarrassment, his eyes wide and his jaw clenched in a stiff,
+    mortified grimace, his glasses on. His jeans, charcoal T-shirt and scuffed brown work boots lie
+    in a heap on the cage floor at his bare feet. In the right third, just outside the open cage
+    door, a Korean woman deputy of twenty-nine with a dusty-pink bob to the collar with dark roots,
+    dark eyes and berry-pink lips, stands at the steel booking counter. She wears the Graystone
+    County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill
+    with a pointed collar, two buttoned flap chest pockets piped in vivid azure blue, shoulder
+    epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold patch on each upper
+    sleeve and a polished gold six-point star badge pinned over the left pocket; a vivid, saturated
+    azure blue necktie with a small gold tie bar; a black leather duty belt with a polished brass
+    buckle, a holstered pistol and a ring of keys; tan riding breeches, the same khaki tan as her
+    shirt, with a vivid azure blue stripe down the outer seam; and stiff, structured,
+    mirror-polished black leather thigh-high riding boots with rigid straight shafts and low, flat
+    stacked-leather riding heels, pulled up over the breeches to mid-thigh. Her hands are bare, her
+    aviator sunglasses hang from her shirt placket, and her head is bare. She holds a brown paper
+    property bag open with one bare hand and with the other drops his folded red and gray plaid
+    flannel shirt into it, looking him up and down with a mischievous, delighted smile, her eyes
+    bright and narrowed with glee, eyebrows raised, biting her berry-pink lower lip. Cool white
+    fluorescent light from the ceiling tubes over the desks, the monitors glowing blue, faint
+    colored light from the high windows. Palette of tanned skin, kraft brown, uniform tan, vivid
+    azure blue, steel gray, monitor blue and dusty pink; natural skin texture, fine 35 mm film
+    grain, sharp focus on the two of them
+  # Passes (ADR 0052): Eli with his LoRA, then her with hers, each under its own mask.
+  passes:
+    - find: >-
+        the naked man standing in the cage, from the top of his head down to the bottom of the image
+      segment: naked man
+      loras: ["jack:1"]
+      subject: >
+        the booking area of a busy small-county sheriff's station at night, seen from inside a
+        chain-link holding cage, behind the man, at standing height. The station fills the
+        background: rows of gray steel police desks with computer monitors, desk phones, police
+        radios in charging cradles, wire in-trays stacked with forms and coffee mugs; a tall gray
+        filing cabinet; a white booking wall with a black height chart marked in feet and inches
+        beside a small mugshot camera on a tripod and a black fingerprint scanner on a steel
+        counter; a corkboard of wanted flyers with faded photographs; a United States flag on a pole
+        and a large round blue and gold sheriff's star seal painted on the wall behind the desks; a
+        gun locker and a rack of patrol shotguns behind a locked steel door. The station is built
+        into an old limestone building, and only high above the desks do tall pointed arched windows
+        of old stained glass show, dim and out of focus under the fluorescent tubes. Nobody else is
+        in the station. In the middle of the frame the man stands naked, seen from behind, facing
+        her: he is a broad-shouldered, athletic white man of thirty-two with lightly tanned skin,
+        tousled wavy brown hair, a strong square jaw, light stubble and round thin gold wire-rimmed
+        glasses. His bare, lightly tanned back, shoulders and buttocks are toward the camera, his
+        fingers laced on top of his head with his elbows out in a classic surrender pose, and his
+        head is turned toward her so his face shows in profile, flushed red to the ears, his brows
+        knotted up in embarrassment, his eyes wide and his jaw clenched in a stiff, mortified
+        grimace, his glasses on. His jeans, charcoal T-shirt and scuffed brown work boots lie in a
+        heap on the cage floor at his bare feet. In the right third, just outside the open cage
+        door, a Korean woman deputy of twenty-nine with a dusty-pink bob to the collar with dark
+        roots, dark eyes and berry-pink lips, stands at the steel booking counter. She wears the
+        Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy
+        cotton twill with a pointed collar, two buttoned flap chest pockets piped in vivid azure
+        blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and gold
+        patch on each upper sleeve and a polished gold six-point star badge pinned over the left
+        pocket; a vivid, saturated azure blue necktie with a small gold tie bar; a black leather
+        duty belt with a polished brass buckle, a holstered pistol and a ring of keys; tan riding
+        breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down the outer
+        seam; and stiff, structured, mirror-polished black leather thigh-high riding boots with
+        rigid straight shafts and low, flat stacked-leather riding heels, pulled up over the
+        breeches to mid-thigh. Her hands are bare, her aviator sunglasses hang from her shirt
+        placket, and her head is bare. She holds a brown paper property bag open with one bare hand
+        and with the other drops his folded red and gray plaid flannel shirt into it, looking him up
+        and down. Cool white fluorescent light from the ceiling tubes over the desks, the monitors
+        glowing blue, faint colored light from the high windows. Palette of tanned skin, kraft
+        brown, uniform tan, vivid azure blue, steel gray, monitor blue and dusty pink; natural skin
+        texture, fine 35 mm film grain, sharp focus on the two of them
+    - find: >-
+        the woman with the dusty-pink bob at the booking counter, from the top of her hair down to
+        the bottom of the image, including both of her hands
+      segment: woman with pink hair
+      loras: ["sorenji_krea2_000001400:1"]
+      subject: >
+        the booking area of a busy small-county sheriff's station at night, seen from inside a
+        chain-link holding cage, behind the man, at standing height. The station fills the
+        background: rows of gray steel police desks with computer monitors, desk phones, police
+        radios in charging cradles, wire in-trays stacked with forms and coffee mugs; a tall gray
+        filing cabinet; a white booking wall with a black height chart marked in feet and inches
+        beside a small mugshot camera on a tripod and a black fingerprint scanner on a steel
+        counter; a corkboard of wanted flyers with faded photographs; a United States flag on a pole
+        and a large round blue and gold sheriff's star seal painted on the wall behind the desks; a
+        gun locker and a rack of patrol shotguns behind a locked steel door. The station is built
+        into an old limestone building, and only high above the desks do tall pointed arched windows
+        of old stained glass show, dim and out of focus under the fluorescent tubes. Nobody else is
+        in the station. In the middle of the frame the man stands naked, seen from behind, facing
+        her: he is a broad-shouldered, athletic white man of thirty-two with lightly tanned skin,
+        tousled wavy brown hair, a strong square jaw, light stubble and round thin gold wire-rimmed
+        glasses. His bare, lightly tanned back, shoulders and buttocks are toward the camera, his
+        fingers laced on top of his head with his elbows out in a classic surrender pose, and his
+        head is turned toward her so his face shows in profile, his glasses on. His jeans, charcoal
+        T-shirt and scuffed brown work boots lie in a heap on the cage floor at his bare feet. In
+        the right third, just outside the open cage door, sorenji woman in her uniform, with her
+        dusty-pink bob, dark eyes and berry-pink lips, stands at the steel booking counter. She
+        wears the Graystone County Sheriff's uniform: a crisp, pressed tan long-sleeved uniform
+        shirt of heavy cotton twill with a pointed collar, two buttoned flap chest pockets piped in
+        vivid azure blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid azure
+        blue and gold patch on each upper sleeve and a polished gold six-point star badge pinned
+        over the left pocket; a vivid, saturated azure blue necktie with a small gold tie bar; a
+        black leather duty belt with a polished brass buckle, a holstered pistol and a ring of keys;
+        tan riding breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down
+        the outer seam; and stiff, structured, mirror-polished black leather thigh-high riding boots
+        with rigid straight shafts and low, flat stacked-leather riding heels, pulled up over the
+        breeches to mid-thigh. Her hands are bare, her aviator sunglasses hang from her shirt
+        placket, and her head is bare. She holds a brown paper property bag open with one bare hand
+        and with the other drops his folded red and gray plaid flannel shirt into it, looking him up
+        and down with a mischievous, delighted smile, her eyes bright and narrowed with glee,
+        eyebrows raised, biting her berry-pink lower lip. Cool white fluorescent light from the
+        ceiling tubes over the desks, the monitors glowing blue, faint colored light from the high
+        windows. Palette of tanned skin, kraft brown, uniform tan, vivid azure blue, steel gray,
+        monitor blue and dusty pink; natural skin texture, fine 35 mm film grain, sharp focus on the
+        two of them
