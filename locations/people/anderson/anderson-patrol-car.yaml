@@ -337,3 +337,12 @@ art:
     late-morning light from a high gray sky lights her face evenly. Restrained palette of white
     car door, forest green, tan, vivid azure blue, platinum blonde and maple orange; natural
     skin texture, fine 35 mm film grain, focus on her eyes.
+  # Repair: her LoRA stays in the base for her face, and printed "TFNY7" on the door star.
+  passes:
+    - find: the gold six-point star decal on the white car door at the bottom of the image
+      pad: 16
+      denoise: 0.6
+      subject: >
+        Close view of the white door of a patrol car with a broad vivid azure blue stripe and a
+        large gold six-point star decal with a plain vivid azure blue center and no lettering.
+        Soft overcast light, fine 35 mm film grain.

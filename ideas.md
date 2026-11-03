@@ -24,7 +24,7 @@ Ideas for graystone
 - [x] 'Arrested' if wanted and entering the station. Stupid move, and you went and did it.
   - Achievement; 'Not Raymond Reddington'
 - [x] Update undercroft with prison life lora
-- [ ] Try multi-character-lora attention workflow
+- [x] Try multi-character-lora attention workflow
 - [ ] Graybloods 2 - smuggle package
   - [ ] Locations:
     - [ ] Highway; at least 2 lenghts of highway locations, prompts how us driving in our car; we can go back and forht. Risk is, on both llocation, if we suffer a setback we get pulled over by a new deputy. 

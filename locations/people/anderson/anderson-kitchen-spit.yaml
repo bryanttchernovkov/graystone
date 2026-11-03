@@ -70,3 +70,19 @@ art:
     light lights her face from above. Restrained palette of pale limestone, uniform tan, vivid
     azure blue, platinum blonde and berry; natural skin texture, fine 35 mm film grain, shallow
     depth of field on her eyes and lips.
+  # Repair: her LoRA stays in the base for her face, and printed "TFNY7" on both patches.
+  passes:
+    - find: the embroidered patch on the upper sleeve at the left side of the image
+      pad: 16
+      denoise: 0.6
+      subject: >
+        Close view of the upper sleeve of a tan uniform shirt with an embroidered vivid azure blue
+        and gold sheriff's shoulder patch: a gold six-point star, with the word "GRAYSTONE"
+        stitched in gold across the top. A warm overhead light, fine 35 mm film grain.
+    - find: the embroidered patch on the upper sleeve at the right side of the image
+      pad: 16
+      denoise: 0.6
+      subject: >
+        Close view of the upper sleeve of a tan uniform shirt with an embroidered vivid azure blue
+        and gold sheriff's shoulder patch: a gold six-point star, with the word "GRAYSTONE"
+        stitched in gold across the top. A warm overhead light, fine 35 mm film grain.

@@ -48,3 +48,22 @@ art:
     asphalt, white clapboard houses and orange maples behind her. Soft gray overcast light, a
     faint red and blue flicker from the car's light bar on the steel cuff, gentle natural
     contrast, soft film grain, 35 mm lens.
+  # Repair: the base stays as rendered. Her LoRA painted his nails black and printed "TFNY7" on the patch.
+  passes:
+    - find: the man's bare hand below the steel handcuff, palm turned outward, from his wrist to his fingertips
+      segment: hand
+      pad: 32
+      denoise: 0.6
+      subject: >
+        A first-person view from a man's own shoulder, looking down at his arm cuffed behind his
+        back, a polished steel hinged handcuff locked on his wrist. His bare hand hangs below it,
+        palm turned outward: a man's hand with broad knuckles and short, bare, unpainted nails cut
+        straight across. Fallen maple leaves on the asphalt. Soft gray overcast light, soft film
+        grain, 35 mm lens.
+    - find: the embroidered patch on the upper sleeve of the woman's green jacket
+      pad: 16
+      denoise: 0.6
+      subject: >
+        Close view of the upper sleeve of a dark forest-green bomber jacket with an embroidered
+        vivid azure blue and gold sheriff's shoulder patch: a gold six-point star, with the word
+        "GRAYSTONE" stitched in gold across the top. Soft gray overcast light, soft film grain.

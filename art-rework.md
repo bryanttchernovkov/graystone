@@ -93,6 +93,7 @@ instead of a prop pass. `escape-artist` (below, under keep) got Eli's pass too.
   now: `nivdoyle` 1; 255 words
   plan: base: no LoRA → nivdoyle 0.9 (segment)
   ⚑ third person with Eli: write him out in the base, the woman in a pass
+  written: new scene, Eli ashamed on the county seal, Ashby behind him holding up the cuffs (2026-11-02); no-LoRA base → ashby7 0.9, jack 1 (to his belt), both segment, nivdoyle 1 ("woman with red hair" gave an empty mask; box alone at 0.7 erased her; "woman in a tan uniform" at 0.55 gave an empty mask too; now box only at 0.5); counter moved to the background (she left the frame at "far right"); hngcf5 dropped, it failed at this distance; render pending
 - [x] `achievements/owner` (achievements/owner.yaml)
   now: `jovessa` 0.65; 374 words
   plan: base: no LoRA → jovessa 0.65 (segment)
@@ -154,9 +155,9 @@ instead of a prop pass. `escape-artist` (below, under keep) got Eli's pass too.
 
 ### locations/people/anderson (21)
 
-- [ ] `locations/anderson-arrest` (locations/people/anderson/anderson-arrest.yaml)
+- [x] `locations/anderson-arrest` (locations/people/anderson/anderson-arrest.yaml)
   now: `tfny7` 0.9, `pvarst7` 0.8; 196 words
-  plan: base: `pvarst7` 0.8 → tfny7 0.9 (segment)
+  written: repair, base unchanged → no-LoRA passes on his hand and the patch, denoise 0.6; rendered 2026-11-02
   ⚑ cuffs with two people: name whose wrist each cuff is on
 - [ ] `locations/anderson-flatter-cold` (locations/people/anderson/anderson-flatter-cold.yaml)
   now: `tfny7` 1; 212 words
@@ -188,18 +189,18 @@ instead of a prop pass. `escape-artist` (below, under keep) got Eli's pass too.
 - [ ] `results/anderson-holding.talk.name` (locations/people/anderson/anderson-holding.yaml, TALK NAME)
   now: `tfny7` 1; 264 words
   plan: base: no LoRA → tfny7 0.9 (segment)
-- [ ] `locations/anderson-kitchen-boot` (locations/people/anderson/anderson-kitchen-boot.yaml)
+- [x] `locations/anderson-kitchen-boot` (locations/people/anderson/anderson-kitchen-boot.yaml)
   now: `tfny7` 1; 155 words
-  plan: base: no LoRA → tfny7 0.9 (segment)
+  written: no-LoRA base → tfny7 1 (segment, hand only); rendered 2026-11-02
 - [ ] `locations/anderson-kitchen-sharpie` (locations/people/anderson/anderson-kitchen-sharpie.yaml)
   now: `tfny7` 1; 161 words
   plan: base: no LoRA → tfny7 0.9 (segment)
-- [ ] `locations/anderson-kitchen-spit` (locations/people/anderson/anderson-kitchen-spit.yaml)
+- [x] `locations/anderson-kitchen-spit` (locations/people/anderson/anderson-kitchen-spit.yaml)
   now: `tfny7` 1; 155 words
-  plan: base: no LoRA → tfny7 0.9 (segment)
-- [ ] `locations/anderson-patrol-car` (locations/people/anderson/anderson-patrol-car.yaml)
+  written: tfny7 back in the base (a no-LoRA base lost her, 2026-11-02) → no-LoRA box passes on both patches; rendered 2026-11-02
+- [x] `locations/anderson-patrol-car` (locations/people/anderson/anderson-patrol-car.yaml)
   now: `tfny7` 1; 254 words
-  plan: base: no LoRA → tfny7 0.9 (segment)
+  written: tfny7 back in the base (a no-LoRA base lost her, 2026-11-02) → no-LoRA box pass on the door star; rendered 2026-11-02
 - [ ] `results/anderson-patrol-car.deal.beg` (locations/people/anderson/anderson-patrol-car.yaml, DEAL BEG)
   now: `tfny7` 1; 284 words
   plan: base: no LoRA → tfny7 0.9 (segment)
@@ -215,16 +216,16 @@ instead of a prop pass. `escape-artist` (below, under keep) got Eli's pass too.
 - [ ] `results/anderson-patrol-car.talk.thank` (locations/people/anderson/anderson-patrol-car.yaml, TALK THANK)
   now: `tfny7` 1; 209 words
   plan: base: no LoRA → tfny7 0.9 (segment)
-- [ ] `locations/anderson-station-arrest` (locations/people/anderson/anderson-station-arrest.yaml)
+- [x] `locations/anderson-station-arrest` (locations/people/anderson/anderson-station-arrest.yaml)
   now: `tfny7` 0.9, `pvarst7` 0.8; 207 words
-  plan: base: `pvarst7` 0.8 → tfny7 0.9 (segment)
+  written: repair, base unchanged → no-LoRA pass on his hand, denoise 0.6; rendered 2026-11-02
   ⚑ cuffs with two people: name whose wrist each cuff is on
 
 ### locations/people/ashby (7)
 
-- [ ] `locations/ashby-arrest` (locations/people/ashby/ashby-arrest.yaml)
+- [x] `locations/ashby-arrest` (locations/people/ashby/ashby-arrest.yaml)
   now: `ashby7` 0.8, `pvarst7` 0.8; 215 words
-  plan: base: `pvarst7` 0.8 → ashby7 0.8 (segment)
+  written: both LoRAs in one base, no pass; left-side standing pose, the table behind her; rendered 2026-11-02
   ⚑ cuffs with two people: name whose wrist each cuff is on
 - [ ] `locations/ashby-cafe-table` (locations/people/ashby/ashby-cafe-table.yaml)
   now: `ashby7` 0.9; 338 words
@@ -299,9 +300,9 @@ instead of a prop pass. `escape-artist` (below, under keep) got Eli's pass too.
 - [ ] `locations/juno-dm-video` (locations/people/juno/juno-dm-video.yaml)
   now: `jovessa` 1; 258 words
   plan: base: no LoRA → jovessa 0.9 (segment)
-- [ ] `locations/juno-page` (locations/people/juno/juno-page.yaml)
+- [x] `locations/juno-page` (locations/people/juno/juno-page.yaml)
   now: `jovessa` 1; 239 words
-  plan: base: no LoRA → jovessa 0.9 (segment)
+  written: no-LoRA base, "@rootkitty" in words → jovessa 0.9 (segment, avatar only); rendered 2026-11-02
 - [ ] `locations/library-juno-table` (locations/people/juno/library-juno-table.yaml)
   now: `jovessa` 1; 241 words
   plan: base: no LoRA → jovessa 0.9 (segment)
@@ -374,9 +375,9 @@ instead of a prop pass. `escape-artist` (below, under keep) got Eli's pass too.
 
 ### locations/places/church (5)
 
-- [ ] `results/station-bullpen.work.fix` (locations/places/church/station-bullpen.yaml, WORK FIX)
+- [x] `results/station-bullpen.work.fix` (locations/places/church/station-bullpen.yaml, WORK FIX)
   now: `nivdoyle` 1; 176 words
-  plan: base: no LoRA → nivdoyle 0.9 (segment)
+  written: nivdoyle 1 in the base, no pass, in her caption words (a no-LoRA base lost her, 2026-11-02); rendered 2026-11-02
 - [ ] `results/station-bullpen.work.service` (locations/places/church/station-bullpen.yaml, WORK SERVICE)
   now: `nivdoyle` 1; 205 words
   plan: base: no LoRA → nivdoyle 0.9 (segment)
@@ -463,9 +464,9 @@ instead of a prop pass. `escape-artist` (below, under keep) got Eli's pass too.
 - [ ] `locations/undercroft-trusted-release` (locations/places/undercroft/undercroft-trusted-release.yaml)
   now: `ashby7` 0.9; 364 words
   plan: base: no LoRA → ashby7 0.9 (segment)
-- [ ] `locations/undercroft` (locations/places/undercroft/undercroft.yaml)
+- [x] `locations/undercroft` (locations/places/undercroft/undercroft.yaml)
   now: `ashby7` 0.9; 276 words
-  plan: base: no LoRA → ashby7 0.9 (segment)
+  written: ashby7 0.9 in the base, breeches and boots named, no pass (the legs pass cut her toes, 2026-11-02); yellow line reworded wall to wall; rendered 2026-11-02
 - [ ] `results/undercroft.deal.terms` (locations/places/undercroft/undercroft.yaml, DEAL TERMS)
   now: `pvprsn7v3` 1, `ashby7` 0.8; 234 words
   plan: base: `pvprsn7v3` 1 → ashby7 0.8 (segment)

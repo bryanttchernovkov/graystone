@@ -54,20 +54,31 @@ actions:
                 You close it. Your thumb hovers over the history for a while, and then you clear
                 that too.
 art:
-  loras: ["jovessa_krea2_000001200:1"]
   subject: >
     Close photograph of an open silver laptop on a low honey oak coffee table at night, seen
     from the sofa at seated eye height, the screen filling most of the frame, its thin black
     bezel and the dark keyboard at the bottom edge. On the screen, a clean, modern social media
     profile page laid out in a single centered column on a white background: across the top, a
     wide teal banner with small drawn white stars and cats; below it, in the center, a
-    small round profile photograph, head and shoulders, of jovessa woman in her usual black
-    outfit, wearing her black rectangular glasses and a black ring choker, sticking her tongue
-    out at her own camera. Under the photo, three short lines of soft gray blur and a rounded
-    teal button with a white padlock icon. Below that, filling the lower half of the
+    small round profile photograph, head and shoulders, of a pale young woman of twenty-three
+    with dense black and deep teal hair swept to one side, black rectangular glasses and a black
+    ring choker, in a black top, sticking her tongue out at her own camera. Under the photo, the
+    username "@rootkitty" in bold black letters, then two short lines of soft gray blur and a
+    rounded teal button with a white padlock icon. Below that, filling the lower half of the
     screen, a grid of nine square tiles, every one blurred to soft featureless smudges of teal
     and gray, each with a small white padlock icon at its center. Beyond the laptop, out of
     focus, a dark living room with honey oak floorboards and the arm of a deep brown leather
     sofa. The screen's cool white and teal glow is the only light, falling on the keys and the
     wood of the coffee table, the room around it in deep shadow. Natural texture, fine 35 mm
     film grain, shallow depth of field on the screen.
+  # Her LoRA only on the avatar: on the whole frame it printed its trigger as the page's name.
+  passes:
+    - find: the small round profile photograph of the woman on the laptop screen
+      segment: round profile photo
+      pad: 16
+      loras: ["jovessa_krea2_000001200:0.9"]
+      subject: >
+        Close photograph of a laptop screen showing a small round profile photograph, head and
+        shoulders, of jovessa woman in her usual black outfit, wearing her black rectangular
+        glasses and a black ring choker, sticking her tongue out at her own camera. The screen's
+        cool white and teal glow; fine 35 mm film grain.

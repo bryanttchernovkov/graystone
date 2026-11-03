@@ -42,3 +42,15 @@ art:
     limestone walls and a tall pointed stone arch. Soft daylight through stained glass, colored
     light on the limestone, a warm glint on the steel cuff, natural skin texture, fine film
     grain, 35 mm lens.
+  # Repair: the base stays as rendered. Her LoRA painted his nails black.
+  passes:
+    - find: the man's bare hand below the steel handcuff, palm turned outward, from his wrist to his fingertips
+      segment: hand
+      pad: 32
+      denoise: 0.6
+      subject: >
+        A first-person view from a man's own shoulder, looking down at his arm cuffed behind his
+        back, a polished steel hinged handcuff locked on his wrist. His bare hand hangs below it,
+        palm turned outward: a man's hand with broad knuckles and short, bare, unpainted nails cut
+        straight across. A pale stone floor behind it. Soft daylight, natural skin texture, fine
+        film grain, 35 mm lens.
