@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../../schema/v3/galleries.json
+label: The Graystone Files
+galleries:
+  - name: "Sheriffs Department Personnel"
+    description: "A collection of personnel files from the Graystone Sheriffs Department, detailing the officers and staff who have served in the department over the years."
+    folder: "gsd"
+    layout: flip
+  - name: "Criminal Records"
+    description: "A comprehensive archive of criminal records maintained by the Graystone Sheriffs Department, including arrest records, case files, and investigation reports."
+    folder: "criminals"
+    layout: flip
