@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# The highway, second stretch: behind the wheel, with a cruiser in the turnout. Deputy Voss's ground:
+# any setback here, or on the way in, is her pulling you over, whatever your record (no requires).
+# Her stop has the swapped actions: an open record there is RISK-LICENSE and her arrest.
+id: highway-turnout
+name: The highway, at the turnout
+tags: [patrol]
+hub: true
+description: A gravel turnout under a stand of cottonwoods, and a sheriff's cruiser backed into it with its nose to the road.
+setback_penalty:   # Voss's ground: a setback here is a traffic stop
+  effects:
+    - move.to: voss-stop
+actions:
+  - category: talk
+    word: WAVE
+    cost: 1
+    prompt: Lift two fingers off the wheel to the cruiser as you go by.
+    result:
+      text: |
+        The tinted window comes down about an inch as you pass. Nothing comes out of it. Then a hand does, with
+        red nails, and waves at you with the fingers, one at a time, and goes back in.
+      effects:
+        - tracker.change: { nerve: +1 }
+art:
+  subject: >
+    First-person point-of-view widescreen photograph from the driver's seat of an older sedan
+    moving along a two-lane highway in the rural Midwest in autumn, seated eye height, the camera
+    level, looking out through the windshield. Across the bottom of the frame runs a worn black
+    dashboard with the top arc of a black steering wheel at bottom center, and a man's bare hands
+    and forearms with short unpolished nails enter from the bottom edge of the frame and rest on the
+    wheel. Through the windshield the gray asphalt curves gently to the right past a yellow center
+    line. On the right side of the road, close ahead, a gravel turnout opens under a stand of
+    tall cottonwoods in yellow leaf, and backed into it with its nose to the road stands a
+    Graystone County Sheriff's patrol car, a present-day Ford Police Interceptor Utility SUV painted
+    two-tone, with a white roof, hood and front doors over a tan body, a broad vivid azure blue
+    stripe running the full length of each flank below the windows, a gold six-point star decal on
+    each front door, a low black roof light bar with red and blue lenses, a black steel push bumper
+    bolted across the front grille and black steel wheels; its windows are tinted dark and its light
+    bar is unlit. Beyond it, harvested cornfields of pale gold stubble run to a low line of trees.
+    Low late-afternoon sun from the left lays long shadows across the road and lights the cruiser's
+    white hood. Restrained palette of asphalt gray, cottonwood yellow, corn stubble gold, cruiser
+    white and tan and vivid azure blue; natural texture, fine 35 mm film grain, focus on the patrol
+    car beyond the glass.

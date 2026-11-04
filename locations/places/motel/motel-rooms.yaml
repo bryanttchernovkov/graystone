@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# The Starlite from the walkway: the office at the near end, the row of rooms beyond it. No art for its
+# two actions: a bucket of ice for the body, and a curtain for the eyes.
+id: motel-rooms
+name: The Starlite, the rooms
+tags: []
+hub: true
+description: A covered walkway along a row of turquoise doors, one curtain moved aside and let fall again. The office is at the near end, its blinds shut and its light on.
+actions:
+  - category: take
+    word: ICE
+    cost: 1
+    prompt: Fill a plastic bucket at the ice machine and sit on the folding chair with it.
+    result:
+      text: |
+        The machine by the office coughs up a bucketful, and half of it is the hard gray kind. You sit by the third
+        door on the folding chair and hold it where you need it. Nobody comes out and nobody asks. Somebody in
+        the Starlite has been down this road before you: the chair has a cushion taped to it.
+      effects:
+        - tracker.change: { body: +1, time: -1 }
+  - category: look
+    word: CURTAIN
+    cost: 1
+    prompt: See who's behind the curtain that moved.
+    result:
+      text: |
+        You catch the gap as it closes. Number eleven. A man's shape, sitting very upright on the edge of a bed, and on
+        the bed beside him, laid out flat, a tan campaign hat with a blue band. Nobody who sits like that is waiting
+        for good news.
+
+        He looks at you. He shakes his head a little, and you walk on.
+      effects:
+        - skill.gain: look
+art:
+  subject: >
+    Eye-level widescreen photograph from standing height on the concrete walkway of a lonely
+    one-story roadside motel beside a Midwest highway in autumn, the camera level, looking straight
+    along the length of the building. On the left of the frame the wall of pale painted block runs
+    away from the lens with a long row of identical turquoise doors, each beside a window with drawn
+    orange curtains and a dented air conditioner beneath it. In the near left foreground stands the
+    motel office, a door of dark glass and a wide window with closed white blinds glowing from a
+    lamp inside. A flat roof on thin steel posts covers the walkway, its row of plain globe lights
+    unlit, a single folding metal chair and a coffee can on the concrete by the third door. On
+    the right of the frame, beyond the posts, the gravel lot lies empty and a band of pale gold
+    cornfield stretches to the horizon. The walkway is empty and still. Low late-afternoon sun
+    from the right throws the shadows of the posts in long bars across the doors. Restrained palette
+    of pale block, faded turquoise, curtain orange, gravel gray and corn gold; natural texture, fine
+    35 mm film grain, deep focus.

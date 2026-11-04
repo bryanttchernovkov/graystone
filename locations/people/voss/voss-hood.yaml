@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: Deputy Voss works off the ticket over the hood of her cruiser. Reached by move.to from
+# the can't-pay option at the stop. No exits: TALK-COUNT finishes it and puts you back on the highway.
+# The image stretches pvotk7 (trained only on a lap, indoors or out): the hood takes the seat's place
+# in its caption and she stands behind it. Her LoRA is a pass, so it doesn't touch the pose (ADR 0052).
+id: voss-hood
+name: The hood of her cruiser
+tags: [law]
+description: White paint warm from the engine, your jeans around your thighs, and every car on the highway slowing down to look.
+arrival:
+  text: |
+    She walks you back along the shoulder with one finger hooked in your belt, humming, and pats the
+    hood of the cruiser twice.
+
+    "Chest down, honey. Arms out." The paint is warm through your shirt. She reaches around, undoes
+    your belt herself, and works your jeans down to your thighs in two brisk tugs. The shorts she
+    leaves, and snaps the waistband once. "There. Aren't I sweet?"
+
+    A pickup goes by, slowing down. She waves at it. Then her hand settles flat on your backside, and
+    stays there while she explains.
+
+    "Twenty-dollar ticket, sugar. A dollar apiece. You keep the count, nice and loud, and if I can't
+    hear you we go back to one." She gives you a little squeeze. "I do hope I can't hear you."
+actions:
+  - category: talk
+    word: COUNT
+    cost: 0
+    always: true
+    prompt: Count for her, out loud. She's going to hurt you, and she isn't done at twenty.
+    result:
+      text: |
+        Her palm comes down a lot harder than she looks. "One," you say, and it carries across the
+        road. She hums while she works, in time, and shifts her feet at ten to get a better swing. She
+        puts every one of them in the same place.
+
+        At fourteen you mumble. "Sorry, sweetheart, what was that?" She goes back to one. A car passes
+        with its window down. By the time you reach twenty it has been thirty-four, your face is wet,
+        and the white hood has a fogged patch on it the shape of your mouth.
+
+        "Paid in full." She hauls you up by the collar, turns you around to face her and straightens
+        your shirt with both hands. "That was for the county, honey. This one's for me."
+
+        She's still smiling when her knee comes up between your legs.
+
+        You're on the gravel before the noise gets out of you, on your knees, both hands in your crotch,
+        your forehead almost on her boots. She crouches down in front of you and tips her head.
+
+        "What's that, sugar? Say it nice."
+
+        You say please. You say mercy. She has you say it again while she gets her lipstick out, and
+        once more for the road.
+
+        She writes WARNING across the ticket in big looping letters, underlines it twice
+        and tucks it into your shorts. "Next time bring cash, sweet pea. Or bring a pillow."
+
+        It's a while before you can stand. Getting into your driver's seat takes two tries. In the
+        mirror she's behind her wheel, blotting her lips.
+      effects:
+        - card.gain: sore-bottom
+        - card.gain: voss-tab
+        - move.to: highway-turnout
+art:
+  # pvotk7 in its README's caption order, the hood in the seat's place, her hidden from the hips down.
+  # Nothing but corn behind her: naming the whole patrol car drew a second one. Her LoRA as a pass, as on the
+  # Sheriff's couch (0.5, so it leaves the pose alone).
+  loras: ["pvotk7_krea2_000002000:0.9"]
+  subject: >-
+    pvotk7 POV over-the-knee spanking photo, a first-person view from the man's own head as he lies face down
+    across the white hood of a car, looking back along his own body, his plain charcoal T-shirt and gray boxer shorts
+    filling the foreground, his blue jeans pushed down around his thighs, his backside raised over the curve of the
+    hood and his legs stretching out to the right of the frame with his scuffed brown work boots lifted off the
+    ground. A twenty-two-year-old woman with her dark espresso brown hair styled in glossy rockabilly victory-roll bangs and a high curled ponytail, a bold cherry-red dyed section running through the rolled bangs and down the curls of the ponytail, large polished gold hoop earrings, sharp black winged eyeliner and glossy red lipstick, in a dark forest-green bomber jacket with
+    ribbed knit sleeve bands, zipped to the middle of her chest, a polished gold six-point star badge on its left
+    chest, the collar of a tan uniform shirt, a vivid azure blue necktie and a black leather duty belt, stands on the
+    far side of the hood with him across it, the white hood hiding her from the hips down. One of her hands rests flat on
+    his gray boxer shorts and her other arm is raised high, her open empty hand held up ready to spank, her palm turned
+    down toward his backside. She looks into the camera with cold, strict displeasure: blue eyes hard and narrowed, brows
+    drawn down and level, red lips pressed together in a firm straight line. Set on the gravel shoulder of a two-lane
+    Midwest highway in autumn, with nothing behind her but harvested cornfields of pale gold stubble and a pale sky,
+    low late-afternoon sun, a faint red and blue flicker on the white paint.
+  passes:
+    - find: the woman in the forest-green bomber jacket, her head, shoulders and chest, down to her duty belt, including her raised hand
+      segment: woman in a green bomber jacket
+      denoise: 0.5
+      loras: ["mrvx7_krea2_000001200:0.9"]
+      subject: >-
+        mrvx7 woman in her patrol jacket uniform, a twenty-two-year-old highway patrol deputy, standing behind the white
+        hood of a car, one arm raised high, her open empty hand held up ready to spank. Her dark espresso brown hair styled in glossy rockabilly victory-roll bangs and a high curled ponytail, a bold cherry-red dyed section running through the rolled bangs and down the curls of the ponytail, large polished gold hoop earrings, sharp black winged eyeliner and glossy red lipstick. She looks into the
+        camera with cold, strict displeasure: blue eyes hard and narrowed, brows drawn down and level, red lips pressed
+        together in a firm straight line. Harvested cornfields of pale gold stubble behind her, low late-afternoon sun,
+        natural skin texture, fine film grain.

@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# From DEAL-RETURN at the warehouse wall: the package job done. Replaces GrayBlood Rep. Keeps `blooded`
+# for later jobs; `runner` opens TALK-INSIDE, the warehouse.
+id: grayblood-runner
+kind: favor
+name: GrayBlood Runner
+tags: [blooded, runner]
+text: Red says you're "loading-dock adjacent" now. "That's indoors, lil bro. Barely. Wipe your feet."
+boost: { capacity: 3, start: 2 }
+slots:
+  - { match: { category: deal } }
+art:
+  subject: >
+    Square close photograph of the bottom edge of a corrugated steel roll-up warehouse door, raised
+    about waist height, the camera low on cracked asphalt and level. Warm yellow work-light spills out
+    from under the door across a dry concrete loading dock. A simple outline of a crown with three sharp
+    points, drawn in thin lines of old, dry, flaking brick-red spray paint, sits on the upper slats. A worn
+    rubber doormat lies square in the gap on the swept concrete, absurdly clean. Dusk blue on the asphalt
+    outside, warm tungsten light from inside. Restrained palette of faded brick red, rust, tungsten yellow and dusk blue; natural texture,
+    fine 35 mm film grain, sharp focus on the doormat.

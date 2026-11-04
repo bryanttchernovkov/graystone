@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: Deputy Voss arrests you at the cruiser. Reached by move.to from RISK-LICENSE at her stop
+# (open record), so an open record on her road is always this. Handcuffs go on in the arrival.
+# TALK-LISTEN takes you down to the gravel for your rights (voss-rights), then her back seat
+# (voss-cruiser). The Record comes with you.
+id: voss-arrest
+name: Under arrest
+tags: [law]
+description: Warm white paint against your hip, cut corn in front of you, and a deputy humming behind you with your wrist in her hand.
+arrival:
+  text: |
+    She walks you back along the shoulder with your license in her teeth, and turns you around to
+    face the cornfield. Your right wrist goes first. County steel, a solid hinged block with no chain
+    in it, and she closes it two clicks past where it needs to be. She takes your license out of her
+    mouth to ask.
+
+    "Too tight, honey?"
+
+    You tell her yes.
+
+    "Oh, good." The left one goes on the same. A fingernail runs round inside each cuff to check the
+    fit, and she pats your arm. "Now, I have a little card I'm supposed to read you. I do like a man's
+    full attention for that."
+  effects:
+    - card.gain: handcuffs
+actions:
+  - category: talk
+    word: LISTEN
+    cost: 0
+    always: true
+    prompt: Stand still and let her read you your rights. She has an idea about where you should be for it.
+    result:
+      text: |
+        You get as far as "Yes, ma'am." A boot hooks your ankle and her hand between your shoulder
+        blades turns you as you go, and the gravel comes up under your back.
+      effects:
+        - move.to: voss-rights
+art:
+  loras: ["mrvx7_krea2_000001200:0.9", "pvarst7_krea2_000002250:0.8"]
+  subject: >
+    pvarst7 POV arrest photo, a first-person view from the arrested man's own shoulder, looking down
+    past his right shoulder at his right arm being handcuffed behind him, his plain navy blue T-shirt
+    and blue jeans in the foreground, his bare forearm with no watch or bracelet. On the right side of
+    the frame stands mrvx7 woman in her patrol jacket uniform, a twenty-two-year-old highway patrol
+    deputy, her dark espresso brown hair in glossy rockabilly victory-roll bangs and a high curled
+    ponytail with a bold cherry-red dyed section, large polished gold hoop earrings, sharp black winged
+    eyeliner and glossy red lipstick, in a dark forest-green bomber jacket with ribbed knit sleeve bands
+    and a vivid azure blue necktie. She is bare-handed, grips his forearm just above the polished steel
+    hinged handcuff locked on his wrist and holds the empty second cuff, closed, in her other hand. She
+    looks down at the cuff with sweet, delighted pleasure, a big red-lipped smile. Set on the gravel shoulder of a two-lane Midwest highway, harvested
+    cornfields of pale gold stubble behind her, low late-afternoon sun, a faint red and blue flicker on
+    the steel, natural skin texture, fine film grain, 28 mm lens.

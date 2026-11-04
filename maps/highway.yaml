@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../schema/v3/map.json
+# The highway out of town and the Starlite motel at the end of it. The two highway views are behind
+# the wheel of the player's car (POV art); the motel is on foot. In from the driveway at home. HT is
+# a patrol location: a setback at it, or on the way into it, is Deputy Voss pulling you over.
+# The cells are apart so that every leg is a portal with its own prompt.
+id: highway
+name: The highway
+legend:
+  HF: highway-fields
+  HT: highway-turnout
+  ML: motel-lot
+  MR: motel-rooms
+  BR: britt-race
+grid: |
+  HF .. HT .. ML
+  .. .. .. .. ..
+  .. .. .. .. MR
+  .. .. .. .. ..
+  BR .. .. .. ..
+portals:
+  - { from: home-front, dir: east, to: highway-fields, prompt: You back the car down the gravel drive and take the road out of town. }
+  - { from: highway-fields, dir: west, to: home-front, prompt: You turn the car around and drive back into town. }
+  - { from: highway-fields, dir: east, to: highway-turnout, prompt: You put your foot down and let the fields go by. }
+  - { from: highway-turnout, dir: west, to: highway-fields, prompt: You swing the car around across the empty lanes and drive back. }
+  - { from: highway-turnout, dir: east, to: motel-lot, prompt: You drive on until a neon sign comes up on the shoulder and turn in over the gravel. }
+  - { from: motel-lot, dir: west, to: highway-turnout, prompt: You get behind the wheel and pull back out onto the highway. }
+  - { from: motel-lot, dir: north, to: motel-rooms, prompt: You cross the gravel to the walkway under the long roof. }
+  - { from: motel-rooms, dir: south, to: motel-lot, prompt: You step off the walkway onto the gravel. }

@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: Deputy Voss reads the advisement with her boot between your legs. Reached by move.to from
+# TALK-LISTEN in voss-arrest. TALK-ANSWER ends it in a kick and goes on to her back seat. Gains Voss's
+# Tab. The Say It Nice achievement.
+# Art: undrft (from the floor, a sole coming down) with a trace of pvotk7 (looking along his own body).
+id: voss-rights
+name: On your back on the shoulder
+tags: [law]
+description: Gravel under your shoulder blades, your cuffed hands shoving your hips up, the sky very large, and one black boot between your knees.
+arrival:
+  text: |
+    You land with your cuffed hands under you, which pushes your hips up off the gravel. She looks
+    pleased about that. She toes your left foot out, then your right, a little more, a little more,
+    and steps in between them.
+
+    The laminated card comes out of her breast pocket. Her right boot comes up, and settles between
+    your legs, on your jeans, as lightly as a hand on a shoulder.
+
+    "Every deputy reads these her own way, sweet pea. Sergeant reads them like the Bible. Me, I like
+    a man to answer."
+actions:
+  - category: talk
+    word: ANSWER
+    cost: 0
+    always: true
+    prompt: Answer her, line by line. Her boot presses a little harder at every line, and it's going to hurt.
+    result:
+      text: |
+        "You have the right to remain silent." The boot leans in. "You won't, but you have it. Yes,
+        Deputy?"
+
+        "Yes, Deputy."
+
+        "Anything you say will be written down and used against you. Anything you don't say, I will
+        guess." More of her weight, and the first real ache climbs into your stomach. "Yes, Deputy?"
+
+        "Yes, Deputy."
+
+        She rolls the boot heel to toe while she reads about the attorney, who is very busy, and you
+        answer that one with your teeth shut. She tells you she didn't catch it. You answer again.
+
+        "You have the right to ask for things. Asking is not the same as getting. Go on and ask."
+
+        You ask. She shakes her head with real sympathy and leans.
+
+        "You have the right to say please." She waits. You say it. You say it twice more. Your voice
+        has gone up somewhere you didn't know it went, and a grain truck goes by with its
+        horn on. "Oh, listen to you. Do you understand these rights as I have read them to you? The
+        answer is 'yes, Deputy.'"
+
+        "Yes, Deputy."
+
+        "Thank you, honey." She puts the card away and buttons the pocket. She takes her boot back,
+        sets her feet in the gravel and looks down the length of you with one eye shut, and all the
+        sweetness goes out of her face.
+
+        The toe comes in hard, once, and the sky goes white.
+
+        There's nothing to hold it with. You roll on your side and pull your knees up and make a noise
+        into the gravel that the corn doesn't care about. When you can see again she's crouched in
+        front of you with her elbows on her knees and her smile back on.
+
+        "What's that, sugar? Say it nice."
+
+        You say thank you, Deputy. She has you say it until it comes out in a normal voice, and that
+        takes a while. Then she gets you up by the cuffs and folds you into her back seat with one
+        hand on your head, so you don't bump it. She's careful about that.
+      effects:
+        - tracker.change: { body: -1, nerve: -1 }
+        - card.gain: voss-tab
+        - move.to: voss-cruiser
+art:
+  # The boot is the picture: from this low, she's two boots whose shafts leave the top of the frame. The planted one
+  # says she's standing; with her body named she came out sitting. pvotk7 was trained on a lap, so it's down to 0.2.
+  # His hips are nearest the lens and his feet far off: with his boots in the foreground, the rest of him drew itself
+  # lying beyond them, head and all.
+  loras: ["undrft_krea2_000001500:0.7", "pvotk7_krea2_000002000:0.2"]
+  subject: >
+    An undrft underfoot POV photo taken lying flat on your back on the gravel shoulder of a highway, with the camera
+    at your own chin, just above the gravel, looking down along your own body toward your feet. Your blue jeans begin
+    at the bottom edge of the frame, closest to the lens, and your thighs run away from it, spread wide apart, to your
+    scuffed brown work boots, small and far off at the left and right of the frame, their toes pointing up. In the
+    center of the frame, huge and razor sharp, a mirror-polished black leather thigh-high riding boot kicks in between
+    your legs from above, caught mid-swing just over the denim: the smooth black leather sole and low, flat
+    stacked-leather riding heel tilted toward the lens, the glossy toe cap, the tall rigid shaft rising straight up and
+    running out of the top edge of the frame, a thin spill of gravel dust falling from the sole. A little behind it,
+    soft and out of focus, a second identical boot stands planted on the gravel between your feet, its shaft rising
+    straight up and also running out of the top edge of the frame. Past your feet the flat, empty gravel shoulder runs
+    to a low horizon of pale corn stubble under a huge pale autumn sky with thin high clouds. Low late-afternoon sun from one side lays a long highlight down the boot's shaft. Natural leather
+    texture with visible welt stitching, fine 35 mm film grain, 24 mm lens, sharp focus on the sole and the toe cap.

@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# From DEAL-DELIVER at the Starlite. Tag `receipt` opens DEAL-RETURN at the warehouse wall, which swaps
+# it and GrayBlood Rep for GrayBlood Runner.
+id: britts-receipt
+kind: job
+name: Britt's Receipt
+tags: [receipt]
+text: One tube of discontinued cherry-red lipstick, out of the forty. That's the receipt. Britt doesn't write things down.
+art:
+  subject: >
+    Square close still-life photograph of a single old-fashioned lipstick in a ribbed gold metal case,
+    its cap off and standing beside it, the bullet a glossy cherry red with its slanted tip unused,
+    standing upright on the black painted hood of a car. The polished black paint reflects the gold
+    tube and a band of pale evening sky. Behind it, out of focus, gravel and a faint line of turquoise
+    motel doors. Low late-afternoon sun from the left lights the gold ribs and the wax. Restrained
+    palette of gloss black, gold and cherry red; natural texture, fine 35 mm film grain, sharp focus
+    on the lipstick.

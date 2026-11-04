@@ -50,6 +50,7 @@ In Graystone, use **only** these, at weight 1, and only when the image shows tha
 | `HandgagPOV_Krea2_v1:1` | her gloved or bare hand over the viewer's mouth |
 | `mtlcg7d_krea2_000001250:1` | a chastity cage in frame. Graystone has **one cage: a small stainless steel chastity cage**, the county's standard issue and Juno's alike, in prose and art. The LoRA suits a POV shot of a woman holding it, empty, as a threat or a tease: write the LoRA's own phrase, "an empty stainless steel mtlcg7 chastity cage fitting in her palm", held up in her hand beside her face. Not "dangling by its padlock" (a lattice ball on a chain at the Undercroft desk), and keep chains and other steel out of the shot. **Not for the viewer wearing one** (those come later, with their own LoRA). Lying on a table is untested. |
 | `undrft_krea2_000001500:1` | **Seo's trampling**, from flat on the floor (`~/code/prive/loras/pov-stepped-on`, step 1500; read its README). Trigger `undrft underfoot POV`. Write it in the caption order: `An undrft underfoot POV photo taken lying flat on <floor> with the camera pointing straight up at <ceiling or sky>, as <the sole, its material and colour> stomps straight down toward the camera`, then her in words, the standing-stomp sentence from the README, and only the ceiling or sky "directly overhead". No walls or furniture: they sit her down. Close her clothes at the hips (the breeches do). Goes in the base, with her own LoRA as a pass on her top half only. Used in TRAMPLE and RIGHTS. Trained on portrait strips: widescreen is untested (2026-11-02). |
+| `pvotk7_krea2_000002000:0.9` | **spanking, from across something**, POV (`~/code/prive/loras/pov-otk-get-spanked`, step 2000; read its README). Trigger `pvotk7 POV over-the-knee`. Write it in the caption order. Trained only on a lap (the Sheriff's couch), but a hood in place of the seat and a standing woman hold up (Voss's hood; her art lessons have the details). In the base, with her LoRA as a pass. Watch for his head coming into frame. An exception to framing rules 2, 6 and 7, like `pvarst7`. |
 | `"Krea2_BDSM Latex-Leather Megapack_V2E09:1"` | optional, for heavier BDSM gear |
 | `"Krea 2 - Strapon Dildo:1"` | strap-on, POV |
 | `"R2Y1DH5FQY41BT1Y6W67QWP730.nizLuQb9:0.5"` | facesitting, from under her looking up: she faces the lens and looks down at it |
@@ -98,7 +99,8 @@ shoulder", with the camera two paces back.
 shows facesitting carries `"R2Y1DH5FQY41BT1Y6W67QWP730.nizLuQb9:0.5"`, shot from under her
 looking up (Ashby's OFFER at Cell Three is the reference). Every image of her hand on him, a
 handjob or hand teasing, carries `femdom_handjob_krea2_epoch_20:1`, POV looking down (the
-Signora's FINISH in the back room and Ashby's ASK at Cell Three). Neither act is shot without its LoRA.
+Signora's FINISH in the back room and Ashby's ASK at Cell Three). Neither act is shot without its LoRA. One exception: Voss's
+`voss-track-face`, where the facesitting LoRA kept drawing her bare, so the frame stops at her belt and the prose carries the act.
 
 ## The camera is the player
 
@@ -548,6 +550,9 @@ prompts as short as her captions: trigger, pose, framing, expression, setting, l
 trigger prints "BRANDT" on signs, car doors and jackets: give every sign its own text or call it
 unlabeled. Outdoors, name the olive jacket, tan shirt and blue tie.
 
+When she catches you (`sheriff-caught`) she is strict and scolding, and the look alone tells you you're in trouble.
+She brings up your mother in Dayton there: the player's mother lives in Dayton.
+
 Character: fifty, Graystone born, twelve years with the state police before the Mayor asked her
 home to rebuild the department from nothing. She hired every woman in it. Warm, easy, the
 pleasant, inviting smile of someone who has never needed to raise her voice, because everyone
@@ -557,7 +562,11 @@ smile doesn't change when the news does; that's how people learn to be afraid of
 
 Off duty doesn't exist; she wears the dress jacket at her desk, closed, all day.
 
-Methods: *to be decided*.
+Methods: **old-fashioned correction, delivered warmly.** Anyone caught where he shouldn't be in her
+building comes to her, whoever caught him. She bends him over her knees on the Chesterfield with the oval
+hairbrush from the second drawer on the left (hard; she doesn't believe in the other kind), stands him naked
+in the corner while she works, or sets him a hundred lines and grades them in red pencil (C-plus; she keeps
+them). She talks all through it, about him, in the same voice.
 
 ### The front desk
 
@@ -700,6 +709,56 @@ and **light anal play** — the gloved cavity search that turns into milking him
 notebook. She never raises her voice and never once looks surprised. A man who gives her
 evidence gets a page in that notebook instead: her snitch, later her informant.
 
+### Patrol: the highway
+
+**Deputy Mara Voss** — patrols the highway out of town, from a gravel turnout.
+LoRA: `mrvx7_krea2_000001200:0.9`, the author's own (`~/code/prive/loras/char-mara-voss`), step
+1200. Rank: deputy (no chevrons). Her head is bare.
+
+Appearance block, in her LoRA's caption words: *mrvx7 woman in her patrol jacket uniform*, plus her
+hair, hoops, liner and lips spelled out, and **every piece of kit spelled out**: the uniform phrases
+never fully bound (the shirt came out blue or forest green). Her bomber has "ribbed knit sleeve
+bands", never "cuffs".
+
+Character: twenty-two, a bit glamour, a bit classic rockabilly: fresh lipstick on the shoulder of a
+county highway. Calls men "honey", "sugar", "sweetheart", "sweet pea", and means none of it. The
+sweetness is real manners on a surprisingly mean sadist: she hurts men because she likes it, and the
+smile doesn't change when she does. Sets the rates and makes up the speed.
+
+Methods: **spanking, ballbusting and punishments like them.** She leaves a man too sore to sit, or on
+his knees holding his crotch and begging for mercy, and she makes him say it again. Her face in art is
+sweet and delighted at the car window, and cold and strict while she punishes.
+
+Her shade is a discontinued cherry red, ninety dollars a tube. She keeps the empties, in order, in her gym
+locker. She's the one woman in the county who doesn't know the GrayBloods are selling it to her.
+
+Art lesson (the road, 2026-11-04): `undrft` 0.7 with `pvotk7` 0.4 does hold the look down his own body at her
+boot, but it sat her down on the gravel when her body was named behind the boot (`voss-rights`). `pvotk7` at 0.2 and
+only her two boots, both shafts leaving the top of the frame, fixed that. With his boots nearest the lens, the rest of
+him drew itself lying beyond them. Being tried: his hips nearest the lens and his feet far off. A license in her teeth
+reads badly, so leave it to the prose. Naming the whole patrol car in a shot of its hood draws a second car. On
+`voss-track-face`, Ashby's wording and a last no-LoRA box pass still left her bare at the bottom edge. What worked: no
+facesitting LoRA, and the frame stops at her belt.
+
+Art lesson (props, 2026-11-04): "blood-red" draws blood. The crown on `grayblood-runner` dripped onto a spattered mat,
+and `reds-package` grew blood on the seat, so say "faded brick red" or leave it out. On `sounds-like-a-seventy-one`, the patrol
+livery moved onto the sedan beside it: keep the cruiser small and far back, and spell out the sedan's plain paint. On
+`second-place`, the steam and raised hood went to the black car: say which hood is up and which is shut. Also on
+`sounds-like-a-seventy-one`, her tie and sleeve patches went missing: a pass redraws her clothes too, so spell out the
+whole kit in the pass as well as the base.
+
+Art lesson (the hood, 2026-11-03): `pvotk7` holds up with a hood for a lap and her standing, but her
+"tan riding breeches" went on his thigh, with a piece of her boot at his knee, and "big, sweet" came
+out as a laugh and a wave. To keep a good composition, leave the base's words alone and repair with
+passes (her face; his leg, no LoRA, at a high denoise). A face pass at 0.7 with her hair in its box and
+words drew curls over her face, so keep it to the face at about 0.5. The segment label "tan trousers and
+black boot" gave an empty mask, and the pass silently changed nothing; ComfyUI's mask preview shows this.
+A long `find` with "leaving out..." boxed his whole body, and a box-only pass redrew all of it, so ask for
+one thing and keep the outline.
+After four renders patching that leg, the base was redone: when what's wrong is in the base, change the
+base. It frames her from the hips up behind the hood, with no breeches or boots to land on him, and has
+her strict from the start.
+
 ### Café Linde
 
 **Francine Giardano** ("Signora Giardano") — owner of Café Linde, behind her own counter.
@@ -732,7 +791,9 @@ his belt or holding a white espresso saucer; crop at his waist.
 ## The GrayBloods
 
 Graystone's gang, what's left of it after the department rebuilt: a few crews working out of the
-warehouses at the docks. Red is their color.
+warehouses at the docks. Red is their color. **Every GrayBlood is a woman, for good, in prose and in art.**
+No men in their warehouses, not even out of focus in the background. Keep backgrounds empty rather than naming
+figures: a named crew or card game draws men. Keisha and the card players are the women in the room.
 
 **Red** (Shanice "Red" Dupree; *name is a proposal*) — a GrayBlood, holding up the wall of a
 dockside warehouse.
@@ -756,10 +817,27 @@ confidence that has never once been told no and made it stick. She talks over pe
 her own jokes because they're good, and stands closer than she has to. Thinks the department is
 a joke that hasn't been told to her yet. Calls men "lil bro".
 
+Inside the warehouse (*GrayBlood Runner*) she takes respect on bare skin, has her sneakers cleaned by tongue,
+and gives a handjob the way she does everything, loud and with commentary, until he says "I ain't no cop" right.
+
 Methods: **mockery, pat-downs and the hustle.** Every man is a narc until he proves otherwise,
 and the proof is money he hustled himself and hands her (*Red's Errand*, then *GrayBlood Rep*).
 She frisks men against the warehouse wall, reads their IDs out loud, and makes them say things
 back until they say them right. Long white nails (prose and close-ups only; not in her block).
+
+## Independents
+
+**Britt Dekker** — a streetracer and discreet courier, twenty-three, at the Starlite with her black
+muscle car. Takes delivery of discontinued cherry-red lipstick from the GrayBloods, and sells it on to Voss, who
+has no idea whose it is. Says very little, and names men after their cars: the player is "Sedan". Flattery
+gets nothing; knowing her car gets a nod.
+LoRA: `zbltk7_krea2_000001400:0.9`, the author's own (`~/code/prive/loras/char-britt-dekker`), step
+1400.
+
+Appearance block, in her LoRA's caption words: *zbltk7 woman in her pink hoodie*, plus "long loose
+wavy honey-blonde hair", "subtle and natural" makeup, and when her legs show, "lightly torn straight
+blue jeans and off-white low-top sneakers". The car is opt-in: name it as "a gleaming black
+late-1960s American muscle car".
 
 ## The library
 
@@ -863,6 +941,12 @@ Named in prose, never in art (no lettering): describe the place, not its sign.
   walls, small marble tables and bentwood chairs along the front window. A door behind the
   counter to the back room: sacks of green coffee, a roaster, a steel prep table, a single
   bentwood chair. Francine Giardano bought it and kept the name: "You don't rename a good café." 
+- **The highway** — two lanes through cut corn, driven in the player's own older sedan: the two views
+  are POV through his windshield, his bare hands on the wheel. Deputy Voss's cruiser sits in a gravel
+  turnout under the cottonwoods.
+- **The Starlite** (*name is a proposal*) — a one-story motel of pale painted block beside the highway:
+  turquoise doors, orange curtains, a covered walkway, an office at the near end, a gravel lot and a
+  dead neon sign of plain red and turquoise tubes.
 - **The doctor's office** — a converted red-brick Victorian at the south end of Main Street.
 - **Mill Street** — the side street off Main: the Carnegie library at its end, the mayor's
   office (red-brick Italianate city hall, flag out front) on it.

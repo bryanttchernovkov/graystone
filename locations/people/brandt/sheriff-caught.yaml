@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: caught where you shouldn't be, with a contractor badge. Reached by move.to from the setback
+# penalty on the kitchenette, gym and her office, and from the badge's penalty on `snoop` (SNOOP in the
+# bullpen, LOCKERS, DRAWER). Always the Sheriff, wherever it happened. TALK-GO sends you at random
+# to her punishment: the couch (twice as likely), the corner or the lines. Each ends in the bullpen with
+# your badge, so it can happen again.
+id: sheriff-caught
+name: Somewhere you shouldn't be
+tags: [law]
+description: The Sheriff a yard away in the middle of her own station, one finger leveled at your chest, and a look that tells you exactly how much trouble you're in.
+arrival:
+  text: |
+    "*You.*"
+
+    It stops you where you stand. You turn around, and the Sheriff is right there behind you, with her arm
+    out and one finger leveled at the middle of your chest. She doesn't have to say another word. One look
+    at her face and your stomach already knows how much trouble you're in.
+
+    You open your mouth. "Don't," she says, and you close it.
+
+    She takes the work order off you with her other hand, and the finger stays where it is. "It says here
+    you're fixing a printer. Does this look like a printer to you?" She gives you time to answer that, and
+    you don't. "I bought this building for a dollar, and I know every board in it that creaks. Your mother
+    still in Dayton? Is this what she thinks you do all day?"
+
+    The finger moves, and points past you. "On my rug. Now."
+actions:
+  - category: talk
+    word: GO
+    cost: 0
+    always: true
+    prompt: Go and stand on her rug, and hear what she's decided. It's going to be a punishment, and it's going to be hers.
+    result:
+      text: |
+        You stand on the rug, with the walnut door shut behind you. She looks you over, from your shoes up, as she might a house she's thinking
+        of having painted.
+
+        "Let's see," she says. "What do you need?"
+      effects:
+        - move.to: { random: [sheriff-spanking, sheriff-spanking, sheriff-corner, sheriff-lines] }
+art:
+  # A generic back corridor of the station on purpose: this picture has to do for every place you get caught.
+  loras: ["lorbrandt_krea2_000001200:1"]
+  subject: >
+    First-person point-of-view widescreen photograph from standing eye height in a narrow back corridor of an old
+    deconsecrated Gothic Revival church converted into a sheriff's station, the camera level. Smooth dressed limestone
+    ashlar walls and a low whitewashed vault, a corkboard of pinned notices and a gray steel filing cabinet on one
+    side, worn flagstones underfoot. lorbrandt woman in her uniform stands two paces from the lens, framed from
+    the waist up, facing the camera square, with a black leather duty belt at her waist. Her right arm is raised and
+    extended toward the lens, her index finger pointing straight at the camera, accusing, the other fingers curled. She
+    looks directly into the camera, making eye contact with the viewer, with hard, strict, scolding fury, mid-word: blue eyes
+    narrowed and fixed, brows drawn down, jaw set, lips thin and parted on a sharp word. A warm overhead light above her, the corridor falling away into soft shadow
+    behind her. Restrained palette of pale limestone, olive green, vivid blue and brass; natural skin texture, fine 35 mm
+    film grain, shallow depth of field on her eyes and her fingertip.

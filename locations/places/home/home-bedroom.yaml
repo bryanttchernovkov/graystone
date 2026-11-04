@@ -47,6 +47,21 @@ actions:
         with a nickname on it.
       effects:
         - card.lose: nude
+  - category: work
+    word: PEAS
+    cost: 1
+    always: true
+    requires: [sore]
+    prompt: Get the frozen peas and lie on your stomach for a while.
+    result:
+      text: |
+        You lie face down on the duvet with your jeans around your ankles and a bag of peas on the worst of it. It hurts going on and
+        then, after a minute, it's the best thing that has ever happened to you. The peas thaw. You turn the bag over.
+
+        When you get up you can almost sit on the edge of the bed.
+      effects:
+        - boost.change: { card: sore-bottom, amount: -1 }
+        - tracker.change: { time: -1 }
 art:
   subject: >
     Eye-level photograph from the doorway of a small, clean upstairs bedroom in an older

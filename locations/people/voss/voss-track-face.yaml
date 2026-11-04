@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Beat: one of three fees on the farm track, at random, from DEAL-BEG in voss-cruiser. TALK-THANK ends
+# it: cuffs off, back to the turnout, the Record still open. Gains Voss's Tab.
+id: voss-track-face
+name: A dirt track in the corn
+tags: [law]
+description: Corn stubble against the back of your head, a very big sky, and a deputy in tan twill standing over your face and checking her lipstick.
+arrival:
+  text: |
+    She has you lie down in the track on your back, on your hands, and she stands over you with one
+    boot on either side of your head and a gold compact open in her palm.
+
+    "I've got a personal best to beat, honey, and I've got nobody to practice on." She blots her lips
+    on a tissue and drops the tissue on your forehead. "You tap with your foot when you've had enough.
+    I might notice."
+actions:
+  - category: talk
+    word: THANK
+    cost: 0
+    always: true
+    prompt: Lie still under her. She's going to sit on your face and time it, and you'll thank her after.
+    result:
+      text: |
+        She lowers herself down onto your face, knees in the dirt, and the sky goes out. Twill, warm and
+        tight across your nose and mouth, and all of her weight behind it. You get half a breath of
+        laundry soap and sweat and then you don't get any more.
+
+        Her voice comes through her thighs from somewhere up in the daylight. "One Mississippi. Two
+        Mississippi."
+
+        She gets to twenty, and lifts an inch. You drag in air with a sob on the end of it, and she
+        says "there you go, sugar," and sits. Thirty, that time. A little wiggle to get settled. She
+        hums. At thirty-five your heel starts going against the dirt and she says, "Is that a tap? That
+        might be a tap," and counts two more before she rises.
+
+        The last one is short, and she spends it grinding her hips side to side while she does her
+        lipstick, and you can feel her arms moving. When she gets up you lie there pulling at the air
+        with your whole chest, your face wet and printed with twill.
+
+        "Forty-one with a break." She unlocks your cuffs and pats your cheek twice. "Say thank you."
+
+        You say it. It takes two tries. "Your counts are still open, sweet pea. I just didn't feel like
+        the paperwork." She drives you back to your car and doesn't let you open the window.
+      effects:
+        - tracker.change: { body: -1 }
+        - card.lose: handcuffs
+        - card.gain: voss-tab
+        - skill.gain: risk
+        - move.to: highway-turnout
+art:
+  # An exception to "facesitting always uses its LoRA": that LoRA drew her bare through every wording and a box
+  # pass, so it's gone and the frame stops at her belt. The prose carries the act.
+  loras: ["mrvx7_krea2_000001200:0.9"]
+  subject: >
+    First-person point-of-view photograph from flat on the back in a dirt farm track, the camera looking
+    steeply up. mrvx7 woman in her patrol jacket uniform, a twenty-two-year-old highway patrol deputy, looms
+    directly over the lens, facing it, framed from her belt up. The bottom edge of the frame cuts across her
+    black leather duty belt with its polished brass buckle. A narrow, soft strip of tan twill closes in along
+    the far left edge and the far right edge of the frame. Above the belt her tan uniform shirt is tucked in
+    under her dark forest-green bomber jacket zipped to the middle of her chest with a polished gold star
+    badge and a vivid azure blue necktie hanging toward the camera. At the top of the frame she
+    looks down into the camera over a small open gold compact held in her bare left hand, a glossy red
+    lipstick in her bare right, with cool, pleased attention: bright blue eyes narrowed, sharp
+    black winged eyeliner, one brow up, red lips pursed mid-stroke. Her dark espresso hair is in glossy
+    rockabilly victory-roll bangs with a cherry-red section, large gold hoops swinging forward. Behind her
+    head, a huge pale autumn sky and a few dry corn stalks at the edges. Low sun behind her rims her hair
+    and shoulders. Palette of uniform tan, forest green, vivid azure blue, gold and pale sky; natural fabric
+    texture, fine 35 mm film grain, focus on her eyes.

@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# Voss's Tab, full. Tag `date` is the hook for her date storyline. Until then, one setback die on a
+# patrol road can land here: she waves you by.
+id: voss-sweet-pea
+kind: favor
+name: Voss's Sweet Pea
+tags: [date]
+text: She knows your plate, your limp and your ringtone. "You and me should get dinner sometime, honey. Somewhere with hard chairs."
+slots:
+  - { match: { tag: patrol }, face: setback }
+art:
+  loras: ["mrvx7_krea2_000001200:0.9"]
+  subject: >
+    Square waist-up portrait photograph from the driver's seat of a parked sedan, looking out through
+    the open window, of mrvx7 woman in her patrol jacket uniform, a twenty-two-year-old highway patrol deputy. Her dark espresso brown hair is styled in glossy rockabilly victory-roll bangs and a high curled ponytail, with a bold cherry-red dyed section running through the rolled bangs and down the curls of the ponytail, large polished gold hoop earrings, sharp black winged eyeliner and glossy red lipstick. She wears a dark forest-green bomber jacket with ribbed knit sleeve bands, zipped to the middle of her chest, a polished gold six-point star badge on its left chest and a vivid azure blue and gold patch on each sleeve; above the zipper, the pointed collar of a tan uniform shirt and a vivid azure blue necktie with a small gold tie bar; her head is bare. She leans on the door with one forearm, looking directly into the
+    camera, making eye contact with the viewer, with sweet, glamorous delight: bright blue eyes warm,
+    head tilted, a big red-lipped smile. Her bare right hand tucks a citation sheet folded into a
+    small paper heart behind the sun visor at the top of the frame. Behind her, out of focus, cottonwoods
+    in yellow leaf. Low late-afternoon sun lights her face and hoops. Restrained palette of forest green,
+    tan, vivid azure blue, espresso, cherry red and cottonwood yellow; natural skin texture, fine 35 mm
+    film grain, focus on her eyes.

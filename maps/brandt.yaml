@@ -1,11 +1,18 @@
 # yaml-language-server: $schema=../../../schema/v3/map.json
 # Sheriff Brandt: events only, reached by move.to. Her desk: TALK-APPROACH in her office in the
-# choir loft. Out goes back to the office.
+# choir loft. Out goes back to the office. SC: caught where you shouldn't be, which picks SP the couch,
+# SK the corner or SL the lines, and each goes back to the bullpen.
 id: brandt
 name: Sheriff Brandt
 legend:
   SD: sheriff-desk
+  SC: sheriff-caught
+  SP: sheriff-spanking
+  SK: sheriff-corner
+  SL: sheriff-lines
 grid: |
-  SD
+  SD .. SC
+  .. .. ..
+  SP .. SK .. SL
 portals:
   - { from: sheriff-desk, dir: out, to: station-sheriff-office, cost: 0, prompt: You step back from her desk. }

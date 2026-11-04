@@ -102,7 +102,19 @@ tags:
   - { id: snitch,    name: Snitch }    # in her notebook: Seo's Snitch and Informant
   - { id: tip,       name: Tip }       # action tag: telling Seo what you've heard (fills the Snitch)
   - { id: informant, name: Informant } # Seo's Informant (opens her later scenes)
+  # The GrayBloods' package job
+  - { id: courier,   name: Courier }   # carrying Red's Package (opens DEAL-DELIVER with Britt)
+  - { id: receipt,   name: Receipt }   # Britt's Receipt (opens DEAL-RETURN with Red)
+  - { id: runner,    name: Runner }    # GrayBlood Runner (opens the warehouse)
+  # Favors a later date storyline will read: Voss's Sweet Pea, Britt's Nod
+  - { id: date,      name: Date }
+  - { id: nod,       name: Nod }       # Britt's Nod (hides TALK-COMPLIMENT)
+  # Snooping in the station with a contractor badge
+  - { id: snoop,     name: Snoop }     # action tag: a setback on it is the Sheriff (the badge's penalty)
+  - { id: sore,      name: Sore }      # Sore Bottom
   # Fetish cards (read by other storylines' requires)
+  - { id: sneakers,  name: Sneakers }
+  - { id: spanked,   name: Spanked }
   - { id: boots,     name: Boots }
   - { id: uniform,   name: Uniform }
   - { id: socks,     name: Socks }

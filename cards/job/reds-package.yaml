@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# From TALK-WORK at the warehouse wall (GrayBlood Rep). Tag `courier` opens DEAL-DELIVER with Britt at
+# the Starlite; tag `evidence` opens DEAL-ANSWER at Voss's stop and DEAL-SURRENDER in Seo's arrest. The
+# Undercroft's intake takes it (a card.lose in its arrival), and so does Seo's SURRENDER. Any new
+# evidence card needs its own line in both: the engine loses cards by ID, not by tag.
+id: reds-package
+kind: job
+name: Red's Package
+tags: [courier, evidence]
+text: Brown paper, a lot of tape, about the weight of a brick. It rattles if you take a corner. "You open it, I know. You lose it, I know. You get pulled over, that's on you, lil bro."
+art:
+  subject: >
+    Square close photograph from the driver's seat of an older sedan, the camera tilted down and to
+    the right across the cabin, of a brick-sized parcel wrapped in brown kraft paper and far too much
+    clear packing tape, sitting on a worn gray cloth passenger seat with the seat belt pulled across
+    it and buckled. The paper is plain and unmarked, and the seat is clean. Beyond it, out of focus, the
+    passenger window and pale gold cornfield stubble streaking past. Low late-afternoon sun through the
+    windshield lays a long glare along the tape.
+    Restrained palette of kraft brown, worn gray cloth and corn gold; natural texture,
+    fine 35 mm film grain, sharp focus on the buckled parcel.

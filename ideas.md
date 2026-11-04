@@ -28,15 +28,18 @@ Ideas for graystone
 - [ ] Case files
   - [ ] Deputies
   - [ ] Graybloods
-- [ ] Graybloods 2 - smuggle package
-  - [ ] Locations:
-    - [ ] Highway; at least 2 lenghts of highway locations, prompts how us driving in our car; we can go back and forht. Risk is, on both llocation, if we suffer a setback we get pulled over by a new deputy. 
-    - [ ] Motel. With owner, and a room; room is occupied by britt dekker, targetr of our 'smuggle' option.- [ ] New Patrol officer - Mara Voss
-  - [ ] Independent - Britt Dekker; smuggler.
+- [x] Graybloods 2 - smuggle package
+  - [x] Locations:
+    - [x] Highway; at least 2 lenghts of highway locations, prompts how us driving in our car; we can go back and forht. Risk is, on both llocation, if we suffer a setback we get pulled over by a new deputy. 
+    - [x] Motel. Lot and rooms; britt dekker sits in the lot, target of our 'smuggle' option.
+    - [ ] Motel owner (the office is there, blinds shut; nobody written yet)
+  - [x] New Patrol officer - Mara Voss
+  - [x] Independent - Britt Dekker; smuggler.
 - [ ] Active 'Crime' tag; if we have an active 'crime' card; meaning, we're on a crime, we're suspect. This is different from criminal records that trigger arrests *outside*. *crime* tagged cards doon't auto trigger but kind of makes us suspect in situations like this. In the policestation, during the getting caught, we go to an interrogation chamber, where a detective interrogates us. Basic options are Confess Or Deny. We should have some sort of minigame perhaps? 
   - [ ] Introduce detective
 
-- [ ] 'caught' in the police station - some locations have a 'chance' of getting caught we are there; to be determined which officer where; We *could*, depending on the officer, end up in the sheriff's officer. Default is a spanking session. Hard. Maybe some other punishments? cornertime? writing tasks?
+- [x] 'caught' in the police station: always the Sheriff (sheriff-caught): the couch, the corner or the lines.
+- [x] Sore Bottom, Spanking Fetish and its achievement
 
 - [ ] Badge bunny mission
   - [ ] Date with Ashby
@@ -44,6 +47,8 @@ Ideas for graystone
     - [ ] Gas station. Robbery target
     - [ ] A shady bar/pub at the highway? Maybe a biker gang?
   - [ ] Date with Seo
+  - [ ] Dates: Voss's Sweet Pea and Britt's Nod carry the tag `date`; nothing reads it yet
+
 
 - [ ] Graybloods 3 - rob highway station
 - [ ] Rebalance; make 'movement' cheaper

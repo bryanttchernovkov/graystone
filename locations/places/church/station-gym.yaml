@@ -1,10 +1,15 @@
 # yaml-language-server: $schema=../../../../../schema/v3/location.json
 # The First Church station, the back: the gym, a small annex built onto the back of the church,
-# through the side door and a short covered walkway. North back to the bullpen.
+# through the side door and a short covered walkway. North back to the bullpen. A setback here (and on
+# the way in) gets you caught: sheriff-caught.
 id: station-gym
 name: The gym
 tags: [law]
 hub: true
+setback_penalty:   # caught where you shouldn't be: always the Sheriff
+  requires: [contractor]
+  effects:
+    - move.to: sheriff-caught
 description: "A small annex out back: mats wall to wall, a heavy bag, a row of lockers, and two deputies sparring."
 actions:
   - category: look
@@ -24,6 +29,22 @@ actions:
         minutes of it, and you know how it's done.
       effects:
         - skill.gain: risk
+  - category: risk
+    word: LOCKERS
+    cost: 1
+    tags: [snoop]
+    prompt: While they're busy on the mats, try the row of lockers.
+    result:
+      text: |
+        Most of them are locked. Number six isn't. A forest-green jacket on a hook, a spare pair of breeches, a can of hairspray
+        the size of a fire extinguisher, and on the shelf a neat line of little ribbed gold lipstick tubes, all of them empty,
+        all of them worn down to the metal. There are a lot of them. Somebody has been keeping them, for some reason, in
+        order.
+
+        You close the door with one finger.
+      effects:
+        - skill.gain: look
+        - tracker.change: { nerve: +1 }
 art:
   subject: >
     Eye-level widescreen photograph from standing height just inside the door of a small, low-

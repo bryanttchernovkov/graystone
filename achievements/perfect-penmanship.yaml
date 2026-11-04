@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+id: perfect-penmanship
+title: Perfect Penmanship
+text: C-plus. Your sevens look like ones. She keeps them in a file, and it's not a thin file.
+hint: The Sheriff still believes in a good, clear hand.
+when: { location: sheriff-lines }
+art:
+  subject: >
+    an elegant executive office with walnut paneling and a round stained-glass window, seen from just inside the door at standing
+    height, the scene in the right two-thirds of the frame. At a large polished walnut desk a broad-shouldered, athletic white man
+    of thirty-two with lightly tanned skin, tousled wavy brown hair, a strong square jaw, light stubble and round thin gold wire-rimmed
+    glasses, in an unbuttoned faded red and gray plaid flannel shirt over a plain charcoal T-shirt, worn blue work jeans and scuffed brown leather work boots, sits hunched on a small visitor's chair, writing on a ruled pad with his tongue
+    between his teeth and his face red, a stack of filled pages at his elbow. Across the desk from him a fifty-year-old woman with long
+    copper-auburn waves and fair freckled skin, in a buttoned dark olive-green dress uniform jacket with brass buttons, holds a page up
+    to the lamp and marks it with a red pencil, smiling warmly, a very thick file open at her side. The left third is a Chesterfield sofa in
+    quiet shadow. Warm afternoon light from the round window and a brass lamp. Palette of walnut, olive green, brass, flannel red and red
+    pencil; natural skin texture, fine 35 mm film grain.
+  passes:
+    - find: the man writing at the desk, from the top of his head down to his waist
+      segment: man in plaid shirt
+      loras: ["jack:1"]
+      subject: >
+        a broad-shouldered white man of thirty-two with tousled wavy brown hair, light stubble and round thin gold wire-rimmed glasses, in a
+        plaid flannel shirt, hunched over a pad, writing, his tongue between his teeth, his face red. Warm lamplight, fine film grain.
+    - find: the woman in the olive-green jacket, from the top of her hair down to the desktop
+      segment: woman in a green jacket
+      loras: ["lorbrandt_krea2_000001200:1"]
+      subject: >
+        lorbrandt woman in her uniform, the jacket buttoned, at a walnut desk, holding up a page and marking it with a red pencil, smiling
+        warmly. Warm lamplight, fine film grain.

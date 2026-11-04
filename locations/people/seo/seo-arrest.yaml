@@ -73,6 +73,7 @@ actions:
       effects:
         - card.lose: handcuffs
         - card.lose: criminal-record
+        - card.lose: reds-package
         - card.gain: seos-snitch
         - move.to: docks-river
   - category: talk

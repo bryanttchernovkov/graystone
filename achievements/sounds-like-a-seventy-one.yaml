@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+id: sounds-like-a-seventy-one
+title: Sounds Like a Seventy-One
+text: Neither of you knows how fast you were going. Only one of you gets to decide.
+hint: Sooner or later, you'll meet the highway's sweetest deputy.
+when: { location: voss-stop }
+art:
+  subject: >
+    a dull tan older four-door 1990s sedan, plain tan paint on its roof and every door but one dented gray door, pulled over on the gravel shoulder of a straight two-lane Midwest highway through cut corn in low
+    autumn sun, seen side-on from across the road at standing height, large in the right two-thirds of the frame. Thirty yards behind the sedan, small with distance, a Graystone County Sheriff's patrol car, a present-day Ford Police Interceptor Utility SUV painted two-tone, with a white roof, hood and front doors over a tan body, a broad vivid azure blue stripe running the full length of each flank below the windows, a low black roof light bar and a black steel push bumper,
+    sits with red and blue lights flashing. A broad-shouldered, athletic white man of thirty-two with lightly tanned
+    skin, tousled wavy brown hair, a strong square jaw, light stubble and round thin gold wire-rimmed glasses sits at
+    the wheel of the tan sedan in a faded plaid flannel shirt, his window down, both hands high on the wheel, staring straight ahead with
+    a tight, doomed, polite smile. A twenty-two-year-old woman deputy with dark espresso hair in glossy rockabilly
+    victory-roll bangs and a high curled ponytail with a cherry-red section, gold hoops and glossy red lipstick, her head bare, in a dark
+    forest-green bomber jacket with ribbed knit sleeve bands, zipped to the middle of her chest, a polished gold six-point star badge on its left chest and a vivid azure blue and gold patch on each sleeve; above the zipper, the pointed collar of a tan uniform shirt and a vivid azure blue necktie with a small gold tie bar; a black leather duty belt, tan riding breeches and mirror-polished black leather thigh-high riding boots. She leans in at the
+    sedan's window on one forearm, one hip out, a ticket held out of his reach between two fingers of her bare hand, her cherry-red nails bright, beaming as if he'd brought her
+    flowers. The left of the frame is empty road and a leaning utility pole. Palette of asphalt gray, sedan tan, forest
+    green and corn gold; natural texture, fine 35 mm film grain.
+  passes:
+    - find: the man's head and shoulders inside the car window
+      loras: ["jack:1"]
+      denoise: 0.5
+      subject: >
+        a white man of thirty-two with tousled wavy brown hair, light stubble and round thin gold wire-rimmed glasses, at a car
+        window, staring straight ahead with a tight, doomed, polite smile. Low sun, fine film grain.
+    - find: the woman in the green bomber jacket leaning on the car, from the top of her hair down to her boots
+      segment: woman in a green bomber jacket
+      loras: ["mrvx7_krea2_000001200:0.9"]
+      subject: >
+        mrvx7 woman in her patrol jacket uniform, a twenty-two-year-old highway patrol deputy, leaning on a car door with one
+        forearm, holding a ticket between two fingers of her bare hand, her cherry-red nails bright, beaming with a big sweet red-lipped smile, her dark espresso hair in
+        glossy victory-roll bangs and a high curled ponytail with a cherry-red section, gold hoops, sharp black winged eyeliner and glossy red lipstick, her head bare. She wears a dark forest-green bomber jacket with ribbed knit sleeve bands, zipped to the middle of her chest, a polished gold six-point star badge on its left chest and a vivid azure blue and gold patch on each sleeve; above the zipper, the pointed collar of a tan uniform shirt and a vivid azure blue necktie with a small gold tie bar; a black leather duty belt, tan riding breeches and mirror-polished black leather thigh-high riding boots. Low sun, fine film grain.

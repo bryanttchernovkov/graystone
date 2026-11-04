@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=../../../../schema/v3/card.json
 # From WORK-EMAIL on the laptop. Its tag is what station locations will require for the
-# printer job and anything else a contractor is let in for.
+# printer job and anything else a contractor is let in for. A setback on a snoop action (SNOOP in the
+# bullpen, LOCKERS in the gym, DRAWER in her office) is the Sheriff: sheriff-caught.
 id: contractor-badge
 kind: gear
 name: Contractor Badge
@@ -8,6 +9,10 @@ tags: [contractor]
 text: County of Graystone, contractor, escorted access. A clip-on photo ID that gets you past the front desk of the First Church and not one step further without a deputy.
 slots:
   - { match: { category: work } }
+setback_penalty:
+  tags: [snoop]
+  effects:
+    - move.to: sheriff-caught
 art:
   subject: >
     Square close still-life photograph from above of a laminated white plastic photo ID badge

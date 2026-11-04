@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# Every spanking gains it again (+1): Voss's hood, the Sheriff's couch. Three notches and it becomes
+# Spanking Fetish. WORK-PEAS at home takes a notch off, and at none it's gone. While you have it, a
+# setback on a patrol road costs Body: driving hurts.
+id: sore-bottom
+kind: mark
+name: Sore Bottom
+tags: [sore]
+text: You've started choosing chairs by their cushions. You drive leaning to one side, and everybody in Graystone knows what that means.
+boost: { capacity: 3, start: 1 }
+on_full: spanking-fetish
+on_empty: lose
+setback_penalty:
+  tags: [patrol]
+  effects:
+    - tracker.change: { body: -1 }
+art:
+  subject: >
+    Square still-life photograph of a bag of frozen green peas, frosted white at the corners, lying in
+    the exact center of a thick plaid seat cushion on a worn gray cloth car seat, the camera tilted
+    down from eye height. A dish towel is folded under the bag and a wet ring of melt has darkened the
+    plaid. Soft daylight through a windshield from above. Restrained palette of frost white, pea green,
+    plaid red and worn gray; natural texture, fine 35 mm film grain, sharp focus on the frost.

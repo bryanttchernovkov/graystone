@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+# Her LoRA as a pass. No pass for him: his back is to the room, and jack:1 only knows his face.
+id: spanking-fetishist
+title: Spanking Fetishist
+text: Nobody sent you up the stairs. You know which corner is yours, and she didn't even look up.
+hint: Some chairs get harder to sit on. Keep at it.
+when: { card: spanking-fetish }
+art:
+  subject: >
+    an elegant executive office with dark walnut paneling, seen from just inside the door at standing height, the
+    whole scene in the right two-thirds of the frame. The room holds one desk: a large polished walnut desk with a
+    green leather top and a brass banker's lamp, standing in the middle of the frame directly under a round
+    stained-glass window glowing red, blue and gold. Behind that desk, facing the camera, under the window, a
+    fifty-year-old woman with long copper-auburn waves, a few silver strands at the temples and fair freckled skin,
+    in a buttoned dark olive-green dress uniform jacket with brass buttons, a tan shirt and a blue tie, sits working,
+    reading glasses low on her nose, writing in a folder with a pen, her face calm and pleasant, her eyes on the
+    page. An old oval wooden hairbrush lies on the green leather beside her hand. In the far right corner, where
+    two walnut panels meet beside a tall bookcase of leather-bound law books, a broad-shouldered, athletic white man
+    of thirty-two with lightly tanned skin and tousled wavy brown hair stands completely naked with his back to the
+    room and his nose pressed into the seam of the corner, his fingers laced on top of his head and his elbows out,
+    his bare backside a bright, hot, even red against his pale legs, the marks of an oval brush on it. His clothes
+    lie folded neatly on the arm of a dark green leather Chesterfield sofa along the right-hand wall. The left third of the
+    frame is a deep-green and cream patterned rug and quiet shadow. Warm afternoon light from the round window and
+    the lamp. Palette of dark walnut, olive green, brass and hot red skin; natural skin texture, fine 35 mm film grain.
+  passes:
+    - find: the woman seated behind the desk, from the top of her hair down to the desktop
+      segment: woman in a green jacket
+      loras: ["lorbrandt_krea2_000001200:1"]
+      subject: >
+        lorbrandt woman in her uniform, the jacket buttoned, seated behind a large walnut desk under a round
+        stained-glass window, reading glasses low on her nose, writing in a folder with a pen, her face calm and
+        pleasant. Warm afternoon light, a brass lamp, fine film grain.

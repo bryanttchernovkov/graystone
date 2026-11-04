@@ -1,0 +1,282 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Inside the GrayBloods' warehouse, with Red. Reached by TALK-INSIDE at the warehouse wall (GrayBlood
+# Runner); out goes back to the wall. A hub, one of each per run:
+#   DEAL-RESPECT: kissing her bare ass, a boost on the Runner card.
+#   WORK-SCUFF: cleaning her sneakers with your tongue, gains Sneaker Fetish.
+#   DEAL-ASK (not caged): her hand, her way, and the callback to "I ain't no cop".
+#   DEAL-PLEAD (caged): she finds the cage. A swapped pair, like the Signora's back room.
+#   DEAL-TAX (marked): she reads your forehead. No art.
+id: graybloods-warehouse
+name: The warehouse
+hub: true
+description: Pallets to the rafters, a work light on a hook, a couch somebody stole from a nicer couch, and Red with her feet up on a crate.
+arrival:
+  text: |
+    It's darker in here than the lot, and it smells of wet concrete and cardboard. Two women playing cards
+    on an upturned drum look at you, and at each other, and go back to their game.
+
+    "Don't touch nothing." Red drops onto the couch and puts her sneakers up on a crate. "Don't look at
+    nothing. You see anything, you ain't see it. This the good part of the building, lil bro. Enjoy it."
+actions:
+  - category: deal
+    word: RESPECT
+    cost: 1
+    prompt: Ask what a new man owes her in here. It's respect, it's on your knees, and it's her ass.
+    result:
+      text: |
+        "Oh, he's *polite.* Y'all hear this?" The card players don't look up. Red gets to her feet and
+        turns around in front of you, and looks back over the red jacket. "There's a way this go. New
+        dudes pay respect. Knees."
+
+        You get down on the concrete. She pops the button of her jeans with one long white nail and
+        works them down over her hips with a wiggle, the ripped denim bunching at her thighs, and she
+        hooks a thumb in her black thong and snaps it to one side.
+
+        "Both cheeks. And I want it to sound like you mean it, 'cause Keisha's bet me five you'd
+        cry."
+
+        Her skin is warm and smells of cocoa butter. You kiss the left side, and she says "Who?", and
+        you say "Red," into it, and she says "Who?" again and you say it louder. She reaches back, takes
+        a handful of your hair and moves your face where she wants it, down the middle and up the other
+        side, talking over her shoulder the whole time about a guy who owes her for a transmission.
+
+        "Say 'I'm honored.'"
+
+        "I'm honored."
+
+        "You *are* honored." She pushes your head away with her fingertips and pulls up her jeans. "Keisha!
+        He ain't cry. Pay me."
+
+        A five-dollar bill goes across the room. She looks at it, then at you, and puts it in her
+        pocket.
+      effects:
+        - tracker.change: { nerve: -1 }
+        - skill.gain: deal
+        - boost.change: { card: grayblood-runner, amount: +1 }
+      art:
+        loras: ["shndr7_krea2_000001200:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from kneeling height on wet concrete in a dim
+          warehouse, the camera level. shndr7 woman in her red puffer jacket, hanging open over a fitted black top, with light-wash ripped jeans, twenty-one years old, stands with her back to the lens at arm's length, her
+          red puffer jacket hanging open and hitched up in one hand above her waist, her light-wash ripped
+          jeans pushed down to the middle of her thighs. Her bare, round backside with smooth dark brown
+          skin fills the center of the frame, a thin black thong pulled aside by the long white-nailed
+          thumb of her other hand. She twists at the waist and looks back over her own shoulder directly
+          into the camera, making eye contact with the viewer, with loud, smug delight: pale blue eyes
+          narrowed, chin up, full lips pulled in a wide mocking grin. Her long straight black hair hangs
+          down her back with one thin braid. Nothing of the viewer is in frame. Behind her, out of focus,
+          an empty aisle between stacks of wooden pallets. A work
+          light on a hook lights her skin and jacket warm from above, the rest of the room in shadow.
+          Restrained palette of glossy red, dark brown skin, denim blue, wet gray concrete and tungsten
+          amber; natural skin texture, fine 35 mm film grain, focus on her face.
+  - category: work
+    word: SCUFF
+    cost: 1
+    prompt: She's looking at a scuff on her sneaker, and then at you. Clean it, with your tongue, while she watches.
+    result:
+      text: |
+        "You see that?" She sticks one foot out over the crate and turns it in the light. White high-top,
+        or it was white. "That's your fault. I walked across this whole lot to get your receipt, and
+        now I got lot on me." She wags the toe. "Lick."
+
+        You get down in front of the crate. The rubber along the toe is gritty and tastes of tar and
+        cigarette. You go along the side of it, and she watches you do it with her chin on her fist,
+        fascinated, like it's a nature program.
+
+        "Bottom too. Nah, bottom. Who cleans just the top? You a *cop* about it."
+
+        She plants her heel on your forehead and tips the sole down over your face. It's all ridges, and
+        each ridge has a day of Front Street packed into it. You work your tongue up the herringbone one
+        row at a time, and it comes away in grit that you have nowhere to spit. She's got the phone up.
+
+        "Look at the camera. Say what flavor."
+
+        You tell her. She laughs until she drops the phone, and then she has you get that, too, from
+        under the crate, and hand it back.
+
+        She looks at you for a second when you're done, with your mouth black and your eyes running.
+
+        "Damn, lil bro," she says, sounding almost impressed. "You like that. That's so sad."
+      effects:
+        - tracker.change: { nerve: -1 }
+        - card.gain: sneaker-fetish
+        - skill.gain: work
+      art:
+        # Her LoRA as a pass on her top half, as in Seo's TRAMPLE. undrft's seated pose, in widescreen (untested).
+        loras: ["undrft_krea2_000001500:1"]
+        subject: >
+          An undrft underfoot POV photo with the camera low on a wet concrete warehouse floor, angled up at a
+          seated woman, as the worn plain herringbone rubber sole of a scuffed white high-top sneaker presses
+          toward the camera, a dark grit packed in its tread, one clean, wet stripe licked up the middle of the
+          sole, large in the upper half of the frame. A twenty-one-year-old woman with smooth dark brown skin
+          sits leaning back on a sagging old couch a short way in front of the camera, one leg in light-wash
+          ripped jeans extended straight out toward the lens, the other foot up on a wooden crate, in an open
+          glossy red puffer jacket over a fitted black top, holding up a smartphone in one hand with long
+          white nails, and looking down at the lens past the sole with loud, gleeful mockery and a wide open
+          grin. Behind her, stacked wooden pallets rising into the dark. A work light on a hook lights the sole
+          and her jacket from above, tungsten amber, natural texture, fine 35 mm film grain, 24 mm lens.
+        passes:
+          - find: the woman's head, shoulders and chest, from the top of her hair down to her waist
+            segment: woman in a red jacket
+            denoise: 0.5
+            loras: ["shndr7_krea2_000001200:1"]
+            subject: >
+              shndr7 woman in her red puffer jacket, hanging open over a fitted black top, twenty-one years
+              old, sitting back on a sagging couch, holding up a smartphone in one hand with long white nails,
+              looking down into the lens with loud, gleeful mockery: pale blue eyes squeezed half shut with
+              laughter, a wide open grin showing her teeth. Stacked wooden pallets behind her, a tungsten work
+              light above, natural skin texture, fine film grain.
+  - category: deal
+    word: ASK
+    cost: 1
+    unless: [caged]
+    prompt: Ask what else a runner gets paid. She'll do it with her hand, her way, in front of the room, and she decides how it ends.
+    result:
+      text: |
+        She looks at you for a while with her mouth open a little. Then she yells across the warehouse.
+        "He asked me what else he get paid!" One of the card players says "Damn," with respect, and plays
+        a card.
+
+        "Nah, okay. Okay." She gets up and walks you backward until a stack of pallets stops you. "Hands
+        behind you. You touch me, I break 'em." She undoes your belt, the narc belt, reading it like a
+        label on the way past, and hauls your jeans down one-handed. Then the long white nails close
+        around you, and they aren't gentle, and you're already hard, and she looks down at that and back
+        up at you with enormous pleasure.
+
+        "Look at this. Look at this *little* guy. He the only one in your whole family with any
+        ambition."
+
+        She works you the way she does everything, loud and fast and with commentary. A dry grip, a
+        twist at the top. When your breath changes she stops dead and holds you there by the base with
+        two nails resting where you can feel them, and she leans in close enough for you to smell her
+        gum.
+
+        "You don't finish till I hear it. You know what I wanna hear."
+
+        You say please.
+
+        "That's a cop word. Try again." Three strokes and stop. "You been to school. You know what
+        you are, lil bro. Say it right." Three more. Your knees are going. And you have it, and you say it,
+        too quiet, and she goes back to zero and makes you wait. You say it again.
+
+        "I ain't no cop."
+
+        "*Louder.* Keisha can't hear you."
+
+        "I ain't no cop!"
+
+        "He ain't no cop!" she yells, and across the room Keisha says, "Clearly," and she finishes you
+        off, hard and fast, laughing. It goes on the concrete, and some of it goes on her wrist. She looks at
+        that, and wipes it down the front of your shirt with care, and then wipes the rest on your
+        belt.
+
+        "Ugh. That was so bad," she says happily. "Pull your pants up. You look like a substitute teacher."
+      effects:
+        - tracker.change: { nerve: +2, body: -1 }
+        - skill.gain: talk
+      art:
+        loras: ["shndr7_krea2_000001200:1", "femdom_handjob_krea2_epoch_20:1"]
+        subject: >
+          Intimate first-person point-of-view photograph from standing eye height in a dim warehouse, the
+          camera tilted down. shndr7 woman in her red puffer jacket, hanging open over a fitted black top, with light-wash ripped jeans, twenty-one years old, stands close at arm's length in the center of the frame, framed from
+          her face down to her hips, her fitted black top and the open glossy red jacket close to the lens. She
+          looks directly into the camera, making eye contact with the viewer, with loud, gleeful, teasing
+          control: pale blue eyes narrowed with delight, one brow raised, her full lips parted in a wide
+          mocking grin. Her right hand, with long glossy white coffin-shaped nails and two thin gold rings, is
+          wrapped tight around an erect penis that rises from the bottom center of the frame, gripping it at
+          the base and holding it still, a handjob stopped at the edge. Her left hand is raised beside her
+          chin with one long white nail pointed at the lens. Nothing else of the viewer is in frame. Behind
+          her, out of focus, stacked wooden pallets and a work light on a hook. The work light from above
+          lays warm tungsten across her cheekbones and the gloss of the jacket, the room falling into
+          shadow. Restrained palette of glossy red, dark brown skin, white nails, gold and tungsten amber;
+          natural skin texture, fine 35 mm film grain, focus on her eyes.
+  - category: deal
+    word: PLEAD
+    cost: 1
+    requires: [caged]
+    prompt: Ask what else a runner gets paid. She's going to look, in front of the room, whatever you've got under there.
+    result:
+      text: |
+        "Oh, he want a bonus. Lemme see the merchandise." She walks you back against the pallets and
+        undoes your belt before you've thought about how to explain, and hauls your jeans down.
+
+        Then she doesn't do anything. She just stands there. It's the quietest you've heard her.
+
+        "Keisha," she says, softly. "Keisha, come here. Bring your phone."
+
+        They both come. It takes a while for the other one to stop laughing and hold the phone steady. Red
+        crouches, and raps on the little steel bars with one long white nail, *tink tink,* and puts her ear
+        close to it, as if something might answer.
+
+        "Lil bro. Lil *bro.* Is this county? Is that a county padlock?" She flips it with her fingertip.
+        "You got five-oh on your *dick?* You been in my warehouse this whole time with police equipment on?"
+
+        She stands up and wipes her eyes with a knuckle. Then she leans in and asks you, very seriously,
+        who's got the key, and you have to say it. She has you say the Sergeant's rank. Keisha asks you
+        to say it again for the video, for her cousin.
+
+        "Nah, I can't do nothing with this. It's evidence." She slaps it once, lightly, with two fingers, and
+        it rings. "You a whole narc after all. Just from the waist down."
+      effects:
+        - tracker.change: { nerve: -1 }
+        - skill.gain: talk
+      art:
+        loras: ["shndr7_krea2_000001200:0.9", "pvcg5_krea2_000002000:0.9"]
+        subject: >
+          A POV photograph looking down at my own body standing against stacked wooden pallets in a dim
+          warehouse, my blue jeans pushed down to my knees, a pvcg5 chastity cage, filled, polished stainless
+          steel with a tiny brass padlock, locked on me. shndr7 woman in her red puffer jacket, hanging open over a fitted black top, with light-wash ripped jeans, twenty-one years old, crouches on the wet concrete in front of me,
+          close, and flicks the little padlock with one long glossy white-nailed fingertip of her right hand. She
+          looks up from the cage into the camera, making eye contact with the viewer, with stunned, overjoyed
+          mockery: pale blue eyes wide and streaming, brows high, full lips stretched in a huge open-mouthed
+          laugh showing her teeth. My bare thighs run from the bottom edge of the frame to the cage in the
+          lower centre, her face and shoulders just above it. Behind her, out of focus, an empty aisle between
+          stacks of wooden pallets. A work light on a hook above lights her face warm and throws a
+          hard glint along the steel. Steep downward viewpoint from my eyes. Restrained palette of glossy red,
+          dark brown skin, polished steel, denim and tungsten amber; natural skin texture, fine 35 mm film
+          grain, focus on the cage and her eyes.
+  - category: deal
+    word: TAX
+    cost: 1
+    requires: [marked]
+    prompt: She's stopped talking, and she's reading your forehead.
+    result:
+      text: |
+        She reads it. She gets up off the couch to read it closer, moving her lips. She licks her thumb and
+        rubs at the G, and it doesn't come off.
+
+        "Who did that?" You tell her. "A *cop?* You paying a *cop?*" She actually looks hurt. "Lil bro. I
+        been nothing but nice to you, and you out here giving your money to the government?"
+
+        She takes a pen out of somebody's shirt pocket without asking, and holds out her other hand.
+        "There's a GrayBlood tax on that now. Ten bucks."
+      effects:
+        - choose:
+            - label: Pay the tax
+              price: { cash: 10 }
+              text: |
+                She takes it and snaps it. Then she draws a little crown on the P, with three points, and
+                steps back with her head on one side. "There. Now you're *our* pig."
+              effects:
+                - skill.gain: deal
+            - label: Tell her it's all gone to the deputy
+              text: |
+                "Wow." She caps the pen and puts it back in the woman's pocket. "You're the worst thing that's
+                ever happened to crime."
+              effects:
+                - tracker.change: { nerve: -1 }
+art:
+  loras: ["shndr7_krea2_000001200:1"]
+  subject: >
+    Eye-level widescreen photograph from standing height just inside a dim corrugated steel warehouse, the
+    camera level. The left two-thirds of the frame look down a wet concrete aisle between stacks of wooden
+    pallets rising into the dark, plain unmarked cardboard boxes shrink-wrapped on them, the aisle empty all the way
+    to the back, a blood-red spray-painted crown
+    with three points on the corrugated wall. In the right third of the frame, three paces away, shndr7 woman in her red puffer jacket, hanging open over a fitted black top, with light-wash ripped jeans and
+    scuffed white high-top sneakers, twenty-one years old, sprawls on a sagging, stained brown velour couch with her feet up on a
+    wooden crate. She looks directly into the camera, making eye contact with the viewer, with lazy, smug
+    ownership: pale blue eyes half-lidded, chin up, a crooked grin. One arm lies along the back of the couch,
+    long white nails hanging loose. A single work light on a hook above the couch lights her warm, the rest
+    of the building falling away into blue-gray shadow, a band of daylight under the half-open roll-up door.
+    Restrained palette of glossy red, brown velour, wet gray concrete and tungsten amber; natural skin texture,
+    fine 35 mm film grain, focus on her face.

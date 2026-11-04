@@ -3,6 +3,8 @@
 # move.to from TALK-APPROACH at the docks' warehouse view (its result carries her greeting, so
 # nothing replays here); out goes back to the warehouse view. TALK-ASK gives Red's Errand;
 # DEAL-REPORT with it and $100 turns it into GrayBlood Rep (tag blooded, for the next job).
+# TALK-WORK with the Rep gives Red's Package; DEAL-RETURN with Britt's Receipt turns the Rep into
+# GrayBlood Runner; TALK-INSIDE with that goes into the warehouse (graybloods-warehouse).
 id: graybloods-wall
 name: The warehouse wall
 hub: true
@@ -96,9 +98,9 @@ actions:
                 "I ain't no cop."
 
                 She grins all the way up. "There it is. Ugh, that was so bad. Say it again." You
-                do. She makes you say it four times, louder each time, until a man going in under
-                the half-open door stops to watch, and then she tells him, "He ain't no cop," and
-                the man says, "Clearly," and goes in.
+                do. She makes you say it four times, louder each time, until a woman going in under
+                the half-open door stops to watch. "He ain't no cop," Red tells her, and the woman
+                says, "Clearly," and goes in.
 
                 "Aight. You're GrayBlood-adjacent now." She taps two fingers on your chest. "Way
                 adjacent. Like, parking-lot adjacent. Don't tell nobody, 'cause it's
@@ -134,6 +136,97 @@ actions:
           banknote green, black, denim blue, rust and corrugated gray; natural skin
           texture, fine 35 mm film grain, shallow depth of field on her eyes and the
           bills.
+  # The package job: GrayBlood Rep gets you a package. Offered again if the package was taken off you.
+  - category: talk
+    word: WORK
+    cost: 1
+    always: true
+    requires: [blooded]
+    unless: [courier, receipt, runner]
+    prompt: Tell her you're ready for something real.
+    result:
+      text: |
+        "Oh, he's *ready.*" She doesn't laugh this time, or not much. She looks you over, ducks under the half-open door and
+        comes back carrying something, and she drops it on your chest so you have to catch it. Brown paper, a lot of tape.
+        It's heavier than it looks and something inside it shifts.
+
+        "That goes to Britt Dekker at the Starlite. Blonde, pink hoodie, black car, mean. In her hand. Nobody else's."
+        She holds up one long white nail. "You don't open it." A second. "You don't shake it." A third. "You don't get
+        pulled over, 'cause them road deputies got nothing to do all day but you, and if she find it I ain't never met
+        you. I don't even know your middle name. Which is crazy, 'cause it's so funny."
+
+        "What's in it?"
+
+        "Your whole future, lil bro. Bring me a receipt."
+      effects:
+        - card.gain: reds-package
+      art:
+        loras: ["shndr7_krea2_000001200:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height in a cracked asphalt lot beside the
+          rust-streaked corrugated steel wall of a warehouse, the camera level. shndr7 woman in her red puffer jacket, hanging open over a fitted black top, with light-wash ripped jeans, twenty-one years old, stands at arm's length from the lens,
+          framed from her hips to just above her head. She holds a brick-sized parcel of brown kraft paper and clear packing tape
+          out toward the lens in her left hand at chest height, and with her right hand holds up three long glossy white
+          fingernails beside her face. She looks directly into the camera, making eye contact with the viewer, with
+          smug, mock-serious authority: pale blue eyes narrowed, chin tipped up, full lips pressed in a crooked smirk. Beside
+          her at the right edge of the frame, the dark gap of a roll-up door rolled half open. Low, warm late-afternoon sun from
+          the left lights her face and the glossy red jacket and throws the ridges of the corrugated wall into hard stripes.
+          Restrained palette of glossy red, black, denim blue, kraft brown, rust and corrugated gray; natural skin texture, fine
+          35 mm film grain, shallow depth of field on her eyes.
+  - category: deal
+    word: RETURN
+    cost: 1
+    always: true
+    requires: [receipt]
+    prompt: Hand her what Britt gave you.
+    result:
+      text: |
+        You put the little gold tube in her palm, and she looks at it for a while, and closes her hand, and starts grinning.
+
+        "So now you know." She uncaps it and twists it up, and uses her phone for a mirror. "Forty tubes. There's one cop in
+        this county that'd sell her own badge for this color, and she got no idea she buying it off me. Every time that
+        woman puts on her face, lil bro, the GrayBloods get paid." She does her top lip and presses them together. She
+        turns to you. "How's it look?"
+
+        It looks wrong. You tell her it looks great.
+
+        "You a liar. That's good, keep that." She counts sixty dollars off a roll and slaps it against your chest. She tucks the
+        tube into her jacket and reaches down for the bottom of the roll-up door, and hauls it up to her waist, and stands
+        there holding it.
+
+        "Aight. You was parking-lot adjacent. Now you loading-dock adjacent. That's indoors, kinda." She points at a little
+        rubber mat on the ground, the cleanest thing for a mile. "Wipe your feet. I'm not playing."
+      effects:
+        - card.lose: britts-receipt
+        - card.lose: graybloods-rep
+        - card.gain: grayblood-runner
+        - currency.change: { cash: +60 }
+        - skill.gain: deal
+      art:
+        loras: ["shndr7_krea2_000001200:1"]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height in a cracked asphalt lot beside the
+          rust-streaked corrugated steel wall of a warehouse, the camera level. shndr7 woman in her red puffer jacket, hanging open over a fitted black top, with light-wash ripped jeans, twenty-one years old, stands at arm's length from the lens,
+          framed from her hips to just above her head. In her right hand she holds a small gold lipstick case with its bullet
+          of glossy cherry red turned up, beside her mouth, and her full lips are freshly painted that same cherry red, a little too
+          bright on her. Her left hand, with long white nails, holds a smartphone up as a mirror. She looks past the phone directly
+          into the camera, making eye contact with the viewer, with huge, greedy, triumphant delight: pale blue eyes bright, a wide
+          grin showing her teeth. Beside her at the right edge of the frame, the dark gap of a roll-up door rolled half open. Low,
+          warm late-afternoon sun from the left lights her face and the glossy red jacket. Restrained palette of glossy red,
+          cherry red, gold, black, rust and corrugated gray; natural skin texture, fine 35 mm film grain, shallow depth of field on her
+          eyes and the lipstick.
+  - category: talk
+    word: INSIDE
+    cost: 0
+    always: true
+    requires: [runner]
+    prompt: Wipe your feet and duck in under the door.
+    result:
+      text: |
+        You wipe your feet. She watches you do both of them and then jerks her chin at the dark. "After you. I wanna see if
+        you get shot."
+      effects:
+        - move.to: graybloods-warehouse
 art:
   loras: ["shndr7_krea2_000001200:1"]
   subject: >

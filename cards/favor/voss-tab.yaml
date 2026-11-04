@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# Deputy Voss likes a man who pays in pain. Every scene where you take it instead of paying gains this
+# again (+1, the hood, the gravel, the squeeze, the farm track). Full, it becomes Voss's Sweet Pea.
+id: voss-tab
+kind: favor
+name: Voss's Tab
+text: A citation book carbon with your plate on it and a row of little red lipstick ticks. She says you're building credit.
+boost: { capacity: 3, start: 1 }
+on_full: voss-sweet-pea
+art:
+  loras: ["mrvx7_krea2_000001200:0.9"]
+  subject: >
+    Square close photograph of the bare left hand of mrvx7 woman, fingernails painted glossy cherry
+    red, holding a carbon sheet of a citation pad flat against the white hood of a patrol car, the camera
+    level with the hand. Along the bottom margin of the blurred, unreadable carbon runs a neat row of
+    little tally marks made with red lipstick, and a stub of glossy red lipstick stands in her other
+    hand's fingers at the edge of the frame. The sleeve of a dark forest-green bomber jacket with a
+    ribbed knit band shows at her wrist. Low late-afternoon sun from the left throws the hood into a
+    white glare. Restrained palette of cruiser white, carbon blue, cherry red and forest green; natural
+    skin texture, fine 35 mm film grain, sharp focus on the row of ticks.

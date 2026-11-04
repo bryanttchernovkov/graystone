@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../../schema/v3/map.json
+# Deputy Mara Voss's storyline: events only, reached by move.to. The stop (VS): any setback at the
+# highway turnout, or on the way into it. Paying the ticket goes back to the turnout; telling her you
+# can't pay leads to the hood of her cruiser (VH), which goes back to the turnout too. With an open
+# record: VA the arrest, VR the rights on the gravel, VC her back seat, which rides to the Undercroft or
+# turns down the farm track (VB, VF, VK at random), each back at the turnout.
+id: voss
+name: Deputy Voss
+legend:
+  VS: voss-stop
+  VH: voss-hood
+  VA: voss-arrest
+  VR: voss-rights
+  VC: voss-cruiser
+  VB: voss-track-boots
+  VF: voss-track-face
+  VK: voss-track-kiss
+grid: |
+  VS .. VH
+  .. .. ..
+  VA .. VR .. VC
+  .. .. .. .. ..
+  VB .. VF .. VK

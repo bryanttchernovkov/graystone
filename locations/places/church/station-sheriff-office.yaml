@@ -2,11 +2,17 @@
 # The First Church station, the back: the Sheriff's office upstairs, built into the old choir
 # loft but fitted out as a proper office (art: no church left in it but the round window behind
 # her desk, which her desk shot shows). Up the stair from the bullpen (down goes back).
-# TALK-APPROACH takes you to her desk (her storyline).
+# TALK-APPROACH takes you to her desk (her storyline). A setback here (and on the way in) gets you
+# caught: sheriff-caught. TAKE-DRAWER is petty cash and a count. DEAL-REPORT (Spanking Fetish) is the
+# corner, unasked.
 id: station-sheriff-office
 name: The Sheriff's office
 tags: [law]
 hub: true
+setback_penalty:   # caught where you shouldn't be: always the Sheriff
+  requires: [contractor]
+  effects:
+    - move.to: sheriff-caught
 description: "A proper office upstairs: walnut paneling, a big desk, a leather couch, shelves of law books, a window over the bullpen, and the Sheriff behind the desk, smiling."
 actions:
   - category: talk
@@ -39,6 +45,43 @@ actions:
         The window doesn't open. It was built for a choir to sing through.
       effects:
         - skill.gain: look
+  - category: take
+    word: DRAWER
+    cost: 2
+    tags: [snoop]
+    prompt: When she goes to the window with her back to you, try her desk. It's stealing, and it will go on your record.
+    result:
+      text: |
+        Second drawer on the left: a hairbrush, by itself, on a folded cloth. You leave it. The one under it has a county checkbook,
+        a box of good pens and a plain white envelope of petty cash, and you have forty dollars of it in your pocket before you've
+        thought about whose desk this is.
+
+        "Find what you needed, hon?" she says to the window, pleasantly.
+
+        She doesn't turn around. You tell her you dropped a screw. She says that's fine. By the time you've reached the stairs you
+        can hear her picking up the phone.
+      effects:
+        - currency.change: { cash: +40 }
+        - card.gain: criminal-record
+        - move.to: station-bullpen
+  - category: deal
+    word: REPORT
+    cost: 1
+    always: true
+    requires: [spanked]
+    prompt: Cross her office without being asked, take off your clothes and go and stand in the corner.
+    result:
+      text: |
+        Nobody sent for you. You fold your things on the arm of the couch, and she doesn't look up from the page, not even when
+        you're down to your shorts. Nose in. Fingers laced. There's the knot in the wood.
+
+        You hear the pen stop.
+
+        "Well, hon," she says, and you can hear how much she's smiling. "Aren't you getting to be a help around the place."
+
+        The pen starts again. Nobody tells you how long. Your breathing slows, and it's the most peaceful you have been all week.
+      effects:
+        - tracker.change: { nerve: +2, time: -1 }
 art:
   loras: ["lorbrandt_krea2_000001200:1"]
   subject: >

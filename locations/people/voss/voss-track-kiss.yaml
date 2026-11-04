@@ -1,0 +1,68 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Beat: one of three fees on the farm track, at random, from DEAL-BEG in voss-cruiser. TALK-THANK ends
+# it: cuffs off, back to the turnout, the Record still open. Gains Voss's Tab. Her breeches stay up;
+# Red's RESPECT in the warehouse is the bare version.
+id: voss-track-kiss
+name: A dirt track in the corn
+tags: [law]
+description: Your knees in the dirt, your hands behind you, and the seat of a pair of tan riding breeches a foot from your nose.
+arrival:
+  text: |
+    She walks you round to the front of the cruiser, kneels you down in the dirt with a hand on your
+    head, and turns her back. Then she leans forward on her elbows on the white hood, crosses one boot
+    behind the other, and looks over her shoulder.
+
+    "Now, I gave you a ticket and I was rude about it," she says. "You've come all this way to say
+    you're sorry, and I want to hear it. Pucker up, sweetheart. Left, right, left. You keep the count."
+actions:
+  - category: talk
+    word: THANK
+    cost: 0
+    always: true
+    prompt: Kiss her backside through the twill, as many as she says, and count them out loud.
+    result:
+      text: |
+        You shuffle in on your knees and put your lips to the left side, where the twill stretches
+        tight. It's warm from the hood and the sun. "One," you say.
+
+        "Louder, honey, there's a fella on a combine over in the next county."
+
+        "Two."
+
+        "That was the same side." She reaches back without turning her head and pinches your ear hard
+        between two nails, and steers you across. "Three's on the right. Three's still two, because you
+        got it wrong. So two."
+
+        It goes like that. She has you stop at thirty to apologize for your driving, with your face in
+        it, in full sentences, so she can feel your mouth move. She has you do your name and your date of
+        birth. She wiggles once, on purpose, and laughs at the noise you make.
+
+        At fifty she straightens up and looks at your mouth. "That's a nice even job." She turns you round by the cuffs and unlocks them, and flicks your ear
+        where she pinched it. "Your counts are still open, sweet pea. I just didn't feel like the
+        paperwork."
+
+        She drives you back to your car. You thank her again at the door, because she stands there
+        until you do.
+      effects:
+        - tracker.change: { nerve: -1 }
+        - card.lose: handcuffs
+        - card.gain: voss-tab
+        - skill.gain: talk
+        - move.to: highway-turnout
+art:
+  loras: ["mrvx7_krea2_000001200:0.9"]
+  subject: >
+    First-person point-of-view widescreen photograph from kneeling height in a dirt farm track between
+    harvested cornfields, the camera level. mrvx7 woman in her patrol jacket uniform, a twenty-two-year-old
+    highway patrol deputy, stands with her back to the lens at arm's length, leaning forward with her elbows
+    on the white hood of a patrol car, one polished black leather thigh-high riding boot crossed behind
+    the other. Her backside in tight tan twill riding breeches, with a vivid azure blue stripe down the
+    outer seam, fills the center of the frame at the height of the camera, the seams stretched smooth,
+    the hem of a dark forest-green bomber jacket and a black leather duty belt just above. She twists at the
+    waist to look back over her own shoulder directly into the camera, making eye contact with the viewer,
+    with sweet, patient cruelty: bright blue eyes bright, sharp black winged eyeliner, head tilted, a
+    red-lipped smile, one eyebrow up. Her dark espresso hair is in glossy rockabilly victory-roll bangs and
+    a high curled ponytail with a cherry-red section falling down her back, large gold hoops. Nothing of the
+    viewer is in frame. Beyond the hood, a long empty dirt track and a huge pale sky. Low late-afternoon sun
+    from the left lights the twill and the white paint. Restrained palette of tan, forest green, cruiser
+    white, cherry red and corn gold; natural fabric texture, fine 35 mm film grain, focus on her face.

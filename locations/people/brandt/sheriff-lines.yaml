@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Beat: writing lines, from TALK-GO in sheriff-caught (one in four). No Sore Bottom. WORK-WRITE goes back
+# to the bullpen, badge kept. The Perfect Penmanship achievement.
+id: sheriff-lines
+name: The Sheriff's desk
+tags: [law]
+description: A sheet of ruled county paper, a fountain pen that weighs too much, and the Sheriff across the desk with a red pencil, waiting.
+arrival:
+  text: |
+    She pulls the visitor's chair up to the desk for you, with her own hands, and squares a pad of ruled
+    paper in front of you. The pen she gives you is her own. It's heavy and it's the good kind.
+
+    "When I was at the state police we had men who could write a report you'd read for pleasure. Nobody can
+    write now." She sits down and folds her hands. "Your full name, hon, all three of them, and then I
+    would like a hundred of these, in your best hand, numbered. 'I will go where I am sent, and I will
+    be grateful.'"
+
+    She takes a red pencil from the cup. "I'll be marking them."
+actions:
+  - category: work
+    word: WRITE
+    cost: 0
+    always: true
+    prompt: Write her hundred lines at her desk, in your best hand, and get them graded.
+    result:
+      text: |
+        You write. You haven't written this much by hand since college, and it shows by number twelve. Your
+        grip cramps at thirty. At thirty-one you drop the "and" and the red pencil comes across the desk,
+        circles it, and writes *see me,* though she's right there.
+
+        She has you start that page again.
+
+        At a hundred she takes the pad and goes through them with the pencil, without hurrying. She reads
+        some of them out loud. She has a very nice reading voice. "Number sixty-two. 'I will go where I am
+        sent, and I will be grateful.' Now, that one I believed." A tick. "Your sevens look like ones, hon.
+        Did nobody ever tell you?"
+
+        She writes a mark at the top and circles it, and turns the pad round to show you: C-plus. Under it
+        she's written your middle name, with a little heart, and *Could try harder.*
+
+        "I keep these," she says, tearing off the sheets. She opens a drawer. There's a thick file in it, and
+        it's not all your handwriting. "Say thank you, and go and fix my printer."
+      effects:
+        - tracker.change: { time: -1, nerve: -1 }
+        - skill.gain: work
+        - move.to: station-bullpen
+art:
+  # Her LoRA as a pass: in the base it put her uniform sleeve on his writing arm.
+  subject: >
+    First-person point-of-view widescreen photograph from seated eye height at a large polished walnut desk with a
+    green leather top, the camera tilted down a little. In the bottom center of the frame a man's bare, lightly tanned
+    right hand and forearm with fine brown hair and short unpolished nails enters from the bottom edge, gripping a
+    heavy black fountain pen over a ruled pad covered in rows of neat, identical, blurred, unreadable handwritten
+    lines, the top lines marked with small red circles. Across the desk, a few feet back, a fifty-year-old woman with long
+    copper-auburn waves, a few silver strands at the temples, bright blue eyes and fair freckled skin, in a buttoned dark
+    olive-green dress uniform jacket with polished brass buttons over a tan shirt and a blue tie, sits upright and
+    leaning back in a high-backed tufted leather chair, framed from the waist up, her arms folded across her chest, a
+    red pencil held upright in the fingers of one hand against her arm, reading glasses low on her nose. The green
+    leather in front of her is bare. She looks directly into the camera over her glasses, making eye contact with the
+    viewer, in cool, patient judgment: one brow raised, chin lifted, a small disappointed smile. Behind her, softly out of
+    focus, walnut paneling and the curve of a round stained-glass window. A brass banker's lamp lights the pad from
+    the left. Restrained palette of green leather, dark walnut, brass, olive green and red pencil; natural skin texture,
+    fine 35 mm film grain, shallow depth of field on the pen and her eyes.
+  passes:
+    - find: the seated woman in the olive-green jacket, from the top of her hair down to the desktop, including her folded arms
+      segment: woman in a green jacket
+      loras: ["lorbrandt_krea2_000001200:1"]
+      subject: >
+        lorbrandt woman in her uniform, the jacket buttoned, seated upright behind a large walnut desk, leaning back in
+        a high-backed leather chair, her arms folded across her chest, a red pencil held upright in the fingers of one
+        hand, reading glasses low on her nose, looking into the camera over her glasses in cool, patient judgment: one
+        brow raised, chin lifted, a small disappointed smile. Walnut paneling behind her, warm lamplight, fine film grain.

@@ -1,0 +1,154 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# The Starlite's parking lot, on foot. Britt Dekker sits on her car in plain sight.
+#   DEAL-DELIVER (courier): hand over Red's Package, get Britt's Receipt.
+#   TALK-COMPLIMENT: talk about her, and nothing; talk about the car, and Britt's Nod.
+#   RISK-RACE: bet $20 and lose it (britt-race, the Second Place achievement).
+#   LOOK-DOWN (sneakers): a joke for Sneaker Fetish.
+id: motel-lot
+name: The Starlite, the parking lot
+tags: []
+hub: true
+description: Gravel, a dead neon sign on a pole, and one black muscle car parked across two spaces. A blonde woman in a pink hoodie sits on its fender and watches you arrive.
+actions:
+  - category: deal
+    word: DELIVER
+    cost: 1
+    always: true
+    requires: [courier]
+    prompt: Bring her the package off your passenger seat.
+    result:
+      text: |
+        She watches you carry it across the gravel and doesn't take her hands out of the hoodie.
+
+        "You drove that here in that?" She tips her head at your car. "Huh. Red must be having a slow year."
+
+        She takes it onto her knee and slits the tape with a car key, one long cut. Under the brown paper
+        there's a shoebox, and in the shoebox there are rows and rows of little ribbed gold tubes, packed
+        like shells. Forty of them. She takes one out, uncaps it, turns up a bullet of cherry red and sniffs it.
+
+        You ask her if that's lipstick.
+
+        "It's the only shade that's ever looked right on a certain kind of person, and the company stopped
+        making it in 2009." She caps it. "There's a lady on this road goes through one a week. She'd pay
+        ninety dollars a tube, and she'd pay it to me, and she'd smile while she pulled you over for bringing
+        it." Her eyes go down the highway and come back. She tosses you the tube. "That's your receipt. Red knows
+        what it means. Drive slow, Sedan."
+      effects:
+        - card.lose: reds-package
+        - card.gain: britts-receipt
+        - skill.gain: deal
+      art:
+        loras: ["zbltk7_krea2_000001400:0.9"]
+        subject: >
+          First-person point-of-view widescreen photograph from standing eye height in a gravel motel lot, the camera tilted
+          down a little. zbltk7 woman in her pink hoodie, twenty-three years old, with long loose wavy honey-blonde hair and subtle and natural makeup, sits on the front fender of a gleaming black late-1960s American muscle car at arm's
+          length from the lens, framed from her head to her knees, in lightly torn straight blue jeans. On her knee she
+          steadies an open shoebox wrapped in torn brown paper and packing tape, packed with rows of small ribbed gold
+          lipstick cases. In her other hand, held up beside her face, a single gold lipstick with its bullet of glossy
+          cherry red turned up. She looks directly into the camera, making eye contact with the viewer, with cool, dry
+          amusement: eyes steady, one brow raised, a faint asymmetric half-smile. Behind her, out of focus, a row of
+          turquoise motel doors and a dead neon sign. Low late-afternoon sun from the left warms her hair and lights
+          the gold tubes. Restrained palette of gloss black, gold, cherry red, dusty pink and turquoise; natural skin
+          texture, fine 35 mm film grain, focus on her eyes and the lipstick.
+  - category: talk
+    word: COMPLIMENT
+    cost: 1
+    always: true
+    unless: [nod]
+    prompt: Walk over and tell her something nice.
+    result:
+      text: |
+        She lets you get all the way across the gravel. She looks at you, and at the sedan behind you with its one
+        gray door, and at you.
+
+        "Go on, then," she says. "You came all this way."
+      effects:
+        - choose:
+            - label: Tell her she's the best-looking thing in the county
+              text: |
+                She waits until you've finished, with no expression at all.
+
+                "That's what the last one said," she says. "He drives a Kia now." She looks off down the road. You're
+                still standing there. A truck goes by. After a while you go.
+              effects:
+                - tracker.change: { nerve: -1 }
+            - label: Tell her what you see in the car
+              text: |
+                You tell her about the car. The paint's original, and somebody has wet-sanded it by hand. The stance
+                is a quarter inch lower than the factory ever set it, and you can hear from here that she's not
+                running the carburetor it came with.
+
+                Nothing happens to her face. Then she slides off the fender and pops the hood, without asking
+                if you want to see, and stands there with you for twenty minutes, not saying much. She
+                tells you three things that you'd have paid money to know.
+
+                Then she walks once around your car, kicks a tire and listens to it.
+
+                "Your timing's off, and those tires are a cry for help," she says. "See you around, Sedan."
+              effects:
+                - card.gain: britts-nod
+                - skill.gain: talk
+      art:
+        loras: ["zbltk7_krea2_000001400:0.9"]
+        subject: >
+          Intimate first-person point-of-view widescreen photograph from standing eye height in a gravel motel lot, the
+          camera level. zbltk7 woman in her pink hoodie, twenty-three years old, with long loose wavy honey-blonde hair and subtle and natural makeup, sits on the fender of a gleaming black late-1960s American muscle car close to the lens,
+          framed from the waist up, both hands tucked into her hoodie's kangaroo pocket, her chin tipped a little down. She
+          looks directly into the camera, making eye contact with the viewer, with flat, patient skepticism: eyes
+          level under one raised brow, her mouth closed, not smiling. Behind her, out of focus, a dented gray door of an
+          old tan sedan, and turquoise motel doors. Low late-afternoon sun from the left warms one side of her face and
+          her hair. Restrained palette of dusty pink, gloss black, honey blonde and faded turquoise; natural skin
+          texture, fine 35 mm film grain, shallow depth of field on her eyes.
+  - category: risk
+    word: RACE
+    cost: 2
+    always: true
+    prompt: Bet her twenty dollars your car is faster than it looks.
+    result:
+      text: |
+        She looks at the sedan for some time. Then she looks at you, and for the first time you see some of her teeth.
+
+        "Twenty," she says. "To the grain elevators and back. You can have a head start."
+      effects:
+        - choose:
+            - label: Put up the twenty
+              price: { cash: 20 }
+              effects:
+                - move.to: britt-race
+            - label: Think about the head start, and leave it
+              text: '"Smart," she says. "For a Sedan."'
+  - category: look
+    word: DOWN
+    cost: 1
+    requires: [sneakers]
+    prompt: You've stopped looking at the car. You're looking at her off-white low-tops, up on the bumper.
+    result:
+      text: |
+        Canvas, a little gray at the toe, the left lace tied differently from the right. The rubber has gone soft with
+        road. You could tell a person about those. She watches you look for a good while, then she lifts one
+        foot and turns it to give you the side.
+
+        "You want a minute?" she says. "I can go get a coffee."
+      effects:
+        - tracker.change: { nerve: -1 }
+        - skill.gain: look
+art:
+  loras: ["zbltk7_krea2_000001400:0.9"]
+  subject: >
+    Eye-level widescreen photograph from standing height in the gravel parking lot of a lonely
+    one-story roadside motel beside a Midwest highway in autumn, the camera level. The lot runs away
+    from the lens across the left two-thirds of the frame: a rust-brown dented pickup truck parked
+    in the near left foreground, a shallow puddle holding the sky in the middle of the gravel, a
+    tall steel pole carrying a big unlit neon sign of plain red and turquoise tubes, and behind them
+    a long low building of pale painted block under a flat roof with a row of identical turquoise
+    doors. In the right third of the frame, three paces away, zbltk7 woman in her pink hoodie sits
+    on the front fender of a gleaming black late-1960s American muscle car parked at an angle, with
+    a long hood and chrome bumper. She looks directly into the camera, making eye contact with the
+    viewer, with cool, wary interest: eyes steady, one brow slightly raised, a faint asymmetric
+    half-smile. Her long loose wavy honey-blonde hair falls past her shoulders and her makeup is
+    subtle and natural. She wears a soft dusty pink pullover hoodie with drawstrings and a kangaroo
+    pocket, lightly torn straight blue jeans and off-white low-top sneakers, both hands tucked into
+    the hoodie pocket, her sneakers resting on the car's chrome bumper. Low late-afternoon sun from
+    the left warms the gravel and her hair and glints on the black paint. Restrained palette of
+    gravel gray, faded turquoise, gloss black, chrome and dusty pink; natural skin texture, fine 35
+    mm film grain, focus on her face with the lot slightly soft behind.

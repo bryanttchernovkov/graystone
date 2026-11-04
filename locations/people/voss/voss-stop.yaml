@@ -1,0 +1,205 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: Deputy Voss pulls you over. Reached by move.to from the setback penalty on her ground (the
+# highway turnout). No exits: DEAL-TICKET is the only way on. The story sits in the action, not an
+# arrival, because two setbacks would show an arrival twice.
+# The engine can't see how much cash you hold, only whether you can afford a price, so "if broke" is
+# a choice anyone can make: paying is $20, and telling her you can't costs Nerve and the hood of her
+# cruiser (voss-hood).
+# Four swapped actions, one offered at a time, by what you carry:
+#   RISK-LICENSE (open record): her arrest (voss-arrest).
+#   DEAL-ANSWER (Red's Package, no record): "customs", $40 or her hand.
+#   DEAL-FINE (PAYPIG on your forehead): the ticket with a surcharge.
+#   DEAL-TICKET: everybody else.
+id: voss-stop
+name: Pulled over
+tags: [law]
+description: The gravel shoulder of the highway, red and blue going round in your mirror, and a deputy walking up along your car in no hurry at all.
+actions:
+  - category: deal
+    word: TICKET
+    cost: 0
+    always: true
+    unless: [wanted, evidence, marked]
+    prompt: Roll the window down and get your license out.
+    result:
+      text: |
+        She leans down into your window with one forearm on the door. Espresso hair rolled up off
+        her forehead, a streak of cherry red running through it and down a high curled ponytail,
+        gold hoops, red lipstick so fresh it shines. The nameplate says VOSS. She smells of hairspray
+        and cherry gum, and she smiles at you as if you'd brought her flowers.
+
+        "Afternoon, honey. Know how fast you were going?" She takes your license without looking at
+        it. "Me neither, sugar. Seventy-one, let's say. Sounds like a seventy-one."
+
+        She writes on her pad, tears off the sheet and holds it between two fingers, out of your
+        reach. "Twenty dollars. Cash, to me, right now. My road, my rates."
+
+        Her other hand opens, palm up, on your door.
+      effects:
+        - choose:
+            - label: Pay the twenty
+              price: { cash: 20 }
+              text: |
+                You count it into her hand. She folds it into her jacket without looking and drops
+                the ticket and your license in your lap.
+
+                "Drive safe, sweet pea. Come back when you're short."
+              effects:
+                - move.to: highway-turnout
+            - label: Tell her you can't pay
+              text: |
+                You tell her you haven't got it. "Oh, honey," she says, and she sounds so sorry. She
+                doesn't ask to see your wallet. She smiles at you until you stop explaining, and then
+                she opens your door from the outside.
+
+                "Out you get. We'll work something out, you and me. It's going to hurt."
+              effects:
+                - tracker.change: { nerve: -1 }
+                - move.to: voss-hood
+  - category: deal
+    word: FINE
+    cost: 0
+    always: true
+    requires: [marked]
+    unless: [wanted, evidence]
+    prompt: Roll the window down and get your license out.
+    result:
+      text: |
+        She leans into your window with a forearm on the door, and she has her mouth open to say something, and then she
+        reads your forehead.
+
+        It's a treat to watch. It starts in her eyes. "Oh, *honey.*" She reads it again, with one fingertip in the air,
+        following the letters. "Is that Tiffany's hand? It is. She does a real nice G." She gets out her phone, holds it up
+        and takes your picture, and takes another one, and she sends them somewhere with her thumb.
+
+        "Seventy-one," she says, tucking the phone away, as sweet as pie. "That's twenty dollars. Plus I'm going to need
+        ten more on account of the surcharge, sugar. A fella who pays is a fella who pays."
+
+        Her hand opens on your door.
+      effects:
+        - choose:
+            - label: Pay the thirty
+              price: { cash: 30 }
+              text: |
+                You count it out. She fans it and tucks it into her jacket. "Tell her I said hi, sweet pea."
+              effects:
+                - move.to: highway-turnout
+            - label: Tell her you can't pay
+              text: |
+                "You gave it all to her already, didn't you?" She sounds so touched. She opens your door from the
+                outside. "Out you get, honey. We'll work something out, you and me. It's going to hurt."
+              effects:
+                - tracker.change: { nerve: -1 }
+                - move.to: voss-hood
+      art:
+        loras: ["mrvx7_krea2_000001200:0.9"]
+        subject: >
+          First-person point-of-view widescreen photograph from the driver's seat of a parked older sedan on a highway
+          shoulder, seated eye height, the camera level, looking out through the open driver's window, which frames the shot:
+          the door sill across the bottom of the frame and the roof edge and door pillars around it. Outside, one pace away,
+          mrvx7 woman in her patrol jacket uniform, a twenty-two-year-old highway patrol deputy. Her dark espresso brown hair is styled in glossy rockabilly victory-roll bangs and a high curled ponytail, with a bold cherry-red dyed section running through the rolled bangs and down the curls of the ponytail, large polished gold hoop earrings, sharp black winged eyeliner and glossy red lipstick. She wears a dark forest-green bomber jacket with ribbed knit sleeve bands, zipped to the middle of her chest, a polished gold six-point star badge on its left chest and a vivid azure blue and gold patch on each sleeve; above the zipper, the pointed collar of a tan uniform shirt and a vivid azure blue necktie with a small gold tie bar; her head is bare. She leans to the window, framed from the chest up, holding a black smartphone up in her bare right hand,
+          its back toward the camera, her thumb on the screen, her cherry-red nails bright. She looks over the top of the
+          phone directly into the camera, making eye contact with the viewer, with overjoyed, wicked delight: bright blue
+          eyes wide and sparkling, brows high, her red-lipped mouth open in a thrilled, silent laugh. Behind her, out of focus,
+          harvested cornfields of pale gold stubble under a low sun. Low late-afternoon sun from behind the camera lights her
+          face. Restrained palette of forest green, tan, vivid azure blue, espresso, cherry red and corn gold; natural skin
+          texture, fine 35 mm film grain, focus on her eyes.
+  - category: deal
+    word: ANSWER
+    cost: 0
+    always: true
+    requires: [evidence]
+    unless: [wanted]
+    prompt: Roll the window down. She isn't looking at your license. She's looking past you, and she's asking what you've got there.
+    result:
+      text: |
+        She leans in, all the way, a gold hoop cold against your cheek, and reaches across you. Her
+        hand comes back with the package.
+
+        "What's this you've buckled in, honey? That's so sweet." She gives it a gentle shake by her ear. Then she holds a
+        corner of it up under her nose, closes her eyes and breathes in, slow, through the tape. For a moment she doesn't look
+        like anybody you'd be scared of.
+
+        "Mm." She puts it back on your passenger seat and reaches over and clicks the belt around it. "I don't know what that
+        is, sugar, and neither do you. But it did come over my road, so that's customs. Forty dollars."
+
+        Her hand opens on your door.
+      effects:
+        - choose:
+            - label: Pay the forty
+              price: { cash: 40 }
+              text: |
+                You count it into her hand. "Drive careful, sweet pea," she says, folding it away. "That's somebody's whole
+                winter you've got there."
+              effects:
+                - move.to: highway-turnout
+            - label: Tell her you can't pay
+              text: |
+                "Oh, honey." That hand doesn't open your door. It comes in through the window and down into your lap, and
+                finds what it's looking for through your jeans, and closes.
+
+                She keeps her eyes on yours the entire time and goes on smiling. The grip tightens a little at a time. She asks
+                what you do for work, and wants a full sentence. She asks if you've got people in town. By your mother's
+                maiden name you've got one hand on the wheel and one on the door, your forehead's on the steering column, and
+                there's no air in the car at all.
+
+                She lets go, and you hear yourself. She pats your cheek with the same hand.
+
+                "Customs," she says. "Drive careful, sweet pea. That's somebody's whole winter you've got there."
+              effects:
+                - tracker.change: { body: -1, nerve: -1 }
+                - card.gain: voss-tab
+                - move.to: highway-turnout
+      art:
+        loras: ["mrvx7_krea2_000001200:0.9"]
+        subject: >
+          First-person point-of-view widescreen photograph from the driver's seat of a parked older sedan on a highway shoulder,
+          seated eye height, the camera level, looking out through the open driver's window, which frames the shot: the door
+          sill across the bottom of the frame and the roof edge and door pillars around it. Outside, one pace away, mrvx7 woman in her patrol jacket uniform, a twenty-two-year-old highway patrol deputy. Her dark espresso brown hair is styled in glossy rockabilly victory-roll bangs and a high curled ponytail, with a bold cherry-red dyed section running through the rolled bangs and down the curls of the ponytail, large polished gold hoop earrings, sharp black winged eyeliner and glossy red lipstick. She wears a dark forest-green bomber jacket with ribbed knit sleeve bands, zipped to the middle of her chest, a polished gold six-point star badge on its left chest and a vivid azure blue and gold patch on each sleeve; above the zipper, the pointed collar of a tan uniform shirt and a vivid azure blue necktie with a small gold tie bar; her head is bare. She
+          leans to the window, framed from the chest up, holding a brick-sized parcel of brown kraft paper and clear packing
+          tape up under her nose in both bare hands, her cherry-red nails on the tape. Her eyes are closed, her brows lifted, her
+          glossy red lips parted, breathing it in with soft, dreamy, private pleasure. Behind her, out of focus, harvested
+          cornfields of pale gold stubble and the white hood of a patrol car. Low late-afternoon sun from behind the camera
+          lights her face. Restrained palette of forest green, kraft brown, vivid azure blue, espresso, cherry red and corn gold;
+          natural skin texture, fine 35 mm film grain, focus on her face and the parcel.
+  - category: risk
+    word: LICENSE
+    cost: 0
+    always: true
+    requires: [wanted]
+    prompt: Hand her your license. She's going to run it, and you have open counts on your record.
+    result:
+      text: |
+        She takes it with two fingers and calls it in without looking away from you, and all the while she chews her gum.
+        "Seventy-one," she tells you, "let's say." The radio on her shoulder clears its throat.
+
+        It reads your name back in a bored voice, and then it reads the rest. You can hear it fine from the driver's seat.
+
+        Her smile gets slowly wider, until you can see the lipstick on one tooth.
+
+        "Oh, sugar," she says. "And you let me find out from the radio." She opens your door from the outside.
+      effects:
+        - move.to: voss-arrest
+art:
+  loras: ["mrvx7_krea2_000001200:0.9"]
+  subject: >
+    First-person point-of-view widescreen photograph from the driver's seat of a parked older sedan
+    on a highway shoulder, seated eye height, the camera level, looking out through the open driver's
+    window, which frames the shot like a picture frame: the door sill across the bottom of the frame
+    and the roof edge and door pillars around it. Outside, one pace away, mrvx7 woman in her patrol
+    jacket uniform, a twenty-two-year-old highway patrol deputy, leans down to the window, framed from
+    the chest up, the bottom edge of the frame at the door sill. She looks directly into the camera,
+    making eye contact with the viewer, with sweet, glamorous delight: bright blue eyes wide and
+    warm, head tilted, a big red-lipped smile. Her dark espresso brown hair is styled in
+    glossy rockabilly victory-roll bangs and a high curled ponytail, with a bold cherry-red dyed
+    section running through the rolled bangs and down the curls of the ponytail, large polished gold
+    hoop earrings, sharp black winged eyeliner and glossy red lipstick. She wears a dark forest-green
+    bomber jacket with ribbed knit sleeve bands, zipped to the middle of her chest, a polished gold
+    six-point star badge on its left chest and a vivid azure blue and gold patch on each sleeve; above
+    the zipper, the pointed collar of a tan uniform shirt and a vivid azure blue necktie with a small
+    gold tie bar; her head is bare. She holds a small citation pad flat against her own chest in her
+    bare left hand, a pen in her bare right hand beside it. Behind her, out of focus, harvested
+    cornfields of pale gold stubble under a low sun. Low late-afternoon sun from behind the camera
+    lights her face, with a faint red and blue flicker on her hoops from a light bar out of frame.
+    Restrained palette of forest green, tan, vivid azure blue, espresso, cherry red and corn gold;
+    natural skin texture, fine 35 mm film grain, focus on her eyes.

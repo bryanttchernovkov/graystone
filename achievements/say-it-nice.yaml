@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+id: say-it-nice
+title: Say It Nice
+text: She read you every one of your rights and you answered them all, in a voice you didn't know you had.
+hint: On her road, the rights come with a boot.
+when: { location: voss-rights }
+art:
+  subject: >
+    the gravel shoulder of a two-lane Midwest highway at low sun, seen from across the road at kneeling height,
+    the scene in the right two-thirds of the frame. a Graystone County Sheriff's patrol car, a present-day Ford Police Interceptor Utility SUV painted two-tone, with a white roof, hood and front doors over a tan body, a broad vivid azure blue stripe running the full length of each flank below the windows, a gold six-point star decal on each front door, a low black roof light bar and a black steel push bumper, is parked behind them with its light bar flashing
+    faint red and blue. On the gravel a broad-shouldered, athletic white man of thirty-two with lightly tanned skin,
+    tousled wavy brown hair, a strong square jaw, light stubble and round thin gold wire-rimmed glasses knocked
+    crooked, in an unbuttoned faded red and gray plaid flannel shirt over a plain charcoal T-shirt, worn blue work jeans and scuffed brown leather work boots, lies curled on his side in the middle of the frame with his knees pulled up to his stomach, his hands cuffed
+    behind his back with polished steel hinged handcuffs, his face screwed up and bright red, his mouth open, tears
+    on his cheeks. A twenty-two-year-old woman deputy with dark espresso hair in glossy rockabilly victory-roll bangs and
+    a high curled ponytail with a cherry-red section, gold hoops and glossy red lipstick, in a dark forest-green
+    bomber jacket, a polished gold star badge, a vivid azure blue necktie, a black leather duty belt, tan riding
+    breeches and mirror-polished black leather thigh-high riding boots, crouches at the far right of the frame, a clear yard of bare gravel between her and his head, with her
+    elbows on her knees, her head tilted to listen, a big sweet red-lipped smile, a laminated card in her
+    fingers. The left of the frame is empty road and pale gold corn stubble. Palette of asphalt gray, forest green,
+    flannel red and corn gold; natural skin texture, fine 35 mm film grain.
+  # Her pass first, him last: her outline caught his head and gave him her hair and hoops when he went first.
+  passes:
+    - find: the crouching woman in the green bomber jacket, from the top of her hair down to her boots
+      segment: woman in a green bomber jacket
+      loras: ["mrvx7_krea2_000001200:0.9"]
+      subject: >
+        mrvx7 woman in her patrol jacket uniform, a twenty-two-year-old highway patrol deputy, crouching on gravel with her
+        elbows on her knees, her head tilted, with a big sweet red-lipped smile, her dark espresso hair in glossy
+        victory-roll bangs with a cherry-red section, gold hoops, tan riding breeches and black thigh-high riding boots.
+        Low sun, fine film grain.
+    - find: the man lying on the gravel, from the top of his head down to his feet
+      segment: man in plaid shirt
+      loras: ["jack:1"]
+      subject: >
+        a broad-shouldered white man of thirty-two with short tousled wavy brown hair, light stubble and round thin gold
+        wire-rimmed glasses knocked crooked, in a plaid flannel shirt and blue jeans, lying curled on his side on
+        gravel, knees pulled up, his arms behind his back, his face red and screwed up, his mouth open, tears on his
+        cheeks. Low sun, fine film grain.

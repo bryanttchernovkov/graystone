@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Beat: the corner, from TALK-GO in sheriff-caught (one in four). No Sore Bottom. WORK-STAND costs time
+# and goes back to the bullpen, badge kept. POV: the corner itself and your own shadow, nobody else in frame.
+id: sheriff-corner
+name: The corner of the Sheriff's office
+tags: [law]
+description: Two walnut panels meeting about four inches from your nose, a framed commendation at the edge of your eye, and a pen scratching somewhere behind you.
+arrival:
+  text: |
+    "I'd like you out of your clothes, hon. All of them. Fold them, and put them on the arm of the couch.
+    I'm not a monster."
+
+    She doesn't turn away for it, and she doesn't watch either. She has gone back to her chair and put on a
+    pair of reading glasses and opened a folder. When you've folded your shorts she points with the pen, without
+    looking up, at the corner by the bookcase.
+
+    "Nose in. Closer. Hands on your head, fingers laced. If I can see daylight between your nose and my
+    paneling, we'll start the clock again." The pen goes back to the page. "I've got the county budget to get
+    through. You'll be good company."
+actions:
+  - category: work
+    word: STAND
+    cost: 0
+    always: true
+    prompt: Stand in the corner, naked, hands on your head, until she's finished working.
+    result:
+      text: |
+        It's fine for four minutes. Your shoulders start at about six. By fifteen your arms are shaking and
+        your nose has found a knot in the wood that you'll know for the rest of your life.
+
+        Things happen behind you. Niamh comes in with something to sign, and stays to talk about the gym, and
+        doesn't lower her voice. "Hiya, love," she says to your back as she goes. A deputy brings up a file and
+        stands waiting beside you while the Sheriff reads it, close enough that you can smell boot polish. Nobody
+        mentions you. Somebody's coffee gets refilled.
+
+        When your elbows start to come down, her voice says, "Hon," without any emphasis, and they go back up.
+
+        It's a long time before you hear the folder close. "That'll do. Dress, please." She's smiling at you when
+        you turn around, with her glasses in her hand, as if you've dropped in. "You've got a real nice back. You
+        should stand up straighter." She nods at the door. "Go and do what the county's paying you for."
+      effects:
+        - tracker.change: { time: -2, nerve: -1 }
+        - skill.gain: look
+        - move.to: station-bullpen
+art:
+  subject: >
+    First-person point-of-view widescreen photograph with the camera almost touching the corner of a room, standing
+    eye height, level. Rich dark walnut panels meet in a vertical seam at the center of the frame, close enough to
+    show every line of the grain and one dark knot beside the seam. A little of a bookcase of leather-bound law books
+    enters at the far right edge, soft and out of focus. Warm lamplight from behind the camera falls on the panels,
+    and across them lies the soft shadow of a man's head with his elbows raised out to either side. Restrained
+    palette of dark walnut, brass and lamplight amber; natural wood texture, fine 35 mm film grain, sharp focus on
+    the knot.

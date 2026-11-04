@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Beat: one of three fees on the farm track, at random, from DEAL-BEG in voss-cruiser. TALK-THANK ends
+# it: cuffs off, back to the turnout, the Record still open. Gains Voss's Tab.
+id: voss-track-boots
+name: A dirt track in the corn
+tags: [law]
+description: Dust, cut stalks, your knees in a wheel rut, and a pair of boots up on the door sill of her cruiser.
+arrival:
+  text: |
+    She sits sideways in the driver's seat with the door open and her legs out, and points to the rut
+    in front of her. You get down there. With your hands behind you it's more of a fall.
+
+    "I've been on that shoulder since six this morning, honey." She crosses one boot over the other and
+    holds the top one out at the height of your mouth. "Road dust, grit, one bug I can see from here.
+    Tongue. All of it. You miss a spot and we start the drive to town over."
+actions:
+  - category: talk
+    word: THANK
+    cost: 0
+    always: true
+    prompt: Clean her boots with your tongue, heel to knee, and thank her for it.
+    result:
+      text: |
+        The dust turns to paste, and the paste tastes of gravel and polish. You do the toe, and the
+        welt, working your tongue into the stitching, and she turns her ankle to give you the side. She
+        has her phone out. She scrolls with her thumb, and now and then, without looking up, she taps
+        the spot you missed with one finger.
+
+        Above the ankle you have to come up off your heels to reach, with nothing to steady yourself
+        but your face against the leather. The shaft is warm from the sun. She switches feet.
+
+        "Say thank you between licks, sugar, or it doesn't count."
+
+        So it's that for the second boot, all the way up. When you're done they shine wet in the light
+        and your mouth has gone numb and gritty. She inspects them, and then she puts one flat on your
+        chest and pushes, and you go over on your side in the dust.
+
+        She unlocks your cuffs with her boot still on your ribs. "Your counts are still open, sweet pea.
+        I just didn't feel like the paperwork." She drives you back to your car with the radio up and
+        makes you sit in the front. You're not allowed to touch the seat.
+      effects:
+        - tracker.change: { nerve: -1 }
+        - card.lose: handcuffs
+        - card.gain: voss-tab
+        - skill.gain: deal
+        - move.to: highway-turnout
+art:
+  loras: ["mrvx7_krea2_000001200:0.9"]
+  subject: >
+    First-person point-of-view widescreen photograph from kneeling height in a dirt farm track between
+    harvested cornfields, the camera tilted up. Filling the lower two-thirds of the frame, a stiff
+    mirror-polished black leather thigh-high riding boot with a rigid straight shaft is held out toward
+    the lens, its toe an inch from the camera, half its toe cap licked wet and shining and the rest
+    dull with pale road dust, a low flat stacked-leather riding heel behind. Beyond it, mrvx7 woman in
+    her patrol jacket uniform, a twenty-two-year-old highway patrol deputy, sits sideways in the open
+    driver's door of a white-and-tan patrol car with her legs out, tan riding breeches with a vivid azure
+    blue stripe rising into a black leather duty belt, a dark forest-green bomber jacket zipped to the
+    middle of her chest, a polished gold star badge and a vivid azure blue necktie. Her dark espresso
+    hair is in glossy rockabilly victory-roll bangs and a high curled ponytail with a cherry-red section,
+    with large gold hoops and glossy red lipstick. She looks down at the lens over a phone held in her bare
+    right hand, with cool, bored amusement: one brow up, red lips closed in a small smile. Corn stubble and
+    a huge pale sky behind. Low late-afternoon sun from the right lays a long highlight on the wet
+    leather. Restrained palette of black leather, pale dust, tan, forest green and corn gold; natural
+    leather texture, fine 35 mm film grain, sharp focus on the wet toe cap.

@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Beat: you bet Britt $20 and raced her. Reached by move.to from RISK-RACE in the motel lot. You always
+# lose. TALK-PAY puts you back in the lot. The Second Place achievement.
+id: britt-race
+name: The highway, briefly
+tags: []
+description: Your foot flat on the floor, your engine making a sound it will regret, and a pair of round taillights getting smaller.
+arrival:
+  text: |
+    She gives you a head start. She takes her time about it: she gets in, she does her seat belt, she
+    looks in the mirror and pulls her hair back. You're doing seventy by the time you hear her start
+    the engine, a mile behind you, and you hear it in your teeth.
+
+    It goes past you at something the sedan doesn't have numbers for. There's a window down, and an arm
+    in a pink sleeve comes out of it and waves, without any hurry.
+actions:
+  - category: talk
+    word: PAY
+    cost: 0
+    always: true
+    prompt: Turn around and drive back to the Starlite with her twenty.
+    result:
+      text: |
+        She's sitting on the fender when you pull in, as if she had never moved. The hood ticks when
+        you get near it. She takes the twenty, folds it into her hoodie and looks at your car for a
+        while.
+
+        "Second place," she says. "Out of two. Put that on your wall, Sedan."
+      effects:
+        - skill.gain: risk
+        - move.to: motel-lot
+art:
+  subject: >
+    Low panning widescreen photograph from the edge of a straight two-lane highway through harvested cornfields, the
+    camera at bumper height and level, two cars racing side-on from right to left across the frame. In front, in the
+    far lane and a full length ahead, a gleaming black late-1960s American muscle car with chrome bumpers, its rear
+    squatting under the power and blue-white exhaust haze streaming from its pipes. Behind it in the near lane, a
+    dull tan older four-door sedan with one dented gray door strains to keep up, its front end dipping, a dark shape
+    at its wheel. Through the muscle car's open side window, small and soft, is just a faint impression of a woman at
+    the wheel: loose honey-blonde hair blown back and a dusty pink sleeve. Low late-afternoon sun lays long shadows
+    across the asphalt. Restrained palette of asphalt gray, gloss black, chrome, sedan tan and corn gold; natural
+    texture, fine 35 mm film grain, heavy motion blur on the fields, the road and the spinning wheels, both cars sharp.

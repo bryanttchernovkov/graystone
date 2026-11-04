@@ -18,11 +18,17 @@ arrival:
 
     Whatever you came down the stairs wearing on your wrists comes off at the line and goes
     back up with whoever brought it. "Road cuffs," the Sergeant says. "Down here we use mine."
+
+    A county tray comes across the desk. Your pockets go into it, and whatever you were carrying for
+    anybody goes upstairs with the cuffs. She doesn't look to see what it is. Nobody down here needs to.
   # Inmate belongs to the Undercroft: it starts here, however you were brought down. How long
   # you stay is the Criminal Record you carried down, worked off by Doing Time.
   # An arrest's Handcuffs come off here; the Undercroft has its own restraints (TERMS).
+  # Evidence cards go too: every custody route ends here. The engine loses cards by ID, so each
+  # evidence card needs its own line (as in Seo's SURRENDER).
   effects:
     - card.lose: handcuffs
+    - card.lose: reds-package
     - card.gain: inmate
 actions:
   - category: talk

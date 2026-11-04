@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Beat: the Sheriff's default correction, from TALK-GO in sheriff-caught (two in four). TALK-THANK gains
+# a notch of Sore Bottom and goes back to the bullpen, badge kept.
+id: sheriff-spanking
+name: The Sheriff's couch
+tags: [law]
+description: Green leather under your hands, the wool of her dress trousers under your stomach, and your underwear around your knees.
+arrival:
+  text: |
+    She walks to the desk, opens the second drawer on the left and takes out a hairbrush. It's an old one,
+    oval, dark wood, with the varnish worn pale in the middle of the back. It has been in
+    this county longer than the department has, she tells you, and a sitting judge has met it.
+
+    She sits down in the middle of the Chesterfield, smooths her trousers over her knees and pats them.
+
+    "Jeans and shorts down, hon. Down. There's a good fella. Over you come."
+
+    You go over. She moves you an inch forward with a firm hand at your waist, the way she wants you, and
+    settles her forearm across the small of your back. It weighs more than it should. Down in the
+    bullpen a phone rings twice and stops.
+
+    "Now, this is going to be hard," she says kindly. "I don't believe in the other kind."
+actions:
+  - category: talk
+    word: THANK
+    cost: 0
+    always: true
+    prompt: Take it across her knees. It's going to hurt badly, and she'll want thanking.
+    result:
+      text: |
+        The first one makes no sense. It's a flat crack, and for a moment nothing, and then it arrives all
+        at once on one side, and it's a lot worse than the hand you were braced for. The second is on the
+        same spot. She has a slow, even arm and she talks all through it, in the same voice, about you.
+
+        She knows about the house you're renting. She knows the rent. She asks after your manager at the
+        county, and waits for an answer, and when you don't give one she puts three on the crease where your
+        legs start and asks again. You answer. She tells you that's lovely.
+
+        Somewhere around the twenties you stop being able to stay still. Your feet are going by themselves.
+        She doesn't pin you any harder, or need to. You're saying things into the leather now, sorry and
+        please and ma'am, and it makes no difference to the rhythm, and you start to understand that the
+        rhythm isn't up to you and never was. You cry at about the point she says, "There we are, that's
+        the part I was waiting on," and she gives you ten more of the same.
+
+        Then it's over, and her hand is resting on what she's done, cool on the heat. She leaves it there.
+        She pats you twice.
+
+        "What do we say, hon?"
+
+        "Thank you, Sheriff."
+
+        "You're very welcome. I do hope you'll be more careful." She lets you up and watches you pull your
+        jeans over it, which takes time and makes you hiss, and she puts the brush back in the drawer. She
+        hands you your work order with a smile. "That printer's not going to fix itself."
+      effects:
+        - tracker.change: { body: -1, time: -1 }
+        - card.gain: sore-bottom
+        - move.to: station-bullpen
+art:
+  loras: ["pvotk7_krea2_000002000:0.9"]
+  subject: >-
+    pvotk7 POV over-the-knee spanking photo, a first-person view from the man's own head as he lies face down
+    across a woman's lap, looking back along his own body, his plain charcoal T-shirt and bare backside filling
+    the foreground, his blue jeans and gray boxer shorts pulled down around his knees, his backside raised over
+    her thighs and his legs stretching out to the right of the frame with his scuffed brown work boots lifted off
+    the ground. A fifty-year-old woman with long copper-auburn waves, a few silver strands at the temples, bright
+    blue eyes and fair freckled skin, in a buttoned dark olive-green dress uniform jacket with polished brass
+    buttons over a tan shirt and a blue tie, sits on a dark green leather Chesterfield sofa with him across her
+    knees. One of her hands rests flat on his backside and her other arm is raised high, gripping an old oval
+    wooden hairbrush with a dark polished back. She looks into the camera with a warm, pleasant, patient smile.
+    Set in an elegant executive office with walnut paneling and a brass lamp, warm afternoon light through a round
+    stained-glass window.
+  passes:
+    - find: the woman in the olive-green jacket, her head, shoulders and chest, down to her waist, including her raised hand
+      segment: woman in a green jacket
+      denoise: 0.5
+      loras: ["lorbrandt_krea2_000001200:1"]
+      subject: >-
+        lorbrandt woman in her uniform, the jacket buttoned, seated on a dark green leather sofa, one arm raised high
+        gripping an old oval wooden hairbrush, looking into the camera with a warm, pleasant, patient smile that is
+        also an instruction. Walnut paneling behind her, warm afternoon light, fine film grain.

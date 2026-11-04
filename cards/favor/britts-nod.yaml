@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# From TALK-COMPLIMENT at the Starlite, if you talk about the car. Tag `date` is the hook for her date
+# storyline; `nod` hides the action. Until then she has told you what's wrong with your own car: a
+# slot for driving and walking.
+id: britts-nod
+kind: favor
+name: Britt's Nod
+tags: [date, nod]
+text: She calls you Sedan. She told you your timing's off and your tires are a cry for help. Coming from Britt, that's a love letter.
+slots:
+  - { match: { category: go } }
+art:
+  loras: ["zbltk7_krea2_000001400:0.9"]
+  subject: >
+    Square waist-up portrait photograph at standing eye height in a gravel motel lot of zbltk7 woman in her pink hoodie, twenty-three years old, with long loose wavy honey-blonde hair and subtle and natural makeup,
+    leaning under the raised black hood of a gleaming black late-1960s American muscle car, one forearm
+    on the fender, a socket wrench loose in her other hand. She looks sideways into the camera with a
+    cool, grudging half-nod: eyes steady, chin lifted a little, one corner of her mouth up. Her hoodie
+    sleeves are pushed to the elbows, a smear of engine grease on one wrist. Behind her, out of focus,
+    faded turquoise motel doors. Low late-afternoon sun from the left warms her hair and glints on the
+    chrome air cleaner. Restrained palette of gloss black, chrome, dusty pink and turquoise; natural
+    skin texture, fine 35 mm film grain, focus on her face.

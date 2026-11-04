@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+id: second-place
+title: Second Place
+text: Out of two. She told you to put it on your wall.
+hint: Everybody at the Starlite thinks their car is fast. Almost everybody is wrong.
+when: { location: britt-race }
+art:
+  subject: >
+    the gravel lot of a lonely one-story roadside motel with turquoise doors in low autumn sun, seen from standing height across
+    the lot, the scene in the right two-thirds of the frame, two cars parked side by side with a few feet between them. On the left, a dull tan
+    older four-door sedan with one dented gray door stands with its hood up and steam pouring out of its engine, and beside it a broad-shouldered, athletic white man of thirty-two with lightly tanned skin, tousled wavy brown hair,
+    a strong square jaw, light stubble and round thin gold wire-rimmed glasses, in an unbuttoned faded red and gray plaid flannel shirt over a plain charcoal T-shirt, worn blue work jeans and scuffed brown leather work boots, holds out a single
+    twenty-dollar bill at arm's length with his head hanging, his shoulders slumped, his face red. A twenty-three-year-old
+    woman with long loose wavy honey-blonde hair, a dusty pink hoodie, lightly torn blue jeans and off-white low-top sneakers sits
+    on the front fender of a gleaming black late-1960s American muscle car on the right, its long hood shut, clean and dry, not a hair out of place, and takes the bill between
+    two fingers without looking at it, looking at his steaming sedan with cool, faint pity. The left of the frame is empty gravel and a dead neon
+    sign on a pole. Palette of gravel gray, sedan tan, gloss black, dusty pink, steam white and turquoise; natural texture, fine 35 mm film grain.
+  passes:
+    - find: the man standing beside the steaming sedan, from the top of his head down to his feet
+      segment: man in plaid shirt
+      loras: ["jack:1"]
+      subject: >
+        a broad-shouldered white man of thirty-two with tousled wavy brown hair, light stubble and round thin gold wire-rimmed
+        glasses, in a plaid flannel shirt and jeans, head hanging, holding out a twenty-dollar bill, his face red. Low sun, fine film grain.
+    - find: the blonde woman in the pink hoodie sitting on the black car, from the top of her hair down to her sneakers
+      segment: woman in a pink hoodie
+      loras: ["zbltk7_krea2_000001400:0.9"]
+      subject: >
+        zbltk7 woman in her pink hoodie, twenty-three years old, long loose wavy honey-blonde hair, sitting on a black car's fender,
+        taking a bill between two fingers, looking aside with cool, faint pity. Low sun, fine film grain.

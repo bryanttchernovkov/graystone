@@ -5,7 +5,9 @@ id: graybloods
 name: The GrayBloods
 legend:
   GW: graybloods-wall
+  GI: graybloods-warehouse
 grid: |
-  GW
+  GW .. GI
 portals:
+  - { from: graybloods-warehouse, dir: out, to: graybloods-wall, cost: 0, prompt: You duck back out under the door. Nobody says goodbye. }
   - { from: graybloods-wall, dir: out, to: docks-warehouse, cost: 0, prompt: You back off. She watches you do it. }

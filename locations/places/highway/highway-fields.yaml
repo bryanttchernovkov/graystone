@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# The highway, first stretch: behind the wheel, so the art is POV through the windshield. Deputy
+# Voss's road: any setback here, or on the way in, is her pulling you over (voss-stop), whatever your
+# record. Her stop sorts out what you carry. RISK-FLOOR buys Time back at the price of more dice.
+id: highway-fields
+name: The highway
+tags: [patrol]
+hub: true
+setback_penalty:   # Voss's road: a setback here is a traffic stop
+  effects:
+    - move.to: voss-stop
+description: Two lanes and a yellow line through cut corn, the grain elevators getting small in your mirror, nothing on the road ahead of your hood.
+actions:
+  - category: look
+    word: BILLBOARD
+    cost: 1
+    prompt: Read the billboard coming up on the right.
+    result:
+      text: |
+        A deputy's smiling face, three stories high, and a campaign hat the size of your car. SLOW DOWN,
+        it says. WE'D LOVE TO MEET YOU. Somebody has climbed up there and drawn a mustache on her. Somebody
+        else has climbed up after that, and painted it out with a lot of care.
+      effects:
+        - skill.gain: look
+  - category: risk
+    word: FLOOR
+    cost: 2
+    prompt: Put your foot flat on the floor and make up some of the day.
+    result:
+      text: |
+        The sedan thinks about it, and then finds a gear you'd forgotten it had. The fence posts blur. The
+        whole steering wheel starts to hum in your hands, and you get a mile of feeling like somebody else
+        before something under the hood starts to tick and you ease off.
+      effects:
+        - tracker.change: { time: +1 }
+art:
+  subject: >
+    First-person point-of-view widescreen photograph from the driver's seat of an older sedan
+    moving along a straight two-lane highway in the rural Midwest in autumn, seated eye height, the
+    camera level, looking out through the windshield. Across the bottom of the frame runs a worn
+    black dashboard with the top arc of a black steering wheel at bottom center, and a man's bare
+    hands and forearms with short unpolished nails enter from the bottom edge of the frame and rest
+    on the wheel. Through the windshield the empty gray asphalt runs straight ahead to the horizon,
+    a broken yellow center line and a white edge line converging in the distance, a faded
+    wire fence and leaning wooden utility poles along the right shoulder, and flat harvested
+    cornfields of pale gold stubble on both sides under a huge pale blue autumn sky with thin
+    high clouds. A narrow rear-view mirror at the top center of the windshield shows a small
+    pale concrete grain elevator far behind on the road. Bright late-morning sun from the upper
+    left, a soft reflection of the dashboard on the lower glass. Restrained palette of asphalt
+    gray, corn stubble gold, pale sky blue and dashboard black; natural texture, fine 35 mm film
+    grain, focus on the road beyond the glass.

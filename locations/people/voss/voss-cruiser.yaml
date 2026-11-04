@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: the back of Deputy Voss's cruiser, on the way in. Reached by move.to from voss-rights. Two ways
+# on: TALK-WAIT rides to the Undercroft (which takes the Handcuffs off and the package); DEAL-BEG asks
+# her to pull over, which sends you at random to one of three scenes on a farm track. Each of those
+# ends with the cuffs off at the turnout and the Record still open.
+id: voss-cruiser
+name: The back of her cruiser
+tags: [law]
+description: Hard molded plastic for a seat, steel mesh in front of your face, and a pair of bright blue eyes in the mirror beyond it.
+arrival:
+  text: |
+    The back seat is one piece of hard plastic with no room for your hands, so you sit forward on
+    them. Past the steel mesh she settles herself, adjusts the mirror, looks at her own teeth in it,
+    and adjusts it back until it has your face in it.
+
+    The cruiser pulls out. She drives with one wrist over the wheel and the radio on, a steel guitar
+    and a woman who has been wronged.
+
+    "It's a real pretty drive in, sugar," she says to the mirror. "About twenty minutes. Then you're
+    the Sergeant's, and she doesn't let me play with her things."
+actions:
+  - category: talk
+    word: WAIT
+    cost: 0
+    always: true
+    prompt: Sit still and ride it out to the First Church.
+    result:
+      text: |
+        You watch the corn go by through the mesh. She sings along with the second verse and knows all
+        the words. At the grain elevators she takes a call and tells somebody she'll be ten minutes,
+        she's got a delivery.
+
+        She parks by the side door of the church and walks you in with a finger through your cuffs,
+        waving at people, through the nave and down to the top of a stone stair. "Be good, honey," she
+        says, and gives you a little push.
+      effects:
+        - move.to: undercroft
+  - category: deal
+    word: BEG
+    cost: 2
+    prompt: Lean up to the mesh and ask her to let you go. She'll want paying for that, on your knees, and she decides how.
+    result:
+      text: |
+        You lean up to the mesh and you say please, and you tell her anything she wants, and you keep
+        saying it until the song ends.
+
+        Her eyes come up in the mirror, and crinkle. "There it is. I was starting to think you'd never
+        ask." She turns the radio down. "County says I bring you in. County doesn't ride in this car."
+
+        There's nobody for a mile in either direction. She puts the blinker on anyway, and turns down a
+        dirt track between two fields of cut stalks until the road is gone behind you. She parks, gets
+        out, stretches, and opens your door.
+
+        "There's a fee, sweetheart. Let's see what sort of mood I'm in."
+      effects:
+        - move.to: { random: [voss-track-boots, voss-track-face, voss-track-kiss] }
+art:
+  loras: ["mrvx7_krea2_000001200:0.9"]
+  subject: >
+    First-person point-of-view widescreen photograph from the hard plastic back seat of a moving police
+    patrol car, seated eye height, the camera level, looking forward through a steel mesh prisoner
+    partition that fills the whole frame with a fine dark grid, slightly out of focus. Beyond the mesh,
+    the dashboard, the steering wheel, a police radio and a bright windshield full of pale gold
+    cornfields and a long empty road. In the center top of the frame, sharp through the mesh, the wide
+    rear-view mirror holds the reflection of the eyes and the top of the face of mrvx7 woman, a
+    twenty-two-year-old highway patrol deputy, with bright blue eyes, sharp black winged eyeliner and
+    glossy rockabilly victory-roll bangs of dark espresso hair with a cherry-red section, looking
+    straight into the camera through the mirror, her eyes crinkled with sweet, delighted amusement.
+    At the left of the frame beyond the mesh, the back of her high curled ponytail, a large gold hoop
+    earring, the collar of a dark forest-green bomber jacket, and her bare right wrist hanging over the
+    top of the wheel. Low late-afternoon sun through the windshield. Restrained palette of black steel,
+    dark dashboard, corn gold, forest green and cherry red; natural texture, fine 35 mm film grain, sharp
+    focus on her eyes in the mirror.

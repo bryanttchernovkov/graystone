@@ -6,6 +6,10 @@ id: station-kitchen
 name: The kitchenette
 tags: [law]
 hub: true
+setback_penalty:   # caught where you shouldn't be: always the Sheriff
+  requires: [contractor]
+  effects:
+    - move.to: sheriff-caught
 description: "The old sacristy: a kettle, a coffee machine, a fridge covered in rotas, and a restroom door with a hand-lettered sign about the seat."
 actions:
   # Anderson on her coffee break, for her paypig only (requires owned). Her reaction is a

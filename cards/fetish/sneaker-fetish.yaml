@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# From WORK-SCUFF in the warehouse (Red). Tag `sneakers` opens LOOK-DOWN at the Starlite for now.
+id: sneaker-fetish
+kind: fetish
+name: Sneaker Fetish
+tags: [sneakers]
+text: Canvas, rubber, a hard day's asphalt in the tread. You know what a white sneaker tastes like now. Boots are for people with pensions.
+art:
+  subject: >
+    Square still-life photograph of a single scuffed white leather high-top sneaker lying on its side
+    on wet concrete in a warehouse, the sole turned toward the lens, its plain herringbone rubber tread
+    packed with grit, except for one clean, damp stripe up the middle of the sole where the dirt has
+    been removed. Its loose laces trail across the floor. Behind it, out of focus, stacked wooden
+    pallets. A single tungsten work light from above catches the wet stripe. Restrained palette of
+    scuffed white, wet gray concrete and tungsten amber; natural rubber and leather texture, fine 35 mm
+    film grain, shallow depth of field on the clean stripe.

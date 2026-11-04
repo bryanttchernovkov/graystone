@@ -3,7 +3,8 @@
 # aisle. Reached only through DEAL-SIGN at the front desk (contractor). East: the sacristy
 # kitchenette; south: the gym in the annex out back; up: the Sheriff's office; out: back past the
 # front desk to the narthex. Down is the Undercroft, which you don't walk into. The printer job
-# (FIX / SERVICE) ends the visit: Niamh takes the badge and walks you out.
+# (FIX / SERVICE) ends the visit: Niamh takes the badge and walks you out. RISK-SNOOP carries `snoop`, so
+# a setback on it is the Sheriff (the badge's penalty); the printer itself is safe to work on.
 id: station-bullpen
 name: The bullpen
 tags: [law]
@@ -178,6 +179,23 @@ actions:
         properly." He asks again. She tells him it'll be a minute. It's twenty.
       effects:
         - skill.gain: look
+  - category: risk
+    word: SNOOP
+    cost: 2
+    tags: [snoop]
+    prompt: While nobody's looking, go through the nearest deputy's desk.
+    result:
+      text: |
+        Top drawer: a stapler with somebody's name on it in nail polish, a tin of boot wax, and a folder that isn't locked in
+        anything. You lift the cover. There's a photo of a man you don't know coming out of a bar, and clipped to it a sheet in a
+        small careful hand: when he leaves for work, what he drinks, which of his neighbors don't like him.
+
+        The next folder down has a county work order in it. It's yours. Somebody has already filled in how you take your coffee.
+
+        You put them back the way they were, and get out from behind the desk a good deal smarter.
+      effects:
+        - skill.gain: look
+        - boost.change: { card: character, amount: +1 }
 art:
   subject: >
     Eye-level widescreen photograph from standing height at the back of the nave of an old
