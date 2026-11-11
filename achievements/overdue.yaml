@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+# Juno arrested, from TALK-TELL in Miss Carrow's office (The Third Chair). The art is the arrest
+# itself, Harker cuffing him at his table in the reading room, not Eli: the moment the player made
+# happen, watched from upstairs. The first version, Juno alone in an Undercroft cell, missed the
+# point (2026-11-11). hcstand2 (concept-handcuffing-standing) is a base LoRA only: both of them
+# in words in the base, in its caption order (each named by what they wear, whose wrist each cuff
+# is on), no character LoRA beside it; then each face as a pass, leaving the cuffs to the base.
+# Juno is drawn as the town sees him (cast.md), so hcstand2's two women fit.
+id: overdue
+title: Overdue
+text: Detective Harker cuffed him at his own table in the reading room, in front of the retirees and the newspaper rack. The note on his card says *returned*.
+hint: Miss Carrow keeps a file. Detective Harker would like a reason to use it.
+when: { card: the-third-chair }
+art:
+  loras: ["hcstand2_krea2_000003000:0.9"]
+  subject: >
+    An eye-level medium photograph in the reading room of an old Carnegie library, both women
+    from the thighs up filling the right two-thirds of the frame, the cuffing hands in the center.
+    A woman in a long gray pinstriped coat handcuffs a young woman in an oversized black bomber
+    jacket, standing close behind the woman in the bomber jacket beside a small round oak table
+    and closing hinged steel handcuffs around the woman in the bomber jacket's wrists behind her
+    back: one cuff is already locked on the young woman's left wrist, and the woman in the coat
+    grips the young woman's right wrist and closes the second cuff around it. The woman in the
+    coat is in her mid thirties, with long hair split down the middle, black on one side and
+    platinum white on the other, straight-cut bangs, smoky dark eyeliner and burgundy lipstick,
+    in a long gray pinstriped coat over a white shirt buttoned to the collar, a black tie and a
+    black underbust corset, bare-handed, no rings, looking down at the back of the young woman's
+    head with calm, level satisfaction. The young woman is petite and slim, twenty-three, with
+    pale freckled skin, dense black and deep teal hair shaved short at one temple and falling in
+    long thick waves over the other shoulder, black rectangular glasses, a small silver septum
+    ring and a black ring choker, in an open oversized black bomber jacket slipping off her
+    shoulders over a black ribbed crop tank and black drawstring joggers; she turns her head
+    toward the camera with sulky, furious defiance, her lower lip pushed out. On the
+    table beside them, a closed black laptop covered in small colorful vinyl stickers. The left
+    third of the frame is the reading room out of focus: long oak tables, green-shaded brass
+    lamps, dark oak bookcases of cloth-bound books under a cast-iron gallery railing, and a tall
+    arched window with small leaded panes. Soft daylight from the window and warm lamplight;
+    natural skin texture, fine 35 mm film grain, sharp focus on the cuffing hands and both faces
+  # Faces only: the README's tests showed a mask over the arms redraws the cuffing on top of the
+  # base's.
+  passes:
+    - find: >-
+        the head, hair and shoulders of the woman in the long gray pinstriped coat standing behind,
+        from the top of her hair down to her tie
+      segment: woman:2
+      loras: ["vqntz7_krea2_000001200:1"]
+      denoise: 0.5
+      pad: 32
+      subject: >
+        A photograph of vqntz7 woman in her detective suit, her long hair split down the middle,
+        black on one side and platinum white on the other, looking down with calm, level
+        satisfaction, her lips closed. Soft daylight and warm lamplight in a library reading room,
+        fine 35 mm film grain.
+    - find: >-
+        the head, hair and shoulders of the young woman in the black bomber jacket being handcuffed,
+        from the top of her hair down to her shoulders
+      segment: "face:1, hair:1"
+      loras: ["jovessa_krea2_000001200:1"]
+      denoise: 0.5
+      pad: 32
+      subject: >
+        A photograph of jovessa woman in her usual black outfit, wearing her black rectangular
+        glasses and a black ring choker, her head turned toward the camera with sulky,
+        furious defiance, her lower lip pushed out. Soft daylight in a library reading room, fine
+        35 mm film grain.

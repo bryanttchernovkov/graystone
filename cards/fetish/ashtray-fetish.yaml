@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# From DEAL-ASHTRAY in Miss Carrow's office. Nothing reads its tag yet.
+id: ashtray-fetish
+kind: fetish
+name: Ashtray Fetish
+tags: [ash]
+text: The click of a lighter across a room, and your mouth opens on its own. Women in Graystone who smoke have started to notice.
+art:
+  subject: >
+    Square close still-life photograph of a heavy cut-glass ashtray on a dark walnut desk with a
+    green leather top, empty and clean, a single lit cigarette resting in one of its notches with
+    a deep wine-red lipstick print on the filter and a long, unbroken column of pale ash, a thin
+    line of smoke rising straight up into the lamplight. Square composition, the ashtray in the
+    center. Warm light from a green-shaded brass lamp above and to the left, the rest in soft
+    shadow. Restrained palette of cut glass, walnut, green leather and wine red; natural texture,
+    fine 35 mm film grain, shallow depth of field on the ash.

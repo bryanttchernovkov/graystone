@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# From DEAL-GIVE at Juno's table (the V File). Tag dating opens TALK-DATE there, which takes you
+# to his apartment, and keeps FLIRT hidden.
+id: junos-trust
+kind: favor
+name: Juno's Trust
+tags: [dating]
+text: An address on the back of one of Miss Carrow's index cards, and a spare key on a cat keyring. "for emergencies. like if ur bored."
+art:
+  subject: >
+    Square close still-life photograph from above of a single brass door key on a small
+    rubbery teal cartoon-cat keyring, lying on a cream index card on a scuffed dark walnut
+    tabletop. The card has two short lines of loose black felt-tip handwriting, blurred and
+    unreadable, and a little drawn heart. Beside them, a black hair tie and three
+    shiny foil-wrapped candies. Soft evening lamplight from the upper right, deep shadow at the
+    edges. Restrained palette of walnut, teal, brass and black; natural texture, fine 35 mm film
+    grain, shallow depth of field on the key.

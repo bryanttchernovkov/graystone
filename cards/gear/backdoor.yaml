@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# From RISK-PLANT in the station bullpen (rootkit): Juno is in the department's system. WORK-WIPE,
+# once, loses the Criminal Record whole if you have one (and this card), from anywhere but custody.
+id: backdoor
+kind: gear
+name: The Backdoor
+text: Somewhere in the First Church, on a desk nobody locks, a little teal cat blinks once an hour. Juno says it's watching for you.
+actions:
+  - category: work
+    word: WIPE
+    cost: 2
+    unless: [cuffed, inmate]
+    prompt: Text Juno and ask him to make your record go away. He can. It's the one favor, and he'll make you ask nicely.
+    result:
+      text: |
+        *pls*, you type, and then, because he leaves it on read, *please, juno.*
+
+        *better*
+
+        Nothing for four minutes. Then a screenshot: the department's own records screen,
+        your name at the top, and a little teal cat cursor sitting on the delete key.
+
+        *say bye bye*
+
+        The next screenshot is the same screen, blank. *it's like u never did anything. which,
+        honestly, tracks.* And then: *backdoor's closed btw. they patched it. i only get one
+        of those per sheriff.*
+      effects:
+        - card.lose: criminal-record
+        - card.lose: backdoor
+art:
+  subject: >
+    Square close photograph of the dark corner of a computer monitor in a dim office at night,
+    the screen mostly black, and in its lower corner a tiny glowing teal cartoon cat icon,
+    pixel-sharp, its eyes two bright dots. The monitor's gray plastic bezel crosses the bottom
+    of the frame, and beyond it, out of focus, the dark shapes of steel desks and the faint red
+    and gold glow of a tall stained-glass window. Restrained palette of black, teal and dim
+    red-gold; fine 35 mm film grain, shallow depth of field on the cat.

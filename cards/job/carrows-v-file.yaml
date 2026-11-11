@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# From TAKE-DRAWER at Miss Carrow's desk (charmed), or from carrow-caught, where she hands it over
+# after the spanking. Tag file opens DEAL-GIVE at Juno's table, which trades it for Juno's Trust.
+id: carrows-v-file
+kind: job
+name: The V File
+tags: [file]
+text: Seven months of index cards in a tiny, perfect hand. Dates, times, card numbers, and every man in Graystone who logged out in a hurry.
+art:
+  subject: >
+    Square close still-life photograph from above of a long, narrow oak desk drawer pulled
+    all the way out and lying on a dark oak desk, packed end to end with
+    cream index cards, the front ones written over in a tiny, neat hand in black ink too small
+    to read. A small brass label frame on the drawer's front holds a card with one single
+    handwritten capital letter V and nothing else. Beside it on the desk, a brass date stamp
+    and a capped black fountain pen. Warm light from a green-shaded brass lamp falls across the
+    cards from the upper left, the rest of the desk in soft shadow. Restrained palette of dark
+    oak, cream, brass and black; natural texture, fine 35 mm film grain, shallow depth of field
+    on the letter.

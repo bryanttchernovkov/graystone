@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# Miss Carrow's Notice, full. Tag confidant opens TALK-ALONE at her desk: her office upstairs,
+# where Detective Harker is waiting. Its slot still takes good conduct, with nothing to fill.
+id: carrows-confidence
+kind: favor
+name: Miss Carrow's Confidence
+tags: [confidant]
+text: "\"You may call on me upstairs, young man. Knock once. If I want you to come in, you'll know.\""
+slots:
+  - { match: { tag: proper } }
+art:
+  loras: ["imcrw7_krea2_000001200:1"]
+  subject: >
+    Square portrait photograph of imcrw7 woman in her gray skirt suit, the fitted charcoal jacket
+    buttoned once at the waist over a cream silk blouse open at the collar, her throat bare, no
+    tie, a slim gold watch on her left wrist, standing at the top of a black cast-iron spiral
+    stair in an old library gallery, one hand on the iron rail, framed from the waist up and
+    looking down into the camera with cool, measured approval, her lips closed in a small,
+    satisfied line. Behind her, out of focus, dark oak shelves of faded cloth-bound books and a
+    half-open oak door with a frosted glass panel. Warm lamplight from the doorway and soft
+    daylight from a copper dome above. 50 mm lens, natural colour, fine film grain, shallow
+    depth of field on her eyes.

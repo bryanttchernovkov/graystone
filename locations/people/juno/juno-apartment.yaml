@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: Juno Vance's apartment, two rooms over a laundromat. Reached by move.to from TALK-DATE at
+# his table (dating), from there only. TALK-STAY is the date, ending on a choice; its "Stay" option
+# is where the author's scene goes (a beat it can move to). DEAL-HACK is his job: the USB key
+# (Rootkitty's USB Key, rootkit) for RISK-PLANT in the station bullpen. Out goes to Mill Street.
+id: juno-apartment
+name: Juno's apartment
+hub: true
+description: A small bedroom over a laundromat, a strip of teal light along the ceiling, a black gaming desk, a bed covered in plush toys, and Juno in his desk chair, spinning it slowly to face you.
+arrival:
+  text: |
+    It's the room from the photos, and it's smaller than they make it look. Pastel posters on
+    pale walls, a teal LED strip along the ceiling, the black desk with the teal keyboard, the
+    bed with its black and teal sheets and a crowd of plush toys along the pillows. The
+    dryers downstairs make the floor hum.
+
+    Juno drops into his desk chair and spins it round to face you, his knees apart, one sock
+    pulled half off.
+
+    "So this is where the magic happens." He says it in a deep voice, and laughs at himself.
+    "Sit wherever. Not on Mr. Biscuits."
+actions:
+  - category: talk
+    word: STAY
+    cost: 2
+    prompt: Stay for the evening. It's a date, his kind, and it ends with a question he wants answered.
+    result:
+      text: |
+        He puts a racing game on the big monitor and hands you the controller with the sticky
+        trigger. He beats you nine times. He talks the whole way through all nine, about your
+        cornering, your hands, your whole family, and when you finally pass him on the last lap
+        he pulls the plug out of your controller with his foot.
+
+        Two bubble teas come up the stairs in a delivery bag. He drinks his and half of yours.
+
+        Then the game's off and the room is just the teal light and the dryers, and he's sitting
+        on the edge of the bed with his elbows on his knees, looking at you over his glasses. The
+        grin has gone somewhere.
+
+        "So you know, right." He says it to the carpet, then to you. "What I am. What's on the
+        page. You've seen the page." He tugs at the drawstring of his joggers, once, and leaves it.
+        "You gonna be weird about it, or are you gonna stay?"
+      effects:
+        - tracker.change: { nerve: +1 }
+        - choose:
+            - label: Stay
+              text: |
+                You stay.
+
+                "Okay," he says, quieter than you've heard him say anything. "Okay. Cool. Come
+                here, then."
+            - label: Not tonight
+              text: |
+                You tell him not tonight. He looks at you for a second, then shrugs, and the
+                grin comes back on like a screen.
+
+                "lol. Your loss, dude. Literally." He rolls the desk chair over with his heels and
+                spins to the keyboard. "Sit there anyway. I've got a job for you."
+  - category: deal
+    word: HACK
+    cost: 2
+    prompt: Hear him out about the Sheriff's Department. It's a crime, against the county, and he wants you to do it.
+    result:
+      text: |
+        He pulls up a picture of the First Church on the big monitor, then a floor plan of it,
+        then a list of every device on the county wifi with a name next to each one.
+
+        "I'm in everything in this town. The water board. The school buses. The Mayor's
+        thermostat." He scrolls. "Not the department. Their network's not on the internet. Like,
+        at all. It's a church." He's outraged about it. "You have to physically be inside to touch
+        it, and they don't let anybody inside. Except the IT guy."
+
+        He looks at you.
+
+        From the desk drawer he takes a little teal USB stick with a cat sticker on it and holds
+        it out between two fingers.
+
+        "Plug it into any desk in the bullpen. Any of them. They never lock their screens. Then
+        walk out like a normal person." He doesn't let go of it straight away. "And if anybody
+        asks, you've never been in my room."
+      effects:
+        - card.gain: rootkitty-usb
+art:
+  loras: ["jovessa_krea2_000001200:1"]
+  subject: >
+    A photograph of a small, cosy bedroom at night, seen from the doorway at standing eye
+    height. The left two-thirds of the frame look along the room: pale walls with pastel
+    posters, a strip of teal LED light glowing along the ceiling, a bed with black and teal
+    sheets and a row of plush toys along the pillows, a window with the blind half down over a
+    dark street. In the right third, three paces from the lens, jovessa woman in her usual
+    black outfit, wearing her black rectangular glasses and a black ring choker, sits sideways
+    in a black gaming chair at a cluttered black desk with a keyboard lit in teal, a big
+    monitor glowing beside her and a slim silver energy drink can by her elbow, one knee drawn
+    up onto the seat. She has spun the chair half toward the camera and looks straight into
+    the lens with a cocky, expectant grin, one brow raised behind her glasses. The room is lit
+    by the teal ceiling strip and the cool glow of the monitor, warm light from a small lamp on
+    the desk. 35 mm lens, natural colour, fine film grain, shallow depth of field on her face.

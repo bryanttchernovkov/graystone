@@ -1,0 +1,145 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Beat: after TALK-TELL in Miss Carrow's office, caged, cuffed to the chair by the door, he watches
+# her and Detective Harker together. LOOK-WATCH ends it: the cuffs come off (the cage stays) and he
+# goes back down to the reading room.
+id: carrow-watch
+name: Miss Carrow's office
+description: A hard chair by the door, your wrists cuffed behind its back, steel locked between your legs, and the best view in the library.
+arrival:
+  text: |
+    Your trousers are still round your ankles. Harker cuffs your wrists behind the back of the
+    chair, hinged county steel, and checks them with two fingers. Then she turns the key in the
+    office door and drops it in her shirt pocket.
+
+    Miss Carrow has stood up from the desk. She takes her watch off and lays it on the blotter,
+    face up.
+
+    "You'll keep your eyes open, young man," she says. "If you close them, we'll start again."
+actions:
+  - category: look
+    word: WATCH
+    cost: 0
+    always: true
+    prompt: Watch them together from the chair, locked in the cage, until they've finished with each other. You won't be touched.
+    result:
+      text: |
+        Harker kisses her first. She takes Miss Carrow's face in both hands and kisses her against
+        the edge of the desk, deep, and Miss Carrow's hands go into the black and white hair and
+        hold on. When they break, Miss Carrow's lipstick is on Harker's mouth.
+
+        Harker undoes the one button of the charcoal jacket and pushes it off her shoulders, and
+        then the silk blouse, button by button, kissing down the open collar as it opens. Miss
+        Carrow sits back on the green leather. Her skirt goes up her thighs in Harker's fists, over
+        the tops of her stockings, and Harker kneels on the rug between her knees, in front of you,
+        and puts her mouth on her.
+
+        It takes a long time. Miss Carrow keeps her eyes on you through all of it. When it gets
+        close she reaches down and holds Harker's head where she wants it, and says something in a
+        voice you haven't heard her use, and comes with her heels drumming on the side of the desk.
+
+        Then it's Harker's turn, on the window seat, the gray coat spread under her. Miss Carrow
+        does it with her fingers and her mouth, and stops twice to look at you, and the second time
+        she laughs.
+
+        The cage is the whole of you by then. Every heartbeat goes into the steel and stops there.
+
+        Afterwards they share a cigarette by the inside window, Miss Carrow in her slip, Harker in
+        her shirt, and look down at the reading room. Harker unlocks your wrists last, after she
+        has put her trousers back on and buttoned her collar.
+
+        "Off you go," Miss Carrow says, sitting down to her letters. "Walk."
+      effects:
+        - tracker.change: { nerve: -1 }
+        - skill.gain: look
+        - move.to: library-stacks
+      # After, by the inside window (the end of the prose): suggestive, not explicit, and a pace
+      # apart so the two passes don't share a mask. POV from the chair in the worn cage (pvcg5).
+      art:
+        loras: ["pvcg5_krea2_000002000:0.9"]
+        subject: >
+          A POV photograph looking down at my own body sitting on a hard wooden chair in a small
+          lamplit office with dark walnut paneling, the camera tilted only slightly down, my
+          trousers pushed down round my ankles and my bare knees apart, a pvcg5 chastity cage,
+          filled, polished stainless steel with a tiny brass padlock, locked on me, my bare thighs
+          and the cage in the bottom third of the frame. Beyond my knees, three paces away, two
+          women stand by a tall inside window full of soft daylight, a pace apart, sharing one
+          cigarette, both looking at the camera. On the left a woman of thirty-eight with long
+          loose auburn waves, green eyes and deep wine-red lipstick, her hair mussed, in a cream silk
+          slip, sheer black stockings and black patent stiletto pumps, holds the cigarette to her
+          lips, with a lazy, satisfied smile. On the right a woman in her mid thirties with long hair
+          split down the middle, black on one side and platinum white on the other, straight-cut
+          bangs and burgundy lipstick smudged at one corner, her white shirt untucked and open at
+          the collar, her black tie hanging loose and undone, fitted black trousers and black
+          block-heel ankle boots, reaches for the cigarette, with a calm, level stare. Shelves of
+          cloth-bound books behind them, a green-shaded brass lamp glowing at the edge of the frame.
+          Natural skin texture, fine film grain, shallow depth of field on the two women.
+        passes:
+          - find: the auburn-haired woman in the silk slip on the left, from the top of her hair down to her shoes
+            segment: woman:2
+            loras: ["imcrw7_krea2_000001200:1"]
+            denoise: 0.5
+            pad: 32
+            subject: >
+              A full-length photograph of imcrw7 woman in a cream silk slip, sheer black stockings
+              and black patent stiletto pumps, her loose auburn waves mussed, standing by a tall
+              window with a cigarette at her lips and a lazy, satisfied smile. Soft daylight, walnut
+              paneling, fine film grain.
+          - find: the woman with black and platinum split hair on the right, from the top of her hair down to her boots
+            segment: woman:2
+            loras: ["vqntz7_krea2_000001200:1"]
+            denoise: 0.5
+            pad: 32
+            subject: >
+              A full-length photograph of vqntz7 woman, her long hair split down the middle, black on
+              one side and platinum white on the other, her white shirt untucked and open at the
+              collar, her black tie hanging loose and undone, fitted black trousers and black
+              block-heel ankle boots, reaching for a cigarette with a calm, level stare. Soft
+              daylight, walnut paneling, fine film grain.
+# The arrival, from the chair: POV in the worn cage (pvcg5), the two women standing by the
+# bookshelves, close and flirting but clothed, a hand's width between their faces so the passes
+# don't share a mask. No desk: the first render seated them side by side at it, arms crossed over
+# each other (2026-11-11).
+art:
+  loras: ["pvcg5_krea2_000002000:0.9"]
+  subject: >
+    A POV photograph looking down at my own body sitting on a hard wooden chair by the door of a
+    small lamplit office with dark walnut paneling, the camera tilted only slightly down, my
+    trousers pushed down round my ankles and my bare knees apart, a pvcg5 chastity cage, filled,
+    polished stainless steel with a tiny brass padlock, locked on me, my bare thighs and the cage
+    in the bottom third of the frame. Beyond my knees, three paces away, two women stand close
+    together in front of tall shelves of cloth-bound books, both looking at the camera. On the
+    left a woman of thirty-eight with long loose auburn waves, green eyes and deep wine-red
+    lipstick, in a fitted charcoal suit jacket buttoned once at the waist over a cream silk blouse
+    open at the collar, a charcoal pencil skirt, sheer black stockings and black patent stiletto
+    pumps, leans back against the shelves and holds the end of the other woman's black tie
+    between two fingers, with a slow, knowing smile. On the right, a hand's width from her, a
+    woman in her mid thirties with long hair split down the middle, black on one side and
+    platinum white on the other, straight-cut bangs and burgundy lipstick, in a white shirt
+    buttoned to the collar, a black tie, a black underbust corset, fitted black trousers and black
+    block-heel ankle boots, rests one hand flat on the shelf beside the other woman's head and
+    holds up a small brass key on a thin chain in the other, with calm, level amusement. A
+    green-shaded brass lamp lights them warmly from the side. Natural skin texture, fine film
+    grain, shallow depth of field on the two women.
+  passes:
+    - find: the auburn-haired woman on the left leaning on the shelves, from the top of her hair down to her shoes
+      segment: woman:2
+      loras: ["imcrw7_krea2_000001200:1"]
+      denoise: 0.5
+      pad: 32
+      subject: >
+        A full-length photograph of imcrw7 woman in her gray skirt suit, the fitted charcoal
+        jacket buttoned once at the waist over a cream silk blouse open at the collar, her throat
+        bare, the silk collar lying open on her collarbones, sheer black stockings and black patent stiletto pumps, leaning back against
+        a bookshelf and holding the end of someone's black tie between two fingers, with a slow,
+        knowing smile. Warm lamplight, fine film grain.
+    - find: the woman with black and platinum split hair on the right, from the top of her hair down to her boots
+      segment: woman:2
+      loras: ["vqntz7_krea2_000001200:1"]
+      denoise: 0.5
+      pad: 32
+      subject: >
+        A full-length photograph of vqntz7 woman in her detective suit without her coat, a white
+        shirt buttoned to the collar, a black tie, a black underbust corset, fitted black trousers
+        and black block-heel ankle boots, her long hair split down the middle, black on one side
+        and platinum white on the other, one hand on a bookshelf, holding up a small brass key on a
+        thin chain, with calm, level amusement. Warm lamplight, fine film grain.

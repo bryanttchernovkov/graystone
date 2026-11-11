@@ -1,0 +1,361 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: Miss Carrow's office, off the library's upstairs gallery. Reached by move.to from TALK-ALONE
+# at her desk (confidant); out goes back to the reading room. Detective Elise Harker is always here.
+# SIT is the introduction, once (confidant, unless conspirator): tea, cigarettes and the plan to
+# catch Juno, and Tea Upstairs (conspirator), which opens the rest. ASHTRAY and WORSHIP are hers;
+# TELL (rootkit: Juno's USB key, kept instead of planted) betrays him: The Third Chair (cucked,
+# juno-arrested) and the Chastity Cage (caged), then the watching beat. BEND is Elise's strap-on,
+# only while he's caged and has watched.
+id: carrow-office
+name: Miss Carrow's office
+hub: true
+description: A small, warm office under the library dome, a walnut desk with a green leather top, a window seat over the reading room, and two women smoking where smoking isn't allowed.
+arrival:
+  text: |
+    The office smells of furniture polish and cigarettes. An inside window looks down over the
+    whole reading room, the long tables and the green lamps and the corner by the arched window,
+    and somebody has propped it open an inch to let the smoke out.
+
+    In the window seat a woman in a long gray pinstriped coat sits with her boots up on the
+    cushion and a cigarette in her fingers. Her hair is split down the middle, black on one side
+    and platinum white on the other. She looks at you through the smoke, and then back down at
+    the room.
+
+    Miss Carrow sits down behind the desk and crosses her legs. There's a hard wooden chair by the
+    door. Nobody offers you another.
+actions:
+  - category: talk
+    word: SIT
+    cost: 2
+    requires: [confidant]
+    unless: [conspirator]
+    prompt: Take tea with Miss Carrow and her friend. They'll talk about Juno, and while they smoke you'll kneel between them and hold their ash.
+    result:
+      text: |
+        "Elise," Miss Carrow says, "this is the IT man."
+
+        "Detective Harker. Graystone County." The woman in the window seat doesn't get up. "I know.
+        He's on a card in the V drawer."
+
+        Miss Carrow pours. Two cups. She points with the spout at the rug between her chair and
+        the window seat, and you kneel there. She takes your hands, turns them over in your lap,
+        palms up, and puts them together. "Hold them like that. Still."
+
+        Then they talk over your head. They talk about the weather and the board of trustees and a
+        woman at the bank, and every so often one of them leans down and taps a cigarette over
+        your cupped hands. The ash is light and dry, and then a coal comes down with it and you
+        hold still while it goes out on your skin.
+
+        "Miss Vance," Miss Carrow says, "has been reading everybody's post in my library since
+        March."
+
+        "He's in the water board," Harker says. "The school buses. The Mayor's thermostat. I can't
+        prove any of it, because he's better at this than anybody the county can afford." She
+        draws on the cigarette and lets the smoke out through her nose. "The department's network is the one
+        thing in town he can't reach. He has to get somebody to carry it in."
+
+        She looks down at you for the first time.
+
+        "When he asks somebody, I'd like that somebody to come up here first. I want him in cuffs.
+        I want him in a cage." She taps ash into your palm. "For the fun of it, mostly."
+
+        Miss Carrow takes the cups away, and then, without asking, your hands. She tips the ash off
+        them into a cut-glass dish on her desk and wipes your palms with her handkerchief, one finger
+        at a time.
+
+        "Thursdays," she says. "Knock once."
+      effects:
+        - tracker.change: { nerve: -1 }
+        - skill.gain: talk
+        - card.gain: tea-upstairs
+      art:
+        loras: ["pvsmk7_krea2_000001250:0.9"]
+        subject: >
+          pvsmk7 smoking POV photo, a worm's-eye view looking straight up from below her chest at a
+          woman in her mid thirties with long hair split down the middle, black on one side and
+          platinum white on the other, straight-cut bangs, smoky dark eyeliner and burgundy lipstick,
+          wearing a long gray pinstriped coat over a white shirt buttoned to the collar, a black tie
+          and a black underbust corset. She holds her lit cigarette out over the camera and taps it,
+          flakes of ash falling toward the lens. She looks down into the camera with a calm, level
+          stare, her lips closed. Set in a small lamplit office with dark walnut paneling and a
+          green-shaded brass lamp, warm lamplight and soft daylight from a window behind her.
+        passes:
+          - find: >-
+              the woman's head, hair and shoulders, from the top of her hair down to her tie
+            segment: "woman:1 | hand:2"
+            loras: ["vqntz7_krea2_000001200:1"]
+            denoise: 0.5
+            pad: 32
+            subject: >
+              A low-angle photograph looking up at vqntz7 woman in her detective suit, her long hair
+              split down the middle, black on one side and platinum white on the other, looking down
+              into the camera with a calm, level stare, her lips closed. Warm lamplight, walnut
+              paneling behind her, fine film grain.
+  - category: deal
+    word: ASHTRAY
+    cost: 2
+    requires: [conspirator]
+    prompt: Kneel by Miss Carrow's chair and take her ash on your tongue while she smokes. It's degrading, and that's what she wants it for.
+    result:
+      text: |
+        She lights it with a brass lighter and lets you watch her do it. "Mouth open, young man.
+        Tongue out. Further. That's it. Keep it there."
+
+        She smokes it all the way down. She doesn't hurry, and she doesn't look at you between drags.
+        She reads a letter from the trustees and makes notes in the margin, and when the ash gets
+        long she holds the cigarette out over your face and taps it, once, and goes back to the
+        letter. It lands dry and warm, and your mouth fills with the taste of it, bitter and grey.
+        You don't swallow. She hasn't said you can.
+
+        Harker watches from the window seat. "He drools."
+
+        "They all drool, darling. It's a reflex." Miss Carrow puts the end out on your tongue with
+        one short, precise press. The hiss is very loud in the room. She lays the stub on your
+        tongue beside the ash and taps your chin, twice, up.
+
+        "Close. Now swallow. Good boy." She turns the page. "You may thank me."
+      effects:
+        - tracker.change: { nerve: -1 }
+        - card.gain: ashtray-fetish
+      art:
+        loras: ["pvsmk7_krea2_000001250:0.9"]
+        subject: >
+          pvsmk7 smoking POV photo, a worm's-eye view looking straight up from below her chest at a
+          woman of thirty-eight with long loose auburn waves, green eyes, a few freckles and deep
+          wine-red lipstick, wearing a fitted charcoal suit jacket buttoned once at the waist over a
+          cream silk blouse open at the collar, her throat bare, a slim gold watch on her left wrist.
+          She takes a drag, the cigarette between two fingers at her lips. She looks down into the
+          camera with cool, polite contempt, one brow raised. Set in a small lamplit office with dark
+          walnut paneling and shelves of cloth-bound books, warm light from a green-shaded brass lamp.
+        passes:
+          - find: >-
+              the woman's head, hair and shoulders, from the top of her hair down to her jacket button
+            segment: "woman:1 | hand:2"
+            loras: ["imcrw7_krea2_000001200:1"]
+            denoise: 0.5
+            pad: 32
+            subject: >
+              A low-angle photograph looking up at imcrw7 woman in her gray skirt suit, the fitted
+              charcoal jacket buttoned once at the waist over a cream silk blouse open at the collar,
+              her throat bare, the silk collar lying open on her collarbones, taking a drag on a cigarette and looking down into the camera
+              with cool, polite contempt, one brow raised. Warm lamplight, fine film grain.
+  - category: deal
+    word: WORSHIP
+    cost: 2
+    requires: [conspirator]
+    prompt: Worship Miss Carrow's feet, in her stockings and out of her heels, on your knees under her desk. Detective Harker watches.
+    result:
+      text: |
+        "Under the desk."
+
+        It's dark under there and it smells of polish and leather. Her legs are crossed, and the
+        top foot hangs in front of your face in a black patent pump with a heel as thin as a pencil.
+        Her stockings have a seam up the back.
+
+        "Take it off. With your hands, young man, not your teeth. We aren't animals."
+
+        You ease the shoe off her heel and hold it while she flexes her toes inside the nylon,
+        one at a time. Her foot is warm and a little damp from a day of standing. You kiss
+        the arch, and the ball of her foot, and each toe through the sheer black, and she goes on
+        with her letter above you, and every so often she presses the sole flat to your face and
+        holds it there and lets you breathe her through the stocking.
+
+        "Now the shoe," she says. "Inside, where I stand on it."
+
+        The insole is warm leather printed with the shape of her foot. You lick it clean from the
+        heel to the toe, and then the heel itself, its whole length to the metal tip, while she
+        tells Harker about a man who tried to return a library book through the post.
+
+        Harker's boots come across the room. She crouches at the edge of the desk with a cigarette in
+        her mouth and watches. "He's very thorough."
+
+        "He's a volunteer," Miss Carrow says. "I trained him."
+      effects:
+        - tracker.change: { nerve: -1 }
+        - card.gain: heel-fetish
+      # Her suit written out in full (cast.md): with the bare suit phrase step 1200 drew a white shirt
+      # and a black tie, another of her suits (2026-11-11). The open collar is said positively: a
+      # "no tie" puts the word tie in the prompt.
+      art:
+        loras: ["imcrw7_krea2_000001200:1"]
+        subject: >
+          First-person point-of-view photograph from kneeling on the floor under a dark walnut desk,
+          the camera low and level, looking out at imcrw7 woman in her gray skirt suit, the fitted
+          charcoal jacket buttoned once at the waist over a cream silk blouse open at the collar, her
+          throat bare, the silk collar lying open on her collarbones, a slim gold watch on her left wrist, sitting in a
+          leather desk chair with her legs crossed, sheer black stockings with a back seam, her top
+          foot held up close in front of the lens, a black patent stiletto pump dangling half off her
+          heel from her toes. Above the edge of the desk her face looks down at the camera with cool,
+          amused patience, her lips closed. The underside of the desk frames the top of the shot.
+          Warm light from a green-shaded brass lamp on the desk, the rest in soft shadow. 35 mm lens,
+          natural skin texture, fine film grain, shallow depth of field on her foot.
+  - category: talk
+    word: TELL
+    cost: 5
+    requires: [conspirator, rootkit]
+    prompt: Put Juno's USB key on Miss Carrow's desk and tell them everything. It's betraying him to the police, and you won't leave the office the way you came in.
+    result:
+      text: |
+        You put it on the green leather. Teal plastic, a cat sticker. Neither of them touches it
+        while you talk: his apartment, his desk drawer, any desk in the bullpen, they never lock
+        their screens.
+
+        When you've finished, Harker gets up out of the window seat, picks up the key with a
+        tissue and drops it into an evidence bag from her coat pocket. She makes one phone call,
+        about ten words long, and stubs out her cigarette.
+
+        "Watch," Miss Carrow says. She turns the hard chair by the door to face the window, and you
+        sit in it.
+
+        Down in the reading room Harker walks straight down the middle of it, between the long
+        tables, her boots loud on the oak. Juno has his headphones on. He doesn't see her until
+        she closes the laptop on his fingers. She says something you can't hear, and he laughs at
+        it, and she takes him by the wrist and turns him and bends him over his own table among the
+        stickers. The cuffs are on in two clicks. The retirees at the newspaper rack watch all of
+        it.
+
+        At the door he looks back and up, at the window, and finds you in it. He doesn't say
+        anything.
+
+        Harker is back in forty minutes. She hangs her coat on the hook and takes something small
+        out of its pocket, and holds it up for you to see: polished steel, in the palm of her hand.
+
+        "Miss Vance has one of these on now." She puts the cigarettes on the desk. "Men who carry
+        other people's crimes around in their pockets get one too. Trousers, please."
+
+        It's cold, and it locks with a sound like a desk drawer. The key goes on a chain round her
+        neck, inside her shirt.
+
+        "Now," Miss Carrow says. "Back in your chair, young man."
+      effects:
+        - card.lose: rootkitty-usb
+        - card.gain: chastity-cage
+        - card.gain: the-third-chair
+        - move.to: carrow-watch
+      art:
+        loras: ["mtlcg7d_krea2_000001250:1"]
+        subject: >
+          First-person point-of-view photograph from seated eye height in a small lamplit office with
+          dark walnut paneling, the camera level, two paces from a woman in her mid thirties with long
+          hair split down the middle, black on one side and platinum white on the other, straight-cut
+          bangs, smoky dark eyeliner and burgundy lipstick, in a white shirt buttoned to the collar, a
+          black tie and a black underbust corset, standing and framed from the waist up. She holds an
+          empty stainless steel mtlcg7 chastity cage fitting in her palm, held upright beside her
+          shoulder, a tiny brass padlock on it. She looks into the camera with calm, level
+          satisfaction, her lips closed. Behind her, out of focus, a long gray pinstriped coat on a
+          hook and shelves of cloth-bound books. Warm light from a green-shaded brass lamp at the
+          left. 50 mm lens, natural skin texture, fine film grain, shallow depth of field on her eyes.
+        passes:
+          - find: >-
+              the woman's head, hair and shoulders, from the top of her hair down to her corset
+            segment: "woman:1 | chastity cage:1, hand:1"
+            loras: ["vqntz7_krea2_000001200:1"]
+            denoise: 0.5
+            pad: 32
+            subject: >
+              A waist-up photograph of vqntz7 woman in her detective suit without her coat, a white
+              shirt buttoned to the collar, a black tie and a black underbust corset, her long hair
+              split down the middle, black on one side and platinum white on the other, looking into
+              the camera with calm, level satisfaction, her lips closed. Warm lamplight, walnut
+              paneling behind her, fine film grain.
+  # Detective Harker's strap-on: only after TELL (cucked) and while he's locked (caged).
+  - category: deal
+    word: BEND
+    cost: 3
+    requires: [cucked, caged]
+    prompt: Bend over Miss Carrow's desk for Detective Harker and her strap-on, locked in your cage. It's sex, and it's for her.
+    result:
+      text: |
+        Harker takes her coat off and hangs it on the hook, and lays her belt with the badge on it
+        on the desk. The harness comes out of Miss Carrow's bottom drawer, black leather, and she
+        buckles it on over her trousers without taking anything else off. The toy that goes in it
+        is black and thick and longer than your hand.
+
+        "Over the desk," Harker says. "Palms flat. Feet apart."
+
+        Miss Carrow moves her blotter and her pen out of the way and sits back to watch with her
+        tea.
+
+        Harker uses a lot of lubricant and one finger, then two, and doesn't talk. She pushes
+        in an inch at a time, with her hand flat between your shoulder blades holding you down on
+        the green leather, until her hips are against you. The cage presses into the edge of the
+        desk. She waits there until you breathe out, and then she fucks you, long and even, the
+        heels of her boots knocking on the floorboards.
+
+        Everything you have tries to get hard in the steel, and can't. She knows. She slows down
+        and leans close to your ear.
+
+        "That's the cage working," she says. "It's very simple engineering."
+
+        When she's done she pulls out and gives
+        your backside a slap with her open hand that Miss Carrow's teacup rattles at.
+
+        "Thank you, Detective," Miss Carrow says, for you. Then, to you: "Say it."
+      effects:
+        - tracker.change: { body: -1 }
+        - skill.gain: deal
+      art:
+        loras: ["pvstrp9_krea2_000000750:1"]
+        subject: >
+          A pvstrp9 strap-on POV photo, seen from kneeling height in front of her, her face in frame
+          and looking down, a woman in her mid thirties with long hair split down the middle, black
+          on one side and platinum white on the other, straight-cut bangs, smoky dark eyeliner and
+          burgundy lipstick, standing tall wearing a black leather harness buckled on over her black
+          trousers with a thick glossy black dildo, gripping the shaft in one hand, wearing a white
+          shirt buttoned to the collar, a black tie, a black underbust corset, fitted black trousers
+          and black block-heel ankle boots, a small
+          lamplit office with dark walnut paneling and shelves of cloth-bound books behind her, warm
+          light from a green-shaded brass lamp.
+        passes:
+          - find: >-
+              the woman's head, hair and shoulders, from the top of her hair down to her corset
+            segment: "woman:1 | dildo:1, harness:1, hand:2"
+            loras: ["vqntz7_krea2_000001200:1"]
+            denoise: 0.5
+            pad: 32
+            subject: >
+              A low-angle photograph looking up at vqntz7 woman in a white shirt buttoned to the
+              collar, a black tie and a black underbust corset, her long hair split down the middle,
+              black on one side and platinum white on the other, looking down into the camera with a
+              calm, intent stare, her lips closed. Warm lamplight, walnut paneling, fine film grain.
+art:
+  subject: >
+    Eye-level widescreen photograph from standing height just inside the door of a small, warm
+    office under the dome of an old Carnegie library, the camera level. The left two-thirds of
+    the frame look across the room: dark walnut paneling, shelves of faded cloth-bound books, a
+    large walnut desk with a green leather top, a green-shaded brass lamp, a small silver tea tray
+    and a heavy cut-glass ashtray on it, and behind the desk a woman of thirty-eight with long
+    loose auburn waves, green eyes and deep wine-red lipstick in a fitted charcoal suit jacket
+    buttoned once at the waist over a cream silk blouse open at the collar, seated with her legs
+    crossed, looking at the camera with polite severity. In the right third, three paces away, a
+    tall interior window looks down over a round reading room of long tables and green lamps, and
+    in the cushioned window seat beneath it sits a woman in her mid thirties with long hair split
+    down the middle, black on one side and platinum white on the other, straight-cut bangs and
+    burgundy lipstick, in a long gray pinstriped coat over a white shirt, black tie and black
+    underbust corset, her black ankle boots up on the cushion and a lit cigarette in her fingers,
+    glancing at the camera through a thin line of smoke. A plain hard wooden chair stands by the
+    door in the near left corner. Warm lamplight and soft daylight from the dome. 35 mm lens,
+    natural colour, fine film grain, deep focus.
+  passes:
+    - find: the woman seated behind the desk, from the top of her hair down to the desktop
+      segment: woman:2
+      loras: ["imcrw7_krea2_000001200:1"]
+      denoise: 0.5
+      pad: 32
+      subject: >
+        A waist-up photograph of imcrw7 woman in her gray skirt suit, the fitted charcoal jacket
+        buttoned once at the waist over a cream silk blouse open at the collar, her throat bare, no
+        tie, a slim gold watch on her left wrist, seated behind a walnut desk with a green leather
+        top, looking at the camera with polite severity. Warm lamplight, walnut paneling and books
+        behind her, fine film grain.
+    - find: the woman sitting in the window seat with a cigarette, from the top of her hair down to her boots
+      segment: woman:2
+      loras: ["vqntz7_krea2_000001200:1"]
+      denoise: 0.5
+      pad: 32
+      subject: >
+        A photograph of vqntz7 woman in her detective suit and black block-heel ankle boots, her
+        long hair split down the middle, black on one side and platinum white on the other, sitting
+        in a cushioned window seat with her boots up, a lit cigarette in her fingers, glancing at the
+        camera through a thin line of smoke. Soft daylight from the window behind her, fine film
+        grain.

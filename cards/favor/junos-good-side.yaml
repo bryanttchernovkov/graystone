@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# From TALK-FLIRT at Juno's table (hooked). His errand: Miss Carrow's V drawer. Tag charmed opens
+# TAKE-DRAWER at her desk and hides FLIRT. A setback on DRAWER (tag pilfer) is Miss Carrow:
+# carrow-caught, where she gives you the file anyway, after the back room. DEAL-GIVE at his table
+# trades it, and this card, for Juno's Trust.
+id: junos-good-side
+kind: favor
+name: Juno's Good Side
+tags: [charmed]
+text: "\"the librarian has a drawer with a V on it. i want whatever's in it. that's the whole date, dude. so far.\""
+setback_penalty:
+  tags: [pilfer]
+  effects:
+    - move.to: carrow-caught
+art:
+  subject: >
+    Square close photograph from above of a pale man's bare hand resting flat on a dark honey
+    oak library table, broad knuckles and short, bare, unpainted nails cut straight across. On
+    the back of the hand, drawn quickly on the skin in black felt-tip ink, a small cartoon cat
+    with one paw pointing at a little drawn chest of drawers, and nothing else, no lettering.
+    A capped black felt-tip pen lies beside the hand. Beside the hand stands a slim silver energy drink can, and at
+    the top edge of the frame the corner of a black laptop covered in small colorful vinyl
+    stickers of cartoon cats and stars. Soft afternoon daylight from a leaded window at the left
+    and the warm glow of a green-shaded brass lamp. Restrained palette of honey oak, teal, black
+    and lamp green; natural skin texture, fine 35 mm film grain, shallow depth of field on the
+    note.

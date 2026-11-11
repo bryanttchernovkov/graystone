@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../../schema/v3/achievement.json
+id: root-access
+title: Root Access
+text: A teal cat in the First Church, and the IT man's fingerprints on the port. Juno says thank you, in his way.
+hint: "The department's network isn't on the internet. Somebody has to carry it in."
+when: { card: backdoor }
+art:
+  subject: >
+    a photograph from across the bullpen of the old First Church in Graystone, a limestone nave
+    turned into a sheriff's office: rows of gray steel desks with computer monitors under tall
+    stained-glass windows, the scene in the right two-thirds of the frame. In the middle of the
+    frame, behind an empty steel desk at the end of a row, a broad-shouldered, athletic white
+    man of thirty-two with lightly tanned skin, tousled wavy brown hair, a strong square jaw,
+    light stubble and round thin gold wire-rimmed glasses, in an unbuttoned faded red and gray
+    plaid flannel shirt over a plain charcoal T-shirt and worn blue jeans, crouches low beside
+    the desk with one knee on the flagstones, reaching under it with his right arm to the back
+    of a computer tower, a small teal USB stick pinched in his fingers at its port. His face is
+    turned up toward the desks beside him, eyes wide behind his glasses, lips pressed tight,
+    sweating. On the monitor above him a tiny teal cartoon cat glows on a dark screen. Two desks
+    to the right, a woman deputy with a dark brown ponytail sits turned away from him, laughing
+    at her phone, her feet up on an open drawer. She wears the Graystone County Sheriff's
+    uniform: a crisp, pressed tan long-sleeved uniform shirt of heavy cotton twill with a
+    pointed collar, a full button-front placket, two buttoned flap chest pockets piped in vivid
+    azure blue, shoulder epaulets edged in vivid azure blue, an embroidered vivid azure blue and
+    gold patch on each upper sleeve and a polished gold six-point star badge pinned over the
+    left pocket; a vivid, saturated azure blue necktie with a small gold tie bar; tan riding
+    breeches with a vivid azure blue stripe down the outer seam; a black leather duty belt with
+    a polished brass buckle; and stiff, structured, mirror-polished black leather thigh-high
+    riding boots with low, flat stacked-leather riding heels, pulled up over the breeches to
+    mid-thigh; her head is bare. The left third of the frame is the long empty center aisle of
+    the nave receding toward the pulpit steps in soft focus. Red and gold daylight through the
+    stained glass falls across the desks. Palette of limestone, steel gray, tan, azure, flannel
+    red and one point of teal; natural skin texture, fine 35 mm film grain, sharp focus on his
+    face and the USB stick
+  passes:
+    - find: >-
+        the crouching man in the plaid flannel shirt, from the top of his head down to his feet,
+        including his hands
+      segment: man:1
+      loras: ["jack:1"]
+      subject: >
+        a photograph of a man in an unbuttoned faded red and gray plaid flannel shirt over a plain
+        charcoal T-shirt and worn blue jeans, round thin gold wire-rimmed glasses, crouching low
+        beside a gray steel desk with one knee on the flagstones, reaching under it with his right
+        arm to the back of a computer tower, a small teal USB stick pinched in his fingers. His face
+        is turned up, eyes wide behind his glasses, lips pressed tight, sweating. Red and gold
+        daylight, natural skin texture, fine 35 mm film grain, sharp focus on his face

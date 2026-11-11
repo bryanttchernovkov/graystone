@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# From TALK-SIT in Miss Carrow's office, once: tea, cigarettes and the plan to catch Juno. Tag
+# conspirator hides SIT and opens the office's other actions; TELL there also needs his USB key.
+id: tea-upstairs
+kind: favor
+name: Tea Upstairs
+tags: [conspirator]
+text: Two cups on the tray, one ashtray between them, and a third chair by the door with nothing on it but you.
+art:
+  subject: >
+    Square close still-life photograph from above of a small silver tea tray on a dark walnut
+    desk with a green leather top: two white bone-china cups and saucers, one with a deep wine-red
+    lipstick print on its rim and one with a burgundy print, and between them a heavy cut-glass
+    ashtray holding two stubbed-out cigarette ends, each ringed with its own lipstick color, a
+    thin curl of gray smoke still rising from one. A brass lighter lies beside the tray. Warm
+    light from a green-shaded brass lamp at the upper left, soft daylight from a skylight above.
+    Restrained palette of walnut, green leather, white china, wine red and silver; natural
+    texture, fine 35 mm film grain, shallow depth of field on the two lipstick prints.

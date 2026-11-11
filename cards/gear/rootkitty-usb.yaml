@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# From DEAL-HACK in Juno's apartment. Tag rootkit opens RISK-PLANT in the station bullpen (you
+# need the contractor badge to get back there), which spends it for the Backdoor. Carried to
+# Miss Carrow's office instead, it is what her storyline's TELL will need.
+id: rootkitty-usb
+kind: gear
+name: Rootkitty's USB Key
+tags: [rootkit]
+text: Teal plastic, a cat sticker, eight gigabytes, and a county felony on it. "don't lose it. don't plug it into ur own laptop either, it'll eat it."
+art:
+  subject: >
+    Square close still-life photograph of a small teal plastic USB flash drive with its cap
+    off, a tiny glossy sticker of a cartoon cat on its side, lying on a square of black
+    anti-static foam on a cluttered black gaming desk. Out of focus behind it, a keyboard with
+    teal keycaps lit from beneath and a slim silver energy drink can. A strip of teal LED light
+    glows along the top of the frame. Restrained palette of black, teal and steel; natural
+    texture, fine 35 mm film grain, shallow depth of field on the drive.

@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=../../../../../schema/v3/location.json
+# Event: caught with her V drawer. Reached by move.to from Juno's Good Side's setback penalty
+# (pilfer: TAKE-DRAWER at her desk). She hands the file over anyway, for Juno, with a message.
+# TALK-GO gains the V File and goes to the computer corner. Her correction for it (the back room)
+# is the author's to write: a beat TALK-GO can move to instead, ending at library-computers.
+id: carrow-caught
+name: The circulation desk
+description: Miss Carrow between you and the computer corner, a single index card between two fingers, and the whole reading room very quiet.
+arrival:
+  text: |
+    "Young man."
+
+    She is in front of you. You didn't hear the heels come round; you hear them stop. She
+    holds out her hand, palm up, and waits, and you give her the drawer.
+
+    She takes the first card out and reads it, though she wrote it. "Miss Vance sent you." It
+    isn't a question. She puts the card back, squares the drawer's contents with two fingers,
+    and looks at you over it for a while.
+
+    Two retirees at the newspaper rack have stopped turning pages.
+actions:
+  - category: talk
+    word: GO
+    cost: 0
+    always: true
+    prompt: Hear what she's decided. She isn't going to call anyone. You may wish she had.
+    result:
+      text: |
+        She hands the drawer back to you.
+
+        "Take it to him. He may as well see it; I have a copy." She lays the index card she
+        took on top of the others, the right way up for you to read: today's date, the time,
+        and *the IT man*, underlined once.
+
+        "And you will come and see me about this, young man. When I send for you." She steps
+        aside. "Off you go. Walk."
+
+        You walk. Every step of it is loud.
+      effects:
+        - tracker.change: { nerve: -1 }
+        - card.gain: carrows-v-file
+        - move.to: library-computers
+art:
+  loras: ["imcrw7_krea2_000001200:1"]
+  subject: >
+    First-person point-of-view widescreen photograph from standing eye height in an old
+    Carnegie library reading room, the camera level. imcrw7 woman in her gray skirt suit, the
+    fitted charcoal jacket buttoned once at the waist over a cream silk blouse open at the
+    collar, her throat bare, no tie, a slim gold watch on her left wrist, stands an arm's length
+    in front of the lens, framed from her waist up, slightly left of center. She looks directly
+    into the camera, making eye contact with the viewer, with cold, polite disappointment: eyes
+    level and steady, brows lifted a fraction, lips pressed in a small, closed line. Her right
+    hand holds a single cream index card upright between two fingers beside her face, its
+    tiny handwriting too small to read. Behind her, out of focus, curved dark oak shelves of
+    faded cloth-bound books under a copper dome, long reading tables with green-shaded brass
+    lamps. Soft afternoon daylight from a tall arched window. 50 mm lens, natural skin texture,
+    fine 35 mm film grain, shallow depth of field on her eyes.

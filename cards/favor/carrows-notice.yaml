@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# From LOOK-INQUIRE at her desk, once: she writes you onto an index card. Good conduct fills it,
+# never punishment: RECOMMEND and VOLUNTEER at her desk and LOOK-SPY in the computer corner carry
+# `proper` (its slots) and each add a boost. Full, it becomes Miss Carrow's Confidence.
+# Tag noted hides INQUIRE and opens SPY.
+id: carrows-notice
+kind: favor
+name: Miss Carrow's Notice
+tags: [noted]
+text: An index card in the drawer under her desk with your name on it, and so far, nothing against it.
+boost: { capacity: 3, start: 1 }
+on_full: carrows-confidence
+slots:
+  - { match: { tag: proper }, bonus: [ { boost.change: { card: self, amount: +1 } } ] }
+  - { match: { tag: proper } }
+art:
+  subject: >
+    Square close still-life photograph from above of a single cream index card lying on a dark
+    oak desktop, a few short lines of tiny, neat black fountain-pen handwriting along its top,
+    too small to read, and the rest of the card blank. A capped black fountain pen lies across
+    its lower corner, and beside it stands the edge of a long oak card drawer with a small brass
+    label frame. Warm light from a green-shaded brass lamp falls across the card from the upper
+    left, the rest of the desk in soft shadow. Restrained palette of dark oak, cream, brass and
+    black ink; natural texture, fine 35 mm film grain, shallow depth of field on the handwriting.

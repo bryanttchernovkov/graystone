@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../../../schema/v3/card.json
+# From TALK-TELL in Miss Carrow's office (his USB key): Juno arrested, and you watched them.
+# Tag cucked opens Detective Harker's DEAL-BEND there while you are caged. Tag juno-arrested hides
+# his corner in the library: TALK-APPROACH, WORK-LOGIN, LOOK-WATCH and LOOK-SPY in the computer
+# corner and ASK, FLIRT, GIVE and DATE at his table, and opens LOOK-EMPTY there instead.
+id: the-third-chair
+kind: favor
+name: The Third Chair
+tags: [cucked, juno-arrested]
+text: A hard chair by Miss Carrow's door, the best seat in the library, and you don't get to leave it until they're done. Juno's in the Undercroft. You put him there.
+art:
+  subject: >
+    Square still-life photograph of a single plain wooden library chair with a hard seat standing
+    alone by a closed dark oak door with a frosted glass panel, in a lamplit office, seen from
+    seated eye height across a patterned green and cream rug. Over the back of the chair hangs a
+    long gray pinstriped coat, and on the seat lies a pair of polished stainless steel hinged
+    handcuffs, closed. Warm light from a green-shaded brass lamp out of frame at the right, the
+    door and the far wall in soft shadow. Restrained palette of oak, gray pinstripe, steel and
+    lamp green; natural texture, fine 35 mm film grain, shallow depth of field on the chair seat.
