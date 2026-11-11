@@ -2,7 +2,10 @@
 # Event: at Miss Carrow's circulation desk in the Carnegie library. Reached by move.to from
 # TALK-APPROACH in the reading room (its result carries her greeting, so nothing replays here);
 # out goes back to the reading room. Ordinary library business for now; her methods as a
-# disciplinarian come with her storyline.
+# disciplinarian come with her storyline. TAKE-DRAWER is Juno's errand (charmed).
+# Her own chain: INQUIRE gives Miss Carrow's Notice (noted) once; RECOMMEND and VOLUNTEER are good
+# conduct (`proper`) and fill it; full, it is her Confidence (confidant), which opens TALK-ALONE:
+# her office upstairs (carrow-office).
 id: library-desk
 name: The circulation desk
 hub: true
@@ -11,6 +14,7 @@ actions:
   - category: talk
     word: RECOMMEND
     cost: 1
+    tags: [proper]
     prompt: Ask her to recommend a book. She chooses one for you, and she doesn't ask what you like.
     result:
       text: |
@@ -24,9 +28,11 @@ actions:
         it back. Have answers."
       effects:
         - skill.gain: look
+        - boost.change: { card: carrows-notice, amount: +1 }
   - category: work
     word: VOLUNTEER
     cost: 2
+    tags: [proper]
     prompt: Volunteer for the book sale. She has boxes of donations in the back, and standards.
     result:
       text: |
@@ -41,22 +47,72 @@ actions:
         afternoon you're doing it without thinking, and she has stopped coming in.
       effects:
         - skill.gain: work
+        - boost.change: { card: carrows-notice, amount: +1 }
   - category: look
     word: INQUIRE
     cost: 1
+    unless: [noted, confidant]
     prompt: Ask her about the true crime somebody keeps shelving with the gardening books.
     result:
       text: |
-        "Miss Vance." She doesn't look toward the computer corner. "Since March. One book a day,
-        before lunch, always from the same shelf. She thinks I haven't noticed."
+        "Miss Vance." She leans on the *Miss*, and doesn't look toward the computer corner. "Since
+        March. One book a day, before lunch, always from the same shelf. He thinks I haven't
+        noticed."
 
         She writes something on an index card in very small letters and files it in the drawer
         under the desk. You catch the drawer's label as it closes: a single letter, V, and the
         drawer is full.
 
+        Then she takes a fresh card, looks at you over it, and writes on that one too. It goes in
+        a different drawer.
+
         "I notice everything in this room," she says. "It's my room. Is there anything else?"
       effects:
         - skill.gain: look
+        - card.gain: carrows-notice
+  # Juno's errand (charmed): the V drawer. Tag pilfer, so a setback is Juno's Good Side's penalty:
+  # carrow-caught, where she hands it over anyway.
+  - category: take
+    word: DRAWER
+    cost: 3
+    tags: [pilfer]
+    requires: [charmed]
+    unless: [file]
+    prompt: When she goes into the stacks, take the card drawer with the V on it. It's stealing from Miss Carrow, and she notices everything in this room.
+    result:
+      text: |
+        She gets up with a returned book and walks it into the stacks. You count the heels on
+        the oak boards, going away round the curve of the room, and when they're far enough
+        you're round the end of the desk.
+
+        The drawer under the desk has a brass label with one letter in it, and it's heavier
+        than it looks. It comes out on its runners with a long wooden hiss. You put it under your jacket, under
+        your arm, and walk, not fast, toward the computer corner.
+
+        Behind you, a long way off in the stacks, the heels stop.
+
+        Then they start again.
+      effects:
+        - card.gain: carrows-v-file
+  # Her Confidence (confidant): her office upstairs, where Detective Harker waits.
+  - category: talk
+    word: ALONE
+    cost: 1
+    requires: [confidant]
+    prompt: Ask Miss Carrow for a word in private. She takes you up to her office, and she isn't alone up there.
+    result:
+      text: |
+        She finishes the card she's writing before she looks up. Then she caps the pen, stands,
+        and turns the little brass sign on the desk round so it reads BACK IN TEN MINUTES.
+
+        "Upstairs."
+
+        The spiral stair is cast iron and it rings under her heels, every step, all the way up to
+        the gallery. You follow two steps behind, with your eyes on the stair. At the end of the
+        gallery there's an oak door with frosted glass in it and no name on the glass. She opens
+        it, waits for you to go through, and shuts it behind you.
+      effects:
+        - move.to: carrow-office
 art:
   loras: ["imcrw7_krea2_000001200:1"]
   subject: >

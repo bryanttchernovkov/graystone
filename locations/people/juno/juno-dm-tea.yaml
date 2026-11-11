@@ -4,11 +4,11 @@
 # you to wherever you were, without its arrival (ADR 0043 in the engine repo).
 id: juno-dm-tea
 name: A photo from @rootkitty
-description: A bubble tea the size of a paint can, and her teeth on the straw.
+description: A bubble tea the size of a paint can, and his teeth on the straw.
 arrival:
   text: |
-    The phone buzzes. A selfie: her on her bed with a bubble tea the size of a paint can, the fat
-    straw between her teeth, grinning around it. Brown sugar, extra pearls, the works.
+    The phone buzzes. A selfie: him on his bed with a bubble tea the size of a paint can, the fat
+    straw between his teeth, grinning around it. Brown sugar, extra pearls, the works.
 
     *spent ur $15 on this*
 
@@ -18,7 +18,7 @@ arrival:
 
     *say thank u for my drink*
 
-    You type it. She leaves you on read.
+    You type it. He leaves you on read.
   effects:
     - tracker.change: { time: +1 }
     - move.back

@@ -11,14 +11,14 @@ actions:
   - category: look
     word: PREVIEW
     cost: 1
-    prompt: Look at what she gives away for free.
+    prompt: Look at what he gives away for free.
     result:
       text: |
-        The bio says: *23. graystone's only hacker. chastity, tasks, and the thing you keep
-        zooming in on. straight boys welcome. for now.*
+        The bio says: *23. graystone's only hacker. not a girl, stop asking. chastity, tasks, and
+        the thing you keep zooming in on. straight boys welcome. for now.*
 
-        One post is free, and pinned. It's a photo from a library chair, her sneakers up on the
-        table, black joggers, the camera pointed down her own body. The joggers sit wrong at the
+        One post is free, and pinned. It's a photo from a library chair, his sneakers up on the
+        table, black joggers, the camera pointed down his own body. The joggers sit wrong at the
         front. The caption says *yes it's real. no you can't see it.
         $20.*
 
@@ -41,7 +41,7 @@ actions:
               price: { cash: 20 }
               text: |
                 The blur lifts off the grid one square at a time, top left to bottom right, as
-                if she's doing it by hand. Sneakers. Socks. A steel chastity cage on a ribbon. Her,
+                if he's doing it by hand. Sneakers. Socks. A steel chastity cage on a ribbon. Him,
                 from the waist down, in a mirror, with nothing in the way.
 
                 Then a message, before you've finished scrolling: *lol. that was fast. welcome to
@@ -71,7 +71,7 @@ art:
     sofa. The screen's cool white and teal glow is the only light, falling on the keys and the
     wood of the coffee table, the room around it in deep shadow. Natural texture, fine 35 mm
     film grain, shallow depth of field on the screen.
-  # Her LoRA only on the avatar: on the whole frame it printed its trigger as the page's name.
+  # The LoRA only on the avatar: on the whole frame it printed its trigger as the page's name.
   passes:
     - find: the small round profile photograph of the woman on the laptop screen
       segment: round profile photo:1

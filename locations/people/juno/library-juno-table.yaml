@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=../../../../../schema/v3/location.json
 # Event: at Juno Vance's corner table in the library. Reached by move.to from TALK-APPROACH in
-# the computer corner (its result carries her greeting, so nothing replays here); out goes back
-# to the computer corner. Her scenes here are still to come; a later one takes you home with her
-# (juno-apartment-*), from here only.
+# the computer corner (its result carries his greeting, so nothing replays here); out goes back
+# to the computer corner. FLIRT, GIVE and DATE are his chain: DATE takes you home with him
+# (juno-apartment), from here only. All four are hidden once he is arrested (juno-arrested).
 id: library-juno-table
 name: Juno's table
 hub: true
@@ -11,22 +11,102 @@ actions:
   - category: talk
     word: ASK
     cost: 1
-    prompt: Ask what she's working on. She turns the laptop round and shows you.
+    unless: [juno-arrested]
+    prompt: Ask what he's working on. He turns the laptop round and shows you.
     result:
       text: |
-        "Homework." She turns the laptop round. It's a list: library card numbers, down the left,
-        and next to each one the last thing that card looked at on the public computers. She
+        "Homework." He turns the laptop round. It's a list: library card numbers, down the left,
+        and next to each one the last thing that card looked at on the public computers. He
         scrolls. It goes on for a while. Some of the lines are highlighted teal.
 
-        "Teal ones are my subscribers." She turns it back. "Everybody who sits at those computers
-        ends up on my page eventually, dude. It's like gravity." She writes something on a
+        "Teal ones are my subscribers." He turns it back. "Everybody who sits at those computers
+        ends up on my page eventually, dude. It's like gravity." He writes something on a
         sticky note, peels it off and sticks it to the back of your hand: *@rootkitty*, and a
         little drawing of a cat.
 
-        "Twenty bucks a month. Or don't, and keep pretending you're not curious." She puts her
+        "Twenty bucks a month. Or don't, and keep pretending you're not curious." He puts his
         headphones back on. "Either way you're gonna look."
       effects:
         - skill.gain: talk
+  # His chain: FLIRT (hooked) gives Juno's Good Side, his errand for Miss Carrow's V drawer.
+  # GIVE (file) trades the V File and the Good Side for Juno's Trust; DATE (dating) takes you
+  # home with him.
+  - category: talk
+    word: FLIRT
+    cost: 2
+    requires: [hooked]
+    unless: [charmed, dating, juno-arrested]
+    prompt: Tell him you'd like to see him somewhere that isn't your phone. He'll want something for it first.
+    result:
+      text: |
+        "lol." He says it out loud, flat, the way he types it. "Dude. You pay me fifteen bucks a
+        picture, and now you want to hang out."
+
+        He pushes his glasses up and looks at you properly, from your shoes to your face, and
+        takes his time about the middle.
+
+        "Okay. Here's the thing." He tips his head toward the circulation desk without looking
+        at it. "The librarian has a drawer. Under her desk, little brass label, one letter on
+        it. V." He taps his own chest. "She's been writing me up since March. Every day. I want
+        to know what she's got."
+
+        He uncaps a felt-tip, takes your hand by the wrist and turns it over on the table, and
+        draws on the back of it: a cat, pointing at a little chest of drawers.
+
+        "Bring me the drawer, and we'll talk about somewhere that isn't a screen." He lets go.
+        "Don't get caught. She's, like, a whole thing."
+      effects:
+        - card.gain: junos-good-side
+  - category: deal
+    word: GIVE
+    cost: 1
+    requires: [file]
+    unless: [juno-arrested]
+    prompt: Put the V file on his table.
+    result:
+      text: |
+        He sees the brass label first. "No way." Then he's into the cards, flicking through them
+        with one finger, faster and faster, and he starts to laugh.
+
+        "She has my *bus times*." He pulls one out and reads it in an English accent, badly.
+        "*Miss Vance smirked at a patron. Two-forty p.m.*" Another. "*Miss Vance reshelved
+        Capote under Perennials.* Okay, that one's fair."
+
+        Then he gets to the back of the drawer, where the cards stop being about him: card
+        numbers, times, the men at the public computers and what they logged out of in a hurry.
+        He goes quiet and reads three of them.
+
+        "Oh my god. She's been doing my job." He sits back. "She's been doing it *better*."
+
+        He takes one of her cards, turns it over and writes on the back, then works a key off his
+        own keyring, a little rubber cat on it, and puts both in your hand.
+
+        "My address. Don't be weird about it." He's pink across the freckles. "The key's for
+        emergencies. Like if you're bored."
+      effects:
+        - card.lose: carrows-v-file
+        - card.lose: junos-good-side
+        - card.gain: junos-trust
+  - category: talk
+    word: DATE
+    cost: 1
+    requires: [dating]
+    unless: [juno-arrested]
+    prompt: Ask what he's doing tonight. He'll take you home with him.
+    result:
+      text: |
+        He shuts the laptop on the word *tonight*. "Finally. God. I was gonna have to draw you a
+        diagram."
+
+        He walks out of the library ahead of you with his headphones round his neck, past the
+        circulation desk, and doesn't look at it, and waves at it anyway. On Mill Street he
+        hooks a finger through your belt loop and keeps it there for two blocks, talking about a
+        game you've never heard of. The apartment is two rooms over a laundromat, and the stairs
+        smell of dryer sheets.
+
+        "Shoes off," he says at the top. "It's a nice carpet. Don't look at the carpet."
+      effects:
+        - move.to: juno-apartment
 art:
   loras: ["jovessa_krea2_000001200:1"]
   subject: >

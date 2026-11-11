@@ -87,9 +87,21 @@ tags:
   - { id: regular,   name: Regular }   # she has your punch card (hides her opener)
   - { id: favored,   name: Favored }   # the Signora's favorite: she lets you finish
   # The library: Juno Vance (@rootkitty)
-  - { id: subscribed, name: Subscribed } # you pay for her page (hides SUBSCRIBE)
-  - { id: simping,   name: Simping }   # action tag: paying her for another look
-  - { id: hooked,    name: Hooked }    # her simp (opens her later scenes)
+  - { id: subscribed, name: Subscribed } # you pay for his page (hides SUBSCRIBE)
+  - { id: simping,   name: Simping }   # action tag: paying him for another look
+  - { id: hooked,    name: Hooked }    # his simp (opens his later scenes)
+  - { id: charmed,   name: Charmed }   # Juno's Good Side: his errand (opens TAKE-DRAWER at Carrow's desk)
+  - { id: pilfer,    name: Pilfer }    # action tag: a setback on it is Miss Carrow (the Good Side's penalty)
+  - { id: file,      name: File }      # carrying the V File (opens DEAL-GIVE at his table)
+  - { id: dating,    name: Dating }    # Juno's Trust (opens TALK-DATE at his table)
+  - { id: rootkit,   name: Rootkit }   # carrying his USB key (opens RISK-PLANT in the bullpen)
+  # The library: Miss Carrow and Detective Harker
+  - { id: proper,    name: Proper }    # action tag: good conduct in Miss Carrow's sight (fills her Notice)
+  - { id: noted,     name: Noted }     # Miss Carrow's Notice (hides INQUIRE, opens LOOK-SPY)
+  - { id: confidant, name: Confidant } # Miss Carrow's Confidence (opens TALK-ALONE: her office)
+  - { id: conspirator, name: Conspirator } # Tea Upstairs (hides the office introduction, opens the rest)
+  - { id: cucked,    name: Cucked }    # The Third Chair: he watched them (opens Elise's strap-on, while caged)
+  - { id: juno-arrested, name: Juno Arrested } # The Third Chair: hides Juno's table and his corner
   # Deputy Anderson in the station kitchenette
   - { id: marked,    name: Marked }    # written on: her Sharpie on your forehead
   # Deputy Seo's holding cage
@@ -118,6 +130,8 @@ tags:
   - { id: boots,     name: Boots }
   - { id: uniform,   name: Uniform }
   - { id: socks,     name: Socks }
+  - { id: ash,       name: Ash }       # Ashtray Fetish
+  - { id: heels,     name: Heels }     # Heel Fetish
 
 currencies:
   - { id: cash, name: Cash, symbol: "$", start: 40 }

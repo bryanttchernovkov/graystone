@@ -54,6 +54,8 @@ In Graystone, use **only** these, at weight 1, and only when the image shows tha
 | `"Krea2_BDSM Latex-Leather Megapack_V2E09:1"` | optional, for heavier BDSM gear |
 | `"Krea 2 - Strapon Dildo:1"` | strap-on, POV |
 | `fcstng_krea2_000000500:0.9` | **facesitting and ass worship, from under her** (`~/code/prive/loras/pov-facesitting`, step 500, the only usable one; read its README). Trigger `fcstng facesitting POV`. Write it in the caption order: `A fcstng facesitting POV photo taken lying on <ground> with the camera pointing straight up, as a woman lowers herself over the camera, <facing the camera, her front toward the lens / facing away from the camera, her back toward the lens>`, then her in words, one boot on each side of the camera, her thighs or legs rising from the lower corners. Facing: "the plain front of the breeches large in the center of the frame", her face looking straight down. Away: "the seat of the breeches large in the center of the frame", her head turned back over one shoulder. Her face is always "small and high up in the frame". Only the sky or ceiling is around her. **Never write "fly" or "zipper"**: the garment opens at that spot. "A grown woman … a strong mature face" in every prompt: a stated age alone read too young. It shows the approach, never the sit: the prose carries the contact. In the base, with her LoRA as a pass on her top half. Direction is its weak spot (it ignored it in 2 of 4 samples), so check it. Trained on portrait: widescreen is untested (2026-11-05). |
+| `pvsmk7_krea2_000001250:0.9` | **smoking over him, from below** (`~/code/prive/loras/pov-ashtray`, step 1250; read its README). Trigger `pvsmk7 smoking POV`. Write it in the caption order: `pvsmk7 smoking POV photo, a worm's-eye view looking straight up from below her chest at <her in words>, wearing <outfit>. <action phrase>. <face>. Set <place>, <light>.`, with the README's four action phrases verbatim. **Never write "ashtray"** in the prompt: the base draws one. In the base with her in words, her LoRA as a pass on her head and shoulders (`woman:1 \| hand:2`). Used in Carrow's office: SIT (Harker, ash) and ASHTRAY (Carrow, a drag). Untested (2026-11-11). |
+| `pvstrp9_krea2_000000750:1` | **a strap-on, POV from kneeling height** (`~/code/prive/loras/pov-strapon`, step 750; read its README). Trigger `pvstrp9 strap-on POV`. Caption order: `A pvstrp9 strap-on POV photo, <angle>, <her and her pose>, wearing a <harness> with a <colour, material> dildo, <grip>, <clothes>, <background>, <light>.` Its captions say "framed from her chin down"; write "her face in frame and looking down" instead, which step 750 follows. Her LoRA as a pass, cutting the toy and harness (`woman:1 \| dildo:1, harness:1, hand:2`). Used in Harker's BEND. Untested (2026-11-11); replaces `Krea 2 - Strapon Dildo` for this storyline. |
 | `femdom_handjob_krea2_epoch_20:1` | her hand on him: a handjob or hand teasing she gives the player, POV from his eyes (the one exception to framing rule 1) |
 
 Not for this universe: the old facesitting LoRAs (the first not POV; `R2Y1DH5FQY41BT1Y6W67QWP730.nizLuQb9`
@@ -910,10 +912,12 @@ deep wine-red lipstick and a slim gold watch.
 
 Appearance block, in her LoRA's caption words: *imcrw7 woman in her gray skirt suit, the fitted
 charcoal jacket buttoned once at the waist over a cream silk blouse open at the collar, her
-throat bare, no tie, a slim gold watch on her left wrist*. The suit phrase covers the jacket,
+throat bare, the silk collar lying open on her collarbones, a slim gold watch on her left wrist*. The suit phrase covers the jacket,
 blouse and pencil skirt; in full-length shots add *sheer black stockings and black patent
 stiletto pumps*. Step 1200 mixes the neckties of her other suits into the gray one, so the
-open collar and bare throat are always written out. No face, hair or makeup sentence: the LoRA
+open collar and bare throat are always written out, positively: never "no tie", which puts the
+word in the prompt (Krea has no negative prompt). `library-stacks` and `carrow-caught` still say it
+and rendered without one; fix them when they're next redrawn. No face, hair or makeup sentence: the LoRA
 carries all of it. Keep prompts as short as her captions: trigger, pose, framing, expression,
 setting, light. Her hair is loose in every training image; an updo would need spelling out and
 may resist. She and Niamh are both green-eyed redheads: in a frame with both, name each one's
@@ -932,58 +936,108 @@ in full, and "young man" for any man under sixty. Polite to the point of cruelty
 library the way the Sergeant keeps the Undercroft, and they have tea. She knows who
 reshelves her true crime into gardening, and has decided to let it run, for now.
 
-Methods: *to be decided* (a disciplinarian; her storyline comes later).
+Methods: **manners, smoke and her feet.** Over the knee for bad conduct (the back room, the
+author's scene from `carrow-caught`); good conduct gets noticed, on an index card, and a man
+she has noticed long enough is invited upstairs. In her office she smokes and he holds the ash,
+in his hands the first time and on his tongue after; he takes her pumps off with his hands, never
+his teeth, and worships her stockinged feet under the desk. Standing with her: *Miss Carrow's
+Notice*, filled by good conduct (`proper`), full it becomes *Miss Carrow's Confidence*, which
+opens her office (`carrow-office`). Her office is a small walnut room off the upstairs gallery,
+under the dome: green leather desk top, a green-shaded brass lamp, a tea tray, a cut-glass
+ashtray, an inside window over the reading room with a window seat, and a hard chair by the
+door. She calls Harker "darling".
+
+**Detective Elise Harker** (*name is a proposal*) — Graystone County Sheriff's Department, the
+department's one detective, plain clothes. Miss Carrow's partner. No post of her own in town: she
+is always in Carrow's office, in the window seat, smoking.
+LoRA: `vqntz7_krea2_000001200:1`, the author's own (`~/code/prive/loras/char-elise-harker`, read
+its README), step 1200. Her look with it: mid thirties, long loose hair split down the middle,
+black on one side and platinum white on the other, straight-cut bangs, smoky dark eyeliner and
+burgundy lipstick.
+
+Appearance block, in her LoRA's caption words: *vqntz7 woman in her detective suit* (a long gray
+pinstriped coat, a white shirt buttoned to the collar, a black tie, a black underbust corset, black
+trousers and the badge on her belt), plus *black block-heel ankle boots* in full-length shots. No
+face or makeup sentence. The trigger alone on a plain portrait gives all-black hair, so outside
+the suit, or in any prompt without her LoRA (a base with two women, a crop pass outside the
+suit), write out "long hair split down the middle, black on one side and platinum white on the
+other". Smoking is opt-in: write "a lit cigarette". Her hair is loose in every training image.
+
+In a frame with Miss Carrow, the base writes both women out in words, then a pass per woman with her own LoRA (`woman:2`,
+the box picks which). Her coat is the first thing off indoors.
+
+Character: thirty-four, from Chicago, twelve years in a city department and then one
+application to Graystone, which she says she filled in as a joke. Quiet, smart and controlled:
+she listens more than anyone in the county and writes nothing down. Believes men belong in
+chastity, as a matter of public order, and says so in the same voice she uses for the weather.
+Wants Juno in cuffs and a cage "for the fun of it, mostly"; she's been building the case for a
+year and can't prove a line of it. Calls the player "the IT man", to Carrow, while he's in the
+room.
+
+Methods: **the cage, and patience.** A man who sells someone out to her gets what the someone got.
+She keeps the key on a chain inside her shirt. While he's locked, and only then, she takes him
+over Carrow's desk with her strap-on (`pvstrp9`), in silence, and explains the engineering after.
+Standing with her: *The Third Chair* (`cucked`, `juno-arrested`), from TELL.
 
 **Juno Vance** (`@rootkitty`) — at the corner table of the Carnegie library's computer corner,
-on her own laptop. Not police, not anybody's employee.
+on his own laptop. Not police, not anybody's employee.
 LoRA: `jovessa_krea2_000001200:1`, the author's own (`~/code/prive/loras/char-juno-vance`),
-step 1200 (800 keeps the glasses and choker more often but leaks her crop top into other
-outfits). Her look: a trans woman of twenty-three, petite and slim, pale freckled skin,
-brown eyes, dense black and deep teal hair swept to one side, shaved short at one temple and
-falling in long thick waves over the other shoulder, black rectangular glasses, a small silver
-septum ring, a black choker with a silver O-ring and a small silver ear cuff.
+step 1200 (800 keeps the glasses and choker more often but leaks the crop top into other
+outfits). His look: a femboy of twenty-three, petite and slim, pale freckled skin, brown eyes,
+dense black and deep teal hair swept to one side, shaved short at one temple and falling in long
+thick waves over the other shoulder, black rectangular glasses, a small silver septum ring, a
+black choker with a silver O-ring and a small silver ear cuff.
 
-Appearance block, in her LoRA's caption words: *jovessa woman in her usual black outfit* (a
-black ribbed crop tank, an open oversized black bomber jacket slipping off her shoulders, black
+**He passes.** Juno is a boy, and in town almost nobody knows it: the retirees, the deputies and
+the men at the public computers take him for a girl, and he lets them. His page sells the
+difference. So **his prompts stay as they are**: the art draws what the town sees, `jovessa
+woman`, in her LoRA's caption words, with no change to any existing prompt. Prose says he and
+him; where a scene is the player's first look at him, it may see the girl first. For the scenes
+where the truth is shown ("i'll know"), add `<lora:femboy_krea2:1>` (untested with `jovessa`:
+base with the femboy LoRA, his face as a pass, as in the other achievement art).
+
+Appearance block, in the LoRA's caption words: *jovessa woman in her usual black outfit* (a
+black ribbed crop tank, an open oversized black bomber jacket slipping off the shoulders, black
 drawstring joggers and worn black-and-white low-top canvas sneakers), plus *wearing her black
 rectangular glasses and a black ring choker*: the bare trigger dropped both once at step 1200.
 No face, hair or outfit sentence otherwise: the LoRA carries all of it. Keep prompts as short as
-her captions: trigger, pose, framing, expression, setting, light. Outdoors, spell the outfit out
-in colors. Her other trained looks: *in her purple cosplay suit*, *in an orange inmate jumpsuit,
+its captions: trigger, pose, framing, expression, setting, light. Outdoors, spell the outfit out
+in colors. Other trained looks: *in her purple cosplay suit*, *in an orange inmate jumpsuit,
 barefoot*, and three ordinary outfits written out in full (a faded black graphic T-shirt and
 olive cargo shorts; a dark green plaid flannel shirt over a black T-shirt; a sheer black mesh
 top and a dark teal pleated midi skirt). The shaved side is on one side only; don't ask for a
-mirrored or flipped shot. Her headphones are prose only (none in her dataset).
+mirrored or flipped shot. His headphones are prose only (none in the dataset).
 
-Her laptop (when it's in frame): *a plain black laptop, the back of its lid covered edge to edge
+His laptop (when it's in frame): *a plain black laptop, the back of its lid covered edge to edge
 in small, colorful vinyl stickers of cartoon cats, stars, hearts and lightning bolts, none of them
 with any lettering*. "Edge to edge" matters: with a few stickers the model put an Apple logo on
-the lid. (Her dataset's laptop is gray; if a render follows it, that's fine.)
+the lid. (The dataset's laptop is gray; if a render follows it, that's fine.)
 
-**In public she is dressed.** Her nudity belongs to her own photos (the SIMP beats) and to
-private scenes later. `jovessa` was trained on 30 clothed photos, full length included, so her
-library table shot frames her from the knees up with a sneaker on the other chair. If a render
-opens her clothes, frame her from the waist up behind the table edge. Her explicit scenes are
+**In public he is dressed.** His nudity belongs to his own photos (the SIMP beats) and to
+private scenes later. `jovessa` was trained on 30 clothed photos, full length included, so the
+library table shot frames him from the knees up with a sneaker on the other chair. If a render
+opens the clothes, frame him from the waist up behind the table edge. Explicit scenes are
 untested with this LoRA.
 
-Character: twenty-three, Graystone born, two years of a computer science degree before she got
+Character: twenty-three, Graystone born, two years of a computer science degree before he got
 bored and came home. Lives online. The library has free wifi, quiet, and a steady supply of men
-using the public computers for things they shouldn't, and she has read every one of their
+using the public computers for things they shouldn't, and he has read every one of their
 browser histories. Runs **@rootkitty**, a subscription page: chastity tasks for men who pay for
-them, and her cock, which is the point. Confident, mean and tomboyish: a gamer's trash talk, not
+them, and his cock, which is the point. Confident, mean and bratty: a gamer's trash talk, not
 a sorority girl's (that's Anderson). Calls men "dude", "loser", and, when they've earned it,
-"good little faggot", cheerfully. Texts in lowercase, with "lol".
+"good little faggot", cheerfully. Texts in lowercase, with "lol". Miss Carrow calls him "Miss
+Vance", and means it as an insult; he has decided to find that funny.
 
-Methods: **the hook.** She doesn't take men; she lets them come to her. A photo, a price, a dare.
-She gets straight men curious about her dick and then makes them say it out loud, and every time
-they pay for another look she reminds them what that makes them. Chastity is how she keeps a man
-thinking about her between messages. Standing with her is the card *Subscribed: @rootkitty*;
-full, it becomes *Rootkitty's Simp*.
+Methods: **the hook.** He doesn't take men; he lets them come to him. A photo, a price, a dare.
+He gets straight men curious about the girl in the corner, then shows them what she has, and
+makes them say it out loud; every time they pay for another look he reminds them what that makes
+them. Chastity is how he keeps a man thinking about him between messages. Standing with him is
+the card *Subscribed: @rootkitty*; full, it becomes *Rootkitty's Simp*.
 
-Art: her photos come to the player's phone (the phone held sideways in his POV hands, the photo
-filling its landscape screen), shot in her bedroom at home; or she's shot across the library
-table. Her bulge is shown through her joggers; when she shows more, the frame is on her and
-her hand, per the framing rules (his body never).
+Art: his photos come to the player's phone (the phone held sideways in his POV hands, the photo
+filling its landscape screen), shot in his bedroom at home; or he's shot across the library
+table. His bulge is shown through the joggers; when he shows more, the frame is on him and
+his hand, per the framing rules (the player's body never).
 
 ## Places in town
 

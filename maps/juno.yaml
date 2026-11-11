@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=../../../schema/v3/map.json
 # Juno Vance's storyline: events only, reached by move.to.
-# Her table: TALK-APPROACH in the library's computer corner. Her page: LOOK-SCROLL on the laptop
+# His table: TALK-APPROACH in the library's computer corner. His page: LOOK-SCROLL on the laptop
 # at home. Bottom row: the photos SIMP buys, beats reached from anywhere that end in move.back.
-# Room is kept for her apartment (juno-apartment-*), reached later from her table.
+# JA: his apartment, reached only by TALK-DATE at his table; out goes to Mill Street.
 id: juno
 name: Juno Vance
 legend:
@@ -13,12 +13,14 @@ legend:
   D3: juno-dm-socks
   D4: juno-dm-selfie
   D5: juno-dm-video
+  JA: juno-apartment
 grid: |
-  JT .. JP .. ..
+  JT .. JP .. JA
   .. .. .. .. ..
   D1 .. D2 .. D3
   .. .. .. .. ..
   D4 .. D5 .. ..
 portals:
-  - { from: library-juno-table, dir: out, to: library-computers, cost: 0, prompt: You leave her to it. }
+  - { from: library-juno-table, dir: out, to: library-computers, cost: 0, prompt: You leave him to it. }
   - { from: juno-page, dir: out, to: home-laptop, cost: 0, prompt: You close the tab. }
+  - { from: juno-apartment, dir: out, to: mill-street, prompt: You let yourself out. The door sticks; you have to pull it hard. }

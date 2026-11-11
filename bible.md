@@ -64,9 +64,9 @@ machine-made; one is a style, a pattern of them is a tell.
 - **No "not X, not Y" and no "X. Not Y."** State what it is.
 - **Break the rhythm.** No runs of *Then…* openings, no strings of *and… and… and*, no group of
   three where two or four is true.
-- **One voice per woman.** Each has her own words for control (Anderson's phone and "babe",
+- **One voice per character.** Each has their own words for control (Anderson's phone and "babe",
   Ashby's ranks and orders, Seo's notebook and nicknames, the Signora's counts). "I'll know" is
-  Juno's, because she can see his screen; not every woman makes him say it again, louder.
+  Juno's, because he can see the player's screen; not everyone makes him say it again, louder.
 - **A detail is used once.** A description of a woman, a boot or a sock appears in one scene;
   the next scene finds a different detail. Search the storyline for repeats before committing.
 

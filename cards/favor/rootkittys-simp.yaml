@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=../../../../schema/v3/card.json
-# Subscribed: @rootkitty, full. Tag hooked opens her later scenes (her table, her apartment);
+# Subscribed: @rootkitty, full. Tag hooked opens his later scenes (his table, his apartment);
 # subscribed keeps SUBSCRIBE hidden. SIMP stays: the same random photo beats, from anywhere but
 # custody.
 id: rootkittys-simp
 kind: favor
 name: Rootkitty's Simp
 tags: [subscribed, hooked]
-text: She renamed herself in your phone. It's a teal heart and the word "owner", and you can't change it back.
+text: He renamed himself in your phone. It's a teal heart and the word "owner", and you can't change it back.
 actions:
   - category: deal
     word: SIMP
@@ -14,10 +14,10 @@ actions:
     tags: [simping]
     unless: [cuffed, inmate, nude]
     price: { cash: 15 }
-    prompt: Tip @rootkitty fifteen dollars. She sends a picture for it, and you don't get to pick which.
+    prompt: Tip @rootkitty fifteen dollars. He sends a picture for it, and you don't get to pick which.
     result:
       text: |
-        You send it. Fifteen dollars, and in the note the only thing she lets you write:
+        You send it. Fifteen dollars, and in the note the only thing he lets you write:
         *for you, juno.*
 
         Three dots. They stop. They start again.

@@ -4,12 +4,12 @@
 # you to wherever you were, without its arrival (ADR 0043 in the engine repo).
 id: juno-dm-socks
 name: A photo from @rootkitty
-description: The soles of her socks, right up at the camera.
+description: The soles of his socks, right up at the camera.
 arrival:
   text: |
-    The phone buzzes. A photo from her bed: her feet, right up at the camera, the soles of her
+    The phone buzzes. A photo from his bed: his feet, right up at the camera, the soles of his
     white socks gone gray with a day's wear, toes curled toward the lens. Behind them, small and
-    far away, her face, smirking.
+    far away, his face, smirking.
 
     *been in these since 8am*
 

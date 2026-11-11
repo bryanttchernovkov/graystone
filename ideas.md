@@ -41,8 +41,9 @@ Ideas for graystone
 ## V0.2.3:
 - [ ] Betray graybloods; whenever on a grayblood mission, we can 'betray' by talking to Seo; this is the way to earn Seo's date/affection. As well as an achievement 'No blood on the streets' 
 - [ ] Juno track; Juno doubles as hacker; We should have some mission track ideas;
-  - [ ] Sabotage the GSD ; find a way inside (for example, contractor badge), and upload a usb drive. The USB drive is the card to carry that has the crime
-- [ ] Strapon lora; probably for ashby/voss maybe?
+  - [x] Sabotage the GSD ; find a way inside (for example, contractor badge), and upload a usb drive. The USB drive is the card to carry that has the crime
+  - [x] Or keep the USB key and betray him to Miss Carrow and Detective Harker (`carrow-office` TELL; see `storyline-plan.md`)
+- [x] Strapon lora; probably for ashby/voss maybe? (`pvstrp9`, first used for Detective Harker's BEND)
 - [ ] Badge bunny mission
   - [ ] Date with Ashby
   - [ ] 'Findom' Shopping afternoon with Anderson

@@ -1,11 +1,19 @@
 # yaml-language-server: $schema=../../../schema/v3/map.json
 # Miss Carrow's storyline: events only, reached by move.to. Her desk: TALK-APPROACH in the
-# library's reading room. Out goes back to the reading room.
+# library's reading room. Out goes back to the reading room. CC: caught with her V drawer
+# (Juno's errand), which goes on to the computer corner. CO: her office upstairs, from TALK-ALONE
+# at her desk (confidant); out goes back to the reading room. CW: the watching beat after TELL.
 id: carrow
 name: Miss Carrow
 legend:
   LD: library-desk
+  CC: carrow-caught
+  CO: carrow-office
+  CW: carrow-watch
 grid: |
-  LD
+  LD .. CC
+  .. .. ..
+  CO .. CW
 portals:
   - { from: library-desk, dir: out, to: library-stacks, cost: 0, prompt: She goes back to her card. You go back to the room. }
+  - { from: carrow-office, dir: out, to: library-stacks, cost: 0, prompt: You go back down the iron stair. It rings under you all the way. }

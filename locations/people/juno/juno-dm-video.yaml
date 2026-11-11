@@ -4,16 +4,16 @@
 # you to wherever you were, without its arrival (ADR 0043 in the engine repo).
 id: juno-dm-video
 name: A video from @rootkitty
-description: Ten seconds of her face, close, saying it.
+description: Ten seconds of his face, close, saying it.
 arrival:
   text: |
-    The phone buzzes, and it isn't a photo. It's a video, ten seconds long. Her face, very close,
-    lit by a laptop. She isn't smiling.
+    The phone buzzes, and it isn't a photo. It's a video, ten seconds long. His face, very close,
+    lit by a laptop. He isn't smiling.
 
-    "Say it," she says, low. "Say you want it. Out loud, wherever you are. I'll know if you
+    "Say it," he says, low. "Say you want it. Out loud, wherever you are. I'll know if you
     don't."
 
-    The video ends on her laughing.
+    The video ends on him laughing.
 
     You say it. Quietly, but you say it. A second later: *good boy. see? that wasn't so hard. it
     will be tho*

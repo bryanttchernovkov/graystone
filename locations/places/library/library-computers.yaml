@@ -1,7 +1,9 @@
 # yaml-language-server: $schema=../../../../../schema/v3/location.json
 # The Carnegie library, turned around: the computer corner by the arched window, four public
-# computers, and Juno Vance at the corner table on her own laptop, small in the background.
-# TALK-APPROACH takes you to her table (her storyline). Out goes to Mill Street.
+# computers, and Juno Vance at the corner table on his own laptop, small in the background.
+# TALK-APPROACH takes you to his table (his storyline). Out goes to Mill Street. LOOK-SPY is good
+# conduct for Miss Carrow (noted, `proper`). Once Juno is arrested (juno-arrested, The Third
+# Chair) everything about him is hidden and LOOK-EMPTY shows his table without him.
 id: library-computers
 name: The library, the computer corner
 hub: true
@@ -11,22 +13,25 @@ actions:
     word: APPROACH
     cost: 1
     always: true
-    prompt: Go over to the woman at the corner table.
+    unless: [juno-arrested]
+    prompt: Go over to the girl at the corner table.
     result:
       text: |
         She doesn't take the headphones off. She doesn't look up, either. You stand at the
-        corner of her table long enough to read the stickers on her laptop lid, a cat, a star,
-        a lightning bolt, another cat, and she types the whole time.
+        corner of the table long enough to read the stickers on the laptop lid, a cat, a star,
+        a lightning bolt, another cat, and the typing doesn't stop.
 
-        Then she pushes one ear cup back with a finger and looks at you over her glasses.
+        Then one ear cup gets pushed back with a finger, and you're looked at over the glasses.
 
-        "Dude. You've been looking at me since you walked in." She pulls the other chair out with
-        her foot. "Sit. Don't touch the stickers."
+        "Dude. You've been looking at me since you walked in." It's a boy's voice, light and
+        bored, and he grins at your face while you hear it. He pulls the other chair out with
+        his foot. "Sit. Don't touch the stickers."
       effects:
         - move.to: library-juno-table
   - category: work
     word: LOGIN
     cost: 1
+    unless: [juno-arrested]
     prompt: Use a public computer for an hour. Somebody left their session open.
     result:
       text: |
@@ -34,10 +39,10 @@ actions:
         grid of photos, every one of them blurred, and a price under each. The profile picture
         is a girl in thick black glasses sticking her tongue out at the camera.
 
-        You look up. The girl in the corner is looking at you over the top of her laptop, with
-        her tongue in her cheek.
+        You look up. The one in the corner is looking at you over the top of the laptop, with
+        a tongue in one cheek.
 
-        "Close the tab," she says, not quietly, "or subscribe. Those are the two options."
+        "Close the tab," he says, not quietly, "or subscribe. Those are the two options."
 
         Two retirees at the newspaper rack turn around to look at you. You close the tab, and
         answer an hour of email, and your ears stay hot for most of it.
@@ -46,17 +51,56 @@ actions:
   - category: look
     word: WATCH
     cost: 1
+    unless: [juno-arrested]
     prompt: Sit at a terminal and watch the room.
     result:
       text: |
         Men come in to use the computers. They look around before they sit down, and they sit
         with their backs to the wall, and they all look at the corner table at least once.
 
-        She notices every one of them. She doesn't look up to do it; she types something, and
+        He notices every one of them. He doesn't look up to do it; he types something, and
         the man's screen flickers, and he logs out fast and leaves without his library card. By
-        three o'clock she has a little stack of them by her elbow, and she's sorting them.
+        three o'clock he has a little stack of them by his elbow, and he's sorting them.
       effects:
         - skill.gain: look
+  # Miss Carrow's Notice (noted): watching him for her is good conduct, and fills it.
+  - category: look
+    word: SPY
+    cost: 1
+    tags: [proper]
+    requires: [noted]
+    unless: [juno-arrested]
+    prompt: Keep an eye on the corner table for Miss Carrow, and tell her what you see. It's informing on Juno.
+    result:
+      text: |
+        You take the terminal nearest the window, where the glass gives you his screen backwards.
+        He's in somebody's email. Then a bank. Then a page with a teal banner, where he counts
+        something with his lips moving and laughs out loud, and the retirees at the newspaper
+        rack look over and look away.
+
+        At four he takes his headphones off and goes to the restroom, and leaves the laptop open
+        on the table, unlocked. Nobody else in the room looks at it. You don't touch it.
+
+        On your way out you stop at the circulation desk. She listens without looking up, and
+        writes as you talk: the bank, the time, the laptop left open.
+
+        "Thank you, young man." She blots the card. "That was very useful."
+      effects:
+        - skill.gain: look
+        - boost.change: { card: carrows-notice, amount: +1 }
+  # Juno arrested (juno-arrested): his table, empty.
+  - category: look
+    word: EMPTY
+    cost: 0
+    requires: [juno-arrested]
+    prompt: Look at the corner table.
+    result:
+      text: |
+        The table's been wiped down. Somebody has put the chair back square. A single cat sticker
+        is still stuck to the underside of the tabletop, where the laptop used to sit, and the
+        cleaner missed it, or didn't try.
+
+        Two men are at the public computers. Neither of them looks round.
 art:
   loras: ["jovessa_krea2_000001200:1"]
   subject: >

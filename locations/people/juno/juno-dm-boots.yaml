@@ -4,11 +4,11 @@
 # you to wherever you were, without its arrival (ADR 0043 in the engine repo).
 id: juno-dm-boots
 name: A photo from @rootkitty
-description: Her sneakers, up on her desk.
+description: His sneakers, up on his desk.
 arrival:
   text: |
-    The phone buzzes. A photo: her sneakers, up on her desk at home, crossed at the ankle between
-    the keyboard and an energy drink, the cuffs of her joggers going up out of the frame. The
+    The phone buzzes. A photo: his sneakers, up on his desk at home, crossed at the ankle between
+    the keyboard and an energy drink, the cuffs of his joggers going up out of the frame. The
     soles are filthy. There's a library book under the heel of one of them. It's overdue.
 
     *had these since junior year. they've been places u never will*

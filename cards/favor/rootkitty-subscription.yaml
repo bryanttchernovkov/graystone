@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=../../../../schema/v3/card.json
-# Juno Vance's page, paid for. Gained from DEAL-SUBSCRIBE on her page (tag subscribed hides it
+# Juno Vance's page, paid for. Gained from DEAL-SUBSCRIBE on his page (tag subscribed hides it
 # after). SIMP, tagged simping, works from anywhere but custody (cuffed, inmate): a random photo
 # beat, and a die on a slot raises the card. Full, it becomes Rootkitty's Simp.
 id: rootkitty-subscription
 kind: favor
 name: "Subscribed: @rootkitty"
 tags: [subscribed]
-text: Twenty dollars a month, and she can see every time you open the app.
+text: Twenty dollars a month, and he can see every time you open the app.
 boost: { capacity: 4, start: 1 }
 on_full: rootkittys-simp
 slots:
@@ -19,10 +19,10 @@ actions:
     tags: [simping]
     unless: [cuffed, inmate, nude]
     price: { cash: 15 }
-    prompt: Tip @rootkitty fifteen dollars. She sends a picture for it, and you don't get to pick which.
+    prompt: Tip @rootkitty fifteen dollars. He sends a picture for it, and you don't get to pick which.
     result:
       text: |
-        You send it. Fifteen dollars, and in the note the only thing she lets you write:
+        You send it. Fifteen dollars, and in the note the only thing he lets you write:
         *for you, juno.*
 
         Three dots. They stop. They start again.

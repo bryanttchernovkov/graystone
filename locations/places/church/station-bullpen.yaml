@@ -3,8 +3,9 @@
 # aisle. Reached only through DEAL-SIGN at the front desk (contractor). East: the sacristy
 # kitchenette; south: the gym in the annex out back; up: the Sheriff's office; out: back past the
 # front desk to the narthex. Down is the Undercroft, which you don't walk into. The printer job
-# (FIX / SERVICE) ends the visit: Niamh takes the badge and walks you out. RISK-SNOOP carries `snoop`, so
-# a setback on it is the Sheriff (the badge's penalty); the printer itself is safe to work on.
+# (FIX / SERVICE) ends the visit: Niamh takes the badge and walks you out. RISK-SNOOP and RISK-PLANT
+# (Juno's USB key, rootkit) carry `snoop`, so a setback on them is the Sheriff (the badge's
+# penalty); the printer itself is safe to work on.
 id: station-bullpen
 name: The bullpen
 tags: [law]
@@ -199,6 +200,35 @@ actions:
       effects:
         - skill.gain: look
         - boost.change: { card: character, amount: +1 }
+  # Juno's job (rootkit): his USB key in a deputy's computer. Tag snoop, so a setback is the
+  # Sheriff (the badge's penalty). Spends the key for the Backdoor.
+  - category: risk
+    word: PLANT
+    cost: 3
+    tags: [snoop]
+    requires: [rootkit]
+    prompt: While nobody's looking, plug Juno's USB key into a deputy's computer. It's a crime against the department, inside the department.
+    result:
+      text: |
+        The desk at the end of the row is empty, the chair pushed back, a cardigan over it and a
+        half-eaten yogurt by the keyboard. The screen isn't locked. Juno was right about that.
+
+        You crouch as if you've dropped a pen. The tower is under the desk, and the ports are on
+        the back of it, in the dark, by feel. The stick goes in on the third try. A tiny teal cat
+        blinks on the screen above you, once, and is gone.
+
+        Two desks over a deputy laughs at something on her phone and says, "Oh, she did *not*."
+        Nobody looks your way.
+
+        You pull the stick out, stand up, and walk back down the nave like a normal person.
+        Halfway down, your phone buzzes in your pocket.
+
+        *im in*
+
+        *lol. u know ur kind of a criminal now right*
+      effects:
+        - card.lose: rootkitty-usb
+        - card.gain: backdoor
 art:
   subject: >
     Eye-level widescreen photograph from standing height at the back of the nave of an old
