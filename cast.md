@@ -46,17 +46,18 @@ In Graystone, use **only** these, at weight 1, and only when the image shows tha
 |---|---|
 | `hngcf5_krea2_000001500:0.9` | handcuffs, any image with cuffs in it, **except the Undercroft's** (see `pvprsn7`). **Graystone's road cuffs are hinged** (county issue, every deputy's): two cuffs joined by a solid steel block, no chain, in prose and art. Write "closed polished stainless steel hngcf5 hinged handcuffs" plus a size phrase ("about the length of her hand and wrist", "each cuff a little wider than the wrist"); don't name their parts. Closed only: open cuffs are unreliable. Trained on cuffs held in a hand; lying flat works in the LoRA's showcase. |
 | `pvprsn7v3_krea2_000001250:1` | **the Undercroft, from the inmate's own eyes** (`~/code/prive/loras/pov-prison-life`, v3 step 1250; read its README). A first-person view looking down at his own body in a bright orange jumpsuit (baked in: never name it), bare hairy forearms and bare feet, in **Ashby's own kit**, which is the Undercroft's in prose and art: polished steel chain handcuffs, the chain padlocked with a brass padlock to a worn brown leather waist belt, steel leg irons on bare ankles, and, after CLIMB, black leather mitts with the cuff and a brass padlock locked over each. Like `pvarst7`, it is the exception to framing rules 2, 6 and 7: write it in the LoRA's caption order, `pvprsn7 POV prisoner photo, a first-person view looking down at his own body, <pose>, his bare pale hairy forearms in the foreground. <restraints, in the caption phrases>. <her and what she does>. <what the view shows around them>, <light>.` **Four poses only**, as trained: standing with her standing close ("her tan uniform shirt … fills the top of the frame … her boots stand on the flagstones just in front of his bare toes"; never "the top of her head" on a standing woman, it shrinks her), standing or on the cot edge with her kneeling at his ankles ("the top of her head, the shoulders of her uniform shirt, and her hands …"), seated at her desk with her across it (the only pose that shows her face), and lying back on the cot with what lies past his feet. Prose has to match: he is barefoot in county orange from TERMS on, and her cuffs have a chain. Used in TERMS, APPEAL, PROMISE, CLIMB, WAIT and the Prison Chains and Mitts cards. Not with `hngcf5` (it draws its own cuffs) or the cage LoRAs. |
-| `pvarst7_krea2_000002250:0.8` | the arrest itself: POV from the arrested man's own shoulder, looking at his arm cuffed behind his back while she grips his forearm and holds the second cuff (the three `*-arrest` images). Write it in the LoRA's caption order: `pvarst7 POV arrest photo, a first-person view from the arrested man's own shoulder, looking down past his right shoulder at his right arm…`, his plain heather gray T-shirt, blue jeans and bare forearm (fixed by the LoRA), her on the side of his cuffed arm, "no jewelry" or each accessory named, bare-handed or her gloves, "grips his forearm just above the polished steel hinged handcuff locked on his wrist and holds the empty second cuff, closed, in her other hand", then her expression, the place and the light. It draws the hinged cuffs itself: no `hngcf5` with it. Lying face down (Seo) says "looking back past his right shoulder along his back" instead of looking down. Seo's two arrests load `sorenji` 0.9 and it together in one image. Redoing them with it alone in the base and `sorenji` in a short pass above the cuffs wasn't worth it, so they were restored (2026-11-02): the pass only kept her hair pink at `sorenji` 1 and denoise 0.5 with the bob named, her brows stayed pinched, she still knelt despite "legs straight", and the base's wharf cuff came out as a loose chain. Weights: `pvarst7` at 0.8 and the character LoRA a notch down (`tfny7` 0.9, `ashby7` 0.8, `sorenji` 0.9); at 1 + 1 the renders looked over-sharpened. Keep the prompt close to the caption order: spelling out his shoulder and a twisted arm, or saying his head is out of frame, made it worse (2026-10-28). Vary the T-shirt colour, side, lens and her expression between images. **Stay inside what the LoRA was trained on**: him standing (or face down, for Seo), her beside his cuffed arm, the place only as background. **Every one of its 30 training captions is the same pose**: he stands upright, the camera looks down past his shoulder, his shirt fills the near side, his head is never in frame, and the place is only background ("Set in …", one sentence; dataset in `~/code/prive/loras/pov-getting-arrested/dataset`). Bent over a counter or table is out of domain: the model falls back to a two-shot, a reseed doesn't change it, and the woman's LoRA fills the second person (Ashby's station arrest drew "him" as a second Ashby, locs and all, 2026-10-31; the café arrest only got away with it, his face is in frame). Put tables and counters behind her, and the bending in the prose. Write new arrests as a training caption with her block swapped in. **Ashby: use the left-side pose** (her on the left, his left arm). On the right, even in the caption pose, `ashby7` put her locs and build on his near shoulder; mirrored it came out clean (2026-10-31). Her own LoRA has POV cuffing shots (dataset 33, 34) with the viewer as a forearm from the bottom edge only, so it has no man's body to draw near the lens. Show the counter or the table in the prose, not the image. |
+| `pvarst7_krea2_000002250:0.8` | the arrest itself: POV from the arrested man's own shoulder, looking at his arm cuffed behind his back while she grips his forearm and holds the second cuff (the three `*-arrest` images). Write it in the LoRA's caption order: `pvarst7 POV arrest photo, a first-person view from the arrested man's own shoulder, looking down past his right shoulder at his right arm…`, his plain heather gray T-shirt, blue jeans and bare forearm (fixed by the LoRA), her on the side of his cuffed arm, "no jewelry" or each accessory named, bare-handed or her gloves, "grips his forearm just above the polished steel hinged handcuff locked on his wrist and holds the empty second cuff, closed, in her other hand", then her expression, the place and the light. It draws the hinged cuffs itself: no `hngcf5` with it. Lying face down (Seo) says "looking back past his right shoulder along his back" instead of looking down. Seo's two arrests load `sorenji` 0.9 and it together in one image. Redoing them with it alone in the base and `sorenji` in a short pass above the cuffs wasn't worth it, so they were restored (2026-11-02): the pass only kept her hair pink at `sorenji` 1 and denoise 0.5 with the bob named, her brows stayed pinched, she still knelt despite "legs straight", and the base's wharf cuff came out as a loose chain. Every arrest also ends with a face-and-hair pass of her own LoRA at full weight (`find: the woman's face and hair`, `segment: woman's head`, denoise 0.5, 2026-11-07): sharing the base with `pvarst7` let her likeness drift, and the pass leaves the pose and cuffs alone. Weights: `pvarst7` at 0.8 and the character LoRA a notch down (`tfny7` 0.9, `ashby7` 0.8, `sorenji` 0.9); at 1 + 1 the renders looked over-sharpened. Keep the prompt close to the caption order: spelling out his shoulder and a twisted arm, or saying his head is out of frame, made it worse (2026-10-28). Vary the T-shirt colour, side, lens and her expression between images. **Stay inside what the LoRA was trained on**: him standing (or face down, for Seo), her beside his cuffed arm, the place only as background. **Every one of its 30 training captions is the same pose**: he stands upright, the camera looks down past his shoulder, his shirt fills the near side, his head is never in frame, and the place is only background ("Set in …", one sentence; dataset in `~/code/prive/loras/pov-getting-arrested/dataset`). Bent over a counter or table is out of domain: the model falls back to a two-shot, a reseed doesn't change it, and the woman's LoRA fills the second person (Ashby's station arrest drew "him" as a second Ashby, locs and all, 2026-10-31; the café arrest only got away with it, his face is in frame). Put tables and counters behind her, and the bending in the prose. Write new arrests as a training caption with her block swapped in. **Ashby: use the left-side pose** (her on the left, his left arm). On the right, even in the caption pose, `ashby7` put her locs and build on his near shoulder; mirrored it came out clean (2026-10-31). Her own LoRA has POV cuffing shots (dataset 33, 34) with the viewer as a forearm from the bottom edge only, so it has no man's body to draw near the lens. Show the counter or the table in the prose, not the image. |
 | `HandgagPOV_Krea2_v1:1` | her gloved or bare hand over the viewer's mouth |
 | `mtlcg7d_krea2_000001250:1` | a chastity cage in frame. Graystone has **one cage: a small stainless steel chastity cage**, the county's standard issue and Juno's alike, in prose and art. The LoRA suits a POV shot of a woman holding it, empty, as a threat or a tease: write the LoRA's own phrase, "an empty stainless steel mtlcg7 chastity cage fitting in her palm", held up in her hand beside her face. Not "dangling by its padlock" (a lattice ball on a chain at the Undercroft desk), and keep chains and other steel out of the shot. **Not for the viewer wearing one** (those come later, with their own LoRA). Lying on a table is untested. |
 | `undrft_krea2_000001500:1` | **Seo's trampling**, from flat on the floor (`~/code/prive/loras/pov-stepped-on`, step 1500; read its README). Trigger `undrft underfoot POV`. Write it in the caption order: `An undrft underfoot POV photo taken lying flat on <floor> with the camera pointing straight up at <ceiling or sky>, as <the sole, its material and colour> stomps straight down toward the camera`, then her in words, the standing-stomp sentence from the README, and only the ceiling or sky "directly overhead". No walls or furniture: they sit her down. Close her clothes at the hips (the breeches do). Goes in the base, with her own LoRA as a pass on her top half only. Used in TRAMPLE and RIGHTS. Trained on portrait strips: widescreen is untested (2026-11-02). |
 | `pvotk7_krea2_000002000:0.9` | **spanking, from across something**, POV (`~/code/prive/loras/pov-otk-get-spanked`, step 2000; read its README). Trigger `pvotk7 POV over-the-knee`. Write it in the caption order. Trained only on a lap (the Sheriff's couch), but a hood in place of the seat and a standing woman hold up (Voss's hood; her art lessons have the details). In the base, with her LoRA as a pass. Watch for his head coming into frame. An exception to framing rules 2, 6 and 7, like `pvarst7`. |
 | `"Krea2_BDSM Latex-Leather Megapack_V2E09:1"` | optional, for heavier BDSM gear |
 | `"Krea 2 - Strapon Dildo:1"` | strap-on, POV |
-| `"R2Y1DH5FQY41BT1Y6W67QWP730.nizLuQb9:0.5"` | facesitting, from under her looking up: she faces the lens and looks down at it |
+| `fcstng_krea2_000000500:0.9` | **facesitting and ass worship, from under her** (`~/code/prive/loras/pov-facesitting`, step 500, the only usable one; read its README). Trigger `fcstng facesitting POV`. Write it in the caption order: `A fcstng facesitting POV photo taken lying on <ground> with the camera pointing straight up, as a woman lowers herself over the camera, <facing the camera, her front toward the lens / facing away from the camera, her back toward the lens>`, then her in words, one boot on each side of the camera, her thighs or legs rising from the lower corners. Facing: "the plain front of the breeches large in the center of the frame", her face looking straight down. Away: "the seat of the breeches large in the center of the frame", her head turned back over one shoulder. Her face is always "small and high up in the frame". Only the sky or ceiling is around her. **Never write "fly" or "zipper"**: the garment opens at that spot. "A grown woman … a strong mature face" in every prompt: a stated age alone read too young. It shows the approach, never the sit: the prose carries the contact. In the base, with her LoRA as a pass on her top half. Direction is its weak spot (it ignored it in 2 of 4 samples), so check it. Trained on portrait: widescreen is untested (2026-11-05). |
 | `femdom_handjob_krea2_epoch_20:1` | her hand on him: a handjob or hand teasing she gives the player, POV from his eyes (the one exception to framing rule 1) |
 
-Not for this universe: the old facesitting LoRA (not POV), both chain-cuff LoRAs
+Not for this universe: the old facesitting LoRAs (the first not POV; `R2Y1DH5FQY41BT1Y6W67QWP730.nizLuQb9`
+undressed her, retired 2026-11-05 for `fcstng`), both chain-cuff LoRAs
 (`SA86RN444WSD83T4QX4PYS3P80`, the "clejuso" cuffs, retired 2026-10-26 for the hinged ones, and
 `Krea2_Metal Cuffs_V6E8`).
 
@@ -83,7 +84,7 @@ retest did: `ashby7` at 1 with `mtlcg7d` at **2** gave a hand-sized cage (DEAL T
 | `ashby7` + `pvcg5` (worn cage) | 0.9 + 0.9 | no complaints yet |
 | `ashby7` + `pvprsn7` (Undercroft POV) | 0.8 + 1 | confirmed (TERMS, APPEAL, PROMISE, CLIMB, 2026-10-31): no cuffs on her wrists, no locs on him. All four poses held; "seated on the cot edge" tends to come out leaning back with legs out, which still reads |
 | `ashby7` + `HandgagPOV` / `femdom_handjob` | 0.9 + 1 | fine |
-| `ashby7` + facesitting `R2Y1…` | 0.9 + **0.5** | the act LoRA goes *down*: at 0.7 and 1 it undresses her |
+| `fcstng` base, her LoRA as a pass | 0.9, then hers at her usual weight, denoise 0.5 | untested (OFFER, `voss-track-face`, `voss-track-kiss`, RESPECT, 2026-11-05) |
 | `tfny7` (Anderson) + `hngcf5` | 1 + 1.5 | untested; same training recipe as `ashby7`, so boosted |
 | `ferrina` (Giardano) + `pvcg5` / `femdom_handjob` | 0.9 + 0.9 / 0.9 + 1 | untested with `ferrina` (it replaced `DMilfModel7`, which was fine at 1 + 0.9) |
 | prop LoRA alone (cards) | 0.9–1 | as the README says |
@@ -96,11 +97,11 @@ it head-sized by perspective (DEAL TERMS). Use the caption wording "held upright
 shoulder", with the camera two paces back.
 
 **Facesitting and handjobs always use their LoRA.** Every result, card or ending image that
-shows facesitting carries `"R2Y1DH5FQY41BT1Y6W67QWP730.nizLuQb9:0.5"`, shot from under her
-looking up (Ashby's OFFER at Cell Three is the reference). Every image of her hand on him, a
+shows facesitting or ass worship carries `fcstng_krea2_000000500:0.9`, shot from under her
+looking up (Ashby's OFFER at Cell Three, facing; Voss's `voss-track-kiss` and Red's RESPECT, facing
+away). Every image of her hand on him, a
 handjob or hand teasing, carries `femdom_handjob_krea2_epoch_20:1`, POV looking down (the
-Signora's FINISH in the back room and Ashby's ASK at Cell Three). Neither act is shot without its LoRA. One exception: Voss's
-`voss-track-face`, where the facesitting LoRA kept drawing her bare, so the frame stops at her belt and the prose carries the act.
+Signora's FINISH in the back room and Ashby's ASK at Cell Three). Neither act is shot without its LoRA.
 
 ## The camera is the player
 
@@ -270,10 +271,9 @@ One image takes about seven minutes; test one image per change, never a batch.
 - **Viewer leaks.** Shots from the cot or the floor with her legs spread above or across the lens
   (boot on the cot rail with her leg raised, a woman lowering herself onto the lens) make the
   model add the viewer's penis, or draw intercourse. So:
-  - **Facesitting** uses the facesitting LoRA and is shot **from under her, looking up**: she
-    sits on the lens facing it, fully in uniform, her breeches' crotch and thighs filling the
-    bottom of the frame, her bust above, looking down into the camera. (Before that LoRA it was
-    shot from behind, the moment before.)
+  - **Facesitting** uses `fcstng` and is shot **from under her, looking up**: she stands over the
+    lens and lowers herself, fully in uniform, her face small and high up, looking down into the
+    camera. See the kink LoRA table for the wording.
   - **Boot worship** at the cot is a **detail shot**, from the toe to just above the knee, with
     no hip or crotch in frame.
 - **Heels:** say "low, flat stacked-leather riding heels", or talk of a "heel" turns the riding
@@ -325,7 +325,7 @@ One image takes about seven minutes; test one image per change, never a batch.
   blue stripe down each outer seam" on breeches that filled the frame rendered as broad azure
   panels over half of each thigh, and "a thin piping line" still left azure blotches. When the
   breeches fill the frame, leave the stripe out altogether.
-- **The facesitting LoRA undresses her.** "The crotch … of her tight tan riding breeches" with
+- **The old facesitting LoRA (`R2Y1…`, retired) undressed her.** "The crotch … of her tight tan riding breeches" with
   the facesitting LoRA drew bare genitals through the breeches (OFFER, 2026-10-26), and so did
   "fully clothed … opaque twill" with the fly and seam named. With the LoRA at 0.7 and "one smooth
   unbroken expanse of khaki cloth from her belt to her knees" (no fly or seam), a hint remained.
@@ -737,8 +737,68 @@ boot, but it sat her down on the gravel when her body was named behind the boot 
 only her two boots, both shafts leaving the top of the frame, fixed that. With his boots nearest the lens, the rest of
 him drew itself lying beyond them. Being tried: his hips nearest the lens and his feet far off. A license in her teeth
 reads badly, so leave it to the prose. Naming the whole patrol car in a shot of its hood draws a second car. On
-`voss-track-face`, Ashby's wording and a last no-LoRA box pass still left her bare at the bottom edge. What worked: no
-facesitting LoRA, and the frame stops at her belt.
+`voss-track-face`, Ashby's wording and a last no-LoRA box pass still left her bare at the bottom edge with the old
+facesitting LoRA. Stopping the frame at her belt worked until `fcstng` replaced it (2026-11-05).
+
+Art lesson (segment passes, 2026-11-05): when GroundingDINO scores a `segment` label under its threshold, the mask comes
+back empty with no error, the pass redraws nothing, and the base is saved without her LoRA. A black mask preview is the
+sign. `voss-track-face` scored 0.336 on "woman in a green bomber jacket" against 0.719 on "woman in a tan uniform", so
+that image uses the second label. The threshold went to 0.25 for a while and is back at 0.35 (2026-11-07): SAM2Segment
+outlines every GroundingDINO detection above it, anywhere in the image, and merges them, so at 0.25 it took in her, him and
+the furniture, and the mask came out as Qwen's whole box. `sheriff-spanking` gave the same rectangle for "woman in a green
+jacket" and for "woman's head". At 0.35 a weak label gives an empty mask (the base is kept unchanged), which is the safer
+failure: pick a label that scores. GroundingDINO keeps a detection when any one word of the label matches
+(`logits.max` over the words), so every label with "woman" in it also picks up her whole body: "woman's head" is no
+tighter than "woman in a green jacket". For a face-only pass use `segment: face` (2026-11-08, `sheriff-spanking`).
+Qwen's `find` box doesn't narrow either: it gave the Sheriff the same whole-woman box for "head, shoulders and
+raised arm" and for "face and hair".
+
+Art lesson (SAM3, 2026-11-08): `krea2-pass-segment.json` now outlines with ComfyUI's own `SAM3_Detect` on
+`sam3.1_multiplex_fp16.safetensors` (in `models/checkpoints`, from Comfy-Org/sam3.1), not GroundingDINO and SAM2. SAM3
+scores the whole label as one concept per detection, so "woman's head" should mean her head, not her body. Its outline is
+still multiplied by Qwen's box: the box picks who, the label picks what. Threshold 0.5 (its default); below it the mask is
+empty and the base is kept. The outline grows 12 px and is blurred 8 px, as SAM2Segment did. Labels are short noun phrases
+(32 tokens at most). Commas separate labels, each its own detection, and `label:N` keeps the N best of each; without
+`:N` it keeps one. A `|` splits the label into keep and cut: `"woman:1 | hand:2, hairbrush:1"` outlines her, then takes
+out her hands and the brush (the cut grows 24 px, past the keep's 12). Without a `|` nothing is cut. `face` alone fixed the
+Sheriff's face but kept the base's plain army jacket and the wrong tie; a character pass takes all of her and cuts what
+touches him or what the base got right.
+
+Segment labels for SAM3 (2026-11-08, every pass relabelled): the Qwen box picks who, the label picks what, so labels are
+plain nouns with a count. A person is `woman:1` or `man:1` (`woman:2` when another woman is in the frame, as in
+`not-raymond-reddington`; the box keeps the right one). Cut what her LoRA mustn't touch: her hands and the cuffs on an
+arrest (`"woman:1 | hand:2, handcuffs:2"`, `find: the woman in uniform`), her hands on a spanking, the breeches and boots
+over the lens on facesitting (`"woman:1 | pants:1, boots:2"`), the boots on a trample (`"woman:1 | boots:2"`). His hand
+under the cuff is `"hand:3 | woman:1"`, so her hand never takes his repair. A character pass runs before any small repair
+inside her (the patch on `anderson-arrest`), or her LoRA undoes it. The outline grows 16 px and is blurred 16 px
+(was 12 and 8: the couch showed a seam at the edge of the Sheriff's mask); the cut grows 32 px. The old notes above describe
+GroundingDINO; recheck each label's mask preview the first time it runs on SAM3.
+
+Art lesson (small subjects, 2026-11-09): a segment pass used to sample the whole frame and keep only the mask, so a
+small background figure (Niamh at the counter in `not-raymond-reddington`, a face about 40 px wide) got a handful of
+latent cells, a smeared face, and a full-frame prompt that composed a big woman nobody kept. Now the workflow crops the padded box
+plus a 35% margin, scales it up to the base's own 2.07 MP (at most 4x, at most 2048 px on the long side), redraws it
+there, and scales it back down through the same mask: drawing big and shrinking keeps more detail than drawing small.
+Only a crop that would grow less than 1.25x (a figure filling most of the frame) keeps the full-frame path. A crop
+pass costs about what a full-frame pass does (~6 min here). In `not-raymond-reddington` all three passes crop. A pass that takes the crop path describes
+the crop, not the wide shot: "a waist-up photograph of <her> behind a counter", her pose as the base drew it.
+
+Art lesson (pass boxes, 2026-11-07): a character pass whose box reaches another body paints her clothes on it. The
+`sheriff-spanking` and `voss-hood` boxes ran down over his backside, and `lorbrandt`/`mrvx7` drew uniform cloth and a
+cushion there. Qwen ignores a cut-off like "down to the middle of her chest" and boxes the whole person, and when the
+`segment` outline spills over (her, his body, the seat) the mask is just that box: check that the mask preview has her
+shape and isn't a rectangle. When she touches him, the pass covers her face and hair only (`find: the woman's face and
+hair`, `segment: woman's head`, `pad: 32`); the base draws her uniform, her hands and the pose. Both spanking images
+show him bare and red, which the prose now matches. A box pass without `segment` at denoise 0.7–0.8
+pastes a hard-edged rectangle: in `not-raymond-reddington` it drew a second, giant Niamh over the counter while the base
+had already drawn her. Box-only passes stay at about 0.5 and on small props; when the base gets someone right, leave her.
+
+Art lesson (checkpoint and sampler, 2026-11-05): Graystone renders on `Krea2-SAT-IORv3-q4_k.gguf` with `euler_ancestral` and
+`sgm_uniform`, 8 steps, CFG 1, at 1920x1080 (the model page's settings, except the size). K-WALUAN with `fcstng` drew Voss
+exposed through every wording; Krealism held. With `beta`, Krealism and SAT-IOR both looked cooked (an embossed, crinkled
+flannel in `under-arrest`, crackled boots); `sgm_uniform` fixed it at full size, so 1280x720 isn't needed. Plain `euler` was
+sharper in faces and hair, but `euler_ancestral` gave the more natural fabric (`under-arrest` only, so far). It also moves the
+composition more than a scheduler change does, and its one arrest drew a short chain between the hinged cuffs: watch for it.
 
 Art lesson (props, 2026-11-04): "blood-red" draws blood. The crown on `grayblood-runner` dripped onto a spattered mat,
 and `reds-package` grew blood on the seat, so say "faded brick red" or leave it out. On `sounds-like-a-seventy-one`, the patrol

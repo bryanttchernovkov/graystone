@@ -57,3 +57,17 @@ art:
     across the marble, empty bentwood chairs and a tall brass-framed front window full of
     daylight. Bright daylight through the window backlights her, a hard highlight along the steel
     cuff, natural skin texture, fine film grain, 35 mm lens.
+  # Her face pass (2026-11-07): the arrest LoRA shares the base with hers, so her likeness drifts.
+  # SAM3 (2026-11-08): all of her minus her hands and the cuffs, at full weight; the pose, cuffs and
+  # his arm stay the base's.
+  passes:
+    - find: the woman in uniform
+      segment: "woman:1 | hand:2, handcuffs:2"
+      pad: 32
+      denoise: 0.5
+      loras: ["ashby7_krea2_000001200:0.9"]
+      subject: >
+        A first-person arrest photo from beside a man's shoulder, ashby7 woman in her sheriff's uniform, tan with an azure tie, her face
+        and her long black locs gathered at the nape, looking up at the viewer with cold,
+        controlled force, dark eyes hard, lips pressed thin. A bright café window behind her,
+        natural skin texture, fine film grain.

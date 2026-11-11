@@ -22,7 +22,7 @@ art:
   # Her pass first, him last: her outline caught his head and gave him her hair and hoops when he went first.
   passes:
     - find: the crouching woman in the green bomber jacket, from the top of her hair down to her boots
-      segment: woman in a green bomber jacket
+      segment: woman:1
       loras: ["mrvx7_krea2_000001200:0.9"]
       subject: >
         mrvx7 woman in her patrol jacket uniform, a twenty-two-year-old highway patrol deputy, crouching on gravel with her
@@ -30,7 +30,7 @@ art:
         victory-roll bangs with a cherry-red section, gold hoops, tan riding breeches and black thigh-high riding boots.
         Low sun, fine film grain.
     - find: the man lying on the gravel, from the top of his head down to his feet
-      segment: man in plaid shirt
+      segment: man:1
       loras: ["jack:1"]
       subject: >
         a broad-shouldered white man of thirty-two with short tousled wavy brown hair, light stubble and round thin gold

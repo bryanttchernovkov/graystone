@@ -48,7 +48,7 @@ art:
   passes:
     - find: >-
         the naked man standing in the cage, from the top of his head down to the bottom of the image
-      segment: naked man
+      segment: man:1
       loras: ["jack:1"]
       subject: >
         the booking area of a busy small-county sheriff's station at night, seen from inside a
@@ -92,7 +92,7 @@ art:
     - find: >-
         the woman with the dusty-pink bob at the booking counter, from the top of her hair down to
         the bottom of the image, including both of her hands
-      segment: woman with pink hair
+      segment: woman:1
       loras: ["sorenji_krea2_000001400:1"]
       subject: >
         the booking area of a busy small-county sheriff's station at night, seen from inside a

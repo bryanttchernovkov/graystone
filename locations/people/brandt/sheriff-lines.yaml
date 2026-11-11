@@ -63,7 +63,7 @@ art:
     fine 35 mm film grain, shallow depth of field on the pen and her eyes.
   passes:
     - find: the seated woman in the olive-green jacket, from the top of her hair down to the desktop, including her folded arms
-      segment: woman in a green jacket
+      segment: woman:1
       loras: ["lorbrandt_krea2_000001200:1"]
       subject: >
         lorbrandt woman in her uniform, the jacket buttoned, seated upright behind a large walnut desk, leaning back in

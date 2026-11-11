@@ -24,7 +24,7 @@ art:
     the lamp. Palette of dark walnut, olive green, brass and hot red skin; natural skin texture, fine 35 mm film grain.
   passes:
     - find: the woman seated behind the desk, from the top of her hair down to the desktop
-      segment: woman in a green jacket
+      segment: woman:1
       loras: ["lorbrandt_krea2_000001200:1"]
       subject: >
         lorbrandt woman in her uniform, the jacket buttoned, seated behind a large walnut desk under a round

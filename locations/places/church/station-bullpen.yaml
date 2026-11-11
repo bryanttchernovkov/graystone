@@ -58,14 +58,17 @@ actions:
         loras: ["nivdoyle_krea2_000001200:1"]
         # Written like her captions: her LoRA has this shot (dataset 17), and no belt, badge or boots.
         # "Kneeling height" knelt her down and "sheriff's bullpen" drew a deputy's kit (2026-11-02).
+        # "Church … pulpit" drew pews and a pulpit with no office in sight (2026-11-06): the office is
+        # named object by object, the church only as walls and one window.
         subject: >
           nivdoyle woman in her uniform, standing beside a jammed gray office printer with a
           crumpled sheet of paper caught in its rollers, leaning toward the camera with one
           forearm on the printer's lid, holding out a white mug with the word "visitor" written
           on it in red marker, looking straight into the lens with bright, teasing approval and a
-          wide, delighted smile, waist-up, seen from a slightly low angle, the nave of an old
-          limestone church behind her with the stone steps of a pulpit and tall stained-glass
-          windows, soft red and gold daylight through the stained glass.
+          wide, delighted smile, waist-up, seen from a slightly low angle, behind her, out of focus, a busy open-plan office: rows of gray steel desks with computer monitors,
+          phones and stacked paperwork, gray filing cabinets, a cork bulletin board crowded with notices and a
+          chain-link holding cage, inside pale limestone walls under one tall stained-glass window, soft red
+          and gold daylight through the stained glass.
   - category: work
     word: SERVICE
     cost: 2

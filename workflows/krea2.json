@@ -56,8 +56,8 @@
       ],
       "steps": 8,
       "cfg": 1,
-      "sampler_name": "euler",
-      "scheduler": "beta",
+      "sampler_name": "euler_ancestral",
+      "scheduler": "sgm_uniform",
       "denoise": 1,
       "model": [
         "91",
@@ -140,7 +140,7 @@
   },
   "71": {
     "inputs": {
-      "unet_name": "realismByStableYogi_v25GGUF.gguf"
+      "unet_name": "Krea2-SAT-IORv3-q4_k.gguf"
     },
     "class_type": "UnetLoaderGGUF",
     "_meta": {

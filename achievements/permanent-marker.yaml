@@ -37,7 +37,7 @@ art:
     - find: >-
         the man in the plaid flannel shirt, from the top of his head down to his feet or the bottom
         of the image, including his hands
-      segment: man in plaid shirt
+      segment: man:1
       loras: ["jack:1"]
       denoise: 0.35
       subject: >
@@ -70,7 +70,7 @@ art:
     - find: >-
         the blonde woman leaning against the counter, from the top of her hair down to the bottom of
         the image, including both of her hands
-      segment: blonde woman
+      segment: woman:1
       loras: ["tfny7_krea2_000000800:1"]
       subject: >
         a small police station kitchenette under fluorescent light, a coffee machine, a microwave

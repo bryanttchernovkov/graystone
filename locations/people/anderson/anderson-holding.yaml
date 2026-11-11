@@ -38,8 +38,8 @@ actions:
         She reads it back to you with one letter wrong, then a different letter wrong, and
         waits each time for you to correct her, and each time says, "That's what I said."
 
-        She gets up, holds her phone to the chain-link and takes your booking photo through
-        it.
+        She gets up, opens the cage door and stands in it with her phone up, and takes your
+        booking photo.
 
         "Chin up. No, up. Okay, now you look like you're about to cry. Perfect. Hold that."
         She looks at the picture and shows it to the deputy at the next desk, who snorts.
@@ -52,26 +52,24 @@ actions:
       art:
         loras: ["tfny7_krea2_000000800:1"]
         subject: >
-          First-person point-of-view widescreen photograph from seated eye height on a steel
-          bench inside a chain-link holding cage, the camera level, looking out through the
-          cage's galvanized chain-link mesh, which stands in the extreme foreground with the
-          lens pressed close behind it, soft and out of focus, its diamond pattern running
-          unbroken across the whole frame from edge to edge. Half a pace beyond the mesh, on the
-          far side of it, tfny7 woman in her tfny7 uniform stands alone, framed from the waist
-          up, holding a black smartphone up toward the lens in her bare right hand, its camera
-          lens aimed at the viewer, its glowing screen turned toward her. She looks over the top
-          of the phone directly into the camera, making eye contact with the viewer, with
-          mocking, delighted amusement: green eyes bright and narrowed, one dark brow arched,
-          berry lips spread in a teasing grin. Her bare left hand holds a clipboard with a
-          manila arrest form flat against her chest. Behind her, the nave of an old
-          deconsecrated limestone Gothic Revival church built of smooth dressed limestone ashlar
-          blocks laid in straight courses with thin mortar joints, converted into a sheriff's
-          bullpen: gray steel desks, tall pointed stained-glass windows throwing colored light
-          and dark oak roof beams. Cool fluorescent light over the desks lights her face, with
-          colored shafts from the stained glass behind her. Restrained palette of pale
-          limestone, uniform tan, vivid azure blue, galvanized steel gray, platinum blonde and
-          stained-glass red and gold; natural skin texture, fine 35 mm film grain, focus on her
-          eyes above the phone.
+          Eye-level photograph from seated height inside a chain-link holding cage, looking out
+          through its open door: the door's galvanized steel pipe frame and chain-link mesh stand
+          soft and out of focus at the left and right edges of the frame. In the open doorway, one
+          pace from the lens, sharp and in focus, tfny7 woman in her tfny7 uniform, alone, the long
+          sleeves of her tan shirt buttoned at the wrists, stands facing the lens, framed from the
+          waist up, holding a black smartphone up at chin height in her bare right hand, its back
+          and camera lens toward the viewer, its glowing screen toward her. She looks over the top
+          of the phone directly into the camera, making eye contact with the viewer, with mocking,
+          delighted amusement: green eyes bright and narrowed, one dark brow arched, berry lips
+          spread in a teasing grin. Her bare left hand holds a clipboard with a manila arrest form
+          flat against her chest. Nothing of the viewer is in frame. Behind her, out of focus, the
+          nave of an old deconsecrated limestone Gothic Revival church built of smooth dressed
+          limestone ashlar blocks laid in straight courses with thin mortar joints, converted into
+          a sheriff's bullpen: gray steel desks, tall pointed stained-glass windows throwing
+          colored light and dark oak roof beams. Cool fluorescent light over the desks lights her
+          face. Restrained palette of pale limestone, uniform tan, vivid azure blue, galvanized
+          steel gray, platinum blonde and stained-glass red and gold; natural skin texture, fine
+          35 mm film grain, focus on her eyes above the phone.
   - category: deal
     word: INVENTORY
     cost: 1

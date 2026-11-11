@@ -7,26 +7,32 @@ when: { location: station-arrest }
 art:
   # Reddington's surrender on the FBI seal in The Blacklist's pilot, without the swagger: Eli on
   # the county's seal, ashamed, Ashby walking up behind him with the cuffs and Niamh watching.
-  # No hngcf5: at this distance it drew a sliver of steel in her fist. Niamh's counter faces the
+  # Her cuffs are the county's hinged ones (cast.md), in words only: hngcf5 in the base drew a sliver
+  # of steel at this distance, and as a box pass it changed nothing. Niamh's counter faces the
   # camera in the background, like the booth in the reference: "at the far right" pushed her out of
-  # frame, and her bare hands are written out because Ashby's gloves and chevrons bled onto her.
+  # frame; standing "behind the counter" at six paces she stood in front of its end, right behind
+  # Eli, whose head hid her arm (2026-11-08), so she sits eight paces back with both arms on it; and her bare hands are written out because Ashby's gloves and chevrons bled onto her.
   subject: >
-    A wide eye-level photograph across the narthex of an old deconsecrated limestone church
-    converted into a sheriff's station, the scene in the right two-thirds of the frame, the left
-    third quiet: pale limestone wall, worn flagstones and an empty wooden pew. Set into the
+    A wide eye-level photograph across the front lobby of a small-town county sheriff's station in an
+    old limestone building, the scene in the right two-thirds of the frame, the left third quiet: a
+    pale limestone wall with a corkboard of pinned notices and a framed county map, worn flagstones
+    and a plain wooden visitors' bench. Three people are
+    in the room: a kneeling man in the middle, a woman sergeant walking up behind him on the left, and a
+    red-haired woman seated behind a reception counter at the back on the right. Set into the
     flagstones in the middle of the floor is a big round bronze sheriff's seal, three paces across,
     with a raised six-point star and a smooth, blank bronze rim. In the middle of the frame, four
-    paces from the lens, a man kneels in the very center of the seal facing the camera, the seal
-    spreading all around his knees, upright on both knees, both hands behind his head with the
-    fingers laced, his elbows sagging forward, his shoulders slumped and his head bowed, looking down
-    at the floor in front of his knees. The man is a broad-shouldered, athletic white man of
+    paces from the lens, a man kneels upright on both knees in the very center of the seal, facing the camera, his two knees
+    side by side on the bronze and his thighs straight up under him, the seal spreading all around his
+    knees. Both his hands are on the back of his head with the fingers laced together, his elbows held
+    out wide to either side, his shoulders slumped and his head bowed, looking down at the floor in
+    front of his knees. The man is a broad-shouldered, athletic white man of
     thirty-two with lightly tanned skin, tousled wavy brown hair, a strong square jaw, light stubble
     and round thin wire-rimmed glasses, in a faded red and gray plaid flannel over a charcoal T-shirt,
     clean, unripped, faded blue work jeans and scuffed brown work boots, ashamed, his cheeks flushed,
     his eyes lowered, his mouth pressed shut. Beside his knee, set down very neatly on the seal, is
     his black canvas laptop bag. Behind him and to the left, three paces further from the camera with
     a clear gap between them, her boots on the flagstones beyond the far edge of the seal, a woman
-    sergeant walks toward his back out of a tall pointed stone arch, in no hurry at all: a Black woman
+    sergeant walks toward his back out of a plain open doorway to the offices, in no hurry at all: a Black woman
     in her early thirties with dark brown skin, a broad-shouldered athletic build and her long black
     locs gathered at the nape. She wears the Graystone County Sheriff's uniform: a crisp, pressed tan
     long-sleeved uniform shirt with two flap chest pockets piped in vivid azure blue, vivid azure blue
@@ -36,61 +42,74 @@ art:
     buckle, tan riding breeches, the same khaki tan as her shirt, with a vivid azure blue stripe down
     the outer seam, stiff, structured, mirror-polished black leather thigh-high riding boots with
     rigid straight shafts and low, flat stacked-leather riding heels pulled up over the breeches to
-    mid-thigh, and black leather gloves. Her right hand is raised at shoulder height, holding up one
-    pair of polished steel handcuffs, two cuffs joined by a short chain, in plain view against the
-    stone. She looks down at the back of his head with a level, unimpressed stare, one eyebrow arched.
-    In the background on the right, eight paces from the camera and well inside the frame, to the
-    right of the kneeling man, a long reception counter of dark polished oak stands against the
-    limestone wall with its front facing the camera. Behind the counter, facing the camera, sits a
-    woman of twenty-seven, visible from the chest up above it, with copper-ginger waves swept over her
-    left shoulder, green eyes, freckles, dark red lipstick and black rectangular glasses, in a tan
-    uniform shirt with azure trim and an azure tie, no chevrons on her sleeves, her chin propped on
-    one bare hand with red nails, no gloves, watching the kneeling man with one brow raised. Natural
-    colour, cool daylight through stained glass and warm light on polished stone, fine 35 mm film
-    grain, deep focus.
-  # Passes (ADR 0052): Ashby, then Eli, then Niamh. Eli's stops at his waist: over the jeans, `jack`
-  # drew mud and rips twice. Niamh's mask came out all black with "woman with red hair" and with
-  # "woman in a tan uniform", though her box is right; the box alone at 0.7 painted her out and left
-  # the empty chair the subject asked for (2026-11-02). So: the box as the mask, with room for its
-  # feather, and a subject with only her in it.
+    mid-thigh, and black leather gloves. Her black-gloved right fist is raised at shoulder height, closed tight around a pair of shut polished stainless steel hinged handcuffs held upright, one
+    compact rigid piece of steel no longer than her hand, both cuffs closed and pressed together in her
+    fist, in plain view against the pale stone. She looks down at the back of his head with a level, unimpressed stare, one eyebrow arched.
+    Far back on the right, eight paces from the camera, well inside the frame and well clear of the
+    kneeling man, a long reception counter of dark polished oak runs across the back of the lobby,
+    its front panel facing the camera, a computer monitor, a desk phone and a sign-in book on it,
+    and behind it a brass key cabinet and an American flag on a pole. A slim young woman of
+    twenty-seven sits on an office chair on the far side of the counter, the counter between her and
+    the room, only her head, shoulders and arms showing above the counter top, small in the frame.
+    Both her forearms rest on the counter top in plain view, her bare hands with long red nails
+    folded together in front of her. She has long copper-ginger waves swept over her left shoulder,
+    green eyes, freckles, dark red lipstick and black rectangular glasses, and wears a tan uniform
+    shirt with an azure tie, and watches the kneeling man with one brow raised. Natural
+    colour, flat cool daylight from tall plain windows and warm overhead office lights on the stone,
+    fine 35 mm film grain, deep focus.
+  # Passes (ADR 0052): Ashby, Niamh, then Eli. Niamh's pass is back now that the mask is SAM3's
+  # outline of her inside the box (2026-11-08): the old box-only passes for her (0.8) and the cuffs
+  # (0.7) pasted a second, giant Niamh in a hard rectangle over the counter (2026-11-07), and the
+  # cuffs stay the base's. Her pass takes the workflow's crop path (her box is small), so her subject
+  # describes the close crop, not the lobby (and so do Ashby's and Eli's, which take it too): sampled in the full frame her face got a few latent cells
+  # and came out smeared (2026-11-09). `woman:2` for both women: two women in frame, the box picks which.
+  # Eli's stops at his waist: over the jeans, `jack` drew mud and rips twice. The lobby is written
+  # as a station, not a church (no arch, pews or stained glass): "narthex of a deconsecrated
+  # church" drew a chapel.
   passes:
     - find: >-
         the Black woman sergeant with long black locs walking behind the kneeling man, from the top
         of her hair down to her boots, including her raised hand and the handcuffs it holds
-      segment: woman with black locs
+      segment: woman:2
       loras: ["ashby7_krea2_000001200:0.9"]
       pad: 16
       denoise: 0.55
       subject: >
-        A wide eye-level photograph across the narthex of an old deconsecrated limestone church
-        converted into a sheriff's station. ashby7 woman in her sheriff's uniform, tan with an azure
-        tie, her long black locs gathered at the nape, walks forward out of a tall pointed stone
-        arch in her tan riding breeches and black thigh-high riding boots. Her black-gloved right
-        hand is raised at shoulder height, holding up one pair of polished steel handcuffs, two cuffs
-        joined by a short chain. She looks down with a level, unimpressed stare, one eyebrow arched,
-        her lips closed. Natural colour, cool daylight through stained glass, fine 35 mm film grain,
+        A full-length eye-level photograph in the front lobby of a small-town county sheriff's
+        station with pale limestone walls. ashby7 woman in her sheriff's uniform, tan with an azure
+        tie, her long black locs gathered at the nape, walks forward out of a plain open
+        doorway in her tan riding breeches and black thigh-high riding boots. Her black-gloved right fist is raised at shoulder height, closed tight around a pair of shut polished stainless steel hinged handcuffs held upright, one
+        compact rigid piece of steel no longer than her hand, both cuffs closed and pressed together in her
+        fist. She looks down with a level, unimpressed stare, one eyebrow arched,
+        her lips closed. Natural colour, flat cool daylight and warm office lights, fine 35 mm film grain,
         deep focus.
     - find: >-
-        the upper body of the kneeling man in the plaid flannel shirt, from the top of his head down
-        to his belt, including both of his hands and elbows
-      segment: man in plaid shirt
-      loras: ["jack:1"]
-      pad: 16
-      subject: >
-        A wide eye-level photograph across the narthex of an old deconsecrated limestone church
-        converted into a sheriff's station. A man kneels facing the camera, both hands behind his
-        head with the fingers laced, his bare forearms with no tattoos and no watch, his elbows
-        sagging forward, his shoulders slumped and his head bowed, looking down at the floor. The man
-        is a broad-shouldered, athletic white man of thirty-two with lightly tanned skin, tousled wavy
-        brown hair, a strong square jaw, light stubble and round thin wire-rimmed glasses, in a faded
-        red and gray plaid flannel over a charcoal T-shirt, ashamed, his cheeks flushed, his eyes
-        lowered, his mouth pressed shut. Natural colour, cool daylight through stained glass, fine
-        35 mm film grain, deep focus.
-    - find: the red-haired deputy on the right
+        the red-haired woman in glasses seated behind the reception counter at the back right, from
+        the top of her hair down to the counter top, including both arms on the counter
+      segment: woman:2
       loras: ["nivdoyle_krea2_000001200:1"]
       pad: 32
       denoise: 0.5
       subject: >
-        nivdoyle woman in her uniform, wearing her black rectangular glasses, seated, her chin propped
-        on one bare hand with red nails, looking down with one brow raised, her dark red lips pressed
-        together on a smile she is trying to hold in. Natural colour, fine 35 mm film grain.
+        A waist-up photograph of nivdoyle woman in her uniform, wearing her black rectangular glasses,
+        seated behind a reception counter of dark polished oak, both forearms resting on the counter
+        top and her bare hands with long red nails folded together, her head turned toward the left
+        of the frame, watching someone across the room with one brow raised and a small amused
+        smile. Behind her, a pale limestone wall, an American flag and a wooden key cabinet. Natural
+        colour, flat cool daylight, fine 35 mm film grain.
+    - find: >-
+        the upper body of the kneeling man in the plaid flannel shirt, from the top of his head down
+        to his belt, including both of his hands and elbows
+      segment: man:1
+      loras: ["jack:1"]
+      pad: 16
+      subject: >
+        An eye-level photograph in the front lobby of a small-town county sheriff's station, on a
+        bronze seal set in a flagstone floor. A man kneels facing the camera, both hands behind his
+        head with the fingers laced, his bare forearms with no tattoos and no watch, his elbows held out wide to either side, his shoulders slumped and his head bowed, looking down at
+        the floor. The man
+        is a broad-shouldered, athletic white man of thirty-two with lightly tanned skin, tousled wavy
+        brown hair, a strong square jaw, light stubble and round thin wire-rimmed glasses, in a faded
+        red and gray plaid flannel over a charcoal T-shirt, ashamed, his cheeks flushed, his eyes
+        lowered, his mouth pressed shut. Natural colour, flat cool daylight and warm office lights, fine
+        35 mm film grain, deep focus.

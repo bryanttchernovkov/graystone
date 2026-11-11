@@ -84,26 +84,39 @@ actions:
       effects:
         - skill.gain: deal
       art:
-        loras: ["ashby7_krea2_000001200:0.9", "R2Y1DH5FQY41BT1Y6W67QWP730.nizLuQb9:0.5"]
+        # The approach, not the sit: fcstng in the base, in its caption order, her LoRA as a pass on her top half.
+        loras: ["fcstng_krea2_000000500:0.9"]
         subject: >
-          First-person point-of-view facesitting photograph from flat on the back on a steel
-          slat cot in a small jail cell under a whitewashed pointed vault, the camera looking
-          straight up. ashby7 woman in her sheriff's uniform, tan with an azure tie, her long
-          black locs gathered at the nape, sits on the camera fully clothed, facing it, her full
-          weight down on the lens: her hips and thighs in thick, opaque, loose-fitting tan twill
-          riding breeches, the same khaki tan as her shirt, fill the bottom of the frame down to
-          the knee, one smooth unbroken expanse of khaki cloth from her belt to her knees, her
-          thighs pressing in from the left and right edges. Above them her long-sleeved tan
-          uniform shirt is tucked tight into a black leather duty belt with a polished brass
-          buckle, her full, heavy bust rises over the lens, her azure tie hangs toward the
-          camera, and at the top of the frame she looks down between her breasts directly into
-          the camera, making eye contact with the viewer, with heavy-lidded, commanding
-          amusement: one eyebrow arched high, a slow wicked half-smile. One black-gloved hand is
-          braced on the limestone wall beside her. Behind her head, the whitewashed pointed
-          vault of the cell curves close. A caged incandescent bulb above and behind her rims
-          her locs and shoulders, her face in warm shadowed downlight. Palette of uniform tan,
-          vivid azure blue, black leather and whitewashed stone; natural fabric texture, fine 35
-          mm film grain, focus on her eyes.
+          A fcstng facesitting POV photo taken lying on your back on a steel slat cot with the
+          camera pointing straight up, as a woman lowers herself over the camera, facing the
+          camera, her front toward the lens. She is a commanding grown woman with deep brown skin,
+          a strong mature face and long black locs gathered at the nape, standing directly over
+          the camera with one polished black leather riding boot on each side of it, her knees
+          bent and her thighs spread wide, rising from the lower corners of the frame. She wears
+          thick opaque tan twill riding breeches, the plain front of the breeches large in the
+          center of the frame, a black leather duty belt with a polished brass buckle, a
+          long-sleeved tan uniform shirt tucked in tight and a vivid azure blue necktie hanging
+          toward the camera. Her black-gloved hands rest on her hips. Her face is small and high
+          up in the frame, looking straight down at the camera with heavy-lidded, commanding
+          amusement, one eyebrow arched high and a slow half-smile. Directly overhead, a
+          whitewashed pointed stone vault. A caged incandescent bulb behind her rims her locs and
+          shoulders, her face in warm downlight. Strong wide-angle foreshortening, natural fabric
+          texture, fine 35 mm film grain, 24 mm lens.
+        passes:
+          - find: >-
+              the woman's head, shoulders and chest, from the top of her hair down to her duty belt
+            segment: "woman:1 | pants:1, boots:2"
+            loras: ["ashby7_krea2_000001200:0.9"]
+            denoise: 0.5
+            subject: >
+              A photo taken lying on your back with the camera pointing straight up. ashby7 woman
+              in her sheriff's uniform, tan with an azure tie, her long black locs gathered at the
+              nape, a grown woman with a strong mature face, stands directly over the camera, her
+              body foreshortened, her face small and high up in the frame, looking straight down
+              into the lens with heavy-lidded, commanding amusement, one eyebrow arched high and a
+              slow half-smile, her black-gloved hands on her hips. Directly overhead, a whitewashed
+              pointed stone vault. A caged incandescent bulb behind her rims her locs and
+              shoulders, fine 35 mm film grain.
   - category: deal
     word: ASK
     cost: 1

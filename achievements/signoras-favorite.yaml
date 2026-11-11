@@ -33,7 +33,7 @@ art:
     - find: >-
         the man in the plaid flannel shirt, from the top of his head down to his feet or the bottom
         of the image, including his hands
-      segment: man in plaid shirt
+      segment: man:1
       loras: ["jack:1"]
       subject: >
         a full-length view of two people in the small back room of a family espresso café, burlap
@@ -60,7 +60,7 @@ art:
     - find: >-
         the woman in the red blouse and black apron standing over him, from the top of her hair down
         to her shoes, including both of her hands
-      segment: woman in a red blouse
+      segment: woman:1
       loras: ["ferrina_krea2_000001200:1"]
       subject: >
         a full-length view of two people in the small back room of a family espresso café, burlap

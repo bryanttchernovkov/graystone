@@ -71,7 +71,7 @@ art:
     - find: >-
         the woman's head, shoulders and chest, from the top of her hair down to her duty belt,
         including the hand holding the card
-      segment: woman in a green bomber jacket
+      segment: "woman:1 | boots:2"
       loras: ["sorenji_krea2_000001400:1"]
       denoise: 0.5
       subject: >

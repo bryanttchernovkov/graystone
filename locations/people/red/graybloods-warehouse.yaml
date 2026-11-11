@@ -54,21 +54,34 @@ actions:
         - skill.gain: deal
         - boost.change: { card: grayblood-runner, amount: +1 }
       art:
-        loras: ["shndr7_krea2_000001200:1"]
+        # fcstng's facing-away pose in the base; her LoRA as a pass above the waist. The prose carries the kneeling.
+        loras: ["fcstng_krea2_000000500:0.9"]
         subject: >
-          First-person point-of-view widescreen photograph from kneeling height on wet concrete in a dim
-          warehouse, the camera level. shndr7 woman in her red puffer jacket, hanging open over a fitted black top, with light-wash ripped jeans, twenty-one years old, stands with her back to the lens at arm's length, her
-          red puffer jacket hanging open and hitched up in one hand above her waist, her light-wash ripped
-          jeans pushed down to the middle of her thighs. Her bare, round backside with smooth dark brown
-          skin fills the center of the frame, a thin black thong pulled aside by the long white-nailed
-          thumb of her other hand. She twists at the waist and looks back over her own shoulder directly
-          into the camera, making eye contact with the viewer, with loud, smug delight: pale blue eyes
-          narrowed, chin up, full lips pulled in a wide mocking grin. Her long straight black hair hangs
-          down her back with one thin braid. Nothing of the viewer is in frame. Behind her, out of focus,
-          an empty aisle between stacks of wooden pallets. A work
-          light on a hook lights her skin and jacket warm from above, the rest of the room in shadow.
-          Restrained palette of glossy red, dark brown skin, denim blue, wet gray concrete and tungsten
-          amber; natural skin texture, fine 35 mm film grain, focus on her face.
+          A fcstng facesitting POV photo taken from down on a wet concrete floor with the camera pointing
+          straight up, as a woman lowers herself over the camera, facing away from the camera, her back toward
+          the lens. She is a loud, confident grown woman with smooth dark brown skin, a strong mature face and
+          long straight black hair with one thin braid, standing directly over the camera in scuffed white
+          high-top sneakers, her knees bent, her legs rising from the lower corners of the frame. Her light-wash
+          ripped jeans are pushed down to the middle of her thighs, and her bare round backside in a black thong
+          is large in the center of the frame, her glossy red puffer jacket hitched up above her waist in one
+          hand, her other hand on her hip with long white nails. She turns her head back over her left shoulder,
+          her face small and high up in the frame, looking down at the camera with loud, smug delight and a wide
+          mocking grin. Directly overhead, dark steel roof trusses and a work light on a hook, lighting her skin
+          and jacket warm from above. Strong wide-angle foreshortening, natural skin texture, fine 35 mm film
+          grain, 24 mm lens.
+        passes:
+          - find: >-
+              the woman's head, shoulders and red jacket, from the top of her hair down to her waist
+            segment: "woman:1 | pants:1, boots:2"
+            loras: ["shndr7_krea2_000001200:1"]
+            denoise: 0.5
+            subject: >
+              A photo taken from down on a concrete floor with the camera pointing straight up. shndr7 woman in
+              her red puffer jacket, hanging open over a fitted black top, a grown woman with a strong mature
+              face, stands directly over the camera with her back toward the lens, her body foreshortened. She
+              turns her head back over her left shoulder, her face small and high up in the frame, looking down
+              at the camera with loud, smug delight, chin up, a wide mocking grin. Directly overhead, dark steel
+              roof trusses and a work light on a hook, warm from above, fine 35 mm film grain.
   - category: work
     word: SCUFF
     cost: 1
@@ -117,7 +130,7 @@ actions:
           and her jacket from above, tungsten amber, natural texture, fine 35 mm film grain, 24 mm lens.
         passes:
           - find: the woman's head, shoulders and chest, from the top of her hair down to her waist
-            segment: woman in a red jacket
+            segment: "woman:1 | boots:2"
             denoise: 0.5
             loras: ["shndr7_krea2_000001200:1"]
             subject: >

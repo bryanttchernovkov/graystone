@@ -74,7 +74,7 @@ art:
   # Her LoRA only on her hand: on the whole frame it printed "tfny7" along the bottom edge.
   passes:
     - find: the woman's bare hand with long black nails gripping the boot, from her fingertips to her wrist
-      segment: hand
+      segment: hand:2
       loras: ["tfny7_krea2_000000800:1"]
       subject: >
         Detail first-person point-of-view widescreen photograph of the open top of an empty

@@ -42,7 +42,7 @@ art:
     - find: >-
         the man in the orange jumpsuit, from the top of his head down to his feet or the bottom of
         the image, including his hands
-      segment: man in orange jumpsuit
+      segment: man:1
       loras: ["jack:1"]
       subject: >
         a waist-height photograph inside a small underground jail cell walled with smooth dressed
@@ -76,7 +76,7 @@ art:
     - find: >-
         the standing woman in the tan uniform, from the top of her hair down to the bottom of the
         image, including her raised hand
-      segment: woman in a tan uniform
+      segment: woman:1
       loras: ["ashby7_krea2_000001200:1"]
       subject: >
         a waist-height photograph inside a small underground jail cell walled with smooth dressed

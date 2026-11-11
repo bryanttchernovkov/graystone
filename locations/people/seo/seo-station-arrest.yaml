@@ -50,3 +50,17 @@ art:
     out of focus, pale limestone walls and a tall pointed stone arch. Soft daylight through
     stained glass, colored light on the flagstones, a white glint on the steel cuff, natural skin
     texture, fine film grain, 28 mm lens.
+  # Her face pass (2026-11-07): the arrest LoRA shares the base with hers, so her likeness drifts.
+  # SAM3 (2026-11-08): all of her minus her hands and the cuffs, at full weight; the pose, cuffs and
+  # his arm stay the base's.
+  passes:
+    - find: the woman in uniform
+      segment: "woman:1 | hand:2, handcuffs:2"
+      pad: 32
+      denoise: 0.5
+      loras: ["sorenji_krea2_000001400:1"]
+      subject: >
+        A first-person arrest photo from beside a man's shoulder, sorenji woman in her uniform, her face and her dusty-pink bob, bending
+        forward and looking down with calm, careful attention and a small, pleased smile, her
+        brows relaxed. Pale limestone behind her, soft daylight through stained glass, natural
+        skin texture, fine film grain.

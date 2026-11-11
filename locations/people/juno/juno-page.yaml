@@ -74,7 +74,7 @@ art:
   # Her LoRA only on the avatar: on the whole frame it printed its trigger as the page's name.
   passes:
     - find: the small round profile photograph of the woman on the laptop screen
-      segment: round profile photo
+      segment: round profile photo:1
       pad: 16
       loras: ["jovessa_krea2_000001200:0.9"]
       subject: >

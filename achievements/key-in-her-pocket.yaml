@@ -43,7 +43,7 @@ art:
     - find: >-
         the man in the plaid flannel shirt, from the top of his head down to his feet or the bottom
         of the image, including his hands
-      segment: man in plaid shirt
+      segment: man:1
       loras: ["jack:1"]
       subject: >
         a close medium shot of two people face to face on the wide limestone steps of an old Gothic
@@ -81,7 +81,7 @@ art:
     - find: >-
         the woman in the green bomber jacket and campaign hat on the step above him, from the top of
         her hat down to the bottom of the image, including both of her hands
-      segment: woman in a campaign hat
+      segment: woman:1
       loras: ["ashby7_krea2_000001200:0.9"]
       subject: >
         a close medium shot of two people face to face on the wide limestone steps of an old Gothic

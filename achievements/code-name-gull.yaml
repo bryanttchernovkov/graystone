@@ -10,14 +10,13 @@ art:
   subject: >
     a close medium shot of two people standing on a river wharf on an overcast afternoon, seen from
     along the dock at chest height, both from the waist up in the right two-thirds of the frame.
-    sorenji woman in her uniform with a green bomber jacket, with her dusty-pink bob, stands beside
-    a man, one bare hand holding his flannel collar, and leans toward his ear to whisper, a hand's
-    width of air between her face and his, her small black notebook open in her other hand, lowering
-    her aviator sunglasses down her nose, her dark eyes sparkling with mischief, her berry-pink lips
+    sorenji woman in her uniform with a green bomber jacket, with her dusty-pink bob, stands half a step to the left of a man, turned toward him, her small black notebook open in both
+    hands, and speaks to him quietly out of the side of her mouth, a clear gap of open air a forearm
+    wide between her head and his, her dark eyes sparkling with mischief, her berry-pink lips
     curved in a small closed-mouth smile. The man is a broad-shouldered, athletic white man of
     thirty-two with lightly tanned skin, tousled wavy brown hair, a strong square jaw, light stubble
     and round thin gold wire-rimmed glasses, in an unbuttoned faded red and gray plaid flannel shirt
-    over a plain charcoal T-shirt, bending his head down toward her, eyes wide behind his glasses,
+    over a plain charcoal T-shirt, turning his head slightly toward her, eyes wide behind his glasses,
     brows shot up, glancing sideways down the empty dock, his lips pressed tight in a nervous line.
     On a rusted iron mooring bollard right beside them a herring gull stands with its head cocked,
     watching them. The left third of the frame is the wide gray river and a moored rust-red barge,
@@ -27,19 +26,19 @@ art:
     - find: >-
         the man in the plaid flannel shirt, from the top of his head down to the bottom of the
         image, including his hands
-      segment: man in plaid shirt
+      segment: man:1
       loras: ["jack:1"]
       denoise: 0.55
       subject: >
         a close medium shot of two people standing on a river wharf on an overcast afternoon, seen
         from along the dock at chest height, both from the waist up in the right two-thirds of the
         frame. A Korean woman deputy with a dusty-pink bob, in a forest-green bomber jacket over a
-        tan uniform shirt, stands beside a man, one bare hand holding his flannel collar, and leans
-        toward his ear to whisper, a hand's width of air between her face and his, her small black
-        notebook open in her other hand. The man is a broad-shouldered, athletic white man of
+        tan uniform shirt, stands half a step to the left of a man, turned toward him, her small black notebook open in both
+        hands, and speaks to him quietly out of the side of her mouth, a clear gap of open air a forearm
+        wide between her head and his. The man is a broad-shouldered, athletic white man of
         thirty-two with lightly tanned skin, tousled wavy brown hair, a strong square jaw, light
         stubble and round thin gold wire-rimmed glasses, in an unbuttoned faded red and gray plaid
-        flannel shirt over a plain charcoal T-shirt, bending his head down toward her, eyes wide
+        flannel shirt over a plain charcoal T-shirt, turning his head slightly toward her, eyes wide
         behind his glasses, brows shot up, glancing sideways down the empty dock, his lips pressed
         tight in a nervous line. On a rusted iron mooring bollard right beside them a herring gull
         stands with its head cocked, watching them. The left third of the frame is the wide gray

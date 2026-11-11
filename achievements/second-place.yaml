@@ -17,13 +17,13 @@ art:
     sign on a pole. Palette of gravel gray, sedan tan, gloss black, dusty pink, steam white and turquoise; natural texture, fine 35 mm film grain.
   passes:
     - find: the man standing beside the steaming sedan, from the top of his head down to his feet
-      segment: man in plaid shirt
+      segment: man:1
       loras: ["jack:1"]
       subject: >
         a broad-shouldered white man of thirty-two with tousled wavy brown hair, light stubble and round thin gold wire-rimmed
         glasses, in a plaid flannel shirt and jeans, head hanging, holding out a twenty-dollar bill, his face red. Low sun, fine film grain.
     - find: the blonde woman in the pink hoodie sitting on the black car, from the top of her hair down to her sneakers
-      segment: woman in a pink hoodie
+      segment: woman:1
       loras: ["zbltk7_krea2_000001400:0.9"]
       subject: >
         zbltk7 woman in her pink hoodie, twenty-three years old, long loose wavy honey-blonde hair, sitting on a black car's fender,

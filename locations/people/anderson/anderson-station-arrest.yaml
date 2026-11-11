@@ -45,7 +45,7 @@ art:
   # Repair: the base stays as rendered. Her LoRA painted his nails black.
   passes:
     - find: the man's bare hand below the steel handcuff, palm turned outward, from his wrist to his fingertips
-      segment: hand
+      segment: "hand:3 | woman:1"
       pad: 32
       denoise: 0.6
       subject: >
@@ -54,3 +54,16 @@ art:
         palm turned outward: a man's hand with broad knuckles and short, bare, unpainted nails cut
         straight across. A pale stone floor behind it. Soft daylight, natural skin texture, fine
         film grain, 35 mm lens.
+    # Her face pass (2026-11-07): the arrest LoRA shares the base with hers, so her likeness drifts.
+    # SAM3 (2026-11-08): all of her minus her hands and the cuffs, at full weight; the pose, cuffs and
+    # his arm stay the base's.
+    - find: the woman in uniform
+      segment: "woman:1 | hand:2, handcuffs:2"
+      pad: 32
+      denoise: 0.5
+      loras: ["tfny7_krea2_000000800:1"]
+      subject: >
+        A first-person arrest photo from beside a man's shoulder, tfny7 woman in her tfny7 uniform, her face and platinum blonde hair,
+        looking up at the viewer with gleeful, disbelieving amusement, green eyes bright,
+        laughing open-mouthed, her berry lips parted. Pale limestone and stained-glass light
+        behind her, natural skin texture, fine film grain.

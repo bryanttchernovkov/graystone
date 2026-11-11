@@ -22,7 +22,7 @@
   "3": {
     "class_type": "UnetLoaderGGUF",
     "inputs": {
-      "unet_name": "realismByStableYogi_v25GGUF.gguf"
+      "unet_name": "Krea2-SAT-IORv3-q4_k.gguf"
     },
     "_meta": {
       "title": "Unet Loader (GGUF)"
@@ -563,8 +563,8 @@
       "seed": "{{seed}}",
       "steps": 8,
       "cfg": 1,
-      "sampler_name": "euler",
-      "scheduler": "beta",
+      "sampler_name": "euler_ancestral",
+      "scheduler": "sgm_uniform",
       "denoise": "{{denoise}}",
       "model": [
         "40",

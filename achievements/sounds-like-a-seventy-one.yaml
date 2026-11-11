@@ -25,7 +25,7 @@ art:
         a white man of thirty-two with tousled wavy brown hair, light stubble and round thin gold wire-rimmed glasses, at a car
         window, staring straight ahead with a tight, doomed, polite smile. Low sun, fine film grain.
     - find: the woman in the green bomber jacket leaning on the car, from the top of her hair down to her boots
-      segment: woman in a green bomber jacket
+      segment: woman:1
       loras: ["mrvx7_krea2_000001200:0.9"]
       subject: >
         mrvx7 woman in her patrol jacket uniform, a twenty-two-year-old highway patrol deputy, leaning on a car door with one

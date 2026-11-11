@@ -41,7 +41,7 @@ art:
     - find: >-
         the man in the orange jumpsuit, from the top of his head down to his feet or the bottom of
         the image, including his hands
-      segment: man in orange jumpsuit
+      segment: man:1
       loras: ["jack:1"]
       subject: >
         a low photograph from the flagstone floor inside a small underground jail cell walled with
@@ -75,7 +75,7 @@ art:
         stitching, fine 35 mm film grain, sharp focus on his lips and the toe cap
     - find: >-
         the standing woman in the tan uniform, from the top of her hair down to her boots
-      segment: woman in a tan uniform
+      segment: woman:1
       loras: ["ashby7_krea2_000001200:0.9"]
       subject: >
         a low photograph from the flagstone floor inside a small underground jail cell walled with

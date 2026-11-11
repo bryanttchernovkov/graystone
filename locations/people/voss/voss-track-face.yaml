@@ -48,21 +48,34 @@ actions:
         - skill.gain: risk
         - move.to: highway-turnout
 art:
-  # An exception to "facesitting always uses its LoRA": that LoRA drew her bare through every wording and a box
-  # pass, so it's gone and the frame stops at her belt. The prose carries the act.
-  loras: ["mrvx7_krea2_000001200:0.9"]
+  # fcstng's facing pose in the base, the moment before she sits, as the description has it; her LoRA as a pass.
+  loras: ["fcstng_krea2_000000500:0.9"]
   subject: >
-    First-person point-of-view photograph from flat on the back in a dirt farm track, the camera looking
-    steeply up. mrvx7 woman in her patrol jacket uniform, a twenty-two-year-old highway patrol deputy, looms
-    directly over the lens, facing it, framed from her belt up. The bottom edge of the frame cuts across her
-    black leather duty belt with its polished brass buckle. A narrow, soft strip of tan twill closes in along
-    the far left edge and the far right edge of the frame. Above the belt her tan uniform shirt is tucked in
-    under her dark forest-green bomber jacket zipped to the middle of her chest with a polished gold star
-    badge and a vivid azure blue necktie hanging toward the camera. At the top of the frame she
-    looks down into the camera over a small open gold compact held in her bare left hand, a glossy red
-    lipstick in her bare right, with cool, pleased attention: bright blue eyes narrowed, sharp
-    black winged eyeliner, one brow up, red lips pursed mid-stroke. Her dark espresso hair is in glossy
-    rockabilly victory-roll bangs with a cherry-red section, large gold hoops swinging forward. Behind her
-    head, a huge pale autumn sky and a few dry corn stalks at the edges. Low sun behind her rims her hair
-    and shoulders. Palette of uniform tan, forest green, vivid azure blue, gold and pale sky; natural fabric
-    texture, fine 35 mm film grain, focus on her eyes.
+    A fcstng facesitting POV photo taken lying on a dirt farm track with the camera pointing straight up, as a
+    woman lowers herself over the camera, facing the camera, her front toward the lens. She is a poised grown
+    woman with a strong mature face, sharp black winged eyeliner, red lips and dark espresso hair in glossy
+    rockabilly victory-roll bangs with a cherry-red section, large gold hoops, standing directly over the camera
+    with one polished black leather thigh-high riding boot on each side of it, her knees bent and her thighs
+    spread wide, rising from the lower corners of the frame. She wears thick opaque tan twill riding breeches,
+    the plain front of the breeches large in the center of the frame, a black leather duty belt with a polished
+    brass buckle, a tan uniform shirt tucked in, a dark forest-green bomber jacket with a
+    polished gold star badge, and a vivid azure blue necktie hanging toward the camera. Her face is
+    small and high up in the frame, looking straight down at the camera over a small open gold compact in her
+    bare left hand, a glossy red lipstick in her bare right, with cool, pleased attention and one brow up. A few
+    dry corn stalks lean in at the edges of a huge pale autumn sky. Low sun behind her rims her hair and
+    shoulders. Strong wide-angle foreshortening, natural fabric texture, fine 35 mm film grain, 24 mm lens.
+  passes:
+    - find: >-
+        the woman's head, shoulders, chest and both hands, from the top of her hair down to her duty belt
+      segment: "woman:1 | pants:1, boots:2"
+      loras: ["mrvx7_krea2_000001200:0.9"]
+      denoise: 0.5
+      subject: >
+        A photo taken lying on a dirt track with the camera pointing straight up. mrvx7 woman in her patrol
+        jacket uniform, a grown woman with a strong mature face, sharp black winged eyeliner and red lips, her
+        dark espresso hair in glossy rockabilly victory-roll bangs with a cherry-red section, large gold hoops,
+        stands directly over the camera, her body foreshortened, her face small and high up in the frame, in a
+        tan uniform shirt, a dark forest-green bomber jacket with a polished gold star badge and a vivid azure
+        blue necktie. She looks straight down into the lens over a small open gold compact in her bare left
+        hand, a glossy red lipstick in her bare right, with cool, pleased attention and one brow up. Overhead, a
+        huge pale autumn sky, low sun rimming her hair and shoulders, fine 35 mm film grain.

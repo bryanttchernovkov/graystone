@@ -117,18 +117,31 @@ art:
   loras: ["sorenji_krea2_000001400:0.9", "pvarst7_krea2_000002250:0.8"]
   subject: >
     pvarst7 POV arrest photo, a first-person view from the arrested man's own shoulder as he
-    lies face down on the concrete of a river wharf, the camera low beside his head, looking
-    back past his right shoulder along his back at his right arm being handcuffed behind him,
-    the forearm laid across the small of his back, his plain heather gray T-shirt and blue jeans
-    lying flat on the rough gray concrete in the foreground, his bare hairy forearm with no
-    watch or bracelet and his palm turned up. On the right side of the frame stands sorenji
+    lies face down on the concrete of a river wharf, looking back past his right shoulder along his back
+    at his right arm being handcuffed behind him, his right arm bent behind him with the forearm laid
+    flat across the small of his back, his plain heather gray T-shirt stretched over his shoulder and
+    back filling the near side of the frame, his blue jeans beyond it, his bare hairy forearm with no
+    watch or bracelet. On the right side of the frame stands sorenji
     woman in her uniform with a green bomber jacket, the jacket open over her tan shirt and her
-    vivid azure blue necktie, no jewelry, her black riding boots planted on the concrete beside
-    his hip, bending forward from the waist over him, her face above him at the top of the
+    vivid azure blue necktie, no jewelry, kneeling on one knee on the concrete beside his hip, bending over his back, her face above him at the top of the
     frame. She is bare-handed, reaches down and grips his forearm just above the polished steel
     hinged handcuff locked on his wrist and holds the empty second cuff, closed, in her other
     hand. She looks down at the cuff with calm, careful attention and a small, soft smile.
     Behind her, out of focus, the wharf runs away to a black iron bollard and the long dark red
     rusting hull of a river cargo ship under a pale sky. Flat, bright, hazy late-morning light
-    from the high pale sky, a white glint on the steel cuff, natural skin texture, fine film
+    from the high pale sky, natural skin texture, fine film
     grain, 28 mm lens.
+  # Her face pass (2026-11-07): the arrest LoRA shares the base with hers, so her likeness drifts.
+  # SAM3 (2026-11-08): all of her minus her hands and the cuffs, at full weight; the pose, cuffs and
+  # his arm stay the base's.
+  passes:
+    - find: the woman in uniform
+      segment: "woman:1 | hand:2, handcuffs:2"
+      pad: 32
+      denoise: 0.5
+      loras: ["sorenji_krea2_000001400:1"]
+      subject: >
+        A first-person arrest photo from beside a man's shoulder, sorenji woman in her uniform with a green bomber jacket, her face and
+        her dusty-pink bob, bending over and looking down with calm, careful attention and a
+        small, soft smile, her brows relaxed. A pale sky behind her, flat hazy late-morning
+        light, natural skin texture, fine film grain.

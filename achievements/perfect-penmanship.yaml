@@ -17,13 +17,13 @@ art:
     pencil; natural skin texture, fine 35 mm film grain.
   passes:
     - find: the man writing at the desk, from the top of his head down to his waist
-      segment: man in plaid shirt
+      segment: man:1
       loras: ["jack:1"]
       subject: >
         a broad-shouldered white man of thirty-two with tousled wavy brown hair, light stubble and round thin gold wire-rimmed glasses, in a
         plaid flannel shirt, hunched over a pad, writing, his tongue between his teeth, his face red. Warm lamplight, fine film grain.
     - find: the woman in the olive-green jacket, from the top of her hair down to the desktop
-      segment: woman in a green jacket
+      segment: woman:1
       loras: ["lorbrandt_krea2_000001200:1"]
       subject: >
         lorbrandt woman in her uniform, the jacket buttoned, at a walnut desk, holding up a page and marking it with a red pencil, smiling

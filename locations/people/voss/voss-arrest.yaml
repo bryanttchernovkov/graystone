@@ -50,3 +50,19 @@ art:
     looks down at the cuff with sweet, delighted pleasure, a big red-lipped smile. Set on the gravel shoulder of a two-lane Midwest highway, harvested
     cornfields of pale gold stubble behind her, low late-afternoon sun, a faint red and blue flicker on
     the steel, natural skin texture, fine film grain, 28 mm lens.
+  # Her face pass (2026-11-07): the arrest LoRA shares the base with hers, so her likeness drifts.
+  # SAM3 (2026-11-08): all of her minus her hands and the cuffs, at full weight; the pose, cuffs and
+  # his arm stay the base's.
+  passes:
+    - find: the woman in uniform
+      segment: "woman:1 | hand:2, handcuffs:2"
+      pad: 32
+      denoise: 0.5
+      loras: ["mrvx7_krea2_000001200:0.9"]
+      subject: >
+        A first-person arrest photo from beside a man's shoulder, mrvx7 woman in her patrol jacket uniform, her face and her dark
+        espresso brown hair in glossy rockabilly victory-roll bangs and a high curled ponytail
+        with a bold cherry-red dyed section, large polished gold hoop earrings, sharp black
+        winged eyeliner, looking down with sweet, delighted pleasure, a big red-lipped smile.
+        Harvested cornfields behind her, low late-afternoon sun, natural skin texture, fine film
+        grain.

@@ -57,25 +57,53 @@ actions:
         - card.gain: sore-bottom
         - move.to: station-bullpen
 art:
+  # pvotk7 in its README's caption order. He is bare, as the prose has it ("Jeans and shorts down"), said once
+  # in the outfit slot, with no boxers named: naming them put cloth back on his backside (2026-11-07).
   loras: ["pvotk7_krea2_000002000:0.9"]
   subject: >-
     pvotk7 POV over-the-knee spanking photo, a first-person view from the man's own head as he lies face down
-    across a woman's lap, looking back along his own body, his plain charcoal T-shirt and bare backside filling
-    the foreground, his blue jeans and gray boxer shorts pulled down around his knees, his backside raised over
-    her thighs and his legs stretching out to the right of the frame with his scuffed brown work boots lifted off
-    the ground. A fifty-year-old woman with long copper-auburn waves, a few silver strands at the temples, bright
-    blue eyes and fair freckled skin, in a buttoned dark olive-green dress uniform jacket with polished brass
-    buttons over a tan shirt and a blue tie, sits on a dark green leather Chesterfield sofa with him across her
-    knees. One of her hands rests flat on his backside and her other arm is raised high, gripping an old oval
-    wooden hairbrush with a dark polished back. She looks into the camera with a warm, pleasant, patient smile.
-    Set in an elegant executive office with walnut paneling and a brass lamp, warm afternoon light through a round
-    stained-glass window.
+    across a woman's lap, looking back along his own body, his plain charcoal T-shirt and his bare red buttocks
+    filling the foreground, his naked backside raised over her thighs, flushed bright red from the spanking, and
+    his bare hairy legs stretching out to the right of the frame, his blue jeans pushed all the way down and
+    bunched around his ankles above his scuffed brown work boots, lifted off the ground. A fifty-year-old woman with long copper-auburn waves, a few
+    silver strands at the temples, bright blue eyes and fair freckled skin, in a tailored, buttoned dark
+    olive-green dress uniform jacket with polished gold buttons, its notched lapels piped and its cuffs banded in
+    vivid azure blue, epaulets edged in vivid azure blue with small gold stars, an embroidered vivid azure blue and
+    gold patch on each upper sleeve and a polished gold six-point star badge on its left breast, over the collar
+    of a tan shirt and a vivid azure blue necktie, sits on a dark green leather
+    Chesterfield sofa with him across her knees. One of her hands rests flat on his bare red backside and her
+    other arm is raised high, gripping an old oval wooden hairbrush with a dark polished back. She looks into the
+    camera with a warm, pleasant, patient smile. Set in an elegant executive office with walnut paneling and a
+    brass lamp, warm afternoon light through a round stained-glass window.
   passes:
-    - find: the woman in the olive-green jacket, her head, shoulders and chest, down to her waist, including her raised hand
-      segment: woman in a green jacket
-      denoise: 0.5
+    # Her face only (2026-11-08). Qwen boxes all of her whatever `find` says, and GroundingDINO keeps a detection
+    # if any one word of the label matches: "woman's head" and "woman in a green jacket" both matched her whole
+    # body, so the mask was Qwen's box, over her lap and his backside (a tan lump, then a gun in her hand).
+    # "face" has neither word, so the mask is her face and everything else is the base.
+    # SAM3 (2026-11-08): "face" alone gave a clean face mask but left the base's plain army jacket. So all of
+    # her minus her hands and the brush (`keep | cut`): her LoRA owns her hair, face and whole uniform, and the
+    # hand on him and the brush stay the base's. 0.55 so the piping, patches and badge can come in.
+    - find: the seated woman with the hairbrush
+      pad: 32
+      segment: "woman:1 | hand:2, hairbrush:1"
+      denoise: 0.55
       loras: ["lorbrandt_krea2_000001200:1"]
       subject: >-
-        lorbrandt woman in her uniform, the jacket buttoned, seated on a dark green leather sofa, one arm raised high
-        gripping an old oval wooden hairbrush, looking into the camera with a warm, pleasant, patient smile that is
-        also an instruction. Walnut paneling behind her, warm afternoon light, fine film grain.
+        lorbrandt woman in her uniform, seated on a dark green leather Chesterfield sofa, her long copper-auburn
+        waves with a few silver strands at the temples, bright blue eyes and fair freckled skin, in a tailored,
+        buttoned dark olive-green dress uniform jacket with polished gold buttons, its notched lapels piped and its
+        cuffs banded in vivid azure blue, epaulets edged in vivid azure blue with small gold stars, an embroidered
+        vivid azure blue and gold patch on each upper sleeve and a polished gold six-point star badge on its left
+        breast, the collar of a tan shirt and a vivid azure blue necktie. She looks into the camera with a warm,
+        pleasant, patient smile that is also an instruction. Walnut paneling behind her, warm afternoon light,
+        natural skin and wool texture, fine film grain.
+    # Her knee under his thighs came out as a bare, hairy man's leg (2026-11-08): the base names his bare legs
+    # and not her breeches. A second pass dresses it, so the base stays.
+    - find: the bare knee sticking out below the man's bare thighs at the bottom of the frame
+      pad: 32
+      segment: "knee:1 | jeans:1"
+      denoise: 0.7
+      subject: >-
+        A woman's knee and lower thigh in tan riding breeches with a vivid azure blue stripe down the outer seam,
+        seated on a dark green leather Chesterfield sofa under a man lying across her lap, warm afternoon light,
+        natural fabric texture, fine film grain.

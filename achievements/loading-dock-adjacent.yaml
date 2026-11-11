@@ -17,13 +17,13 @@ art:
     rust, tungsten yellow and dusk blue; natural skin texture, fine 35 mm film grain.
   passes:
     - find: the stooping man on the doormat, from the top of his head down to his feet
-      segment: man in plaid shirt
+      segment: man:1
       loras: ["jack:1"]
       subject: >
         a broad-shouldered white man of thirty-two with tousled wavy brown hair, light stubble and round thin gold wire-rimmed glasses, in
         a plaid flannel shirt and jeans, stooping, wiping a boot on a doormat, looking up with a hopeful, frightened smile. Dusk, fine film grain.
     - find: the laughing woman in the red jacket, from the top of her hair down to her sneakers
-      segment: woman in a red jacket
+      segment: woman:1
       loras: ["shndr7_krea2_000001200:1"]
       subject: >
         shndr7 woman in her red puffer jacket, hanging open over a fitted black top, with light-wash ripped jeans, twenty-one years old,

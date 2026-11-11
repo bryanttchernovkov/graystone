@@ -50,19 +50,38 @@ actions:
         - skill.gain: talk
         - move.to: highway-turnout
 art:
-  loras: ["mrvx7_krea2_000001200:0.9"]
+  # fcstng's facing-away pose in the base; her LoRA as a pass above the belt. Her back turned but her legs
+  # spread like the facing pose read as both (2026-11-06): the backs of her boots, feet close, knees barely
+  # bent, and every visible piece of kit named from the back. The hood stays in the prose:
+  # looking straight up there's no room for it, and leaning forward hides her head.
+  loras: ["fcstng_krea2_000000500:0.9"]
   subject: >
-    First-person point-of-view widescreen photograph from kneeling height in a dirt farm track between
-    harvested cornfields, the camera level. mrvx7 woman in her patrol jacket uniform, a twenty-two-year-old
-    highway patrol deputy, stands with her back to the lens at arm's length, leaning forward with her elbows
-    on the white hood of a patrol car, one polished black leather thigh-high riding boot crossed behind
-    the other. Her backside in tight tan twill riding breeches, with a vivid azure blue stripe down the
-    outer seam, fills the center of the frame at the height of the camera, the seams stretched smooth,
-    the hem of a dark forest-green bomber jacket and a black leather duty belt just above. She twists at the
-    waist to look back over her own shoulder directly into the camera, making eye contact with the viewer,
-    with sweet, patient cruelty: bright blue eyes bright, sharp black winged eyeliner, head tilted, a
-    red-lipped smile, one eyebrow up. Her dark espresso hair is in glossy rockabilly victory-roll bangs and
-    a high curled ponytail with a cherry-red section falling down her back, large gold hoops. Nothing of the
-    viewer is in frame. Beyond the hood, a long empty dirt track and a huge pale sky. Low late-afternoon sun
-    from the left lights the twill and the white paint. Restrained palette of tan, forest green, cruiser
-    white, cherry red and corn gold; natural fabric texture, fine 35 mm film grain, focus on her face.
+    A fcstng facesitting POV photo taken from down in a dirt farm track with the camera pointing straight up, as
+    a woman lowers herself over the camera, facing away from the camera, her back toward the lens. She is a
+    poised grown woman with a strong mature face, sharp black winged eyeliner, red lips and dark espresso hair in
+    glossy rockabilly victory-roll bangs and a high curled ponytail with a cherry-red section, large gold hoops,
+    standing directly over the camera with one polished black leather thigh-high riding boot on each
+    side of it, the backs of both boots toward the lens, her feet a little apart and her knees only
+    slightly bent, her legs rising from the lower corners of the frame. She wears tight tan twill riding
+    breeches, the seat of the breeches large in the center of the frame, the back of a black leather
+    duty belt across the small of her back, and the plain back of a dark forest-green bomber jacket
+    ending at her waist. Her bare hands rest on her hips. She turns her head back over
+    her left shoulder, her face small and high up in the frame, looking down at the camera with sweet, patient
+    cruelty, head tilted, a red-lipped smile and one eyebrow up. Directly overhead, a huge pale sky. Low
+    late-afternoon sun from the left lights the twill. Strong wide-angle foreshortening, natural fabric texture,
+    fine 35 mm film grain, 24 mm lens.
+  passes:
+    - find: >-
+        the woman's head, shoulders and green jacket, from the top of her hair down to her duty belt
+      segment: "woman:1 | pants:1, boots:2"
+      loras: ["mrvx7_krea2_000001200:0.9"]
+      denoise: 0.5
+      subject: >
+        A photo taken from down on a dirt track with the camera pointing straight up. mrvx7 woman in her patrol
+        jacket uniform, a grown woman with a strong mature face, sharp black winged eyeliner and red lips, her
+        dark espresso hair in glossy rockabilly victory-roll bangs and a high curled ponytail with a cherry-red
+        section, large gold hoops, stands directly over the camera with her back toward the lens, her body
+        foreshortened, in a dark forest-green bomber jacket. She turns her head back over her left shoulder, her
+        face small and high up in the frame, looking down at the camera with sweet, patient cruelty, head tilted,
+        a red-lipped smile and one eyebrow up. Overhead, a huge pale sky, low late-afternoon sun from the left,
+        fine 35 mm film grain.
